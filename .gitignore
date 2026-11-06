@@ -2,8 +2,8 @@ __pycache__/
 *.pyc
 .venv/
 .cache/
-campaigns/*/solver/runs/
-campaigns/*/solver/validation/
+archive/*/solver/runs/
+archive/*/solver/validation/
 /runs/
 /data/cases/
 /validation/progressive_storage/
@@ -14,3 +14,6 @@ campaigns/*/solver/validation/
 .ruff_cache/
 .coverage
 htmlcov/
+
+# Local outputs from pre-migration checkouts
+/campaigns/

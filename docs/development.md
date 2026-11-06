@@ -21,4 +21,4 @@ The wheel contains the public API and numerical core. The source distribution al
 
 v0.1.0 is the first maintained-source release. Earlier fead-2026-10-25-v1 and v2 tags identify review packages. Use forward commits and new tags; preserve published snapshots.
 
-The one-time deploy_entrypoints helper and old absolute-path validation plan stay only in campaigns/. The maintained source snapshot helper discovers the current checkout, and the chapter guide points to the current table regeneration entry.
+The one-time deploy_entrypoints helper and old absolute-path validation plan stay only in archive/. The maintained source snapshot helper discovers the current checkout, and the chapter guide points to the current table regeneration entry.

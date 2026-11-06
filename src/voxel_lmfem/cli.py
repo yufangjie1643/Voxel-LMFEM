@@ -68,8 +68,8 @@ def _prepare(cases, grids, directory):
     configure()
     import shutil
     module = _load("voxel_case_inputs", ROOT / "experiments/solver_comparison/cases.py")
-    frozen = ROOT / "campaigns/chapter/manuscript_evidence/review_results/solver_study_20261022/remote/inputs"
-    archive = ROOT / "campaigns/chapter/solver/data/grosmont"
+    frozen = ROOT / "archive/paper/solver/remote/inputs"
+    archive = ROOT / "archive/chapter/solver/data/grosmont"
     directory.mkdir(parents=True, exist_ok=True)
     results = []
     for case in cases:

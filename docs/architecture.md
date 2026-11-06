@@ -11,7 +11,7 @@
     baselines/         Third-party reference source and existing licenses
     docs/              Installation, usage and development documentation
     repro/             Paper map, checksums and current generated tables
-    campaigns/         Frozen measured campaigns retained for provenance
+    archive/         Frozen measured campaigns retained for provenance
     runs/              New local outputs, ignored by Git
 
 ## Canonical source
@@ -35,6 +35,10 @@ Internal filenames preserve the tested dependency chain. Applications should use
 
 repro/provenance/canonical_sources.json maps maintained files to their frozen origins and original hashes. Numerical core files are copied byte-for-byte. Infrastructure changes are described in docs/development.md.
 
-The public solver does not import campaigns/. The reproduction command reads that archive explicitly to regenerate measured observations. Existing v1/v2 releases remain available.
+The public solver does not import archive/. The reproduction command reads that archive explicitly to regenerate measured observations. Existing v1/v2 releases remain available.
 
 The broad v2 inventory is retained as repro/provenance/v2_file_manifest.json. The active evidence inventory covers frozen campaign files and the paper regeneration script; maintained code and documentation are identified by Git commits and release archives.
+
+## Portable paths
+
+Historical files are grouped under archive/paper/, archive/chapter/, archive/woven/ and archive/sources/. repro/path_map.json records every old path, new path and unchanged SHA-256. Archived analyzers run against a temporary reconstruction of their original layout; published measurements and numerical kernels retain their bytes. See docs/paths.md for naming limits and the audit command.

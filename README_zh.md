@@ -2,13 +2,13 @@
 
 低存储 GPU 体素有限元均匀化求解器。
 
-仓库提供统一的 Python 包、命令行、算例、输入配置、测试、文档和论文复现数据。主代码位于 src/voxel_lmfem/；历史实验快照保留在 campaigns/，用于追溯原始测量。
+仓库提供统一的 Python 包、命令行、算例、输入配置、测试、文档和论文复现数据。主代码位于 src/voxel_lmfem/；历史实验快照保留在 archive/，用于追溯原始测量。
 
 ## 安装与第一个算例
 
 先安装 [uv](https://docs.astral.sh/uv/getting-started/installation/)，再执行：
 
-    git -c core.longpaths=true clone https://github.com/yufangjie1643/Voxel-LMFEM.git
+    git clone https://github.com/yufangjie1643/Voxel-LMFEM.git
     cd Voxel-LMFEM
     uv venv --python 3.12
     uv pip install -e .

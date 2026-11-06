@@ -19,9 +19,7 @@ import tempfile
 import numpy as np
 
 ROOT = Path(__file__).resolve().parents[2]
-CHAPTER = ROOT / "campaigns/chapter"
-EVIDENCE = CHAPTER / "manuscript_evidence"
-FRACTION = ROOT / "campaigns/woven_fraction/revision"
+CHAPTER = EVIDENCE = FRACTION = None  # Assigned inside the isolated archive context.
 
 
 def read(path):
@@ -76,6 +74,20 @@ def csv_write(out, name, rows):
 
 
 def regenerate(out):
+    global CHAPTER, EVIDENCE, FRACTION
+    archive = load("paper_archive_paths", ROOT / "repro/scripts/archive_paths.py")
+    previous = CHAPTER, EVIDENCE, FRACTION
+    try:
+        with archive.staged_campaigns(ROOT) as stage:
+            CHAPTER = stage / "chapter"
+            EVIDENCE = CHAPTER / "manuscript_evidence"
+            FRACTION = stage / "woven_fraction/revision"
+            _regenerate(out)
+    finally:
+        CHAPTER, EVIDENCE, FRACTION = previous
+
+
+def _regenerate(out):
     verified = verify()
     out.mkdir(parents=True, exist_ok=True)
     sys.path.insert(0, str(CHAPTER))
@@ -242,8 +254,9 @@ def regenerate(out):
         "| Manuscript item | Section | Output |", "|---|---|---|"]
     for item in manifest["items"]:
         lines.append(f'| {item["item"]} | {item["section"]} | [{item["output"]}]({item["output"]}) |')
-    lines += ["", "Raw source columns are relative to campaigns/chapter/manuscript_evidence, except Figure 11 sources,",
-              "which are relative to campaigns/woven_fraction/revision/review_results/woven_fraction_20261025.", "",
+    lines += ["", "Source columns preserve the original campaign-relative identifiers. Prepend the historical roots",
+              "campaigns/chapter/manuscript_evidence/ (or campaigns/woven_fraction/revision/review_results/woven_fraction_20261025/",
+              "for Figure 11), then resolve through ../path_map.json to the current archive/ files.", "",
               "Figure 8 uses 480³ as the reference. Table 3 uses stencil Jacobi–PCG for all three cases.",
               "Archived 19-row summaries and 256³-reference summaries are historical inputs, not current manuscript outputs.", ""]
     (out / "TABLES.md").write_text("\n".join(lines), encoding="utf-8")

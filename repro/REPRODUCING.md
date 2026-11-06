@@ -1,6 +1,6 @@
 # Reproduction guide
 
-Maintained release: v0.1.0. Use the root run.py entry and the source under src/voxel_lmfem/. The campaigns directory is a frozen evidence archive. See docs/installation.md and docs/usage.md for the installed API.
+Maintained release: v0.1.0. Use the root run.py entry and the source under src/voxel_lmfem/. The archive directory contains the frozen evidence. Original paths are recorded in repro/path_map.json; the reproduction command restores the old analyzer layout only in a temporary directory. See docs/installation.md and docs/usage.md for the installed API.
 
 ## 1. CPU regeneration of published values
 
@@ -72,7 +72,7 @@ For a fresh high-resolution convergence point:
 
     uv run --no-sync ./run chapter-study --phase launch --cases woven --grid 480 --variants execution_fp32 --repeats 3 --out runs/convergence480
 
-The exact older grid-cost jobs, method choices and reference media are recorded under campaigns/chapter/manuscript_evidence/review_results/grid_refinement_20261023/remote/plan.json and campaigns/chapter/manuscript_evidence/review_results/stencil27_baseline_20261023/formal/. Paths inside saved plans describe the original machine; use the included drivers and select a new runs/ destination. The currently regenerated CSVs always use the archived campaign, not results from a new run.
+The exact older grid-cost jobs, method choices and reference media are recorded under archive/paper/scaling/remote/plan.json and archive/paper/stencil/formal/. Paths inside saved plans describe the original machine; use the included drivers and select a new runs/ destination. The currently regenerated CSVs always use the archived campaign, not results from a new run.
 
 For Appendix D's 54-run active-fraction sweep:
 
@@ -87,7 +87,7 @@ From the repository root:
     chmod +x run
     uv run --no-sync ./run woven-fraction --phase launch --grid 192 --fractions all --repeats 3 --out runs/woven_fraction
 
-The driver executes all three configurations at each fraction and rotates their order. The corresponding analyzer is campaigns/woven_fraction/revision/experiments/woven_fraction_20261025/analyze.py. Its input directory must contain raw/results and raw/logs; the saved campaign demonstrates that layout.
+The driver executes all three configurations at each fraction and rotates their order. The corresponding analyzer is archive/woven/analysis/analyze.py. Its input directory must contain raw/results and raw/logs; the saved campaign demonstrates that layout.
 
 ## 6. Measurement conventions
 

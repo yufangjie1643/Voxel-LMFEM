@@ -9,8 +9,8 @@ Third-party chfem source is distributed with its existing MIT license:
 - baselines/chfem/LICENSE
 - baselines/chfem_reference/LICENSE
 
-- campaigns/chapter/solver/baselines/chfem/LICENSE
-- campaigns/chapter/solver/baselines/chfem_reference/LICENSE
+- archive/chapter/solver/baselines/chfem/LICENSE
+- archive/chapter/solver/baselines/chfem_reference/LICENSE
 
 The copyright notices in those files remain intact. Grosmont geometry is derived from the segmented digital-rock benchmark attributed to Andrä et al. in the manuscript; the package includes the specific crop and resampling used in the calculations, not the original full-volume dataset.
 

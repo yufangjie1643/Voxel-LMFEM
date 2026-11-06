@@ -10,7 +10,7 @@ Voxel-LMFEM solves periodic small-strain elasticity on fully integrated rectangu
 
 Install [uv](https://docs.astral.sh/uv/getting-started/installation/), then:
 
-    git -c core.longpaths=true clone https://github.com/yufangjie1643/Voxel-LMFEM.git
+    git clone https://github.com/yufangjie1643/Voxel-LMFEM.git
     cd Voxel-LMFEM
     uv venv --python 3.12
     uv pip install -e .
@@ -55,7 +55,7 @@ Phase arrays use (z,y,x); domain lengths use (x,y,z). The engineering-Voigt orde
 | baselines | Third-party solver source and licenses |
 | docs | Installation, use, architecture and development |
 | repro | Paper map, checksums, scripts and generated tables |
-| campaigns | Frozen source/result evidence used by the paper |
+| archive | Frozen source/result evidence used by the paper |
 | runs | New local outputs, ignored by Git |
 
 Historical snapshots are retained for provenance. New solves use the maintained source through the public API or root runner.

@@ -6,19 +6,75 @@
   "release_tag": "v0.1.0",
   "entry_point": "repro/scripts/reproduce_paper_tables.py",
   "integrity_manifest": "repro/file_manifest.json",
-  "chapter_evidence_root": "campaigns/chapter/manuscript_evidence",
-  "woven_fraction_evidence_root": "campaigns/woven_fraction/revision/review_results/woven_fraction_20261025",
+  "chapter_evidence_root": "archive/paper",
+  "woven_fraction_evidence_root": "archive/woven/results",
   "items": [
-    {"item":"Table 1 — constituent properties","section":"4.1","label":"tab:woven_constituent_properties","output":"table_1_constituent_properties.csv"},
-    {"item":"Table 2 — effective-stiffness verification","section":"4.1","label":"tab:verification-summary","output":"table_2_verification.csv"},
-    {"item":"Table 3 — six-row solver comparison","section":"5.1","label":"tab:solver-summary","output":"table_3_solver_summary.csv"},
-    {"item":"Figure 8 — eleven grids through 480³","section":"4.2","label":"fig:fi-grid-convergence","output":"figure_8_grid_convergence.csv"},
-    {"item":"Figure 9 — optimization stages","section":"5.2","label":"fig:fi-workflow-cost","output":"figure_9_optimization_chain.csv"},
-    {"item":"Figure 10 — computational scale and cost","section":"5.3","label":"fig:fi-grid-scaling","output":"figure_10_grid_cost.csv"},
-    {"item":"Figure 11 — 21 yarn fractions","section":"5.4","label":"fig:fi-woven-fraction","output":"figure_11_woven_fraction.csv"},
-    {"item":"Figure 11 — relative savings","section":"5.4","label":"fig:fi-woven-fraction","output":"figure_11_gains.csv"},
-    {"item":"Figure D.1 — nine active fractions","section":"Appendix D","label":"fig:fi-active-fraction","output":"figure_D1_active_fraction.csv"},
-    {"item":"Component timings","section":"Appendix D","label":"app:solver-ablation","output":"appendix_D_component_comparisons.csv"},
-    {"item":"Headline and precision checks","section":"4.2, 5.1, 5.2, 5.4","output":"headline_checks.json"}
-  ]
+    {
+      "item": "Table 1 \u2014 constituent properties",
+      "section": "4.1",
+      "label": "tab:woven_constituent_properties",
+      "output": "table_1_constituent_properties.csv"
+    },
+    {
+      "item": "Table 2 \u2014 effective-stiffness verification",
+      "section": "4.1",
+      "label": "tab:verification-summary",
+      "output": "table_2_verification.csv"
+    },
+    {
+      "item": "Table 3 \u2014 six-row solver comparison",
+      "section": "5.1",
+      "label": "tab:solver-summary",
+      "output": "table_3_solver_summary.csv"
+    },
+    {
+      "item": "Figure 8 \u2014 eleven grids through 480\u00b3",
+      "section": "4.2",
+      "label": "fig:fi-grid-convergence",
+      "output": "figure_8_grid_convergence.csv"
+    },
+    {
+      "item": "Figure 9 \u2014 optimization stages",
+      "section": "5.2",
+      "label": "fig:fi-workflow-cost",
+      "output": "figure_9_optimization_chain.csv"
+    },
+    {
+      "item": "Figure 10 \u2014 computational scale and cost",
+      "section": "5.3",
+      "label": "fig:fi-grid-scaling",
+      "output": "figure_10_grid_cost.csv"
+    },
+    {
+      "item": "Figure 11 \u2014 21 yarn fractions",
+      "section": "5.4",
+      "label": "fig:fi-woven-fraction",
+      "output": "figure_11_woven_fraction.csv"
+    },
+    {
+      "item": "Figure 11 \u2014 relative savings",
+      "section": "5.4",
+      "label": "fig:fi-woven-fraction",
+      "output": "figure_11_gains.csv"
+    },
+    {
+      "item": "Figure D.1 \u2014 nine active fractions",
+      "section": "Appendix D",
+      "label": "fig:fi-active-fraction",
+      "output": "figure_D1_active_fraction.csv"
+    },
+    {
+      "item": "Component timings",
+      "section": "Appendix D",
+      "label": "app:solver-ablation",
+      "output": "appendix_D_component_comparisons.csv"
+    },
+    {
+      "item": "Headline and precision checks",
+      "section": "4.2, 5.1, 5.2, 5.4",
+      "output": "headline_checks.json"
+    }
+  ],
+  "source_path_map": "repro/path_map.json",
+  "source_columns": "Historical campaign-relative identifiers; resolve full original_path through source_path_map."
 }

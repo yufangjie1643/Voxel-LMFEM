@@ -57,6 +57,6 @@ Prepare canonical isotropic inputs in a repository checkout:
     uv run --no-sync python run.py chapter-study --phase launch --cases sphere,grosmont,woven --grid 192 --variants stencil27_jacobi,execution_fp32 --repeats 3 --out runs/table3
     uv run --no-sync python run.py woven-fraction --phase launch --grid 192 --fractions all --repeats 3 --out runs/woven_fraction
 
-Launch phases create fresh worker processes through the Unix launcher; run GPU campaigns on Linux. Use uv run --no-sync python run.py COMMAND --help for driver options. Maintained drivers read data/cases/; historical snapshots retain original paths.
+Launch phases create fresh worker processes through the Unix launcher; run GPU campaigns on Linux. Use uv run --no-sync python run.py COMMAND --help for driver options. Maintained drivers read data/cases/; historical identifiers are resolved through repro/path_map.json.
 
 Each process owns a configured numerical backend. Use separate processes for concurrent solves; the compatibility modules do not support simultaneous solver configurations in multiple threads.

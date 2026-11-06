@@ -11,7 +11,7 @@ import numpy as np
 
 HERE = Path(__file__).resolve().parent
 MATERIALS = [{"E": 3500.0, "nu": 0.35}, {"E": 70000.0, "nu": 0.20}]
-DEFAULT_ARCHIVE = __import__("project_paths").ROOT / "campaigns/chapter/solver/data/grosmont"
+DEFAULT_ARCHIVE = __import__("project_paths").ROOT / "archive/chapter/solver/data/grosmont"
 
 
 def sha(path):

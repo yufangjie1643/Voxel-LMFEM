@@ -1,8 +1,8 @@
 # Installation
 
-Install [uv](https://docs.astral.sh/uv/getting-started/installation/) first. Python 3.10 or newer is required; the commands below select Python 3.12, matching the release checks. Use a short checkout path on Windows because the retained archive contains long historical paths.
+Install [uv](https://docs.astral.sh/uv/getting-started/installation/) first. Python 3.10 or newer is required; the commands below select Python 3.12, matching the release checks. Repository paths are checked for Windows compatibility; use the ordinary clone command below.
 
-    git -c core.longpaths=true clone https://github.com/yufangjie1643/Voxel-LMFEM.git
+    git clone https://github.com/yufangjie1643/Voxel-LMFEM.git
     cd Voxel-LMFEM
     uv venv --python 3.12
     uv pip install -e .
