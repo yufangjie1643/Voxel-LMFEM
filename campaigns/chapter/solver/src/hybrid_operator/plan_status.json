@@ -1,0 +1,458 @@
+{
+  "complete": true,
+  "jobs": [
+    {
+      "name": "full_baseline_128_strong_192_r0",
+      "arguments": [
+        "study.py",
+        "--mode",
+        "full",
+        "--variant",
+        "baseline",
+        "--block",
+        "128",
+        "--grid",
+        "192",
+        "--case",
+        "strong",
+        "--repeat",
+        "0"
+      ]
+    },
+    {
+      "name": "full_split_delta_64_strong_192_r0",
+      "arguments": [
+        "study.py",
+        "--mode",
+        "full",
+        "--variant",
+        "split_delta",
+        "--block",
+        "64",
+        "--grid",
+        "192",
+        "--case",
+        "strong",
+        "--repeat",
+        "0"
+      ]
+    },
+    {
+      "name": "full_split_64_strong_192_r0",
+      "arguments": [
+        "study.py",
+        "--mode",
+        "full",
+        "--variant",
+        "split",
+        "--block",
+        "64",
+        "--grid",
+        "192",
+        "--case",
+        "strong",
+        "--repeat",
+        "0"
+      ]
+    },
+    {
+      "name": "full_baseline_128_near_128_r0",
+      "arguments": [
+        "study.py",
+        "--mode",
+        "full",
+        "--variant",
+        "baseline",
+        "--block",
+        "128",
+        "--grid",
+        "128",
+        "--case",
+        "near",
+        "--repeat",
+        "0"
+      ]
+    },
+    {
+      "name": "full_split_delta_64_near_128_r0",
+      "arguments": [
+        "study.py",
+        "--mode",
+        "full",
+        "--variant",
+        "split_delta",
+        "--block",
+        "64",
+        "--grid",
+        "128",
+        "--case",
+        "near",
+        "--repeat",
+        "0"
+      ]
+    },
+    {
+      "name": "full_split_64_near_128_r0",
+      "arguments": [
+        "study.py",
+        "--mode",
+        "full",
+        "--variant",
+        "split",
+        "--block",
+        "64",
+        "--grid",
+        "128",
+        "--case",
+        "near",
+        "--repeat",
+        "0"
+      ]
+    },
+    {
+      "name": "full_split_64_strong_192_r1",
+      "arguments": [
+        "study.py",
+        "--mode",
+        "full",
+        "--variant",
+        "split",
+        "--block",
+        "64",
+        "--grid",
+        "192",
+        "--case",
+        "strong",
+        "--repeat",
+        "1"
+      ]
+    },
+    {
+      "name": "full_baseline_128_strong_192_r1",
+      "arguments": [
+        "study.py",
+        "--mode",
+        "full",
+        "--variant",
+        "baseline",
+        "--block",
+        "128",
+        "--grid",
+        "192",
+        "--case",
+        "strong",
+        "--repeat",
+        "1"
+      ]
+    },
+    {
+      "name": "full_split_delta_64_strong_192_r1",
+      "arguments": [
+        "study.py",
+        "--mode",
+        "full",
+        "--variant",
+        "split_delta",
+        "--block",
+        "64",
+        "--grid",
+        "192",
+        "--case",
+        "strong",
+        "--repeat",
+        "1"
+      ]
+    },
+    {
+      "name": "full_split_64_near_128_r1",
+      "arguments": [
+        "study.py",
+        "--mode",
+        "full",
+        "--variant",
+        "split",
+        "--block",
+        "64",
+        "--grid",
+        "128",
+        "--case",
+        "near",
+        "--repeat",
+        "1"
+      ]
+    },
+    {
+      "name": "full_baseline_128_near_128_r1",
+      "arguments": [
+        "study.py",
+        "--mode",
+        "full",
+        "--variant",
+        "baseline",
+        "--block",
+        "128",
+        "--grid",
+        "128",
+        "--case",
+        "near",
+        "--repeat",
+        "1"
+      ]
+    },
+    {
+      "name": "full_split_delta_64_near_128_r1",
+      "arguments": [
+        "study.py",
+        "--mode",
+        "full",
+        "--variant",
+        "split_delta",
+        "--block",
+        "64",
+        "--grid",
+        "128",
+        "--case",
+        "near",
+        "--repeat",
+        "1"
+      ]
+    },
+    {
+      "name": "full_split_delta_64_strong_192_r2",
+      "arguments": [
+        "study.py",
+        "--mode",
+        "full",
+        "--variant",
+        "split_delta",
+        "--block",
+        "64",
+        "--grid",
+        "192",
+        "--case",
+        "strong",
+        "--repeat",
+        "2"
+      ]
+    },
+    {
+      "name": "full_split_64_strong_192_r2",
+      "arguments": [
+        "study.py",
+        "--mode",
+        "full",
+        "--variant",
+        "split",
+        "--block",
+        "64",
+        "--grid",
+        "192",
+        "--case",
+        "strong",
+        "--repeat",
+        "2"
+      ]
+    },
+    {
+      "name": "full_baseline_128_strong_192_r2",
+      "arguments": [
+        "study.py",
+        "--mode",
+        "full",
+        "--variant",
+        "baseline",
+        "--block",
+        "128",
+        "--grid",
+        "192",
+        "--case",
+        "strong",
+        "--repeat",
+        "2"
+      ]
+    },
+    {
+      "name": "full_split_delta_64_near_128_r2",
+      "arguments": [
+        "study.py",
+        "--mode",
+        "full",
+        "--variant",
+        "split_delta",
+        "--block",
+        "64",
+        "--grid",
+        "128",
+        "--case",
+        "near",
+        "--repeat",
+        "2"
+      ]
+    },
+    {
+      "name": "full_split_64_near_128_r2",
+      "arguments": [
+        "study.py",
+        "--mode",
+        "full",
+        "--variant",
+        "split",
+        "--block",
+        "64",
+        "--grid",
+        "128",
+        "--case",
+        "near",
+        "--repeat",
+        "2"
+      ]
+    },
+    {
+      "name": "full_baseline_128_near_128_r2",
+      "arguments": [
+        "study.py",
+        "--mode",
+        "full",
+        "--variant",
+        "baseline",
+        "--block",
+        "128",
+        "--grid",
+        "128",
+        "--case",
+        "near",
+        "--repeat",
+        "2"
+      ]
+    }
+  ],
+  "completed": [
+    {
+      "name": "full_baseline_128_strong_192_r0",
+      "log": "/home/yufan/code/fead-hybrid-operator-20261021/logs/full_baseline_128_strong_192_r0.log",
+      "telemetry": "/home/yufan/code/fead-hybrid-operator-20261021/logs/full_baseline_128_strong_192_r0_telemetry.json",
+      "process_wall_seconds": 8.492241060943343,
+      "complete": true
+    },
+    {
+      "name": "full_split_delta_64_strong_192_r0",
+      "log": "/home/yufan/code/fead-hybrid-operator-20261021/logs/full_split_delta_64_strong_192_r0.log",
+      "telemetry": "/home/yufan/code/fead-hybrid-operator-20261021/logs/full_split_delta_64_strong_192_r0_telemetry.json",
+      "process_wall_seconds": 7.62421932106372,
+      "complete": true
+    },
+    {
+      "name": "full_split_64_strong_192_r0",
+      "log": "/home/yufan/code/fead-hybrid-operator-20261021/logs/full_split_64_strong_192_r0.log",
+      "telemetry": "/home/yufan/code/fead-hybrid-operator-20261021/logs/full_split_64_strong_192_r0_telemetry.json",
+      "process_wall_seconds": 7.652429754030891,
+      "complete": true
+    },
+    {
+      "name": "full_baseline_128_near_128_r0",
+      "log": "/home/yufan/code/fead-hybrid-operator-20261021/logs/full_baseline_128_near_128_r0.log",
+      "telemetry": "/home/yufan/code/fead-hybrid-operator-20261021/logs/full_baseline_128_near_128_r0_telemetry.json",
+      "process_wall_seconds": 4.757639592979103,
+      "complete": true
+    },
+    {
+      "name": "full_split_delta_64_near_128_r0",
+      "log": "/home/yufan/code/fead-hybrid-operator-20261021/logs/full_split_delta_64_near_128_r0.log",
+      "telemetry": "/home/yufan/code/fead-hybrid-operator-20261021/logs/full_split_delta_64_near_128_r0_telemetry.json",
+      "process_wall_seconds": 4.585879173944704,
+      "complete": true
+    },
+    {
+      "name": "full_split_64_near_128_r0",
+      "log": "/home/yufan/code/fead-hybrid-operator-20261021/logs/full_split_64_near_128_r0.log",
+      "telemetry": "/home/yufan/code/fead-hybrid-operator-20261021/logs/full_split_64_near_128_r0_telemetry.json",
+      "process_wall_seconds": 4.6039432369871065,
+      "complete": true
+    },
+    {
+      "name": "full_split_64_strong_192_r1",
+      "log": "/home/yufan/code/fead-hybrid-operator-20261021/logs/full_split_64_strong_192_r1.log",
+      "telemetry": "/home/yufan/code/fead-hybrid-operator-20261021/logs/full_split_64_strong_192_r1_telemetry.json",
+      "process_wall_seconds": 7.601645151968114,
+      "complete": true
+    },
+    {
+      "name": "full_baseline_128_strong_192_r1",
+      "log": "/home/yufan/code/fead-hybrid-operator-20261021/logs/full_baseline_128_strong_192_r1.log",
+      "telemetry": "/home/yufan/code/fead-hybrid-operator-20261021/logs/full_baseline_128_strong_192_r1_telemetry.json",
+      "process_wall_seconds": 8.326773241045885,
+      "complete": true
+    },
+    {
+      "name": "full_split_delta_64_strong_192_r1",
+      "log": "/home/yufan/code/fead-hybrid-operator-20261021/logs/full_split_delta_64_strong_192_r1.log",
+      "telemetry": "/home/yufan/code/fead-hybrid-operator-20261021/logs/full_split_delta_64_strong_192_r1_telemetry.json",
+      "process_wall_seconds": 7.609039210015908,
+      "complete": true
+    },
+    {
+      "name": "full_split_64_near_128_r1",
+      "log": "/home/yufan/code/fead-hybrid-operator-20261021/logs/full_split_64_near_128_r1.log",
+      "telemetry": "/home/yufan/code/fead-hybrid-operator-20261021/logs/full_split_64_near_128_r1_telemetry.json",
+      "process_wall_seconds": 4.643695051083341,
+      "complete": true
+    },
+    {
+      "name": "full_baseline_128_near_128_r1",
+      "log": "/home/yufan/code/fead-hybrid-operator-20261021/logs/full_baseline_128_near_128_r1.log",
+      "telemetry": "/home/yufan/code/fead-hybrid-operator-20261021/logs/full_baseline_128_near_128_r1_telemetry.json",
+      "process_wall_seconds": 4.7482699790271,
+      "complete": true
+    },
+    {
+      "name": "full_split_delta_64_near_128_r1",
+      "log": "/home/yufan/code/fead-hybrid-operator-20261021/logs/full_split_delta_64_near_128_r1.log",
+      "telemetry": "/home/yufan/code/fead-hybrid-operator-20261021/logs/full_split_delta_64_near_128_r1_telemetry.json",
+      "process_wall_seconds": 4.6530719359871,
+      "complete": true
+    },
+    {
+      "name": "full_split_delta_64_strong_192_r2",
+      "log": "/home/yufan/code/fead-hybrid-operator-20261021/logs/full_split_delta_64_strong_192_r2.log",
+      "telemetry": "/home/yufan/code/fead-hybrid-operator-20261021/logs/full_split_delta_64_strong_192_r2_telemetry.json",
+      "process_wall_seconds": 7.6956950759049505,
+      "complete": true
+    },
+    {
+      "name": "full_split_64_strong_192_r2",
+      "log": "/home/yufan/code/fead-hybrid-operator-20261021/logs/full_split_64_strong_192_r2.log",
+      "telemetry": "/home/yufan/code/fead-hybrid-operator-20261021/logs/full_split_64_strong_192_r2_telemetry.json",
+      "process_wall_seconds": 7.665331255993806,
+      "complete": true
+    },
+    {
+      "name": "full_baseline_128_strong_192_r2",
+      "log": "/home/yufan/code/fead-hybrid-operator-20261021/logs/full_baseline_128_strong_192_r2.log",
+      "telemetry": "/home/yufan/code/fead-hybrid-operator-20261021/logs/full_baseline_128_strong_192_r2_telemetry.json",
+      "process_wall_seconds": 8.361515815020539,
+      "complete": true
+    },
+    {
+      "name": "full_split_delta_64_near_128_r2",
+      "log": "/home/yufan/code/fead-hybrid-operator-20261021/logs/full_split_delta_64_near_128_r2.log",
+      "telemetry": "/home/yufan/code/fead-hybrid-operator-20261021/logs/full_split_delta_64_near_128_r2_telemetry.json",
+      "process_wall_seconds": 4.612519314978272,
+      "complete": true
+    },
+    {
+      "name": "full_split_64_near_128_r2",
+      "log": "/home/yufan/code/fead-hybrid-operator-20261021/logs/full_split_64_near_128_r2.log",
+      "telemetry": "/home/yufan/code/fead-hybrid-operator-20261021/logs/full_split_64_near_128_r2_telemetry.json",
+      "process_wall_seconds": 4.584362822002731,
+      "complete": true
+    },
+    {
+      "name": "full_baseline_128_near_128_r2",
+      "log": "/home/yufan/code/fead-hybrid-operator-20261021/logs/full_baseline_128_near_128_r2.log",
+      "telemetry": "/home/yufan/code/fead-hybrid-operator-20261021/logs/full_baseline_128_near_128_r2_telemetry.json",
+      "process_wall_seconds": 4.7174032049952075,
+      "complete": true
+    }
+  ],
+  "failed": null
+}

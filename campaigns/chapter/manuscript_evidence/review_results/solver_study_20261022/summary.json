@@ -1,0 +1,2894 @@
+{
+  "complete": true,
+  "workflows": 84,
+  "measured_loads": 504,
+  "warmup_loads": 504,
+  "small_gpu_operator_checks": 25,
+  "max_independent_Ku_error": 5.053312322765692e-16,
+  "max_independent_CH_error": 4.957528407293405e-12,
+  "max_small_true_residual": 9.935228846804746e-11,
+  "certifications": [
+    {
+      "case": "grosmont",
+      "grid": 192,
+      "max_true_residual": 9.587417568463894e-09
+    },
+    {
+      "case": "sphere",
+      "grid": 192,
+      "max_true_residual": 8.846365102215826e-09
+    },
+    {
+      "case": "woven",
+      "grid": 128,
+      "max_true_residual": 9.841318327711675e-09
+    },
+    {
+      "case": "woven",
+      "grid": 192,
+      "max_true_residual": 8.806873602357516e-09
+    },
+    {
+      "case": "woven",
+      "grid": 256,
+      "max_true_residual": 9.65811310132292e-09
+    },
+    {
+      "case": "woven",
+      "grid": 64,
+      "max_true_residual": 8.976203210719047e-09
+    }
+  ],
+  "max_true_residual": 9.841319347412186e-09,
+  "pairwise_CH_differences": {
+    "fraction50_128": 3.1811188354743015e-16,
+    "fraction90_128": 1.4241309981275266e-16,
+    "grosmont_192": 8.708440622857031e-09,
+    "sphere_192": 1.531965191446196e-08,
+    "woven_64": 4.6899190202207233e-11,
+    "woven_128": 2.40284634125981e-11,
+    "woven_192": 2.4798476503869916e-11,
+    "woven_256": 7.280665168726627e-18
+  },
+  "resolution_relative_to_256": {
+    "64": 0.008853851618120575,
+    "128": 0.0022627449823690994,
+    "192": 0.0006847054211849668
+  },
+  "environment": {
+    "gpu": "NVIDIA GeForce RTX 5090",
+    "torch": "2.12.0+cu130",
+    "cuda": "13.0",
+    "python": "3.12.13 (main, Jun 11 2026, 04:03:26) [Clang 22.1.3 ]",
+    "threads": 1
+  },
+  "sources": {
+    "/home/yufan/code/fead-chain-20261021/chain_adapter.py": "351a9f684f52c3f4cef2b35c7bb43b7d14314621930c70156529ae4bfa41a05f",
+    "/home/yufan/code/fead-chain-20261021/chain_study.py": "49b1376a83a8eaaac578b7af7d176f6be4f5a85dfe920b285e9013aa60b67708",
+    "/home/yufan/code/fead-chain-20261021/closed_study.py": "c51a515aad8b48ccc10ce18326db99afbb2b1723419e9da81a2b8bb67de80878",
+    "/home/yufan/code/fead-chain-20261021/reference_closed_form.py": "6529f7e1b2993a21353199d163273aaf596c7804447f76852b66a31171798aad",
+    "/home/yufan/code/fead-chain-20261021/reference_design.py": "9bcac32603c6a3943df7ce1af8fd9e4c118b63899fe681433aa80c992416403c",
+    "/home/yufan/code/fead-chain-20261021/reference_study.py": "39134289b60d1b5fede4ee5583c199ba8bdf1d69c802924d0c384e250b7d322a",
+    "/home/yufan/code/fead-fft-contest-20261020/contest_adapter.py": "2ba9e2195862ec59762f80f0e44a2cb64b66ae472314b3458ae9d0a13261c853",
+    "/home/yufan/code/fead-fft-contest-20261020/contest_kernels.cu": "9beb1d7a651b7d001ea9fa04f5a3671fe59a0096950a808eab24c137f26c871a",
+    "/home/yufan/code/fead-fft-contest-20261020/native_adapter.py": "58705326d57584045e4036b7e112bdfb8eacfdd96e0ff14b57be9f99402dbc81",
+    "/home/yufan/code/fead-fft-contest-20261020/native_fft.cu": "f414368f2a178aef549aa8095ee7a50e7b4465a6fe706f1f664eadd7d9150d71",
+    "/home/yufan/code/fead-formula-20261020/formula_adapter.py": "ee143412198fef9cce20a5268bef286c02b53384914358e5fc55d7d7672c38d8",
+    "/home/yufan/code/fead-formula-20261020/formula_kernels.cu": "0ca18975dafb048d63095d231e58495654f35f47eab555292ebba76335c29862",
+    "/home/yufan/code/fead-formula-20261020/formula_study.py": "dcd3b40ab02ae2e0a3994ce5aa5c6a1c02d4ab35d4a93f9f0943da9888cd5ac3",
+    "/home/yufan/code/fead-modal-hex8-20261020/gpu_study.py": "b212b479805d605b3ac944b51f33f2d64ce5035232f18da0eef4978162ca083a",
+    "/home/yufan/code/fead-modal-hex8-20261020/modal_adapter.py": "667aceaaf83183675e0bfb0f5870e84de8a946930143bb5285941c11b36ed7df",
+    "/home/yufan/code/fead-modal-hex8-20261020/modal_kernels.cu": "4c9a601a17ae7a9f53d988e6c8778de2d81dccd7333b50b0a818c7ad7d019fb6",
+    "/home/yufan/code/fead-pipeline-20261020/modal_functions.cuh": "189a165189592915705569096ec6576fd7f1292951260bf5d13e7ca3dbd8268d",
+    "/home/yufan/code/fead-pipeline-20261020/pipeline_adapter.py": "1dae25bcc711cc4e1371baed97fb6053b6fb7032aa105b4245d365a2112eeb67",
+    "/home/yufan/code/fead-pipeline-20261020/pipeline_kernels.cu": "940ae597b855f57bd5a4f09eeb09cb8d103774f460b0415e4a353ea568542f09",
+    "/home/yufan/code/fead-pipeline-20261020/pipeline_study.py": "c8522f2cd42f215028416ec698723c4071ca91c27e867b8df627849682224251",
+    "/home/yufan/code/fead-recompute-20261017-tol1e8/benchmark.py": "aeebe7cb6cbf55f021adc63a6336bff6ebeea688e82b632ff456c146ab667fe4",
+    "/home/yufan/code/fead-recompute-20261017-tol1e8/fi/atomic_adapter.py": "479da6a71f84b79a81a27c5f5163ebbf06dc5bbd85be55d960c612746e6fa011",
+    "/home/yufan/code/fead-recompute-20261017-tol1e8/fi/atomic_kernels.cu": "c11b0454ff4c25474b7b52f50f2d77267a07dd9f30030054159d46356f7b9179",
+    "/home/yufan/code/fead-recompute-20261017-tol1e8/fi/fi_reference.py": "1d97eb6f4a0d71fb9d4e0ce46a89b102b3b6d72217944f24b4fcbff4472b0159",
+    "/home/yufan/code/fead-recompute-20261017-tol1e8/fi/grouped_adapter.py": "23b5f55b3419aad82b08b8cafa90bd9b84ac397f90a474a73836fc85619f4671",
+    "/home/yufan/code/fead-recompute-20261017-tol1e8/fi/grouped_kernels.cu": "366417bc5707eb7cb59cbd1610abf86705b49ec97af7a5b7473f56a97d6a4010",
+    "/home/yufan/code/fead-recompute-20261017-tol1e8/fi/memory_adapter.py": "fd9120e4b1ad93922493a326e49da55f998c358145917c52d61905434aa03eff",
+    "/home/yufan/code/fead-recompute-20261017-tol1e8/fi/memory_kernels.cu": "4bf1bd1365ba53b2aeb595beb85044ae8f5cb1024130465695451591b8b55959",
+    "/home/yufan/code/fead-recompute-20261017-tol1e8/fi/source/femlib/__init__.py": "11fd28410ec8900de96f2728598403ebdada1d5bde256f15d10a19b0cf2937c3",
+    "/home/yufan/code/fead-recompute-20261017-tol1e8/fi/source/femlib/batched/__init__.py": "7495fef0802a94f776e5a013fbd79db83b3c070c5f3f0ff7a4a43a40cc143c5c",
+    "/home/yufan/code/fead-recompute-20261017-tol1e8/fi/source/femlib/batched/c3d8_cuda.py": "fa88a9bc9b0d9f17dfb327d4352256d8a4edcafbab1ea1ff6e6d1d0b1180b6c8",
+    "/home/yufan/code/fead-recompute-20261017-tol1e8/fi/source/femlib/batched/c3d8r_hourglass_operator.py": "6a2d179dff211f68efd2e5cb73bb90d43de6b389ce354085850e1904d6898aff",
+    "/home/yufan/code/fead-recompute-20261017-tol1e8/fi/source/femlib/batched/driver.py": "75fb88a4fce27eaed1e354e40b8e966cbb6e7f8cbc5bc78295250ab8af9f919b",
+    "/home/yufan/code/fead-recompute-20261017-tol1e8/fi/source/femlib/batched/fft_symbol_validation.py": "0be65e51f030cc8ec8550e6566fce0de3f5b5dfd8b691e22e1f2c19aa7a446ad",
+    "/home/yufan/code/fead-recompute-20261017-tol1e8/fi/source/femlib/batched/ir.py": "df1d83ffda346e0fc04fb4ee8e0c3553613a7f240e9ee5c5055ee41a0efb53e4",
+    "/home/yufan/code/fead-recompute-20261017-tol1e8/fi/source/femlib/batched/mesh_info.py": "bae4901d2ba9b695ab53a2784bf1fce379385046ea227dd191271e1b1d252611",
+    "/home/yufan/code/fead-recompute-20261017-tol1e8/fi/source/femlib/batched/pcg.py": "e349dc0c3e48be41af8f2e1a1a66d4b9c5f07ea1ec7ba2a6f57581f0b5fa5461",
+    "/home/yufan/code/fead-recompute-20261017-tol1e8/fi/source/femlib/batched/preconditioners/__init__.py": "4d166dca6e9f00511a09f5212892213bcd599aada13116b8e17c56168b1e3793",
+    "/home/yufan/code/fead-recompute-20261017-tol1e8/fi/source/femlib/batched/preconditioners/c3d8r_fft.py": "cf6ffc237d1756f7c11a99c0e8c7ed5710f985ef163580a668d39987ccdb93ba",
+    "/home/yufan/code/fead-recompute-20261017-tol1e8/fi/source/femlib/batched/stencil_operator.py": "c2ae37f069143cf5786022c71262fc16169775e91edf07877f7623c663fef384",
+    "/home/yufan/code/fead-recompute-20261017-tol1e8/fi/source/femlib/c3d8r.py": "1aa42c81cdaff3e0cd663ee6d6c30cef69fe282f6dc9206d777e7c98b46b3598",
+    "/home/yufan/code/fead-recompute-20261017-tol1e8/fi/source/femlib/connectivity.py": "b2ce6f9ad6e06b00c34b2f2bd189845a6beff33e5e54114e0164fc886b381070",
+    "/home/yufan/code/fead-recompute-20261017-tol1e8/fi/source/femlib/element_types.py": "091da6799e085e0a7ad64a8ae8793d71c660c20b47b0592aa0d6216d5acb4eda",
+    "/home/yufan/code/fead-recompute-20261017-tol1e8/fi/source/femlib/fem_batched.py": "d06a8f861b78643373e2e9b6448961252a061d3656cccf18a43fdf356ca7d849",
+    "/home/yufan/code/fead-recompute-20261017-tol1e8/fi/source/femlib/geometry.py": "9616e4393da72e13fbc2326cdb655452d739b4adece6cd6e404a9f9a759a168c",
+    "/home/yufan/code/fead-recompute-20261017-tol1e8/fi/source/femlib/materials.py": "334c7c71c05596010cef1497cabfeb990c0a4f1c521ed6d95206c79aa68302d0",
+    "/home/yufan/code/fead-recompute-20261017-tol1e8/fi/source/femlib/mesh.py": "b74c7060d7bd3368116430b33a8b9538166c8362d421426f6dca8dfff71fd3d0",
+    "/home/yufan/code/fead-recompute-20261017-tol1e8/fi/spatial_adapter.py": "e6a93fa95f62f418cfb0f6f9d499425938de34104900299e28bf8eed0b155cce",
+    "/home/yufan/code/fead-recompute-20261017-tol1e8/fi_benchmark.py": "c1ec2093bd8a9add9a981156dfedd30d008441de4ce5ad7fdb5f7ea569b9cf32",
+    "/home/yufan/code/fead-recompute-20261017-tol1e8/orientation_kernels.cu": "a62e4601e4e157fdf4b54391180596692ad7c4a74651e560732c95e03697500b",
+    "/home/yufan/code/fead-recompute-20261017-tol1e8/repro/extension_20261006/failure.cu": "fb72fe7607596485fe0f0add1202a08902da69df0c48d8279c14709112e0ca5e",
+    "/home/yufan/code/fead-recompute-20261017-tol1e8/repro/extension_20261006/material_control.py": "a02dd3958e3da53461b1d6f294047e206aa368172dc5e117a41b6df1c3f129c3",
+    "/home/yufan/code/fead-recompute-20261017-tol1e8/repro/extension_20261006/mixed_preconditioner.py": "df112cb1a956e903ce7f049e2361f0911df3ea7f8495d065124b9accd7c1d79c",
+    "/home/yufan/code/fead-recompute-20261017-tol1e8/repro/extension_20261006/physics.py": "33e3e5d94e6f8c590cb42aebbadfc46a52a557f246ca21b81f6d3a19baeabf6e",
+    "/home/yufan/code/fead-solver-study-20261022/cases.py": "f30311ee87b0f0e06a3562c106fa401c5b011e62eb1287c5e66d9c1c336bbd80",
+    "/home/yufan/code/fead-solver-study-20261022/chfem_study.py": "29e0e8da29ddc4d3ccb33693c08d72a3039f3fcca75e9bd8f69807241d7482d1",
+    "/home/yufan/code/fead-solver-study-20261022/legacy_inputs.py": "671bd50ccc165b9f080fbeafc7b4cd6df0a178f09a51e0a7437160efea9b838a",
+    "/home/yufan/code/fead-solver-study-20261022/plan.json": "546b989d12fec63961c38fc11736f72bc88537ce7808d29f7f70a4cd0f064092",
+    "/home/yufan/code/fead-solver-study-20261022/run_jobs.py": "124c515bba06b224f54738f0519e8eadbec4ad41fd684f8554a0a313e29de053",
+    "/home/yufan/code/fead-solver-study-20261022/study.py": "02543393f47cf38245cf995a8c62324d7bf9cea7fd948b0f9ec32123856b49fc",
+    "/home/yufan/code/fead-hybrid-operator-20261021/background.py": "36c658c4cb2101477d25ad444bdee358ef0eb38ff8552629f09390a942ca4880",
+    "/home/yufan/code/fead-hybrid-operator-20261021/background_grouped.cuh": "5d5572ce1fff338c74e56d0d73ae36fb926736c5665eb7bb1d1ad1842c0032cc",
+    "/home/yufan/code/fead-hybrid-operator-20261021/fi_isotropic.cuh": "cdc8aafee24032f70bee8fc01271a2e72e7ef8e2e8f2fa4100c76b8c9b8065b3",
+    "/home/yufan/code/fead-hybrid-operator-20261021/fi_modal.cuh": "66d5f352157050e8ca5f72fe46266e08e4d6021eb21fdc2cdca15129733e9ffb",
+    "/home/yufan/code/fead-hybrid-operator-20261021/operator_adapter.py": "277bd91c2b7dd04a269a92b69d5e6e8ad08a2fcb9ae4ce93c80918c0b4af3289",
+    "/home/yufan/code/fead-hybrid-operator-20261021/operator_kernels.cu": "6d84b7a9701767edd383637eed93e0f76279d7430da749b1358e8e1af790af0c",
+    "/home/yufan/code/fead-hybrid-storage-20261021/adapter.py": "21b72d868d163d5381ca8574bb1af99a1e142d14b9e3d8578d3029daeabbe0ee",
+    "/home/yufan/code/fead-hybrid-storage-20261021/fi_modal.cuh": "66d5f352157050e8ca5f72fe46266e08e4d6021eb21fdc2cdca15129733e9ffb",
+    "/home/yufan/code/fead-hybrid-storage-20261021/hybrid_adapter.py": "17093c54f64a73756b6376f1b613c026009f8a02675306167721431349d05986",
+    "/home/yufan/code/fead-hybrid-storage-20261021/hybrid_kernels.cu": "9ddf4e7e64e42eba35e731bba0807db83c8c415fd011884a37695fbecd316cbb",
+    "/home/yufan/code/fead-hybrid-storage-20261021/hybrid_material.py": "9540237dec4692d3f42feccf83c32c9052bb0db8e2947153cd038268641fee28",
+    "/home/yufan/code/fead-hybrid-storage-20261021/material_field.py": "db1564ebf40a1e7ce19199097f9c08e9a36641056589c9b703f34c12552d3b3d",
+    "/home/yufan/code/fead-chfem-fi-20261021/chfem_source/chfem/__init__.py": "f6fb1bb8a1bca4e0d0269ad3c9eb804739c1b59f799301ddf730a394e70241d6",
+    "/home/yufan/code/fead-chfem-fi-20261021/chfem_source/chfem/io.py": "562e4ffa6b3431d705689210a471894813e9d17a8f07b31530115b393e84a500",
+    "/home/yufan/code/fead-chfem-fi-20261021/chfem_source/chfem/wrapper.cpython-312-x86_64-linux-gnu.so": "6d039967a7134f6c5d13ca0a1c648685be366d0f4cb8063877407e52063c442b",
+    "/home/yufan/code/fead-chfem-fi-20261021/chfem_source/chfem/compute_properties.py": "398c370fd6831a127356bdd66591401ea04b832abc2328e95f5e68c183587faf",
+    "/home/yufan/code/fead-chfem-fi-20261021/chfem_source/chfem/src/chfem_wrapper.c": "987022d4a7cb2d790621004273c7ec7cadcc7f6d5263fb1df0d40824db101436",
+    "/home/yufan/code/fead-chfem-fi-20261021/chfem_source/chfem/src/main.c": "11aea944207294387b410d802e5935aa2c8b5e44333a3a4a8bca108bd84501d7",
+    "/home/yufan/code/fead-chfem-fi-20261021/chfem_source/chfem/src/includes.h": "97f2ebc7ee1adab4d4339fe59850b61c9b226e37a58398ae40bb72c2ddbe5024",
+    "/home/yufan/code/fead-chfem-fi-20261021/chfem_source/chfem/src/femhmg/includes.h": "6f326d456d572336684ffcc8eb4fea6e6c73e3a392cd018a5718b8db3de8fdd0",
+    "/home/yufan/code/fead-chfem-fi-20261021/chfem_source/chfem/src/femhmg/femhmg.h": "e944cbd66b985c6094f660917299868afe024c736f37133fff0e83959b1dac4b",
+    "/home/yufan/code/fead-chfem-fi-20261021/chfem_source/chfem/src/femhmg/femhmg.c": "b7e38b4dd26f6e3db599d0d9c27bcba8cbe8b928ed7198202b1d1df43feb3752",
+    "/home/yufan/code/fead-chfem-fi-20261021/chfem_source/chfem/src/femhmg/report/report.h": "4674355204e54d31a299886d0503cf7cea14f38645255df2148bbd785140bcd8",
+    "/home/yufan/code/fead-chfem-fi-20261021/chfem_source/chfem/src/femhmg/report/report.c": "7f6a4c9ce3020bae213a3abb1d3c41e340af2550a084873641c8a2672f3c346e",
+    "/home/yufan/code/fead-chfem-fi-20261021/chfem_source/chfem/src/femhmg/cudapcg/cudapcg.h": "e96f4cdcb32eda2ded22cb0b27e5073a0ba07716649bcbecf05643620db3b5fb",
+    "/home/yufan/code/fead-chfem-fi-20261021/chfem_source/chfem/src/femhmg/cudapcg/cudapcg.cu": "1706302d1dbb3cd8b68149e69822ae96261f55669ad705891d34a40e6ae01397",
+    "/home/yufan/code/fead-chfem-fi-20261021/chfem_source/chfem/src/femhmg/cudapcg/includes.h": "f703f71b57ff90e63ceb0b30c72f01efd35d5ee01545063bd388c2b8e31ab68a",
+    "/home/yufan/code/fead-chfem-fi-20261021/chfem_source/chfem/src/femhmg/cudapcg/error_handling.h": "dba765c875524cfc99c9117fc313b5ac46a817d1fea18e9765120752f2600aa4",
+    "/home/yufan/code/fead-chfem-fi-20261021/chfem_source/chfem/src/femhmg/physical_phenomena/femhmg_elastic_2D.h": "1e4596869d6c946fbefcad8e6488e5e631d675baa02ca1f2c5e01ad91e4e5465",
+    "/home/yufan/code/fead-chfem-fi-20261021/chfem_source/chfem/src/femhmg/physical_phenomena/femhmg_thermal_3D.h": "10ebc20ef0d6898f851f245b63b2a51432e82fd38f475fa527052a44220a00ae",
+    "/home/yufan/code/fead-chfem-fi-20261021/chfem_source/chfem/src/femhmg/physical_phenomena/femhmg_elastic_2D.c": "85cc2e6bfcc0fe7e7c981e27e19952041131ece0e0d386e04c7567e79bbc9874",
+    "/home/yufan/code/fead-chfem-fi-20261021/chfem_source/chfem/src/femhmg/physical_phenomena/femhmg_fluid_2D.h": "5df0d6a4127e5298283568a027064a789985b638e5063251de580660dd55f1f2",
+    "/home/yufan/code/fead-chfem-fi-20261021/chfem_source/chfem/src/femhmg/physical_phenomena/femhmg_3D.h": "b5ccf0d69cf6c911e12889f2f0357a654919472f82817dd0fbd62383f4192d7c",
+    "/home/yufan/code/fead-chfem-fi-20261021/chfem_source/chfem/src/femhmg/physical_phenomena/femhmg_fluid_3D.h": "ea358b19f789b267a324b201edd64ba848f99bfe4ae84ead9fffbd73f5c1a32b",
+    "/home/yufan/code/fead-chfem-fi-20261021/chfem_source/chfem/src/femhmg/physical_phenomena/femhmg_3D.c": "9d2e4cee4f10ead25e4608fdd283d441690b1a141cf8b6b58efd380607daa1db",
+    "/home/yufan/code/fead-chfem-fi-20261021/chfem_source/chfem/src/femhmg/physical_phenomena/femhmg_fluid_3D.c": "8142a833a6b4ba12fdf75794611fb52e1176d4797b169136532a9a51c5fa36fd",
+    "/home/yufan/code/fead-chfem-fi-20261021/chfem_source/chfem/src/femhmg/physical_phenomena/femhmg_thermal_2D.c": "85b842d73ef009ed778e04fe8cce2f329acd1a1f7b3b5f0614db6b6cbca5da7c",
+    "/home/yufan/code/fead-chfem-fi-20261021/chfem_source/chfem/src/femhmg/physical_phenomena/femhmg_elastic_3D.c": "3c36ac35667d520ef2fd233111ed708322b63c176e7af99fbcabe6f4c0168609",
+    "/home/yufan/code/fead-chfem-fi-20261021/chfem_source/chfem/src/femhmg/physical_phenomena/femhmg_2D.h": "5184d091a46724b6c23c65b413e19ff26243069f9043384b1bed493b3c15bb87",
+    "/home/yufan/code/fead-chfem-fi-20261021/chfem_source/chfem/src/femhmg/physical_phenomena/femhmg_thermal_3D.c": "8e59d5f83cb512db95c473369b2d0bb9acccaa37442c992e4216ce73b7062837",
+    "/home/yufan/code/fead-chfem-fi-20261021/chfem_source/chfem/src/femhmg/physical_phenomena/femhmg_elastic_3D.h": "4a53126f363cbd94b3824b9fff80797bb22a87add0c73253bae89bdb4b8934ac",
+    "/home/yufan/code/fead-chfem-fi-20261021/chfem_source/chfem/src/femhmg/physical_phenomena/femhmg_2D.c": "65c078679da61881addd8008e3bc991f17131ebe247e91ccb0324f34d9c079ad",
+    "/home/yufan/code/fead-chfem-fi-20261021/chfem_source/chfem/src/femhmg/physical_phenomena/femhmg_thermal_2D.h": "a2d6fa6af480f1fe916e42ecc4f509144b838d51e1a374c96f41ac455b481a7b",
+    "/home/yufan/code/fead-chfem-fi-20261021/chfem_source/chfem/src/femhmg/physical_phenomena/femhmg_fluid_2D.c": "e54d6a6d4787dd73d0b4399ddfd5704b966a941e6d4370f235202a67af1bf283",
+    "/home/yufan/code/fead-chfem-fi-20261021/chfem_source/chfem/src/femhmg/cudapcg/kernels/vector.cu": "3524ded380b00eac1bc6a26d243df9267179b8690f6fa3de9cc68ba27a197e6f",
+    "/home/yufan/code/fead-chfem-fi-20261021/chfem_source/chfem/src/femhmg/cudapcg/kernels/matrix_free.cu": "9a46534dfcf2e7f428627007938eb09386a123fd7cf20ae9b58b0fa460c2e605",
+    "/home/yufan/code/fead-chfem-fi-20261021/chfem_source/chfem/src/femhmg/cudapcg/kernels/vector.h": "cbea9461ea5d093b8255263f26c4c269943c103ef6f3b2cd07234561bfcaaa80",
+    "/home/yufan/code/fead-chfem-fi-20261021/chfem_source/chfem/src/femhmg/cudapcg/kernels/matrix_free.h": "0ff390073499bc80bf51ff98f1b77b09f02dd0e5cc4ada51affe3c85be8d61ed",
+    "/home/yufan/code/fead-chfem-fi-20261021/chfem_source/chfem/src/femhmg/cudapcg/kernels/image.cu": "1df7deb4714790fcb2ae92c134aa77164dcbda8dad1e02f6d69a2976f274a485",
+    "/home/yufan/code/fead-chfem-fi-20261021/chfem_source/chfem/src/femhmg/cudapcg/kernels/image.h": "1915b64e70644c80cd8eef5fd9a61e2fb764b5911407f4a561168cf8ec0d0db6",
+    "/home/yufan/code/fead-chfem-fi-20261021/chfem_source/chfem/src/femhmg/cudapcg/kernels/utils.h": "08f4e608aaf00fa4285d09a448c961df5d6ec127f0346e8b069d801efec93cee",
+    "/home/yufan/code/fead-chfem-fi-20261021/chfem_source/chfem/src/femhmg/cudapcg/kernels/wrappers.h": "76be9d3b69d964129f806a38835d6c03e9774b8745432666985fd33da1c41c30",
+    "/home/yufan/code/fead-chfem-fi-20261021/chfem_source/chfem/src/femhmg/cudapcg/kernels/wrappers.cu": "f5ab2a3594949c7bb5f7b4a2e72a8361902771855b308e8cbbf2ba026da70a9a",
+    "/home/yufan/code/fead-chfem-fi-20261021/chfem_source/chfem/src/femhmg/cudapcg/solvers/pminres2.cu": "0fb954fc70d72f3811d393c94d2aa6512891fd931e0d7a537f2bf22cb130e9ec",
+    "/home/yufan/code/fead-chfem-fi-20261021/chfem_source/chfem/src/femhmg/cudapcg/solvers/solvers_utils.h": "90f0382d88b3fa489dacd56802029cd05926117aa1718258e05e7a6e1df0a727",
+    "/home/yufan/code/fead-chfem-fi-20261021/chfem_source/chfem/src/femhmg/cudapcg/solvers/pminres.h": "5efb69451a9c7ca48f753371a5b129130816d31ea182e8505a22655aa202285c",
+    "/home/yufan/code/fead-chfem-fi-20261021/chfem_source/chfem/src/femhmg/cudapcg/solvers/pminres3.cu": "62da619ccca28dcc5f731e1ff62fc5f2a269c2dfcf73fde664012c9f03087476",
+    "/home/yufan/code/fead-chfem-fi-20261021/chfem_source/chfem/src/femhmg/cudapcg/solvers/stopping_criteria.h": "1237916740c614b29b4529cc57bb8eb9ddb225d55b691fce10b8f0f9928ed303",
+    "/home/yufan/code/fead-chfem-fi-20261021/chfem_source/chfem/src/femhmg/cudapcg/solvers/pcg.cu": "001688ea9a17b5f25b7ebd9ae8f233d917f48fef6d5df0f977b4122f794464a7",
+    "/home/yufan/code/fead-chfem-fi-20261021/chfem_source/chfem/src/femhmg/cudapcg/solvers/pcg2.h": "71232b19c456069ca875804a93cd082cd990fbb39ac5111bed2aae8622b807b0",
+    "/home/yufan/code/fead-chfem-fi-20261021/chfem_source/chfem/src/femhmg/cudapcg/solvers/minres.cu": "472e0a115b960a23972b01ddf8329642154fabec601232c63f632f9386ef65df",
+    "/home/yufan/code/fead-chfem-fi-20261021/chfem_source/chfem/src/femhmg/cudapcg/solvers/minres.h": "a909c956782733253bab209242374b63191a03ddb8438abe95cea5c42450a834",
+    "/home/yufan/code/fead-chfem-fi-20261021/chfem_source/chfem/src/femhmg/cudapcg/solvers/xreduce.cu": "4e8e2f9bae4d0eeda78824d2d573028e7fb99059abfd7fad7bfc30d83fc41d88",
+    "/home/yufan/code/fead-chfem-fi-20261021/chfem_source/chfem/src/femhmg/cudapcg/solvers/pminres.cu": "2d2362e79697343216931d6910ee82ef3c7fd646a60362111748a60fd1c47379",
+    "/home/yufan/code/fead-chfem-fi-20261021/chfem_source/chfem/src/femhmg/cudapcg/solvers/pcg2.cu": "117e8a396a5837281d37d67972307d262e704e6f627d2e2329259ccfff6b4b16",
+    "/home/yufan/code/fead-chfem-fi-20261021/chfem_source/chfem/src/femhmg/cudapcg/solvers/solvers.h": "a4b6a6363e6d6a190a26c59081855d2213e5db289a8f419927c2e17bd6cc5dc8",
+    "/home/yufan/code/fead-chfem-fi-20261021/chfem_source/chfem/src/femhmg/cudapcg/solvers/stopping_criteria.cu": "78cce5a4e6d173a41ac53379c759c9167f5e98f93e0ff1e5711ea492c0cf925e",
+    "/home/yufan/code/fead-chfem-fi-20261021/chfem_source/chfem/src/femhmg/cudapcg/solvers/cg2.cu": "146d0430ef43c794838a5b2be57105e9f26529430f4f75a2ccba92c388ff06e4",
+    "/home/yufan/code/fead-chfem-fi-20261021/chfem_source/chfem/src/femhmg/cudapcg/solvers/minres3.cu": "4dfccab2166d0f0c41aa534fb7008c8e2c14b45cbf1b58d90b544844fb1c5ab9",
+    "/home/yufan/code/fead-chfem-fi-20261021/chfem_source/chfem/src/femhmg/cudapcg/solvers/pminres3.h": "2d61ef867808ef040aab5e87c69828cb12d25203c0a6885a6ff9aaee3c5826b6",
+    "/home/yufan/code/fead-chfem-fi-20261021/chfem_source/chfem/src/femhmg/cudapcg/solvers/pcg.h": "1b56c7fdae4f53db2b54bd831f195b6ee351edec66f14b8b723d3548c50f8dfa",
+    "/home/yufan/code/fead-chfem-fi-20261021/chfem_source/chfem/src/femhmg/cudapcg/solvers/cg.h": "822b9903de8e776c4beea890b2d54168b0608ad3c1410b24f9e2ddfcc519a5b0",
+    "/home/yufan/code/fead-chfem-fi-20261021/chfem_source/chfem/src/femhmg/cudapcg/solvers/cg2.h": "d4eb8f308f5f2991750776632bde6e1231274969b12ed2b8bb32df0fcbf83658",
+    "/home/yufan/code/fead-chfem-fi-20261021/chfem_source/chfem/src/femhmg/cudapcg/solvers/cg3.h": "42ac3bf2aec2d0367567d86fdc8e5d540310586ba865ab6b5c64cb034f1d1a25",
+    "/home/yufan/code/fead-chfem-fi-20261021/chfem_source/chfem/src/femhmg/cudapcg/solvers/cg.cu": "3cf8ceddcaba58501dfc3cf87941faf51c7533cef3323cf180cec130bad37130",
+    "/home/yufan/code/fead-chfem-fi-20261021/chfem_source/chfem/src/femhmg/cudapcg/solvers/pminres2.h": "e660b460fbf48954382dd0ceff334cef3efce4d744ae6eae8b6f780e5bf48ae2",
+    "/home/yufan/code/fead-chfem-fi-20261021/chfem_source/chfem/src/femhmg/cudapcg/solvers/xreduce.h": "6d0ecb58e3920623801defe6b6dfb724a3c333ad01418f7d9de4437dcbbb1e02",
+    "/home/yufan/code/fead-chfem-fi-20261021/chfem_source/chfem/src/femhmg/cudapcg/solvers/minres2.h": "25eef9b8ba98f14fcb0a04dfd492a5642b849eaf4444d5a827fce9e7c1c05b49",
+    "/home/yufan/code/fead-chfem-fi-20261021/chfem_source/chfem/src/femhmg/cudapcg/solvers/pcg3.cu": "128e4c3a2e1ed2eb75372ecf230655c8dae1b801a252d3e50dafe578b21baaa7",
+    "/home/yufan/code/fead-chfem-fi-20261021/chfem_source/chfem/src/femhmg/cudapcg/solvers/minres2.cu": "396a802315a6bd8869fe08c0a14ce26f8d40f9a6198c9301c33a15a3e82cc168",
+    "/home/yufan/code/fead-chfem-fi-20261021/chfem_source/chfem/src/femhmg/cudapcg/solvers/solvers_utils.cu": "a1eb5e54c2435d18e89c7eb129075081ba97b3839ff98e71f92298b2dd0d6f2e",
+    "/home/yufan/code/fead-chfem-fi-20261021/chfem_source/chfem/src/femhmg/cudapcg/solvers/cg3.cu": "c3714ea044b633671b81352d5810e3377aa642d8d5fd642f8bd246da35582821",
+    "/home/yufan/code/fead-chfem-fi-20261021/chfem_source/chfem/src/femhmg/cudapcg/solvers/pcg3.h": "08571b26f58633665b5957e06c52985196b7824b06918a732d4f21519bb950b4",
+    "/home/yufan/code/fead-chfem-fi-20261021/chfem_source/chfem/src/femhmg/cudapcg/solvers/minres3.h": "3cfa66411860dc7a339ddf708e9886f6628e7e460caa13cdd6443cdba14e235d",
+    "/home/yufan/code/fead-chfem-fi-20261021/chfem_source/setup.py": "4303c778e12c96b1ab0016d9fd89f8a795cf4d31a58bd320a387a8ff9f144800",
+    "/home/yufan/code/fead-chfem-fi-20261021/chfem_instrumentation.patch": "2be1d8cd61d5d4afb184eb5e072d2c5b6f8baa6190e0a15b4844c27d15c77475",
+    "/home/yufan/code/fead-chfem-fi-20261021/chfem_instrumentation_manifest.json": "568ffba653c65ad226385908761d055dfef205a037f4524cf7806702038db850",
+    "/home/yufan/code/fead-solver-study-20261022/certify.py": "38dc03e13d4772461848d84bc0d0bb0a0e6575d2bd8784e702b935921d8fb9bd",
+    "/home/yufan/code/fead-solver-study-20261022/freeze_sources.py": "f0339d49312f3fce9cc5e869784cf3201e014ef6496b48bdb3b0c0b7208c09bb"
+  },
+  "groups": [
+    {
+      "case": "fraction50",
+      "grid": 128,
+      "variant": "hybrid",
+      "repeats": 3,
+      "records": [
+        "remote\\results\\fraction50_128_hybrid_r0.json",
+        "remote\\results\\fraction50_128_hybrid_r1.json",
+        "remote\\results\\fraction50_128_hybrid_r2.json"
+      ],
+      "time": {
+        "median": 0.6004204619675875,
+        "min": 0.5937863560393453,
+        "max": 0.6006876931060106,
+        "values": [
+          0.6004204619675875,
+          0.6006876931060106,
+          0.5937863560393453
+        ]
+      },
+      "compute": {
+        "median": 0.3409250411204994,
+        "min": 0.3378704860806465,
+        "max": 0.3428930640220642,
+        "values": [
+          0.3428930640220642,
+          0.3378704860806465,
+          0.3409250411204994
+        ]
+      },
+      "ku_ms": {
+        "median": 0.9667360305786132,
+        "min": 0.9665792465209961,
+        "max": 0.9667535781860351,
+        "values": [
+          0.9667535781860351,
+          0.9667360305786132,
+          0.9665792465209961
+        ]
+      },
+      "precond_ms": {
+        "median": 0.17178080081939698,
+        "min": 0.17175840139389037,
+        "max": 0.17189600467681884,
+        "values": [
+          0.17178080081939698,
+          0.17175840139389037,
+          0.17189600467681884
+        ]
+      },
+      "setup_seconds": {
+        "median": 0.2035186851862818,
+        "min": 0.20312403980642557,
+        "max": 0.2041608332656324,
+        "values": [
+          0.2041608332656324,
+          0.20312403980642557,
+          0.2035186851862818
+        ]
+      },
+      "rhs_seconds": {
+        "median": 0.008178537944331765,
+        "min": 0.007981585105881095,
+        "max": 0.008468081010505557,
+        "values": [
+          0.008468081010505557,
+          0.008178537944331765,
+          0.007981585105881095
+        ]
+      },
+      "solve_seconds": {
+        "median": 0.12342730304226279,
+        "min": 0.12056163093075156,
+        "max": 0.12371495785191655,
+        "values": [
+          0.12371495785191655,
+          0.12056163093075156,
+          0.12342730304226279
+        ]
+      },
+      "post_seconds": {
+        "median": 0.0025281598791480064,
+        "min": 0.002524671610444784,
+        "max": 0.002583849709481001,
+        "values": [
+          0.002583849709481001,
+          0.0025281598791480064,
+          0.002524671610444784
+        ]
+      },
+      "allocated": 0.5785026550292969,
+      "reserved": 0.6875,
+      "nvml": 1.302734375,
+      "max_true_residual": 9.102643352655096e-09,
+      "analytical_error": 6.00750183225067e-13,
+      "iterations": [
+        65
+      ],
+      "CH_repeat_difference": 2.171093503659371e-16,
+      "active_fraction": 0.5
+    },
+    {
+      "case": "fraction50",
+      "grid": 128,
+      "variant": "latest",
+      "repeats": 3,
+      "records": [
+        "remote\\results\\fraction50_128_latest_r0.json",
+        "remote\\results\\fraction50_128_latest_r1.json",
+        "remote\\results\\fraction50_128_latest_r2.json"
+      ],
+      "time": {
+        "median": 0.6047966971527785,
+        "min": 0.5999116960447282,
+        "max": 0.604851335985586,
+        "values": [
+          0.6047966971527785,
+          0.604851335985586,
+          0.5999116960447282
+        ]
+      },
+      "compute": {
+        "median": 0.3435055420268327,
+        "min": 0.34265125496312976,
+        "max": 0.3447852791287005,
+        "values": [
+          0.3447852791287005,
+          0.3435055420268327,
+          0.34265125496312976
+        ]
+      },
+      "ku_ms": {
+        "median": 0.9397184371948242,
+        "min": 0.9397120475769043,
+        "max": 0.9398303985595703,
+        "values": [
+          0.9397120475769043,
+          0.9398303985595703,
+          0.9397184371948242
+        ]
+      },
+      "precond_ms": {
+        "median": 0.17178399562835694,
+        "min": 0.17178080081939698,
+        "max": 0.17200160026550293,
+        "values": [
+          0.17178399562835694,
+          0.17178080081939698,
+          0.17200160026550293
+        ]
+      },
+      "setup_seconds": {
+        "median": 0.20678634173236787,
+        "min": 0.20617588609457016,
+        "max": 0.2086385388392955,
+        "values": [
+          0.2086385388392955,
+          0.20617588609457016,
+          0.20678634173236787
+        ]
+      },
+      "rhs_seconds": {
+        "median": 0.00841402797959745,
+        "min": 0.008296908112242818,
+        "max": 0.008596128318458796,
+        "values": [
+          0.008596128318458796,
+          0.00841402797959745,
+          0.008296908112242818
+        ]
+      },
+      "solve_seconds": {
+        "median": 0.12127945409156382,
+        "min": 0.12125939875841141,
+        "max": 0.12190055102109909,
+        "values": [
+          0.12125939875841141,
+          0.12190055102109909,
+          0.12127945409156382
+        ]
+      },
+      "post_seconds": {
+        "median": 0.0026082927361130714,
+        "min": 0.002589881420135498,
+        "max": 0.002751241670921445,
+        "values": [
+          0.0026082927361130714,
+          0.002751241670921445,
+          0.002589881420135498
+        ]
+      },
+      "allocated": 0.5824103355407715,
+      "reserved": 0.6875,
+      "nvml": 1.302734375,
+      "max_true_residual": 9.102771323915077e-09,
+      "analytical_error": 6.009351703834974e-13,
+      "iterations": [
+        65
+      ],
+      "CH_repeat_difference": 2.192113145049226e-16,
+      "active_fraction": 0.5
+    },
+    {
+      "case": "fraction90",
+      "grid": 128,
+      "variant": "hybrid",
+      "repeats": 3,
+      "records": [
+        "remote\\results\\fraction90_128_hybrid_r0.json",
+        "remote\\results\\fraction90_128_hybrid_r1.json",
+        "remote\\results\\fraction90_128_hybrid_r2.json"
+      ],
+      "time": {
+        "median": 0.733507412020117,
+        "min": 0.7293788781389594,
+        "max": 0.7349821981042624,
+        "values": [
+          0.7349821981042624,
+          0.7293788781389594,
+          0.733507412020117
+        ]
+      },
+      "compute": {
+        "median": 0.4897035900503397,
+        "min": 0.488348170183599,
+        "max": 0.49032327509485185,
+        "values": [
+          0.49032327509485185,
+          0.488348170183599,
+          0.4897035900503397
+        ]
+      },
+      "ku_ms": {
+        "median": 0.9661711692810059,
+        "min": 0.9655039787292481,
+        "max": 0.9662768363952636,
+        "values": [
+          0.9661711692810059,
+          0.9655039787292481,
+          0.9662768363952636
+        ]
+      },
+      "precond_ms": {
+        "median": 0.17171679735183715,
+        "min": 0.17164160013198854,
+        "max": 0.1717568039894104,
+        "values": [
+          0.1717568039894104,
+          0.17164160013198854,
+          0.17171679735183715
+        ]
+      },
+      "setup_seconds": {
+        "median": 0.346632287139073,
+        "min": 0.34535454772412777,
+        "max": 0.347241448238492,
+        "values": [
+          0.347241448238492,
+          0.34535454772412777,
+          0.346632287139073
+        ]
+      },
+      "rhs_seconds": {
+        "median": 0.00942583498544991,
+        "min": 0.0094243751373142,
+        "max": 0.00943251303397119,
+        "values": [
+          0.00943251303397119,
+          0.00942583498544991,
+          0.0094243751373142
+        ]
+      },
+      "solve_seconds": {
+        "median": 0.12712014582939446,
+        "min": 0.12708536302670836,
+        "max": 0.1271528322249651,
+        "values": [
+          0.12712014582939446,
+          0.12708536302670836,
+          0.1271528322249651
+        ]
+      },
+      "post_seconds": {
+        "median": 0.002598300576210022,
+        "min": 0.0025813435204327106,
+        "max": 0.002605911809951067,
+        "values": [
+          0.002605911809951067,
+          0.0025813435204327106,
+          0.002598300576210022
+        ]
+      },
+      "allocated": 0.7093615531921387,
+      "reserved": 0.81640625,
+      "nvml": 1.431640625,
+      "max_true_residual": 8.594126556391681e-09,
+      "analytical_error": 9.312613381388475e-14,
+      "iterations": [
+        68
+      ],
+      "CH_repeat_difference": 8.325560225167105e-17,
+      "active_fraction": 0.8984375
+    },
+    {
+      "case": "fraction90",
+      "grid": 128,
+      "variant": "latest",
+      "repeats": 3,
+      "records": [
+        "remote\\results\\fraction90_128_latest_r0.json",
+        "remote\\results\\fraction90_128_latest_r1.json",
+        "remote\\results\\fraction90_128_latest_r2.json"
+      ],
+      "time": {
+        "median": 0.7687542780768126,
+        "min": 0.7672111410647631,
+        "max": 0.7699795290827751,
+        "values": [
+          0.7672111410647631,
+          0.7687542780768126,
+          0.7699795290827751
+        ]
+      },
+      "compute": {
+        "median": 0.5264162099920213,
+        "min": 0.5235158849973232,
+        "max": 0.5292199419345707,
+        "values": [
+          0.5264162099920213,
+          0.5235158849973232,
+          0.5292199419345707
+        ]
+      },
+      "ku_ms": {
+        "median": 1.3102607727050781,
+        "min": 1.3102368354797362,
+        "max": 1.310311985015869,
+        "values": [
+          1.3102607727050781,
+          1.3102368354797362,
+          1.310311985015869
+        ]
+      },
+      "precond_ms": {
+        "median": 0.17192000150680542,
+        "min": 0.17183040380477904,
+        "max": 0.17201440334320067,
+        "values": [
+          0.17183040380477904,
+          0.17192000150680542,
+          0.17201440334320067
+        ]
+      },
+      "setup_seconds": {
+        "median": 0.35155104473233223,
+        "min": 0.34838779107667506,
+        "max": 0.35387226683087647,
+        "values": [
+          0.35155104473233223,
+          0.34838779107667506,
+          0.35387226683087647
+        ]
+      },
+      "rhs_seconds": {
+        "median": 0.00950570683926344,
+        "min": 0.009481535525992513,
+        "max": 0.009505815571174026,
+        "values": [
+          0.009481535525992513,
+          0.00950570683926344,
+          0.009505815571174026
+        ]
+      },
+      "solve_seconds": {
+        "median": 0.15846298006363213,
+        "min": 0.15841598785482347,
+        "max": 0.15846628928557038,
+        "values": [
+          0.15846298006363213,
+          0.15841598785482347,
+          0.15846628928557038
+        ]
+      },
+      "post_seconds": {
+        "median": 0.00278221326880157,
+        "min": 0.002734291832894087,
+        "max": 0.002791942097246647,
+        "values": [
+          0.002734291832894087,
+          0.002791942097246647,
+          0.00278221326880157
+        ]
+      },
+      "allocated": 0.7163820266723633,
+      "reserved": 0.81640625,
+      "nvml": 1.431640625,
+      "max_true_residual": 8.594218245666953e-09,
+      "analytical_error": 9.315022287448121e-14,
+      "iterations": [
+        68
+      ],
+      "CH_repeat_difference": 4.8820378395640745e-17,
+      "active_fraction": 0.8984375
+    },
+    {
+      "case": "grosmont",
+      "grid": 192,
+      "variant": "chain",
+      "repeats": 3,
+      "records": [
+        "remote\\results\\grosmont_192_chain_r0.json",
+        "remote\\results\\grosmont_192_chain_r1.json",
+        "remote\\results\\grosmont_192_chain_r2.json"
+      ],
+      "time": {
+        "median": 1.9743884468916804,
+        "min": 1.9611183300148696,
+        "max": 1.9752701660618186,
+        "values": [
+          1.9743884468916804,
+          1.9752701660618186,
+          1.9611183300148696
+        ]
+      },
+      "compute": {
+        "median": 1.7370001880917698,
+        "min": 1.7367703260388225,
+        "max": 1.737076373072341,
+        "values": [
+          1.737076373072341,
+          1.7370001880917698,
+          1.7367703260388225
+        ]
+      },
+      "ku_ms": {
+        "median": 3.2439441680908203,
+        "min": 3.2437999725341795,
+        "max": 3.244033432006836,
+        "values": [
+          3.2437999725341795,
+          3.2439441680908203,
+          3.244033432006836
+        ]
+      },
+      "precond_ms": {
+        "median": 0.8677920341491699,
+        "min": 0.8675888061523438,
+        "max": 0.8679216384887696,
+        "values": [
+          0.8675888061523438,
+          0.8679216384887696,
+          0.8677920341491699
+        ]
+      },
+      "setup_seconds": {
+        "median": 0.23889399762265384,
+        "min": 0.23872097092680633,
+        "max": 0.23910625302232802,
+        "values": [
+          0.23889399762265384,
+          0.23910625302232802,
+          0.23872097092680633
+        ]
+      },
+      "rhs_seconds": {
+        "median": 0.03627238445915282,
+        "min": 0.036257876781746745,
+        "max": 0.03628034400753677,
+        "values": [
+          0.036257876781746745,
+          0.03628034400753677,
+          0.03627238445915282
+        ]
+      },
+      "solve_seconds": {
+        "median": 1.446472727227956,
+        "min": 1.4464566663373262,
+        "max": 1.4465689649805427,
+        "values": [
+          1.4465689649805427,
+          1.446472727227956,
+          1.4464566663373262
+        ]
+      },
+      "post_seconds": {
+        "median": 0.010671637253835797,
+        "min": 0.010668957140296698,
+        "max": 0.010677754646167159,
+        "values": [
+          0.010677754646167159,
+          0.010671637253835797,
+          0.010668957140296698
+        ]
+      },
+      "allocated": 4.560479164123535,
+      "reserved": 8.6171875,
+      "nvml": 9.23046875,
+      "max_true_residual": 9.587417537111504e-09,
+      "iterations": [
+        251
+      ],
+      "CH_repeat_difference": 2.1125488022571033e-16
+    },
+    {
+      "case": "grosmont",
+      "grid": 192,
+      "variant": "chfem",
+      "repeats": 3,
+      "records": [
+        "remote\\results\\grosmont_192_chfem_r0.json",
+        "remote\\results\\grosmont_192_chfem_r1.json",
+        "remote\\results\\grosmont_192_chfem_r2.json"
+      ],
+      "time": {
+        "median": 52.17693883809261,
+        "min": 52.1643479547929,
+        "max": 52.18462613108568,
+        "values": [
+          52.1643479547929,
+          52.17693883809261,
+          52.18462613108568
+        ]
+      },
+      "compute": {
+        "median": 52.17693883809261,
+        "min": 52.1643479547929,
+        "max": 52.18462613108568,
+        "values": [
+          52.1643479547929,
+          52.17693883809261,
+          52.18462613108568
+        ]
+      },
+      "api_seconds": {
+        "median": 52.230833776062354,
+        "min": 52.2175925290212,
+        "max": 52.23755124001764,
+        "values": [
+          52.2175925290212,
+          52.230833776062354,
+          52.23755124001764
+        ]
+      },
+      "nvml": 1.13671875,
+      "max_true_residual": 1.6902724946916838e-09,
+      "iterations": [
+        6421
+      ],
+      "CH_repeat_difference": 3.6052387945964283e-16
+    },
+    {
+      "case": "grosmont",
+      "grid": 192,
+      "variant": "latest",
+      "repeats": 3,
+      "records": [
+        "remote\\results\\grosmont_192_latest_r0.json",
+        "remote\\results\\grosmont_192_latest_r1.json",
+        "remote\\results\\grosmont_192_latest_r2.json"
+      ],
+      "time": {
+        "median": 1.502859845990315,
+        "min": 1.4931317071896046,
+        "max": 1.5188387150410563,
+        "values": [
+          1.5188387150410563,
+          1.502859845990315,
+          1.4931317071896046
+        ]
+      },
+      "compute": {
+        "median": 1.2847605519928038,
+        "min": 1.2844758660066873,
+        "max": 1.2849230938591063,
+        "values": [
+          1.2844758660066873,
+          1.2849230938591063,
+          1.2847605519928038
+        ]
+      },
+      "ku_ms": {
+        "median": 2.3232959747314452,
+        "min": 2.323142433166504,
+        "max": 2.3233423233032227,
+        "values": [
+          2.3233423233032227,
+          2.3232959747314452,
+          2.323142433166504
+        ]
+      },
+      "precond_ms": {
+        "median": 0.873419189453125,
+        "min": 0.8727151870727539,
+        "max": 0.873516845703125,
+        "values": [
+          0.873516845703125,
+          0.873419189453125,
+          0.8727151870727539
+        ]
+      },
+      "setup_seconds": {
+        "median": 0.06576138571836054,
+        "min": 0.06544357305392623,
+        "max": 0.065859334776178,
+        "values": [
+          0.06544357305392623,
+          0.065859334776178,
+          0.06576138571836054
+        ]
+      },
+      "rhs_seconds": {
+        "median": 0.021465483820065856,
+        "min": 0.02145857526920736,
+        "max": 0.021469644969329238,
+        "values": [
+          0.02145857526920736,
+          0.021465483820065856,
+          0.021469644969329238
+        ]
+      },
+      "solve_seconds": {
+        "median": 1.1856838690582663,
+        "min": 1.1856619357131422,
+        "max": 1.1857907106168568,
+        "values": [
+          1.1857907106168568,
+          1.1856838690582663,
+          1.1856619357131422
+        ]
+      },
+      "post_seconds": {
+        "median": 0.007670222083106637,
+        "min": 0.007669022073969245,
+        "max": 0.007673543877899647,
+        "values": [
+          0.007673543877899647,
+          0.007670222083106637,
+          0.007669022073969245
+        ]
+      },
+      "allocated": 1.301440715789795,
+      "reserved": 1.486328125,
+      "nvml": 2.08984375,
+      "max_true_residual": 9.587417549990537e-09,
+      "iterations": [
+        251
+      ],
+      "CH_repeat_difference": 4.6448053452374694e-17
+    },
+    {
+      "case": "grosmont",
+      "grid": 192,
+      "variant": "paper",
+      "repeats": 3,
+      "records": [
+        "remote\\results\\grosmont_192_paper_r0.json",
+        "remote\\results\\grosmont_192_paper_r1.json",
+        "remote\\results\\grosmont_192_paper_r2.json"
+      ],
+      "time": {
+        "median": 2.874735226854682,
+        "min": 2.8668545719701797,
+        "max": 2.8866173101123422,
+        "values": [
+          2.8866173101123422,
+          2.8668545719701797,
+          2.874735226854682
+        ]
+      },
+      "compute": {
+        "median": 2.635368501069024,
+        "min": 2.635114031145349,
+        "max": 2.635420260950923,
+        "values": [
+          2.635114031145349,
+          2.635368501069024,
+          2.635420260950923
+        ]
+      },
+      "ku_ms": {
+        "median": 4.741791915893555,
+        "min": 4.740560150146484,
+        "max": 4.745999908447265,
+        "values": [
+          4.745999908447265,
+          4.740560150146484,
+          4.741791915893555
+        ]
+      },
+      "precond_ms": {
+        "median": 1.3765376091003418,
+        "min": 1.376527976989746,
+        "max": 1.376748752593994,
+        "values": [
+          1.3765376091003418,
+          1.376748752593994,
+          1.376527976989746
+        ]
+      },
+      "setup_seconds": {
+        "median": 0.46755549870431423,
+        "min": 0.4674116091337055,
+        "max": 0.4675857210531831,
+        "values": [
+          0.46755549870431423,
+          0.4675857210531831,
+          0.4674116091337055
+        ]
+      },
+      "rhs_seconds": {
+        "median": 0.03774821711704135,
+        "min": 0.037745197769254446,
+        "max": 0.03776707826182246,
+        "values": [
+          0.03776707826182246,
+          0.037745197769254446,
+          0.03774821711704135
+        ]
+      },
+      "solve_seconds": {
+        "median": 2.1149128093384206,
+        "min": 2.114594930782914,
+        "max": 2.115219312021509,
+        "values": [
+          2.114594930782914,
+          2.1149128093384206,
+          2.115219312021509
+        ]
+      },
+      "post_seconds": {
+        "median": 0.010893509723246098,
+        "min": 0.010889408877119422,
+        "max": 0.010905858827754855,
+        "values": [
+          0.010893509723246098,
+          0.010905858827754855,
+          0.010889408877119422
+        ]
+      },
+      "allocated": 9.527571678161621,
+      "reserved": 15.26171875,
+      "nvml": 15.876953125,
+      "max_true_residual": 9.587388469969008e-09,
+      "iterations": [
+        251
+      ],
+      "CH_repeat_difference": 0.0
+    },
+    {
+      "case": "sphere",
+      "grid": 192,
+      "variant": "chain",
+      "repeats": 3,
+      "records": [
+        "remote\\results\\sphere_192_chain_r0.json",
+        "remote\\results\\sphere_192_chain_r1.json",
+        "remote\\results\\sphere_192_chain_r2.json"
+      ],
+      "time": {
+        "median": 1.7090150711592287,
+        "min": 1.6996453090105206,
+        "max": 1.724367095855996,
+        "values": [
+          1.6996453090105206,
+          1.724367095855996,
+          1.7090150711592287
+        ]
+      },
+      "compute": {
+        "median": 1.4790289218071848,
+        "min": 1.4786695591174066,
+        "max": 1.479224822949618,
+        "values": [
+          1.479224822949618,
+          1.4786695591174066,
+          1.4790289218071848
+        ]
+      },
+      "ku_ms": {
+        "median": 3.2429569244384764,
+        "min": 3.242793655395508,
+        "max": 3.243008041381836,
+        "values": [
+          3.2429569244384764,
+          3.243008041381836,
+          3.242793655395508
+        ]
+      },
+      "precond_ms": {
+        "median": 0.8717488288879395,
+        "min": 0.8712047576904297,
+        "max": 0.8719375610351563,
+        "values": [
+          0.8719375610351563,
+          0.8717488288879395,
+          0.8712047576904297
+        ]
+      },
+      "setup_seconds": {
+        "median": 0.10783779644407332,
+        "min": 0.10762773430906236,
+        "max": 0.10839954414404929,
+        "values": [
+          0.10839954414404929,
+          0.10762773430906236,
+          0.10783779644407332
+        ]
+      },
+      "rhs_seconds": {
+        "median": 0.03618663386441767,
+        "min": 0.0361843544524163,
+        "max": 0.03626190614886582,
+        "values": [
+          0.03618663386441767,
+          0.0361843544524163,
+          0.03626190614886582
+        ]
+      },
+      "solve_seconds": {
+        "median": 1.3197463378310204,
+        "min": 1.3196525541134179,
+        "max": 1.3197813564911485,
+        "values": [
+          1.3196525541134179,
+          1.3197463378310204,
+          1.3197813564911485
+        ]
+      },
+      "post_seconds": {
+        "median": 0.0106536780949682,
+        "min": 0.010601336136460304,
+        "max": 0.010666686575859785,
+        "values": [
+          0.010601336136460304,
+          0.0106536780949682,
+          0.010666686575859785
+        ]
+      },
+      "allocated": 2.4051456451416016,
+      "reserved": 4.556640625,
+      "nvml": 5.169921875,
+      "max_true_residual": 8.846365234186039e-09,
+      "iterations": [
+        234
+      ],
+      "CH_repeat_difference": 3.0880453703334187e-16
+    },
+    {
+      "case": "sphere",
+      "grid": 192,
+      "variant": "chfem",
+      "repeats": 3,
+      "records": [
+        "remote\\results\\sphere_192_chfem_r0.json",
+        "remote\\results\\sphere_192_chfem_r1.json",
+        "remote\\results\\sphere_192_chfem_r2.json"
+      ],
+      "time": {
+        "median": 44.68532152590342,
+        "min": 44.68209160026163,
+        "max": 44.68619122472592,
+        "values": [
+          44.68619122472592,
+          44.68532152590342,
+          44.68209160026163
+        ]
+      },
+      "compute": {
+        "median": 44.68532152590342,
+        "min": 44.68209160026163,
+        "max": 44.68619122472592,
+        "values": [
+          44.68619122472592,
+          44.68532152590342,
+          44.68209160026163
+        ]
+      },
+      "api_seconds": {
+        "median": 44.73216394591145,
+        "min": 44.72891202988103,
+        "max": 44.73271606490016,
+        "values": [
+          44.73271606490016,
+          44.73216394591145,
+          44.72891202988103
+        ]
+      },
+      "nvml": 1.13671875,
+      "max_true_residual": 4.226062512743993e-09,
+      "iterations": [
+        5558
+      ],
+      "CH_repeat_difference": 1.334113105818777e-16
+    },
+    {
+      "case": "sphere",
+      "grid": 192,
+      "variant": "latest",
+      "repeats": 3,
+      "records": [
+        "remote\\results\\sphere_192_latest_r0.json",
+        "remote\\results\\sphere_192_latest_r1.json",
+        "remote\\results\\sphere_192_latest_r2.json"
+      ],
+      "time": {
+        "median": 1.4336907230317593,
+        "min": 1.4335918300785124,
+        "max": 1.4450651560910046,
+        "values": [
+          1.4335918300785124,
+          1.4336907230317593,
+          1.4450651560910046
+        ]
+      },
+      "compute": {
+        "median": 1.2158545460551977,
+        "min": 1.215509759960696,
+        "max": 1.2161850749980658,
+        "values": [
+          1.2158545460551977,
+          1.2161850749980658,
+          1.215509759960696
+        ]
+      },
+      "ku_ms": {
+        "median": 2.487784004211426,
+        "min": 2.4877391815185548,
+        "max": 2.487817573547363,
+        "values": [
+          2.4877391815185548,
+          2.487817573547363,
+          2.487784004211426
+        ]
+      },
+      "precond_ms": {
+        "median": 0.8713359832763672,
+        "min": 0.8712495803833008,
+        "max": 0.8714703559875489,
+        "values": [
+          0.8713359832763672,
+          0.8714703559875489,
+          0.8712495803833008
+        ]
+      },
+      "setup_seconds": {
+        "median": 0.06050926400348544,
+        "min": 0.06029299017973244,
+        "max": 0.06060716276988387,
+        "values": [
+          0.06050926400348544,
+          0.06060716276988387,
+          0.06029299017973244
+        ]
+      },
+      "rhs_seconds": {
+        "median": 0.021521953167393804,
+        "min": 0.02151008415967226,
+        "max": 0.021528135053813457,
+        "values": [
+          0.021528135053813457,
+          0.021521953167393804,
+          0.02151008415967226
+        ]
+      },
+      "solve_seconds": {
+        "median": 1.1219125599600375,
+        "min": 1.121874668635428,
+        "max": 1.1219706234987825,
+        "values": [
+          1.1219706234987825,
+          1.1219125599600375,
+          1.121874668635428
+        ]
+      },
+      "post_seconds": {
+        "median": 0.0076749741565436125,
+        "min": 0.007639294257387519,
+        "max": 0.007714391453191638,
+        "values": [
+          0.0076749741565436125,
+          0.007714391453191638,
+          0.007639294257387519
+        ]
+      },
+      "allocated": 1.3028488159179688,
+      "reserved": 1.486328125,
+      "nvml": 2.08984375,
+      "max_true_residual": 8.846365567189068e-09,
+      "iterations": [
+        234
+      ],
+      "CH_repeat_difference": 1.5155356203551778e-16
+    },
+    {
+      "case": "sphere",
+      "grid": 192,
+      "variant": "paper",
+      "repeats": 3,
+      "records": [
+        "remote\\results\\sphere_192_paper_r0.json",
+        "remote\\results\\sphere_192_paper_r1.json",
+        "remote\\results\\sphere_192_paper_r2.json"
+      ],
+      "time": {
+        "median": 2.550551231019199,
+        "min": 2.5398508040234447,
+        "max": 2.555248689139262,
+        "values": [
+          2.5398508040234447,
+          2.555248689139262,
+          2.550551231019199
+        ]
+      },
+      "compute": {
+        "median": 2.324120817007497,
+        "min": 2.3235075660049915,
+        "max": 2.324154449859634,
+        "values": [
+          2.324120817007497,
+          2.3235075660049915,
+          2.324154449859634
+        ]
+      },
+      "ku_ms": {
+        "median": 4.7427520751953125,
+        "min": 4.742227172851562,
+        "max": 4.744468688964844,
+        "values": [
+          4.7427520751953125,
+          4.744468688964844,
+          4.742227172851562
+        ]
+      },
+      "precond_ms": {
+        "median": 1.3775232315063477,
+        "min": 1.3774656295776366,
+        "max": 1.3776335716247559,
+        "values": [
+          1.3774656295776366,
+          1.3776335716247559,
+          1.3775232315063477
+        ]
+      },
+      "setup_seconds": {
+        "median": 0.3375735927838832,
+        "min": 0.3373093691188842,
+        "max": 0.3375755841843784,
+        "values": [
+          0.3373093691188842,
+          0.3375755841843784,
+          0.3375735927838832
+        ]
+      },
+      "rhs_seconds": {
+        "median": 0.03772844816558063,
+        "min": 0.03766175778582692,
+        "max": 0.03773262700997293,
+        "values": [
+          0.03766175778582692,
+          0.03773262700997293,
+          0.03772844816558063
+        ]
+      },
+      "solve_seconds": {
+        "median": 1.9339225278235972,
+        "min": 1.9332197031471878,
+        "max": 1.9344304618425667,
+        "values": [
+          1.9344304618425667,
+          1.9332197031471878,
+          1.9339225278235972
+        ]
+      },
+      "post_seconds": {
+        "median": 0.010735315037891269,
+        "min": 0.010733956471085548,
+        "max": 0.01074537611566484,
+        "values": [
+          0.010733956471085548,
+          0.010735315037891269,
+          0.01074537611566484
+        ]
+      },
+      "allocated": 9.527571678161621,
+      "reserved": 11.201171875,
+      "nvml": 11.81640625,
+      "max_true_residual": 8.848454676799712e-09,
+      "iterations": [
+        234
+      ],
+      "CH_repeat_difference": 0.0
+    },
+    {
+      "case": "woven",
+      "grid": 64,
+      "variant": "chain",
+      "repeats": 3,
+      "records": [
+        "remote\\results\\woven_64_chain_r0.json",
+        "remote\\results\\woven_64_chain_r1.json",
+        "remote\\results\\woven_64_chain_r2.json"
+      ],
+      "time": {
+        "median": 0.355118416948244,
+        "min": 0.34634898602962494,
+        "max": 0.37051553884521127,
+        "values": [
+          0.37051553884521127,
+          0.34634898602962494,
+          0.355118416948244
+        ]
+      },
+      "compute": {
+        "median": 0.08772592293098569,
+        "min": 0.08737268182449043,
+        "max": 0.08789184410125017,
+        "values": [
+          0.08737268182449043,
+          0.08772592293098569,
+          0.08789184410125017
+        ]
+      },
+      "ku_ms": {
+        "median": 0.13057440519332886,
+        "min": 0.13040800094604493,
+        "max": 0.1305888056755066,
+        "values": [
+          0.13040800094604493,
+          0.1305888056755066,
+          0.13057440519332886
+        ]
+      },
+      "precond_ms": {
+        "median": 0.0286080002784729,
+        "min": 0.028604799509048463,
+        "max": 0.028638398647308348,
+        "values": [
+          0.0286080002784729,
+          0.028638398647308348,
+          0.028604799509048463
+        ]
+      },
+      "setup_seconds": {
+        "median": 0.01631594100035727,
+        "min": 0.016075570369139314,
+        "max": 0.01643442432396114,
+        "values": [
+          0.016075570369139314,
+          0.01631594100035727,
+          0.01643442432396114
+        ]
+      },
+      "rhs_seconds": {
+        "median": 0.0014707422815263271,
+        "min": 0.001457741716876626,
+        "max": 0.001482372172176838,
+        "values": [
+          0.001457741716876626,
+          0.001482372172176838,
+          0.0014707422815263271
+        ]
+      },
+      "solve_seconds": {
+        "median": 0.0651366813108325,
+        "min": 0.06511822994798422,
+        "max": 0.06518785981461406,
+        "values": [
+          0.06511822994798422,
+          0.0651366813108325,
+          0.06518785981461406
+        ]
+      },
+      "post_seconds": {
+        "median": 0.0007013757713139057,
+        "min": 0.0006898650899529457,
+        "max": 0.0007050661370158195,
+        "values": [
+          0.0006898650899529457,
+          0.0007050661370158195,
+          0.0007013757713139057
+        ]
+      },
+      "allocated": 0.12001419067382812,
+      "reserved": 0.140625,
+      "nvml": 0.755859375,
+      "max_true_residual": 8.976204298561804e-09,
+      "iterations": [
+        315
+      ],
+      "CH_repeat_difference": 1.7902308292523464e-16
+    },
+    {
+      "case": "woven",
+      "grid": 64,
+      "variant": "latest",
+      "repeats": 3,
+      "records": [
+        "remote\\results\\woven_64_latest_r0.json",
+        "remote\\results\\woven_64_latest_r1.json",
+        "remote\\results\\woven_64_latest_r2.json"
+      ],
+      "time": {
+        "median": 0.33461414999328554,
+        "min": 0.33273698086850345,
+        "max": 0.3350950940512121,
+        "values": [
+          0.33273698086850345,
+          0.33461414999328554,
+          0.3350950940512121
+        ]
+      },
+      "compute": {
+        "median": 0.07078321510925889,
+        "min": 0.07072662701830268,
+        "max": 0.07095715613104403,
+        "values": [
+          0.07072662701830268,
+          0.07095715613104403,
+          0.07078321510925889
+        ]
+      },
+      "ku_ms": {
+        "median": 0.09143199920654296,
+        "min": 0.09134399890899658,
+        "max": 0.09165760278701782,
+        "values": [
+          0.09134399890899658,
+          0.09143199920654296,
+          0.09165760278701782
+        ]
+      },
+      "precond_ms": {
+        "median": 0.028454399108886717,
+        "min": 0.02844800055027008,
+        "max": 0.02848159968852997,
+        "values": [
+          0.028454399108886717,
+          0.02844800055027008,
+          0.02848159968852997
+        ]
+      },
+      "setup_seconds": {
+        "median": 0.014038944849744439,
+        "min": 0.01392622315324843,
+        "max": 0.014101244043558836,
+        "values": [
+          0.014038944849744439,
+          0.014101244043558836,
+          0.01392622315324843
+        ]
+      },
+      "rhs_seconds": {
+        "median": 0.0010253272484987974,
+        "min": 0.001021048054099083,
+        "max": 0.0010280879214406013,
+        "values": [
+          0.001021048054099083,
+          0.0010280879214406013,
+          0.0010253272484987974
+        ]
+      },
+      "solve_seconds": {
+        "median": 0.05153887043707073,
+        "min": 0.05140744033269584,
+        "max": 0.05161457136273384,
+        "values": [
+          0.05140744033269584,
+          0.05153887043707073,
+          0.05161457136273384
+        ]
+      },
+      "post_seconds": {
+        "median": 0.0006362060084939003,
+        "min": 0.0006309750024229288,
+        "max": 0.0006380558479577303,
+        "values": [
+          0.0006309750024229288,
+          0.0006380558479577303,
+          0.0006362060084939003
+        ]
+      },
+      "allocated": 0.09366703033447266,
+      "reserved": 0.115234375,
+      "nvml": 0.728515625,
+      "max_true_residual": 8.976204136698312e-09,
+      "iterations": [
+        315
+      ],
+      "CH_repeat_difference": 1.4119919286823589e-16
+    },
+    {
+      "case": "woven",
+      "grid": 64,
+      "variant": "paper",
+      "repeats": 3,
+      "records": [
+        "remote\\results\\woven_64_paper_r0.json",
+        "remote\\results\\woven_64_paper_r1.json",
+        "remote\\results\\woven_64_paper_r2.json"
+      ],
+      "time": {
+        "median": 0.38976432802155614,
+        "min": 0.3744862009771168,
+        "max": 0.3936370690353215,
+        "values": [
+          0.3744862009771168,
+          0.38976432802155614,
+          0.3936370690353215
+        ]
+      },
+      "compute": {
+        "median": 0.13047705008648336,
+        "min": 0.1302667388226837,
+        "max": 0.1309335168916732,
+        "values": [
+          0.1309335168916732,
+          0.1302667388226837,
+          0.13047705008648336
+        ]
+      },
+      "ku_ms": {
+        "median": 0.1884608030319214,
+        "min": 0.18838560581207275,
+        "max": 0.18871840238571166,
+        "values": [
+          0.1884608030319214,
+          0.18871840238571166,
+          0.18838560581207275
+        ]
+      },
+      "precond_ms": {
+        "median": 0.036878401041030885,
+        "min": 0.036401599645614624,
+        "max": 0.03722879886627197,
+        "values": [
+          0.036401599645614624,
+          0.036878401041030885,
+          0.03722879886627197
+        ]
+      },
+      "setup_seconds": {
+        "median": 0.02541269571520388,
+        "min": 0.025387636153027415,
+        "max": 0.026019240729510784,
+        "values": [
+          0.026019240729510784,
+          0.025387636153027415,
+          0.02541269571520388
+        ]
+      },
+      "rhs_seconds": {
+        "median": 0.0015166818629950285,
+        "min": 0.001507021952420473,
+        "max": 0.0015176322776824236,
+        "values": [
+          0.001507021952420473,
+          0.0015166818629950285,
+          0.0015176322776824236
+        ]
+      },
+      "solve_seconds": {
+        "median": 0.09894669568166137,
+        "min": 0.0988645339384675,
+        "max": 0.09910029801540077,
+        "values": [
+          0.09910029801540077,
+          0.0988645339384675,
+          0.09894669568166137
+        ]
+      },
+      "post_seconds": {
+        "median": 0.0006973657291382551,
+        "min": 0.0006671349983662367,
+        "max": 0.0007087057456374168,
+        "values": [
+          0.0006671349983662367,
+          0.0006973657291382551,
+          0.0007087057456374168
+        ]
+      },
+      "allocated": 0.5002040863037109,
+      "reserved": 0.9140625,
+      "nvml": 1.529296875,
+      "max_true_residual": 8.700938692396425e-09,
+      "iterations": [
+        325
+      ],
+      "CH_repeat_difference": 0.0
+    },
+    {
+      "case": "woven",
+      "grid": 128,
+      "variant": "chain",
+      "repeats": 3,
+      "records": [
+        "remote\\results\\woven_128_chain_r0.json",
+        "remote\\results\\woven_128_chain_r1.json",
+        "remote\\results\\woven_128_chain_r2.json"
+      ],
+      "time": {
+        "median": 0.7741092520300299,
+        "min": 0.7713262988254428,
+        "max": 0.786474168067798,
+        "values": [
+          0.786474168067798,
+          0.7713262988254428,
+          0.7741092520300299
+        ]
+      },
+      "compute": {
+        "median": 0.544395464938134,
+        "min": 0.5443273349665105,
+        "max": 0.544659007107839,
+        "values": [
+          0.5443273349665105,
+          0.544395464938134,
+          0.544659007107839
+        ]
+      },
+      "ku_ms": {
+        "median": 0.9625280380249024,
+        "min": 0.9623567581176757,
+        "max": 0.9625632286071777,
+        "values": [
+          0.9625280380249024,
+          0.9625632286071777,
+          0.9623567581176757
+        ]
+      },
+      "precond_ms": {
+        "median": 0.1716912031173706,
+        "min": 0.17159839868545532,
+        "max": 0.17182719707489014,
+        "values": [
+          0.1716912031173706,
+          0.17182719707489014,
+          0.17159839868545532
+        ]
+      },
+      "setup_seconds": {
+        "median": 0.035068545723333955,
+        "min": 0.03502009389922023,
+        "max": 0.035278937546536326,
+        "values": [
+          0.03502009389922023,
+          0.035068545723333955,
+          0.035278937546536326
+        ]
+      },
+      "rhs_seconds": {
+        "median": 0.01110850996337831,
+        "min": 0.01110630901530385,
+        "max": 0.011117009911686182,
+        "values": [
+          0.01110630901530385,
+          0.011117009911686182,
+          0.01110850996337831
+        ]
+      },
+      "solve_seconds": {
+        "median": 0.49049366847611964,
+        "min": 0.49044554587453604,
+        "max": 0.4905612168367952,
+        "values": [
+          0.49044554587453604,
+          0.49049366847611964,
+          0.4905612168367952
+        ]
+      },
+      "post_seconds": {
+        "median": 0.0034111670684069395,
+        "min": 0.003392907790839672,
+        "max": 0.003417698433622718,
+        "values": [
+          0.003392907790839672,
+          0.0034111670684069395,
+          0.003417698433622718
+        ]
+      },
+      "allocated": 0.7347626686096191,
+      "reserved": 1.046875,
+      "nvml": 1.66015625,
+      "max_true_residual": 9.841319014984924e-09,
+      "iterations": [
+        321
+      ],
+      "CH_repeat_difference": 2.018942168379014e-16
+    },
+    {
+      "case": "woven",
+      "grid": 128,
+      "variant": "latest",
+      "repeats": 3,
+      "records": [
+        "remote\\results\\woven_128_latest_r0.json",
+        "remote\\results\\woven_128_latest_r1.json",
+        "remote\\results\\woven_128_latest_r2.json"
+      ],
+      "time": {
+        "median": 0.6848261670675129,
+        "min": 0.682421820005402,
+        "max": 0.6890582400374115,
+        "values": [
+          0.682421820005402,
+          0.6848261670675129,
+          0.6890582400374115
+        ]
+      },
+      "compute": {
+        "median": 0.4512070878408849,
+        "min": 0.4498367258347571,
+        "max": 0.45204744301736355,
+        "values": [
+          0.45204744301736355,
+          0.4498367258347571,
+          0.4512070878408849
+        ]
+      },
+      "ku_ms": {
+        "median": 0.6567808151245117,
+        "min": 0.6561024188995361,
+        "max": 0.6571807861328125,
+        "values": [
+          0.6571807861328125,
+          0.6561024188995361,
+          0.6567808151245117
+        ]
+      },
+      "precond_ms": {
+        "median": 0.1718224048614502,
+        "min": 0.17127360105514527,
+        "max": 0.17193280458450316,
+        "values": [
+          0.17127360105514527,
+          0.1718224048614502,
+          0.17193280458450316
+        ]
+      },
+      "setup_seconds": {
+        "median": 0.06204719748347998,
+        "min": 0.06106344610452652,
+        "max": 0.06240107794292271,
+        "values": [
+          0.06204719748347998,
+          0.06106344610452652,
+          0.06240107794292271
+        ]
+      },
+      "rhs_seconds": {
+        "median": 0.0063818832859396935,
+        "min": 0.006381092127412558,
+        "max": 0.006383173167705536,
+        "values": [
+          0.006383173167705536,
+          0.006381092127412558,
+          0.0063818832859396935
+        ]
+      },
+      "solve_seconds": {
+        "median": 0.37591232685372233,
+        "min": 0.375838273903355,
+        "max": 0.37690382287837565,
+        "values": [
+          0.37690382287837565,
+          0.375838273903355,
+          0.37591232685372233
+        ]
+      },
+      "post_seconds": {
+        "median": 0.002619951032102108,
+        "min": 0.0025970921851694584,
+        "max": 0.002663151826709509,
+        "values": [
+          0.002663151826709509,
+          0.0025970921851694584,
+          0.002619951032102108
+        ]
+      },
+      "allocated": 0.48099184036254883,
+      "reserved": 0.587890625,
+      "nvml": 1.203125,
+      "max_true_residual": 9.841319347412186e-09,
+      "iterations": [
+        321
+      ],
+      "CH_repeat_difference": 1.3263565461498827e-17
+    },
+    {
+      "case": "woven",
+      "grid": 128,
+      "variant": "paper",
+      "repeats": 3,
+      "records": [
+        "remote\\results\\woven_128_paper_r0.json",
+        "remote\\results\\woven_128_paper_r1.json",
+        "remote\\results\\woven_128_paper_r2.json"
+      ],
+      "time": {
+        "median": 1.0417535779997706,
+        "min": 1.0395651790313423,
+        "max": 1.0558256728108972,
+        "values": [
+          1.0558256728108972,
+          1.0395651790313423,
+          1.0417535779997706
+        ]
+      },
+      "compute": {
+        "median": 0.8122755829244852,
+        "min": 0.8120409969706088,
+        "max": 0.813020447967574,
+        "values": [
+          0.8120409969706088,
+          0.8122755829244852,
+          0.813020447967574
+        ]
+      },
+      "ku_ms": {
+        "median": 1.334939193725586,
+        "min": 1.334652805328369,
+        "max": 1.3356160163879394,
+        "values": [
+          1.334939193725586,
+          1.3356160163879394,
+          1.334652805328369
+        ]
+      },
+      "precond_ms": {
+        "median": 0.22639360427856445,
+        "min": 0.22627360820770265,
+        "max": 0.22659521102905272,
+        "values": [
+          0.22627360820770265,
+          0.22659521102905272,
+          0.22639360427856445
+        ]
+      },
+      "setup_seconds": {
+        "median": 0.10152049525640905,
+        "min": 0.10149201424792409,
+        "max": 0.101785619975999,
+        "values": [
+          0.101785619975999,
+          0.10149201424792409,
+          0.10152049525640905
+        ]
+      },
+      "rhs_seconds": {
+        "median": 0.011124699143692851,
+        "min": 0.01109489006921649,
+        "max": 0.011127150151878595,
+        "values": [
+          0.01109489006921649,
+          0.011124699143692851,
+          0.011127150151878595
+        ]
+      },
+      "solve_seconds": {
+        "median": 0.6923127169720829,
+        "min": 0.6921140600461513,
+        "max": 0.6928159219678491,
+        "values": [
+          0.6921140600461513,
+          0.6923127169720829,
+          0.6928159219678491
+        ]
+      },
+      "post_seconds": {
+        "median": 0.0035036581102758646,
+        "min": 0.003470417344942689,
+        "max": 0.003546237014234066,
+        "values": [
+          0.003470417344942689,
+          0.0035036581102758646,
+          0.003546237014234066
+        ]
+      },
+      "allocated": 2.845595359802246,
+      "reserved": 3.90625,
+      "nvml": 4.521484375,
+      "max_true_residual": 9.554025583918852e-09,
+      "iterations": [
+        333
+      ],
+      "CH_repeat_difference": 0.0
+    },
+    {
+      "case": "woven",
+      "grid": 192,
+      "variant": "analytic",
+      "repeats": 3,
+      "records": [
+        "remote\\results\\woven_192_analytic_r0.json",
+        "remote\\results\\woven_192_analytic_r1.json",
+        "remote\\results\\woven_192_analytic_r2.json"
+      ],
+      "time": {
+        "median": 2.5705040339380503,
+        "min": 2.561087226960808,
+        "max": 2.5811209499370307,
+        "values": [
+          2.5705040339380503,
+          2.5811209499370307,
+          2.561087226960808
+        ]
+      },
+      "compute": {
+        "median": 2.3361199779901654,
+        "min": 2.335861812112853,
+        "max": 2.336973855039105,
+        "values": [
+          2.335861812112853,
+          2.336973855039105,
+          2.3361199779901654
+        ]
+      },
+      "ku_ms": {
+        "median": 3.243524932861328,
+        "min": 3.2434078216552735,
+        "max": 3.24365119934082,
+        "values": [
+          3.243524932861328,
+          3.24365119934082,
+          3.2434078216552735
+        ]
+      },
+      "precond_ms": {
+        "median": 1.3855263710021972,
+        "min": 1.385256004333496,
+        "max": 1.3855999946594237,
+        "values": [
+          1.3855263710021972,
+          1.385256004333496,
+          1.3855999946594237
+        ]
+      },
+      "setup_seconds": {
+        "median": 0.08449104591272771,
+        "min": 0.08392031420953572,
+        "max": 0.0851261515635997,
+        "values": [
+          0.08392031420953572,
+          0.0851261515635997,
+          0.08449104591272771
+        ]
+      },
+      "rhs_seconds": {
+        "median": 0.036283963825553656,
+        "min": 0.036245234310626984,
+        "max": 0.036284086061641574,
+        "values": [
+          0.036284086061641574,
+          0.036283963825553656,
+          0.036245234310626984
+        ]
+      },
+      "solve_seconds": {
+        "median": 2.200742461020127,
+        "min": 2.2005431540310383,
+        "max": 2.200838399352506,
+        "values": [
+          2.200742461020127,
+          2.200838399352506,
+          2.2005431540310383
+        ]
+      },
+      "post_seconds": {
+        "median": 0.010677434736862779,
+        "min": 0.010674048215150833,
+        "max": 0.010702838888391852,
+        "values": [
+          0.010702838888391852,
+          0.010677434736862779,
+          0.010674048215150833
+        ]
+      },
+      "allocated": 2.8547606468200684,
+      "reserved": 3.734375,
+      "nvml": 4.349609375,
+      "max_true_residual": 9.31334295763412e-09,
+      "iterations": [
+        337
+      ],
+      "CH_repeat_difference": 1.9624576296802024e-16
+    },
+    {
+      "case": "woven",
+      "grid": 192,
+      "variant": "chain",
+      "repeats": 3,
+      "records": [
+        "remote\\results\\woven_192_chain_r0.json",
+        "remote\\results\\woven_192_chain_r1.json",
+        "remote\\results\\woven_192_chain_r2.json"
+      ],
+      "time": {
+        "median": 2.1885182289406657,
+        "min": 2.180435426067561,
+        "max": 2.2044267209712416,
+        "values": [
+          2.180435426067561,
+          2.2044267209712416,
+          2.1885182289406657
+        ]
+      },
+      "compute": {
+        "median": 1.9641239650081843,
+        "min": 1.9635880677960813,
+        "max": 1.9650160809978843,
+        "values": [
+          1.9635880677960813,
+          1.9650160809978843,
+          1.9641239650081843
+        ]
+      },
+      "ku_ms": {
+        "median": 3.2435985565185548,
+        "min": 3.2434097290039063,
+        "max": 3.2436145782470702,
+        "values": [
+          3.2434097290039063,
+          3.2435985565185548,
+          3.2436145782470702
+        ]
+      },
+      "precond_ms": {
+        "median": 0.8698512077331543,
+        "min": 0.869752025604248,
+        "max": 0.8699440002441406,
+        "values": [
+          0.8699440002441406,
+          0.8698512077331543,
+          0.869752025604248
+        ]
+      },
+      "setup_seconds": {
+        "median": 0.08741083228960633,
+        "min": 0.08713536942377687,
+        "max": 0.08845401997677982,
+        "values": [
+          0.08713536942377687,
+          0.08845401997677982,
+          0.08741083228960633
+        ]
+      },
+      "rhs_seconds": {
+        "median": 0.036224505165591836,
+        "min": 0.036197354551404715,
+        "max": 0.03627785504795611,
+        "values": [
+          0.036224505165591836,
+          0.036197354551404715,
+          0.03627785504795611
+        ]
+      },
+      "solve_seconds": {
+        "median": 1.824957320233807,
+        "min": 1.8248964280355722,
+        "max": 1.8249883451499045,
+        "values": [
+          1.8248964280355722,
+          1.824957320233807,
+          1.8249883451499045
+        ]
+      },
+      "post_seconds": {
+        "median": 0.010696347104385495,
+        "min": 0.010695196921005845,
+        "max": 0.010701839113608003,
+        "values": [
+          0.010695196921005845,
+          0.010701839113608003,
+          0.010696347104385495
+        ]
+      },
+      "allocated": 2.4051456451416016,
+      "reserved": 3.41796875,
+      "nvml": 4.033203125,
+      "max_true_residual": 8.806873046165906e-09,
+      "iterations": [
+        327
+      ],
+      "CH_repeat_difference": 1.9121971101455781e-16
+    },
+    {
+      "case": "woven",
+      "grid": 192,
+      "variant": "dense",
+      "repeats": 3,
+      "records": [
+        "remote\\results\\woven_192_dense_r0.json",
+        "remote\\results\\woven_192_dense_r1.json",
+        "remote\\results\\woven_192_dense_r2.json"
+      ],
+      "time": {
+        "median": 2.287048449041322,
+        "min": 2.2820440740324557,
+        "max": 2.2882768749259412,
+        "values": [
+          2.2820440740324557,
+          2.2882768749259412,
+          2.287048449041322
+        ]
+      },
+      "compute": {
+        "median": 2.0623753739055246,
+        "min": 2.0604468679521233,
+        "max": 2.062658184906468,
+        "values": [
+          2.0604468679521233,
+          2.0623753739055246,
+          2.062658184906468
+        ]
+      },
+      "ku_ms": {
+        "median": 3.244113540649414,
+        "min": 3.2439231872558594,
+        "max": 3.244294357299805,
+        "values": [
+          3.2439231872558594,
+          3.244294357299805,
+          3.244113540649414
+        ]
+      },
+      "precond_ms": {
+        "median": 0.8691568374633789,
+        "min": 0.8688863754272461,
+        "max": 0.8693231582641602,
+        "values": [
+          0.8693231582641602,
+          0.8691568374633789,
+          0.8688863754272461
+        ]
+      },
+      "setup_seconds": {
+        "median": 0.19417538424022496,
+        "min": 0.19238853710703552,
+        "max": 0.19450651202350855,
+        "values": [
+          0.19238853710703552,
+          0.19417538424022496,
+          0.19450651202350855
+        ]
+      },
+      "rhs_seconds": {
+        "median": 0.031056903768330812,
+        "min": 0.031041512498632073,
+        "max": 0.031085252994671464,
+        "values": [
+          0.031085252994671464,
+          0.031056903768330812,
+          0.031041512498632073
+        ]
+      },
+      "solve_seconds": {
+        "median": 1.8254878069274127,
+        "min": 1.825475052697584,
+        "max": 1.825534232892096,
+        "values": [
+          1.825475052697584,
+          1.825534232892096,
+          1.8254878069274127
+        ]
+      },
+      "post_seconds": {
+        "median": 0.007677610032260418,
+        "min": 0.007677051704376936,
+        "max": 0.007696793880313635,
+        "values": [
+          0.007677051704376936,
+          0.007677610032260418,
+          0.007696793880313635
+        ]
+      },
+      "allocated": 2.406264305114746,
+      "reserved": 2.642578125,
+      "nvml": 3.255859375,
+      "max_true_residual": 8.806873617424042e-09,
+      "iterations": [
+        327
+      ],
+      "CH_repeat_difference": 1.0235153954820108e-16
+    },
+    {
+      "case": "woven",
+      "grid": 192,
+      "variant": "fft",
+      "repeats": 3,
+      "records": [
+        "remote\\results\\woven_192_fft_r0.json",
+        "remote\\results\\woven_192_fft_r1.json",
+        "remote\\results\\woven_192_fft_r2.json"
+      ],
+      "time": {
+        "median": 2.3819821279030293,
+        "min": 2.3785029218997806,
+        "max": 2.4030262699816376,
+        "values": [
+          2.4030262699816376,
+          2.3819821279030293,
+          2.3785029218997806
+        ]
+      },
+      "compute": {
+        "median": 2.1575751369819045,
+        "min": 2.157386717852205,
+        "max": 2.158646058058366,
+        "values": [
+          2.157386717852205,
+          2.158646058058366,
+          2.1575751369819045
+        ]
+      },
+      "ku_ms": {
+        "median": 3.2435630798339843,
+        "min": 3.2435024261474608,
+        "max": 3.243867111206055,
+        "values": [
+          3.2435630798339843,
+          3.243867111206055,
+          3.2435024261474608
+        ]
+      },
+      "precond_ms": {
+        "median": 0.8704719543457031,
+        "min": 0.8702848434448243,
+        "max": 0.8706496238708497,
+        "values": [
+          0.8702848434448243,
+          0.8706496238708497,
+          0.8704719543457031
+        ]
+      },
+      "setup_seconds": {
+        "median": 0.08466348703950644,
+        "min": 0.08449008874595165,
+        "max": 0.08559206803329289,
+        "values": [
+          0.08449008874595165,
+          0.08559206803329289,
+          0.08466348703950644
+        ]
+      },
+      "rhs_seconds": {
+        "median": 0.03627213416621089,
+        "min": 0.036195785040035844,
+        "max": 0.036277724197134376,
+        "values": [
+          0.036277724197134376,
+          0.036195785040035844,
+          0.03627213416621089
+        ]
+      },
+      "solve_seconds": {
+        "median": 2.0216864922549576,
+        "min": 2.021578862098977,
+        "max": 2.0217060022987425,
+        "values": [
+          2.0216864922549576,
+          2.0217060022987425,
+          2.021578862098977
+        ]
+      },
+      "post_seconds": {
+        "median": 0.01065502711571753,
+        "min": 0.01064030802808702,
+        "max": 0.010684136766940355,
+        "values": [
+          0.01064030802808702,
+          0.010684136766940355,
+          0.01065502711571753
+        ]
+      },
+      "allocated": 2.642454147338867,
+      "reserved": 3.734375,
+      "nvml": 4.34765625,
+      "max_true_residual": 9.313345921978622e-09,
+      "iterations": [
+        337
+      ],
+      "CH_repeat_difference": 1.8215407135848752e-16
+    },
+    {
+      "case": "woven",
+      "grid": 192,
+      "variant": "fusion",
+      "repeats": 3,
+      "records": [
+        "remote\\results\\woven_192_fusion_r0.json",
+        "remote\\results\\woven_192_fusion_r1.json",
+        "remote\\results\\woven_192_fusion_r2.json"
+      ],
+      "time": {
+        "median": 2.2541613758075982,
+        "min": 2.236778005026281,
+        "max": 2.255955926142633,
+        "values": [
+          2.2541613758075982,
+          2.236778005026281,
+          2.255955926142633
+        ]
+      },
+      "compute": {
+        "median": 2.024291292997077,
+        "min": 2.0240760517772287,
+        "max": 2.0244108350016177,
+        "values": [
+          2.0240760517772287,
+          2.024291292997077,
+          2.0244108350016177
+        ]
+      },
+      "ku_ms": {
+        "median": 3.2438129425048827,
+        "min": 3.2435279846191407,
+        "max": 3.2438480377197267,
+        "values": [
+          3.2438480377197267,
+          3.2438129425048827,
+          3.2435279846191407
+        ]
+      },
+      "precond_ms": {
+        "median": 0.8705984115600586,
+        "min": 0.8704591751098633,
+        "max": 0.8706048011779786,
+        "values": [
+          0.8705984115600586,
+          0.8704591751098633,
+          0.8706048011779786
+        ]
+      },
+      "setup_seconds": {
+        "median": 0.08521859487518668,
+        "min": 0.08469289005734026,
+        "max": 0.08542404533363879,
+        "values": [
+          0.08469289005734026,
+          0.08521859487518668,
+          0.08542404533363879
+        ]
+      },
+      "rhs_seconds": {
+        "median": 0.03626383515074849,
+        "min": 0.03619336523115635,
+        "max": 0.03627927624620497,
+        "values": [
+          0.03627927624620497,
+          0.03619336523115635,
+          0.03626383515074849
+        ]
+      },
+      "solve_seconds": {
+        "median": 1.8877598796971142,
+        "min": 1.8877040741499513,
+        "max": 1.8878561430610716,
+        "values": [
+          1.8878561430610716,
+          1.8877598796971142,
+          1.8877040741499513
+        ]
+      },
+      "post_seconds": {
+        "median": 0.01069060922600329,
+        "min": 0.010662046493962407,
+        "max": 0.01070810598321259,
+        "values": [
+          0.01070810598321259,
+          0.01069060922600329,
+          0.010662046493962407
+        ]
+      },
+      "allocated": 2.4051456451416016,
+      "reserved": 3.41796875,
+      "nvml": 4.033203125,
+      "max_true_residual": 9.313345601627145e-09,
+      "iterations": [
+        337
+      ],
+      "CH_repeat_difference": 1.3904640739899454e-16
+    },
+    {
+      "case": "woven",
+      "grid": 192,
+      "variant": "hybrid",
+      "repeats": 3,
+      "records": [
+        "remote\\results\\woven_192_hybrid_r0.json",
+        "remote\\results\\woven_192_hybrid_r1.json",
+        "remote\\results\\woven_192_hybrid_r2.json"
+      ],
+      "time": {
+        "median": 2.2634483070578426,
+        "min": 2.2543085981160402,
+        "max": 2.2639289058279246,
+        "values": [
+          2.2543085981160402,
+          2.2639289058279246,
+          2.2634483070578426
+        ]
+      },
+      "compute": {
+        "median": 2.0374565611127764,
+        "min": 2.036946346051991,
+        "max": 2.0445887688547373,
+        "values": [
+          2.036946346051991,
+          2.0374565611127764,
+          2.0445887688547373
+        ]
+      },
+      "ku_ms": {
+        "median": 3.2488334655761717,
+        "min": 3.2487857818603514,
+        "max": 3.2490894317626955,
+        "values": [
+          3.2488334655761717,
+          3.2490894317626955,
+          3.2487857818603514
+        ]
+      },
+      "precond_ms": {
+        "median": 0.8721232414245605,
+        "min": 0.8715968132019043,
+        "max": 0.873145580291748,
+        "values": [
+          0.8715968132019043,
+          0.873145580291748,
+          0.8721232414245605
+        ]
+      },
+      "setup_seconds": {
+        "median": 0.1814229681622237,
+        "min": 0.1812037357594818,
+        "max": 0.18908627703785896,
+        "values": [
+          0.1812037357594818,
+          0.1814229681622237,
+          0.18908627703785896
+        ]
+      },
+      "rhs_seconds": {
+        "median": 0.021445115096867085,
+        "min": 0.0214190143160522,
+        "max": 0.021493735257536173,
+        "values": [
+          0.021445115096867085,
+          0.021493735257536173,
+          0.0214190143160522
+        ]
+      },
+      "solve_seconds": {
+        "median": 1.8228510720655322,
+        "min": 1.8228055671788752,
+        "max": 1.8229781643021852,
+        "values": [
+          1.8228510720655322,
+          1.8229781643021852,
+          1.8228055671788752
+        ]
+      },
+      "post_seconds": {
+        "median": 0.007573080249130726,
+        "min": 0.00757192075252533,
+        "max": 0.007594981929287314,
+        "values": [
+          0.007573080249130726,
+          0.007594981929287314,
+          0.00757192075252533
+        ]
+      },
+      "allocated": 1.5454540252685547,
+      "reserved": 1.82421875,
+      "nvml": 2.439453125,
+      "max_true_residual": 8.806873461594957e-09,
+      "iterations": [
+        327
+      ],
+      "CH_repeat_difference": 7.247932615103028e-17
+    },
+    {
+      "case": "woven",
+      "grid": 192,
+      "variant": "latest",
+      "repeats": 3,
+      "records": [
+        "remote\\results\\woven_192_latest_r0.json",
+        "remote\\results\\woven_192_latest_r1.json",
+        "remote\\results\\woven_192_latest_r2.json"
+      ],
+      "time": {
+        "median": 1.892315159086138,
+        "min": 1.8796849390491843,
+        "max": 1.895540684927255,
+        "values": [
+          1.895540684927255,
+          1.892315159086138,
+          1.8796849390491843
+        ]
+      },
+      "compute": {
+        "median": 1.6695574729237705,
+        "min": 1.6689146352000535,
+        "max": 1.6697307550348341,
+        "values": [
+          1.6695574729237705,
+          1.6697307550348341,
+          1.6689146352000535
+        ]
+      },
+      "ku_ms": {
+        "median": 2.170591926574707,
+        "min": 2.170512008666992,
+        "max": 2.1706720352172852,
+        "values": [
+          2.170512008666992,
+          2.1706720352172852,
+          2.170591926574707
+        ]
+      },
+      "precond_ms": {
+        "median": 0.8707183837890625,
+        "min": 0.8703328132629394,
+        "max": 0.8710592269897461,
+        "values": [
+          0.8710592269897461,
+          0.8707183837890625,
+          0.8703328132629394
+        ]
+      },
+      "setup_seconds": {
+        "median": 0.18950684391893446,
+        "min": 0.18924375902861357,
+        "max": 0.1898239552974701,
+        "values": [
+          0.18950684391893446,
+          0.1898239552974701,
+          0.18924375902861357
+        ]
+      },
+      "rhs_seconds": {
+        "median": 0.021527195116505027,
+        "min": 0.021513435058295727,
+        "max": 0.021528074285015464,
+        "values": [
+          0.021527195116505027,
+          0.021528074285015464,
+          0.021513435058295727
+        ]
+      },
+      "solve_seconds": {
+        "median": 1.44678690796718,
+        "min": 1.4465772181283683,
+        "max": 1.4468048070557415,
+        "values": [
+          1.44678690796718,
+          1.4468048070557415,
+          1.4465772181283683
+        ]
+      },
+      "post_seconds": {
+        "median": 0.007653411012142897,
+        "min": 0.0076496717520058155,
+        "max": 0.007681193528696895,
+        "values": [
+          0.007681193528696895,
+          0.0076496717520058155,
+          0.007653411012142897
+        ]
+      },
+      "allocated": 1.5506763458251953,
+      "reserved": 1.82421875,
+      "nvml": 2.439453125,
+      "max_true_residual": 8.806874099410123e-09,
+      "iterations": [
+        327
+      ],
+      "CH_repeat_difference": 6.009658826512736e-17
+    },
+    {
+      "case": "woven",
+      "grid": 192,
+      "variant": "modal",
+      "repeats": 3,
+      "records": [
+        "remote\\results\\woven_192_modal_r0.json",
+        "remote\\results\\woven_192_modal_r1.json",
+        "remote\\results\\woven_192_modal_r2.json"
+      ],
+      "time": {
+        "median": 2.57527300179936,
+        "min": 2.5740535019431263,
+        "max": 2.577778793172911,
+        "values": [
+          2.577778793172911,
+          2.5740535019431263,
+          2.57527300179936
+        ]
+      },
+      "compute": {
+        "median": 2.356907462934032,
+        "min": 2.3567193020135164,
+        "max": 2.3586496610660106,
+        "values": [
+          2.3567193020135164,
+          2.356907462934032,
+          2.3586496610660106
+        ]
+      },
+      "ku_ms": {
+        "median": 3.2435150146484375,
+        "min": 3.2434688568115235,
+        "max": 3.2435359954833984,
+        "values": [
+          3.2435359954833984,
+          3.2435150146484375,
+          3.2434688568115235
+        ]
+      },
+      "precond_ms": {
+        "median": 1.3750320434570313,
+        "min": 1.3750255584716797,
+        "max": 1.3753647804260254,
+        "values": [
+          1.3750320434570313,
+          1.3753647804260254,
+          1.3750255584716797
+        ]
+      },
+      "setup_seconds": {
+        "median": 0.10746265528723598,
+        "min": 0.1074563767760992,
+        "max": 0.10982093191705644,
+        "values": [
+          0.1074563767760992,
+          0.10746265528723598,
+          0.10982093191705644
+        ]
+      },
+      "rhs_seconds": {
+        "median": 0.037729328032583,
+        "min": 0.03761900635436177,
+        "max": 0.037741529289633036,
+        "values": [
+          0.037729328032583,
+          0.037741529289633036,
+          0.03761900635436177
+        ]
+      },
+      "solve_seconds": {
+        "median": 2.1969134001992643,
+        "min": 2.1966463362332433,
+        "max": 2.197006870061159,
+        "values": [
+          2.1969134001992643,
+          2.197006870061159,
+          2.1966463362332433
+        ]
+      },
+      "post_seconds": {
+        "median": 0.010661326115950942,
+        "min": 0.01065980875864625,
+        "max": 0.010694836732000113,
+        "values": [
+          0.010661326115950942,
+          0.010694836732000113,
+          0.01065980875864625
+        ]
+      },
+      "allocated": 2.883040428161621,
+      "reserved": 4.056640625,
+      "nvml": 4.671875,
+      "max_true_residual": 9.3111465269065e-09,
+      "iterations": [
+        337
+      ],
+      "CH_repeat_difference": 8.636684452614873e-17
+    },
+    {
+      "case": "woven",
+      "grid": 192,
+      "variant": "paper",
+      "repeats": 3,
+      "records": [
+        "remote\\results\\woven_192_paper_r0.json",
+        "remote\\results\\woven_192_paper_r1.json",
+        "remote\\results\\woven_192_paper_r2.json"
+      ],
+      "time": {
+        "median": 3.370424262015149,
+        "min": 3.3669182658195496,
+        "max": 3.377688881009817,
+        "values": [
+          3.377688881009817,
+          3.370424262015149,
+          3.3669182658195496
+        ]
+      },
+      "compute": {
+        "median": 3.1428410969674587,
+        "min": 3.141676797065884,
+        "max": 3.1448804419487715,
+        "values": [
+          3.1428410969674587,
+          3.141676797065884,
+          3.1448804419487715
+        ]
+      },
+      "ku_ms": {
+        "median": 4.757761764526367,
+        "min": 4.7573089599609375,
+        "max": 4.7631584167480465,
+        "values": [
+          4.7631584167480465,
+          4.7573089599609375,
+          4.757761764526367
+        ]
+      },
+      "precond_ms": {
+        "median": 1.3750703811645508,
+        "min": 1.3748559951782227,
+        "max": 1.375152015686035,
+        "values": [
+          1.375152015686035,
+          1.3750703811645508,
+          1.3748559951782227
+        ]
+      },
+      "setup_seconds": {
+        "median": 0.31710332399234176,
+        "min": 0.31658558920025826,
+        "max": 0.31746296118944883,
+        "values": [
+          0.31658558920025826,
+          0.31710332399234176,
+          0.31746296118944883
+        ]
+      },
+      "rhs_seconds": {
+        "median": 0.037734709214419127,
+        "min": 0.03769800649024546,
+        "max": 0.03773617628030479,
+        "values": [
+          0.037734709214419127,
+          0.03773617628030479,
+          0.03769800649024546
+        ]
+      },
+      "solve_seconds": {
+        "median": 2.773266363888979,
+        "min": 2.771477820817381,
+        "max": 2.7742666078265756,
+        "values": [
+          2.773266363888979,
+          2.771477820817381,
+          2.7742666078265756
+        ]
+      },
+      "post_seconds": {
+        "median": 0.01095599983818829,
+        "min": 0.010947688948363066,
+        "max": 0.010959099745377898,
+        "values": [
+          0.010959099745377898,
+          0.01095599983818829,
+          0.010947688948363066
+        ]
+      },
+      "allocated": 9.527571678161621,
+      "reserved": 10.701171875,
+      "nvml": 11.31640625,
+      "max_true_residual": 9.311147664297037e-09,
+      "iterations": [
+        337
+      ],
+      "CH_repeat_difference": 0.0
+    },
+    {
+      "case": "woven",
+      "grid": 256,
+      "variant": "latest",
+      "repeats": 3,
+      "records": [
+        "remote\\results\\woven_256_latest_r0.json",
+        "remote\\results\\woven_256_latest_r1.json",
+        "remote\\results\\woven_256_latest_r2.json"
+      ],
+      "time": {
+        "median": 4.386728346114978,
+        "min": 4.36843168688938,
+        "max": 4.407801754074171,
+        "values": [
+          4.407801754074171,
+          4.386728346114978,
+          4.36843168688938
+        ]
+      },
+      "compute": {
+        "median": 4.136796954087913,
+        "min": 4.135953199118376,
+        "max": 4.137827683007345,
+        "values": [
+          4.135953199118376,
+          4.137827683007345,
+          4.136796954087913
+        ]
+      },
+      "ku_ms": {
+        "median": 5.1136432647705075,
+        "min": 5.113593673706054,
+        "max": 5.113729476928711,
+        "values": [
+          5.1136432647705075,
+          5.113593673706054,
+          5.113729476928711
+        ]
+      },
+      "precond_ms": {
+        "median": 2.7918575286865233,
+        "min": 2.7909536361694336,
+        "max": 2.791975975036621,
+        "values": [
+          2.791975975036621,
+          2.7909536361694336,
+          2.7918575286865233
+        ]
+      },
+      "setup_seconds": {
+        "median": 0.43791804905049503,
+        "min": 0.4369019609875977,
+        "max": 0.43926938087679446,
+        "values": [
+          0.4369019609875977,
+          0.43926938087679446,
+          0.43791804905049503
+        ]
+      },
+      "rhs_seconds": {
+        "median": 0.05090773315168917,
+        "min": 0.050891165155917406,
+        "max": 0.05090940371155739,
+        "values": [
+          0.050891165155917406,
+          0.05090773315168917,
+          0.05090940371155739
+        ]
+      },
+      "solve_seconds": {
+        "median": 3.6256449709180743,
+        "min": 3.6255265502259135,
+        "max": 3.625882951077074,
+        "values": [
+          3.6256449709180743,
+          3.6255265502259135,
+          3.625882951077074
+        ]
+      },
+      "post_seconds": {
+        "median": 0.017518601613119245,
+        "min": 0.01751143392175436,
+        "max": 0.017525573261082172,
+        "values": [
+          0.01751143392175436,
+          0.017518601613119245,
+          0.017525573261082172
+        ]
+      },
+      "allocated": 3.6277499198913574,
+      "reserved": 4.1484375,
+      "nvml": 4.763671875,
+      "max_true_residual": 9.658114022029467e-09,
+      "iterations": [
+        327
+      ],
+      "CH_repeat_difference": 7.280665168726627e-18
+    }
+  ]
+}

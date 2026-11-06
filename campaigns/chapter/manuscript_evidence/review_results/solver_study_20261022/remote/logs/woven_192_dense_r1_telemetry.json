@@ -1,0 +1,5030 @@
+{
+  "job": "woven_192_dense_r1",
+  "command": [
+    "/home/yufan/uv-torch-py312/bin/python",
+    "-u",
+    "study.py",
+    "--case",
+    "woven",
+    "--grid",
+    "192",
+    "--variant",
+    "dense",
+    "--repeat",
+    "1"
+  ],
+  "pid": 685521,
+  "returncode": 0,
+  "sample_interval_target_seconds": 0.02,
+  "markers": [
+    {
+      "kind": "begin",
+      "seconds": 5.076428890926763
+    },
+    {
+      "kind": "end",
+      "seconds": 7.369782786816359
+    }
+  ],
+  "peak_process_bytes_all": 3495952384,
+  "peak_process_bytes_measured": 3495952384,
+  "measurement_sample_count": 114,
+  "initial": {
+    "processes": [],
+    "device_used_bytes": 520355840
+  },
+  "samples": [
+    {
+      "processes": [],
+      "device_used_bytes": 520355840,
+      "seconds": 0.0003530229441821575,
+      "measurement": false,
+      "owned_process_bytes": 0
+    },
+    {
+      "processes": [],
+      "device_used_bytes": 520355840,
+      "seconds": 0.020424065878614783,
+      "measurement": false,
+      "owned_process_bytes": 0
+    },
+    {
+      "processes": [],
+      "device_used_bytes": 520355840,
+      "seconds": 0.040551319951191545,
+      "measurement": false,
+      "owned_process_bytes": 0
+    },
+    {
+      "processes": [],
+      "device_used_bytes": 520355840,
+      "seconds": 0.06069127400405705,
+      "measurement": false,
+      "owned_process_bytes": 0
+    },
+    {
+      "processes": [],
+      "device_used_bytes": 520355840,
+      "seconds": 0.0808539679273963,
+      "measurement": false,
+      "owned_process_bytes": 0
+    },
+    {
+      "processes": [],
+      "device_used_bytes": 520355840,
+      "seconds": 0.10093704191967845,
+      "measurement": false,
+      "owned_process_bytes": 0
+    },
+    {
+      "processes": [],
+      "device_used_bytes": 520355840,
+      "seconds": 0.12104474590159953,
+      "measurement": false,
+      "owned_process_bytes": 0
+    },
+    {
+      "processes": [],
+      "device_used_bytes": 520355840,
+      "seconds": 0.14114168984815478,
+      "measurement": false,
+      "owned_process_bytes": 0
+    },
+    {
+      "processes": [],
+      "device_used_bytes": 520355840,
+      "seconds": 0.16125044389627874,
+      "measurement": false,
+      "owned_process_bytes": 0
+    },
+    {
+      "processes": [],
+      "device_used_bytes": 520355840,
+      "seconds": 0.18137605697847903,
+      "measurement": false,
+      "owned_process_bytes": 0
+    },
+    {
+      "processes": [],
+      "device_used_bytes": 520355840,
+      "seconds": 0.20147226098924875,
+      "measurement": false,
+      "owned_process_bytes": 0
+    },
+    {
+      "processes": [],
+      "device_used_bytes": 520355840,
+      "seconds": 0.22157247480936348,
+      "measurement": false,
+      "owned_process_bytes": 0
+    },
+    {
+      "processes": [],
+      "device_used_bytes": 520355840,
+      "seconds": 0.24166583898477256,
+      "measurement": false,
+      "owned_process_bytes": 0
+    },
+    {
+      "processes": [],
+      "device_used_bytes": 520355840,
+      "seconds": 0.26178661291487515,
+      "measurement": false,
+      "owned_process_bytes": 0
+    },
+    {
+      "processes": [],
+      "device_used_bytes": 520355840,
+      "seconds": 0.2819043069612235,
+      "measurement": false,
+      "owned_process_bytes": 0
+    },
+    {
+      "processes": [],
+      "device_used_bytes": 520355840,
+      "seconds": 0.30201356089673936,
+      "measurement": false,
+      "owned_process_bytes": 0
+    },
+    {
+      "processes": [],
+      "device_used_bytes": 520355840,
+      "seconds": 0.32211648393422365,
+      "measurement": false,
+      "owned_process_bytes": 0
+    },
+    {
+      "processes": [],
+      "device_used_bytes": 520355840,
+      "seconds": 0.342209778027609,
+      "measurement": false,
+      "owned_process_bytes": 0
+    },
+    {
+      "processes": [],
+      "device_used_bytes": 520355840,
+      "seconds": 0.3623078118544072,
+      "measurement": false,
+      "owned_process_bytes": 0
+    },
+    {
+      "processes": [],
+      "device_used_bytes": 520355840,
+      "seconds": 0.3824070948176086,
+      "measurement": false,
+      "owned_process_bytes": 0
+    },
+    {
+      "processes": [],
+      "device_used_bytes": 520355840,
+      "seconds": 0.402504158904776,
+      "measurement": false,
+      "owned_process_bytes": 0
+    },
+    {
+      "processes": [],
+      "device_used_bytes": 520355840,
+      "seconds": 0.4226460228674114,
+      "measurement": false,
+      "owned_process_bytes": 0
+    },
+    {
+      "processes": [],
+      "device_used_bytes": 520355840,
+      "seconds": 0.44274882692843676,
+      "measurement": false,
+      "owned_process_bytes": 0
+    },
+    {
+      "processes": [],
+      "device_used_bytes": 520355840,
+      "seconds": 0.46284396084956825,
+      "measurement": false,
+      "owned_process_bytes": 0
+    },
+    {
+      "processes": [],
+      "device_used_bytes": 520355840,
+      "seconds": 0.48293773480691016,
+      "measurement": false,
+      "owned_process_bytes": 0
+    },
+    {
+      "processes": [],
+      "device_used_bytes": 520355840,
+      "seconds": 0.5031490889377892,
+      "measurement": false,
+      "owned_process_bytes": 0
+    },
+    {
+      "processes": [],
+      "device_used_bytes": 520355840,
+      "seconds": 0.5365942418575287,
+      "measurement": false,
+      "owned_process_bytes": 0
+    },
+    {
+      "processes": [],
+      "device_used_bytes": 523239424,
+      "seconds": 0.5566718350164592,
+      "measurement": false,
+      "owned_process_bytes": 0
+    },
+    {
+      "processes": [],
+      "device_used_bytes": 523239424,
+      "seconds": 0.5767599788960069,
+      "measurement": false,
+      "owned_process_bytes": 0
+    },
+    {
+      "processes": [],
+      "device_used_bytes": 523239424,
+      "seconds": 0.5968609529081732,
+      "measurement": false,
+      "owned_process_bytes": 0
+    },
+    {
+      "processes": [],
+      "device_used_bytes": 523239424,
+      "seconds": 0.616954926867038,
+      "measurement": false,
+      "owned_process_bytes": 0
+    },
+    {
+      "processes": [],
+      "device_used_bytes": 523239424,
+      "seconds": 0.637048149947077,
+      "measurement": false,
+      "owned_process_bytes": 0
+    },
+    {
+      "processes": [],
+      "device_used_bytes": 523239424,
+      "seconds": 0.6571905338205397,
+      "measurement": false,
+      "owned_process_bytes": 0
+    },
+    {
+      "processes": [],
+      "device_used_bytes": 523239424,
+      "seconds": 0.6773464479483664,
+      "measurement": false,
+      "owned_process_bytes": 0
+    },
+    {
+      "processes": [],
+      "device_used_bytes": 523239424,
+      "seconds": 0.6975528828334063,
+      "measurement": false,
+      "owned_process_bytes": 0
+    },
+    {
+      "processes": [],
+      "device_used_bytes": 523239424,
+      "seconds": 0.7176726169418544,
+      "measurement": false,
+      "owned_process_bytes": 0
+    },
+    {
+      "processes": [],
+      "device_used_bytes": 523239424,
+      "seconds": 0.737769350875169,
+      "measurement": false,
+      "owned_process_bytes": 0
+    },
+    {
+      "processes": [],
+      "device_used_bytes": 523239424,
+      "seconds": 0.7578630149364471,
+      "measurement": false,
+      "owned_process_bytes": 0
+    },
+    {
+      "processes": [],
+      "device_used_bytes": 523239424,
+      "seconds": 0.777958677848801,
+      "measurement": false,
+      "owned_process_bytes": 0
+    },
+    {
+      "processes": [],
+      "device_used_bytes": 523239424,
+      "seconds": 0.798061991808936,
+      "measurement": false,
+      "owned_process_bytes": 0
+    },
+    {
+      "processes": [],
+      "device_used_bytes": 523239424,
+      "seconds": 0.8181573459878564,
+      "measurement": false,
+      "owned_process_bytes": 0
+    },
+    {
+      "processes": [],
+      "device_used_bytes": 523239424,
+      "seconds": 0.8383046998642385,
+      "measurement": false,
+      "owned_process_bytes": 0
+    },
+    {
+      "processes": [],
+      "device_used_bytes": 523239424,
+      "seconds": 0.8584751638118178,
+      "measurement": false,
+      "owned_process_bytes": 0
+    },
+    {
+      "processes": [],
+      "device_used_bytes": 523239424,
+      "seconds": 0.878608037950471,
+      "measurement": false,
+      "owned_process_bytes": 0
+    },
+    {
+      "processes": [],
+      "device_used_bytes": 523239424,
+      "seconds": 0.8987023418303579,
+      "measurement": false,
+      "owned_process_bytes": 0
+    },
+    {
+      "processes": [],
+      "device_used_bytes": 523239424,
+      "seconds": 0.9187947059981525,
+      "measurement": false,
+      "owned_process_bytes": 0
+    },
+    {
+      "processes": [],
+      "device_used_bytes": 523239424,
+      "seconds": 0.9388858999591321,
+      "measurement": false,
+      "owned_process_bytes": 0
+    },
+    {
+      "processes": [],
+      "device_used_bytes": 523239424,
+      "seconds": 0.9589729828294367,
+      "measurement": false,
+      "owned_process_bytes": 0
+    },
+    {
+      "processes": [],
+      "device_used_bytes": 523239424,
+      "seconds": 0.9790790369734168,
+      "measurement": false,
+      "owned_process_bytes": 0
+    },
+    {
+      "processes": [],
+      "device_used_bytes": 523239424,
+      "seconds": 0.9991784309968352,
+      "measurement": false,
+      "owned_process_bytes": 0
+    },
+    {
+      "processes": [],
+      "device_used_bytes": 523239424,
+      "seconds": 1.0192829549778253,
+      "measurement": false,
+      "owned_process_bytes": 0
+    },
+    {
+      "processes": [],
+      "device_used_bytes": 523239424,
+      "seconds": 1.039456948870793,
+      "measurement": false,
+      "owned_process_bytes": 0
+    },
+    {
+      "processes": [],
+      "device_used_bytes": 523239424,
+      "seconds": 1.0595931429415941,
+      "measurement": false,
+      "owned_process_bytes": 0
+    },
+    {
+      "processes": [],
+      "device_used_bytes": 523239424,
+      "seconds": 1.0796793068293482,
+      "measurement": false,
+      "owned_process_bytes": 0
+    },
+    {
+      "processes": [],
+      "device_used_bytes": 523239424,
+      "seconds": 1.0997718598227948,
+      "measurement": false,
+      "owned_process_bytes": 0
+    },
+    {
+      "processes": [],
+      "device_used_bytes": 523239424,
+      "seconds": 1.1198404538445175,
+      "measurement": false,
+      "owned_process_bytes": 0
+    },
+    {
+      "processes": [],
+      "device_used_bytes": 523239424,
+      "seconds": 1.1399050068575889,
+      "measurement": false,
+      "owned_process_bytes": 0
+    },
+    {
+      "processes": [],
+      "device_used_bytes": 523239424,
+      "seconds": 1.1599724108818918,
+      "measurement": false,
+      "owned_process_bytes": 0
+    },
+    {
+      "processes": [],
+      "device_used_bytes": 523239424,
+      "seconds": 1.180061775026843,
+      "measurement": false,
+      "owned_process_bytes": 0
+    },
+    {
+      "processes": [],
+      "device_used_bytes": 523239424,
+      "seconds": 1.200134967919439,
+      "measurement": false,
+      "owned_process_bytes": 0
+    },
+    {
+      "processes": [],
+      "device_used_bytes": 523239424,
+      "seconds": 1.2202034019865096,
+      "measurement": false,
+      "owned_process_bytes": 0
+    },
+    {
+      "processes": [],
+      "device_used_bytes": 523239424,
+      "seconds": 1.2402689449954778,
+      "measurement": false,
+      "owned_process_bytes": 0
+    },
+    {
+      "processes": [],
+      "device_used_bytes": 523239424,
+      "seconds": 1.2603336989413947,
+      "measurement": false,
+      "owned_process_bytes": 0
+    },
+    {
+      "processes": [],
+      "device_used_bytes": 523239424,
+      "seconds": 1.2805087429005653,
+      "measurement": false,
+      "owned_process_bytes": 0
+    },
+    {
+      "processes": [],
+      "device_used_bytes": 523239424,
+      "seconds": 1.3006007068324834,
+      "measurement": false,
+      "owned_process_bytes": 0
+    },
+    {
+      "processes": [],
+      "device_used_bytes": 523239424,
+      "seconds": 1.3206962698604912,
+      "measurement": false,
+      "owned_process_bytes": 0
+    },
+    {
+      "processes": [],
+      "device_used_bytes": 523239424,
+      "seconds": 1.3407868039794266,
+      "measurement": false,
+      "owned_process_bytes": 0
+    },
+    {
+      "processes": [],
+      "device_used_bytes": 523239424,
+      "seconds": 1.3608767979312688,
+      "measurement": false,
+      "owned_process_bytes": 0
+    },
+    {
+      "processes": [],
+      "device_used_bytes": 523239424,
+      "seconds": 1.3809746420010924,
+      "measurement": false,
+      "owned_process_bytes": 0
+    },
+    {
+      "processes": [],
+      "device_used_bytes": 523239424,
+      "seconds": 1.4010724648833275,
+      "measurement": false,
+      "owned_process_bytes": 0
+    },
+    {
+      "processes": [],
+      "device_used_bytes": 523239424,
+      "seconds": 1.4211673089303076,
+      "measurement": false,
+      "owned_process_bytes": 0
+    },
+    {
+      "processes": [],
+      "device_used_bytes": 523239424,
+      "seconds": 1.4412576330360025,
+      "measurement": false,
+      "owned_process_bytes": 0
+    },
+    {
+      "processes": [],
+      "device_used_bytes": 523239424,
+      "seconds": 1.4613527758046985,
+      "measurement": false,
+      "owned_process_bytes": 0
+    },
+    {
+      "processes": [],
+      "device_used_bytes": 523239424,
+      "seconds": 1.481448229867965,
+      "measurement": false,
+      "owned_process_bytes": 0
+    },
+    {
+      "processes": [],
+      "device_used_bytes": 523239424,
+      "seconds": 1.5015414238441736,
+      "measurement": false,
+      "owned_process_bytes": 0
+    },
+    {
+      "processes": [],
+      "device_used_bytes": 523239424,
+      "seconds": 1.521632487885654,
+      "measurement": false,
+      "owned_process_bytes": 0
+    },
+    {
+      "processes": [],
+      "device_used_bytes": 523239424,
+      "seconds": 1.5417224208358675,
+      "measurement": false,
+      "owned_process_bytes": 0
+    },
+    {
+      "processes": [],
+      "device_used_bytes": 523239424,
+      "seconds": 1.5618173850234598,
+      "measurement": false,
+      "owned_process_bytes": 0
+    },
+    {
+      "processes": [],
+      "device_used_bytes": 523239424,
+      "seconds": 1.5819691189099103,
+      "measurement": false,
+      "owned_process_bytes": 0
+    },
+    {
+      "processes": [],
+      "device_used_bytes": 523239424,
+      "seconds": 1.6020726428832859,
+      "measurement": false,
+      "owned_process_bytes": 0
+    },
+    {
+      "processes": [],
+      "device_used_bytes": 523239424,
+      "seconds": 1.622174606891349,
+      "measurement": false,
+      "owned_process_bytes": 0
+    },
+    {
+      "processes": [],
+      "device_used_bytes": 523239424,
+      "seconds": 1.6422728709876537,
+      "measurement": false,
+      "owned_process_bytes": 0
+    },
+    {
+      "processes": [],
+      "device_used_bytes": 523239424,
+      "seconds": 1.6623408240266144,
+      "measurement": false,
+      "owned_process_bytes": 0
+    },
+    {
+      "processes": [],
+      "device_used_bytes": 523239424,
+      "seconds": 1.6824039579369128,
+      "measurement": false,
+      "owned_process_bytes": 0
+    },
+    {
+      "processes": [],
+      "device_used_bytes": 523239424,
+      "seconds": 1.7024739009793848,
+      "measurement": false,
+      "owned_process_bytes": 0
+    },
+    {
+      "processes": [],
+      "device_used_bytes": 523239424,
+      "seconds": 1.7225689948536456,
+      "measurement": false,
+      "owned_process_bytes": 0
+    },
+    {
+      "processes": [],
+      "device_used_bytes": 523239424,
+      "seconds": 1.7426440878771245,
+      "measurement": false,
+      "owned_process_bytes": 0
+    },
+    {
+      "processes": [],
+      "device_used_bytes": 523239424,
+      "seconds": 1.762734232004732,
+      "measurement": false,
+      "owned_process_bytes": 0
+    },
+    {
+      "processes": [],
+      "device_used_bytes": 523239424,
+      "seconds": 1.7828239458613098,
+      "measurement": false,
+      "owned_process_bytes": 0
+    },
+    {
+      "processes": [],
+      "device_used_bytes": 523239424,
+      "seconds": 1.8029246299993247,
+      "measurement": false,
+      "owned_process_bytes": 0
+    },
+    {
+      "processes": [],
+      "device_used_bytes": 523239424,
+      "seconds": 1.8230988739524037,
+      "measurement": false,
+      "owned_process_bytes": 0
+    },
+    {
+      "processes": [],
+      "device_used_bytes": 523239424,
+      "seconds": 1.8432644079439342,
+      "measurement": false,
+      "owned_process_bytes": 0
+    },
+    {
+      "processes": [],
+      "device_used_bytes": 523239424,
+      "seconds": 1.8633669319096953,
+      "measurement": false,
+      "owned_process_bytes": 0
+    },
+    {
+      "processes": [],
+      "device_used_bytes": 523239424,
+      "seconds": 1.883464016020298,
+      "measurement": false,
+      "owned_process_bytes": 0
+    },
+    {
+      "processes": [],
+      "device_used_bytes": 523239424,
+      "seconds": 1.9035669299773872,
+      "measurement": false,
+      "owned_process_bytes": 0
+    },
+    {
+      "processes": [],
+      "device_used_bytes": 523239424,
+      "seconds": 1.9237440039869398,
+      "measurement": false,
+      "owned_process_bytes": 0
+    },
+    {
+      "processes": [],
+      "device_used_bytes": 523239424,
+      "seconds": 1.9438882879912853,
+      "measurement": false,
+      "owned_process_bytes": 0
+    },
+    {
+      "processes": [],
+      "device_used_bytes": 523239424,
+      "seconds": 1.9640392819419503,
+      "measurement": false,
+      "owned_process_bytes": 0
+    },
+    {
+      "processes": [],
+      "device_used_bytes": 523239424,
+      "seconds": 1.9841912768315524,
+      "measurement": false,
+      "owned_process_bytes": 0
+    },
+    {
+      "processes": [],
+      "device_used_bytes": 523239424,
+      "seconds": 2.0043386209290475,
+      "measurement": false,
+      "owned_process_bytes": 0
+    },
+    {
+      "processes": [],
+      "device_used_bytes": 523239424,
+      "seconds": 2.0244371239095926,
+      "measurement": false,
+      "owned_process_bytes": 0
+    },
+    {
+      "processes": [],
+      "device_used_bytes": 523239424,
+      "seconds": 2.044585858937353,
+      "measurement": false,
+      "owned_process_bytes": 0
+    },
+    {
+      "processes": [],
+      "device_used_bytes": 523239424,
+      "seconds": 2.064749632962048,
+      "measurement": false,
+      "owned_process_bytes": 0
+    },
+    {
+      "processes": [],
+      "device_used_bytes": 523239424,
+      "seconds": 2.0849140668287873,
+      "measurement": false,
+      "owned_process_bytes": 0
+    },
+    {
+      "processes": [],
+      "device_used_bytes": 523239424,
+      "seconds": 2.110255673993379,
+      "measurement": false,
+      "owned_process_bytes": 0
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 12582912
+        }
+      ],
+      "device_used_bytes": 540540928,
+      "seconds": 2.131826158845797,
+      "measurement": false,
+      "owned_process_bytes": 12582912
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 12582912
+        }
+      ],
+      "device_used_bytes": 541130752,
+      "seconds": 2.153313135029748,
+      "measurement": false,
+      "owned_process_bytes": 12582912
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 31457280
+        }
+      ],
+      "device_used_bytes": 560267264,
+      "seconds": 2.17346842889674,
+      "measurement": false,
+      "owned_process_bytes": 31457280
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 522190848
+        }
+      ],
+      "device_used_bytes": 1051000832,
+      "seconds": 2.193598012905568,
+      "measurement": false,
+      "owned_process_bytes": 522190848
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 1830813696
+        }
+      ],
+      "device_used_bytes": 2359623680,
+      "seconds": 2.2137884569820017,
+      "measurement": false,
+      "owned_process_bytes": 1830813696
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 1874853888
+        }
+      ],
+      "device_used_bytes": 2403663872,
+      "seconds": 2.233983892016113,
+      "measurement": false,
+      "owned_process_bytes": 1874853888
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 1874853888
+        }
+      ],
+      "device_used_bytes": 2403663872,
+      "seconds": 2.25420795683749,
+      "measurement": false,
+      "owned_process_bytes": 1874853888
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 1902116864
+        }
+      ],
+      "device_used_bytes": 2430926848,
+      "seconds": 2.274387771030888,
+      "measurement": false,
+      "owned_process_bytes": 1902116864
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 1923088384
+        }
+      ],
+      "device_used_bytes": 2451898368,
+      "seconds": 2.294512504944578,
+      "measurement": false,
+      "owned_process_bytes": 1923088384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 1923088384
+        }
+      ],
+      "device_used_bytes": 2451898368,
+      "seconds": 2.3146339890081435,
+      "measurement": false,
+      "owned_process_bytes": 1923088384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 1923088384
+        }
+      ],
+      "device_used_bytes": 2451898368,
+      "seconds": 2.334757072851062,
+      "measurement": false,
+      "owned_process_bytes": 1923088384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 1923088384
+        }
+      ],
+      "device_used_bytes": 2451898368,
+      "seconds": 2.3548688569571823,
+      "measurement": false,
+      "owned_process_bytes": 1923088384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 1923088384
+        }
+      ],
+      "device_used_bytes": 2451898368,
+      "seconds": 2.3749851109459996,
+      "measurement": false,
+      "owned_process_bytes": 1923088384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 1923088384
+        }
+      ],
+      "device_used_bytes": 2451898368,
+      "seconds": 2.395104144932702,
+      "measurement": false,
+      "owned_process_bytes": 1923088384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 1923088384
+        }
+      ],
+      "device_used_bytes": 2451898368,
+      "seconds": 2.4152292588260025,
+      "measurement": false,
+      "owned_process_bytes": 1923088384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 1981808640
+        }
+      ],
+      "device_used_bytes": 2510618624,
+      "seconds": 2.435357962967828,
+      "measurement": false,
+      "owned_process_bytes": 1981808640
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 2134900736
+        }
+      ],
+      "device_used_bytes": 2663710720,
+      "seconds": 2.455475316848606,
+      "measurement": false,
+      "owned_process_bytes": 2134900736
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 2474639360
+        }
+      ],
+      "device_used_bytes": 3003449344,
+      "seconds": 2.4755917098373175,
+      "measurement": false,
+      "owned_process_bytes": 2474639360
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 2644508672
+        }
+      ],
+      "device_used_bytes": 3173318656,
+      "seconds": 2.4957034839317203,
+      "measurement": false,
+      "owned_process_bytes": 2644508672
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3326083072
+        }
+      ],
+      "device_used_bytes": 3854893056,
+      "seconds": 2.5158233479596674,
+      "measurement": false,
+      "owned_process_bytes": 3326083072
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3326083072
+        }
+      ],
+      "device_used_bytes": 3854893056,
+      "seconds": 2.5359399418812245,
+      "measurement": false,
+      "owned_process_bytes": 3326083072
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3326083072
+        }
+      ],
+      "device_used_bytes": 3854893056,
+      "seconds": 2.5560486658941954,
+      "measurement": false,
+      "owned_process_bytes": 3326083072
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3326083072
+        }
+      ],
+      "device_used_bytes": 3854893056,
+      "seconds": 2.5761464298702776,
+      "measurement": false,
+      "owned_process_bytes": 3326083072
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3326083072
+        }
+      ],
+      "device_used_bytes": 3854893056,
+      "seconds": 2.5962212230078876,
+      "measurement": false,
+      "owned_process_bytes": 3326083072
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3326083072
+        }
+      ],
+      "device_used_bytes": 3854893056,
+      "seconds": 2.6163047070149332,
+      "measurement": false,
+      "owned_process_bytes": 3326083072
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3326083072
+        }
+      ],
+      "device_used_bytes": 3854893056,
+      "seconds": 2.6364264409057796,
+      "measurement": false,
+      "owned_process_bytes": 3326083072
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3326083072
+        }
+      ],
+      "device_used_bytes": 3854893056,
+      "seconds": 2.656551024876535,
+      "measurement": false,
+      "owned_process_bytes": 3326083072
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3326083072
+        }
+      ],
+      "device_used_bytes": 3854893056,
+      "seconds": 2.6766801190096885,
+      "measurement": false,
+      "owned_process_bytes": 3326083072
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3326083072
+        }
+      ],
+      "device_used_bytes": 3854893056,
+      "seconds": 2.69679236295633,
+      "measurement": false,
+      "owned_process_bytes": 3326083072
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3326083072
+        }
+      ],
+      "device_used_bytes": 3854893056,
+      "seconds": 2.7169035468250513,
+      "measurement": false,
+      "owned_process_bytes": 3326083072
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3326083072
+        }
+      ],
+      "device_used_bytes": 3854893056,
+      "seconds": 2.737019599881023,
+      "measurement": false,
+      "owned_process_bytes": 3326083072
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3326083072
+        }
+      ],
+      "device_used_bytes": 3854893056,
+      "seconds": 2.757127773948014,
+      "measurement": false,
+      "owned_process_bytes": 3326083072
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3326083072
+        }
+      ],
+      "device_used_bytes": 3854893056,
+      "seconds": 2.777236917987466,
+      "measurement": false,
+      "owned_process_bytes": 3326083072
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3326083072
+        }
+      ],
+      "device_used_bytes": 3854893056,
+      "seconds": 2.7973866518586874,
+      "measurement": false,
+      "owned_process_bytes": 3326083072
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3326083072
+        }
+      ],
+      "device_used_bytes": 3854893056,
+      "seconds": 2.817588656907901,
+      "measurement": false,
+      "owned_process_bytes": 3326083072
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3326083072
+        }
+      ],
+      "device_used_bytes": 3854893056,
+      "seconds": 2.8378443520050496,
+      "measurement": false,
+      "owned_process_bytes": 3326083072
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3326083072
+        }
+      ],
+      "device_used_bytes": 3854893056,
+      "seconds": 2.8580631769727916,
+      "measurement": false,
+      "owned_process_bytes": 3326083072
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3326083072
+        }
+      ],
+      "device_used_bytes": 3854893056,
+      "seconds": 2.87824256089516,
+      "measurement": false,
+      "owned_process_bytes": 3326083072
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3326083072
+        }
+      ],
+      "device_used_bytes": 3854893056,
+      "seconds": 2.898381454870105,
+      "measurement": false,
+      "owned_process_bytes": 3326083072
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3326083072
+        }
+      ],
+      "device_used_bytes": 3854893056,
+      "seconds": 2.9185090088285506,
+      "measurement": false,
+      "owned_process_bytes": 3326083072
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3326083072
+        }
+      ],
+      "device_used_bytes": 3854893056,
+      "seconds": 2.938684163847938,
+      "measurement": false,
+      "owned_process_bytes": 3326083072
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3326083072
+        }
+      ],
+      "device_used_bytes": 3854893056,
+      "seconds": 2.958795227808878,
+      "measurement": false,
+      "owned_process_bytes": 3326083072
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3326083072
+        }
+      ],
+      "device_used_bytes": 3854893056,
+      "seconds": 2.9789016009308398,
+      "measurement": false,
+      "owned_process_bytes": 3326083072
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3326083072
+        }
+      ],
+      "device_used_bytes": 3854893056,
+      "seconds": 2.9989999749232084,
+      "measurement": false,
+      "owned_process_bytes": 3326083072
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 3.0190951188560575,
+      "measurement": false,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 3.0392143728677183,
+      "measurement": false,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 3.05938206682913,
+      "measurement": false,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 3.079485171008855,
+      "measurement": false,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 3.0996084248181432,
+      "measurement": false,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 3.119733538944274,
+      "measurement": false,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 3.139850042993203,
+      "measurement": false,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 3.159965286962688,
+      "measurement": false,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 3.1800942609552294,
+      "measurement": false,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 3.2002181748393923,
+      "measurement": false,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 3.220389478839934,
+      "measurement": false,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 3.240522852865979,
+      "measurement": false,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 3.2606390269938856,
+      "measurement": false,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 3.280750820878893,
+      "measurement": false,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 3.300867054844275,
+      "measurement": false,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 3.3209480678196996,
+      "measurement": false,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 3.3410649818833917,
+      "measurement": false,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 3.3612683368846774,
+      "measurement": false,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 3.3814568708185107,
+      "measurement": false,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 3.401599454926327,
+      "measurement": false,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 3.4217244489118457,
+      "measurement": false,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 3.4418478128500283,
+      "measurement": false,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 3.4620001069270074,
+      "measurement": false,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 3.482119831023738,
+      "measurement": false,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 3.5022352249361575,
+      "measurement": false,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 3.5223463089205325,
+      "measurement": false,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 3.542467512888834,
+      "measurement": false,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 3.5626666978932917,
+      "measurement": false,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 3.5828453418798745,
+      "measurement": false,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 3.6030025358777493,
+      "measurement": false,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 3.6231366898864508,
+      "measurement": false,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 3.643273354973644,
+      "measurement": false,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 3.6633860080037266,
+      "measurement": false,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 3.6835082119796425,
+      "measurement": false,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 3.7036192258819938,
+      "measurement": false,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 3.7261820298153907,
+      "measurement": false,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 3.7463158639147878,
+      "measurement": false,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 3.766462857834995,
+      "measurement": false,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 3.7866124419961125,
+      "measurement": false,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 3.806745345937088,
+      "measurement": false,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 3.826868279837072,
+      "measurement": false,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 3.8470002238173038,
+      "measurement": false,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 3.867131007835269,
+      "measurement": false,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 3.8872630828991532,
+      "measurement": false,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 3.9073930960148573,
+      "measurement": false,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 3.927497179945931,
+      "measurement": false,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 3.9476275639608502,
+      "measurement": false,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 3.9677389978896827,
+      "measurement": false,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 3.987879481865093,
+      "measurement": false,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 4.007993585895747,
+      "measurement": false,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 4.028108219848946,
+      "measurement": false,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 4.048226243816316,
+      "measurement": false,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 4.068339987890795,
+      "measurement": false,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 4.088455821853131,
+      "measurement": false,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 4.108578825835139,
+      "measurement": false,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 4.1286946998443455,
+      "measurement": false,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 4.148808542871848,
+      "measurement": false,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 4.168945037992671,
+      "measurement": false,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 4.189058560878038,
+      "measurement": false,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 4.209169934969395,
+      "measurement": false,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 4.231613758020103,
+      "measurement": false,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 4.251726681832224,
+      "measurement": false,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 4.2718379360158,
+      "measurement": false,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 4.2919802099931985,
+      "measurement": false,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 4.312108273850754,
+      "measurement": false,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 4.332225757883862,
+      "measurement": false,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 4.352336881915107,
+      "measurement": false,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 4.372483865823597,
+      "measurement": false,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 4.392599019920453,
+      "measurement": false,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 4.412719573825598,
+      "measurement": false,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 4.4328370578587055,
+      "measurement": false,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 4.452955951914191,
+      "measurement": false,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 4.473066615872085,
+      "measurement": false,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 4.493177798809484,
+      "measurement": false,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 4.513288512825966,
+      "measurement": false,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 4.533400577027351,
+      "measurement": false,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 4.553493320941925,
+      "measurement": false,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 4.573605554876849,
+      "measurement": false,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 4.593720447970554,
+      "measurement": false,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 4.613833951996639,
+      "measurement": false,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 4.633945235982537,
+      "measurement": false,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 4.654056439874694,
+      "measurement": false,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 4.674172593979165,
+      "measurement": false,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 4.6942838579416275,
+      "measurement": false,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 4.714395051822066,
+      "measurement": false,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 4.734507575863972,
+      "measurement": false,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 4.754617679864168,
+      "measurement": false,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 4.77471700287424,
+      "measurement": false,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 4.794792506843805,
+      "measurement": false,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 4.814895630814135,
+      "measurement": false,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 4.8350132738705724,
+      "measurement": false,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 4.855123947840184,
+      "measurement": false,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 4.875223381910473,
+      "measurement": false,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 4.89530125586316,
+      "measurement": false,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 4.915370478993282,
+      "measurement": false,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 4.9354348729830235,
+      "measurement": false,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 4.955568386940286,
+      "measurement": false,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 4.975787670817226,
+      "measurement": false,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 4.99597188597545,
+      "measurement": false,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 5.016138519858941,
+      "measurement": false,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 2399141888
+        }
+      ],
+      "device_used_bytes": 2927951872,
+      "seconds": 5.036267513874918,
+      "measurement": false,
+      "owned_process_bytes": 2399141888
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 692060160
+        }
+      ],
+      "device_used_bytes": 1220870144,
+      "seconds": 5.056388458004221,
+      "measurement": false,
+      "owned_process_bytes": 692060160
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 692060160
+        }
+      ],
+      "device_used_bytes": 1220870144,
+      "seconds": 5.076485021971166,
+      "measurement": true,
+      "owned_process_bytes": 692060160
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 692060160
+        }
+      ],
+      "device_used_bytes": 1220870144,
+      "seconds": 5.096568085951731,
+      "measurement": true,
+      "owned_process_bytes": 692060160
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 692060160
+        }
+      ],
+      "device_used_bytes": 1220870144,
+      "seconds": 5.116693438962102,
+      "measurement": true,
+      "owned_process_bytes": 692060160
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 692060160
+        }
+      ],
+      "device_used_bytes": 1220870144,
+      "seconds": 5.136833783937618,
+      "measurement": true,
+      "owned_process_bytes": 692060160
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 692060160
+        }
+      ],
+      "device_used_bytes": 1220870144,
+      "seconds": 5.156980508007109,
+      "measurement": true,
+      "owned_process_bytes": 692060160
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 692060160
+        }
+      ],
+      "device_used_bytes": 1220870144,
+      "seconds": 5.177118151914328,
+      "measurement": true,
+      "owned_process_bytes": 692060160
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 1910505472
+        }
+      ],
+      "device_used_bytes": 2439315456,
+      "seconds": 5.197271805955097,
+      "measurement": true,
+      "owned_process_bytes": 1910505472
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 1931476992
+        }
+      ],
+      "device_used_bytes": 2460286976,
+      "seconds": 5.217400369932875,
+      "measurement": true,
+      "owned_process_bytes": 1931476992
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 1931476992
+        }
+      ],
+      "device_used_bytes": 2460286976,
+      "seconds": 5.237527393968776,
+      "measurement": true,
+      "owned_process_bytes": 1931476992
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 1931476992
+        }
+      ],
+      "device_used_bytes": 2460286976,
+      "seconds": 5.2576470780186355,
+      "measurement": true,
+      "owned_process_bytes": 1931476992
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 1931476992
+        }
+      ],
+      "device_used_bytes": 2460286976,
+      "seconds": 5.2777797118760645,
+      "measurement": true,
+      "owned_process_bytes": 1931476992
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 1931476992
+        }
+      ],
+      "device_used_bytes": 2460286976,
+      "seconds": 5.297861145809293,
+      "measurement": true,
+      "owned_process_bytes": 1931476992
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 1931476992
+        }
+      ],
+      "device_used_bytes": 2460286976,
+      "seconds": 5.318081669975072,
+      "measurement": true,
+      "owned_process_bytes": 1931476992
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 1931476992
+        }
+      ],
+      "device_used_bytes": 2460286976,
+      "seconds": 5.338213884970173,
+      "measurement": true,
+      "owned_process_bytes": 1931476992
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 1990197248
+        }
+      ],
+      "device_used_bytes": 2519007232,
+      "seconds": 5.358353668823838,
+      "measurement": true,
+      "owned_process_bytes": 1990197248
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 5.378441891865805,
+      "measurement": true,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 5.398557325825095,
+      "measurement": true,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 5.418675109976903,
+      "measurement": true,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 5.438789424020797,
+      "measurement": true,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 5.458902447950095,
+      "measurement": true,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 5.47901298198849,
+      "measurement": true,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 5.499124185880646,
+      "measurement": true,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 5.519243089016527,
+      "measurement": true,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 5.5393555329646915,
+      "measurement": true,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 5.559471586951986,
+      "measurement": true,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 5.579587290994823,
+      "measurement": true,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 5.599698484875262,
+      "measurement": true,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 5.619808558840305,
+      "measurement": true,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 5.639928343007341,
+      "measurement": true,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 5.660045636817813,
+      "measurement": true,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 5.68014319986105,
+      "measurement": true,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 5.700259384000674,
+      "measurement": true,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 5.720371367875487,
+      "measurement": true,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 5.74048738181591,
+      "measurement": true,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 5.76059789583087,
+      "measurement": true,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 5.780695129884407,
+      "measurement": true,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 5.800770252943039,
+      "measurement": true,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 5.82088190689683,
+      "measurement": true,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 5.840999010950327,
+      "measurement": true,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 5.861109544988722,
+      "measurement": true,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 5.881226839032024,
+      "measurement": true,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 5.901337192859501,
+      "measurement": true,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 5.92145530693233,
+      "measurement": true,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 5.941566510824487,
+      "measurement": true,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 5.961681643966585,
+      "measurement": true,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 5.981796087929979,
+      "measurement": true,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 6.001910852035508,
+      "measurement": true,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 6.0220253558363765,
+      "measurement": true,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 6.0421174799557775,
+      "measurement": true,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 6.062233503907919,
+      "measurement": true,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 6.082345957867801,
+      "measurement": true,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 6.102469841018319,
+      "measurement": true,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 6.122588904807344,
+      "measurement": true,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 6.142700248863548,
+      "measurement": true,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 6.162814692826942,
+      "measurement": true,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 6.182928896974772,
+      "measurement": true,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 6.20303980098106,
+      "measurement": true,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 6.223154305014759,
+      "measurement": true,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 6.243265868863091,
+      "measurement": true,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 6.2633766329381615,
+      "measurement": true,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 6.283492716960609,
+      "measurement": true,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 6.303613009862602,
+      "measurement": true,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 6.323728093877435,
+      "measurement": true,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 6.343854667851701,
+      "measurement": true,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 6.363955051871017,
+      "measurement": true,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 6.384039555909112,
+      "measurement": true,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 6.404133799020201,
+      "measurement": true,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 6.424259272869676,
+      "measurement": true,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 6.444376146886498,
+      "measurement": true,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 6.464487490942702,
+      "measurement": true,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 6.484600655036047,
+      "measurement": true,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 6.504718438955024,
+      "measurement": true,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 6.52482960303314,
+      "measurement": true,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 6.54494257690385,
+      "measurement": true,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 6.5650547810364515,
+      "measurement": true,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 6.58516576490365,
+      "measurement": true,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 6.605277977883816,
+      "measurement": true,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 6.625388241838664,
+      "measurement": true,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 6.645499506033957,
+      "measurement": true,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 6.665616009850055,
+      "measurement": true,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 6.685726933879778,
+      "measurement": true,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 6.705845257965848,
+      "measurement": true,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 6.725956531940028,
+      "measurement": true,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 6.746087645879015,
+      "measurement": true,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 6.766207220032811,
+      "measurement": true,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 6.786324703833088,
+      "measurement": true,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 6.806445286842063,
+      "measurement": true,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 6.826556531013921,
+      "measurement": true,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 6.846660764887929,
+      "measurement": true,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 6.86673819902353,
+      "measurement": true,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 6.8868095118086785,
+      "measurement": true,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 6.9069211459718645,
+      "measurement": true,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 6.927032209932804,
+      "measurement": true,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 6.947143584024161,
+      "measurement": true,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 6.967263487866148,
+      "measurement": true,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 6.987381111830473,
+      "measurement": true,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 7.007506515830755,
+      "measurement": true,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 7.0276198098436,
+      "measurement": true,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 7.0477317329496145,
+      "measurement": true,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 7.067842126823962,
+      "measurement": true,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 7.087952240835875,
+      "measurement": true,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 7.108068184927106,
+      "measurement": true,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 7.128179318970069,
+      "measurement": true,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 7.148289642995223,
+      "measurement": true,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 7.168403616873547,
+      "measurement": true,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 7.188514919951558,
+      "measurement": true,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 7.208625013940036,
+      "measurement": true,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 7.228735347976908,
+      "measurement": true,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 7.24884933186695,
+      "measurement": true,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 7.269004555884749,
+      "measurement": true,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 7.289199220947921,
+      "measurement": true,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 7.309390614973381,
+      "measurement": true,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 3495952384
+        }
+      ],
+      "device_used_bytes": 4024762368,
+      "seconds": 7.329568159999326,
+      "measurement": true,
+      "owned_process_bytes": 3495952384
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 2569011200
+        }
+      ],
+      "device_used_bytes": 3097821184,
+      "seconds": 7.34969491395168,
+      "measurement": true,
+      "owned_process_bytes": 2569011200
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 692060160
+        }
+      ],
+      "device_used_bytes": 1220870144,
+      "seconds": 7.369892797898501,
+      "measurement": false,
+      "owned_process_bytes": 692060160
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 692060160
+        }
+      ],
+      "device_used_bytes": 1220870144,
+      "seconds": 7.3900812428910285,
+      "measurement": false,
+      "owned_process_bytes": 692060160
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 692060160
+        }
+      ],
+      "device_used_bytes": 1220870144,
+      "seconds": 7.410268916981295,
+      "measurement": false,
+      "owned_process_bytes": 692060160
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 692060160
+        }
+      ],
+      "device_used_bytes": 1220870144,
+      "seconds": 7.43043617089279,
+      "measurement": false,
+      "owned_process_bytes": 692060160
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 692060160
+        }
+      ],
+      "device_used_bytes": 1220870144,
+      "seconds": 7.450586635852233,
+      "measurement": false,
+      "owned_process_bytes": 692060160
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 692060160
+        }
+      ],
+      "device_used_bytes": 1220870144,
+      "seconds": 7.470731769921258,
+      "measurement": false,
+      "owned_process_bytes": 692060160
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 1931476992
+        }
+      ],
+      "device_used_bytes": 2460286976,
+      "seconds": 7.490852863993496,
+      "measurement": false,
+      "owned_process_bytes": 1931476992
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 1931476992
+        }
+      ],
+      "device_used_bytes": 2460286976,
+      "seconds": 7.5109935980290174,
+      "measurement": false,
+      "owned_process_bytes": 1931476992
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 1931476992
+        }
+      ],
+      "device_used_bytes": 2460286976,
+      "seconds": 7.531120941974223,
+      "measurement": false,
+      "owned_process_bytes": 1931476992
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 1931476992
+        }
+      ],
+      "device_used_bytes": 2460286976,
+      "seconds": 7.551243695896119,
+      "measurement": false,
+      "owned_process_bytes": 1931476992
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 1931476992
+        }
+      ],
+      "device_used_bytes": 2460286976,
+      "seconds": 7.5713821798563,
+      "measurement": false,
+      "owned_process_bytes": 1931476992
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 1931476992
+        }
+      ],
+      "device_used_bytes": 2460286976,
+      "seconds": 7.5914825038053095,
+      "measurement": false,
+      "owned_process_bytes": 1931476992
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 1931476992
+        }
+      ],
+      "device_used_bytes": 2460286976,
+      "seconds": 7.611582037992775,
+      "measurement": false,
+      "owned_process_bytes": 1931476992
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 1931476992
+        }
+      ],
+      "device_used_bytes": 2460286976,
+      "seconds": 7.63170054089278,
+      "measurement": false,
+      "owned_process_bytes": 1931476992
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 2048917504
+        }
+      ],
+      "device_used_bytes": 2577727488,
+      "seconds": 7.6518136949744076,
+      "measurement": false,
+      "owned_process_bytes": 2048917504
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 2644508672
+        }
+      ],
+      "device_used_bytes": 3173318656,
+      "seconds": 7.671939838910475,
+      "measurement": false,
+      "owned_process_bytes": 2644508672
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 2644508672
+        }
+      ],
+      "device_used_bytes": 3173318656,
+      "seconds": 7.692015542881563,
+      "measurement": false,
+      "owned_process_bytes": 2644508672
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 2644508672
+        }
+      ],
+      "device_used_bytes": 3173318656,
+      "seconds": 7.712129706982523,
+      "measurement": false,
+      "owned_process_bytes": 2644508672
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 2644508672
+        }
+      ],
+      "device_used_bytes": 3173318656,
+      "seconds": 7.732241720892489,
+      "measurement": false,
+      "owned_process_bytes": 2644508672
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 2644508672
+        }
+      ],
+      "device_used_bytes": 3173318656,
+      "seconds": 7.752360844984651,
+      "measurement": false,
+      "owned_process_bytes": 2644508672
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 2644508672
+        }
+      ],
+      "device_used_bytes": 3173318656,
+      "seconds": 7.772474137833342,
+      "measurement": false,
+      "owned_process_bytes": 2644508672
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 2644508672
+        }
+      ],
+      "device_used_bytes": 3173318656,
+      "seconds": 7.792585291899741,
+      "measurement": false,
+      "owned_process_bytes": 2644508672
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 2644508672
+        }
+      ],
+      "device_used_bytes": 3173318656,
+      "seconds": 7.812704226002097,
+      "measurement": false,
+      "owned_process_bytes": 2644508672
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 2644508672
+        }
+      ],
+      "device_used_bytes": 3173318656,
+      "seconds": 7.832814769819379,
+      "measurement": false,
+      "owned_process_bytes": 2644508672
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 2644508672
+        }
+      ],
+      "device_used_bytes": 3173318656,
+      "seconds": 7.8529387440066785,
+      "measurement": false,
+      "owned_process_bytes": 2644508672
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 2644508672
+        }
+      ],
+      "device_used_bytes": 3173318656,
+      "seconds": 7.873050638008863,
+      "measurement": false,
+      "owned_process_bytes": 2644508672
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 2644508672
+        }
+      ],
+      "device_used_bytes": 3173318656,
+      "seconds": 7.893161932006478,
+      "measurement": false,
+      "owned_process_bytes": 2644508672
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 2644508672
+        }
+      ],
+      "device_used_bytes": 3173318656,
+      "seconds": 7.913286495953798,
+      "measurement": false,
+      "owned_process_bytes": 2644508672
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 2644508672
+        }
+      ],
+      "device_used_bytes": 3173318656,
+      "seconds": 7.933399129891768,
+      "measurement": false,
+      "owned_process_bytes": 2644508672
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 2644508672
+        }
+      ],
+      "device_used_bytes": 3173318656,
+      "seconds": 7.95351069397293,
+      "measurement": false,
+      "owned_process_bytes": 2644508672
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 2644508672
+        }
+      ],
+      "device_used_bytes": 3173318656,
+      "seconds": 7.973637916846201,
+      "measurement": false,
+      "owned_process_bytes": 2644508672
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 2644508672
+        }
+      ],
+      "device_used_bytes": 3173318656,
+      "seconds": 7.993754410883412,
+      "measurement": false,
+      "owned_process_bytes": 2644508672
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 2900361216
+        }
+      ],
+      "device_used_bytes": 3429171200,
+      "seconds": 8.01387635502033,
+      "measurement": false,
+      "owned_process_bytes": 2900361216
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 2900361216
+        }
+      ],
+      "device_used_bytes": 3429171200,
+      "seconds": 8.033989039016888,
+      "measurement": false,
+      "owned_process_bytes": 2900361216
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 2900361216
+        }
+      ],
+      "device_used_bytes": 3429171200,
+      "seconds": 8.05409958283417,
+      "measurement": false,
+      "owned_process_bytes": 2900361216
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 2900361216
+        }
+      ],
+      "device_used_bytes": 3429171200,
+      "seconds": 8.074218106921762,
+      "measurement": false,
+      "owned_process_bytes": 2900361216
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 2900361216
+        }
+      ],
+      "device_used_bytes": 3429171200,
+      "seconds": 8.094336330890656,
+      "measurement": false,
+      "owned_process_bytes": 2900361216
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 2900361216
+        }
+      ],
+      "device_used_bytes": 3429171200,
+      "seconds": 8.114531834842637,
+      "measurement": false,
+      "owned_process_bytes": 2900361216
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 2900361216
+        }
+      ],
+      "device_used_bytes": 3429171200,
+      "seconds": 8.13476504990831,
+      "measurement": false,
+      "owned_process_bytes": 2900361216
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 2900361216
+        }
+      ],
+      "device_used_bytes": 3429171200,
+      "seconds": 8.154974184930325,
+      "measurement": false,
+      "owned_process_bytes": 2900361216
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 2900361216
+        }
+      ],
+      "device_used_bytes": 3429171200,
+      "seconds": 8.175171148963273,
+      "measurement": false,
+      "owned_process_bytes": 2900361216
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 2900361216
+        }
+      ],
+      "device_used_bytes": 3429171200,
+      "seconds": 8.195290403906256,
+      "measurement": false,
+      "owned_process_bytes": 2900361216
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 2900361216
+        }
+      ],
+      "device_used_bytes": 3429171200,
+      "seconds": 8.215460557956249,
+      "measurement": false,
+      "owned_process_bytes": 2900361216
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 2900361216
+        }
+      ],
+      "device_used_bytes": 3429171200,
+      "seconds": 8.235672652022913,
+      "measurement": false,
+      "owned_process_bytes": 2900361216
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 2900361216
+        }
+      ],
+      "device_used_bytes": 3429171200,
+      "seconds": 8.255882016848773,
+      "measurement": false,
+      "owned_process_bytes": 2900361216
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 2900361216
+        }
+      ],
+      "device_used_bytes": 3429171200,
+      "seconds": 8.276055820984766,
+      "measurement": false,
+      "owned_process_bytes": 2900361216
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 2900361216
+        }
+      ],
+      "device_used_bytes": 3429171200,
+      "seconds": 8.29620861588046,
+      "measurement": false,
+      "owned_process_bytes": 2900361216
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 692060160
+        }
+      ],
+      "device_used_bytes": 1220870144,
+      "seconds": 8.316328439861536,
+      "measurement": false,
+      "owned_process_bytes": 692060160
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 692060160
+        }
+      ],
+      "device_used_bytes": 1220870144,
+      "seconds": 8.33647629385814,
+      "measurement": false,
+      "owned_process_bytes": 692060160
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 692060160
+        }
+      ],
+      "device_used_bytes": 1220870144,
+      "seconds": 8.356616097968072,
+      "measurement": false,
+      "owned_process_bytes": 692060160
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 692060160
+        }
+      ],
+      "device_used_bytes": 1220870144,
+      "seconds": 8.376749021932483,
+      "measurement": false,
+      "owned_process_bytes": 692060160
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 692060160
+        }
+      ],
+      "device_used_bytes": 1220870144,
+      "seconds": 8.396935616852716,
+      "measurement": false,
+      "owned_process_bytes": 692060160
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 692060160
+        }
+      ],
+      "device_used_bytes": 1220870144,
+      "seconds": 8.417140340898186,
+      "measurement": false,
+      "owned_process_bytes": 692060160
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 692060160
+        }
+      ],
+      "device_used_bytes": 1220870144,
+      "seconds": 8.437341545941308,
+      "measurement": false,
+      "owned_process_bytes": 692060160
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 692060160
+        }
+      ],
+      "device_used_bytes": 1220870144,
+      "seconds": 8.457539229886606,
+      "measurement": false,
+      "owned_process_bytes": 692060160
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 692060160
+        }
+      ],
+      "device_used_bytes": 1220870144,
+      "seconds": 8.48013877402991,
+      "measurement": false,
+      "owned_process_bytes": 692060160
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 692060160
+        }
+      ],
+      "device_used_bytes": 1220870144,
+      "seconds": 8.500505009898916,
+      "measurement": false,
+      "owned_process_bytes": 692060160
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 692060160
+        }
+      ],
+      "device_used_bytes": 1220870144,
+      "seconds": 8.521858513820916,
+      "measurement": false,
+      "owned_process_bytes": 692060160
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 692060160
+        }
+      ],
+      "device_used_bytes": 1220870144,
+      "seconds": 8.542040618835017,
+      "measurement": false,
+      "owned_process_bytes": 692060160
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 692060160
+        }
+      ],
+      "device_used_bytes": 1220870144,
+      "seconds": 8.56224376289174,
+      "measurement": false,
+      "owned_process_bytes": 692060160
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 692060160
+        }
+      ],
+      "device_used_bytes": 1220870144,
+      "seconds": 8.582422527950257,
+      "measurement": false,
+      "owned_process_bytes": 692060160
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 692060160
+        }
+      ],
+      "device_used_bytes": 1220870144,
+      "seconds": 8.602616021875292,
+      "measurement": false,
+      "owned_process_bytes": 692060160
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 692060160
+        }
+      ],
+      "device_used_bytes": 1220870144,
+      "seconds": 8.622835316928104,
+      "measurement": false,
+      "owned_process_bytes": 692060160
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 692060160
+        }
+      ],
+      "device_used_bytes": 1220870144,
+      "seconds": 8.643024311866611,
+      "measurement": false,
+      "owned_process_bytes": 692060160
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 692060160
+        }
+      ],
+      "device_used_bytes": 1220870144,
+      "seconds": 8.663191665895283,
+      "measurement": false,
+      "owned_process_bytes": 692060160
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 692060160
+        }
+      ],
+      "device_used_bytes": 1220870144,
+      "seconds": 8.683351209852844,
+      "measurement": false,
+      "owned_process_bytes": 692060160
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 692060160
+        }
+      ],
+      "device_used_bytes": 1220870144,
+      "seconds": 8.703466614009812,
+      "measurement": false,
+      "owned_process_bytes": 692060160
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 692060160
+        }
+      ],
+      "device_used_bytes": 1220870144,
+      "seconds": 8.72358426800929,
+      "measurement": false,
+      "owned_process_bytes": 692060160
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 692060160
+        }
+      ],
+      "device_used_bytes": 1220870144,
+      "seconds": 8.743763532023877,
+      "measurement": false,
+      "owned_process_bytes": 692060160
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 692060160
+        }
+      ],
+      "device_used_bytes": 1220870144,
+      "seconds": 8.763959537027404,
+      "measurement": false,
+      "owned_process_bytes": 692060160
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 692060160
+        }
+      ],
+      "device_used_bytes": 1220870144,
+      "seconds": 8.784137690905482,
+      "measurement": false,
+      "owned_process_bytes": 692060160
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 692060160
+        }
+      ],
+      "device_used_bytes": 1220870144,
+      "seconds": 8.804309965809807,
+      "measurement": false,
+      "owned_process_bytes": 692060160
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 692060160
+        }
+      ],
+      "device_used_bytes": 1220870144,
+      "seconds": 8.824533710023388,
+      "measurement": false,
+      "owned_process_bytes": 692060160
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 692060160
+        }
+      ],
+      "device_used_bytes": 1220870144,
+      "seconds": 8.844759305007756,
+      "measurement": false,
+      "owned_process_bytes": 692060160
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 692060160
+        }
+      ],
+      "device_used_bytes": 1220870144,
+      "seconds": 8.864915638929233,
+      "measurement": false,
+      "owned_process_bytes": 692060160
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 692060160
+        }
+      ],
+      "device_used_bytes": 1220870144,
+      "seconds": 8.885128733934835,
+      "measurement": false,
+      "owned_process_bytes": 692060160
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 692060160
+        }
+      ],
+      "device_used_bytes": 1220870144,
+      "seconds": 8.905313398921862,
+      "measurement": false,
+      "owned_process_bytes": 692060160
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 692060160
+        }
+      ],
+      "device_used_bytes": 1220870144,
+      "seconds": 8.925547253806144,
+      "measurement": false,
+      "owned_process_bytes": 692060160
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 692060160
+        }
+      ],
+      "device_used_bytes": 1220870144,
+      "seconds": 8.945742267882451,
+      "measurement": false,
+      "owned_process_bytes": 692060160
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 692060160
+        }
+      ],
+      "device_used_bytes": 1220870144,
+      "seconds": 8.96597023284994,
+      "measurement": false,
+      "owned_process_bytes": 692060160
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 692060160
+        }
+      ],
+      "device_used_bytes": 1220870144,
+      "seconds": 8.986180796986446,
+      "measurement": false,
+      "owned_process_bytes": 692060160
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 692060160
+        }
+      ],
+      "device_used_bytes": 1220870144,
+      "seconds": 9.006406881846488,
+      "measurement": false,
+      "owned_process_bytes": 692060160
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 692060160
+        }
+      ],
+      "device_used_bytes": 1220870144,
+      "seconds": 9.026616256916896,
+      "measurement": false,
+      "owned_process_bytes": 692060160
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 692060160
+        }
+      ],
+      "device_used_bytes": 1220870144,
+      "seconds": 9.046810230938718,
+      "measurement": false,
+      "owned_process_bytes": 692060160
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 692060160
+        }
+      ],
+      "device_used_bytes": 1220870144,
+      "seconds": 9.066980805946514,
+      "measurement": false,
+      "owned_process_bytes": 692060160
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 692060160
+        }
+      ],
+      "device_used_bytes": 1220870144,
+      "seconds": 9.08719645999372,
+      "measurement": false,
+      "owned_process_bytes": 692060160
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 692060160
+        }
+      ],
+      "device_used_bytes": 1220870144,
+      "seconds": 9.107419464970008,
+      "measurement": false,
+      "owned_process_bytes": 692060160
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 683671552
+        }
+      ],
+      "device_used_bytes": 1212481536,
+      "seconds": 9.127600139938295,
+      "measurement": false,
+      "owned_process_bytes": 683671552
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 683671552
+        }
+      ],
+      "device_used_bytes": 1212481536,
+      "seconds": 9.147736934013665,
+      "measurement": false,
+      "owned_process_bytes": 683671552
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 683671552
+        }
+      ],
+      "device_used_bytes": 1212481536,
+      "seconds": 9.16899665701203,
+      "measurement": false,
+      "owned_process_bytes": 683671552
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 683671552
+        }
+      ],
+      "device_used_bytes": 1212481536,
+      "seconds": 9.18908318085596,
+      "measurement": false,
+      "owned_process_bytes": 683671552
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 683671552
+        }
+      ],
+      "device_used_bytes": 1212481536,
+      "seconds": 9.209193615010008,
+      "measurement": false,
+      "owned_process_bytes": 683671552
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 683671552
+        }
+      ],
+      "device_used_bytes": 1211957248,
+      "seconds": 9.229785771807656,
+      "measurement": false,
+      "owned_process_bytes": 683671552
+    },
+    {
+      "processes": [
+        {
+          "pid": 685521,
+          "bytes": 683671552
+        }
+      ],
+      "device_used_bytes": 1209597952,
+      "seconds": 9.249899665825069,
+      "measurement": false,
+      "owned_process_bytes": 683671552
+    },
+    {
+      "processes": [],
+      "device_used_bytes": 520355840,
+      "seconds": 9.274358704918995,
+      "measurement": false,
+      "owned_process_bytes": 0
+    }
+  ],
+  "failure": null,
+  "scope": "Same NVML process GPU footprint for both solvers; includes CUDA context, libraries and allocator reservation. Sampled peak is a lower bound, not live tensor allocations."
+}

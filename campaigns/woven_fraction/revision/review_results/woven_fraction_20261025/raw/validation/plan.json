@@ -1,0 +1,200 @@
+[
+  {
+    "name": "woven_f0500_32_elementwise_r0",
+    "arguments": [
+      "/home/yufan/code/voxel-mechanics/experiments/woven_fraction/study.py"
+    ],
+    "command": [
+      "/home/yufan/code/voxel-mechanics/run",
+      "woven-fraction",
+      "--phase",
+      "worker",
+      "--grid",
+      "32",
+      "--fraction",
+      "0.05",
+      "--variant",
+      "elementwise",
+      "--repeat",
+      "0",
+      "--out",
+      "/home/yufan/code/voxel-mechanics/runs/woven_fraction_20261025/validation"
+    ]
+  },
+  {
+    "name": "woven_f0500_32_hybrid_r0",
+    "arguments": [
+      "/home/yufan/code/voxel-mechanics/experiments/woven_fraction/study.py"
+    ],
+    "command": [
+      "/home/yufan/code/voxel-mechanics/run",
+      "woven-fraction",
+      "--phase",
+      "worker",
+      "--grid",
+      "32",
+      "--fraction",
+      "0.05",
+      "--variant",
+      "hybrid",
+      "--repeat",
+      "0",
+      "--out",
+      "/home/yufan/code/voxel-mechanics/runs/woven_fraction_20261025/validation"
+    ]
+  },
+  {
+    "name": "woven_f0500_32_background_r0",
+    "arguments": [
+      "/home/yufan/code/voxel-mechanics/experiments/woven_fraction/study.py"
+    ],
+    "command": [
+      "/home/yufan/code/voxel-mechanics/run",
+      "woven-fraction",
+      "--phase",
+      "worker",
+      "--grid",
+      "32",
+      "--fraction",
+      "0.05",
+      "--variant",
+      "background",
+      "--repeat",
+      "0",
+      "--out",
+      "/home/yufan/code/voxel-mechanics/runs/woven_fraction_20261025/validation"
+    ]
+  },
+  {
+    "name": "woven_f1900_32_hybrid_r0",
+    "arguments": [
+      "/home/yufan/code/voxel-mechanics/experiments/woven_fraction/study.py"
+    ],
+    "command": [
+      "/home/yufan/code/voxel-mechanics/run",
+      "woven-fraction",
+      "--phase",
+      "worker",
+      "--grid",
+      "32",
+      "--fraction",
+      "0.19",
+      "--variant",
+      "hybrid",
+      "--repeat",
+      "0",
+      "--out",
+      "/home/yufan/code/voxel-mechanics/runs/woven_fraction_20261025/validation"
+    ]
+  },
+  {
+    "name": "woven_f1900_32_background_r0",
+    "arguments": [
+      "/home/yufan/code/voxel-mechanics/experiments/woven_fraction/study.py"
+    ],
+    "command": [
+      "/home/yufan/code/voxel-mechanics/run",
+      "woven-fraction",
+      "--phase",
+      "worker",
+      "--grid",
+      "32",
+      "--fraction",
+      "0.19",
+      "--variant",
+      "background",
+      "--repeat",
+      "0",
+      "--out",
+      "/home/yufan/code/voxel-mechanics/runs/woven_fraction_20261025/validation"
+    ]
+  },
+  {
+    "name": "woven_f1900_32_elementwise_r0",
+    "arguments": [
+      "/home/yufan/code/voxel-mechanics/experiments/woven_fraction/study.py"
+    ],
+    "command": [
+      "/home/yufan/code/voxel-mechanics/run",
+      "woven-fraction",
+      "--phase",
+      "worker",
+      "--grid",
+      "32",
+      "--fraction",
+      "0.19",
+      "--variant",
+      "elementwise",
+      "--repeat",
+      "0",
+      "--out",
+      "/home/yufan/code/voxel-mechanics/runs/woven_fraction_20261025/validation"
+    ]
+  },
+  {
+    "name": "woven_f3300_32_background_r0",
+    "arguments": [
+      "/home/yufan/code/voxel-mechanics/experiments/woven_fraction/study.py"
+    ],
+    "command": [
+      "/home/yufan/code/voxel-mechanics/run",
+      "woven-fraction",
+      "--phase",
+      "worker",
+      "--grid",
+      "32",
+      "--fraction",
+      "0.33",
+      "--variant",
+      "background",
+      "--repeat",
+      "0",
+      "--out",
+      "/home/yufan/code/voxel-mechanics/runs/woven_fraction_20261025/validation"
+    ]
+  },
+  {
+    "name": "woven_f3300_32_elementwise_r0",
+    "arguments": [
+      "/home/yufan/code/voxel-mechanics/experiments/woven_fraction/study.py"
+    ],
+    "command": [
+      "/home/yufan/code/voxel-mechanics/run",
+      "woven-fraction",
+      "--phase",
+      "worker",
+      "--grid",
+      "32",
+      "--fraction",
+      "0.33",
+      "--variant",
+      "elementwise",
+      "--repeat",
+      "0",
+      "--out",
+      "/home/yufan/code/voxel-mechanics/runs/woven_fraction_20261025/validation"
+    ]
+  },
+  {
+    "name": "woven_f3300_32_hybrid_r0",
+    "arguments": [
+      "/home/yufan/code/voxel-mechanics/experiments/woven_fraction/study.py"
+    ],
+    "command": [
+      "/home/yufan/code/voxel-mechanics/run",
+      "woven-fraction",
+      "--phase",
+      "worker",
+      "--grid",
+      "32",
+      "--fraction",
+      "0.33",
+      "--variant",
+      "hybrid",
+      "--repeat",
+      "0",
+      "--out",
+      "/home/yufan/code/voxel-mechanics/runs/woven_fraction_20261025/validation"
+    ]
+  }
+]

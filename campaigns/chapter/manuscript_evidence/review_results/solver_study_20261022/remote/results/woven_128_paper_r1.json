@@ -1,0 +1,2593 @@
+{
+  "complete": true,
+  "case": "woven",
+  "grid": 128,
+  "variant": "paper",
+  "repeat": 1,
+  "input_hash": "05a191b8772386b5bd32f352167f91ef0696c0ec8841f7968550a5e606cc58f9",
+  "input": {
+    "geometry": {
+      "width": 0.18,
+      "thickness": 0.035,
+      "amplitude": 0.09,
+      "height": 0.4,
+      "exact_yarn_fraction": 0.19792033717615698,
+      "voxel_yarn_fraction": 0.1979827880859375
+    },
+    "material": {
+      "matrix": {
+        "E": 3500.0,
+        "Nu": 0.35
+      },
+      "yarn": {
+        "E11": 135000.0,
+        "E22": 9000.0,
+        "E33": 9000.0,
+        "Nu12": 0.3,
+        "Nu13": 0.3,
+        "Nu23": 0.35,
+        "G12": 5000.0,
+        "G13": 5000.0,
+        "G23": 3500.0
+      }
+    },
+    "active_fraction": 0.1979827880859375
+  },
+  "measurement": {
+    "seconds": 0.8122755829244852,
+    "CH": [
+      [
+        12285.39292660671,
+        4912.843445318966,
+        4246.438427666722,
+        5.800012366375263e-11,
+        4.473135396157074e-11,
+        -1.4534506668474642e-12
+      ],
+      [
+        4912.8434453188975,
+        12285.39292660668,
+        4246.438427666646,
+        1.2785474333984817e-10,
+        -6.526772320176955e-12,
+        -2.077296749089642e-12
+      ],
+      [
+        4246.438428019089,
+        4246.438428019072,
+        6581.420785473372,
+        3.5860297417894104e-11,
+        -7.57150073955558e-13,
+        -1.449144799476992e-12
+      ],
+      [
+        8.171570506436106e-12,
+        -5.11913406697523e-11,
+        -2.1060122237604253e-12,
+        1752.6648520699132,
+        9.726959394948225e-12,
+        -2.290095319908492e-12
+      ],
+      [
+        3.443714912945037e-11,
+        -4.177688704236592e-11,
+        -4.167009952585713e-12,
+        9.638490155422764e-12,
+        1752.6648520699246,
+        -1.2244790329119437e-12
+      ],
+      [
+        -1.4666292974161112e-11,
+        -1.5202690804849113e-11,
+        2.9997407774945303e-12,
+        1.3923574402080137e-12,
+        -1.2229073751367746e-12,
+        1825.0764580455557
+      ]
+    ],
+    "calls": [
+      {
+        "iterations": 56,
+        "restarts": 0,
+        "true_residuals": [
+          9.510444001975826e-09
+        ],
+        "trace": []
+      },
+      {
+        "iterations": 56,
+        "restarts": 0,
+        "true_residuals": [
+          9.51043447776342e-09
+        ],
+        "trace": []
+      },
+      {
+        "iterations": 55,
+        "restarts": 0,
+        "true_residuals": [
+          9.2704355414962e-09
+        ],
+        "trace": []
+      },
+      {
+        "iterations": 55,
+        "restarts": 0,
+        "true_residuals": [
+          7.787462705301697e-09
+        ],
+        "trace": []
+      },
+      {
+        "iterations": 55,
+        "restarts": 0,
+        "true_residuals": [
+          7.787110192322044e-09
+        ],
+        "trace": []
+      },
+      {
+        "iterations": 56,
+        "restarts": 0,
+        "true_residuals": [
+          9.554025583918852e-09
+        ],
+        "trace": []
+      }
+    ],
+    "stages": [
+      {
+        "name": "material",
+        "seconds": 0.020379636203870177,
+        "live": 385875968,
+        "peak": 458954240,
+        "reserved": 1124073472
+      },
+      {
+        "name": "operator",
+        "seconds": 0.06267537898384035,
+        "live": 2550146560,
+        "peak": 2890094592,
+        "reserved": 4194304000,
+        "arrays": {
+          "C": {
+            "bytes": 352321536,
+            "shape": [
+              1,
+              2097152,
+              21
+            ],
+            "dtype": "torch.float64",
+            "storage": 126894775205888
+          },
+          "B_mat": {
+            "bytes": 9216,
+            "shape": [
+              8,
+              6,
+              24
+            ],
+            "dtype": "torch.float64",
+            "storage": 126892522864640
+          },
+          "elem_node_ids": {
+            "bytes": 0,
+            "shape": [
+              0,
+              8
+            ],
+            "dtype": "torch.int64",
+            "storage": 0
+          },
+          "elem_dof_ids": {
+            "bytes": 0,
+            "shape": [
+              0,
+              24
+            ],
+            "dtype": "torch.int64",
+            "storage": 0
+          },
+          "elem_dof_flat": {
+            "bytes": 0,
+            "shape": [
+              0
+            ],
+            "dtype": "torch.int64",
+            "storage": 0
+          },
+          "_C_voigt_gpu": {
+            "bytes": 352321536,
+            "shape": [
+              1,
+              2097152,
+              21
+            ],
+            "dtype": "torch.float64",
+            "storage": 126894775205888
+          },
+          "S_flat": {
+            "bytes": 2113929216,
+            "shape": [
+              1,
+              14,
+              9,
+              128,
+              128,
+              128
+            ],
+            "dtype": "torch.float64",
+            "storage": 126889607823360
+          },
+          "_diag_cache": {
+            "bytes": 50331648,
+            "shape": [
+              1,
+              6291456
+            ],
+            "dtype": "torch.float64",
+            "storage": 126892558516224
+          },
+          "_cuda_geometry": {
+            "bytes": 32,
+            "shape": [
+              4
+            ],
+            "dtype": "torch.float64",
+            "storage": 126892522873856
+          }
+        }
+      },
+      {
+        "name": "reference",
+        "seconds": 0.018401429057121277,
+        "live": 2601264640,
+        "peak": 2903716864,
+        "reserved": 4194304000,
+        "arrays": {
+          "C": {
+            "bytes": 352321536,
+            "shape": [
+              1,
+              2097152,
+              21
+            ],
+            "dtype": "torch.float64",
+            "storage": 126894775205888
+          },
+          "B_mat": {
+            "bytes": 9216,
+            "shape": [
+              8,
+              6,
+              24
+            ],
+            "dtype": "torch.float64",
+            "storage": 126892522864640
+          },
+          "elem_node_ids": {
+            "bytes": 0,
+            "shape": [
+              0,
+              8
+            ],
+            "dtype": "torch.int64",
+            "storage": 0
+          },
+          "elem_dof_ids": {
+            "bytes": 0,
+            "shape": [
+              0,
+              24
+            ],
+            "dtype": "torch.int64",
+            "storage": 0
+          },
+          "elem_dof_flat": {
+            "bytes": 0,
+            "shape": [
+              0
+            ],
+            "dtype": "torch.int64",
+            "storage": 0
+          },
+          "_C_voigt_gpu": {
+            "bytes": 352321536,
+            "shape": [
+              1,
+              2097152,
+              21
+            ],
+            "dtype": "torch.float64",
+            "storage": 126894775205888
+          },
+          "S_flat": {
+            "bytes": 2113929216,
+            "shape": [
+              1,
+              14,
+              9,
+              128,
+              128,
+              128
+            ],
+            "dtype": "torch.float64",
+            "storage": 126889607823360
+          },
+          "_diag_cache": {
+            "bytes": 50331648,
+            "shape": [
+              1,
+              6291456
+            ],
+            "dtype": "torch.float64",
+            "storage": 126892558516224
+          },
+          "_fft_symbol_inv": {
+            "bytes": 51118080,
+            "shape": [
+              1,
+              6,
+              128,
+              128,
+              65
+            ],
+            "dtype": "torch.complex64",
+            "storage": 126892650790912
+          },
+          "_cuda_geometry": {
+            "bytes": 32,
+            "shape": [
+              4
+            ],
+            "dtype": "torch.float64",
+            "storage": 126892522873856
+          }
+        }
+      },
+      {
+        "name": "representation",
+        "seconds": 3.260001540184021e-05,
+        "live": 2550934528,
+        "peak": 2601264640,
+        "reserved": 4194304000,
+        "arrays": {
+          "C": {
+            "bytes": 352321536,
+            "shape": [
+              1,
+              2097152,
+              21
+            ],
+            "dtype": "torch.float64",
+            "storage": 126894775205888
+          },
+          "B_mat": {
+            "bytes": 9216,
+            "shape": [
+              8,
+              6,
+              24
+            ],
+            "dtype": "torch.float64",
+            "storage": 126892522864640
+          },
+          "elem_node_ids": {
+            "bytes": 0,
+            "shape": [
+              0,
+              8
+            ],
+            "dtype": "torch.int64",
+            "storage": 0
+          },
+          "elem_dof_ids": {
+            "bytes": 0,
+            "shape": [
+              0,
+              24
+            ],
+            "dtype": "torch.int64",
+            "storage": 0
+          },
+          "elem_dof_flat": {
+            "bytes": 0,
+            "shape": [
+              0
+            ],
+            "dtype": "torch.int64",
+            "storage": 0
+          },
+          "_C_voigt_gpu": {
+            "bytes": 352321536,
+            "shape": [
+              1,
+              2097152,
+              21
+            ],
+            "dtype": "torch.float64",
+            "storage": 126894775205888
+          },
+          "S_flat": {
+            "bytes": 2113929216,
+            "shape": [
+              1,
+              14,
+              9,
+              128,
+              128,
+              128
+            ],
+            "dtype": "torch.float64",
+            "storage": 126889607823360
+          },
+          "_fft_symbol_inv": {
+            "bytes": 51118080,
+            "shape": [
+              1,
+              6,
+              128,
+              128,
+              65
+            ],
+            "dtype": "torch.complex64",
+            "storage": 126892650790912
+          },
+          "_cuda_geometry": {
+            "bytes": 32,
+            "shape": [
+              4
+            ],
+            "dtype": "torch.float64",
+            "storage": 126892522873856
+          },
+          "_B_integrated": {
+            "bytes": 1152,
+            "shape": [
+              6,
+              24
+            ],
+            "dtype": "torch.float64",
+            "storage": 126892522875904
+          }
+        }
+      },
+      {
+        "name": "candidate_attachment",
+        "seconds": 2.969987690448761e-06,
+        "live": 2550934528,
+        "peak": 2550934528,
+        "reserved": 4194304000,
+        "arrays": {
+          "C": {
+            "bytes": 352321536,
+            "shape": [
+              1,
+              2097152,
+              21
+            ],
+            "dtype": "torch.float64",
+            "storage": 126894775205888
+          },
+          "B_mat": {
+            "bytes": 9216,
+            "shape": [
+              8,
+              6,
+              24
+            ],
+            "dtype": "torch.float64",
+            "storage": 126892522864640
+          },
+          "elem_node_ids": {
+            "bytes": 0,
+            "shape": [
+              0,
+              8
+            ],
+            "dtype": "torch.int64",
+            "storage": 0
+          },
+          "elem_dof_ids": {
+            "bytes": 0,
+            "shape": [
+              0,
+              24
+            ],
+            "dtype": "torch.int64",
+            "storage": 0
+          },
+          "elem_dof_flat": {
+            "bytes": 0,
+            "shape": [
+              0
+            ],
+            "dtype": "torch.int64",
+            "storage": 0
+          },
+          "_C_voigt_gpu": {
+            "bytes": 352321536,
+            "shape": [
+              1,
+              2097152,
+              21
+            ],
+            "dtype": "torch.float64",
+            "storage": 126894775205888
+          },
+          "S_flat": {
+            "bytes": 2113929216,
+            "shape": [
+              1,
+              14,
+              9,
+              128,
+              128,
+              128
+            ],
+            "dtype": "torch.float64",
+            "storage": 126889607823360
+          },
+          "_fft_symbol_inv": {
+            "bytes": 51118080,
+            "shape": [
+              1,
+              6,
+              128,
+              128,
+              65
+            ],
+            "dtype": "torch.complex64",
+            "storage": 126892650790912
+          },
+          "_cuda_geometry": {
+            "bytes": 32,
+            "shape": [
+              4
+            ],
+            "dtype": "torch.float64",
+            "storage": 126892522873856
+          },
+          "_B_integrated": {
+            "bytes": 1152,
+            "shape": [
+              6,
+              24
+            ],
+            "dtype": "torch.float64",
+            "storage": 126892522875904
+          }
+        }
+      },
+      {
+        "name": "rhs0",
+        "seconds": 0.001867105020210147,
+        "live": 2601266176,
+        "peak": 2651598336,
+        "reserved": 4194304000,
+        "arrays": {
+          "C": {
+            "bytes": 352321536,
+            "shape": [
+              1,
+              2097152,
+              21
+            ],
+            "dtype": "torch.float64",
+            "storage": 126894775205888
+          },
+          "B_mat": {
+            "bytes": 9216,
+            "shape": [
+              8,
+              6,
+              24
+            ],
+            "dtype": "torch.float64",
+            "storage": 126892522864640
+          },
+          "elem_node_ids": {
+            "bytes": 0,
+            "shape": [
+              0,
+              8
+            ],
+            "dtype": "torch.int64",
+            "storage": 0
+          },
+          "elem_dof_ids": {
+            "bytes": 0,
+            "shape": [
+              0,
+              24
+            ],
+            "dtype": "torch.int64",
+            "storage": 0
+          },
+          "elem_dof_flat": {
+            "bytes": 0,
+            "shape": [
+              0
+            ],
+            "dtype": "torch.int64",
+            "storage": 0
+          },
+          "_C_voigt_gpu": {
+            "bytes": 352321536,
+            "shape": [
+              1,
+              2097152,
+              21
+            ],
+            "dtype": "torch.float64",
+            "storage": 126894775205888
+          },
+          "S_flat": {
+            "bytes": 2113929216,
+            "shape": [
+              1,
+              14,
+              9,
+              128,
+              128,
+              128
+            ],
+            "dtype": "torch.float64",
+            "storage": 126889607823360
+          },
+          "_fft_symbol_inv": {
+            "bytes": 51118080,
+            "shape": [
+              1,
+              6,
+              128,
+              128,
+              65
+            ],
+            "dtype": "torch.complex64",
+            "storage": 126892650790912
+          },
+          "_cuda_geometry": {
+            "bytes": 32,
+            "shape": [
+              4
+            ],
+            "dtype": "torch.float64",
+            "storage": 126892522873856
+          },
+          "_B_integrated": {
+            "bytes": 1152,
+            "shape": [
+              6,
+              24
+            ],
+            "dtype": "torch.float64",
+            "storage": 126892522875904
+          }
+        }
+      },
+      {
+        "name": "solve0",
+        "seconds": 0.11542179808020592,
+        "live": 2651597824,
+        "peak": 3055434752,
+        "reserved": 4194304000,
+        "arrays": {
+          "C": {
+            "bytes": 352321536,
+            "shape": [
+              1,
+              2097152,
+              21
+            ],
+            "dtype": "torch.float64",
+            "storage": 126894775205888
+          },
+          "B_mat": {
+            "bytes": 9216,
+            "shape": [
+              8,
+              6,
+              24
+            ],
+            "dtype": "torch.float64",
+            "storage": 126892522864640
+          },
+          "elem_node_ids": {
+            "bytes": 0,
+            "shape": [
+              0,
+              8
+            ],
+            "dtype": "torch.int64",
+            "storage": 0
+          },
+          "elem_dof_ids": {
+            "bytes": 0,
+            "shape": [
+              0,
+              24
+            ],
+            "dtype": "torch.int64",
+            "storage": 0
+          },
+          "elem_dof_flat": {
+            "bytes": 0,
+            "shape": [
+              0
+            ],
+            "dtype": "torch.int64",
+            "storage": 0
+          },
+          "_C_voigt_gpu": {
+            "bytes": 352321536,
+            "shape": [
+              1,
+              2097152,
+              21
+            ],
+            "dtype": "torch.float64",
+            "storage": 126894775205888
+          },
+          "S_flat": {
+            "bytes": 2113929216,
+            "shape": [
+              1,
+              14,
+              9,
+              128,
+              128,
+              128
+            ],
+            "dtype": "torch.float64",
+            "storage": 126889607823360
+          },
+          "_fft_symbol_inv": {
+            "bytes": 51118080,
+            "shape": [
+              1,
+              6,
+              128,
+              128,
+              65
+            ],
+            "dtype": "torch.complex64",
+            "storage": 126892650790912
+          },
+          "_cuda_geometry": {
+            "bytes": 32,
+            "shape": [
+              4
+            ],
+            "dtype": "torch.float64",
+            "storage": 126892522873856
+          },
+          "_B_integrated": {
+            "bytes": 1152,
+            "shape": [
+              6,
+              24
+            ],
+            "dtype": "torch.float64",
+            "storage": 126892522875904
+          }
+        }
+      },
+      {
+        "name": "post0",
+        "seconds": 0.0005859050434082747,
+        "live": 2651597824,
+        "peak": 2652385280,
+        "reserved": 4194304000,
+        "arrays": {
+          "C": {
+            "bytes": 352321536,
+            "shape": [
+              1,
+              2097152,
+              21
+            ],
+            "dtype": "torch.float64",
+            "storage": 126894775205888
+          },
+          "B_mat": {
+            "bytes": 9216,
+            "shape": [
+              8,
+              6,
+              24
+            ],
+            "dtype": "torch.float64",
+            "storage": 126892522864640
+          },
+          "elem_node_ids": {
+            "bytes": 0,
+            "shape": [
+              0,
+              8
+            ],
+            "dtype": "torch.int64",
+            "storage": 0
+          },
+          "elem_dof_ids": {
+            "bytes": 0,
+            "shape": [
+              0,
+              24
+            ],
+            "dtype": "torch.int64",
+            "storage": 0
+          },
+          "elem_dof_flat": {
+            "bytes": 0,
+            "shape": [
+              0
+            ],
+            "dtype": "torch.int64",
+            "storage": 0
+          },
+          "_C_voigt_gpu": {
+            "bytes": 352321536,
+            "shape": [
+              1,
+              2097152,
+              21
+            ],
+            "dtype": "torch.float64",
+            "storage": 126894775205888
+          },
+          "S_flat": {
+            "bytes": 2113929216,
+            "shape": [
+              1,
+              14,
+              9,
+              128,
+              128,
+              128
+            ],
+            "dtype": "torch.float64",
+            "storage": 126889607823360
+          },
+          "_fft_symbol_inv": {
+            "bytes": 51118080,
+            "shape": [
+              1,
+              6,
+              128,
+              128,
+              65
+            ],
+            "dtype": "torch.complex64",
+            "storage": 126892650790912
+          },
+          "_cuda_geometry": {
+            "bytes": 32,
+            "shape": [
+              4
+            ],
+            "dtype": "torch.float64",
+            "storage": 126892522873856
+          },
+          "_B_integrated": {
+            "bytes": 1152,
+            "shape": [
+              6,
+              24
+            ],
+            "dtype": "torch.float64",
+            "storage": 126892522875904
+          }
+        }
+      },
+      {
+        "name": "rhs1",
+        "seconds": 0.0018470149952918291,
+        "live": 2601266176,
+        "peak": 2651598336,
+        "reserved": 4194304000,
+        "arrays": {
+          "C": {
+            "bytes": 352321536,
+            "shape": [
+              1,
+              2097152,
+              21
+            ],
+            "dtype": "torch.float64",
+            "storage": 126894775205888
+          },
+          "B_mat": {
+            "bytes": 9216,
+            "shape": [
+              8,
+              6,
+              24
+            ],
+            "dtype": "torch.float64",
+            "storage": 126892522864640
+          },
+          "elem_node_ids": {
+            "bytes": 0,
+            "shape": [
+              0,
+              8
+            ],
+            "dtype": "torch.int64",
+            "storage": 0
+          },
+          "elem_dof_ids": {
+            "bytes": 0,
+            "shape": [
+              0,
+              24
+            ],
+            "dtype": "torch.int64",
+            "storage": 0
+          },
+          "elem_dof_flat": {
+            "bytes": 0,
+            "shape": [
+              0
+            ],
+            "dtype": "torch.int64",
+            "storage": 0
+          },
+          "_C_voigt_gpu": {
+            "bytes": 352321536,
+            "shape": [
+              1,
+              2097152,
+              21
+            ],
+            "dtype": "torch.float64",
+            "storage": 126894775205888
+          },
+          "S_flat": {
+            "bytes": 2113929216,
+            "shape": [
+              1,
+              14,
+              9,
+              128,
+              128,
+              128
+            ],
+            "dtype": "torch.float64",
+            "storage": 126889607823360
+          },
+          "_fft_symbol_inv": {
+            "bytes": 51118080,
+            "shape": [
+              1,
+              6,
+              128,
+              128,
+              65
+            ],
+            "dtype": "torch.complex64",
+            "storage": 126892650790912
+          },
+          "_cuda_geometry": {
+            "bytes": 32,
+            "shape": [
+              4
+            ],
+            "dtype": "torch.float64",
+            "storage": 126892522873856
+          },
+          "_B_integrated": {
+            "bytes": 1152,
+            "shape": [
+              6,
+              24
+            ],
+            "dtype": "torch.float64",
+            "storage": 126892522875904
+          }
+        }
+      },
+      {
+        "name": "solve1",
+        "seconds": 0.11538550793193281,
+        "live": 2651597824,
+        "peak": 3055434752,
+        "reserved": 4194304000,
+        "arrays": {
+          "C": {
+            "bytes": 352321536,
+            "shape": [
+              1,
+              2097152,
+              21
+            ],
+            "dtype": "torch.float64",
+            "storage": 126894775205888
+          },
+          "B_mat": {
+            "bytes": 9216,
+            "shape": [
+              8,
+              6,
+              24
+            ],
+            "dtype": "torch.float64",
+            "storage": 126892522864640
+          },
+          "elem_node_ids": {
+            "bytes": 0,
+            "shape": [
+              0,
+              8
+            ],
+            "dtype": "torch.int64",
+            "storage": 0
+          },
+          "elem_dof_ids": {
+            "bytes": 0,
+            "shape": [
+              0,
+              24
+            ],
+            "dtype": "torch.int64",
+            "storage": 0
+          },
+          "elem_dof_flat": {
+            "bytes": 0,
+            "shape": [
+              0
+            ],
+            "dtype": "torch.int64",
+            "storage": 0
+          },
+          "_C_voigt_gpu": {
+            "bytes": 352321536,
+            "shape": [
+              1,
+              2097152,
+              21
+            ],
+            "dtype": "torch.float64",
+            "storage": 126894775205888
+          },
+          "S_flat": {
+            "bytes": 2113929216,
+            "shape": [
+              1,
+              14,
+              9,
+              128,
+              128,
+              128
+            ],
+            "dtype": "torch.float64",
+            "storage": 126889607823360
+          },
+          "_fft_symbol_inv": {
+            "bytes": 51118080,
+            "shape": [
+              1,
+              6,
+              128,
+              128,
+              65
+            ],
+            "dtype": "torch.complex64",
+            "storage": 126892650790912
+          },
+          "_cuda_geometry": {
+            "bytes": 32,
+            "shape": [
+              4
+            ],
+            "dtype": "torch.float64",
+            "storage": 126892522873856
+          },
+          "_B_integrated": {
+            "bytes": 1152,
+            "shape": [
+              6,
+              24
+            ],
+            "dtype": "torch.float64",
+            "storage": 126892522875904
+          }
+        }
+      },
+      {
+        "name": "post1",
+        "seconds": 0.0005771450232714415,
+        "live": 2651597824,
+        "peak": 2652385280,
+        "reserved": 4194304000,
+        "arrays": {
+          "C": {
+            "bytes": 352321536,
+            "shape": [
+              1,
+              2097152,
+              21
+            ],
+            "dtype": "torch.float64",
+            "storage": 126894775205888
+          },
+          "B_mat": {
+            "bytes": 9216,
+            "shape": [
+              8,
+              6,
+              24
+            ],
+            "dtype": "torch.float64",
+            "storage": 126892522864640
+          },
+          "elem_node_ids": {
+            "bytes": 0,
+            "shape": [
+              0,
+              8
+            ],
+            "dtype": "torch.int64",
+            "storage": 0
+          },
+          "elem_dof_ids": {
+            "bytes": 0,
+            "shape": [
+              0,
+              24
+            ],
+            "dtype": "torch.int64",
+            "storage": 0
+          },
+          "elem_dof_flat": {
+            "bytes": 0,
+            "shape": [
+              0
+            ],
+            "dtype": "torch.int64",
+            "storage": 0
+          },
+          "_C_voigt_gpu": {
+            "bytes": 352321536,
+            "shape": [
+              1,
+              2097152,
+              21
+            ],
+            "dtype": "torch.float64",
+            "storage": 126894775205888
+          },
+          "S_flat": {
+            "bytes": 2113929216,
+            "shape": [
+              1,
+              14,
+              9,
+              128,
+              128,
+              128
+            ],
+            "dtype": "torch.float64",
+            "storage": 126889607823360
+          },
+          "_fft_symbol_inv": {
+            "bytes": 51118080,
+            "shape": [
+              1,
+              6,
+              128,
+              128,
+              65
+            ],
+            "dtype": "torch.complex64",
+            "storage": 126892650790912
+          },
+          "_cuda_geometry": {
+            "bytes": 32,
+            "shape": [
+              4
+            ],
+            "dtype": "torch.float64",
+            "storage": 126892522873856
+          },
+          "_B_integrated": {
+            "bytes": 1152,
+            "shape": [
+              6,
+              24
+            ],
+            "dtype": "torch.float64",
+            "storage": 126892522875904
+          }
+        }
+      },
+      {
+        "name": "rhs2",
+        "seconds": 0.0018513051327317953,
+        "live": 2601266176,
+        "peak": 2651598336,
+        "reserved": 4194304000,
+        "arrays": {
+          "C": {
+            "bytes": 352321536,
+            "shape": [
+              1,
+              2097152,
+              21
+            ],
+            "dtype": "torch.float64",
+            "storage": 126894775205888
+          },
+          "B_mat": {
+            "bytes": 9216,
+            "shape": [
+              8,
+              6,
+              24
+            ],
+            "dtype": "torch.float64",
+            "storage": 126892522864640
+          },
+          "elem_node_ids": {
+            "bytes": 0,
+            "shape": [
+              0,
+              8
+            ],
+            "dtype": "torch.int64",
+            "storage": 0
+          },
+          "elem_dof_ids": {
+            "bytes": 0,
+            "shape": [
+              0,
+              24
+            ],
+            "dtype": "torch.int64",
+            "storage": 0
+          },
+          "elem_dof_flat": {
+            "bytes": 0,
+            "shape": [
+              0
+            ],
+            "dtype": "torch.int64",
+            "storage": 0
+          },
+          "_C_voigt_gpu": {
+            "bytes": 352321536,
+            "shape": [
+              1,
+              2097152,
+              21
+            ],
+            "dtype": "torch.float64",
+            "storage": 126894775205888
+          },
+          "S_flat": {
+            "bytes": 2113929216,
+            "shape": [
+              1,
+              14,
+              9,
+              128,
+              128,
+              128
+            ],
+            "dtype": "torch.float64",
+            "storage": 126889607823360
+          },
+          "_fft_symbol_inv": {
+            "bytes": 51118080,
+            "shape": [
+              1,
+              6,
+              128,
+              128,
+              65
+            ],
+            "dtype": "torch.complex64",
+            "storage": 126892650790912
+          },
+          "_cuda_geometry": {
+            "bytes": 32,
+            "shape": [
+              4
+            ],
+            "dtype": "torch.float64",
+            "storage": 126892522873856
+          },
+          "_B_integrated": {
+            "bytes": 1152,
+            "shape": [
+              6,
+              24
+            ],
+            "dtype": "torch.float64",
+            "storage": 126892522875904
+          }
+        }
+      },
+      {
+        "name": "solve2",
+        "seconds": 0.11527398601174355,
+        "live": 2651597824,
+        "peak": 3055434752,
+        "reserved": 4194304000,
+        "arrays": {
+          "C": {
+            "bytes": 352321536,
+            "shape": [
+              1,
+              2097152,
+              21
+            ],
+            "dtype": "torch.float64",
+            "storage": 126894775205888
+          },
+          "B_mat": {
+            "bytes": 9216,
+            "shape": [
+              8,
+              6,
+              24
+            ],
+            "dtype": "torch.float64",
+            "storage": 126892522864640
+          },
+          "elem_node_ids": {
+            "bytes": 0,
+            "shape": [
+              0,
+              8
+            ],
+            "dtype": "torch.int64",
+            "storage": 0
+          },
+          "elem_dof_ids": {
+            "bytes": 0,
+            "shape": [
+              0,
+              24
+            ],
+            "dtype": "torch.int64",
+            "storage": 0
+          },
+          "elem_dof_flat": {
+            "bytes": 0,
+            "shape": [
+              0
+            ],
+            "dtype": "torch.int64",
+            "storage": 0
+          },
+          "_C_voigt_gpu": {
+            "bytes": 352321536,
+            "shape": [
+              1,
+              2097152,
+              21
+            ],
+            "dtype": "torch.float64",
+            "storage": 126894775205888
+          },
+          "S_flat": {
+            "bytes": 2113929216,
+            "shape": [
+              1,
+              14,
+              9,
+              128,
+              128,
+              128
+            ],
+            "dtype": "torch.float64",
+            "storage": 126889607823360
+          },
+          "_fft_symbol_inv": {
+            "bytes": 51118080,
+            "shape": [
+              1,
+              6,
+              128,
+              128,
+              65
+            ],
+            "dtype": "torch.complex64",
+            "storage": 126892650790912
+          },
+          "_cuda_geometry": {
+            "bytes": 32,
+            "shape": [
+              4
+            ],
+            "dtype": "torch.float64",
+            "storage": 126892522873856
+          },
+          "_B_integrated": {
+            "bytes": 1152,
+            "shape": [
+              6,
+              24
+            ],
+            "dtype": "torch.float64",
+            "storage": 126892522875904
+          }
+        }
+      },
+      {
+        "name": "post2",
+        "seconds": 0.0005775541067123413,
+        "live": 2651597824,
+        "peak": 2652385280,
+        "reserved": 4194304000,
+        "arrays": {
+          "C": {
+            "bytes": 352321536,
+            "shape": [
+              1,
+              2097152,
+              21
+            ],
+            "dtype": "torch.float64",
+            "storage": 126894775205888
+          },
+          "B_mat": {
+            "bytes": 9216,
+            "shape": [
+              8,
+              6,
+              24
+            ],
+            "dtype": "torch.float64",
+            "storage": 126892522864640
+          },
+          "elem_node_ids": {
+            "bytes": 0,
+            "shape": [
+              0,
+              8
+            ],
+            "dtype": "torch.int64",
+            "storage": 0
+          },
+          "elem_dof_ids": {
+            "bytes": 0,
+            "shape": [
+              0,
+              24
+            ],
+            "dtype": "torch.int64",
+            "storage": 0
+          },
+          "elem_dof_flat": {
+            "bytes": 0,
+            "shape": [
+              0
+            ],
+            "dtype": "torch.int64",
+            "storage": 0
+          },
+          "_C_voigt_gpu": {
+            "bytes": 352321536,
+            "shape": [
+              1,
+              2097152,
+              21
+            ],
+            "dtype": "torch.float64",
+            "storage": 126894775205888
+          },
+          "S_flat": {
+            "bytes": 2113929216,
+            "shape": [
+              1,
+              14,
+              9,
+              128,
+              128,
+              128
+            ],
+            "dtype": "torch.float64",
+            "storage": 126889607823360
+          },
+          "_fft_symbol_inv": {
+            "bytes": 51118080,
+            "shape": [
+              1,
+              6,
+              128,
+              128,
+              65
+            ],
+            "dtype": "torch.complex64",
+            "storage": 126892650790912
+          },
+          "_cuda_geometry": {
+            "bytes": 32,
+            "shape": [
+              4
+            ],
+            "dtype": "torch.float64",
+            "storage": 126892522873856
+          },
+          "_B_integrated": {
+            "bytes": 1152,
+            "shape": [
+              6,
+              24
+            ],
+            "dtype": "torch.float64",
+            "storage": 126892522875904
+          }
+        }
+      },
+      {
+        "name": "rhs3",
+        "seconds": 0.0018464250024408102,
+        "live": 2601266176,
+        "peak": 2651598336,
+        "reserved": 4194304000,
+        "arrays": {
+          "C": {
+            "bytes": 352321536,
+            "shape": [
+              1,
+              2097152,
+              21
+            ],
+            "dtype": "torch.float64",
+            "storage": 126894775205888
+          },
+          "B_mat": {
+            "bytes": 9216,
+            "shape": [
+              8,
+              6,
+              24
+            ],
+            "dtype": "torch.float64",
+            "storage": 126892522864640
+          },
+          "elem_node_ids": {
+            "bytes": 0,
+            "shape": [
+              0,
+              8
+            ],
+            "dtype": "torch.int64",
+            "storage": 0
+          },
+          "elem_dof_ids": {
+            "bytes": 0,
+            "shape": [
+              0,
+              24
+            ],
+            "dtype": "torch.int64",
+            "storage": 0
+          },
+          "elem_dof_flat": {
+            "bytes": 0,
+            "shape": [
+              0
+            ],
+            "dtype": "torch.int64",
+            "storage": 0
+          },
+          "_C_voigt_gpu": {
+            "bytes": 352321536,
+            "shape": [
+              1,
+              2097152,
+              21
+            ],
+            "dtype": "torch.float64",
+            "storage": 126894775205888
+          },
+          "S_flat": {
+            "bytes": 2113929216,
+            "shape": [
+              1,
+              14,
+              9,
+              128,
+              128,
+              128
+            ],
+            "dtype": "torch.float64",
+            "storage": 126889607823360
+          },
+          "_fft_symbol_inv": {
+            "bytes": 51118080,
+            "shape": [
+              1,
+              6,
+              128,
+              128,
+              65
+            ],
+            "dtype": "torch.complex64",
+            "storage": 126892650790912
+          },
+          "_cuda_geometry": {
+            "bytes": 32,
+            "shape": [
+              4
+            ],
+            "dtype": "torch.float64",
+            "storage": 126892522873856
+          },
+          "_B_integrated": {
+            "bytes": 1152,
+            "shape": [
+              6,
+              24
+            ],
+            "dtype": "torch.float64",
+            "storage": 126892522875904
+          }
+        }
+      },
+      {
+        "name": "solve3",
+        "seconds": 0.11535063781775534,
+        "live": 2651597824,
+        "peak": 3055434752,
+        "reserved": 4194304000,
+        "arrays": {
+          "C": {
+            "bytes": 352321536,
+            "shape": [
+              1,
+              2097152,
+              21
+            ],
+            "dtype": "torch.float64",
+            "storage": 126894775205888
+          },
+          "B_mat": {
+            "bytes": 9216,
+            "shape": [
+              8,
+              6,
+              24
+            ],
+            "dtype": "torch.float64",
+            "storage": 126892522864640
+          },
+          "elem_node_ids": {
+            "bytes": 0,
+            "shape": [
+              0,
+              8
+            ],
+            "dtype": "torch.int64",
+            "storage": 0
+          },
+          "elem_dof_ids": {
+            "bytes": 0,
+            "shape": [
+              0,
+              24
+            ],
+            "dtype": "torch.int64",
+            "storage": 0
+          },
+          "elem_dof_flat": {
+            "bytes": 0,
+            "shape": [
+              0
+            ],
+            "dtype": "torch.int64",
+            "storage": 0
+          },
+          "_C_voigt_gpu": {
+            "bytes": 352321536,
+            "shape": [
+              1,
+              2097152,
+              21
+            ],
+            "dtype": "torch.float64",
+            "storage": 126894775205888
+          },
+          "S_flat": {
+            "bytes": 2113929216,
+            "shape": [
+              1,
+              14,
+              9,
+              128,
+              128,
+              128
+            ],
+            "dtype": "torch.float64",
+            "storage": 126889607823360
+          },
+          "_fft_symbol_inv": {
+            "bytes": 51118080,
+            "shape": [
+              1,
+              6,
+              128,
+              128,
+              65
+            ],
+            "dtype": "torch.complex64",
+            "storage": 126892650790912
+          },
+          "_cuda_geometry": {
+            "bytes": 32,
+            "shape": [
+              4
+            ],
+            "dtype": "torch.float64",
+            "storage": 126892522873856
+          },
+          "_B_integrated": {
+            "bytes": 1152,
+            "shape": [
+              6,
+              24
+            ],
+            "dtype": "torch.float64",
+            "storage": 126892522875904
+          }
+        }
+      },
+      {
+        "name": "post3",
+        "seconds": 0.0005941151175647974,
+        "live": 2651597824,
+        "peak": 2652385280,
+        "reserved": 4194304000,
+        "arrays": {
+          "C": {
+            "bytes": 352321536,
+            "shape": [
+              1,
+              2097152,
+              21
+            ],
+            "dtype": "torch.float64",
+            "storage": 126894775205888
+          },
+          "B_mat": {
+            "bytes": 9216,
+            "shape": [
+              8,
+              6,
+              24
+            ],
+            "dtype": "torch.float64",
+            "storage": 126892522864640
+          },
+          "elem_node_ids": {
+            "bytes": 0,
+            "shape": [
+              0,
+              8
+            ],
+            "dtype": "torch.int64",
+            "storage": 0
+          },
+          "elem_dof_ids": {
+            "bytes": 0,
+            "shape": [
+              0,
+              24
+            ],
+            "dtype": "torch.int64",
+            "storage": 0
+          },
+          "elem_dof_flat": {
+            "bytes": 0,
+            "shape": [
+              0
+            ],
+            "dtype": "torch.int64",
+            "storage": 0
+          },
+          "_C_voigt_gpu": {
+            "bytes": 352321536,
+            "shape": [
+              1,
+              2097152,
+              21
+            ],
+            "dtype": "torch.float64",
+            "storage": 126894775205888
+          },
+          "S_flat": {
+            "bytes": 2113929216,
+            "shape": [
+              1,
+              14,
+              9,
+              128,
+              128,
+              128
+            ],
+            "dtype": "torch.float64",
+            "storage": 126889607823360
+          },
+          "_fft_symbol_inv": {
+            "bytes": 51118080,
+            "shape": [
+              1,
+              6,
+              128,
+              128,
+              65
+            ],
+            "dtype": "torch.complex64",
+            "storage": 126892650790912
+          },
+          "_cuda_geometry": {
+            "bytes": 32,
+            "shape": [
+              4
+            ],
+            "dtype": "torch.float64",
+            "storage": 126892522873856
+          },
+          "_B_integrated": {
+            "bytes": 1152,
+            "shape": [
+              6,
+              24
+            ],
+            "dtype": "torch.float64",
+            "storage": 126892522875904
+          }
+        }
+      },
+      {
+        "name": "rhs4",
+        "seconds": 0.0018621948547661304,
+        "live": 2601266176,
+        "peak": 2651598336,
+        "reserved": 4194304000,
+        "arrays": {
+          "C": {
+            "bytes": 352321536,
+            "shape": [
+              1,
+              2097152,
+              21
+            ],
+            "dtype": "torch.float64",
+            "storage": 126894775205888
+          },
+          "B_mat": {
+            "bytes": 9216,
+            "shape": [
+              8,
+              6,
+              24
+            ],
+            "dtype": "torch.float64",
+            "storage": 126892522864640
+          },
+          "elem_node_ids": {
+            "bytes": 0,
+            "shape": [
+              0,
+              8
+            ],
+            "dtype": "torch.int64",
+            "storage": 0
+          },
+          "elem_dof_ids": {
+            "bytes": 0,
+            "shape": [
+              0,
+              24
+            ],
+            "dtype": "torch.int64",
+            "storage": 0
+          },
+          "elem_dof_flat": {
+            "bytes": 0,
+            "shape": [
+              0
+            ],
+            "dtype": "torch.int64",
+            "storage": 0
+          },
+          "_C_voigt_gpu": {
+            "bytes": 352321536,
+            "shape": [
+              1,
+              2097152,
+              21
+            ],
+            "dtype": "torch.float64",
+            "storage": 126894775205888
+          },
+          "S_flat": {
+            "bytes": 2113929216,
+            "shape": [
+              1,
+              14,
+              9,
+              128,
+              128,
+              128
+            ],
+            "dtype": "torch.float64",
+            "storage": 126889607823360
+          },
+          "_fft_symbol_inv": {
+            "bytes": 51118080,
+            "shape": [
+              1,
+              6,
+              128,
+              128,
+              65
+            ],
+            "dtype": "torch.complex64",
+            "storage": 126892650790912
+          },
+          "_cuda_geometry": {
+            "bytes": 32,
+            "shape": [
+              4
+            ],
+            "dtype": "torch.float64",
+            "storage": 126892522873856
+          },
+          "_B_integrated": {
+            "bytes": 1152,
+            "shape": [
+              6,
+              24
+            ],
+            "dtype": "torch.float64",
+            "storage": 126892522875904
+          }
+        }
+      },
+      {
+        "name": "solve4",
+        "seconds": 0.11535969795659184,
+        "live": 2651597824,
+        "peak": 3055434752,
+        "reserved": 4194304000,
+        "arrays": {
+          "C": {
+            "bytes": 352321536,
+            "shape": [
+              1,
+              2097152,
+              21
+            ],
+            "dtype": "torch.float64",
+            "storage": 126894775205888
+          },
+          "B_mat": {
+            "bytes": 9216,
+            "shape": [
+              8,
+              6,
+              24
+            ],
+            "dtype": "torch.float64",
+            "storage": 126892522864640
+          },
+          "elem_node_ids": {
+            "bytes": 0,
+            "shape": [
+              0,
+              8
+            ],
+            "dtype": "torch.int64",
+            "storage": 0
+          },
+          "elem_dof_ids": {
+            "bytes": 0,
+            "shape": [
+              0,
+              24
+            ],
+            "dtype": "torch.int64",
+            "storage": 0
+          },
+          "elem_dof_flat": {
+            "bytes": 0,
+            "shape": [
+              0
+            ],
+            "dtype": "torch.int64",
+            "storage": 0
+          },
+          "_C_voigt_gpu": {
+            "bytes": 352321536,
+            "shape": [
+              1,
+              2097152,
+              21
+            ],
+            "dtype": "torch.float64",
+            "storage": 126894775205888
+          },
+          "S_flat": {
+            "bytes": 2113929216,
+            "shape": [
+              1,
+              14,
+              9,
+              128,
+              128,
+              128
+            ],
+            "dtype": "torch.float64",
+            "storage": 126889607823360
+          },
+          "_fft_symbol_inv": {
+            "bytes": 51118080,
+            "shape": [
+              1,
+              6,
+              128,
+              128,
+              65
+            ],
+            "dtype": "torch.complex64",
+            "storage": 126892650790912
+          },
+          "_cuda_geometry": {
+            "bytes": 32,
+            "shape": [
+              4
+            ],
+            "dtype": "torch.float64",
+            "storage": 126892522873856
+          },
+          "_B_integrated": {
+            "bytes": 1152,
+            "shape": [
+              6,
+              24
+            ],
+            "dtype": "torch.float64",
+            "storage": 126892522875904
+          }
+        }
+      },
+      {
+        "name": "post4",
+        "seconds": 0.0005849248263984919,
+        "live": 2651597824,
+        "peak": 2652385280,
+        "reserved": 4194304000,
+        "arrays": {
+          "C": {
+            "bytes": 352321536,
+            "shape": [
+              1,
+              2097152,
+              21
+            ],
+            "dtype": "torch.float64",
+            "storage": 126894775205888
+          },
+          "B_mat": {
+            "bytes": 9216,
+            "shape": [
+              8,
+              6,
+              24
+            ],
+            "dtype": "torch.float64",
+            "storage": 126892522864640
+          },
+          "elem_node_ids": {
+            "bytes": 0,
+            "shape": [
+              0,
+              8
+            ],
+            "dtype": "torch.int64",
+            "storage": 0
+          },
+          "elem_dof_ids": {
+            "bytes": 0,
+            "shape": [
+              0,
+              24
+            ],
+            "dtype": "torch.int64",
+            "storage": 0
+          },
+          "elem_dof_flat": {
+            "bytes": 0,
+            "shape": [
+              0
+            ],
+            "dtype": "torch.int64",
+            "storage": 0
+          },
+          "_C_voigt_gpu": {
+            "bytes": 352321536,
+            "shape": [
+              1,
+              2097152,
+              21
+            ],
+            "dtype": "torch.float64",
+            "storage": 126894775205888
+          },
+          "S_flat": {
+            "bytes": 2113929216,
+            "shape": [
+              1,
+              14,
+              9,
+              128,
+              128,
+              128
+            ],
+            "dtype": "torch.float64",
+            "storage": 126889607823360
+          },
+          "_fft_symbol_inv": {
+            "bytes": 51118080,
+            "shape": [
+              1,
+              6,
+              128,
+              128,
+              65
+            ],
+            "dtype": "torch.complex64",
+            "storage": 126892650790912
+          },
+          "_cuda_geometry": {
+            "bytes": 32,
+            "shape": [
+              4
+            ],
+            "dtype": "torch.float64",
+            "storage": 126892522873856
+          },
+          "_B_integrated": {
+            "bytes": 1152,
+            "shape": [
+              6,
+              24
+            ],
+            "dtype": "torch.float64",
+            "storage": 126892522875904
+          }
+        }
+      },
+      {
+        "name": "rhs5",
+        "seconds": 0.001850654138252139,
+        "live": 2601266176,
+        "peak": 2651598336,
+        "reserved": 4194304000,
+        "arrays": {
+          "C": {
+            "bytes": 352321536,
+            "shape": [
+              1,
+              2097152,
+              21
+            ],
+            "dtype": "torch.float64",
+            "storage": 126894775205888
+          },
+          "B_mat": {
+            "bytes": 9216,
+            "shape": [
+              8,
+              6,
+              24
+            ],
+            "dtype": "torch.float64",
+            "storage": 126892522864640
+          },
+          "elem_node_ids": {
+            "bytes": 0,
+            "shape": [
+              0,
+              8
+            ],
+            "dtype": "torch.int64",
+            "storage": 0
+          },
+          "elem_dof_ids": {
+            "bytes": 0,
+            "shape": [
+              0,
+              24
+            ],
+            "dtype": "torch.int64",
+            "storage": 0
+          },
+          "elem_dof_flat": {
+            "bytes": 0,
+            "shape": [
+              0
+            ],
+            "dtype": "torch.int64",
+            "storage": 0
+          },
+          "_C_voigt_gpu": {
+            "bytes": 352321536,
+            "shape": [
+              1,
+              2097152,
+              21
+            ],
+            "dtype": "torch.float64",
+            "storage": 126894775205888
+          },
+          "S_flat": {
+            "bytes": 2113929216,
+            "shape": [
+              1,
+              14,
+              9,
+              128,
+              128,
+              128
+            ],
+            "dtype": "torch.float64",
+            "storage": 126889607823360
+          },
+          "_fft_symbol_inv": {
+            "bytes": 51118080,
+            "shape": [
+              1,
+              6,
+              128,
+              128,
+              65
+            ],
+            "dtype": "torch.complex64",
+            "storage": 126892650790912
+          },
+          "_cuda_geometry": {
+            "bytes": 32,
+            "shape": [
+              4
+            ],
+            "dtype": "torch.float64",
+            "storage": 126892522873856
+          },
+          "_B_integrated": {
+            "bytes": 1152,
+            "shape": [
+              6,
+              24
+            ],
+            "dtype": "torch.float64",
+            "storage": 126892522875904
+          }
+        }
+      },
+      {
+        "name": "solve5",
+        "seconds": 0.1155210891738534,
+        "live": 2651597824,
+        "peak": 3055434752,
+        "reserved": 4194304000,
+        "arrays": {
+          "C": {
+            "bytes": 352321536,
+            "shape": [
+              1,
+              2097152,
+              21
+            ],
+            "dtype": "torch.float64",
+            "storage": 126894775205888
+          },
+          "B_mat": {
+            "bytes": 9216,
+            "shape": [
+              8,
+              6,
+              24
+            ],
+            "dtype": "torch.float64",
+            "storage": 126892522864640
+          },
+          "elem_node_ids": {
+            "bytes": 0,
+            "shape": [
+              0,
+              8
+            ],
+            "dtype": "torch.int64",
+            "storage": 0
+          },
+          "elem_dof_ids": {
+            "bytes": 0,
+            "shape": [
+              0,
+              24
+            ],
+            "dtype": "torch.int64",
+            "storage": 0
+          },
+          "elem_dof_flat": {
+            "bytes": 0,
+            "shape": [
+              0
+            ],
+            "dtype": "torch.int64",
+            "storage": 0
+          },
+          "_C_voigt_gpu": {
+            "bytes": 352321536,
+            "shape": [
+              1,
+              2097152,
+              21
+            ],
+            "dtype": "torch.float64",
+            "storage": 126894775205888
+          },
+          "S_flat": {
+            "bytes": 2113929216,
+            "shape": [
+              1,
+              14,
+              9,
+              128,
+              128,
+              128
+            ],
+            "dtype": "torch.float64",
+            "storage": 126889607823360
+          },
+          "_fft_symbol_inv": {
+            "bytes": 51118080,
+            "shape": [
+              1,
+              6,
+              128,
+              128,
+              65
+            ],
+            "dtype": "torch.complex64",
+            "storage": 126892650790912
+          },
+          "_cuda_geometry": {
+            "bytes": 32,
+            "shape": [
+              4
+            ],
+            "dtype": "torch.float64",
+            "storage": 126892522873856
+          },
+          "_B_integrated": {
+            "bytes": 1152,
+            "shape": [
+              6,
+              24
+            ],
+            "dtype": "torch.float64",
+            "storage": 126892522875904
+          }
+        }
+      },
+      {
+        "name": "post5",
+        "seconds": 0.0005840139929205179,
+        "live": 2651597824,
+        "peak": 2652385280,
+        "reserved": 4194304000,
+        "arrays": {
+          "C": {
+            "bytes": 352321536,
+            "shape": [
+              1,
+              2097152,
+              21
+            ],
+            "dtype": "torch.float64",
+            "storage": 126894775205888
+          },
+          "B_mat": {
+            "bytes": 9216,
+            "shape": [
+              8,
+              6,
+              24
+            ],
+            "dtype": "torch.float64",
+            "storage": 126892522864640
+          },
+          "elem_node_ids": {
+            "bytes": 0,
+            "shape": [
+              0,
+              8
+            ],
+            "dtype": "torch.int64",
+            "storage": 0
+          },
+          "elem_dof_ids": {
+            "bytes": 0,
+            "shape": [
+              0,
+              24
+            ],
+            "dtype": "torch.int64",
+            "storage": 0
+          },
+          "elem_dof_flat": {
+            "bytes": 0,
+            "shape": [
+              0
+            ],
+            "dtype": "torch.int64",
+            "storage": 0
+          },
+          "_C_voigt_gpu": {
+            "bytes": 352321536,
+            "shape": [
+              1,
+              2097152,
+              21
+            ],
+            "dtype": "torch.float64",
+            "storage": 126894775205888
+          },
+          "S_flat": {
+            "bytes": 2113929216,
+            "shape": [
+              1,
+              14,
+              9,
+              128,
+              128,
+              128
+            ],
+            "dtype": "torch.float64",
+            "storage": 126889607823360
+          },
+          "_fft_symbol_inv": {
+            "bytes": 51118080,
+            "shape": [
+              1,
+              6,
+              128,
+              128,
+              65
+            ],
+            "dtype": "torch.complex64",
+            "storage": 126892650790912
+          },
+          "_cuda_geometry": {
+            "bytes": 32,
+            "shape": [
+              4
+            ],
+            "dtype": "torch.float64",
+            "storage": 126892522873856
+          },
+          "_B_integrated": {
+            "bytes": 1152,
+            "shape": [
+              6,
+              24
+            ],
+            "dtype": "torch.float64",
+            "storage": 126892522875904
+          }
+        }
+      }
+    ],
+    "field_statistics": {},
+    "peak_allocated_bytes": 3055434752,
+    "peak_reserved_bytes": 4194304000
+  },
+  "workflow_seconds": 1.0395651790313423,
+  "adaptation_seconds": 1.319916918873787e-06,
+  "max_true_residual": 9.554025583918852e-09,
+  "microbenchmark": {
+    "Ku": {
+      "samples_ms": [
+        1.3352383613586425,
+        1.3360976219177245,
+        1.3359696388244628,
+        1.3356160163879394,
+        1.3348079681396485
+      ],
+      "median_ms": 1.3356160163879394
+    },
+    "preconditioner": {
+      "samples_ms": [
+        0.22665600776672362,
+        0.22659521102905272,
+        0.22622239589691162,
+        0.22623839378356933,
+        0.22671198844909668
+      ],
+      "median_ms": 0.22659521102905272
+    },
+    "scope": "resident CUDA-event batches outside full-workflow time and memory window"
+  },
+  "storage": null,
+  "operator": null,
+  "reference_design": null,
+  "environment": {
+    "gpu": "NVIDIA GeForce RTX 5090",
+    "torch": "2.12.0+cu130",
+    "cuda": "13.0",
+    "python": "3.12.13 (main, Jun 11 2026, 04:03:26) [Clang 22.1.3 ]",
+    "threads": 1
+  },
+  "sources": {
+    "/home/yufan/code/fead-chain-20261021/chain_adapter.py": "351a9f684f52c3f4cef2b35c7bb43b7d14314621930c70156529ae4bfa41a05f",
+    "/home/yufan/code/fead-chain-20261021/chain_study.py": "49b1376a83a8eaaac578b7af7d176f6be4f5a85dfe920b285e9013aa60b67708",
+    "/home/yufan/code/fead-chain-20261021/closed_study.py": "c51a515aad8b48ccc10ce18326db99afbb2b1723419e9da81a2b8bb67de80878",
+    "/home/yufan/code/fead-chain-20261021/reference_closed_form.py": "6529f7e1b2993a21353199d163273aaf596c7804447f76852b66a31171798aad",
+    "/home/yufan/code/fead-chain-20261021/reference_design.py": "9bcac32603c6a3943df7ce1af8fd9e4c118b63899fe681433aa80c992416403c",
+    "/home/yufan/code/fead-chain-20261021/reference_study.py": "39134289b60d1b5fede4ee5583c199ba8bdf1d69c802924d0c384e250b7d322a",
+    "/home/yufan/code/fead-fft-contest-20261020/contest_adapter.py": "2ba9e2195862ec59762f80f0e44a2cb64b66ae472314b3458ae9d0a13261c853",
+    "/home/yufan/code/fead-fft-contest-20261020/contest_kernels.cu": "9beb1d7a651b7d001ea9fa04f5a3671fe59a0096950a808eab24c137f26c871a",
+    "/home/yufan/code/fead-fft-contest-20261020/native_adapter.py": "58705326d57584045e4036b7e112bdfb8eacfdd96e0ff14b57be9f99402dbc81",
+    "/home/yufan/code/fead-fft-contest-20261020/native_fft.cu": "f414368f2a178aef549aa8095ee7a50e7b4465a6fe706f1f664eadd7d9150d71",
+    "/home/yufan/code/fead-formula-20261020/formula_adapter.py": "ee143412198fef9cce20a5268bef286c02b53384914358e5fc55d7d7672c38d8",
+    "/home/yufan/code/fead-formula-20261020/formula_kernels.cu": "0ca18975dafb048d63095d231e58495654f35f47eab555292ebba76335c29862",
+    "/home/yufan/code/fead-formula-20261020/formula_study.py": "dcd3b40ab02ae2e0a3994ce5aa5c6a1c02d4ab35d4a93f9f0943da9888cd5ac3",
+    "/home/yufan/code/fead-modal-hex8-20261020/gpu_study.py": "b212b479805d605b3ac944b51f33f2d64ce5035232f18da0eef4978162ca083a",
+    "/home/yufan/code/fead-modal-hex8-20261020/modal_adapter.py": "667aceaaf83183675e0bfb0f5870e84de8a946930143bb5285941c11b36ed7df",
+    "/home/yufan/code/fead-modal-hex8-20261020/modal_kernels.cu": "4c9a601a17ae7a9f53d988e6c8778de2d81dccd7333b50b0a818c7ad7d019fb6",
+    "/home/yufan/code/fead-pipeline-20261020/modal_functions.cuh": "189a165189592915705569096ec6576fd7f1292951260bf5d13e7ca3dbd8268d",
+    "/home/yufan/code/fead-pipeline-20261020/pipeline_adapter.py": "1dae25bcc711cc4e1371baed97fb6053b6fb7032aa105b4245d365a2112eeb67",
+    "/home/yufan/code/fead-pipeline-20261020/pipeline_kernels.cu": "940ae597b855f57bd5a4f09eeb09cb8d103774f460b0415e4a353ea568542f09",
+    "/home/yufan/code/fead-pipeline-20261020/pipeline_study.py": "c8522f2cd42f215028416ec698723c4071ca91c27e867b8df627849682224251",
+    "/home/yufan/code/fead-recompute-20261017-tol1e8/benchmark.py": "aeebe7cb6cbf55f021adc63a6336bff6ebeea688e82b632ff456c146ab667fe4",
+    "/home/yufan/code/fead-recompute-20261017-tol1e8/fi/atomic_adapter.py": "479da6a71f84b79a81a27c5f5163ebbf06dc5bbd85be55d960c612746e6fa011",
+    "/home/yufan/code/fead-recompute-20261017-tol1e8/fi/atomic_kernels.cu": "c11b0454ff4c25474b7b52f50f2d77267a07dd9f30030054159d46356f7b9179",
+    "/home/yufan/code/fead-recompute-20261017-tol1e8/fi/fi_reference.py": "1d97eb6f4a0d71fb9d4e0ce46a89b102b3b6d72217944f24b4fcbff4472b0159",
+    "/home/yufan/code/fead-recompute-20261017-tol1e8/fi/grouped_adapter.py": "23b5f55b3419aad82b08b8cafa90bd9b84ac397f90a474a73836fc85619f4671",
+    "/home/yufan/code/fead-recompute-20261017-tol1e8/fi/grouped_kernels.cu": "366417bc5707eb7cb59cbd1610abf86705b49ec97af7a5b7473f56a97d6a4010",
+    "/home/yufan/code/fead-recompute-20261017-tol1e8/fi/memory_adapter.py": "fd9120e4b1ad93922493a326e49da55f998c358145917c52d61905434aa03eff",
+    "/home/yufan/code/fead-recompute-20261017-tol1e8/fi/memory_kernels.cu": "4bf1bd1365ba53b2aeb595beb85044ae8f5cb1024130465695451591b8b55959",
+    "/home/yufan/code/fead-recompute-20261017-tol1e8/fi/source/femlib/__init__.py": "11fd28410ec8900de96f2728598403ebdada1d5bde256f15d10a19b0cf2937c3",
+    "/home/yufan/code/fead-recompute-20261017-tol1e8/fi/source/femlib/batched/__init__.py": "7495fef0802a94f776e5a013fbd79db83b3c070c5f3f0ff7a4a43a40cc143c5c",
+    "/home/yufan/code/fead-recompute-20261017-tol1e8/fi/source/femlib/batched/c3d8_cuda.py": "fa88a9bc9b0d9f17dfb327d4352256d8a4edcafbab1ea1ff6e6d1d0b1180b6c8",
+    "/home/yufan/code/fead-recompute-20261017-tol1e8/fi/source/femlib/batched/c3d8r_hourglass_operator.py": "6a2d179dff211f68efd2e5cb73bb90d43de6b389ce354085850e1904d6898aff",
+    "/home/yufan/code/fead-recompute-20261017-tol1e8/fi/source/femlib/batched/driver.py": "75fb88a4fce27eaed1e354e40b8e966cbb6e7f8cbc5bc78295250ab8af9f919b",
+    "/home/yufan/code/fead-recompute-20261017-tol1e8/fi/source/femlib/batched/fft_symbol_validation.py": "0be65e51f030cc8ec8550e6566fce0de3f5b5dfd8b691e22e1f2c19aa7a446ad",
+    "/home/yufan/code/fead-recompute-20261017-tol1e8/fi/source/femlib/batched/ir.py": "df1d83ffda346e0fc04fb4ee8e0c3553613a7f240e9ee5c5055ee41a0efb53e4",
+    "/home/yufan/code/fead-recompute-20261017-tol1e8/fi/source/femlib/batched/mesh_info.py": "bae4901d2ba9b695ab53a2784bf1fce379385046ea227dd191271e1b1d252611",
+    "/home/yufan/code/fead-recompute-20261017-tol1e8/fi/source/femlib/batched/pcg.py": "e349dc0c3e48be41af8f2e1a1a66d4b9c5f07ea1ec7ba2a6f57581f0b5fa5461",
+    "/home/yufan/code/fead-recompute-20261017-tol1e8/fi/source/femlib/batched/preconditioners/__init__.py": "4d166dca6e9f00511a09f5212892213bcd599aada13116b8e17c56168b1e3793",
+    "/home/yufan/code/fead-recompute-20261017-tol1e8/fi/source/femlib/batched/preconditioners/c3d8r_fft.py": "cf6ffc237d1756f7c11a99c0e8c7ed5710f985ef163580a668d39987ccdb93ba",
+    "/home/yufan/code/fead-recompute-20261017-tol1e8/fi/source/femlib/batched/stencil_operator.py": "c2ae37f069143cf5786022c71262fc16169775e91edf07877f7623c663fef384",
+    "/home/yufan/code/fead-recompute-20261017-tol1e8/fi/source/femlib/c3d8r.py": "1aa42c81cdaff3e0cd663ee6d6c30cef69fe282f6dc9206d777e7c98b46b3598",
+    "/home/yufan/code/fead-recompute-20261017-tol1e8/fi/source/femlib/connectivity.py": "b2ce6f9ad6e06b00c34b2f2bd189845a6beff33e5e54114e0164fc886b381070",
+    "/home/yufan/code/fead-recompute-20261017-tol1e8/fi/source/femlib/element_types.py": "091da6799e085e0a7ad64a8ae8793d71c660c20b47b0592aa0d6216d5acb4eda",
+    "/home/yufan/code/fead-recompute-20261017-tol1e8/fi/source/femlib/fem_batched.py": "d06a8f861b78643373e2e9b6448961252a061d3656cccf18a43fdf356ca7d849",
+    "/home/yufan/code/fead-recompute-20261017-tol1e8/fi/source/femlib/geometry.py": "9616e4393da72e13fbc2326cdb655452d739b4adece6cd6e404a9f9a759a168c",
+    "/home/yufan/code/fead-recompute-20261017-tol1e8/fi/source/femlib/materials.py": "334c7c71c05596010cef1497cabfeb990c0a4f1c521ed6d95206c79aa68302d0",
+    "/home/yufan/code/fead-recompute-20261017-tol1e8/fi/source/femlib/mesh.py": "b74c7060d7bd3368116430b33a8b9538166c8362d421426f6dca8dfff71fd3d0",
+    "/home/yufan/code/fead-recompute-20261017-tol1e8/fi/spatial_adapter.py": "e6a93fa95f62f418cfb0f6f9d499425938de34104900299e28bf8eed0b155cce",
+    "/home/yufan/code/fead-recompute-20261017-tol1e8/fi_benchmark.py": "c1ec2093bd8a9add9a981156dfedd30d008441de4ce5ad7fdb5f7ea569b9cf32",
+    "/home/yufan/code/fead-recompute-20261017-tol1e8/orientation_kernels.cu": "a62e4601e4e157fdf4b54391180596692ad7c4a74651e560732c95e03697500b",
+    "/home/yufan/code/fead-recompute-20261017-tol1e8/repro/extension_20261006/failure.cu": "fb72fe7607596485fe0f0add1202a08902da69df0c48d8279c14709112e0ca5e",
+    "/home/yufan/code/fead-recompute-20261017-tol1e8/repro/extension_20261006/material_control.py": "a02dd3958e3da53461b1d6f294047e206aa368172dc5e117a41b6df1c3f129c3",
+    "/home/yufan/code/fead-recompute-20261017-tol1e8/repro/extension_20261006/mixed_preconditioner.py": "df112cb1a956e903ce7f049e2361f0911df3ea7f8495d065124b9accd7c1d79c",
+    "/home/yufan/code/fead-recompute-20261017-tol1e8/repro/extension_20261006/physics.py": "33e3e5d94e6f8c590cb42aebbadfc46a52a557f246ca21b81f6d3a19baeabf6e",
+    "/home/yufan/code/fead-solver-study-20261022/cases.py": "f30311ee87b0f0e06a3562c106fa401c5b011e62eb1287c5e66d9c1c336bbd80",
+    "/home/yufan/code/fead-solver-study-20261022/certify.py": "38dc03e13d4772461848d84bc0d0bb0a0e6575d2bd8784e702b935921d8fb9bd",
+    "/home/yufan/code/fead-solver-study-20261022/chfem_study.py": "29e0e8da29ddc4d3ccb33693c08d72a3039f3fcca75e9bd8f69807241d7482d1",
+    "/home/yufan/code/fead-solver-study-20261022/legacy_inputs.py": "671bd50ccc165b9f080fbeafc7b4cd6df0a178f09a51e0a7437160efea9b838a",
+    "/home/yufan/code/fead-solver-study-20261022/plan.json": "546b989d12fec63961c38fc11736f72bc88537ce7808d29f7f70a4cd0f064092",
+    "/home/yufan/code/fead-solver-study-20261022/run_jobs.py": "124c515bba06b224f54738f0519e8eadbec4ad41fd684f8554a0a313e29de053",
+    "/home/yufan/code/fead-solver-study-20261022/study.py": "02543393f47cf38245cf995a8c62324d7bf9cea7fd948b0f9ec32123856b49fc"
+  },
+  "protocol": "FI eight-point integration; six unit engineering strains; FP64 physics/FP32 FFT; true residual <=1e-8; same-grid full warmup; fresh process; geometry/JIT/warmup/I/O excluded; setup, loading, solve, certification and stress recovery included."
+}

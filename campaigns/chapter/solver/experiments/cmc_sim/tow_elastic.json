@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "seed": 20261022,
+  "samples": 3,
+  "scope": "Three-phase SiC/PyC/SiC periodic tow elastic stochastic simulation; no calibration or fracture claim.",
+  "geometry": {
+    "kind": "hexagonal_tow", "n": 32, "nx": 4,
+    "fiber_radius_um": 6,
+    "fiber_fraction": {"distribution": "uniform", "bounds": [0.35, 0.42]},
+    "interphase_thickness_um": {"distribution": "uniform", "bounds": [0.1, 0.5]}
+  },
+  "phases": {
+    "0": {"name": "SiC matrix", "kind": "isotropic", "E": {"distribution": "uniform", "bounds": [70000, 150000]}, "nu": 0.19, "random_matrix": {"delta": 0.03, "mode": "scalar"}, "damage": {"law": "elastic"}},
+    "1": {"name": "SiC fiber", "kind": "isotropic", "E": 373000, "nu": 0.19, "damage": {"law": "elastic"}},
+    "2": {"name": "effective bulk PyC interphase", "kind": "isotropic", "E": {"distribution": "uniform", "bounds": [5000, 15000]}, "nu": 0.2, "damage": {"law": "elastic"}}
+  },
+  "loading": {"control": "uniaxial_stress", "axis": 0, "history": [0, 0.0005, 0.001, 0.002, 0.001, 0]},
+  "damage_levels": 32,
+  "assumptions": [
+    "Supplied constituent ranges motivate input bounds; independent uniform distributions and delta=0.03 are explicit sensitivity assumptions, not identified statistics.",
+    "PyC is represented here by an effective isotropic bulk layer; nu=0.2 is assumed. Tangential anisotropy and interface traction separation are not represented.",
+    "This hexagonal tow is not a woven coupon. Small n is a smoke test; inspect interface-resolution warnings and refine before physical conclusions.",
+    "All samples use the identical absolute strain history. Normal stresses except the loading direction and all shear stresses are free in the macroscopic average."
+  ]
+}

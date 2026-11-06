@@ -1,0 +1,32 @@
+{
+  "passed": true,
+  "precision": "numpy float64",
+  "numpy": "2.4.6",
+  "random_SPD_elements": 80,
+  "nonzero_wavevectors_per_isotropic_material": 57,
+  "isotropic_materials": 2,
+  "relative_errors": {
+    "Q_orthogonality": 1.1635914414045796e-16,
+    "FI_modal_vs_Gauss": 6.423479679895231e-16,
+    "HG_modal_vs_center_plus_projector": 6.924710598624277e-16,
+    "mean_B_vs_constant_mode": 3.867815200100851e-16,
+    "HG_symbol_vs_assembled_element": 7.694885125838224e-16,
+    "FI_symbol_vs_assembled_element": 9.192862814057242e-16,
+    "HG_inverse_vs_dense": 2.9833210588036677e-16,
+    "FI_inverse_vs_dense": 2.963979937691465e-16,
+    "translation_nullspace_FI": 1.039387473219327e-16,
+    "translation_nullspace_HG": 1.1613935298462148e-16
+  },
+  "FI_active_strain_dimensions": [
+    6,
+    5,
+    5,
+    3,
+    5,
+    3,
+    3
+  ],
+  "FI_constitutive_scalar_products": 138,
+  "source_sha256": "b4f2c9da157827787c9bde7746376a6784ebcd6d1fedaf5d0896d437934f052c",
+  "scope": "algebra and normalization; no performance or whole-solver measurement"
+}

@@ -1,0 +1,63 @@
+\section{计算效率}\label{computational-performance}
+
+实验采用RTX 5090、PyTorch 2.12.0+cu130、CUDA 13.0及CuPy 14.2.0。每次求解六个单位宏观应变工况，按式~\eqref{eq:true-residual}以FP64真实残差容差 $\tau=10^{-8}$ 验收。实验先比较第~\ref{stabilized-voxel-fem-formulation}~章的基础求解器与预条件，再依次引入第~\ref{matrix-free-batched-voxel-fem-method}~章的三项优化。
+
+时间取三个独立进程运行的中位数，每次均先完成同网格的完整预热；时间误差线覆盖三次测量范围。显存峰值取这些运行中每20 ms采样的NVML进程显存最大值，包含上下文、库和保留分配。迭代次数为六个载荷工况之和。完整调用时间涵盖材料准备、装配或算子初始化、预条件准备、载荷构造、PCG、FP64残差核验、应力恢复与清理。几何生成、编译、预热和文件读写不计入。数据驻留GPU时的单次算子调用另以CUDA事件计时。
+
+\subsection{基线求解器与FFT预条件}\label{sec:isotropic-performance}
+
+采用第~\ref{sec:chfem-verification}~节中含各向同性组分的两个 $192^3$ 单胞，比较chfem、传统装配有限元与27点实现。传统基线以CuPy压缩稀疏行（CSR）格式保存FP64全局刚度矩阵，并采用CuPy的CG求解器与标量Jacobi预条件。八点积分的单元贡献按有限大小的行块装配，删除精确为零的条目。CuPy CSR与27点Jacobi实现采用相同的零均值投影，其独立核验见第~\ref{sec:chfem-verification}~节。
+
+完整结果汇总于表~\ref{tab:solver-summary}。球夹杂算例中，chfem、CuPy CSR与27点实现采用Jacobi预条件时的六载荷时间分别为@@sphere_chfem_time@@、@@sphere_csr_time@@和@@sphere_jacobi_time@@ s；Grosmont算例对应为@@grosmont_chfem_time@@、@@grosmont_csr_time@@和@@grosmont_jacobi_time@@ s。三种实现以不同方式保存和访问同一有限元耦合：chfem复用材料相刚度数据，CSR保存数值及列索引，模板则保存节点矩阵块并通过网格关系确定邻接。完整时间也包含各计算库的向量更新与归约开销。chfem采用从主机端相标签开始的原生核心计时，不含输入文件解析。
+
+在27点实现中，将Jacobi替换为FFT预条件后，球夹杂的总迭代次数由@@sphere_jacobi_iter@@降至@@sphere_fft_iter@@，Grosmont由@@grosmont_jacobi_iter@@降至@@grosmont_fft_iter@@；完整调用时间分别降至@@sphere_fft_time@@和@@grosmont_fft_time@@ s。后续算子与存储对比以这一FFT预条件的27点实现为基线。
+
+\subsection{各优化模块的贡献}\label{sec:fi-ablation}
+
+图~\ref{fig:fi-woven-geometry}的 $192^3$ 编织单胞用于检验空间变化各向异性下的三项优化。组分参数见表~\ref{tab:woven_constituent_properties}，几何定义见\ref{app:resolution-geometry}。纱线取向沿弯曲路径变化，约占单元总数的19.8\%。图中隐藏基体，并对比同一局部区域的 $64^3$ 和 $192^3$ 体素离散。
+\begin{figure}[htbp]
+\centering
+\makebox[\linewidth][c]{\includegraphics{fi_woven_geometry_zh.pdf}}
+\caption{编织基准模型及局部体素截面。}
+\label{fig:fi-woven-geometry}
+\end{figure}
+
+连续对比采用\ref{app:solver-reference}中按材料相选择的同一参考张量，并将其剪切系数归一化为一。物理算子和PCG向量始终采用FP64；FFT也采用FP64，直至最后一步引入混合精度。@@fft_iteration_statement@@ 图~\ref{fig:fi-workflow-cost}按这一顺序分别展示时间和显存，两者均使用线性坐标。
+
+\paragraph{单元本构运算}
+第一组对比对应第~\ref{sec:fi-modal}~节。直接在八个Gauss点计算时，单次刚度作用耗时@@direct_Ku@@ ms；保持单元数据与节点累加方式相同，模态实现耗时@@modal_Ku@@ ms。相对存储27点模板的实现，模态计算使完整调用时间由@@woven_fft_time@@变为@@modal_time@@ s，显存峰值由@@woven_fft_memory@@降至@@modal_memory@@ GiB。稀疏应变系数的直接作用减少局部计算，省去空间变化的模板缓存则带来存储收益。
+
+\paragraph{材料共享与背景复用}
+按第~\ref{sec:compact-material}~节引入混合存储后，显存峰值由@@modal_memory@@降至@@hybrid_memory@@ GiB，完整调用时间由@@modal_time@@变为@@hybrid_time@@ s。进一步引入背景分解，单次刚度作用由@@hybrid_Ku@@降至@@background_Ku@@ ms，完整调用时间降至@@background_time@@ s。材料共享消除重复张量数据，背景计算则以共享节点作用替代基体相中重复的逐单元计算。
+
+表~\ref{tab:fi-background-ablation}通过独立的层合单胞对照考察活动比例的影响，该对照采用优化后的FP32 FFT--PCG执行配置。固定各向同性相为共享背景，将正交各向异性相按局部取向输入，从而以其体积分数控制活动集合。活动比例为50.00\%时，完整调用时间基本持平；增至89.84\%时，时间增加@@active90_overhead@@\%。背景计算仍需遍历全网格，而差值计算的成本随活动集合扩大而增加。
+\input{sections_structured_zh/table_fi_background}
+
+\paragraph{紧凑存储与GPU执行}
+第~\ref{sec:solver-workflow}~节首先利用存储模板的对称性。在这一配对中，将27个块压缩为14个，使显存峰值由@@woven_fft_memory@@降至@@symmetric_memory@@ GiB，单次刚度作用由@@stencil_Ku@@变为@@symmetric_Ku@@ ms。这组结果量化了模板实现内部的对称复用收益。
+
+对于背景与模态组合的求解器，参考系数缓存、FFT计划与工作区复用及PCG融合更新使完整调用时间由@@background_time@@降至@@execution_time@@ s，单次预条件调用由@@background_preconditioner@@变为@@execution_preconditioner@@ ms。这些调整减少重复的参考运算和中间数组传输。最后，仅将FFT缓冲、频谱及缓存系数改为FP32，得到@@mixed_time@@ s的完整调用时间和@@mixed_memory@@ GiB的显存峰值。FP64与FP32执行配置均需@@precision_iterations@@次迭代，配对间等效刚度的最大相对差为@@precision_error@@；物理刚度作用、PCG向量和残差核验仍采用FP64。
+
+\begin{figure}[htbp]
+\centering
+\makebox[\linewidth][c]{\includegraphics{fi_optimization_chain_zh.pdf}}
+\caption{各优化阶段的计算成本。}
+\label{fig:fi-workflow-cost}
+\end{figure}
+
+\subsection{整体性能与网格规模}\label{sec:execution-results}
+
+对\ref{app:resolution-geometry}定义的编织几何采用七种 $N^3$ 网格，$N=64,96,\ldots,256$。以 $256^3$ 的等效刚度作为式~\eqref{eq:relative_frobenius_difference}的参考值，考察网格收敛性（图~\ref{fig:fi-grid-scaling}a）。相对差由 $64^3$ 时的0.8854\%整体降至 $224^3$ 时的0.0777\%，在 $160^3$--$224^3$ 范围内均低于0.09\%。各分辨率的材料界面均由同一解析几何重新采样，并同步细化位移场。
+
+网格试验中的四种实现均采用FP32 FFT。两种装配模板使用采样参考介质，两种模态实现采用\ref{app:solver-reference}中的材料相参考介质。在共同的 $64^3$--$224^3$ 范围内，本文求解器具有最低的完整调用时间与显存峰值（图~\ref{fig:fi-grid-scaling}b,c）。模板矩阵块与逐单元材料张量的存储随网格规模增加，显存差距随之扩大。在 $256^3$ 上，本文求解器以4.764 GiB显存在4.387 s内完成全部六个载荷工况。
+\begin{figure}[htbp]
+\centering
+\makebox[\linewidth][c]{\includegraphics{fi_grid_scaling_zh.pdf}}
+\caption{网格收敛与计算成本。}
+\label{fig:fi-grid-scaling}
+\end{figure}
+\FloatBarrier
+
+表~\ref{tab:solver-summary}汇总基础方法与各优化阶段。在 $192^3$ 编织单胞上，完整调用时间由FP64 FFT预条件27点基线的@@woven_fft_time@@ s降至最终求解器的@@mixed_time@@ s，减少@@overall_time_reduction@@\%，显存峰值减少@@overall_memory_reduction@@\%。相对CuPy CSR--Jacobi，最终求解器加速@@csr_speedup@@倍，显存峰值为其@@csr_memory_fraction@@\%。编织算例各配置相对27点FFT解的等效刚度最大相对差为@@woven_error@@。对于球夹杂与Grosmont，最终求解器相对chfem的加速比分别为@@sphere_speedup@@和@@grosmont_speedup@@，显存峰值分别为@@sphere_mixed_memory@@和@@grosmont_mixed_memory@@ GiB，chfem为1.137 GiB。总表同时呈现迭代次数变化，以及固定预条件下获得的时间与存储收益。
+\input{sections_structured_zh/table_solver_summary}
+\FloatBarrier

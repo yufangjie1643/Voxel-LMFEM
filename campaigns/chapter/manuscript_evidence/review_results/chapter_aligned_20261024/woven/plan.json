@@ -1,0 +1,662 @@
+[
+  {
+    "name": "woven_192_csr_jacobi_r0",
+    "arguments": [
+      "/home/yufan/code/voxel-mechanics/experiments/chapter_aligned/study.py"
+    ],
+    "command": [
+      "/home/yufan/code/voxel-mechanics/run",
+      "chapter-study",
+      "--phase",
+      "worker",
+      "--case",
+      "woven",
+      "--grid",
+      "192",
+      "--variant",
+      "csr_jacobi",
+      "--repeat",
+      "0",
+      "--out",
+      "/home/yufan/code/voxel-mechanics/runs/chapter_chain_192_v2_20261024"
+    ]
+  },
+  {
+    "name": "woven_192_stencil27_jacobi_r0",
+    "arguments": [
+      "/home/yufan/code/voxel-mechanics/experiments/chapter_aligned/study.py"
+    ],
+    "command": [
+      "/home/yufan/code/voxel-mechanics/run",
+      "chapter-study",
+      "--phase",
+      "worker",
+      "--case",
+      "woven",
+      "--grid",
+      "192",
+      "--variant",
+      "stencil27_jacobi",
+      "--repeat",
+      "0",
+      "--out",
+      "/home/yufan/code/voxel-mechanics/runs/chapter_chain_192_v2_20261024"
+    ]
+  },
+  {
+    "name": "woven_192_stencil27_fft_r0",
+    "arguments": [
+      "/home/yufan/code/voxel-mechanics/experiments/chapter_aligned/study.py"
+    ],
+    "command": [
+      "/home/yufan/code/voxel-mechanics/run",
+      "chapter-study",
+      "--phase",
+      "worker",
+      "--case",
+      "woven",
+      "--grid",
+      "192",
+      "--variant",
+      "stencil27_fft",
+      "--repeat",
+      "0",
+      "--out",
+      "/home/yufan/code/voxel-mechanics/runs/chapter_chain_192_v2_20261024"
+    ]
+  },
+  {
+    "name": "woven_192_stencil14_fft_r0",
+    "arguments": [
+      "/home/yufan/code/voxel-mechanics/experiments/chapter_aligned/study.py"
+    ],
+    "command": [
+      "/home/yufan/code/voxel-mechanics/run",
+      "chapter-study",
+      "--phase",
+      "worker",
+      "--case",
+      "woven",
+      "--grid",
+      "192",
+      "--variant",
+      "stencil14_fft",
+      "--repeat",
+      "0",
+      "--out",
+      "/home/yufan/code/voxel-mechanics/runs/chapter_chain_192_v2_20261024"
+    ]
+  },
+  {
+    "name": "woven_192_direct_fft_r0",
+    "arguments": [
+      "/home/yufan/code/voxel-mechanics/experiments/chapter_aligned/study.py"
+    ],
+    "command": [
+      "/home/yufan/code/voxel-mechanics/run",
+      "chapter-study",
+      "--phase",
+      "worker",
+      "--case",
+      "woven",
+      "--grid",
+      "192",
+      "--variant",
+      "direct_fft",
+      "--repeat",
+      "0",
+      "--out",
+      "/home/yufan/code/voxel-mechanics/runs/chapter_chain_192_v2_20261024"
+    ]
+  },
+  {
+    "name": "woven_192_modal_fft_r0",
+    "arguments": [
+      "/home/yufan/code/voxel-mechanics/experiments/chapter_aligned/study.py"
+    ],
+    "command": [
+      "/home/yufan/code/voxel-mechanics/run",
+      "chapter-study",
+      "--phase",
+      "worker",
+      "--case",
+      "woven",
+      "--grid",
+      "192",
+      "--variant",
+      "modal_fft",
+      "--repeat",
+      "0",
+      "--out",
+      "/home/yufan/code/voxel-mechanics/runs/chapter_chain_192_v2_20261024"
+    ]
+  },
+  {
+    "name": "woven_192_hybrid_fft_r0",
+    "arguments": [
+      "/home/yufan/code/voxel-mechanics/experiments/chapter_aligned/study.py"
+    ],
+    "command": [
+      "/home/yufan/code/voxel-mechanics/run",
+      "chapter-study",
+      "--phase",
+      "worker",
+      "--case",
+      "woven",
+      "--grid",
+      "192",
+      "--variant",
+      "hybrid_fft",
+      "--repeat",
+      "0",
+      "--out",
+      "/home/yufan/code/voxel-mechanics/runs/chapter_chain_192_v2_20261024"
+    ]
+  },
+  {
+    "name": "woven_192_background_fft_r0",
+    "arguments": [
+      "/home/yufan/code/voxel-mechanics/experiments/chapter_aligned/study.py"
+    ],
+    "command": [
+      "/home/yufan/code/voxel-mechanics/run",
+      "chapter-study",
+      "--phase",
+      "worker",
+      "--case",
+      "woven",
+      "--grid",
+      "192",
+      "--variant",
+      "background_fft",
+      "--repeat",
+      "0",
+      "--out",
+      "/home/yufan/code/voxel-mechanics/runs/chapter_chain_192_v2_20261024"
+    ]
+  },
+  {
+    "name": "woven_192_execution_fp64_r0",
+    "arguments": [
+      "/home/yufan/code/voxel-mechanics/experiments/chapter_aligned/study.py"
+    ],
+    "command": [
+      "/home/yufan/code/voxel-mechanics/run",
+      "chapter-study",
+      "--phase",
+      "worker",
+      "--case",
+      "woven",
+      "--grid",
+      "192",
+      "--variant",
+      "execution_fp64",
+      "--repeat",
+      "0",
+      "--out",
+      "/home/yufan/code/voxel-mechanics/runs/chapter_chain_192_v2_20261024"
+    ]
+  },
+  {
+    "name": "woven_192_execution_fp32_r0",
+    "arguments": [
+      "/home/yufan/code/voxel-mechanics/experiments/chapter_aligned/study.py"
+    ],
+    "command": [
+      "/home/yufan/code/voxel-mechanics/run",
+      "chapter-study",
+      "--phase",
+      "worker",
+      "--case",
+      "woven",
+      "--grid",
+      "192",
+      "--variant",
+      "execution_fp32",
+      "--repeat",
+      "0",
+      "--out",
+      "/home/yufan/code/voxel-mechanics/runs/chapter_chain_192_v2_20261024"
+    ]
+  },
+  {
+    "name": "woven_192_execution_fp32_r1",
+    "arguments": [
+      "/home/yufan/code/voxel-mechanics/experiments/chapter_aligned/study.py"
+    ],
+    "command": [
+      "/home/yufan/code/voxel-mechanics/run",
+      "chapter-study",
+      "--phase",
+      "worker",
+      "--case",
+      "woven",
+      "--grid",
+      "192",
+      "--variant",
+      "execution_fp32",
+      "--repeat",
+      "1",
+      "--out",
+      "/home/yufan/code/voxel-mechanics/runs/chapter_chain_192_v2_20261024"
+    ]
+  },
+  {
+    "name": "woven_192_execution_fp64_r1",
+    "arguments": [
+      "/home/yufan/code/voxel-mechanics/experiments/chapter_aligned/study.py"
+    ],
+    "command": [
+      "/home/yufan/code/voxel-mechanics/run",
+      "chapter-study",
+      "--phase",
+      "worker",
+      "--case",
+      "woven",
+      "--grid",
+      "192",
+      "--variant",
+      "execution_fp64",
+      "--repeat",
+      "1",
+      "--out",
+      "/home/yufan/code/voxel-mechanics/runs/chapter_chain_192_v2_20261024"
+    ]
+  },
+  {
+    "name": "woven_192_background_fft_r1",
+    "arguments": [
+      "/home/yufan/code/voxel-mechanics/experiments/chapter_aligned/study.py"
+    ],
+    "command": [
+      "/home/yufan/code/voxel-mechanics/run",
+      "chapter-study",
+      "--phase",
+      "worker",
+      "--case",
+      "woven",
+      "--grid",
+      "192",
+      "--variant",
+      "background_fft",
+      "--repeat",
+      "1",
+      "--out",
+      "/home/yufan/code/voxel-mechanics/runs/chapter_chain_192_v2_20261024"
+    ]
+  },
+  {
+    "name": "woven_192_hybrid_fft_r1",
+    "arguments": [
+      "/home/yufan/code/voxel-mechanics/experiments/chapter_aligned/study.py"
+    ],
+    "command": [
+      "/home/yufan/code/voxel-mechanics/run",
+      "chapter-study",
+      "--phase",
+      "worker",
+      "--case",
+      "woven",
+      "--grid",
+      "192",
+      "--variant",
+      "hybrid_fft",
+      "--repeat",
+      "1",
+      "--out",
+      "/home/yufan/code/voxel-mechanics/runs/chapter_chain_192_v2_20261024"
+    ]
+  },
+  {
+    "name": "woven_192_modal_fft_r1",
+    "arguments": [
+      "/home/yufan/code/voxel-mechanics/experiments/chapter_aligned/study.py"
+    ],
+    "command": [
+      "/home/yufan/code/voxel-mechanics/run",
+      "chapter-study",
+      "--phase",
+      "worker",
+      "--case",
+      "woven",
+      "--grid",
+      "192",
+      "--variant",
+      "modal_fft",
+      "--repeat",
+      "1",
+      "--out",
+      "/home/yufan/code/voxel-mechanics/runs/chapter_chain_192_v2_20261024"
+    ]
+  },
+  {
+    "name": "woven_192_direct_fft_r1",
+    "arguments": [
+      "/home/yufan/code/voxel-mechanics/experiments/chapter_aligned/study.py"
+    ],
+    "command": [
+      "/home/yufan/code/voxel-mechanics/run",
+      "chapter-study",
+      "--phase",
+      "worker",
+      "--case",
+      "woven",
+      "--grid",
+      "192",
+      "--variant",
+      "direct_fft",
+      "--repeat",
+      "1",
+      "--out",
+      "/home/yufan/code/voxel-mechanics/runs/chapter_chain_192_v2_20261024"
+    ]
+  },
+  {
+    "name": "woven_192_stencil14_fft_r1",
+    "arguments": [
+      "/home/yufan/code/voxel-mechanics/experiments/chapter_aligned/study.py"
+    ],
+    "command": [
+      "/home/yufan/code/voxel-mechanics/run",
+      "chapter-study",
+      "--phase",
+      "worker",
+      "--case",
+      "woven",
+      "--grid",
+      "192",
+      "--variant",
+      "stencil14_fft",
+      "--repeat",
+      "1",
+      "--out",
+      "/home/yufan/code/voxel-mechanics/runs/chapter_chain_192_v2_20261024"
+    ]
+  },
+  {
+    "name": "woven_192_stencil27_fft_r1",
+    "arguments": [
+      "/home/yufan/code/voxel-mechanics/experiments/chapter_aligned/study.py"
+    ],
+    "command": [
+      "/home/yufan/code/voxel-mechanics/run",
+      "chapter-study",
+      "--phase",
+      "worker",
+      "--case",
+      "woven",
+      "--grid",
+      "192",
+      "--variant",
+      "stencil27_fft",
+      "--repeat",
+      "1",
+      "--out",
+      "/home/yufan/code/voxel-mechanics/runs/chapter_chain_192_v2_20261024"
+    ]
+  },
+  {
+    "name": "woven_192_stencil27_jacobi_r1",
+    "arguments": [
+      "/home/yufan/code/voxel-mechanics/experiments/chapter_aligned/study.py"
+    ],
+    "command": [
+      "/home/yufan/code/voxel-mechanics/run",
+      "chapter-study",
+      "--phase",
+      "worker",
+      "--case",
+      "woven",
+      "--grid",
+      "192",
+      "--variant",
+      "stencil27_jacobi",
+      "--repeat",
+      "1",
+      "--out",
+      "/home/yufan/code/voxel-mechanics/runs/chapter_chain_192_v2_20261024"
+    ]
+  },
+  {
+    "name": "woven_192_csr_jacobi_r1",
+    "arguments": [
+      "/home/yufan/code/voxel-mechanics/experiments/chapter_aligned/study.py"
+    ],
+    "command": [
+      "/home/yufan/code/voxel-mechanics/run",
+      "chapter-study",
+      "--phase",
+      "worker",
+      "--case",
+      "woven",
+      "--grid",
+      "192",
+      "--variant",
+      "csr_jacobi",
+      "--repeat",
+      "1",
+      "--out",
+      "/home/yufan/code/voxel-mechanics/runs/chapter_chain_192_v2_20261024"
+    ]
+  },
+  {
+    "name": "woven_192_csr_jacobi_r2",
+    "arguments": [
+      "/home/yufan/code/voxel-mechanics/experiments/chapter_aligned/study.py"
+    ],
+    "command": [
+      "/home/yufan/code/voxel-mechanics/run",
+      "chapter-study",
+      "--phase",
+      "worker",
+      "--case",
+      "woven",
+      "--grid",
+      "192",
+      "--variant",
+      "csr_jacobi",
+      "--repeat",
+      "2",
+      "--out",
+      "/home/yufan/code/voxel-mechanics/runs/chapter_chain_192_v2_20261024"
+    ]
+  },
+  {
+    "name": "woven_192_stencil27_jacobi_r2",
+    "arguments": [
+      "/home/yufan/code/voxel-mechanics/experiments/chapter_aligned/study.py"
+    ],
+    "command": [
+      "/home/yufan/code/voxel-mechanics/run",
+      "chapter-study",
+      "--phase",
+      "worker",
+      "--case",
+      "woven",
+      "--grid",
+      "192",
+      "--variant",
+      "stencil27_jacobi",
+      "--repeat",
+      "2",
+      "--out",
+      "/home/yufan/code/voxel-mechanics/runs/chapter_chain_192_v2_20261024"
+    ]
+  },
+  {
+    "name": "woven_192_stencil27_fft_r2",
+    "arguments": [
+      "/home/yufan/code/voxel-mechanics/experiments/chapter_aligned/study.py"
+    ],
+    "command": [
+      "/home/yufan/code/voxel-mechanics/run",
+      "chapter-study",
+      "--phase",
+      "worker",
+      "--case",
+      "woven",
+      "--grid",
+      "192",
+      "--variant",
+      "stencil27_fft",
+      "--repeat",
+      "2",
+      "--out",
+      "/home/yufan/code/voxel-mechanics/runs/chapter_chain_192_v2_20261024"
+    ]
+  },
+  {
+    "name": "woven_192_stencil14_fft_r2",
+    "arguments": [
+      "/home/yufan/code/voxel-mechanics/experiments/chapter_aligned/study.py"
+    ],
+    "command": [
+      "/home/yufan/code/voxel-mechanics/run",
+      "chapter-study",
+      "--phase",
+      "worker",
+      "--case",
+      "woven",
+      "--grid",
+      "192",
+      "--variant",
+      "stencil14_fft",
+      "--repeat",
+      "2",
+      "--out",
+      "/home/yufan/code/voxel-mechanics/runs/chapter_chain_192_v2_20261024"
+    ]
+  },
+  {
+    "name": "woven_192_direct_fft_r2",
+    "arguments": [
+      "/home/yufan/code/voxel-mechanics/experiments/chapter_aligned/study.py"
+    ],
+    "command": [
+      "/home/yufan/code/voxel-mechanics/run",
+      "chapter-study",
+      "--phase",
+      "worker",
+      "--case",
+      "woven",
+      "--grid",
+      "192",
+      "--variant",
+      "direct_fft",
+      "--repeat",
+      "2",
+      "--out",
+      "/home/yufan/code/voxel-mechanics/runs/chapter_chain_192_v2_20261024"
+    ]
+  },
+  {
+    "name": "woven_192_modal_fft_r2",
+    "arguments": [
+      "/home/yufan/code/voxel-mechanics/experiments/chapter_aligned/study.py"
+    ],
+    "command": [
+      "/home/yufan/code/voxel-mechanics/run",
+      "chapter-study",
+      "--phase",
+      "worker",
+      "--case",
+      "woven",
+      "--grid",
+      "192",
+      "--variant",
+      "modal_fft",
+      "--repeat",
+      "2",
+      "--out",
+      "/home/yufan/code/voxel-mechanics/runs/chapter_chain_192_v2_20261024"
+    ]
+  },
+  {
+    "name": "woven_192_hybrid_fft_r2",
+    "arguments": [
+      "/home/yufan/code/voxel-mechanics/experiments/chapter_aligned/study.py"
+    ],
+    "command": [
+      "/home/yufan/code/voxel-mechanics/run",
+      "chapter-study",
+      "--phase",
+      "worker",
+      "--case",
+      "woven",
+      "--grid",
+      "192",
+      "--variant",
+      "hybrid_fft",
+      "--repeat",
+      "2",
+      "--out",
+      "/home/yufan/code/voxel-mechanics/runs/chapter_chain_192_v2_20261024"
+    ]
+  },
+  {
+    "name": "woven_192_background_fft_r2",
+    "arguments": [
+      "/home/yufan/code/voxel-mechanics/experiments/chapter_aligned/study.py"
+    ],
+    "command": [
+      "/home/yufan/code/voxel-mechanics/run",
+      "chapter-study",
+      "--phase",
+      "worker",
+      "--case",
+      "woven",
+      "--grid",
+      "192",
+      "--variant",
+      "background_fft",
+      "--repeat",
+      "2",
+      "--out",
+      "/home/yufan/code/voxel-mechanics/runs/chapter_chain_192_v2_20261024"
+    ]
+  },
+  {
+    "name": "woven_192_execution_fp64_r2",
+    "arguments": [
+      "/home/yufan/code/voxel-mechanics/experiments/chapter_aligned/study.py"
+    ],
+    "command": [
+      "/home/yufan/code/voxel-mechanics/run",
+      "chapter-study",
+      "--phase",
+      "worker",
+      "--case",
+      "woven",
+      "--grid",
+      "192",
+      "--variant",
+      "execution_fp64",
+      "--repeat",
+      "2",
+      "--out",
+      "/home/yufan/code/voxel-mechanics/runs/chapter_chain_192_v2_20261024"
+    ]
+  },
+  {
+    "name": "woven_192_execution_fp32_r2",
+    "arguments": [
+      "/home/yufan/code/voxel-mechanics/experiments/chapter_aligned/study.py"
+    ],
+    "command": [
+      "/home/yufan/code/voxel-mechanics/run",
+      "chapter-study",
+      "--phase",
+      "worker",
+      "--case",
+      "woven",
+      "--grid",
+      "192",
+      "--variant",
+      "execution_fp32",
+      "--repeat",
+      "2",
+      "--out",
+      "/home/yufan/code/voxel-mechanics/runs/chapter_chain_192_v2_20261024"
+    ]
+  }
+]

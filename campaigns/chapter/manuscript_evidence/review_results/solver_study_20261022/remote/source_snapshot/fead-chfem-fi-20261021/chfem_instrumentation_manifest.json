@@ -1,0 +1,24 @@
+{
+  "base": "/home/yufan/code/Voxel-ACDM/results/paper_5090/chfem_build_probe_src",
+  "copy": "/home/yufan/code/fead-chfem-fi-20261021/chfem_source",
+  "commit": "309c1f64a90760ada5c45fa61ffb013d1b1a0271",
+  "changes": {
+    "chfem/src/femhmg/cudapcg/cudapcg.h": {
+      "before": "e7fc96bda270372bbfbd8bb3d3ac65342789c13050a6b3859dee6097d2773dfa",
+      "after": "e96f4cdcb32eda2ded22cb0b27e5073a0ba07716649bcbecf05643620db3b5fb"
+    },
+    "chfem/src/femhmg/cudapcg/cudapcg.cu": {
+      "before": "af62017e864eb812c54139058c68523a303d58e4b76027d0c9fcaaeabe3c4011",
+      "after": "1706302d1dbb3cd8b68149e69822ae96261f55669ad705891d34a40e6ae01397"
+    },
+    "chfem/src/femhmg/femhmg.c": {
+      "before": "77c98697b0644ee7db53a0d5b0f74da192ad91384f01460dec3ffcd7b852290c",
+      "after": "b7e38b4dd26f6e3db599d0d9c27bcba8cbe8b928ed7198202b1d1df43feb3752"
+    },
+    "chfem/src/chfem_wrapper.c": {
+      "before": "5f23b2b860a9c0719fd5fd739ac8841be815455329cf7ba684fec117ffa1e826",
+      "after": "987022d4a7cb2d790621004273c7ec7cadcc7f6d5263fb1df0d40824db101436"
+    }
+  },
+  "untouched_pcg_sha256": "001688ea9a17b5f25b7ebd9ae8f233d917f48fef6d5df0f977b4122f794464a7"
+}

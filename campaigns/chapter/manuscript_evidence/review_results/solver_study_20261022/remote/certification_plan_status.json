@@ -1,0 +1,110 @@
+{
+  "complete": true,
+  "jobs": [
+    {
+      "name": "certify_woven_64",
+      "arguments": [
+        "certify.py",
+        "--case",
+        "woven",
+        "--grid",
+        "64"
+      ]
+    },
+    {
+      "name": "certify_woven_128",
+      "arguments": [
+        "certify.py",
+        "--case",
+        "woven",
+        "--grid",
+        "128"
+      ]
+    },
+    {
+      "name": "certify_woven_192",
+      "arguments": [
+        "certify.py",
+        "--case",
+        "woven",
+        "--grid",
+        "192"
+      ]
+    },
+    {
+      "name": "certify_woven_256",
+      "arguments": [
+        "certify.py",
+        "--case",
+        "woven",
+        "--grid",
+        "256"
+      ]
+    },
+    {
+      "name": "certify_sphere_192",
+      "arguments": [
+        "certify.py",
+        "--case",
+        "sphere",
+        "--grid",
+        "192"
+      ]
+    },
+    {
+      "name": "certify_grosmont_192",
+      "arguments": [
+        "certify.py",
+        "--case",
+        "grosmont",
+        "--grid",
+        "192"
+      ]
+    }
+  ],
+  "completed": [
+    {
+      "name": "certify_woven_64",
+      "log": "/home/yufan/code/fead-solver-study-20261022/logs/certify_woven_64.log",
+      "telemetry": "/home/yufan/code/fead-solver-study-20261022/logs/certify_woven_64_telemetry.json",
+      "process_wall_seconds": 4.218533608829603,
+      "complete": true
+    },
+    {
+      "name": "certify_woven_128",
+      "log": "/home/yufan/code/fead-solver-study-20261022/logs/certify_woven_128.log",
+      "telemetry": "/home/yufan/code/fead-solver-study-20261022/logs/certify_woven_128_telemetry.json",
+      "process_wall_seconds": 4.355140289058909,
+      "complete": true
+    },
+    {
+      "name": "certify_woven_192",
+      "log": "/home/yufan/code/fead-solver-study-20261022/logs/certify_woven_192.log",
+      "telemetry": "/home/yufan/code/fead-solver-study-20261022/logs/certify_woven_192_telemetry.json",
+      "process_wall_seconds": 5.766556610818952,
+      "complete": true
+    },
+    {
+      "name": "certify_woven_256",
+      "log": "/home/yufan/code/fead-solver-study-20261022/logs/certify_woven_256.log",
+      "telemetry": "/home/yufan/code/fead-solver-study-20261022/logs/certify_woven_256_telemetry.json",
+      "process_wall_seconds": 9.492065151920542,
+      "complete": true
+    },
+    {
+      "name": "certify_sphere_192",
+      "log": "/home/yufan/code/fead-solver-study-20261022/logs/certify_sphere_192.log",
+      "telemetry": "/home/yufan/code/fead-solver-study-20261022/logs/certify_sphere_192_telemetry.json",
+      "process_wall_seconds": 4.462696303147823,
+      "complete": true
+    },
+    {
+      "name": "certify_grosmont_192",
+      "log": "/home/yufan/code/fead-solver-study-20261022/logs/certify_grosmont_192.log",
+      "telemetry": "/home/yufan/code/fead-solver-study-20261022/logs/certify_grosmont_192_telemetry.json",
+      "process_wall_seconds": 4.48883496504277,
+      "complete": true
+    }
+  ],
+  "failed": null
+}

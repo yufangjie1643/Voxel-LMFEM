@@ -1,0 +1,144 @@
+--- a/chfem/src/femhmg/cudapcg/cudapcg.h
++++ b/chfem/src/femhmg/cudapcg/cudapcg.h
+@@ -50,6 +50,12 @@
+   cudapcgFlag_t cudapcgSetLclMtxs(cudapcgVar_t * LclMtxs);
+ 
+   cudapcgFlag_t cudapcgSolve(cudapcgVar_t * x);
++  /* Read-only measurement hooks for the isolated FEAD comparison. */
++  void feadAuditBegin(void);
++  void feadAuditEnd(void);
++  void feadAuditAddIOSeconds(double seconds);
++  void feadAuditLoad(cudapcgVar_t *host_rhs, cudapcgVar_t *host_x, unsigned int load);
++
+ 
+   cudapcgFlag_t cudapcgSetHeaderString(char *header);
+   cudapcgFlag_t cudapcgPrintSolverReport();
+--- a/chfem/src/femhmg/cudapcg/cudapcg.cu
++++ b/chfem/src/femhmg/cudapcg/cudapcg.cu
+@@ -676,3 +676,84 @@
+   return CUDAPCG_TRUE;
+ }
+ //------------------------------------------------------------------------------
++
++
++/* Instrumentation only: the pre-existing physical and iterative kernels above
++   are unchanged. Scratch d/q may be overwritten only after a completed solve. */
++static double fead_audit_start = 0.0;
++static double fead_audit_io = 0.0;
++static double fead_audit_diagnostics = 0.0;
++static size_t fead_audit_baseline_used = 0;
++static size_t fead_audit_sampled_used = 0;
++
++static void fead_audit_memory(void) {
++    size_t available = 0, total = 0;
++    HANDLE_ERROR(cudaMemGetInfo(&available, &total));
++    size_t used = total - available;
++    if (used > fead_audit_sampled_used) fead_audit_sampled_used = used;
++}
++
++extern "C" void feadAuditBegin(void) {
++    HANDLE_ERROR(cudaDeviceSynchronize());
++    size_t available = 0, total = 0;
++    HANDLE_ERROR(cudaMemGetInfo(&available, &total));
++    fead_audit_baseline_used = total - available;
++    fead_audit_sampled_used = fead_audit_baseline_used;
++    fead_audit_io = 0.0;
++    fead_audit_diagnostics = 0.0;
++    fead_audit_start = omp_get_wtime();
++}
++
++extern "C" void feadAuditAddIOSeconds(double seconds) {
++    fead_audit_io += seconds;
++}
++
++static void fead_audit_write(const char *prefix, const char *name,
++                             unsigned int load, const void *values, size_t bytes) {
++    char filename[4096];
++    if (snprintf(filename, sizeof(filename), "%s_%s_%u.bin", prefix, name, load)
++            >= (int)sizeof(filename)) { fprintf(stderr,"Audit filename too long\n"); exit(3); }
++    FILE *file = fopen(filename,"wbx");
++    if (!file) { perror(filename); exit(3); }
++    if (fwrite(values,1,bytes,file) != bytes) { perror(filename); fclose(file); exit(3); }
++    if (fclose(file)) { perror(filename); exit(3); }
++}
++
++extern "C" void feadAuditLoad(cudapcgVar_t *host_rhs, cudapcgVar_t *host_x,
++                              unsigned int load) {
++    if (!solver || solver->analysis_flag != CUDAPCG_ELASTIC_3D ||
++        solver->solver_flag != CUDAPCG_CG_SOLVER || !solver->preconditioner_flag ||
++        !solver->userAllocatedArrays_flag || sizeof(cudapcgVar_t) != 8) {
++        fprintf(stderr,"Audit requires preallocated FP64 elastic 3D default PCG\n"); exit(3);
++    }
++    HANDLE_ERROR(cudaDeviceSynchronize());
++    double start = omp_get_wtime();
++    unsigned int n = solver->model->nvars;
++    HANDLE_ERROR(cudaMemcpy(solver->d,host_rhs,(size_t)n*sizeof(cudapcgVar_t),cudaMemcpyHostToDevice));
++    double rhs2 = dotprod(solver->d,solver->d,n);
++    solver->Aprod(solver->model,solver->x,1.0,0.0,solver->q);
++    axpy_iny(solver->d,solver->q,-1.0,n);
++    double residual2 = dotprod(solver->d,solver->d,n);
++    HANDLE_ERROR(cudaDeviceSynchronize());
++    double seconds = omp_get_wtime()-start;
++    fead_audit_diagnostics += seconds;
++    double relative = rhs2 > 0 ? sqrt(residual2/rhs2) : (residual2 == 0 ? 0.0 : INFINITY);
++    fead_audit_memory();
++    printf("\nFEAD_AUDIT_LOAD load=%u iterations=%u native_residual=%.17g true_residual=%.17g rhs_norm=%.17g residual_norm=%.17g solve_seconds=%.17g certification_seconds=%.17g native_found=%u\n",
++           load,solver->iteration,(double)solver->residual,relative,sqrt(rhs2),sqrt(residual2),solver->total_time,seconds,(unsigned int)solver->foundSolution_flag);
++    const char *prefix = getenv("CHFEM_AUDIT_EXPORT_PREFIX");
++    if (prefix && prefix[0]) {
++        start=omp_get_wtime();
++        fead_audit_write(prefix,"u",load,host_x,(size_t)n*sizeof(cudapcgVar_t));
++        fead_audit_write(prefix,"rhs",load,host_rhs,(size_t)n*sizeof(cudapcgVar_t));
++        fead_audit_io += omp_get_wtime()-start;
++    }
++}
++
++extern "C" void feadAuditEnd(void) {
++    HANDLE_ERROR(cudaDeviceSynchronize());
++    double elapsed=omp_get_wtime()-fead_audit_start;
++    printf("FEAD_AUDIT_TOTAL wrapper_seconds=%.17g core_seconds=%.17g excluded_nf_read_parse_and_export_seconds=%.17g certification_seconds=%.17g device_used_baseline_bytes=%zu device_used_sampled_peak_bytes=%zu scalar_bytes=%zu\n",
++           elapsed,elapsed-fead_audit_io,fead_audit_io,fead_audit_diagnostics,
++           fead_audit_baseline_used,fead_audit_sampled_used,sizeof(cudapcgVar_t));
++}
+--- a/chfem/src/femhmg/femhmg.c
++++ b/chfem/src/femhmg/femhmg.c
+@@ -190,7 +190,10 @@
+   hmgModel->report = NULL;
+ 
+   // Read data input file
+-  if (!readData(data_filename))
++  double fead_nf_start = omp_get_wtime();
++  logical fead_nf_ok = readData(data_filename);
++  feadAuditAddIOSeconds(omp_get_wtime()-fead_nf_start);
++  if (!fead_nf_ok)
+     return HMG_FALSE;
+     
+   // Check if user provided scalar density field (.bin) and avoid unsupported functionalities
+@@ -1067,6 +1070,7 @@
+     }
+     if (solver_flag > CUDAPCG_MINRES3_SOLVER) cudapcgSetXReduceShift(hmgModel->m_hmg_flag <= HMG_DIR_Z ? hmgModel->m_hmg_flag : HMG_DIR_X);
+     cudapcgSolve(x); t = omp_get_wtime()-t;
++    feadAuditLoad(hmgModel->RHS,x,hmgModel->m_hmg_flag);
+     cudapcgPrintSolverMetrics();
+     if (hmgModel->m_report_flag){
+       cudapcgPrintSolverReport2(report_buffer);
+--- a/chfem/src/chfem_wrapper.c
++++ b/chfem/src/chfem_wrapper.c
+@@ -23,6 +23,8 @@
+     user_input->preconditioner_flag = precondition;
+     user_input->exportFields_flag = output_fields;
+ 
++    feadAuditBegin();
++
+     // Initialize FEM model for homogenization
+     if (!hmgInit(tmp_nf_file, NULL, NULL, PyArray_DATA(in_nparray))){
+         printf("Failed to properly read input files.\nProcess aborted.\n");
+@@ -34,6 +36,8 @@
+         free(user_input);
+         return NULL;
+     }
++
++    feadAuditEnd();
+ 
+     // Create a Python list to return the effective coefficients
+     unsigned int n;

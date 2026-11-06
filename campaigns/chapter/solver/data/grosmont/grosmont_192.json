@@ -1,0 +1,29 @@
+{
+  "case": "grosmont",
+  "grid": 192,
+  "original_path": "/home/yufan/code/Voxel-ACDM/results/paper_5090/krzikalla_official_sparse/images/grosmont/segmented-vsg.raw.gz",
+  "original_sha256": "20b8b8f69739f91609929b536065d312195151d2f4ef7480ff18ca52f6da7fe2",
+  "original_shape_zyx": [
+    1024,
+    1024,
+    1024
+  ],
+  "crop_start_zyx": [
+    550,
+    0,
+    0
+  ],
+  "crop_shape_zyx": [
+    400,
+    400,
+    400
+  ],
+  "preprocessing": "NN rint(linspace(0,399,N)); no tiling or upsampling",
+  "phase_encoding": {
+    "0": "soft pore surrogate",
+    "255": "solid grain"
+  },
+  "solid_fraction": 0.7533994604040075,
+  "array_sha256": "d154ae5cca413c9c2008adae094d209207db1394fbe3fa42a4533bc5dc811c84",
+  "npy_sha256": "9c37f4e437cb6c9f6130f9b26d7dc62e4f2eeeaf8e812389d427f4b2cb2f6810"
+}

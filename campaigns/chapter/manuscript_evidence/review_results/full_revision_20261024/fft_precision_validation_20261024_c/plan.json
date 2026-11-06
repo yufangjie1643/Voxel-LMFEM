@@ -1,0 +1,62 @@
+[
+  {
+    "name": "8_original_r0",
+    "arguments": [
+      "/home/yufan/code/voxel-mechanics/experiments/solver_comparison/fft_precision.py"
+    ],
+    "command": [
+      "/home/yufan/code/voxel-mechanics/run",
+      "fft-precision",
+      "--phase",
+      "worker",
+      "--grid",
+      "8",
+      "--precision",
+      "original",
+      "--repeat",
+      "0",
+      "--out",
+      "/home/yufan/code/voxel-mechanics/runs/fft_precision_validation_20261024_c"
+    ]
+  },
+  {
+    "name": "8_fp32_r0",
+    "arguments": [
+      "/home/yufan/code/voxel-mechanics/experiments/solver_comparison/fft_precision.py"
+    ],
+    "command": [
+      "/home/yufan/code/voxel-mechanics/run",
+      "fft-precision",
+      "--phase",
+      "worker",
+      "--grid",
+      "8",
+      "--precision",
+      "fp32",
+      "--repeat",
+      "0",
+      "--out",
+      "/home/yufan/code/voxel-mechanics/runs/fft_precision_validation_20261024_c"
+    ]
+  },
+  {
+    "name": "8_fp64_r0",
+    "arguments": [
+      "/home/yufan/code/voxel-mechanics/experiments/solver_comparison/fft_precision.py"
+    ],
+    "command": [
+      "/home/yufan/code/voxel-mechanics/run",
+      "fft-precision",
+      "--phase",
+      "worker",
+      "--grid",
+      "8",
+      "--precision",
+      "fp64",
+      "--repeat",
+      "0",
+      "--out",
+      "/home/yufan/code/voxel-mechanics/runs/fft_precision_validation_20261024_c"
+    ]
+  }
+]

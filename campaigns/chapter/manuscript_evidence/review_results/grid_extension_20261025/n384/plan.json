@@ -1,0 +1,68 @@
+[
+  {
+    "name": "woven_384_execution_fp32_r0",
+    "arguments": [
+      "/home/yufan/code/voxel-mechanics/experiments/chapter_aligned/study.py"
+    ],
+    "command": [
+      "/home/yufan/code/voxel-mechanics/run",
+      "chapter-study",
+      "--phase",
+      "worker",
+      "--case",
+      "woven",
+      "--grid",
+      "384",
+      "--variant",
+      "execution_fp32",
+      "--repeat",
+      "0",
+      "--out",
+      "/home/yufan/code/voxel-mechanics/runs/grid_extension_20261025/n384"
+    ]
+  },
+  {
+    "name": "woven_384_execution_fp32_r1",
+    "arguments": [
+      "/home/yufan/code/voxel-mechanics/experiments/chapter_aligned/study.py"
+    ],
+    "command": [
+      "/home/yufan/code/voxel-mechanics/run",
+      "chapter-study",
+      "--phase",
+      "worker",
+      "--case",
+      "woven",
+      "--grid",
+      "384",
+      "--variant",
+      "execution_fp32",
+      "--repeat",
+      "1",
+      "--out",
+      "/home/yufan/code/voxel-mechanics/runs/grid_extension_20261025/n384"
+    ]
+  },
+  {
+    "name": "woven_384_execution_fp32_r2",
+    "arguments": [
+      "/home/yufan/code/voxel-mechanics/experiments/chapter_aligned/study.py"
+    ],
+    "command": [
+      "/home/yufan/code/voxel-mechanics/run",
+      "chapter-study",
+      "--phase",
+      "worker",
+      "--case",
+      "woven",
+      "--grid",
+      "384",
+      "--variant",
+      "execution_fp32",
+      "--repeat",
+      "2",
+      "--out",
+      "/home/yufan/code/voxel-mechanics/runs/grid_extension_20261025/n384"
+    ]
+  }
+]

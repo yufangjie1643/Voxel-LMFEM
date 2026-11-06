@@ -1,0 +1,98 @@
+{
+  "passed": true,
+  "grid": [
+    4,
+    5,
+    6
+  ],
+  "voxel": [
+    0.3,
+    0.5,
+    0.7
+  ],
+  "material": "random fully anisotropic SPD",
+  "errors": {
+    "matrix": 2.312482224665945e-16,
+    "symmetry": 3.3687295202752955e-17,
+    "rigid_translation": 2.0367336122442819e-16
+  },
+  "calls": [
+    {
+      "rhs": 3.0212835092107867e-16,
+      "displacement": 1.909433577964537e-10,
+      "effective_stress": 2.683302619339879e-12,
+      "iterations": 41,
+      "restarts": 0,
+      "true_residuals": [
+        9.143552653130812e-11
+      ],
+      "cg_info": 0
+    },
+    {
+      "rhs": 2.8390134132660677e-16,
+      "displacement": 1.4945666132760687e-10,
+      "effective_stress": 1.6988629466851633e-12,
+      "iterations": 41,
+      "restarts": 0,
+      "true_residuals": [
+        8.047659634122904e-11
+      ],
+      "cg_info": 0
+    },
+    {
+      "rhs": 2.882816364930944e-16,
+      "displacement": 1.387333789503809e-10,
+      "effective_stress": 1.3199509160202605e-12,
+      "iterations": 41,
+      "restarts": 0,
+      "true_residuals": [
+        6.647653093706307e-11
+      ],
+      "cg_info": 0
+    },
+    {
+      "rhs": 3.1023330478572966e-16,
+      "displacement": 1.3674154467944807e-10,
+      "effective_stress": 1.9663263919999664e-12,
+      "iterations": 41,
+      "restarts": 0,
+      "true_residuals": [
+        6.988562100319301e-11
+      ],
+      "cg_info": 0
+    },
+    {
+      "rhs": 3.4381156979167123e-16,
+      "displacement": 1.517110977842849e-10,
+      "effective_stress": 2.6766274428873706e-12,
+      "iterations": 41,
+      "restarts": 0,
+      "true_residuals": [
+        7.339860726819487e-11
+      ],
+      "cg_info": 0
+    },
+    {
+      "rhs": 3.2373478947757333e-16,
+      "displacement": 1.958822347626899e-10,
+      "effective_stress": 1.3138238785458658e-12,
+      "iterations": 41,
+      "restarts": 0,
+      "true_residuals": [
+        9.4131473516578e-11
+      ],
+      "cg_info": 0
+    }
+  ],
+  "metadata": {
+    "format": "CuPy CSR",
+    "nnz": 29160,
+    "index_dtype": "int32",
+    "csr_bytes": 351364,
+    "exact_zeros_removed": true,
+    "assembly": "Two-pass bounded-row element assembly from eight Gauss points",
+    "solver": "cupyx.scipy.sparse.linalg.cg",
+    "preconditioner": "scalar Jacobi with periodic zero-mean projection"
+  },
+  "cupy": "14.2.0"
+}

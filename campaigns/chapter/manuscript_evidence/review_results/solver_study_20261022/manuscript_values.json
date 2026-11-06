@@ -1,0 +1,106 @@
+{
+  "values": {
+    "KU_ERROR": "$5.053\\times10^{-16}$",
+    "CH_ERROR": "$4.958\\times10^{-12}$",
+    "CERT_ERROR": "$9.841\\times10^{-9}$",
+    "LAYER_ERROR": "$6.009\\times10^{-13}$",
+    "SPHERE_ERROR": "$1.532\\times10^{-8}$",
+    "GROSMONT_ERROR": "$8.708\\times10^{-9}$",
+    "DAMAGE_KU": "$3.284\\times10^{-16}$",
+    "DAMAGE_STRESS": "$7.371\\times10^{-11}$",
+    "WOVEN_ERROR": "$2.480\\times10^{-11}$",
+    "PAPER_KU": "4.756",
+    "MODAL_KU": "3.243",
+    "ANALYTIC_FFT": "1.386",
+    "NATIVE_FFT": "0.870",
+    "DENSE_TIME": "2.062",
+    "HYBRID_TIME": "2.037",
+    "PAPER_COMPUTE": "3.141",
+    "LATEST_COMPUTE": "1.668",
+    "DENSE_ALLOC": "2.406",
+    "HYBRID_ALLOC": "1.545",
+    "PAPER_NVML": "11.316",
+    "LATEST_NVML": "2.439",
+    "PCG_GAIN": "6.18",
+    "BACKGROUND_GAIN": "18.12",
+    "COMPUTE_GAIN": "63.69",
+    "MEMORY_GAIN": "86.05",
+    "BASE_ITER": "337",
+    "FINAL_ITER": "327",
+    "TIME64": "0.339",
+    "TIME128": "0.701",
+    "TIME192": "1.888",
+    "TIME256": "4.387",
+    "RESOLUTION64": "0.8854",
+    "RESOLUTION96": "0.3772",
+    "RESOLUTION128": "0.2263",
+    "RESOLUTION160": "0.0868",
+    "RESOLUTION192": "0.0685",
+    "RESOLUTION224": "0.0777",
+    "MEM256": "4.764",
+    "SPHERE_API": "44.732",
+    "SPHERE_SPEEDUP": "31.12",
+    "GROSMONT_API": "52.231",
+    "GROSMONT_SPEEDUP": "34.38",
+    "CHFEM_MEM": "1.137",
+    "ISOTROPIC_MEM": "2.090",
+    "PAIRED_CH_ERROR": "$1.363\\times10^{-14}$",
+    "MODULE_CH_ERROR": "$2.480\\times10^{-11}$",
+    "MODULE_MATERIAL_GAIN": "19.05",
+    "MODULE_ITERATION_GAIN": "13.35",
+    "STENCIL_GAIN": "31.64",
+    "STENCIL_MEMORY_GAIN": "35.28",
+    "STENCIL_KU": "8.318",
+    "FUSED_FFT": "0.871",
+    "MODAL_FFT": "1.375",
+    "MODAL_GAIN": "24.9",
+    "FRACTION50_CHANGE": "0.76",
+    "FRACTION90_CHANGE": "7.50",
+    "ISOTROPIC_MEMORY_RATIO": "1.84",
+    "ISOTROPIC_MEMORY_OVERHEAD": "83.85",
+    "SPHERE_STENCIL27_TIME": "3.640",
+    "SPHERE_STENCIL27_MEM": "17.986",
+    "GROSMONT_STENCIL27_TIME": "4.041",
+    "GROSMONT_STENCIL27_MEM": "22.047",
+    "SPHERE_TIME": "1.436",
+    "SPHERE_CHFEM_TIME": "44.685",
+    "GROSMONT_TIME": "1.518",
+    "GROSMONT_CHFEM_TIME": "52.177"
+  },
+  "destinations": {
+    "en": {
+      "section_files": [
+        "04_verification.tex",
+        "05_performance.tex"
+      ],
+      "tables": [
+        "table_fi_woven.tex",
+        "table_fi_isotropic.tex",
+        "table_fi_background.tex"
+      ],
+      "verification_record": "operator_verification/table_fi_verification_en.tex",
+      "headline_sync": [
+        "00_abstract.tex",
+        "06_conclusions.tex"
+      ]
+    },
+    "zh": {
+      "section_files": [
+        "04_verification.tex",
+        "05_performance.tex"
+      ],
+      "tables": [
+        "table_fi_woven.tex",
+        "table_fi_isotropic.tex",
+        "table_fi_background.tex"
+      ],
+      "verification_record": "operator_verification/table_fi_verification_zh.tex",
+      "headline_sync": [
+        "00_abstract.tex",
+        "06_conclusions.tex"
+      ]
+    }
+  },
+  "summary": "summary_with_stencil27.json",
+  "scaling_summary": "review_results\\grid_refinement_20261023\\scaling_summary.json"
+}

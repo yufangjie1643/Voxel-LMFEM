@@ -1,0 +1,3417 @@
+{
+  "complete": true,
+  "workflows": 99,
+  "measured_loads": 594,
+  "warmup_loads": 594,
+  "small_gpu_operator_checks": 25,
+  "max_independent_Ku_error": 5.053312322765692e-16,
+  "max_independent_CH_error": 4.957528407293405e-12,
+  "max_small_true_residual": 9.935228846804746e-11,
+  "certifications": [
+    {
+      "case": "grosmont",
+      "grid": 192,
+      "max_true_residual": 9.587417568463894e-09
+    },
+    {
+      "case": "sphere",
+      "grid": 192,
+      "max_true_residual": 8.846365102215826e-09
+    },
+    {
+      "case": "woven",
+      "grid": 128,
+      "max_true_residual": 9.841318327711675e-09
+    },
+    {
+      "case": "woven",
+      "grid": 192,
+      "max_true_residual": 8.806873602357516e-09
+    },
+    {
+      "case": "woven",
+      "grid": 256,
+      "max_true_residual": 9.65811310132292e-09
+    },
+    {
+      "case": "woven",
+      "grid": 64,
+      "max_true_residual": 8.976203210719047e-09
+    }
+  ],
+  "max_true_residual": 9.84131977937124e-09,
+  "pairwise_CH_differences": {
+    "fraction50_128": 3.1811188354743015e-16,
+    "fraction90_128": 1.4241309981275266e-16,
+    "grosmont_192": 8.708440631571318e-09,
+    "sphere_192": 1.5319651874684542e-08,
+    "woven_64": 4.689921868019234e-11,
+    "woven_128": 2.4028463412371502e-11,
+    "woven_192": 2.4798487140431396e-11,
+    "woven_256": 7.280665168726627e-18
+  },
+  "resolution_relative_to_256": {
+    "64": 0.008853851618120643,
+    "128": 0.002262744982369117,
+    "192": 0.0006847054211849629
+  },
+  "environment": {
+    "gpu": "NVIDIA GeForce RTX 5090",
+    "torch": "2.12.0+cu130",
+    "cuda": "13.0",
+    "python": "3.12.13 (main, Jun 11 2026, 04:03:26) [Clang 22.1.3 ]",
+    "threads": 1
+  },
+  "sources": {
+    "/home/yufan/code/fead-chain-20261021/chain_adapter.py": "351a9f684f52c3f4cef2b35c7bb43b7d14314621930c70156529ae4bfa41a05f",
+    "/home/yufan/code/fead-chain-20261021/chain_study.py": "49b1376a83a8eaaac578b7af7d176f6be4f5a85dfe920b285e9013aa60b67708",
+    "/home/yufan/code/fead-chain-20261021/closed_study.py": "c51a515aad8b48ccc10ce18326db99afbb2b1723419e9da81a2b8bb67de80878",
+    "/home/yufan/code/fead-chain-20261021/reference_closed_form.py": "6529f7e1b2993a21353199d163273aaf596c7804447f76852b66a31171798aad",
+    "/home/yufan/code/fead-chain-20261021/reference_design.py": "9bcac32603c6a3943df7ce1af8fd9e4c118b63899fe681433aa80c992416403c",
+    "/home/yufan/code/fead-chain-20261021/reference_study.py": "39134289b60d1b5fede4ee5583c199ba8bdf1d69c802924d0c384e250b7d322a",
+    "/home/yufan/code/fead-fft-contest-20261020/contest_adapter.py": "2ba9e2195862ec59762f80f0e44a2cb64b66ae472314b3458ae9d0a13261c853",
+    "/home/yufan/code/fead-fft-contest-20261020/contest_kernels.cu": "9beb1d7a651b7d001ea9fa04f5a3671fe59a0096950a808eab24c137f26c871a",
+    "/home/yufan/code/fead-fft-contest-20261020/native_adapter.py": "58705326d57584045e4036b7e112bdfb8eacfdd96e0ff14b57be9f99402dbc81",
+    "/home/yufan/code/fead-fft-contest-20261020/native_fft.cu": "f414368f2a178aef549aa8095ee7a50e7b4465a6fe706f1f664eadd7d9150d71",
+    "/home/yufan/code/fead-formula-20261020/formula_adapter.py": "ee143412198fef9cce20a5268bef286c02b53384914358e5fc55d7d7672c38d8",
+    "/home/yufan/code/fead-formula-20261020/formula_kernels.cu": "0ca18975dafb048d63095d231e58495654f35f47eab555292ebba76335c29862",
+    "/home/yufan/code/fead-formula-20261020/formula_study.py": "dcd3b40ab02ae2e0a3994ce5aa5c6a1c02d4ab35d4a93f9f0943da9888cd5ac3",
+    "/home/yufan/code/fead-modal-hex8-20261020/gpu_study.py": "b212b479805d605b3ac944b51f33f2d64ce5035232f18da0eef4978162ca083a",
+    "/home/yufan/code/fead-modal-hex8-20261020/modal_adapter.py": "667aceaaf83183675e0bfb0f5870e84de8a946930143bb5285941c11b36ed7df",
+    "/home/yufan/code/fead-modal-hex8-20261020/modal_kernels.cu": "4c9a601a17ae7a9f53d988e6c8778de2d81dccd7333b50b0a818c7ad7d019fb6",
+    "/home/yufan/code/fead-pipeline-20261020/modal_functions.cuh": "189a165189592915705569096ec6576fd7f1292951260bf5d13e7ca3dbd8268d",
+    "/home/yufan/code/fead-pipeline-20261020/pipeline_adapter.py": "1dae25bcc711cc4e1371baed97fb6053b6fb7032aa105b4245d365a2112eeb67",
+    "/home/yufan/code/fead-pipeline-20261020/pipeline_kernels.cu": "940ae597b855f57bd5a4f09eeb09cb8d103774f460b0415e4a353ea568542f09",
+    "/home/yufan/code/fead-pipeline-20261020/pipeline_study.py": "c8522f2cd42f215028416ec698723c4071ca91c27e867b8df627849682224251",
+    "/home/yufan/code/fead-recompute-20261017-tol1e8/benchmark.py": "aeebe7cb6cbf55f021adc63a6336bff6ebeea688e82b632ff456c146ab667fe4",
+    "/home/yufan/code/fead-recompute-20261017-tol1e8/fi/atomic_adapter.py": "479da6a71f84b79a81a27c5f5163ebbf06dc5bbd85be55d960c612746e6fa011",
+    "/home/yufan/code/fead-recompute-20261017-tol1e8/fi/atomic_kernels.cu": "c11b0454ff4c25474b7b52f50f2d77267a07dd9f30030054159d46356f7b9179",
+    "/home/yufan/code/fead-recompute-20261017-tol1e8/fi/fi_reference.py": "1d97eb6f4a0d71fb9d4e0ce46a89b102b3b6d72217944f24b4fcbff4472b0159",
+    "/home/yufan/code/fead-recompute-20261017-tol1e8/fi/grouped_adapter.py": "23b5f55b3419aad82b08b8cafa90bd9b84ac397f90a474a73836fc85619f4671",
+    "/home/yufan/code/fead-recompute-20261017-tol1e8/fi/grouped_kernels.cu": "366417bc5707eb7cb59cbd1610abf86705b49ec97af7a5b7473f56a97d6a4010",
+    "/home/yufan/code/fead-recompute-20261017-tol1e8/fi/memory_adapter.py": "fd9120e4b1ad93922493a326e49da55f998c358145917c52d61905434aa03eff",
+    "/home/yufan/code/fead-recompute-20261017-tol1e8/fi/memory_kernels.cu": "4bf1bd1365ba53b2aeb595beb85044ae8f5cb1024130465695451591b8b55959",
+    "/home/yufan/code/fead-recompute-20261017-tol1e8/fi/source/femlib/__init__.py": "11fd28410ec8900de96f2728598403ebdada1d5bde256f15d10a19b0cf2937c3",
+    "/home/yufan/code/fead-recompute-20261017-tol1e8/fi/source/femlib/batched/__init__.py": "7495fef0802a94f776e5a013fbd79db83b3c070c5f3f0ff7a4a43a40cc143c5c",
+    "/home/yufan/code/fead-recompute-20261017-tol1e8/fi/source/femlib/batched/c3d8_cuda.py": "fa88a9bc9b0d9f17dfb327d4352256d8a4edcafbab1ea1ff6e6d1d0b1180b6c8",
+    "/home/yufan/code/fead-recompute-20261017-tol1e8/fi/source/femlib/batched/c3d8r_hourglass_operator.py": "6a2d179dff211f68efd2e5cb73bb90d43de6b389ce354085850e1904d6898aff",
+    "/home/yufan/code/fead-recompute-20261017-tol1e8/fi/source/femlib/batched/driver.py": "75fb88a4fce27eaed1e354e40b8e966cbb6e7f8cbc5bc78295250ab8af9f919b",
+    "/home/yufan/code/fead-recompute-20261017-tol1e8/fi/source/femlib/batched/fft_symbol_validation.py": "0be65e51f030cc8ec8550e6566fce0de3f5b5dfd8b691e22e1f2c19aa7a446ad",
+    "/home/yufan/code/fead-recompute-20261017-tol1e8/fi/source/femlib/batched/ir.py": "df1d83ffda346e0fc04fb4ee8e0c3553613a7f240e9ee5c5055ee41a0efb53e4",
+    "/home/yufan/code/fead-recompute-20261017-tol1e8/fi/source/femlib/batched/mesh_info.py": "bae4901d2ba9b695ab53a2784bf1fce379385046ea227dd191271e1b1d252611",
+    "/home/yufan/code/fead-recompute-20261017-tol1e8/fi/source/femlib/batched/pcg.py": "e349dc0c3e48be41af8f2e1a1a66d4b9c5f07ea1ec7ba2a6f57581f0b5fa5461",
+    "/home/yufan/code/fead-recompute-20261017-tol1e8/fi/source/femlib/batched/preconditioners/__init__.py": "4d166dca6e9f00511a09f5212892213bcd599aada13116b8e17c56168b1e3793",
+    "/home/yufan/code/fead-recompute-20261017-tol1e8/fi/source/femlib/batched/preconditioners/c3d8r_fft.py": "cf6ffc237d1756f7c11a99c0e8c7ed5710f985ef163580a668d39987ccdb93ba",
+    "/home/yufan/code/fead-recompute-20261017-tol1e8/fi/source/femlib/batched/stencil_operator.py": "c2ae37f069143cf5786022c71262fc16169775e91edf07877f7623c663fef384",
+    "/home/yufan/code/fead-recompute-20261017-tol1e8/fi/source/femlib/c3d8r.py": "1aa42c81cdaff3e0cd663ee6d6c30cef69fe282f6dc9206d777e7c98b46b3598",
+    "/home/yufan/code/fead-recompute-20261017-tol1e8/fi/source/femlib/connectivity.py": "b2ce6f9ad6e06b00c34b2f2bd189845a6beff33e5e54114e0164fc886b381070",
+    "/home/yufan/code/fead-recompute-20261017-tol1e8/fi/source/femlib/element_types.py": "091da6799e085e0a7ad64a8ae8793d71c660c20b47b0592aa0d6216d5acb4eda",
+    "/home/yufan/code/fead-recompute-20261017-tol1e8/fi/source/femlib/fem_batched.py": "d06a8f861b78643373e2e9b6448961252a061d3656cccf18a43fdf356ca7d849",
+    "/home/yufan/code/fead-recompute-20261017-tol1e8/fi/source/femlib/geometry.py": "9616e4393da72e13fbc2326cdb655452d739b4adece6cd6e404a9f9a759a168c",
+    "/home/yufan/code/fead-recompute-20261017-tol1e8/fi/source/femlib/materials.py": "334c7c71c05596010cef1497cabfeb990c0a4f1c521ed6d95206c79aa68302d0",
+    "/home/yufan/code/fead-recompute-20261017-tol1e8/fi/source/femlib/mesh.py": "b74c7060d7bd3368116430b33a8b9538166c8362d421426f6dca8dfff71fd3d0",
+    "/home/yufan/code/fead-recompute-20261017-tol1e8/fi/spatial_adapter.py": "e6a93fa95f62f418cfb0f6f9d499425938de34104900299e28bf8eed0b155cce",
+    "/home/yufan/code/fead-recompute-20261017-tol1e8/fi_benchmark.py": "c1ec2093bd8a9add9a981156dfedd30d008441de4ce5ad7fdb5f7ea569b9cf32",
+    "/home/yufan/code/fead-recompute-20261017-tol1e8/orientation_kernels.cu": "a62e4601e4e157fdf4b54391180596692ad7c4a74651e560732c95e03697500b",
+    "/home/yufan/code/fead-recompute-20261017-tol1e8/repro/extension_20261006/failure.cu": "fb72fe7607596485fe0f0add1202a08902da69df0c48d8279c14709112e0ca5e",
+    "/home/yufan/code/fead-recompute-20261017-tol1e8/repro/extension_20261006/material_control.py": "a02dd3958e3da53461b1d6f294047e206aa368172dc5e117a41b6df1c3f129c3",
+    "/home/yufan/code/fead-recompute-20261017-tol1e8/repro/extension_20261006/mixed_preconditioner.py": "df112cb1a956e903ce7f049e2361f0911df3ea7f8495d065124b9accd7c1d79c",
+    "/home/yufan/code/fead-recompute-20261017-tol1e8/repro/extension_20261006/physics.py": "33e3e5d94e6f8c590cb42aebbadfc46a52a557f246ca21b81f6d3a19baeabf6e",
+    "/home/yufan/code/fead-solver-study-20261022/cases.py": "f30311ee87b0f0e06a3562c106fa401c5b011e62eb1287c5e66d9c1c336bbd80",
+    "/home/yufan/code/fead-solver-study-20261022/chfem_study.py": "29e0e8da29ddc4d3ccb33693c08d72a3039f3fcca75e9bd8f69807241d7482d1",
+    "/home/yufan/code/fead-solver-study-20261022/legacy_inputs.py": "671bd50ccc165b9f080fbeafc7b4cd6df0a178f09a51e0a7437160efea9b838a",
+    "/home/yufan/code/fead-solver-study-20261022/plan.json": "546b989d12fec63961c38fc11736f72bc88537ce7808d29f7f70a4cd0f064092",
+    "/home/yufan/code/fead-solver-study-20261022/run_jobs.py": "124c515bba06b224f54738f0519e8eadbec4ad41fd684f8554a0a313e29de053",
+    "/home/yufan/code/fead-solver-study-20261022/study.py": "02543393f47cf38245cf995a8c62324d7bf9cea7fd948b0f9ec32123856b49fc",
+    "/home/yufan/code/fead-hybrid-operator-20261021/background.py": "36c658c4cb2101477d25ad444bdee358ef0eb38ff8552629f09390a942ca4880",
+    "/home/yufan/code/fead-hybrid-operator-20261021/background_grouped.cuh": "5d5572ce1fff338c74e56d0d73ae36fb926736c5665eb7bb1d1ad1842c0032cc",
+    "/home/yufan/code/fead-hybrid-operator-20261021/fi_isotropic.cuh": "cdc8aafee24032f70bee8fc01271a2e72e7ef8e2e8f2fa4100c76b8c9b8065b3",
+    "/home/yufan/code/fead-hybrid-operator-20261021/fi_modal.cuh": "66d5f352157050e8ca5f72fe46266e08e4d6021eb21fdc2cdca15129733e9ffb",
+    "/home/yufan/code/fead-hybrid-operator-20261021/operator_adapter.py": "277bd91c2b7dd04a269a92b69d5e6e8ad08a2fcb9ae4ce93c80918c0b4af3289",
+    "/home/yufan/code/fead-hybrid-operator-20261021/operator_kernels.cu": "6d84b7a9701767edd383637eed93e0f76279d7430da749b1358e8e1af790af0c",
+    "/home/yufan/code/fead-hybrid-storage-20261021/adapter.py": "21b72d868d163d5381ca8574bb1af99a1e142d14b9e3d8578d3029daeabbe0ee",
+    "/home/yufan/code/fead-hybrid-storage-20261021/fi_modal.cuh": "66d5f352157050e8ca5f72fe46266e08e4d6021eb21fdc2cdca15129733e9ffb",
+    "/home/yufan/code/fead-hybrid-storage-20261021/hybrid_adapter.py": "17093c54f64a73756b6376f1b613c026009f8a02675306167721431349d05986",
+    "/home/yufan/code/fead-hybrid-storage-20261021/hybrid_kernels.cu": "9ddf4e7e64e42eba35e731bba0807db83c8c415fd011884a37695fbecd316cbb",
+    "/home/yufan/code/fead-hybrid-storage-20261021/hybrid_material.py": "9540237dec4692d3f42feccf83c32c9052bb0db8e2947153cd038268641fee28",
+    "/home/yufan/code/fead-hybrid-storage-20261021/material_field.py": "db1564ebf40a1e7ce19199097f9c08e9a36641056589c9b703f34c12552d3b3d",
+    "/home/yufan/code/fead-chfem-fi-20261021/chfem_source/chfem/__init__.py": "f6fb1bb8a1bca4e0d0269ad3c9eb804739c1b59f799301ddf730a394e70241d6",
+    "/home/yufan/code/fead-chfem-fi-20261021/chfem_source/chfem/io.py": "562e4ffa6b3431d705689210a471894813e9d17a8f07b31530115b393e84a500",
+    "/home/yufan/code/fead-chfem-fi-20261021/chfem_source/chfem/wrapper.cpython-312-x86_64-linux-gnu.so": "6d039967a7134f6c5d13ca0a1c648685be366d0f4cb8063877407e52063c442b",
+    "/home/yufan/code/fead-chfem-fi-20261021/chfem_source/chfem/compute_properties.py": "398c370fd6831a127356bdd66591401ea04b832abc2328e95f5e68c183587faf",
+    "/home/yufan/code/fead-chfem-fi-20261021/chfem_source/chfem/src/chfem_wrapper.c": "987022d4a7cb2d790621004273c7ec7cadcc7f6d5263fb1df0d40824db101436",
+    "/home/yufan/code/fead-chfem-fi-20261021/chfem_source/chfem/src/main.c": "11aea944207294387b410d802e5935aa2c8b5e44333a3a4a8bca108bd84501d7",
+    "/home/yufan/code/fead-chfem-fi-20261021/chfem_source/chfem/src/includes.h": "97f2ebc7ee1adab4d4339fe59850b61c9b226e37a58398ae40bb72c2ddbe5024",
+    "/home/yufan/code/fead-chfem-fi-20261021/chfem_source/chfem/src/femhmg/includes.h": "6f326d456d572336684ffcc8eb4fea6e6c73e3a392cd018a5718b8db3de8fdd0",
+    "/home/yufan/code/fead-chfem-fi-20261021/chfem_source/chfem/src/femhmg/femhmg.h": "e944cbd66b985c6094f660917299868afe024c736f37133fff0e83959b1dac4b",
+    "/home/yufan/code/fead-chfem-fi-20261021/chfem_source/chfem/src/femhmg/femhmg.c": "b7e38b4dd26f6e3db599d0d9c27bcba8cbe8b928ed7198202b1d1df43feb3752",
+    "/home/yufan/code/fead-chfem-fi-20261021/chfem_source/chfem/src/femhmg/report/report.h": "4674355204e54d31a299886d0503cf7cea14f38645255df2148bbd785140bcd8",
+    "/home/yufan/code/fead-chfem-fi-20261021/chfem_source/chfem/src/femhmg/report/report.c": "7f6a4c9ce3020bae213a3abb1d3c41e340af2550a084873641c8a2672f3c346e",
+    "/home/yufan/code/fead-chfem-fi-20261021/chfem_source/chfem/src/femhmg/cudapcg/cudapcg.h": "e96f4cdcb32eda2ded22cb0b27e5073a0ba07716649bcbecf05643620db3b5fb",
+    "/home/yufan/code/fead-chfem-fi-20261021/chfem_source/chfem/src/femhmg/cudapcg/cudapcg.cu": "1706302d1dbb3cd8b68149e69822ae96261f55669ad705891d34a40e6ae01397",
+    "/home/yufan/code/fead-chfem-fi-20261021/chfem_source/chfem/src/femhmg/cudapcg/includes.h": "f703f71b57ff90e63ceb0b30c72f01efd35d5ee01545063bd388c2b8e31ab68a",
+    "/home/yufan/code/fead-chfem-fi-20261021/chfem_source/chfem/src/femhmg/cudapcg/error_handling.h": "dba765c875524cfc99c9117fc313b5ac46a817d1fea18e9765120752f2600aa4",
+    "/home/yufan/code/fead-chfem-fi-20261021/chfem_source/chfem/src/femhmg/physical_phenomena/femhmg_elastic_2D.h": "1e4596869d6c946fbefcad8e6488e5e631d675baa02ca1f2c5e01ad91e4e5465",
+    "/home/yufan/code/fead-chfem-fi-20261021/chfem_source/chfem/src/femhmg/physical_phenomena/femhmg_thermal_3D.h": "10ebc20ef0d6898f851f245b63b2a51432e82fd38f475fa527052a44220a00ae",
+    "/home/yufan/code/fead-chfem-fi-20261021/chfem_source/chfem/src/femhmg/physical_phenomena/femhmg_elastic_2D.c": "85cc2e6bfcc0fe7e7c981e27e19952041131ece0e0d386e04c7567e79bbc9874",
+    "/home/yufan/code/fead-chfem-fi-20261021/chfem_source/chfem/src/femhmg/physical_phenomena/femhmg_fluid_2D.h": "5df0d6a4127e5298283568a027064a789985b638e5063251de580660dd55f1f2",
+    "/home/yufan/code/fead-chfem-fi-20261021/chfem_source/chfem/src/femhmg/physical_phenomena/femhmg_3D.h": "b5ccf0d69cf6c911e12889f2f0357a654919472f82817dd0fbd62383f4192d7c",
+    "/home/yufan/code/fead-chfem-fi-20261021/chfem_source/chfem/src/femhmg/physical_phenomena/femhmg_fluid_3D.h": "ea358b19f789b267a324b201edd64ba848f99bfe4ae84ead9fffbd73f5c1a32b",
+    "/home/yufan/code/fead-chfem-fi-20261021/chfem_source/chfem/src/femhmg/physical_phenomena/femhmg_3D.c": "9d2e4cee4f10ead25e4608fdd283d441690b1a141cf8b6b58efd380607daa1db",
+    "/home/yufan/code/fead-chfem-fi-20261021/chfem_source/chfem/src/femhmg/physical_phenomena/femhmg_fluid_3D.c": "8142a833a6b4ba12fdf75794611fb52e1176d4797b169136532a9a51c5fa36fd",
+    "/home/yufan/code/fead-chfem-fi-20261021/chfem_source/chfem/src/femhmg/physical_phenomena/femhmg_thermal_2D.c": "85b842d73ef009ed778e04fe8cce2f329acd1a1f7b3b5f0614db6b6cbca5da7c",
+    "/home/yufan/code/fead-chfem-fi-20261021/chfem_source/chfem/src/femhmg/physical_phenomena/femhmg_elastic_3D.c": "3c36ac35667d520ef2fd233111ed708322b63c176e7af99fbcabe6f4c0168609",
+    "/home/yufan/code/fead-chfem-fi-20261021/chfem_source/chfem/src/femhmg/physical_phenomena/femhmg_2D.h": "5184d091a46724b6c23c65b413e19ff26243069f9043384b1bed493b3c15bb87",
+    "/home/yufan/code/fead-chfem-fi-20261021/chfem_source/chfem/src/femhmg/physical_phenomena/femhmg_thermal_3D.c": "8e59d5f83cb512db95c473369b2d0bb9acccaa37442c992e4216ce73b7062837",
+    "/home/yufan/code/fead-chfem-fi-20261021/chfem_source/chfem/src/femhmg/physical_phenomena/femhmg_elastic_3D.h": "4a53126f363cbd94b3824b9fff80797bb22a87add0c73253bae89bdb4b8934ac",
+    "/home/yufan/code/fead-chfem-fi-20261021/chfem_source/chfem/src/femhmg/physical_phenomena/femhmg_2D.c": "65c078679da61881addd8008e3bc991f17131ebe247e91ccb0324f34d9c079ad",
+    "/home/yufan/code/fead-chfem-fi-20261021/chfem_source/chfem/src/femhmg/physical_phenomena/femhmg_thermal_2D.h": "a2d6fa6af480f1fe916e42ecc4f509144b838d51e1a374c96f41ac455b481a7b",
+    "/home/yufan/code/fead-chfem-fi-20261021/chfem_source/chfem/src/femhmg/physical_phenomena/femhmg_fluid_2D.c": "e54d6a6d4787dd73d0b4399ddfd5704b966a941e6d4370f235202a67af1bf283",
+    "/home/yufan/code/fead-chfem-fi-20261021/chfem_source/chfem/src/femhmg/cudapcg/kernels/vector.cu": "3524ded380b00eac1bc6a26d243df9267179b8690f6fa3de9cc68ba27a197e6f",
+    "/home/yufan/code/fead-chfem-fi-20261021/chfem_source/chfem/src/femhmg/cudapcg/kernels/matrix_free.cu": "9a46534dfcf2e7f428627007938eb09386a123fd7cf20ae9b58b0fa460c2e605",
+    "/home/yufan/code/fead-chfem-fi-20261021/chfem_source/chfem/src/femhmg/cudapcg/kernels/vector.h": "cbea9461ea5d093b8255263f26c4c269943c103ef6f3b2cd07234561bfcaaa80",
+    "/home/yufan/code/fead-chfem-fi-20261021/chfem_source/chfem/src/femhmg/cudapcg/kernels/matrix_free.h": "0ff390073499bc80bf51ff98f1b77b09f02dd0e5cc4ada51affe3c85be8d61ed",
+    "/home/yufan/code/fead-chfem-fi-20261021/chfem_source/chfem/src/femhmg/cudapcg/kernels/image.cu": "1df7deb4714790fcb2ae92c134aa77164dcbda8dad1e02f6d69a2976f274a485",
+    "/home/yufan/code/fead-chfem-fi-20261021/chfem_source/chfem/src/femhmg/cudapcg/kernels/image.h": "1915b64e70644c80cd8eef5fd9a61e2fb764b5911407f4a561168cf8ec0d0db6",
+    "/home/yufan/code/fead-chfem-fi-20261021/chfem_source/chfem/src/femhmg/cudapcg/kernels/utils.h": "08f4e608aaf00fa4285d09a448c961df5d6ec127f0346e8b069d801efec93cee",
+    "/home/yufan/code/fead-chfem-fi-20261021/chfem_source/chfem/src/femhmg/cudapcg/kernels/wrappers.h": "76be9d3b69d964129f806a38835d6c03e9774b8745432666985fd33da1c41c30",
+    "/home/yufan/code/fead-chfem-fi-20261021/chfem_source/chfem/src/femhmg/cudapcg/kernels/wrappers.cu": "f5ab2a3594949c7bb5f7b4a2e72a8361902771855b308e8cbbf2ba026da70a9a",
+    "/home/yufan/code/fead-chfem-fi-20261021/chfem_source/chfem/src/femhmg/cudapcg/solvers/pminres2.cu": "0fb954fc70d72f3811d393c94d2aa6512891fd931e0d7a537f2bf22cb130e9ec",
+    "/home/yufan/code/fead-chfem-fi-20261021/chfem_source/chfem/src/femhmg/cudapcg/solvers/solvers_utils.h": "90f0382d88b3fa489dacd56802029cd05926117aa1718258e05e7a6e1df0a727",
+    "/home/yufan/code/fead-chfem-fi-20261021/chfem_source/chfem/src/femhmg/cudapcg/solvers/pminres.h": "5efb69451a9c7ca48f753371a5b129130816d31ea182e8505a22655aa202285c",
+    "/home/yufan/code/fead-chfem-fi-20261021/chfem_source/chfem/src/femhmg/cudapcg/solvers/pminres3.cu": "62da619ccca28dcc5f731e1ff62fc5f2a269c2dfcf73fde664012c9f03087476",
+    "/home/yufan/code/fead-chfem-fi-20261021/chfem_source/chfem/src/femhmg/cudapcg/solvers/stopping_criteria.h": "1237916740c614b29b4529cc57bb8eb9ddb225d55b691fce10b8f0f9928ed303",
+    "/home/yufan/code/fead-chfem-fi-20261021/chfem_source/chfem/src/femhmg/cudapcg/solvers/pcg.cu": "001688ea9a17b5f25b7ebd9ae8f233d917f48fef6d5df0f977b4122f794464a7",
+    "/home/yufan/code/fead-chfem-fi-20261021/chfem_source/chfem/src/femhmg/cudapcg/solvers/pcg2.h": "71232b19c456069ca875804a93cd082cd990fbb39ac5111bed2aae8622b807b0",
+    "/home/yufan/code/fead-chfem-fi-20261021/chfem_source/chfem/src/femhmg/cudapcg/solvers/minres.cu": "472e0a115b960a23972b01ddf8329642154fabec601232c63f632f9386ef65df",
+    "/home/yufan/code/fead-chfem-fi-20261021/chfem_source/chfem/src/femhmg/cudapcg/solvers/minres.h": "a909c956782733253bab209242374b63191a03ddb8438abe95cea5c42450a834",
+    "/home/yufan/code/fead-chfem-fi-20261021/chfem_source/chfem/src/femhmg/cudapcg/solvers/xreduce.cu": "4e8e2f9bae4d0eeda78824d2d573028e7fb99059abfd7fad7bfc30d83fc41d88",
+    "/home/yufan/code/fead-chfem-fi-20261021/chfem_source/chfem/src/femhmg/cudapcg/solvers/pminres.cu": "2d2362e79697343216931d6910ee82ef3c7fd646a60362111748a60fd1c47379",
+    "/home/yufan/code/fead-chfem-fi-20261021/chfem_source/chfem/src/femhmg/cudapcg/solvers/pcg2.cu": "117e8a396a5837281d37d67972307d262e704e6f627d2e2329259ccfff6b4b16",
+    "/home/yufan/code/fead-chfem-fi-20261021/chfem_source/chfem/src/femhmg/cudapcg/solvers/solvers.h": "a4b6a6363e6d6a190a26c59081855d2213e5db289a8f419927c2e17bd6cc5dc8",
+    "/home/yufan/code/fead-chfem-fi-20261021/chfem_source/chfem/src/femhmg/cudapcg/solvers/stopping_criteria.cu": "78cce5a4e6d173a41ac53379c759c9167f5e98f93e0ff1e5711ea492c0cf925e",
+    "/home/yufan/code/fead-chfem-fi-20261021/chfem_source/chfem/src/femhmg/cudapcg/solvers/cg2.cu": "146d0430ef43c794838a5b2be57105e9f26529430f4f75a2ccba92c388ff06e4",
+    "/home/yufan/code/fead-chfem-fi-20261021/chfem_source/chfem/src/femhmg/cudapcg/solvers/minres3.cu": "4dfccab2166d0f0c41aa534fb7008c8e2c14b45cbf1b58d90b544844fb1c5ab9",
+    "/home/yufan/code/fead-chfem-fi-20261021/chfem_source/chfem/src/femhmg/cudapcg/solvers/pminres3.h": "2d61ef867808ef040aab5e87c69828cb12d25203c0a6885a6ff9aaee3c5826b6",
+    "/home/yufan/code/fead-chfem-fi-20261021/chfem_source/chfem/src/femhmg/cudapcg/solvers/pcg.h": "1b56c7fdae4f53db2b54bd831f195b6ee351edec66f14b8b723d3548c50f8dfa",
+    "/home/yufan/code/fead-chfem-fi-20261021/chfem_source/chfem/src/femhmg/cudapcg/solvers/cg.h": "822b9903de8e776c4beea890b2d54168b0608ad3c1410b24f9e2ddfcc519a5b0",
+    "/home/yufan/code/fead-chfem-fi-20261021/chfem_source/chfem/src/femhmg/cudapcg/solvers/cg2.h": "d4eb8f308f5f2991750776632bde6e1231274969b12ed2b8bb32df0fcbf83658",
+    "/home/yufan/code/fead-chfem-fi-20261021/chfem_source/chfem/src/femhmg/cudapcg/solvers/cg3.h": "42ac3bf2aec2d0367567d86fdc8e5d540310586ba865ab6b5c64cb034f1d1a25",
+    "/home/yufan/code/fead-chfem-fi-20261021/chfem_source/chfem/src/femhmg/cudapcg/solvers/cg.cu": "3cf8ceddcaba58501dfc3cf87941faf51c7533cef3323cf180cec130bad37130",
+    "/home/yufan/code/fead-chfem-fi-20261021/chfem_source/chfem/src/femhmg/cudapcg/solvers/pminres2.h": "e660b460fbf48954382dd0ceff334cef3efce4d744ae6eae8b6f780e5bf48ae2",
+    "/home/yufan/code/fead-chfem-fi-20261021/chfem_source/chfem/src/femhmg/cudapcg/solvers/xreduce.h": "6d0ecb58e3920623801defe6b6dfb724a3c333ad01418f7d9de4437dcbbb1e02",
+    "/home/yufan/code/fead-chfem-fi-20261021/chfem_source/chfem/src/femhmg/cudapcg/solvers/minres2.h": "25eef9b8ba98f14fcb0a04dfd492a5642b849eaf4444d5a827fce9e7c1c05b49",
+    "/home/yufan/code/fead-chfem-fi-20261021/chfem_source/chfem/src/femhmg/cudapcg/solvers/pcg3.cu": "128e4c3a2e1ed2eb75372ecf230655c8dae1b801a252d3e50dafe578b21baaa7",
+    "/home/yufan/code/fead-chfem-fi-20261021/chfem_source/chfem/src/femhmg/cudapcg/solvers/minres2.cu": "396a802315a6bd8869fe08c0a14ce26f8d40f9a6198c9301c33a15a3e82cc168",
+    "/home/yufan/code/fead-chfem-fi-20261021/chfem_source/chfem/src/femhmg/cudapcg/solvers/solvers_utils.cu": "a1eb5e54c2435d18e89c7eb129075081ba97b3839ff98e71f92298b2dd0d6f2e",
+    "/home/yufan/code/fead-chfem-fi-20261021/chfem_source/chfem/src/femhmg/cudapcg/solvers/cg3.cu": "c3714ea044b633671b81352d5810e3377aa642d8d5fd642f8bd246da35582821",
+    "/home/yufan/code/fead-chfem-fi-20261021/chfem_source/chfem/src/femhmg/cudapcg/solvers/pcg3.h": "08571b26f58633665b5957e06c52985196b7824b06918a732d4f21519bb950b4",
+    "/home/yufan/code/fead-chfem-fi-20261021/chfem_source/chfem/src/femhmg/cudapcg/solvers/minres3.h": "3cfa66411860dc7a339ddf708e9886f6628e7e460caa13cdd6443cdba14e235d",
+    "/home/yufan/code/fead-chfem-fi-20261021/chfem_source/setup.py": "4303c778e12c96b1ab0016d9fd89f8a795cf4d31a58bd320a387a8ff9f144800",
+    "/home/yufan/code/fead-chfem-fi-20261021/chfem_instrumentation.patch": "2be1d8cd61d5d4afb184eb5e072d2c5b6f8baa6190e0a15b4844c27d15c77475",
+    "/home/yufan/code/fead-chfem-fi-20261021/chfem_instrumentation_manifest.json": "568ffba653c65ad226385908761d055dfef205a037f4524cf7806702038db850",
+    "/home/yufan/code/fead-solver-study-20261022/certify.py": "38dc03e13d4772461848d84bc0d0bb0a0e6575d2bd8784e702b935921d8fb9bd",
+    "/home/yufan/code/fead-solver-study-20261022/freeze_sources.py": "f0339d49312f3fce9cc5e869784cf3201e014ef6496b48bdb3b0c0b7208c09bb"
+  },
+  "groups": [
+    {
+      "case": "fraction50",
+      "grid": 128,
+      "variant": "hybrid",
+      "repeats": 3,
+      "records": [
+        "remote\\results\\fraction50_128_hybrid_r0.json",
+        "remote\\results\\fraction50_128_hybrid_r1.json",
+        "remote\\results\\fraction50_128_hybrid_r2.json"
+      ],
+      "time": {
+        "median": 0.6004204619675875,
+        "min": 0.5937863560393453,
+        "max": 0.6006876931060106,
+        "values": [
+          0.6004204619675875,
+          0.6006876931060106,
+          0.5937863560393453
+        ]
+      },
+      "compute": {
+        "median": 0.3409250411204994,
+        "min": 0.3378704860806465,
+        "max": 0.3428930640220642,
+        "values": [
+          0.3428930640220642,
+          0.3378704860806465,
+          0.3409250411204994
+        ]
+      },
+      "ku_ms": {
+        "median": 0.9667360305786132,
+        "min": 0.9665792465209961,
+        "max": 0.9667535781860351,
+        "values": [
+          0.9667535781860351,
+          0.9667360305786132,
+          0.9665792465209961
+        ]
+      },
+      "precond_ms": {
+        "median": 0.17178080081939698,
+        "min": 0.17175840139389037,
+        "max": 0.17189600467681884,
+        "values": [
+          0.17178080081939698,
+          0.17175840139389037,
+          0.17189600467681884
+        ]
+      },
+      "setup_seconds": {
+        "median": 0.2035186851862818,
+        "min": 0.20312403980642557,
+        "max": 0.2041608332656324,
+        "values": [
+          0.2041608332656324,
+          0.20312403980642557,
+          0.2035186851862818
+        ]
+      },
+      "rhs_seconds": {
+        "median": 0.008178537944331765,
+        "min": 0.007981585105881095,
+        "max": 0.008468081010505557,
+        "values": [
+          0.008468081010505557,
+          0.008178537944331765,
+          0.007981585105881095
+        ]
+      },
+      "solve_seconds": {
+        "median": 0.12342730304226279,
+        "min": 0.12056163093075156,
+        "max": 0.12371495785191655,
+        "values": [
+          0.12371495785191655,
+          0.12056163093075156,
+          0.12342730304226279
+        ]
+      },
+      "post_seconds": {
+        "median": 0.0025281598791480064,
+        "min": 0.002524671610444784,
+        "max": 0.002583849709481001,
+        "values": [
+          0.002583849709481001,
+          0.0025281598791480064,
+          0.002524671610444784
+        ]
+      },
+      "allocated": 0.5785026550292969,
+      "reserved": 0.6875,
+      "nvml": 1.302734375,
+      "max_true_residual": 9.102643352655096e-09,
+      "analytical_error": 6.00750183225067e-13,
+      "iterations": [
+        65
+      ],
+      "CH_repeat_difference": 2.171093503659371e-16,
+      "active_fraction": 0.5
+    },
+    {
+      "case": "fraction50",
+      "grid": 128,
+      "variant": "latest",
+      "repeats": 3,
+      "records": [
+        "remote\\results\\fraction50_128_latest_r0.json",
+        "remote\\results\\fraction50_128_latest_r1.json",
+        "remote\\results\\fraction50_128_latest_r2.json"
+      ],
+      "time": {
+        "median": 0.6047966971527785,
+        "min": 0.5999116960447282,
+        "max": 0.604851335985586,
+        "values": [
+          0.6047966971527785,
+          0.604851335985586,
+          0.5999116960447282
+        ]
+      },
+      "compute": {
+        "median": 0.3435055420268327,
+        "min": 0.34265125496312976,
+        "max": 0.3447852791287005,
+        "values": [
+          0.3447852791287005,
+          0.3435055420268327,
+          0.34265125496312976
+        ]
+      },
+      "ku_ms": {
+        "median": 0.9397184371948242,
+        "min": 0.9397120475769043,
+        "max": 0.9398303985595703,
+        "values": [
+          0.9397120475769043,
+          0.9398303985595703,
+          0.9397184371948242
+        ]
+      },
+      "precond_ms": {
+        "median": 0.17178399562835694,
+        "min": 0.17178080081939698,
+        "max": 0.17200160026550293,
+        "values": [
+          0.17178399562835694,
+          0.17178080081939698,
+          0.17200160026550293
+        ]
+      },
+      "setup_seconds": {
+        "median": 0.20678634173236787,
+        "min": 0.20617588609457016,
+        "max": 0.2086385388392955,
+        "values": [
+          0.2086385388392955,
+          0.20617588609457016,
+          0.20678634173236787
+        ]
+      },
+      "rhs_seconds": {
+        "median": 0.00841402797959745,
+        "min": 0.008296908112242818,
+        "max": 0.008596128318458796,
+        "values": [
+          0.008596128318458796,
+          0.00841402797959745,
+          0.008296908112242818
+        ]
+      },
+      "solve_seconds": {
+        "median": 0.12127945409156382,
+        "min": 0.12125939875841141,
+        "max": 0.12190055102109909,
+        "values": [
+          0.12125939875841141,
+          0.12190055102109909,
+          0.12127945409156382
+        ]
+      },
+      "post_seconds": {
+        "median": 0.0026082927361130714,
+        "min": 0.002589881420135498,
+        "max": 0.002751241670921445,
+        "values": [
+          0.0026082927361130714,
+          0.002751241670921445,
+          0.002589881420135498
+        ]
+      },
+      "allocated": 0.5824103355407715,
+      "reserved": 0.6875,
+      "nvml": 1.302734375,
+      "max_true_residual": 9.102771323915077e-09,
+      "analytical_error": 6.009351703834974e-13,
+      "iterations": [
+        65
+      ],
+      "CH_repeat_difference": 2.192113145049226e-16,
+      "active_fraction": 0.5
+    },
+    {
+      "case": "fraction90",
+      "grid": 128,
+      "variant": "hybrid",
+      "repeats": 3,
+      "records": [
+        "remote\\results\\fraction90_128_hybrid_r0.json",
+        "remote\\results\\fraction90_128_hybrid_r1.json",
+        "remote\\results\\fraction90_128_hybrid_r2.json"
+      ],
+      "time": {
+        "median": 0.733507412020117,
+        "min": 0.7293788781389594,
+        "max": 0.7349821981042624,
+        "values": [
+          0.7349821981042624,
+          0.7293788781389594,
+          0.733507412020117
+        ]
+      },
+      "compute": {
+        "median": 0.4897035900503397,
+        "min": 0.488348170183599,
+        "max": 0.49032327509485185,
+        "values": [
+          0.49032327509485185,
+          0.488348170183599,
+          0.4897035900503397
+        ]
+      },
+      "ku_ms": {
+        "median": 0.9661711692810059,
+        "min": 0.9655039787292481,
+        "max": 0.9662768363952636,
+        "values": [
+          0.9661711692810059,
+          0.9655039787292481,
+          0.9662768363952636
+        ]
+      },
+      "precond_ms": {
+        "median": 0.17171679735183715,
+        "min": 0.17164160013198854,
+        "max": 0.1717568039894104,
+        "values": [
+          0.1717568039894104,
+          0.17164160013198854,
+          0.17171679735183715
+        ]
+      },
+      "setup_seconds": {
+        "median": 0.346632287139073,
+        "min": 0.34535454772412777,
+        "max": 0.347241448238492,
+        "values": [
+          0.347241448238492,
+          0.34535454772412777,
+          0.346632287139073
+        ]
+      },
+      "rhs_seconds": {
+        "median": 0.00942583498544991,
+        "min": 0.0094243751373142,
+        "max": 0.00943251303397119,
+        "values": [
+          0.00943251303397119,
+          0.00942583498544991,
+          0.0094243751373142
+        ]
+      },
+      "solve_seconds": {
+        "median": 0.12712014582939446,
+        "min": 0.12708536302670836,
+        "max": 0.1271528322249651,
+        "values": [
+          0.12712014582939446,
+          0.12708536302670836,
+          0.1271528322249651
+        ]
+      },
+      "post_seconds": {
+        "median": 0.002598300576210022,
+        "min": 0.0025813435204327106,
+        "max": 0.002605911809951067,
+        "values": [
+          0.002605911809951067,
+          0.0025813435204327106,
+          0.002598300576210022
+        ]
+      },
+      "allocated": 0.7093615531921387,
+      "reserved": 0.81640625,
+      "nvml": 1.431640625,
+      "max_true_residual": 8.594126556391681e-09,
+      "analytical_error": 9.312613381388475e-14,
+      "iterations": [
+        68
+      ],
+      "CH_repeat_difference": 8.325560225167105e-17,
+      "active_fraction": 0.8984375
+    },
+    {
+      "case": "fraction90",
+      "grid": 128,
+      "variant": "latest",
+      "repeats": 3,
+      "records": [
+        "remote\\results\\fraction90_128_latest_r0.json",
+        "remote\\results\\fraction90_128_latest_r1.json",
+        "remote\\results\\fraction90_128_latest_r2.json"
+      ],
+      "time": {
+        "median": 0.7687542780768126,
+        "min": 0.7672111410647631,
+        "max": 0.7699795290827751,
+        "values": [
+          0.7672111410647631,
+          0.7687542780768126,
+          0.7699795290827751
+        ]
+      },
+      "compute": {
+        "median": 0.5264162099920213,
+        "min": 0.5235158849973232,
+        "max": 0.5292199419345707,
+        "values": [
+          0.5264162099920213,
+          0.5235158849973232,
+          0.5292199419345707
+        ]
+      },
+      "ku_ms": {
+        "median": 1.3102607727050781,
+        "min": 1.3102368354797362,
+        "max": 1.310311985015869,
+        "values": [
+          1.3102607727050781,
+          1.3102368354797362,
+          1.310311985015869
+        ]
+      },
+      "precond_ms": {
+        "median": 0.17192000150680542,
+        "min": 0.17183040380477904,
+        "max": 0.17201440334320067,
+        "values": [
+          0.17183040380477904,
+          0.17192000150680542,
+          0.17201440334320067
+        ]
+      },
+      "setup_seconds": {
+        "median": 0.35155104473233223,
+        "min": 0.34838779107667506,
+        "max": 0.35387226683087647,
+        "values": [
+          0.35155104473233223,
+          0.34838779107667506,
+          0.35387226683087647
+        ]
+      },
+      "rhs_seconds": {
+        "median": 0.00950570683926344,
+        "min": 0.009481535525992513,
+        "max": 0.009505815571174026,
+        "values": [
+          0.009481535525992513,
+          0.00950570683926344,
+          0.009505815571174026
+        ]
+      },
+      "solve_seconds": {
+        "median": 0.15846298006363213,
+        "min": 0.15841598785482347,
+        "max": 0.15846628928557038,
+        "values": [
+          0.15846298006363213,
+          0.15841598785482347,
+          0.15846628928557038
+        ]
+      },
+      "post_seconds": {
+        "median": 0.00278221326880157,
+        "min": 0.002734291832894087,
+        "max": 0.002791942097246647,
+        "values": [
+          0.002734291832894087,
+          0.002791942097246647,
+          0.00278221326880157
+        ]
+      },
+      "allocated": 0.7163820266723633,
+      "reserved": 0.81640625,
+      "nvml": 1.431640625,
+      "max_true_residual": 8.594218245666953e-09,
+      "analytical_error": 9.315022287448121e-14,
+      "iterations": [
+        68
+      ],
+      "CH_repeat_difference": 4.8820378395640745e-17,
+      "active_fraction": 0.8984375
+    },
+    {
+      "case": "grosmont",
+      "grid": 192,
+      "variant": "chain",
+      "repeats": 3,
+      "time": {
+        "median": 1.9819591059349477,
+        "min": 1.9813977091107517,
+        "max": 1.9903144019190222,
+        "values": [
+          1.9813977091107517,
+          1.9903144019190222,
+          1.9819591059349477
+        ]
+      },
+      "compute": {
+        "median": 1.73750391905196,
+        "min": 1.737196581903845,
+        "max": 1.738269091118127,
+        "values": [
+          1.738269091118127,
+          1.737196581903845,
+          1.73750391905196
+        ]
+      },
+      "nvml": 9.23046875,
+      "iterations": [
+        251
+      ],
+      "allocated": 4.560479164123535,
+      "reserved": 8.6171875,
+      "max_true_residual": 9.58741756969791e-09,
+      "ku_ms": {
+        "median": 3.2439041137695312,
+        "min": 3.2438785552978517,
+        "max": 3.244007873535156,
+        "values": [
+          3.2438785552978517,
+          3.244007873535156,
+          3.2439041137695312
+        ]
+      },
+      "precond_ms": {
+        "median": 0.8675888061523438,
+        "min": 0.8674480438232421,
+        "max": 0.8678239822387696,
+        "values": [
+          0.8675888061523438,
+          0.8678239822387696,
+          0.8674480438232421
+        ]
+      },
+      "CH_error_vs27": 5.3695161878302495e-15,
+      "records": [
+        "../stencil27_baseline_20261023/formal/results/grosmont_192_chain_r0.json",
+        "../stencil27_baseline_20261023/formal/results/grosmont_192_chain_r1.json",
+        "../stencil27_baseline_20261023/formal/results/grosmont_192_chain_r2.json"
+      ],
+      "rhs_seconds": {
+        "median": 0.036278410349041224,
+        "min": 0.036252720979973674,
+        "max": 0.03628683020360768,
+        "values": [
+          0.036278410349041224,
+          0.03628683020360768,
+          0.036252720979973674
+        ]
+      },
+      "solve_seconds": {
+        "median": 1.4466143129393458,
+        "min": 1.446342322975397,
+        "max": 1.4466457541566342,
+        "values": [
+          1.4466143129393458,
+          1.4466457541566342,
+          1.446342322975397
+        ]
+      },
+      "post_seconds": {
+        "median": 0.010698318714275956,
+        "min": 0.01063533779233694,
+        "max": 0.010726009961217642,
+        "values": [
+          0.010726009961217642,
+          0.010698318714275956,
+          0.01063533779233694
+        ]
+      },
+      "setup_seconds": {
+        "median": 0.2396659676451236,
+        "min": 0.23887826199643314,
+        "max": 0.2398767089471221,
+        "values": [
+          0.2396659676451236,
+          0.23887826199643314,
+          0.2398767089471221
+        ]
+      },
+      "CH_repeat_difference": 1.8760530785437425e-16
+    },
+    {
+      "case": "grosmont",
+      "grid": 192,
+      "variant": "chfem",
+      "repeats": 3,
+      "records": [
+        "remote\\results\\grosmont_192_chfem_r0.json",
+        "remote\\results\\grosmont_192_chfem_r1.json",
+        "remote\\results\\grosmont_192_chfem_r2.json"
+      ],
+      "time": {
+        "median": 52.17693883809261,
+        "min": 52.1643479547929,
+        "max": 52.18462613108568,
+        "values": [
+          52.1643479547929,
+          52.17693883809261,
+          52.18462613108568
+        ]
+      },
+      "compute": {
+        "median": 52.17693883809261,
+        "min": 52.1643479547929,
+        "max": 52.18462613108568,
+        "values": [
+          52.1643479547929,
+          52.17693883809261,
+          52.18462613108568
+        ]
+      },
+      "api_seconds": {
+        "median": 52.230833776062354,
+        "min": 52.2175925290212,
+        "max": 52.23755124001764,
+        "values": [
+          52.2175925290212,
+          52.230833776062354,
+          52.23755124001764
+        ]
+      },
+      "nvml": 1.13671875,
+      "max_true_residual": 1.6902724946916838e-09,
+      "iterations": [
+        6421
+      ],
+      "CH_repeat_difference": 3.6052387945964283e-16
+    },
+    {
+      "case": "grosmont",
+      "grid": 192,
+      "variant": "latest",
+      "repeats": 3,
+      "time": {
+        "median": 1.517755540087819,
+        "min": 1.5011889999732375,
+        "max": 1.5194908450357616,
+        "values": [
+          1.5194908450357616,
+          1.517755540087819,
+          1.5011889999732375
+        ]
+      },
+      "compute": {
+        "median": 1.28595161694102,
+        "min": 1.2848115449305624,
+        "max": 1.2861110579688102,
+        "values": [
+          1.2861110579688102,
+          1.28595161694102,
+          1.2848115449305624
+        ]
+      },
+      "nvml": 2.08984375,
+      "iterations": [
+        251
+      ],
+      "allocated": 1.301440715789795,
+      "reserved": 1.486328125,
+      "max_true_residual": 9.587417596791144e-09,
+      "ku_ms": {
+        "median": 2.3232208251953126,
+        "min": 2.32315673828125,
+        "max": 2.3232336044311523,
+        "values": [
+          2.3232208251953126,
+          2.3232336044311523,
+          2.32315673828125
+        ]
+      },
+      "precond_ms": {
+        "median": 0.8731264114379883,
+        "min": 0.8720191955566406,
+        "max": 0.8733087539672851,
+        "values": [
+          0.8731264114379883,
+          0.8720191955566406,
+          0.8733087539672851
+        ]
+      },
+      "CH_error_vs27": 5.356535542606465e-15,
+      "records": [
+        "../stencil27_baseline_20261023/formal/results/grosmont_192_latest_r0.json",
+        "../stencil27_baseline_20261023/formal/results/grosmont_192_latest_r1.json",
+        "../stencil27_baseline_20261023/formal/results/grosmont_192_latest_r2.json"
+      ],
+      "rhs_seconds": {
+        "median": 0.02150259679183364,
+        "min": 0.021475408226251602,
+        "max": 0.021510427119210362,
+        "values": [
+          0.021510427119210362,
+          0.02150259679183364,
+          0.021475408226251602
+        ]
+      },
+      "solve_seconds": {
+        "median": 1.185879172058776,
+        "min": 1.1856713730376214,
+        "max": 1.1859693909063935,
+        "values": [
+          1.185879172058776,
+          1.1859693909063935,
+          1.1856713730376214
+        ]
+      },
+      "post_seconds": {
+        "median": 0.007748793810606003,
+        "min": 0.007680834271013737,
+        "max": 0.007756482111290097,
+        "values": [
+          0.007748793810606003,
+          0.007756482111290097,
+          0.007680834271013737
+        ]
+      },
+      "setup_seconds": {
+        "median": 0.06627981690689921,
+        "min": 0.06584494397975504,
+        "max": 0.06655629025772214,
+        "values": [
+          0.06655629025772214,
+          0.06627981690689921,
+          0.06584494397975504
+        ]
+      },
+      "CH_repeat_difference": 4.701484407272655e-18
+    },
+    {
+      "case": "grosmont",
+      "grid": 192,
+      "variant": "paper",
+      "repeats": 3,
+      "time": {
+        "median": 2.891346667893231,
+        "min": 2.8783491428475827,
+        "max": 2.896366572007537,
+        "values": [
+          2.896366572007537,
+          2.8783491428475827,
+          2.891346667893231
+        ]
+      },
+      "compute": {
+        "median": 2.6371114789508283,
+        "min": 2.637057180982083,
+        "max": 2.6374004639219493,
+        "values": [
+          2.637057180982083,
+          2.6374004639219493,
+          2.6371114789508283
+        ]
+      },
+      "nvml": 15.876953125,
+      "iterations": [
+        251
+      ],
+      "allocated": 9.527571678161621,
+      "reserved": 15.26171875,
+      "max_true_residual": 9.587388469969008e-09,
+      "ku_ms": {
+        "median": 4.745044708251953,
+        "min": 4.740531158447266,
+        "max": 4.7456623077392575,
+        "values": [
+          4.7456623077392575,
+          4.740531158447266,
+          4.745044708251953
+        ]
+      },
+      "precond_ms": {
+        "median": 1.3769375801086425,
+        "min": 1.376191997528076,
+        "max": 1.3770688056945801,
+        "values": [
+          1.376191997528076,
+          1.3770688056945801,
+          1.3769375801086425
+        ]
+      },
+      "CH_error_vs27": 1.1730590861955847e-16,
+      "records": [
+        "../stencil27_baseline_20261023/formal/results/grosmont_192_paper_r0.json",
+        "../stencil27_baseline_20261023/formal/results/grosmont_192_paper_r1.json",
+        "../stencil27_baseline_20261023/formal/results/grosmont_192_paper_r2.json"
+      ],
+      "rhs_seconds": {
+        "median": 0.037764001870527864,
+        "min": 0.03776050289161503,
+        "max": 0.037780851824209094,
+        "values": [
+          0.037764001870527864,
+          0.037780851824209094,
+          0.03776050289161503
+        ]
+      },
+      "solve_seconds": {
+        "median": 2.115749934921041,
+        "min": 2.1157079667318612,
+        "max": 2.116009929217398,
+        "values": [
+          2.1157079667318612,
+          2.116009929217398,
+          2.115749934921041
+        ]
+      },
+      "post_seconds": {
+        "median": 0.010962629923596978,
+        "min": 0.010886309901252389,
+        "max": 0.010971530340611935,
+        "values": [
+          0.010971530340611935,
+          0.010962629923596978,
+          0.010886309901252389
+        ]
+      },
+      "setup_seconds": {
+        "median": 0.4679058128967881,
+        "min": 0.46783758187666535,
+        "max": 0.46849926584400237,
+        "values": [
+          0.46783758187666535,
+          0.4679058128967881,
+          0.46849926584400237
+        ]
+      },
+      "CH_repeat_difference": 0.0
+    },
+    {
+      "case": "sphere",
+      "grid": 192,
+      "variant": "chain",
+      "repeats": 3,
+      "time": {
+        "median": 1.7074601170606911,
+        "min": 1.695631151786074,
+        "max": 1.7163313289638609,
+        "values": [
+          1.7074601170606911,
+          1.7163313289638609,
+          1.695631151786074
+        ]
+      },
+      "compute": {
+        "median": 1.4796174159273505,
+        "min": 1.479175265878439,
+        "max": 1.4807932048570365,
+        "values": [
+          1.4807932048570365,
+          1.4796174159273505,
+          1.479175265878439
+        ]
+      },
+      "nvml": 5.169921875,
+      "iterations": [
+        234
+      ],
+      "allocated": 2.4051456451416016,
+      "reserved": 4.556640625,
+      "max_true_residual": 8.846364194468981e-09,
+      "ku_ms": {
+        "median": 3.2427951812744142,
+        "min": 3.242639923095703,
+        "max": 3.2429248809814455,
+        "values": [
+          3.2429248809814455,
+          3.2427951812744142,
+          3.242639923095703
+        ]
+      },
+      "precond_ms": {
+        "median": 0.8717663764953614,
+        "min": 0.8714367866516113,
+        "max": 0.8717823982238769,
+        "values": [
+          0.8717823982238769,
+          0.8714367866516113,
+          0.8717663764953614
+        ]
+      },
+      "CH_error_vs27": 3.215566719917708e-13,
+      "records": [
+        "../stencil27_baseline_20261023/formal/results/sphere_192_chain_r0.json",
+        "../stencil27_baseline_20261023/formal/results/sphere_192_chain_r1.json",
+        "../stencil27_baseline_20261023/formal/results/sphere_192_chain_r2.json"
+      ],
+      "rhs_seconds": {
+        "median": 0.036262480076402426,
+        "min": 0.03624162147752941,
+        "max": 0.036286760587245226,
+        "values": [
+          0.036286760587245226,
+          0.036262480076402426,
+          0.03624162147752941
+        ]
+      },
+      "solve_seconds": {
+        "median": 1.3196257643867284,
+        "min": 1.3195937422569841,
+        "max": 1.3199465472716838,
+        "values": [
+          1.3199465472716838,
+          1.3196257643867284,
+          1.3195937422569841
+        ]
+      },
+      "post_seconds": {
+        "median": 0.010644666850566864,
+        "min": 0.010602497262880206,
+        "max": 0.010700109880417585,
+        "values": [
+          0.010700109880417585,
+          0.010644666850566864,
+          0.010602497262880206
+        ]
+      },
+      "setup_seconds": {
+        "median": 0.10837947577238083,
+        "min": 0.10835725744254887,
+        "max": 0.10884268907830119,
+        "values": [
+          0.10884268907830119,
+          0.10837947577238083,
+          0.10835725744254887
+        ]
+      },
+      "CH_repeat_difference": 2.79304551186684e-16
+    },
+    {
+      "case": "sphere",
+      "grid": 192,
+      "variant": "chfem",
+      "repeats": 3,
+      "records": [
+        "remote\\results\\sphere_192_chfem_r0.json",
+        "remote\\results\\sphere_192_chfem_r1.json",
+        "remote\\results\\sphere_192_chfem_r2.json"
+      ],
+      "time": {
+        "median": 44.68532152590342,
+        "min": 44.68209160026163,
+        "max": 44.68619122472592,
+        "values": [
+          44.68619122472592,
+          44.68532152590342,
+          44.68209160026163
+        ]
+      },
+      "compute": {
+        "median": 44.68532152590342,
+        "min": 44.68209160026163,
+        "max": 44.68619122472592,
+        "values": [
+          44.68619122472592,
+          44.68532152590342,
+          44.68209160026163
+        ]
+      },
+      "api_seconds": {
+        "median": 44.73216394591145,
+        "min": 44.72891202988103,
+        "max": 44.73271606490016,
+        "values": [
+          44.73271606490016,
+          44.73216394591145,
+          44.72891202988103
+        ]
+      },
+      "nvml": 1.13671875,
+      "max_true_residual": 4.226062512743993e-09,
+      "iterations": [
+        5558
+      ],
+      "CH_repeat_difference": 1.334113105818777e-16
+    },
+    {
+      "case": "sphere",
+      "grid": 192,
+      "variant": "latest",
+      "repeats": 3,
+      "time": {
+        "median": 1.4357145759277046,
+        "min": 1.4344333519693464,
+        "max": 1.4410657370463014,
+        "values": [
+          1.4410657370463014,
+          1.4344333519693464,
+          1.4357145759277046
+        ]
+      },
+      "compute": {
+        "median": 1.2162793918978423,
+        "min": 1.2157961330376565,
+        "max": 1.2164755328558385,
+        "values": [
+          1.2164755328558385,
+          1.2162793918978423,
+          1.2157961330376565
+        ]
+      },
+      "nvml": 2.08984375,
+      "iterations": [
+        234
+      ],
+      "allocated": 1.3028488159179688,
+      "reserved": 1.486328125,
+      "max_true_residual": 8.846365279773602e-09,
+      "ku_ms": {
+        "median": 2.487763214111328,
+        "min": 2.4876976013183594,
+        "max": 2.488148880004883,
+        "values": [
+          2.488148880004883,
+          2.4876976013183594,
+          2.487763214111328
+        ]
+      },
+      "precond_ms": {
+        "median": 0.8712703704833984,
+        "min": 0.8711104393005371,
+        "max": 0.871555233001709,
+        "values": [
+          0.871555233001709,
+          0.8712703704833984,
+          0.8711104393005371
+        ]
+      },
+      "CH_error_vs27": 3.2143993786748443e-13,
+      "records": [
+        "../stencil27_baseline_20261023/formal/results/sphere_192_latest_r0.json",
+        "../stencil27_baseline_20261023/formal/results/sphere_192_latest_r1.json",
+        "../stencil27_baseline_20261023/formal/results/sphere_192_latest_r2.json"
+      ],
+      "rhs_seconds": {
+        "median": 0.02153123845346272,
+        "min": 0.0215192181058228,
+        "max": 0.021546459523960948,
+        "values": [
+          0.021546459523960948,
+          0.0215192181058228,
+          0.02153123845346272
+        ]
+      },
+      "solve_seconds": {
+        "median": 1.1219795234501362,
+        "min": 1.1219163849018514,
+        "max": 1.1220070025883615,
+        "values": [
+          1.1220070025883615,
+          1.1219795234501362,
+          1.1219163849018514
+        ]
+      },
+      "post_seconds": {
+        "median": 0.007670692866668105,
+        "min": 0.007640443742275238,
+        "max": 0.0076971345115453005,
+        "values": [
+          0.0076971345115453005,
+          0.007640443742275238,
+          0.007670692866668105
+        ]
+      },
+      "setup_seconds": {
+        "median": 0.06090271286666393,
+        "min": 0.06044624000787735,
+        "max": 0.06101995403878391,
+        "values": [
+          0.06090271286666393,
+          0.06101995403878391,
+          0.06044624000787735
+        ]
+      },
+      "CH_repeat_difference": 1.2845925025567562e-16
+    },
+    {
+      "case": "sphere",
+      "grid": 192,
+      "variant": "paper",
+      "repeats": 3,
+      "time": {
+        "median": 2.5507426529657096,
+        "min": 2.5443588360212743,
+        "max": 2.560732190962881,
+        "values": [
+          2.560732190962881,
+          2.5443588360212743,
+          2.5507426529657096
+        ]
+      },
+      "compute": {
+        "median": 2.3238499858416617,
+        "min": 2.321899486007169,
+        "max": 2.3242570890579373,
+        "values": [
+          2.3238499858416617,
+          2.3242570890579373,
+          2.321899486007169
+        ]
+      },
+      "nvml": 11.81640625,
+      "iterations": [
+        234
+      ],
+      "allocated": 9.527571678161621,
+      "reserved": 11.201171875,
+      "max_true_residual": 8.848454676799712e-09,
+      "ku_ms": {
+        "median": 4.74243049621582,
+        "min": 4.7400768280029295,
+        "max": 4.743057632446289,
+        "values": [
+          4.74243049621582,
+          4.7400768280029295,
+          4.743057632446289
+        ]
+      },
+      "precond_ms": {
+        "median": 1.377734375,
+        "min": 1.377393627166748,
+        "max": 1.377894401550293,
+        "values": [
+          1.377393627166748,
+          1.377894401550293,
+          1.377734375
+        ]
+      },
+      "CH_error_vs27": 1.213869554034671e-15,
+      "records": [
+        "../stencil27_baseline_20261023/formal/results/sphere_192_paper_r0.json",
+        "../stencil27_baseline_20261023/formal/results/sphere_192_paper_r1.json",
+        "../stencil27_baseline_20261023/formal/results/sphere_192_paper_r2.json"
+      ],
+      "rhs_seconds": {
+        "median": 0.0377455223351717,
+        "min": 0.0377366051543504,
+        "max": 0.03775117197073996,
+        "values": [
+          0.03775117197073996,
+          0.0377455223351717,
+          0.0377366051543504
+        ]
+      },
+      "solve_seconds": {
+        "median": 1.9334725230000913,
+        "min": 1.9328186572529376,
+        "max": 1.9342408091761172,
+        "values": [
+          1.9334725230000913,
+          1.9342408091761172,
+          1.9328186572529376
+        ]
+      },
+      "post_seconds": {
+        "median": 0.010783598059788346,
+        "min": 0.010756138013675809,
+        "max": 0.010822499869391322,
+        "values": [
+          0.010822499869391322,
+          0.010756138013675809,
+          0.010783598059788346
+        ]
+      },
+      "setup_seconds": {
+        "median": 0.3372362337540835,
+        "min": 0.33640244882553816,
+        "max": 0.3372674761340022,
+        "values": [
+          0.3372362337540835,
+          0.3372674761340022,
+          0.33640244882553816
+        ]
+      },
+      "CH_repeat_difference": 0.0
+    },
+    {
+      "case": "woven",
+      "grid": 64,
+      "variant": "chain",
+      "repeats": 3,
+      "time": {
+        "median": 0.3553240441251546,
+        "min": 0.35509988106787205,
+        "max": 0.35909893410280347,
+        "values": [
+          0.3553240441251546,
+          0.35509988106787205,
+          0.35909893410280347
+        ]
+      },
+      "compute": {
+        "median": 0.08811757690273225,
+        "min": 0.08774393401108682,
+        "max": 0.08919645589776337,
+        "values": [
+          0.08774393401108682,
+          0.08811757690273225,
+          0.08919645589776337
+        ]
+      },
+      "nvml": 0.75390625,
+      "iterations": [
+        315
+      ],
+      "allocated": 0.12001419067382812,
+      "reserved": 0.140625,
+      "max_true_residual": 8.976205048720797e-09,
+      "ku_ms": {
+        "median": 0.13062560558319092,
+        "min": 0.13050559759140015,
+        "max": 0.13070240020751953,
+        "values": [
+          0.13070240020751953,
+          0.13062560558319092,
+          0.13050559759140015
+        ]
+      },
+      "precond_ms": {
+        "median": 0.028596800565719605,
+        "min": 0.028585600852966308,
+        "max": 0.02864319980144501,
+        "values": [
+          0.028585600852966308,
+          0.02864319980144501,
+          0.028596800565719605
+        ]
+      },
+      "CH_error_vs27": 4.689920743636283e-11,
+      "records": [
+        "../stencil27_baseline_20261023/formal/results/woven_64_chain_r0.json",
+        "../stencil27_baseline_20261023/formal/results/woven_64_chain_r1.json",
+        "../stencil27_baseline_20261023/formal/results/woven_64_chain_r2.json"
+      ],
+      "rhs_seconds": {
+        "median": 0.0014927214942872524,
+        "min": 0.0014721029438078403,
+        "max": 0.0015010316856205463,
+        "values": [
+          0.0014721029438078403,
+          0.0014927214942872524,
+          0.0015010316856205463
+        ]
+      },
+      "solve_seconds": {
+        "median": 0.06516889901831746,
+        "min": 0.0650063781067729,
+        "max": 0.06589780584909022,
+        "values": [
+          0.0650063781067729,
+          0.06516889901831746,
+          0.06589780584909022
+        ]
+      },
+      "post_seconds": {
+        "median": 0.0007388358935713768,
+        "min": 0.000698185758665204,
+        "max": 0.0007504662498831749,
+        "values": [
+          0.000698185758665204,
+          0.0007388358935713768,
+          0.0007504662498831749
+        ]
+      },
+      "setup_seconds": {
+        "median": 0.016484996769577265,
+        "min": 0.016384872142225504,
+        "max": 0.016719217877835035,
+        "values": [
+          0.016384872142225504,
+          0.016484996769577265,
+          0.016719217877835035
+        ]
+      },
+      "CH_repeat_difference": 1.404752785738777e-16
+    },
+    {
+      "case": "woven",
+      "grid": 64,
+      "variant": "latest",
+      "repeats": 3,
+      "time": {
+        "median": 0.33906844910234213,
+        "min": 0.3204957260750234,
+        "max": 0.3419858841225505,
+        "values": [
+          0.33906844910234213,
+          0.3419858841225505,
+          0.3204957260750234
+        ]
+      },
+      "compute": {
+        "median": 0.07203313405625522,
+        "min": 0.07050169305875897,
+        "max": 0.07265944010578096,
+        "values": [
+          0.07050169305875897,
+          0.07265944010578096,
+          0.07203313405625522
+        ]
+      },
+      "nvml": 0.728515625,
+      "iterations": [
+        315
+      ],
+      "allocated": 0.09366703033447266,
+      "reserved": 0.115234375,
+      "max_true_residual": 8.976204536101435e-09,
+      "ku_ms": {
+        "median": 0.09135519862174987,
+        "min": 0.09133759737014771,
+        "max": 0.09144960045814514,
+        "values": [
+          0.09144960045814514,
+          0.09135519862174987,
+          0.09133759737014771
+        ]
+      },
+      "precond_ms": {
+        "median": 0.0284527987241745,
+        "min": 0.02844800055027008,
+        "max": 0.028462401032447814,
+        "values": [
+          0.02844800055027008,
+          0.028462401032447814,
+          0.0284527987241745
+        ]
+      },
+      "CH_error_vs27": 4.689921868019234e-11,
+      "records": [
+        "../stencil27_baseline_20261023/formal/results/woven_64_latest_r0.json",
+        "../stencil27_baseline_20261023/formal/results/woven_64_latest_r1.json",
+        "../stencil27_baseline_20261023/formal/results/woven_64_latest_r2.json"
+      ],
+      "rhs_seconds": {
+        "median": 0.0010289973579347134,
+        "min": 0.0010265777818858624,
+        "max": 0.0010683087166398764,
+        "values": [
+          0.0010265777818858624,
+          0.0010683087166398764,
+          0.0010289973579347134
+        ]
+      },
+      "solve_seconds": {
+        "median": 0.05146099720150232,
+        "min": 0.05145631614141166,
+        "max": 0.052750566275790334,
+        "values": [
+          0.05146099720150232,
+          0.052750566275790334,
+          0.05145631614141166
+        ]
+      },
+      "post_seconds": {
+        "median": 0.0006550750695168972,
+        "min": 0.0006394856609404087,
+        "max": 0.0008516067173331976,
+        "values": [
+          0.0006394856609404087,
+          0.0008516067173331976,
+          0.0006550750695168972
+        ]
+      },
+      "setup_seconds": {
+        "median": 0.014029334066435695,
+        "min": 0.01368262292817235,
+        "max": 0.015114156994968653,
+        "values": [
+          0.01368262292817235,
+          0.014029334066435695,
+          0.015114156994968653
+        ]
+      },
+      "CH_repeat_difference": 1.933664280179708e-16
+    },
+    {
+      "case": "woven",
+      "grid": 64,
+      "variant": "paper",
+      "repeats": 3,
+      "time": {
+        "median": 0.3948171390220523,
+        "min": 0.38794621312990785,
+        "max": 0.3968565061222762,
+        "values": [
+          0.3948171390220523,
+          0.38794621312990785,
+          0.3968565061222762
+        ]
+      },
+      "compute": {
+        "median": 0.13051245803944767,
+        "min": 0.13018999504856765,
+        "max": 0.13084991089999676,
+        "values": [
+          0.13018999504856765,
+          0.13051245803944767,
+          0.13084991089999676
+        ]
+      },
+      "nvml": 1.529296875,
+      "iterations": [
+        325
+      ],
+      "allocated": 0.5002040863037109,
+      "reserved": 0.9140625,
+      "max_true_residual": 8.700938692396425e-09,
+      "ku_ms": {
+        "median": 0.1888991951942444,
+        "min": 0.1887279987335205,
+        "max": 0.18923840522766114,
+        "values": [
+          0.1887279987335205,
+          0.18923840522766114,
+          0.1888991951942444
+        ]
+      },
+      "precond_ms": {
+        "median": 0.03683359920978546,
+        "min": 0.036575999855995175,
+        "max": 0.037555199861526486,
+        "values": [
+          0.036575999855995175,
+          0.037555199861526486,
+          0.03683359920978546
+        ]
+      },
+      "CH_error_vs27": 1.6305041305738134e-16,
+      "records": [
+        "../stencil27_baseline_20261023/formal/results/woven_64_paper_r0.json",
+        "../stencil27_baseline_20261023/formal/results/woven_64_paper_r1.json",
+        "../stencil27_baseline_20261023/formal/results/woven_64_paper_r2.json"
+      ],
+      "rhs_seconds": {
+        "median": 0.001528383931145072,
+        "min": 0.0015156951267272234,
+        "max": 0.0015301844105124474,
+        "values": [
+          0.0015156951267272234,
+          0.001528383931145072,
+          0.0015301844105124474
+        ]
+      },
+      "solve_seconds": {
+        "median": 0.09895808715373278,
+        "min": 0.09870333480648696,
+        "max": 0.09910663682967424,
+        "values": [
+          0.09870333480648696,
+          0.09895808715373278,
+          0.09910663682967424
+        ]
+      },
+      "post_seconds": {
+        "median": 0.0006953252013772726,
+        "min": 0.0006950940005481243,
+        "max": 0.000700005330145359,
+        "values": [
+          0.0006953252013772726,
+          0.000700005330145359,
+          0.0006950940005481243
+        ]
+      },
+      "setup_seconds": {
+        "median": 0.02552538109011948,
+        "min": 0.025383088970556855,
+        "max": 0.025653423042967916,
+        "values": [
+          0.025383088970556855,
+          0.02552538109011948,
+          0.025653423042967916
+        ]
+      },
+      "CH_repeat_difference": 0.0
+    },
+    {
+      "case": "woven",
+      "grid": 128,
+      "variant": "chain",
+      "repeats": 3,
+      "time": {
+        "median": 0.7786095980554819,
+        "min": 0.7765782619826496,
+        "max": 0.7835259190760553,
+        "values": [
+          0.7765782619826496,
+          0.7786095980554819,
+          0.7835259190760553
+        ]
+      },
+      "compute": {
+        "median": 0.5452978918328881,
+        "min": 0.5448384680785239,
+        "max": 0.5453485420439392,
+        "values": [
+          0.5448384680785239,
+          0.5453485420439392,
+          0.5452978918328881
+        ]
+      },
+      "nvml": 1.66015625,
+      "iterations": [
+        321
+      ],
+      "allocated": 0.7347626686096191,
+      "reserved": 1.046875,
+      "max_true_residual": 9.84131977937124e-09,
+      "ku_ms": {
+        "median": 0.9624416351318359,
+        "min": 0.9604047775268555,
+        "max": 0.9625424385070801,
+        "values": [
+          0.9604047775268555,
+          0.9624416351318359,
+          0.9625424385070801
+        ]
+      },
+      "precond_ms": {
+        "median": 0.17158080339431764,
+        "min": 0.17140799760818481,
+        "max": 0.17168320417404176,
+        "values": [
+          0.17140799760818481,
+          0.17158080339431764,
+          0.17168320417404176
+        ]
+      },
+      "CH_error_vs27": 2.4028392352073103e-11,
+      "records": [
+        "../stencil27_baseline_20261023/formal/results/woven_128_chain_r0.json",
+        "../stencil27_baseline_20261023/formal/results/woven_128_chain_r1.json",
+        "../stencil27_baseline_20261023/formal/results/woven_128_chain_r2.json"
+      ],
+      "rhs_seconds": {
+        "median": 0.011134122032672167,
+        "min": 0.011106052901595831,
+        "max": 0.011143651558086276,
+        "values": [
+          0.011106052901595831,
+          0.011143651558086276,
+          0.011134122032672167
+        ]
+      },
+      "solve_seconds": {
+        "median": 0.4907441306859255,
+        "min": 0.4904230481479317,
+        "max": 0.49093797197565436,
+        "values": [
+          0.4904230481479317,
+          0.49093797197565436,
+          0.4907441306859255
+        ]
+      },
+      "post_seconds": {
+        "median": 0.0034620880614966154,
+        "min": 0.003452267264947295,
+        "max": 0.0034749361220747232,
+        "values": [
+          0.0034620880614966154,
+          0.0034749361220747232,
+          0.003452267264947295
+        ]
+      },
+      "setup_seconds": {
+        "median": 0.03523403825238347,
+        "min": 0.03494044952094555,
+        "max": 0.03532627201639116,
+        "values": [
+          0.03523403825238347,
+          0.03494044952094555,
+          0.03532627201639116
+        ]
+      },
+      "CH_repeat_difference": 1.1215184702425775e-16
+    },
+    {
+      "case": "woven",
+      "grid": 128,
+      "variant": "latest",
+      "repeats": 3,
+      "time": {
+        "median": 0.7006020641420037,
+        "min": 0.6921014240942895,
+        "max": 0.7068558561149985,
+        "values": [
+          0.6921014240942895,
+          0.7068558561149985,
+          0.7006020641420037
+        ]
+      },
+      "compute": {
+        "median": 0.45236794487573206,
+        "min": 0.45116923516616225,
+        "max": 0.45289413910359144,
+        "values": [
+          0.45116923516616225,
+          0.45236794487573206,
+          0.45289413910359144
+        ]
+      },
+      "nvml": 1.203125,
+      "iterations": [
+        321
+      ],
+      "allocated": 0.48099184036254883,
+      "reserved": 0.587890625,
+      "max_true_residual": 9.841318946727763e-09,
+      "ku_ms": {
+        "median": 0.6572048187255859,
+        "min": 0.6566927909851075,
+        "max": 0.6573328018188477,
+        "values": [
+          0.6566927909851075,
+          0.6573328018188477,
+          0.6572048187255859
+        ]
+      },
+      "precond_ms": {
+        "median": 0.17195680141448974,
+        "min": 0.17182719707489014,
+        "max": 0.1720255970954895,
+        "values": [
+          0.17182719707489014,
+          0.1720255970954895,
+          0.17195680141448974
+        ]
+      },
+      "CH_error_vs27": 2.4028460985041728e-11,
+      "records": [
+        "../stencil27_baseline_20261023/formal/results/woven_128_latest_r0.json",
+        "../stencil27_baseline_20261023/formal/results/woven_128_latest_r1.json",
+        "../stencil27_baseline_20261023/formal/results/woven_128_latest_r2.json"
+      ],
+      "rhs_seconds": {
+        "median": 0.00642783404327929,
+        "min": 0.006399885285645723,
+        "max": 0.006444423226639628,
+        "values": [
+          0.006399885285645723,
+          0.00642783404327929,
+          0.006444423226639628
+        ]
+      },
+      "solve_seconds": {
+        "median": 0.3759916014969349,
+        "min": 0.37577227293513715,
+        "max": 0.3763117368798703,
+        "values": [
+          0.37577227293513715,
+          0.3759916014969349,
+          0.3763117368798703
+        ]
+      },
+      "post_seconds": {
+        "median": 0.002717562485486269,
+        "min": 0.0026907718274742365,
+        "max": 0.0027233317960053682,
+        "values": [
+          0.002717562485486269,
+          0.0026907718274742365,
+          0.0027233317960053682
+        ]
+      },
+      "setup_seconds": {
+        "median": 0.06296922988258302,
+        "min": 0.062113604275509715,
+        "max": 0.06307672127149999,
+        "values": [
+          0.062113604275509715,
+          0.06296922988258302,
+          0.06307672127149999
+        ]
+      },
+      "CH_repeat_difference": 4.884502745059107e-17
+    },
+    {
+      "case": "woven",
+      "grid": 128,
+      "variant": "paper",
+      "repeats": 3,
+      "time": {
+        "median": 1.0501382199581712,
+        "min": 1.0437618680298328,
+        "max": 1.0510625371243805,
+        "values": [
+          1.0510625371243805,
+          1.0501382199581712,
+          1.0437618680298328
+        ]
+      },
+      "compute": {
+        "median": 0.8130093519575894,
+        "min": 0.8124839479569346,
+        "max": 0.8134615260642022,
+        "values": [
+          0.8130093519575894,
+          0.8124839479569346,
+          0.8134615260642022
+        ]
+      },
+      "nvml": 4.521484375,
+      "iterations": [
+        333
+      ],
+      "allocated": 2.845595359802246,
+      "reserved": 3.90625,
+      "max_true_residual": 9.554025583918852e-09,
+      "ku_ms": {
+        "median": 1.3348383903503418,
+        "min": 1.3343279838562012,
+        "max": 1.3350064277648925,
+        "values": [
+          1.3348383903503418,
+          1.3343279838562012,
+          1.3350064277648925
+        ]
+      },
+      "precond_ms": {
+        "median": 0.2266319990158081,
+        "min": 0.22648000717163086,
+        "max": 0.22690238952636718,
+        "values": [
+          0.22690238952636718,
+          0.2266319990158081,
+          0.22648000717163086
+        ]
+      },
+      "CH_error_vs27": 1.7582399034811084e-16,
+      "records": [
+        "../stencil27_baseline_20261023/formal/results/woven_128_paper_r0.json",
+        "../stencil27_baseline_20261023/formal/results/woven_128_paper_r1.json",
+        "../stencil27_baseline_20261023/formal/results/woven_128_paper_r2.json"
+      ],
+      "rhs_seconds": {
+        "median": 0.011102824239060283,
+        "min": 0.011090159881860018,
+        "max": 0.01113972207531333,
+        "values": [
+          0.011090159881860018,
+          0.011102824239060283,
+          0.01113972207531333
+        ]
+      },
+      "solve_seconds": {
+        "median": 0.6925690162461251,
+        "min": 0.6923601669259369,
+        "max": 0.6925889691337943,
+        "values": [
+          0.6923601669259369,
+          0.6925690162461251,
+          0.6925889691337943
+        ]
+      },
+      "post_seconds": {
+        "median": 0.0035128591116517782,
+        "min": 0.0034867979120463133,
+        "max": 0.0035217301920056343,
+        "values": [
+          0.0035217301920056343,
+          0.0034867979120463133,
+          0.0035128591116517782
+        ]
+      },
+      "setup_seconds": {
+        "median": 0.10212368285283446,
+        "min": 0.10155692789703608,
+        "max": 0.10227744467556477,
+        "values": [
+          0.10212368285283446,
+          0.10155692789703608,
+          0.10227744467556477
+        ]
+      },
+      "CH_repeat_difference": 0.0
+    },
+    {
+      "case": "woven",
+      "grid": 192,
+      "variant": "analytic",
+      "repeats": 3,
+      "records": [
+        "remote\\results\\woven_192_analytic_r0.json",
+        "remote\\results\\woven_192_analytic_r1.json",
+        "remote\\results\\woven_192_analytic_r2.json"
+      ],
+      "time": {
+        "median": 2.5705040339380503,
+        "min": 2.561087226960808,
+        "max": 2.5811209499370307,
+        "values": [
+          2.5705040339380503,
+          2.5811209499370307,
+          2.561087226960808
+        ]
+      },
+      "compute": {
+        "median": 2.3361199779901654,
+        "min": 2.335861812112853,
+        "max": 2.336973855039105,
+        "values": [
+          2.335861812112853,
+          2.336973855039105,
+          2.3361199779901654
+        ]
+      },
+      "ku_ms": {
+        "median": 3.243524932861328,
+        "min": 3.2434078216552735,
+        "max": 3.24365119934082,
+        "values": [
+          3.243524932861328,
+          3.24365119934082,
+          3.2434078216552735
+        ]
+      },
+      "precond_ms": {
+        "median": 1.3855263710021972,
+        "min": 1.385256004333496,
+        "max": 1.3855999946594237,
+        "values": [
+          1.3855263710021972,
+          1.385256004333496,
+          1.3855999946594237
+        ]
+      },
+      "setup_seconds": {
+        "median": 0.08449104591272771,
+        "min": 0.08392031420953572,
+        "max": 0.0851261515635997,
+        "values": [
+          0.08392031420953572,
+          0.0851261515635997,
+          0.08449104591272771
+        ]
+      },
+      "rhs_seconds": {
+        "median": 0.036283963825553656,
+        "min": 0.036245234310626984,
+        "max": 0.036284086061641574,
+        "values": [
+          0.036284086061641574,
+          0.036283963825553656,
+          0.036245234310626984
+        ]
+      },
+      "solve_seconds": {
+        "median": 2.200742461020127,
+        "min": 2.2005431540310383,
+        "max": 2.200838399352506,
+        "values": [
+          2.200742461020127,
+          2.200838399352506,
+          2.2005431540310383
+        ]
+      },
+      "post_seconds": {
+        "median": 0.010677434736862779,
+        "min": 0.010674048215150833,
+        "max": 0.010702838888391852,
+        "values": [
+          0.010702838888391852,
+          0.010677434736862779,
+          0.010674048215150833
+        ]
+      },
+      "allocated": 2.8547606468200684,
+      "reserved": 3.734375,
+      "nvml": 4.349609375,
+      "max_true_residual": 9.31334295763412e-09,
+      "iterations": [
+        337
+      ],
+      "CH_repeat_difference": 1.9624576296802024e-16
+    },
+    {
+      "case": "woven",
+      "grid": 192,
+      "variant": "chain",
+      "repeats": 3,
+      "time": {
+        "median": 2.19487009011209,
+        "min": 2.185818476136774,
+        "max": 2.201337746111676,
+        "values": [
+          2.19487009011209,
+          2.185818476136774,
+          2.201337746111676
+        ]
+      },
+      "compute": {
+        "median": 1.9643007200211287,
+        "min": 1.9636201818939298,
+        "max": 1.9643590280320495,
+        "values": [
+          1.9643590280320495,
+          1.9636201818939298,
+          1.9643007200211287
+        ]
+      },
+      "nvml": 4.033203125,
+      "iterations": [
+        327
+      ],
+      "allocated": 2.4051456451416016,
+      "reserved": 3.41796875,
+      "max_true_residual": 8.806874550437459e-09,
+      "ku_ms": {
+        "median": 3.243592071533203,
+        "min": 3.2433326721191404,
+        "max": 3.2435951232910156,
+        "values": [
+          3.2435951232910156,
+          3.243592071533203,
+          3.2433326721191404
+        ]
+      },
+      "precond_ms": {
+        "median": 0.8699487686157227,
+        "min": 0.8697792053222656,
+        "max": 0.8699935913085938,
+        "values": [
+          0.8699935913085938,
+          0.8699487686157227,
+          0.8697792053222656
+        ]
+      },
+      "CH_error_vs27": 2.4798075149491936e-11,
+      "records": [
+        "../stencil27_baseline_20261023/formal/results/woven_192_chain_r0.json",
+        "../stencil27_baseline_20261023/formal/results/woven_192_chain_r1.json",
+        "../stencil27_baseline_20261023/formal/results/woven_192_chain_r2.json"
+      ],
+      "rhs_seconds": {
+        "median": 0.03627312136813998,
+        "min": 0.03617639001458883,
+        "max": 0.03628389001823962,
+        "values": [
+          0.03628389001823962,
+          0.03627312136813998,
+          0.03617639001458883
+        ]
+      },
+      "solve_seconds": {
+        "median": 1.825006605591625,
+        "min": 1.824928366113454,
+        "max": 1.8252796395681798,
+        "values": [
+          1.8252796395681798,
+          1.824928366113454,
+          1.825006605591625
+        ]
+      },
+      "post_seconds": {
+        "median": 0.010690717957913876,
+        "min": 0.01067647896707058,
+        "max": 0.01072457991540432,
+        "values": [
+          0.01072457991540432,
+          0.010690717957913876,
+          0.01067647896707058
+        ]
+      },
+      "setup_seconds": {
+        "median": 0.08714511012658477,
+        "min": 0.08690926805138588,
+        "max": 0.08795890887267888,
+        "values": [
+          0.08714511012658477,
+          0.08690926805138588,
+          0.08795890887267888
+        ]
+      },
+      "CH_repeat_difference": 1.3195914794138943e-16
+    },
+    {
+      "case": "woven",
+      "grid": 192,
+      "variant": "dense",
+      "repeats": 3,
+      "records": [
+        "remote\\results\\woven_192_dense_r0.json",
+        "remote\\results\\woven_192_dense_r1.json",
+        "remote\\results\\woven_192_dense_r2.json"
+      ],
+      "time": {
+        "median": 2.287048449041322,
+        "min": 2.2820440740324557,
+        "max": 2.2882768749259412,
+        "values": [
+          2.2820440740324557,
+          2.2882768749259412,
+          2.287048449041322
+        ]
+      },
+      "compute": {
+        "median": 2.0623753739055246,
+        "min": 2.0604468679521233,
+        "max": 2.062658184906468,
+        "values": [
+          2.0604468679521233,
+          2.0623753739055246,
+          2.062658184906468
+        ]
+      },
+      "ku_ms": {
+        "median": 3.244113540649414,
+        "min": 3.2439231872558594,
+        "max": 3.244294357299805,
+        "values": [
+          3.2439231872558594,
+          3.244294357299805,
+          3.244113540649414
+        ]
+      },
+      "precond_ms": {
+        "median": 0.8691568374633789,
+        "min": 0.8688863754272461,
+        "max": 0.8693231582641602,
+        "values": [
+          0.8693231582641602,
+          0.8691568374633789,
+          0.8688863754272461
+        ]
+      },
+      "setup_seconds": {
+        "median": 0.19417538424022496,
+        "min": 0.19238853710703552,
+        "max": 0.19450651202350855,
+        "values": [
+          0.19238853710703552,
+          0.19417538424022496,
+          0.19450651202350855
+        ]
+      },
+      "rhs_seconds": {
+        "median": 0.031056903768330812,
+        "min": 0.031041512498632073,
+        "max": 0.031085252994671464,
+        "values": [
+          0.031085252994671464,
+          0.031056903768330812,
+          0.031041512498632073
+        ]
+      },
+      "solve_seconds": {
+        "median": 1.8254878069274127,
+        "min": 1.825475052697584,
+        "max": 1.825534232892096,
+        "values": [
+          1.825475052697584,
+          1.825534232892096,
+          1.8254878069274127
+        ]
+      },
+      "post_seconds": {
+        "median": 0.007677610032260418,
+        "min": 0.007677051704376936,
+        "max": 0.007696793880313635,
+        "values": [
+          0.007677051704376936,
+          0.007677610032260418,
+          0.007696793880313635
+        ]
+      },
+      "allocated": 2.406264305114746,
+      "reserved": 2.642578125,
+      "nvml": 3.255859375,
+      "max_true_residual": 8.806873617424042e-09,
+      "iterations": [
+        327
+      ],
+      "CH_repeat_difference": 1.0235153954820108e-16
+    },
+    {
+      "case": "woven",
+      "grid": 192,
+      "variant": "fft",
+      "repeats": 3,
+      "records": [
+        "remote\\results\\woven_192_fft_r0.json",
+        "remote\\results\\woven_192_fft_r1.json",
+        "remote\\results\\woven_192_fft_r2.json"
+      ],
+      "time": {
+        "median": 2.3819821279030293,
+        "min": 2.3785029218997806,
+        "max": 2.4030262699816376,
+        "values": [
+          2.4030262699816376,
+          2.3819821279030293,
+          2.3785029218997806
+        ]
+      },
+      "compute": {
+        "median": 2.1575751369819045,
+        "min": 2.157386717852205,
+        "max": 2.158646058058366,
+        "values": [
+          2.157386717852205,
+          2.158646058058366,
+          2.1575751369819045
+        ]
+      },
+      "ku_ms": {
+        "median": 3.2435630798339843,
+        "min": 3.2435024261474608,
+        "max": 3.243867111206055,
+        "values": [
+          3.2435630798339843,
+          3.243867111206055,
+          3.2435024261474608
+        ]
+      },
+      "precond_ms": {
+        "median": 0.8704719543457031,
+        "min": 0.8702848434448243,
+        "max": 0.8706496238708497,
+        "values": [
+          0.8702848434448243,
+          0.8706496238708497,
+          0.8704719543457031
+        ]
+      },
+      "setup_seconds": {
+        "median": 0.08466348703950644,
+        "min": 0.08449008874595165,
+        "max": 0.08559206803329289,
+        "values": [
+          0.08449008874595165,
+          0.08559206803329289,
+          0.08466348703950644
+        ]
+      },
+      "rhs_seconds": {
+        "median": 0.03627213416621089,
+        "min": 0.036195785040035844,
+        "max": 0.036277724197134376,
+        "values": [
+          0.036277724197134376,
+          0.036195785040035844,
+          0.03627213416621089
+        ]
+      },
+      "solve_seconds": {
+        "median": 2.0216864922549576,
+        "min": 2.021578862098977,
+        "max": 2.0217060022987425,
+        "values": [
+          2.0216864922549576,
+          2.0217060022987425,
+          2.021578862098977
+        ]
+      },
+      "post_seconds": {
+        "median": 0.01065502711571753,
+        "min": 0.01064030802808702,
+        "max": 0.010684136766940355,
+        "values": [
+          0.01064030802808702,
+          0.010684136766940355,
+          0.01065502711571753
+        ]
+      },
+      "allocated": 2.642454147338867,
+      "reserved": 3.734375,
+      "nvml": 4.34765625,
+      "max_true_residual": 9.313345921978622e-09,
+      "iterations": [
+        337
+      ],
+      "CH_repeat_difference": 1.8215407135848752e-16
+    },
+    {
+      "case": "woven",
+      "grid": 192,
+      "variant": "fusion",
+      "repeats": 3,
+      "records": [
+        "remote\\results\\woven_192_fusion_r0.json",
+        "remote\\results\\woven_192_fusion_r1.json",
+        "remote\\results\\woven_192_fusion_r2.json"
+      ],
+      "time": {
+        "median": 2.2541613758075982,
+        "min": 2.236778005026281,
+        "max": 2.255955926142633,
+        "values": [
+          2.2541613758075982,
+          2.236778005026281,
+          2.255955926142633
+        ]
+      },
+      "compute": {
+        "median": 2.024291292997077,
+        "min": 2.0240760517772287,
+        "max": 2.0244108350016177,
+        "values": [
+          2.0240760517772287,
+          2.024291292997077,
+          2.0244108350016177
+        ]
+      },
+      "ku_ms": {
+        "median": 3.2438129425048827,
+        "min": 3.2435279846191407,
+        "max": 3.2438480377197267,
+        "values": [
+          3.2438480377197267,
+          3.2438129425048827,
+          3.2435279846191407
+        ]
+      },
+      "precond_ms": {
+        "median": 0.8705984115600586,
+        "min": 0.8704591751098633,
+        "max": 0.8706048011779786,
+        "values": [
+          0.8705984115600586,
+          0.8704591751098633,
+          0.8706048011779786
+        ]
+      },
+      "setup_seconds": {
+        "median": 0.08521859487518668,
+        "min": 0.08469289005734026,
+        "max": 0.08542404533363879,
+        "values": [
+          0.08469289005734026,
+          0.08521859487518668,
+          0.08542404533363879
+        ]
+      },
+      "rhs_seconds": {
+        "median": 0.03626383515074849,
+        "min": 0.03619336523115635,
+        "max": 0.03627927624620497,
+        "values": [
+          0.03627927624620497,
+          0.03619336523115635,
+          0.03626383515074849
+        ]
+      },
+      "solve_seconds": {
+        "median": 1.8877598796971142,
+        "min": 1.8877040741499513,
+        "max": 1.8878561430610716,
+        "values": [
+          1.8878561430610716,
+          1.8877598796971142,
+          1.8877040741499513
+        ]
+      },
+      "post_seconds": {
+        "median": 0.01069060922600329,
+        "min": 0.010662046493962407,
+        "max": 0.01070810598321259,
+        "values": [
+          0.01070810598321259,
+          0.01069060922600329,
+          0.010662046493962407
+        ]
+      },
+      "allocated": 2.4051456451416016,
+      "reserved": 3.41796875,
+      "nvml": 4.033203125,
+      "max_true_residual": 9.313345601627145e-09,
+      "iterations": [
+        337
+      ],
+      "CH_repeat_difference": 1.3904640739899454e-16
+    },
+    {
+      "case": "woven",
+      "grid": 192,
+      "variant": "hybrid",
+      "repeats": 3,
+      "records": [
+        "remote\\results\\woven_192_hybrid_r0.json",
+        "remote\\results\\woven_192_hybrid_r1.json",
+        "remote\\results\\woven_192_hybrid_r2.json"
+      ],
+      "time": {
+        "median": 2.2634483070578426,
+        "min": 2.2543085981160402,
+        "max": 2.2639289058279246,
+        "values": [
+          2.2543085981160402,
+          2.2639289058279246,
+          2.2634483070578426
+        ]
+      },
+      "compute": {
+        "median": 2.0374565611127764,
+        "min": 2.036946346051991,
+        "max": 2.0445887688547373,
+        "values": [
+          2.036946346051991,
+          2.0374565611127764,
+          2.0445887688547373
+        ]
+      },
+      "ku_ms": {
+        "median": 3.2488334655761717,
+        "min": 3.2487857818603514,
+        "max": 3.2490894317626955,
+        "values": [
+          3.2488334655761717,
+          3.2490894317626955,
+          3.2487857818603514
+        ]
+      },
+      "precond_ms": {
+        "median": 0.8721232414245605,
+        "min": 0.8715968132019043,
+        "max": 0.873145580291748,
+        "values": [
+          0.8715968132019043,
+          0.873145580291748,
+          0.8721232414245605
+        ]
+      },
+      "setup_seconds": {
+        "median": 0.1814229681622237,
+        "min": 0.1812037357594818,
+        "max": 0.18908627703785896,
+        "values": [
+          0.1812037357594818,
+          0.1814229681622237,
+          0.18908627703785896
+        ]
+      },
+      "rhs_seconds": {
+        "median": 0.021445115096867085,
+        "min": 0.0214190143160522,
+        "max": 0.021493735257536173,
+        "values": [
+          0.021445115096867085,
+          0.021493735257536173,
+          0.0214190143160522
+        ]
+      },
+      "solve_seconds": {
+        "median": 1.8228510720655322,
+        "min": 1.8228055671788752,
+        "max": 1.8229781643021852,
+        "values": [
+          1.8228510720655322,
+          1.8229781643021852,
+          1.8228055671788752
+        ]
+      },
+      "post_seconds": {
+        "median": 0.007573080249130726,
+        "min": 0.00757192075252533,
+        "max": 0.007594981929287314,
+        "values": [
+          0.007573080249130726,
+          0.007594981929287314,
+          0.00757192075252533
+        ]
+      },
+      "allocated": 1.5454540252685547,
+      "reserved": 1.82421875,
+      "nvml": 2.439453125,
+      "max_true_residual": 8.806873461594957e-09,
+      "iterations": [
+        327
+      ],
+      "CH_repeat_difference": 7.247932615103028e-17
+    },
+    {
+      "case": "woven",
+      "grid": 192,
+      "variant": "latest",
+      "repeats": 3,
+      "time": {
+        "median": 1.8884766909759492,
+        "min": 1.8864368440117687,
+        "max": 1.9137400600593537,
+        "values": [
+          1.9137400600593537,
+          1.8884766909759492,
+          1.8864368440117687
+        ]
+      },
+      "compute": {
+        "median": 1.6682773630600423,
+        "min": 1.6682741749100387,
+        "max": 1.674077610950917,
+        "values": [
+          1.674077610950917,
+          1.6682773630600423,
+          1.6682741749100387
+        ]
+      },
+      "nvml": 2.439453125,
+      "iterations": [
+        327
+      ],
+      "allocated": 1.5506763458251953,
+      "reserved": 1.82421875,
+      "max_true_residual": 8.806874479407857e-09,
+      "ku_ms": {
+        "median": 2.1706560134887694,
+        "min": 2.170596885681152,
+        "max": 2.1706960678100584,
+        "values": [
+          2.1706960678100584,
+          2.1706560134887694,
+          2.170596885681152
+        ]
+      },
+      "precond_ms": {
+        "median": 0.8708864212036133,
+        "min": 0.8708304405212403,
+        "max": 0.8711407661437989,
+        "values": [
+          0.8708304405212403,
+          0.8711407661437989,
+          0.8708864212036133
+        ]
+      },
+      "CH_error_vs27": 2.4798009589103895e-11,
+      "records": [
+        "../stencil27_baseline_20261023/formal/results/woven_192_latest_r0.json",
+        "../stencil27_baseline_20261023/formal/results/woven_192_latest_r1.json",
+        "../stencil27_baseline_20261023/formal/results/woven_192_latest_r2.json"
+      ],
+      "rhs_seconds": {
+        "median": 0.021551455836743116,
+        "min": 0.02149779931642115,
+        "max": 0.021580398082733154,
+        "values": [
+          0.021580398082733154,
+          0.021551455836743116,
+          0.02149779931642115
+        ]
+      },
+      "solve_seconds": {
+        "median": 1.446958185872063,
+        "min": 1.4465413563884795,
+        "max": 1.4470587151590735,
+        "values": [
+          1.4470587151590735,
+          1.446958185872063,
+          1.4465413563884795
+        ]
+      },
+      "post_seconds": {
+        "median": 0.007715943269431591,
+        "min": 0.00767258508130908,
+        "max": 0.007757710991427302,
+        "values": [
+          0.007757710991427302,
+          0.007715943269431591,
+          0.00767258508130908
+        ]
+      },
+      "setup_seconds": {
+        "median": 0.1885905540548265,
+        "min": 0.18794113164767623,
+        "max": 0.1932557262480259,
+        "values": [
+          0.1932557262480259,
+          0.18794113164767623,
+          0.1885905540548265
+        ]
+      },
+      "CH_repeat_difference": 7.258069117614949e-17
+    },
+    {
+      "case": "woven",
+      "grid": 192,
+      "variant": "modal",
+      "repeats": 3,
+      "time": {
+        "median": 2.5796876130625606,
+        "min": 2.57543400186114,
+        "max": 2.5922141410410404,
+        "values": [
+          2.5922141410410404,
+          2.57543400186114,
+          2.5796876130625606
+        ]
+      },
+      "compute": {
+        "median": 2.357979997061193,
+        "min": 2.3571585598401725,
+        "max": 2.3584798579104245,
+        "values": [
+          2.357979997061193,
+          2.3571585598401725,
+          2.3584798579104245
+        ]
+      },
+      "nvml": 4.671875,
+      "iterations": [
+        337
+      ],
+      "allocated": 2.883040428161621,
+      "reserved": 4.056640625,
+      "max_true_residual": 9.311146376309256e-09,
+      "ku_ms": {
+        "median": 3.2433712005615236,
+        "min": 3.2433441162109373,
+        "max": 3.243460845947266,
+        "values": [
+          3.2433441162109373,
+          3.2433712005615236,
+          3.243460845947266
+        ]
+      },
+      "precond_ms": {
+        "median": 1.3749839782714843,
+        "min": 1.3749600410461427,
+        "max": 1.3750255584716797,
+        "values": [
+          1.3749600410461427,
+          1.3750255584716797,
+          1.3749839782714843
+        ]
+      },
+      "CH_error_vs27": 1.3186474751603747e-14,
+      "records": [
+        "../stencil27_baseline_20261023/formal/results/woven_192_modal_r0.json",
+        "../stencil27_baseline_20261023/formal/results/woven_192_modal_r1.json",
+        "../stencil27_baseline_20261023/formal/results/woven_192_modal_r2.json"
+      ],
+      "rhs_seconds": {
+        "median": 0.037708701100200415,
+        "min": 0.03764562215656042,
+        "max": 0.037745191249996424,
+        "values": [
+          0.037745191249996424,
+          0.037708701100200415,
+          0.03764562215656042
+        ]
+      },
+      "solve_seconds": {
+        "median": 2.197192330379039,
+        "min": 2.196982602123171,
+        "max": 2.1972092078067362,
+        "values": [
+          2.197192330379039,
+          2.1972092078067362,
+          2.196982602123171
+        ]
+      },
+      "post_seconds": {
+        "median": 0.010689418064430356,
+        "min": 0.010669148992747068,
+        "max": 0.010773667600005865,
+        "values": [
+          0.010773667600005865,
+          0.010689418064430356,
+          0.010669148992747068
+        ]
+      },
+      "setup_seconds": {
+        "median": 0.10773282987065613,
+        "min": 0.10752521664835513,
+        "max": 0.10916152410209179,
+        "values": [
+          0.10773282987065613,
+          0.10752521664835513,
+          0.10916152410209179
+        ]
+      },
+      "CH_repeat_difference": 6.059948862773661e-17
+    },
+    {
+      "case": "woven",
+      "grid": 192,
+      "variant": "paper",
+      "repeats": 3,
+      "time": {
+        "median": 3.3765898218844086,
+        "min": 3.367048627929762,
+        "max": 3.3922768658958375,
+        "values": [
+          3.3922768658958375,
+          3.367048627929762,
+          3.3765898218844086
+        ]
+      },
+      "compute": {
+        "median": 3.1412737139035016,
+        "min": 3.1407541357912123,
+        "max": 3.1429712080862373,
+        "values": [
+          3.1429712080862373,
+          3.1412737139035016,
+          3.1407541357912123
+        ]
+      },
+      "nvml": 11.31640625,
+      "iterations": [
+        337
+      ],
+      "allocated": 9.527571678161621,
+      "reserved": 10.701171875,
+      "max_true_residual": 9.311147664297037e-09,
+      "ku_ms": {
+        "median": 4.756433486938477,
+        "min": 4.755692672729492,
+        "max": 4.757673645019532,
+        "values": [
+          4.757673645019532,
+          4.756433486938477,
+          4.755692672729492
+        ]
+      },
+      "precond_ms": {
+        "median": 1.375107192993164,
+        "min": 1.3750623703002929,
+        "max": 1.375607967376709,
+        "values": [
+          1.3750623703002929,
+          1.375107192993164,
+          1.375607967376709
+        ]
+      },
+      "CH_error_vs27": 6.043937651606505e-16,
+      "records": [
+        "../stencil27_baseline_20261023/formal/results/woven_192_paper_r0.json",
+        "../stencil27_baseline_20261023/formal/results/woven_192_paper_r1.json",
+        "../stencil27_baseline_20261023/formal/results/woven_192_paper_r2.json"
+      ],
+      "rhs_seconds": {
+        "median": 0.03772757202386856,
+        "min": 0.03759639197960496,
+        "max": 0.03778333170339465,
+        "values": [
+          0.03778333170339465,
+          0.03772757202386856,
+          0.03759639197960496
+        ]
+      },
+      "solve_seconds": {
+        "median": 2.7718531431164593,
+        "min": 2.7718431670218706,
+        "max": 2.7725885901600122,
+        "values": [
+          2.7725885901600122,
+          2.7718531431164593,
+          2.7718431670218706
+        ]
+      },
+      "post_seconds": {
+        "median": 0.010953790973871946,
+        "min": 0.010858110385015607,
+        "max": 0.011016291799023747,
+        "values": [
+          0.011016291799023747,
+          0.010953790973871946,
+          0.010858110385015607
+        ]
+      },
+      "setup_seconds": {
+        "median": 0.316282513551414,
+        "min": 0.316269441973418,
+        "max": 0.31690104492008686,
+        "values": [
+          0.31690104492008686,
+          0.316269441973418,
+          0.316282513551414
+        ]
+      },
+      "CH_repeat_difference": 0.0
+    },
+    {
+      "case": "woven",
+      "grid": 256,
+      "variant": "latest",
+      "repeats": 3,
+      "records": [
+        "remote\\results\\woven_256_latest_r0.json",
+        "remote\\results\\woven_256_latest_r1.json",
+        "remote\\results\\woven_256_latest_r2.json"
+      ],
+      "time": {
+        "median": 4.386728346114978,
+        "min": 4.36843168688938,
+        "max": 4.407801754074171,
+        "values": [
+          4.407801754074171,
+          4.386728346114978,
+          4.36843168688938
+        ]
+      },
+      "compute": {
+        "median": 4.136796954087913,
+        "min": 4.135953199118376,
+        "max": 4.137827683007345,
+        "values": [
+          4.135953199118376,
+          4.137827683007345,
+          4.136796954087913
+        ]
+      },
+      "ku_ms": {
+        "median": 5.1136432647705075,
+        "min": 5.113593673706054,
+        "max": 5.113729476928711,
+        "values": [
+          5.1136432647705075,
+          5.113593673706054,
+          5.113729476928711
+        ]
+      },
+      "precond_ms": {
+        "median": 2.7918575286865233,
+        "min": 2.7909536361694336,
+        "max": 2.791975975036621,
+        "values": [
+          2.791975975036621,
+          2.7909536361694336,
+          2.7918575286865233
+        ]
+      },
+      "setup_seconds": {
+        "median": 0.43791804905049503,
+        "min": 0.4369019609875977,
+        "max": 0.43926938087679446,
+        "values": [
+          0.4369019609875977,
+          0.43926938087679446,
+          0.43791804905049503
+        ]
+      },
+      "rhs_seconds": {
+        "median": 0.05090773315168917,
+        "min": 0.050891165155917406,
+        "max": 0.05090940371155739,
+        "values": [
+          0.050891165155917406,
+          0.05090773315168917,
+          0.05090940371155739
+        ]
+      },
+      "solve_seconds": {
+        "median": 3.6256449709180743,
+        "min": 3.6255265502259135,
+        "max": 3.625882951077074,
+        "values": [
+          3.6256449709180743,
+          3.6255265502259135,
+          3.625882951077074
+        ]
+      },
+      "post_seconds": {
+        "median": 0.017518601613119245,
+        "min": 0.01751143392175436,
+        "max": 0.017525573261082172,
+        "values": [
+          0.01751143392175436,
+          0.017518601613119245,
+          0.017525573261082172
+        ]
+      },
+      "allocated": 3.6277499198913574,
+      "reserved": 4.1484375,
+      "nvml": 4.763671875,
+      "max_true_residual": 9.658114022029467e-09,
+      "iterations": [
+        327
+      ],
+      "CH_repeat_difference": 7.280665168726627e-18
+    },
+    {
+      "case": "woven",
+      "grid": 64,
+      "variant": "stencil27",
+      "repeats": 3,
+      "time": {
+        "median": 0.4424019120633602,
+        "min": 0.43883705302141607,
+        "max": 0.4566921000368893,
+        "values": [
+          0.4566921000368893,
+          0.4424019120633602,
+          0.43883705302141607
+        ]
+      },
+      "compute": {
+        "median": 0.18914477108046412,
+        "min": 0.18912032106891274,
+        "max": 0.18931477284058928,
+        "values": [
+          0.18912032106891274,
+          0.18914477108046412,
+          0.18931477284058928
+        ]
+      },
+      "nvml": 1.552734375,
+      "iterations": [
+        325
+      ],
+      "allocated": 0.7287197113037109,
+      "reserved": 0.9375,
+      "max_true_residual": 8.700940049863025e-09,
+      "ku_ms": {
+        "median": 0.33085920810699465,
+        "min": 0.330787205696106,
+        "max": 0.3314496040344238,
+        "values": [
+          0.33085920810699465,
+          0.330787205696106,
+          0.3314496040344238
+        ]
+      },
+      "precond_ms": {
+        "median": 0.03691999912261963,
+        "min": 0.036513599753379825,
+        "max": 0.03725920021533966,
+        "values": [
+          0.036513599753379825,
+          0.03691999912261963,
+          0.03725920021533966
+        ]
+      },
+      "CH_error_vs27": 0.0,
+      "records": [
+        "../stencil27_baseline_20261023/formal/results/woven_64_stencil27_r0.json",
+        "../stencil27_baseline_20261023/formal/results/woven_64_stencil27_r1.json",
+        "../stencil27_baseline_20261023/formal/results/woven_64_stencil27_r2.json"
+      ],
+      "rhs_seconds": {
+        "median": 0.0015685921534895897,
+        "min": 0.0015619019977748394,
+        "max": 0.001571143977344036,
+        "values": [
+          0.0015685921534895897,
+          0.001571143977344036,
+          0.0015619019977748394
+        ]
+      },
+      "solve_seconds": {
+        "median": 0.1500927589368075,
+        "min": 0.15008066780865192,
+        "max": 0.15027981926687062,
+        "values": [
+          0.1500927589368075,
+          0.15008066780865192,
+          0.15027981926687062
+        ]
+      },
+      "post_seconds": {
+        "median": 0.0007974670734256506,
+        "min": 0.0007912958972156048,
+        "max": 0.0008106357418000698,
+        "values": [
+          0.0007974670734256506,
+          0.0008106357418000698,
+          0.0007912958972156048
+        ]
+      },
+      "setup_seconds": {
+        "median": 0.0322916058357805,
+        "min": 0.03226787596940994,
+        "max": 0.03242189763113856,
+        "values": [
+          0.03226787596940994,
+          0.0322916058357805,
+          0.03242189763113856
+        ]
+      },
+      "CH_repeat_difference": 0.0
+    },
+    {
+      "case": "woven",
+      "grid": 128,
+      "variant": "stencil27",
+      "repeats": 3,
+      "time": {
+        "median": 1.4899939510505646,
+        "min": 1.4831594850402325,
+        "max": 1.4967896181624383,
+        "values": [
+          1.4899939510505646,
+          1.4967896181624383,
+          1.4831594850402325
+        ]
+      },
+      "compute": {
+        "median": 1.2602808449883014,
+        "min": 1.2601018131244928,
+        "max": 1.2605437070596963,
+        "values": [
+          1.2601018131244928,
+          1.2602808449883014,
+          1.2605437070596963
+        ]
+      },
+      "nvml": 6.021484375,
+      "iterations": [
+        333
+      ],
+      "allocated": 4.673720359802246,
+      "reserved": 5.40625,
+      "max_true_residual": 9.55399775969101e-09,
+      "ku_ms": {
+        "median": 2.470652770996094,
+        "min": 2.470251274108887,
+        "max": 2.4707616806030273,
+        "values": [
+          2.470251274108887,
+          2.4707616806030273,
+          2.470652770996094
+        ]
+      },
+      "precond_ms": {
+        "median": 0.22567999362945557,
+        "min": 0.22560958862304686,
+        "max": 0.22582879066467285,
+        "values": [
+          0.22560958862304686,
+          0.22582879066467285,
+          0.22567999362945557
+        ]
+      },
+      "CH_error_vs27": 0.0,
+      "records": [
+        "../stencil27_baseline_20261023/formal/results/woven_128_stencil27_r0.json",
+        "../stencil27_baseline_20261023/formal/results/woven_128_stencil27_r1.json",
+        "../stencil27_baseline_20261023/formal/results/woven_128_stencil27_r2.json"
+      ],
+      "rhs_seconds": {
+        "median": 0.011147842044010758,
+        "min": 0.011112363776192069,
+        "max": 0.01115400274284184,
+        "values": [
+          0.011112363776192069,
+          0.01115400274284184,
+          0.011147842044010758
+        ]
+      },
+      "solve_seconds": {
+        "median": 1.0840092492289841,
+        "min": 1.0838254769332707,
+        "max": 1.0841947412118316,
+        "values": [
+          1.0838254769332707,
+          1.0840092492289841,
+          1.0841947412118316
+        ]
+      },
+      "post_seconds": {
+        "median": 0.0034753577783703804,
+        "min": 0.003469929564744234,
+        "max": 0.003477639751508832,
+        "values": [
+          0.003469929564744234,
+          0.003477639751508832,
+          0.0034753577783703804
+        ]
+      },
+      "setup_seconds": {
+        "median": 0.1573123491834849,
+        "min": 0.15722754737362266,
+        "max": 0.1573191387578845,
+        "values": [
+          0.15722754737362266,
+          0.1573123491834849,
+          0.1573191387578845
+        ]
+      },
+      "CH_repeat_difference": 0.0
+    },
+    {
+      "case": "woven",
+      "grid": 192,
+      "variant": "stencil27",
+      "repeats": 3,
+      "time": {
+        "median": 4.832374266115949,
+        "min": 4.815420726081356,
+        "max": 4.8387832588050514,
+        "values": [
+          4.832374266115949,
+          4.815420726081356,
+          4.8387832588050514
+        ]
+      },
+      "compute": {
+        "median": 4.594981295987964,
+        "min": 4.593792375875637,
+        "max": 4.595572551013902,
+        "values": [
+          4.593792375875637,
+          4.594981295987964,
+          4.595572551013902
+        ]
+      },
+      "nvml": 17.486328125,
+      "iterations": [
+        337
+      ],
+      "allocated": 15.697493553161621,
+      "reserved": 16.87109375,
+      "max_true_residual": 9.311145435640063e-09,
+      "ku_ms": {
+        "median": 8.318257904052734,
+        "min": 8.318199920654298,
+        "max": 8.318592071533203,
+        "values": [
+          8.318257904052734,
+          8.318199920654298,
+          8.318592071533203
+        ]
+      },
+      "precond_ms": {
+        "median": 1.3758655548095704,
+        "min": 1.3758447647094727,
+        "max": 1.3760208129882812,
+        "values": [
+          1.3760208129882812,
+          1.3758447647094727,
+          1.3758655548095704
+        ]
+      },
+      "CH_error_vs27": 0.0,
+      "records": [
+        "../stencil27_baseline_20261023/formal/results/woven_192_stencil27_r0.json",
+        "../stencil27_baseline_20261023/formal/results/woven_192_stencil27_r1.json",
+        "../stencil27_baseline_20261023/formal/results/woven_192_stencil27_r2.json"
+      ],
+      "rhs_seconds": {
+        "median": 0.037684612441807985,
+        "min": 0.037669300800189376,
+        "max": 0.03770118090324104,
+        "values": [
+          0.037669300800189376,
+          0.037684612441807985,
+          0.03770118090324104
+        ]
+      },
+      "solve_seconds": {
+        "median": 4.0366523950360715,
+        "min": 4.036305334186181,
+        "max": 4.03690085792914,
+        "values": [
+          4.036305334186181,
+          4.0366523950360715,
+          4.03690085792914
+        ]
+      },
+      "post_seconds": {
+        "median": 0.010760900098830462,
+        "min": 0.01076039019972086,
+        "max": 0.010762397898361087,
+        "values": [
+          0.010760900098830462,
+          0.010762397898361087,
+          0.01076039019972086
+        ]
+      },
+      "setup_seconds": {
+        "median": 0.5051881007384509,
+        "min": 0.5042534149251878,
+        "max": 0.505418102722615,
+        "values": [
+          0.5042534149251878,
+          0.5051881007384509,
+          0.505418102722615
+        ]
+      },
+      "CH_repeat_difference": 0.0
+    },
+    {
+      "case": "sphere",
+      "grid": 192,
+      "variant": "stencil27",
+      "repeats": 3,
+      "time": {
+        "median": 3.639700239058584,
+        "min": 3.631202224176377,
+        "max": 3.644461249001324,
+        "values": [
+          3.639700239058584,
+          3.644461249001324,
+          3.631202224176377
+        ]
+      },
+      "compute": {
+        "median": 3.3990609981119633,
+        "min": 3.398957721889019,
+        "max": 3.3996475769672543,
+        "values": [
+          3.398957721889019,
+          3.3996475769672543,
+          3.3990609981119633
+        ]
+      },
+      "nvml": 17.986328125,
+      "iterations": [
+        234
+      ],
+      "allocated": 15.697493553161621,
+      "reserved": 17.37109375,
+      "max_true_residual": 8.848453082386936e-09,
+      "ku_ms": {
+        "median": 8.317800140380859,
+        "min": 8.317497253417969,
+        "max": 8.318116760253906,
+        "values": [
+          8.317800140380859,
+          8.318116760253906,
+          8.317497253417969
+        ]
+      },
+      "precond_ms": {
+        "median": 1.37609920501709,
+        "min": 1.375879955291748,
+        "max": 1.3762784004211426,
+        "values": [
+          1.375879955291748,
+          1.37609920501709,
+          1.3762784004211426
+        ]
+      },
+      "CH_error_vs27": 0.0,
+      "records": [
+        "../stencil27_baseline_20261023/formal/results/sphere_192_stencil27_r0.json",
+        "../stencil27_baseline_20261023/formal/results/sphere_192_stencil27_r1.json",
+        "../stencil27_baseline_20261023/formal/results/sphere_192_stencil27_r2.json"
+      ],
+      "rhs_seconds": {
+        "median": 0.03773918189108372,
+        "min": 0.03768656309694052,
+        "max": 0.037754971999675035,
+        "values": [
+          0.03773918189108372,
+          0.037754971999675035,
+          0.03768656309694052
+        ]
+      },
+      "solve_seconds": {
+        "median": 2.820316794561222,
+        "min": 2.8199790951330215,
+        "max": 2.8207711891736835,
+        "values": [
+          2.820316794561222,
+          2.8207711891736835,
+          2.8199790951330215
+        ]
+      },
+      "post_seconds": {
+        "median": 0.01067032921127975,
+        "min": 0.010626468807458878,
+        "max": 0.010688356822356582,
+        "values": [
+          0.010688356822356582,
+          0.01067032921127975,
+          0.010626468807458878
+        ]
+      },
+      "setup_seconds": {
+        "median": 0.5258387615904212,
+        "min": 0.5253763378132135,
+        "max": 0.5263106047641486,
+        "values": [
+          0.5253763378132135,
+          0.5258387615904212,
+          0.5263106047641486
+        ]
+      },
+      "CH_repeat_difference": 0.0
+    },
+    {
+      "case": "grosmont",
+      "grid": 192,
+      "variant": "stencil27",
+      "repeats": 3,
+      "time": {
+        "median": 4.040842390153557,
+        "min": 4.029447615845129,
+        "max": 4.054988187039271,
+        "values": [
+          4.054988187039271,
+          4.040842390153557,
+          4.029447615845129
+        ]
+      },
+      "compute": {
+        "median": 3.7987442819867283,
+        "min": 3.7986828428693116,
+        "max": 3.8013808738905936,
+        "values": [
+          3.7987442819867283,
+          3.8013808738905936,
+          3.7986828428693116
+        ]
+      },
+      "nvml": 22.046875,
+      "iterations": [
+        251
+      ],
+      "allocated": 15.697493553161621,
+      "reserved": 21.431640625,
+      "max_true_residual": 9.587388370627868e-09,
+      "ku_ms": {
+        "median": 8.318083190917969,
+        "min": 8.317865753173828,
+        "max": 8.318828582763672,
+        "values": [
+          8.318083190917969,
+          8.317865753173828,
+          8.318828582763672
+        ]
+      },
+      "precond_ms": {
+        "median": 1.3767184257507323,
+        "min": 1.376473617553711,
+        "max": 1.3770959854125977,
+        "values": [
+          1.3770959854125977,
+          1.3767184257507323,
+          1.376473617553711
+        ]
+      },
+      "CH_error_vs27": 0.0,
+      "records": [
+        "../stencil27_baseline_20261023/formal/results/grosmont_192_stencil27_r0.json",
+        "../stencil27_baseline_20261023/formal/results/grosmont_192_stencil27_r1.json",
+        "../stencil27_baseline_20261023/formal/results/grosmont_192_stencil27_r2.json"
+      ],
+      "rhs_seconds": {
+        "median": 0.03774910210631788,
+        "min": 0.037706992123275995,
+        "max": 0.03775054286234081,
+        "values": [
+          0.037706992123275995,
+          0.03774910210631788,
+          0.03775054286234081
+        ]
+      },
+      "solve_seconds": {
+        "median": 3.0907606517430395,
+        "min": 3.0906873282510787,
+        "max": 3.090940525988117,
+        "values": [
+          3.0906873282510787,
+          3.090940525988117,
+          3.0907606517430395
+        ]
+      },
+      "post_seconds": {
+        "median": 0.01069719810038805,
+        "min": 0.010684128385037184,
+        "max": 0.010706526227295399,
+        "values": [
+          0.010706526227295399,
+          0.01069719810038805,
+          0.010684128385037184
+        ]
+      },
+      "setup_seconds": {
+        "median": 0.6550185331143439,
+        "min": 0.6549815356265754,
+        "max": 0.6575305282603949,
+        "values": [
+          0.6549815356265754,
+          0.6575305282603949,
+          0.6550185331143439
+        ]
+      },
+      "CH_repeat_difference": 0.0
+    }
+  ],
+  "provenance": {
+    "historical_summary": "summary.json",
+    "historical_sha256": "b6a63b2d951b541b1f70932897645b2fe8441bad0e20e4b89671a0b163c0c056",
+    "baseline_campaign": "../stencil27_baseline_20261023/formal/summary.json",
+    "baseline_campaign_sha256": "de2b405780e475fdf708cf94f0a25abe0de820b366af9736eba94ccfb587d5d0",
+    "module_pairs": "Use current matched 27/14/modal records; preserve archived matched material and iteration pairs."
+  }
+}

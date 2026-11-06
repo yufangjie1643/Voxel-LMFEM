@@ -1,0 +1,25 @@
+{
+  "complete": true,
+  "jobs": [
+    {
+      "name": "independent_gpu_validation",
+      "arguments": [
+        "/home/yufan/code/fead-hybrid-operator-20261021/validate.py",
+        "--phase",
+        "gpu",
+        "--output",
+        "\\home\\yufan\\code\\fead-solver-study-20261022\\results\\validate_gpu.json"
+      ]
+    }
+  ],
+  "completed": [
+    {
+      "name": "independent_gpu_validation",
+      "log": "/home/yufan/code/fead-solver-study-20261022/logs/independent_gpu_validation.log",
+      "telemetry": "/home/yufan/code/fead-solver-study-20261022/logs/independent_gpu_validation_telemetry.json",
+      "process_wall_seconds": 4.068267758004367,
+      "complete": true
+    }
+  ],
+  "failed": null
+}

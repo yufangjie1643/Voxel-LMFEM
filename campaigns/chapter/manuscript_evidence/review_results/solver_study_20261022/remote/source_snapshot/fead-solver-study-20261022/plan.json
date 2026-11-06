@@ -1,0 +1,1190 @@
+[
+  {
+    "name": "woven_192_paper_r0",
+    "arguments": [
+      "study.py",
+      "--case",
+      "woven",
+      "--grid",
+      "192",
+      "--variant",
+      "paper",
+      "--repeat",
+      "0"
+    ]
+  },
+  {
+    "name": "woven_192_modal_r0",
+    "arguments": [
+      "study.py",
+      "--case",
+      "woven",
+      "--grid",
+      "192",
+      "--variant",
+      "modal",
+      "--repeat",
+      "0"
+    ]
+  },
+  {
+    "name": "woven_192_analytic_r0",
+    "arguments": [
+      "study.py",
+      "--case",
+      "woven",
+      "--grid",
+      "192",
+      "--variant",
+      "analytic",
+      "--repeat",
+      "0"
+    ]
+  },
+  {
+    "name": "woven_192_fft_r0",
+    "arguments": [
+      "study.py",
+      "--case",
+      "woven",
+      "--grid",
+      "192",
+      "--variant",
+      "fft",
+      "--repeat",
+      "0"
+    ]
+  },
+  {
+    "name": "woven_192_fusion_r0",
+    "arguments": [
+      "study.py",
+      "--case",
+      "woven",
+      "--grid",
+      "192",
+      "--variant",
+      "fusion",
+      "--repeat",
+      "0"
+    ]
+  },
+  {
+    "name": "woven_192_chain_r0",
+    "arguments": [
+      "study.py",
+      "--case",
+      "woven",
+      "--grid",
+      "192",
+      "--variant",
+      "chain",
+      "--repeat",
+      "0"
+    ]
+  },
+  {
+    "name": "woven_192_dense_r0",
+    "arguments": [
+      "study.py",
+      "--case",
+      "woven",
+      "--grid",
+      "192",
+      "--variant",
+      "dense",
+      "--repeat",
+      "0"
+    ]
+  },
+  {
+    "name": "woven_192_hybrid_r0",
+    "arguments": [
+      "study.py",
+      "--case",
+      "woven",
+      "--grid",
+      "192",
+      "--variant",
+      "hybrid",
+      "--repeat",
+      "0"
+    ]
+  },
+  {
+    "name": "woven_192_latest_r0",
+    "arguments": [
+      "study.py",
+      "--case",
+      "woven",
+      "--grid",
+      "192",
+      "--variant",
+      "latest",
+      "--repeat",
+      "0"
+    ]
+  },
+  {
+    "name": "woven_64_paper_r0",
+    "arguments": [
+      "study.py",
+      "--case",
+      "woven",
+      "--grid",
+      "64",
+      "--variant",
+      "paper",
+      "--repeat",
+      "0"
+    ]
+  },
+  {
+    "name": "woven_64_chain_r0",
+    "arguments": [
+      "study.py",
+      "--case",
+      "woven",
+      "--grid",
+      "64",
+      "--variant",
+      "chain",
+      "--repeat",
+      "0"
+    ]
+  },
+  {
+    "name": "woven_64_latest_r0",
+    "arguments": [
+      "study.py",
+      "--case",
+      "woven",
+      "--grid",
+      "64",
+      "--variant",
+      "latest",
+      "--repeat",
+      "0"
+    ]
+  },
+  {
+    "name": "woven_128_paper_r0",
+    "arguments": [
+      "study.py",
+      "--case",
+      "woven",
+      "--grid",
+      "128",
+      "--variant",
+      "paper",
+      "--repeat",
+      "0"
+    ]
+  },
+  {
+    "name": "woven_128_chain_r0",
+    "arguments": [
+      "study.py",
+      "--case",
+      "woven",
+      "--grid",
+      "128",
+      "--variant",
+      "chain",
+      "--repeat",
+      "0"
+    ]
+  },
+  {
+    "name": "woven_128_latest_r0",
+    "arguments": [
+      "study.py",
+      "--case",
+      "woven",
+      "--grid",
+      "128",
+      "--variant",
+      "latest",
+      "--repeat",
+      "0"
+    ]
+  },
+  {
+    "name": "woven_256_latest_r0",
+    "arguments": [
+      "study.py",
+      "--case",
+      "woven",
+      "--grid",
+      "256",
+      "--variant",
+      "latest",
+      "--repeat",
+      "0"
+    ]
+  },
+  {
+    "name": "sphere_192_paper_r0",
+    "arguments": [
+      "study.py",
+      "--case",
+      "sphere",
+      "--grid",
+      "192",
+      "--variant",
+      "paper",
+      "--repeat",
+      "0"
+    ]
+  },
+  {
+    "name": "sphere_192_chain_r0",
+    "arguments": [
+      "study.py",
+      "--case",
+      "sphere",
+      "--grid",
+      "192",
+      "--variant",
+      "chain",
+      "--repeat",
+      "0"
+    ]
+  },
+  {
+    "name": "sphere_192_latest_r0",
+    "arguments": [
+      "study.py",
+      "--case",
+      "sphere",
+      "--grid",
+      "192",
+      "--variant",
+      "latest",
+      "--repeat",
+      "0"
+    ]
+  },
+  {
+    "name": "sphere_192_chfem_r0",
+    "arguments": [
+      "chfem_study.py",
+      "--phase",
+      "measure",
+      "--input",
+      "inputs/sphere_192.npy",
+      "--output",
+      "results/sphere_192_chfem_r0.json",
+      "--native-tol",
+      "2e-9",
+      "--repeat",
+      "0"
+    ]
+  },
+  {
+    "name": "grosmont_192_paper_r0",
+    "arguments": [
+      "study.py",
+      "--case",
+      "grosmont",
+      "--grid",
+      "192",
+      "--variant",
+      "paper",
+      "--repeat",
+      "0"
+    ]
+  },
+  {
+    "name": "grosmont_192_chain_r0",
+    "arguments": [
+      "study.py",
+      "--case",
+      "grosmont",
+      "--grid",
+      "192",
+      "--variant",
+      "chain",
+      "--repeat",
+      "0"
+    ]
+  },
+  {
+    "name": "grosmont_192_latest_r0",
+    "arguments": [
+      "study.py",
+      "--case",
+      "grosmont",
+      "--grid",
+      "192",
+      "--variant",
+      "latest",
+      "--repeat",
+      "0"
+    ]
+  },
+  {
+    "name": "grosmont_192_chfem_r0",
+    "arguments": [
+      "chfem_study.py",
+      "--phase",
+      "measure",
+      "--input",
+      "inputs/grosmont_192.npy",
+      "--output",
+      "results/grosmont_192_chfem_r0.json",
+      "--native-tol",
+      "2e-9",
+      "--repeat",
+      "0"
+    ]
+  },
+  {
+    "name": "fraction50_128_hybrid_r0",
+    "arguments": [
+      "study.py",
+      "--case",
+      "fraction50",
+      "--grid",
+      "128",
+      "--variant",
+      "hybrid",
+      "--repeat",
+      "0"
+    ]
+  },
+  {
+    "name": "fraction50_128_latest_r0",
+    "arguments": [
+      "study.py",
+      "--case",
+      "fraction50",
+      "--grid",
+      "128",
+      "--variant",
+      "latest",
+      "--repeat",
+      "0"
+    ]
+  },
+  {
+    "name": "fraction90_128_hybrid_r0",
+    "arguments": [
+      "study.py",
+      "--case",
+      "fraction90",
+      "--grid",
+      "128",
+      "--variant",
+      "hybrid",
+      "--repeat",
+      "0"
+    ]
+  },
+  {
+    "name": "fraction90_128_latest_r0",
+    "arguments": [
+      "study.py",
+      "--case",
+      "fraction90",
+      "--grid",
+      "128",
+      "--variant",
+      "latest",
+      "--repeat",
+      "0"
+    ]
+  },
+  {
+    "name": "woven_192_fft_r1",
+    "arguments": [
+      "study.py",
+      "--case",
+      "woven",
+      "--grid",
+      "192",
+      "--variant",
+      "fft",
+      "--repeat",
+      "1"
+    ]
+  },
+  {
+    "name": "woven_192_fusion_r1",
+    "arguments": [
+      "study.py",
+      "--case",
+      "woven",
+      "--grid",
+      "192",
+      "--variant",
+      "fusion",
+      "--repeat",
+      "1"
+    ]
+  },
+  {
+    "name": "woven_192_chain_r1",
+    "arguments": [
+      "study.py",
+      "--case",
+      "woven",
+      "--grid",
+      "192",
+      "--variant",
+      "chain",
+      "--repeat",
+      "1"
+    ]
+  },
+  {
+    "name": "woven_192_dense_r1",
+    "arguments": [
+      "study.py",
+      "--case",
+      "woven",
+      "--grid",
+      "192",
+      "--variant",
+      "dense",
+      "--repeat",
+      "1"
+    ]
+  },
+  {
+    "name": "woven_192_hybrid_r1",
+    "arguments": [
+      "study.py",
+      "--case",
+      "woven",
+      "--grid",
+      "192",
+      "--variant",
+      "hybrid",
+      "--repeat",
+      "1"
+    ]
+  },
+  {
+    "name": "woven_192_latest_r1",
+    "arguments": [
+      "study.py",
+      "--case",
+      "woven",
+      "--grid",
+      "192",
+      "--variant",
+      "latest",
+      "--repeat",
+      "1"
+    ]
+  },
+  {
+    "name": "woven_192_paper_r1",
+    "arguments": [
+      "study.py",
+      "--case",
+      "woven",
+      "--grid",
+      "192",
+      "--variant",
+      "paper",
+      "--repeat",
+      "1"
+    ]
+  },
+  {
+    "name": "woven_192_modal_r1",
+    "arguments": [
+      "study.py",
+      "--case",
+      "woven",
+      "--grid",
+      "192",
+      "--variant",
+      "modal",
+      "--repeat",
+      "1"
+    ]
+  },
+  {
+    "name": "woven_192_analytic_r1",
+    "arguments": [
+      "study.py",
+      "--case",
+      "woven",
+      "--grid",
+      "192",
+      "--variant",
+      "analytic",
+      "--repeat",
+      "1"
+    ]
+  },
+  {
+    "name": "woven_64_chain_r1",
+    "arguments": [
+      "study.py",
+      "--case",
+      "woven",
+      "--grid",
+      "64",
+      "--variant",
+      "chain",
+      "--repeat",
+      "1"
+    ]
+  },
+  {
+    "name": "woven_64_latest_r1",
+    "arguments": [
+      "study.py",
+      "--case",
+      "woven",
+      "--grid",
+      "64",
+      "--variant",
+      "latest",
+      "--repeat",
+      "1"
+    ]
+  },
+  {
+    "name": "woven_64_paper_r1",
+    "arguments": [
+      "study.py",
+      "--case",
+      "woven",
+      "--grid",
+      "64",
+      "--variant",
+      "paper",
+      "--repeat",
+      "1"
+    ]
+  },
+  {
+    "name": "woven_128_chain_r1",
+    "arguments": [
+      "study.py",
+      "--case",
+      "woven",
+      "--grid",
+      "128",
+      "--variant",
+      "chain",
+      "--repeat",
+      "1"
+    ]
+  },
+  {
+    "name": "woven_128_latest_r1",
+    "arguments": [
+      "study.py",
+      "--case",
+      "woven",
+      "--grid",
+      "128",
+      "--variant",
+      "latest",
+      "--repeat",
+      "1"
+    ]
+  },
+  {
+    "name": "woven_128_paper_r1",
+    "arguments": [
+      "study.py",
+      "--case",
+      "woven",
+      "--grid",
+      "128",
+      "--variant",
+      "paper",
+      "--repeat",
+      "1"
+    ]
+  },
+  {
+    "name": "woven_256_latest_r1",
+    "arguments": [
+      "study.py",
+      "--case",
+      "woven",
+      "--grid",
+      "256",
+      "--variant",
+      "latest",
+      "--repeat",
+      "1"
+    ]
+  },
+  {
+    "name": "sphere_192_chain_r1",
+    "arguments": [
+      "study.py",
+      "--case",
+      "sphere",
+      "--grid",
+      "192",
+      "--variant",
+      "chain",
+      "--repeat",
+      "1"
+    ]
+  },
+  {
+    "name": "sphere_192_latest_r1",
+    "arguments": [
+      "study.py",
+      "--case",
+      "sphere",
+      "--grid",
+      "192",
+      "--variant",
+      "latest",
+      "--repeat",
+      "1"
+    ]
+  },
+  {
+    "name": "sphere_192_chfem_r1",
+    "arguments": [
+      "chfem_study.py",
+      "--phase",
+      "measure",
+      "--input",
+      "inputs/sphere_192.npy",
+      "--output",
+      "results/sphere_192_chfem_r1.json",
+      "--native-tol",
+      "2e-9",
+      "--repeat",
+      "1"
+    ]
+  },
+  {
+    "name": "sphere_192_paper_r1",
+    "arguments": [
+      "study.py",
+      "--case",
+      "sphere",
+      "--grid",
+      "192",
+      "--variant",
+      "paper",
+      "--repeat",
+      "1"
+    ]
+  },
+  {
+    "name": "grosmont_192_chain_r1",
+    "arguments": [
+      "study.py",
+      "--case",
+      "grosmont",
+      "--grid",
+      "192",
+      "--variant",
+      "chain",
+      "--repeat",
+      "1"
+    ]
+  },
+  {
+    "name": "grosmont_192_latest_r1",
+    "arguments": [
+      "study.py",
+      "--case",
+      "grosmont",
+      "--grid",
+      "192",
+      "--variant",
+      "latest",
+      "--repeat",
+      "1"
+    ]
+  },
+  {
+    "name": "grosmont_192_chfem_r1",
+    "arguments": [
+      "chfem_study.py",
+      "--phase",
+      "measure",
+      "--input",
+      "inputs/grosmont_192.npy",
+      "--output",
+      "results/grosmont_192_chfem_r1.json",
+      "--native-tol",
+      "2e-9",
+      "--repeat",
+      "1"
+    ]
+  },
+  {
+    "name": "grosmont_192_paper_r1",
+    "arguments": [
+      "study.py",
+      "--case",
+      "grosmont",
+      "--grid",
+      "192",
+      "--variant",
+      "paper",
+      "--repeat",
+      "1"
+    ]
+  },
+  {
+    "name": "fraction50_128_latest_r1",
+    "arguments": [
+      "study.py",
+      "--case",
+      "fraction50",
+      "--grid",
+      "128",
+      "--variant",
+      "latest",
+      "--repeat",
+      "1"
+    ]
+  },
+  {
+    "name": "fraction50_128_hybrid_r1",
+    "arguments": [
+      "study.py",
+      "--case",
+      "fraction50",
+      "--grid",
+      "128",
+      "--variant",
+      "hybrid",
+      "--repeat",
+      "1"
+    ]
+  },
+  {
+    "name": "fraction90_128_latest_r1",
+    "arguments": [
+      "study.py",
+      "--case",
+      "fraction90",
+      "--grid",
+      "128",
+      "--variant",
+      "latest",
+      "--repeat",
+      "1"
+    ]
+  },
+  {
+    "name": "fraction90_128_hybrid_r1",
+    "arguments": [
+      "study.py",
+      "--case",
+      "fraction90",
+      "--grid",
+      "128",
+      "--variant",
+      "hybrid",
+      "--repeat",
+      "1"
+    ]
+  },
+  {
+    "name": "woven_192_dense_r2",
+    "arguments": [
+      "study.py",
+      "--case",
+      "woven",
+      "--grid",
+      "192",
+      "--variant",
+      "dense",
+      "--repeat",
+      "2"
+    ]
+  },
+  {
+    "name": "woven_192_hybrid_r2",
+    "arguments": [
+      "study.py",
+      "--case",
+      "woven",
+      "--grid",
+      "192",
+      "--variant",
+      "hybrid",
+      "--repeat",
+      "2"
+    ]
+  },
+  {
+    "name": "woven_192_latest_r2",
+    "arguments": [
+      "study.py",
+      "--case",
+      "woven",
+      "--grid",
+      "192",
+      "--variant",
+      "latest",
+      "--repeat",
+      "2"
+    ]
+  },
+  {
+    "name": "woven_192_paper_r2",
+    "arguments": [
+      "study.py",
+      "--case",
+      "woven",
+      "--grid",
+      "192",
+      "--variant",
+      "paper",
+      "--repeat",
+      "2"
+    ]
+  },
+  {
+    "name": "woven_192_modal_r2",
+    "arguments": [
+      "study.py",
+      "--case",
+      "woven",
+      "--grid",
+      "192",
+      "--variant",
+      "modal",
+      "--repeat",
+      "2"
+    ]
+  },
+  {
+    "name": "woven_192_analytic_r2",
+    "arguments": [
+      "study.py",
+      "--case",
+      "woven",
+      "--grid",
+      "192",
+      "--variant",
+      "analytic",
+      "--repeat",
+      "2"
+    ]
+  },
+  {
+    "name": "woven_192_fft_r2",
+    "arguments": [
+      "study.py",
+      "--case",
+      "woven",
+      "--grid",
+      "192",
+      "--variant",
+      "fft",
+      "--repeat",
+      "2"
+    ]
+  },
+  {
+    "name": "woven_192_fusion_r2",
+    "arguments": [
+      "study.py",
+      "--case",
+      "woven",
+      "--grid",
+      "192",
+      "--variant",
+      "fusion",
+      "--repeat",
+      "2"
+    ]
+  },
+  {
+    "name": "woven_192_chain_r2",
+    "arguments": [
+      "study.py",
+      "--case",
+      "woven",
+      "--grid",
+      "192",
+      "--variant",
+      "chain",
+      "--repeat",
+      "2"
+    ]
+  },
+  {
+    "name": "woven_64_latest_r2",
+    "arguments": [
+      "study.py",
+      "--case",
+      "woven",
+      "--grid",
+      "64",
+      "--variant",
+      "latest",
+      "--repeat",
+      "2"
+    ]
+  },
+  {
+    "name": "woven_64_paper_r2",
+    "arguments": [
+      "study.py",
+      "--case",
+      "woven",
+      "--grid",
+      "64",
+      "--variant",
+      "paper",
+      "--repeat",
+      "2"
+    ]
+  },
+  {
+    "name": "woven_64_chain_r2",
+    "arguments": [
+      "study.py",
+      "--case",
+      "woven",
+      "--grid",
+      "64",
+      "--variant",
+      "chain",
+      "--repeat",
+      "2"
+    ]
+  },
+  {
+    "name": "woven_128_latest_r2",
+    "arguments": [
+      "study.py",
+      "--case",
+      "woven",
+      "--grid",
+      "128",
+      "--variant",
+      "latest",
+      "--repeat",
+      "2"
+    ]
+  },
+  {
+    "name": "woven_128_paper_r2",
+    "arguments": [
+      "study.py",
+      "--case",
+      "woven",
+      "--grid",
+      "128",
+      "--variant",
+      "paper",
+      "--repeat",
+      "2"
+    ]
+  },
+  {
+    "name": "woven_128_chain_r2",
+    "arguments": [
+      "study.py",
+      "--case",
+      "woven",
+      "--grid",
+      "128",
+      "--variant",
+      "chain",
+      "--repeat",
+      "2"
+    ]
+  },
+  {
+    "name": "woven_256_latest_r2",
+    "arguments": [
+      "study.py",
+      "--case",
+      "woven",
+      "--grid",
+      "256",
+      "--variant",
+      "latest",
+      "--repeat",
+      "2"
+    ]
+  },
+  {
+    "name": "sphere_192_latest_r2",
+    "arguments": [
+      "study.py",
+      "--case",
+      "sphere",
+      "--grid",
+      "192",
+      "--variant",
+      "latest",
+      "--repeat",
+      "2"
+    ]
+  },
+  {
+    "name": "sphere_192_chfem_r2",
+    "arguments": [
+      "chfem_study.py",
+      "--phase",
+      "measure",
+      "--input",
+      "inputs/sphere_192.npy",
+      "--output",
+      "results/sphere_192_chfem_r2.json",
+      "--native-tol",
+      "2e-9",
+      "--repeat",
+      "2"
+    ]
+  },
+  {
+    "name": "sphere_192_paper_r2",
+    "arguments": [
+      "study.py",
+      "--case",
+      "sphere",
+      "--grid",
+      "192",
+      "--variant",
+      "paper",
+      "--repeat",
+      "2"
+    ]
+  },
+  {
+    "name": "sphere_192_chain_r2",
+    "arguments": [
+      "study.py",
+      "--case",
+      "sphere",
+      "--grid",
+      "192",
+      "--variant",
+      "chain",
+      "--repeat",
+      "2"
+    ]
+  },
+  {
+    "name": "grosmont_192_latest_r2",
+    "arguments": [
+      "study.py",
+      "--case",
+      "grosmont",
+      "--grid",
+      "192",
+      "--variant",
+      "latest",
+      "--repeat",
+      "2"
+    ]
+  },
+  {
+    "name": "grosmont_192_chfem_r2",
+    "arguments": [
+      "chfem_study.py",
+      "--phase",
+      "measure",
+      "--input",
+      "inputs/grosmont_192.npy",
+      "--output",
+      "results/grosmont_192_chfem_r2.json",
+      "--native-tol",
+      "2e-9",
+      "--repeat",
+      "2"
+    ]
+  },
+  {
+    "name": "grosmont_192_paper_r2",
+    "arguments": [
+      "study.py",
+      "--case",
+      "grosmont",
+      "--grid",
+      "192",
+      "--variant",
+      "paper",
+      "--repeat",
+      "2"
+    ]
+  },
+  {
+    "name": "grosmont_192_chain_r2",
+    "arguments": [
+      "study.py",
+      "--case",
+      "grosmont",
+      "--grid",
+      "192",
+      "--variant",
+      "chain",
+      "--repeat",
+      "2"
+    ]
+  },
+  {
+    "name": "fraction50_128_hybrid_r2",
+    "arguments": [
+      "study.py",
+      "--case",
+      "fraction50",
+      "--grid",
+      "128",
+      "--variant",
+      "hybrid",
+      "--repeat",
+      "2"
+    ]
+  },
+  {
+    "name": "fraction50_128_latest_r2",
+    "arguments": [
+      "study.py",
+      "--case",
+      "fraction50",
+      "--grid",
+      "128",
+      "--variant",
+      "latest",
+      "--repeat",
+      "2"
+    ]
+  },
+  {
+    "name": "fraction90_128_hybrid_r2",
+    "arguments": [
+      "study.py",
+      "--case",
+      "fraction90",
+      "--grid",
+      "128",
+      "--variant",
+      "hybrid",
+      "--repeat",
+      "2"
+    ]
+  },
+  {
+    "name": "fraction90_128_latest_r2",
+    "arguments": [
+      "study.py",
+      "--case",
+      "fraction90",
+      "--grid",
+      "128",
+      "--variant",
+      "latest",
+      "--repeat",
+      "2"
+    ]
+  }
+]

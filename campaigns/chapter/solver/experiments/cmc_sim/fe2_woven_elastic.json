@@ -1,0 +1,75 @@
+{
+  "schema_version": 1,
+  "seed": 20261022,
+  "samples": 1,
+  "scope": "Online stochastic CMC effective-woven FE2 small macro fixture; original all-point driver, not experimental geometry or validated fracture.",
+  "geometry": {
+    "kind": "legacy_woven",
+    "n": 8
+  },
+  "phases": {
+    "0": {
+      "name": "effective SiC matrix",
+      "kind": "isotropic",
+      "E": {
+        "distribution": "uniform",
+        "bounds": [
+          70000,
+          150000
+        ]
+      },
+      "nu": 0.19,
+      "damage": {
+        "law": "elastic"
+      }
+    },
+    "1": {
+      "name": "effective SiC tow",
+      "kind": "orthotropic",
+      "frame": "local",
+      "E1": 242000,
+      "E2": 220000,
+      "E3": 220000,
+      "nu12": 0.17,
+      "nu13": 0.17,
+      "nu23": 0.2,
+      "G12": 98605.793,
+      "G13": 98605.793,
+      "G23": 91666.6666666667,
+      "random_matrix": {
+        "delta": 0.03,
+        "mode": "orthotropic"
+      },
+      "damage": {
+        "law": "elastic"
+      }
+    }
+  },
+  "loading": {
+    "control": "uniaxial_stress",
+    "axis": 1,
+    "history": [
+      0,
+      0.0005,
+      0.001,
+      0.0005,
+      0
+    ]
+  },
+  "damage_levels": 32,
+  "assumptions": [
+    "The existing woven voxel geometry and tow orientations are reused. Its volume fraction and dimensions are not the measured CMC architecture.",
+    "Tow shear moduli are explicit closure assumptions: G12=G13 approximately sqrt(E1*E2)/(2*(1+nu12)), G23=E2/(2*(1+nu23)); they have not been measured or calibrated.",
+    "delta=0.03 is a stiffness sensitivity input. The orthotropic block perturbation is not a fitted full-matrix dispersion.",
+    "This example is elastic only and does not use the legacy epoxy damage law."
+  ],
+  "simulation": "fe2",
+  "macro": {
+    "mesh": "rectangle",
+    "nx": 2,
+    "ny": 2,
+    "width_half_mm": 1.0,
+    "length_half_mm": 2.0,
+    "thickness_mm": 2.0
+  }
+}

@@ -1,0 +1,66 @@
+[
+  {
+    "name": "woven_8_paper_r0_smoke",
+    "arguments": [
+      "study.py",
+      "--case",
+      "woven",
+      "--grid",
+      "8",
+      "--variant",
+      "paper",
+      "--repeat",
+      "0",
+      "--tag",
+      "_smoke"
+    ]
+  },
+  {
+    "name": "woven_8_latest_r0_smoke",
+    "arguments": [
+      "study.py",
+      "--case",
+      "woven",
+      "--grid",
+      "8",
+      "--variant",
+      "latest",
+      "--repeat",
+      "0",
+      "--tag",
+      "_smoke"
+    ]
+  },
+  {
+    "name": "fraction90_8_hybrid_r0_smoke",
+    "arguments": [
+      "study.py",
+      "--case",
+      "fraction90",
+      "--grid",
+      "8",
+      "--variant",
+      "hybrid",
+      "--repeat",
+      "0",
+      "--tag",
+      "_smoke"
+    ]
+  },
+  {
+    "name": "fraction90_8_latest_r0_smoke",
+    "arguments": [
+      "study.py",
+      "--case",
+      "fraction90",
+      "--grid",
+      "8",
+      "--variant",
+      "latest",
+      "--repeat",
+      "0",
+      "--tag",
+      "_smoke"
+    ]
+  }
+]

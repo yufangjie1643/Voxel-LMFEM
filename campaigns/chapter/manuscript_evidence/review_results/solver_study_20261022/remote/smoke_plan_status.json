@@ -1,0 +1,100 @@
+{
+  "complete": true,
+  "jobs": [
+    {
+      "name": "woven_8_paper_r0_smoke",
+      "arguments": [
+        "study.py",
+        "--case",
+        "woven",
+        "--grid",
+        "8",
+        "--variant",
+        "paper",
+        "--repeat",
+        "0",
+        "--tag",
+        "_smoke"
+      ]
+    },
+    {
+      "name": "woven_8_latest_r0_smoke",
+      "arguments": [
+        "study.py",
+        "--case",
+        "woven",
+        "--grid",
+        "8",
+        "--variant",
+        "latest",
+        "--repeat",
+        "0",
+        "--tag",
+        "_smoke"
+      ]
+    },
+    {
+      "name": "fraction90_8_hybrid_r0_smoke",
+      "arguments": [
+        "study.py",
+        "--case",
+        "fraction90",
+        "--grid",
+        "8",
+        "--variant",
+        "hybrid",
+        "--repeat",
+        "0",
+        "--tag",
+        "_smoke"
+      ]
+    },
+    {
+      "name": "fraction90_8_latest_r0_smoke",
+      "arguments": [
+        "study.py",
+        "--case",
+        "fraction90",
+        "--grid",
+        "8",
+        "--variant",
+        "latest",
+        "--repeat",
+        "0",
+        "--tag",
+        "_smoke"
+      ]
+    }
+  ],
+  "completed": [
+    {
+      "name": "woven_8_paper_r0_smoke",
+      "log": "/home/yufan/code/fead-solver-study-20261022/logs/woven_8_paper_r0_smoke.log",
+      "telemetry": "/home/yufan/code/fead-solver-study-20261022/logs/woven_8_paper_r0_smoke_telemetry.json",
+      "process_wall_seconds": 4.30491479486227,
+      "complete": true
+    },
+    {
+      "name": "woven_8_latest_r0_smoke",
+      "log": "/home/yufan/code/fead-solver-study-20261022/logs/woven_8_latest_r0_smoke.log",
+      "telemetry": "/home/yufan/code/fead-solver-study-20261022/logs/woven_8_latest_r0_smoke_telemetry.json",
+      "process_wall_seconds": 4.025848952122033,
+      "complete": true
+    },
+    {
+      "name": "fraction90_8_hybrid_r0_smoke",
+      "log": "/home/yufan/code/fead-solver-study-20261022/logs/fraction90_8_hybrid_r0_smoke.log",
+      "telemetry": "/home/yufan/code/fead-solver-study-20261022/logs/fraction90_8_hybrid_r0_smoke_telemetry.json",
+      "process_wall_seconds": 4.011025310959667,
+      "complete": true
+    },
+    {
+      "name": "fraction90_8_latest_r0_smoke",
+      "log": "/home/yufan/code/fead-solver-study-20261022/logs/fraction90_8_latest_r0_smoke.log",
+      "telemetry": "/home/yufan/code/fead-solver-study-20261022/logs/fraction90_8_latest_r0_smoke_telemetry.json",
+      "process_wall_seconds": 4.002943665953353,
+      "complete": true
+    }
+  ],
+  "failed": null
+}

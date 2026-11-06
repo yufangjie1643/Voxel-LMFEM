@@ -1,0 +1,1634 @@
+{
+  "complete": true,
+  "case": "woven_fraction",
+  "grid": 192,
+  "variant": "background",
+  "repeat": 2,
+  "input_hash": "2a80b8b1cf40df3215dc3a805c1aae46c83c78dd13903043d8613da3e636aae5",
+  "input": {
+    "width": 0.18,
+    "thickness": 0.05340532534861377,
+    "amplitude": 0.14,
+    "height": 0.4,
+    "exact_yarn_fraction": 0.302,
+    "voxel_yarn_fraction": 0.30196578414351855,
+    "crossing_gap_lower_bound": 0.012407550940992815,
+    "periodic_gap_lower_bound": 0.013189349302772435,
+    "overlap_voxels": 0,
+    "yarn_voxel_counts": [
+      534320,
+      534320,
+      534320,
+      534320
+    ],
+    "construction": "periodic sinusoidal centre lines; vertical elliptical sections; local tangent orientation"
+  },
+  "materials": {
+    "0": {
+      "kind": "isotropic",
+      "E": 3500.0,
+      "nu": 0.35
+    },
+    "1": {
+      "kind": "orthotropic",
+      "frame": "local",
+      "E1": 135000.0,
+      "E2": 9000.0,
+      "E3": 9000.0,
+      "nu12": 0.3,
+      "nu13": 0.3,
+      "nu23": 0.35,
+      "G12": 5000.0,
+      "G13": 5000.0,
+      "G23": 3500.0
+    }
+  },
+  "measurement": {
+    "seconds": 1.8530225679278374,
+    "CH": [
+      [
+        11720.14204154355,
+        5212.090674501647,
+        5824.669361423436,
+        -4.60471167368976e-13,
+        2.314301014202421e-13,
+        -3.7204807136327465e-14
+      ],
+      [
+        5212.090674501651,
+        11720.14204154355,
+        5824.6693614234355,
+        6.5185716906584e-13,
+        -1.0862093117962272e-13,
+        -3.970229494959304e-14
+      ],
+      [
+        5824.669361206943,
+        5824.669361206946,
+        8919.193034699729,
+        1.060221869145742e-13,
+        -2.8388813933378076e-14,
+        -4.907853958626531e-14
+      ],
+      [
+        1.0598929141754827e-13,
+        -5.40538807130091e-13,
+        3.832983313461429e-13,
+        2440.246168625124,
+        1.8375784433183534e-13,
+        -6.7230172046745584e-15
+      ],
+      [
+        8.235387680441716e-14,
+        1.443454409497833e-13,
+        2.815854545419656e-13,
+        1.495100339828544e-13,
+        2440.2461686251245,
+        2.557624893766101e-15
+      ],
+      [
+        1.0267507009218577e-14,
+        1.8600733093705386e-13,
+        -4.292862361883938e-15,
+        -1.1921328122197237e-13,
+        -1.9293209005708275e-14,
+        1985.7039042433598
+      ]
+    ],
+    "calls": [
+      {
+        "iterations": 55,
+        "restarts": 0,
+        "true_residuals": [
+          8.558602582374179e-09
+        ],
+        "trace": []
+      },
+      {
+        "iterations": 55,
+        "restarts": 0,
+        "true_residuals": [
+          8.558585517371532e-09
+        ],
+        "trace": []
+      },
+      {
+        "iterations": 54,
+        "restarts": 0,
+        "true_residuals": [
+          8.161704054851378e-09
+        ],
+        "trace": []
+      },
+      {
+        "iterations": 55,
+        "restarts": 0,
+        "true_residuals": [
+          6.997213757106542e-09
+        ],
+        "trace": []
+      },
+      {
+        "iterations": 55,
+        "restarts": 0,
+        "true_residuals": [
+          6.9972000537195225e-09
+        ],
+        "trace": []
+      },
+      {
+        "iterations": 57,
+        "restarts": 0,
+        "true_residuals": [
+          7.104569298071518e-09
+        ],
+        "trace": []
+      }
+    ],
+    "stages": [
+      {
+        "name": "material",
+        "seconds": 0.2293780508916825,
+        "live": 421978112,
+        "peak": 466543104,
+        "reserved": 517996544
+      },
+      {
+        "name": "operator",
+        "seconds": 5.88209368288517e-05,
+        "live": 421978112,
+        "peak": 421978112,
+        "reserved": 517996544,
+        "arrays": {
+          "_hybrid_coeff": {
+            "bytes": 359063376,
+            "shape": [
+              2137282,
+              21
+            ],
+            "dtype": "torch.float64",
+            "storage": 137975757275136
+          },
+          "_hybrid_index": {
+            "bytes": 28311552,
+            "shape": [
+              1,
+              7077888
+            ],
+            "dtype": "torch.int32",
+            "storage": 137974882762752
+          }
+        }
+      },
+      {
+        "name": "reference",
+        "seconds": 0.0021537779830396175,
+        "live": 479201792,
+        "peak": 479201792,
+        "reserved": 576716800,
+        "arrays": {
+          "_hybrid_coeff": {
+            "bytes": 359063376,
+            "shape": [
+              2137282,
+              21
+            ],
+            "dtype": "torch.float64",
+            "storage": 137975757275136
+          },
+          "_hybrid_index": {
+            "bytes": 28311552,
+            "shape": [
+              1,
+              7077888
+            ],
+            "dtype": "torch.int32",
+            "storage": 137974882762752
+          },
+          "_fft_symbol_inv": {
+            "bytes": 57212928,
+            "shape": [
+              4,
+              3575808
+            ],
+            "dtype": "torch.float32",
+            "storage": 137974912122880
+          }
+        }
+      },
+      {
+        "name": "representation",
+        "seconds": 0.009815720142796636,
+        "live": 487752704,
+        "peak": 487753216,
+        "reserved": 576716800,
+        "arrays": {
+          "_hybrid_coeff": {
+            "bytes": 359063376,
+            "shape": [
+              2137282,
+              21
+            ],
+            "dtype": "torch.float64",
+            "storage": 137975757275136
+          },
+          "_hybrid_index": {
+            "bytes": 28311552,
+            "shape": [
+              1,
+              7077888
+            ],
+            "dtype": "torch.int32",
+            "storage": 137974882762752
+          },
+          "_fft_symbol_inv": {
+            "bytes": 57212928,
+            "shape": [
+              4,
+              3575808
+            ],
+            "dtype": "torch.float32",
+            "storage": 137974912122880
+          },
+          "_operator_flags": {
+            "bytes": 2,
+            "shape": [
+              2
+            ],
+            "dtype": "torch.uint8",
+            "storage": 137974989728256
+          },
+          "_operator_active": {
+            "bytes": 8549120,
+            "shape": [
+              2137280
+            ],
+            "dtype": "torch.int32",
+            "storage": 137974859694080
+          },
+          "_operator_stencil": {
+            "bytes": 936,
+            "shape": [
+              13,
+              3,
+              3
+            ],
+            "dtype": "torch.float64",
+            "storage": 137974989728768
+          }
+        }
+      },
+      {
+        "name": "chain_attachment",
+        "seconds": 0.0009245479013770819,
+        "live": 516523008,
+        "peak": 573735936,
+        "reserved": 662700032,
+        "arrays": {
+          "_hybrid_coeff": {
+            "bytes": 359063376,
+            "shape": [
+              2137282,
+              21
+            ],
+            "dtype": "torch.float64",
+            "storage": 137975757275136
+          },
+          "_hybrid_index": {
+            "bytes": 28311552,
+            "shape": [
+              1,
+              7077888
+            ],
+            "dtype": "torch.int32",
+            "storage": 137974882762752
+          },
+          "_operator_flags": {
+            "bytes": 2,
+            "shape": [
+              2
+            ],
+            "dtype": "torch.uint8",
+            "storage": 137974989728256
+          },
+          "_operator_active": {
+            "bytes": 8549120,
+            "shape": [
+              2137280
+            ],
+            "dtype": "torch.int32",
+            "storage": 137974859694080
+          },
+          "_operator_stencil": {
+            "bytes": 936,
+            "shape": [
+              13,
+              3,
+              3
+            ],
+            "dtype": "torch.float64",
+            "storage": 137974989728768
+          },
+          "_contest_coefficient": {
+            "bytes": 85819392,
+            "shape": [
+              6,
+              3575808
+            ],
+            "dtype": "torch.float32",
+            "storage": 137976159928320
+          }
+        }
+      },
+      {
+        "name": "rhs0",
+        "seconds": 0.0036991199012845755,
+        "live": 686392320,
+        "peak": 856262144,
+        "reserved": 1002438656,
+        "arrays": {
+          "_hybrid_coeff": {
+            "bytes": 359063376,
+            "shape": [
+              2137282,
+              21
+            ],
+            "dtype": "torch.float64",
+            "storage": 137975757275136
+          },
+          "_hybrid_index": {
+            "bytes": 28311552,
+            "shape": [
+              1,
+              7077888
+            ],
+            "dtype": "torch.int32",
+            "storage": 137974882762752
+          },
+          "_operator_flags": {
+            "bytes": 2,
+            "shape": [
+              2
+            ],
+            "dtype": "torch.uint8",
+            "storage": 137974989728256
+          },
+          "_operator_active": {
+            "bytes": 8549120,
+            "shape": [
+              2137280
+            ],
+            "dtype": "torch.int32",
+            "storage": 137974859694080
+          },
+          "_operator_stencil": {
+            "bytes": 936,
+            "shape": [
+              13,
+              3,
+              3
+            ],
+            "dtype": "torch.float64",
+            "storage": 137974989728768
+          },
+          "_contest_coefficient": {
+            "bytes": 85819392,
+            "shape": [
+              6,
+              3575808
+            ],
+            "dtype": "torch.float32",
+            "storage": 137976159928320
+          }
+        }
+      },
+      {
+        "name": "solve0",
+        "seconds": 0.25998166808858514,
+        "live": 856261632,
+        "peak": 1791596032,
+        "reserved": 2023751680,
+        "arrays": {
+          "_hybrid_coeff": {
+            "bytes": 359063376,
+            "shape": [
+              2137282,
+              21
+            ],
+            "dtype": "torch.float64",
+            "storage": 137975757275136
+          },
+          "_hybrid_index": {
+            "bytes": 28311552,
+            "shape": [
+              1,
+              7077888
+            ],
+            "dtype": "torch.int32",
+            "storage": 137974882762752
+          },
+          "_operator_flags": {
+            "bytes": 2,
+            "shape": [
+              2
+            ],
+            "dtype": "torch.uint8",
+            "storage": 137974989728256
+          },
+          "_operator_active": {
+            "bytes": 8549120,
+            "shape": [
+              2137280
+            ],
+            "dtype": "torch.int32",
+            "storage": 137974859694080
+          },
+          "_operator_stencil": {
+            "bytes": 936,
+            "shape": [
+              13,
+              3,
+              3
+            ],
+            "dtype": "torch.float64",
+            "storage": 137974989728768
+          },
+          "_contest_coefficient": {
+            "bytes": 85819392,
+            "shape": [
+              6,
+              3575808
+            ],
+            "dtype": "torch.float32",
+            "storage": 137976159928320
+          }
+        }
+      },
+      {
+        "name": "post0",
+        "seconds": 0.0012849208433181047,
+        "live": 856261632,
+        "peak": 858917376,
+        "reserved": 2023751680,
+        "arrays": {
+          "_hybrid_coeff": {
+            "bytes": 359063376,
+            "shape": [
+              2137282,
+              21
+            ],
+            "dtype": "torch.float64",
+            "storage": 137975757275136
+          },
+          "_hybrid_index": {
+            "bytes": 28311552,
+            "shape": [
+              1,
+              7077888
+            ],
+            "dtype": "torch.int32",
+            "storage": 137974882762752
+          },
+          "_operator_flags": {
+            "bytes": 2,
+            "shape": [
+              2
+            ],
+            "dtype": "torch.uint8",
+            "storage": 137974989728256
+          },
+          "_operator_active": {
+            "bytes": 8549120,
+            "shape": [
+              2137280
+            ],
+            "dtype": "torch.int32",
+            "storage": 137974859694080
+          },
+          "_operator_stencil": {
+            "bytes": 936,
+            "shape": [
+              13,
+              3,
+              3
+            ],
+            "dtype": "torch.float64",
+            "storage": 137974989728768
+          },
+          "_contest_coefficient": {
+            "bytes": 85819392,
+            "shape": [
+              6,
+              3575808
+            ],
+            "dtype": "torch.float32",
+            "storage": 137976159928320
+          }
+        }
+      },
+      {
+        "name": "rhs1",
+        "seconds": 0.003554567927494645,
+        "live": 686392320,
+        "peak": 856262144,
+        "reserved": 2023751680,
+        "arrays": {
+          "_hybrid_coeff": {
+            "bytes": 359063376,
+            "shape": [
+              2137282,
+              21
+            ],
+            "dtype": "torch.float64",
+            "storage": 137975757275136
+          },
+          "_hybrid_index": {
+            "bytes": 28311552,
+            "shape": [
+              1,
+              7077888
+            ],
+            "dtype": "torch.int32",
+            "storage": 137974882762752
+          },
+          "_operator_flags": {
+            "bytes": 2,
+            "shape": [
+              2
+            ],
+            "dtype": "torch.uint8",
+            "storage": 137974989728256
+          },
+          "_operator_active": {
+            "bytes": 8549120,
+            "shape": [
+              2137280
+            ],
+            "dtype": "torch.int32",
+            "storage": 137974859694080
+          },
+          "_operator_stencil": {
+            "bytes": 936,
+            "shape": [
+              13,
+              3,
+              3
+            ],
+            "dtype": "torch.float64",
+            "storage": 137974989728768
+          },
+          "_contest_coefficient": {
+            "bytes": 85819392,
+            "shape": [
+              6,
+              3575808
+            ],
+            "dtype": "torch.float32",
+            "storage": 137976159928320
+          }
+        }
+      },
+      {
+        "name": "solve1",
+        "seconds": 0.25990510801784694,
+        "live": 856261632,
+        "peak": 1791596032,
+        "reserved": 2023751680,
+        "arrays": {
+          "_hybrid_coeff": {
+            "bytes": 359063376,
+            "shape": [
+              2137282,
+              21
+            ],
+            "dtype": "torch.float64",
+            "storage": 137975757275136
+          },
+          "_hybrid_index": {
+            "bytes": 28311552,
+            "shape": [
+              1,
+              7077888
+            ],
+            "dtype": "torch.int32",
+            "storage": 137974882762752
+          },
+          "_operator_flags": {
+            "bytes": 2,
+            "shape": [
+              2
+            ],
+            "dtype": "torch.uint8",
+            "storage": 137974989728256
+          },
+          "_operator_active": {
+            "bytes": 8549120,
+            "shape": [
+              2137280
+            ],
+            "dtype": "torch.int32",
+            "storage": 137974859694080
+          },
+          "_operator_stencil": {
+            "bytes": 936,
+            "shape": [
+              13,
+              3,
+              3
+            ],
+            "dtype": "torch.float64",
+            "storage": 137974989728768
+          },
+          "_contest_coefficient": {
+            "bytes": 85819392,
+            "shape": [
+              6,
+              3575808
+            ],
+            "dtype": "torch.float32",
+            "storage": 137976159928320
+          }
+        }
+      },
+      {
+        "name": "post1",
+        "seconds": 0.0012689100112766027,
+        "live": 856261632,
+        "peak": 858917376,
+        "reserved": 2023751680,
+        "arrays": {
+          "_hybrid_coeff": {
+            "bytes": 359063376,
+            "shape": [
+              2137282,
+              21
+            ],
+            "dtype": "torch.float64",
+            "storage": 137975757275136
+          },
+          "_hybrid_index": {
+            "bytes": 28311552,
+            "shape": [
+              1,
+              7077888
+            ],
+            "dtype": "torch.int32",
+            "storage": 137974882762752
+          },
+          "_operator_flags": {
+            "bytes": 2,
+            "shape": [
+              2
+            ],
+            "dtype": "torch.uint8",
+            "storage": 137974989728256
+          },
+          "_operator_active": {
+            "bytes": 8549120,
+            "shape": [
+              2137280
+            ],
+            "dtype": "torch.int32",
+            "storage": 137974859694080
+          },
+          "_operator_stencil": {
+            "bytes": 936,
+            "shape": [
+              13,
+              3,
+              3
+            ],
+            "dtype": "torch.float64",
+            "storage": 137974989728768
+          },
+          "_contest_coefficient": {
+            "bytes": 85819392,
+            "shape": [
+              6,
+              3575808
+            ],
+            "dtype": "torch.float32",
+            "storage": 137976159928320
+          }
+        }
+      },
+      {
+        "name": "rhs2",
+        "seconds": 0.0035518179647624493,
+        "live": 686392320,
+        "peak": 856262144,
+        "reserved": 2023751680,
+        "arrays": {
+          "_hybrid_coeff": {
+            "bytes": 359063376,
+            "shape": [
+              2137282,
+              21
+            ],
+            "dtype": "torch.float64",
+            "storage": 137975757275136
+          },
+          "_hybrid_index": {
+            "bytes": 28311552,
+            "shape": [
+              1,
+              7077888
+            ],
+            "dtype": "torch.int32",
+            "storage": 137974882762752
+          },
+          "_operator_flags": {
+            "bytes": 2,
+            "shape": [
+              2
+            ],
+            "dtype": "torch.uint8",
+            "storage": 137974989728256
+          },
+          "_operator_active": {
+            "bytes": 8549120,
+            "shape": [
+              2137280
+            ],
+            "dtype": "torch.int32",
+            "storage": 137974859694080
+          },
+          "_operator_stencil": {
+            "bytes": 936,
+            "shape": [
+              13,
+              3,
+              3
+            ],
+            "dtype": "torch.float64",
+            "storage": 137974989728768
+          },
+          "_contest_coefficient": {
+            "bytes": 85819392,
+            "shape": [
+              6,
+              3575808
+            ],
+            "dtype": "torch.float32",
+            "storage": 137976159928320
+          }
+        }
+      },
+      {
+        "name": "solve2",
+        "seconds": 0.25994440796785057,
+        "live": 856261632,
+        "peak": 1791596032,
+        "reserved": 2023751680,
+        "arrays": {
+          "_hybrid_coeff": {
+            "bytes": 359063376,
+            "shape": [
+              2137282,
+              21
+            ],
+            "dtype": "torch.float64",
+            "storage": 137975757275136
+          },
+          "_hybrid_index": {
+            "bytes": 28311552,
+            "shape": [
+              1,
+              7077888
+            ],
+            "dtype": "torch.int32",
+            "storage": 137974882762752
+          },
+          "_operator_flags": {
+            "bytes": 2,
+            "shape": [
+              2
+            ],
+            "dtype": "torch.uint8",
+            "storage": 137974989728256
+          },
+          "_operator_active": {
+            "bytes": 8549120,
+            "shape": [
+              2137280
+            ],
+            "dtype": "torch.int32",
+            "storage": 137974859694080
+          },
+          "_operator_stencil": {
+            "bytes": 936,
+            "shape": [
+              13,
+              3,
+              3
+            ],
+            "dtype": "torch.float64",
+            "storage": 137974989728768
+          },
+          "_contest_coefficient": {
+            "bytes": 85819392,
+            "shape": [
+              6,
+              3575808
+            ],
+            "dtype": "torch.float32",
+            "storage": 137976159928320
+          }
+        }
+      },
+      {
+        "name": "post2",
+        "seconds": 0.0012617709580808878,
+        "live": 856261632,
+        "peak": 858917376,
+        "reserved": 2023751680,
+        "arrays": {
+          "_hybrid_coeff": {
+            "bytes": 359063376,
+            "shape": [
+              2137282,
+              21
+            ],
+            "dtype": "torch.float64",
+            "storage": 137975757275136
+          },
+          "_hybrid_index": {
+            "bytes": 28311552,
+            "shape": [
+              1,
+              7077888
+            ],
+            "dtype": "torch.int32",
+            "storage": 137974882762752
+          },
+          "_operator_flags": {
+            "bytes": 2,
+            "shape": [
+              2
+            ],
+            "dtype": "torch.uint8",
+            "storage": 137974989728256
+          },
+          "_operator_active": {
+            "bytes": 8549120,
+            "shape": [
+              2137280
+            ],
+            "dtype": "torch.int32",
+            "storage": 137974859694080
+          },
+          "_operator_stencil": {
+            "bytes": 936,
+            "shape": [
+              13,
+              3,
+              3
+            ],
+            "dtype": "torch.float64",
+            "storage": 137974989728768
+          },
+          "_contest_coefficient": {
+            "bytes": 85819392,
+            "shape": [
+              6,
+              3575808
+            ],
+            "dtype": "torch.float32",
+            "storage": 137976159928320
+          }
+        }
+      },
+      {
+        "name": "rhs3",
+        "seconds": 0.0035465890541672707,
+        "live": 686392320,
+        "peak": 856262144,
+        "reserved": 2023751680,
+        "arrays": {
+          "_hybrid_coeff": {
+            "bytes": 359063376,
+            "shape": [
+              2137282,
+              21
+            ],
+            "dtype": "torch.float64",
+            "storage": 137975757275136
+          },
+          "_hybrid_index": {
+            "bytes": 28311552,
+            "shape": [
+              1,
+              7077888
+            ],
+            "dtype": "torch.int32",
+            "storage": 137974882762752
+          },
+          "_operator_flags": {
+            "bytes": 2,
+            "shape": [
+              2
+            ],
+            "dtype": "torch.uint8",
+            "storage": 137974989728256
+          },
+          "_operator_active": {
+            "bytes": 8549120,
+            "shape": [
+              2137280
+            ],
+            "dtype": "torch.int32",
+            "storage": 137974859694080
+          },
+          "_operator_stencil": {
+            "bytes": 936,
+            "shape": [
+              13,
+              3,
+              3
+            ],
+            "dtype": "torch.float64",
+            "storage": 137974989728768
+          },
+          "_contest_coefficient": {
+            "bytes": 85819392,
+            "shape": [
+              6,
+              3575808
+            ],
+            "dtype": "torch.float32",
+            "storage": 137976159928320
+          }
+        }
+      },
+      {
+        "name": "solve3",
+        "seconds": 0.2600261790212244,
+        "live": 856261632,
+        "peak": 1791596032,
+        "reserved": 2023751680,
+        "arrays": {
+          "_hybrid_coeff": {
+            "bytes": 359063376,
+            "shape": [
+              2137282,
+              21
+            ],
+            "dtype": "torch.float64",
+            "storage": 137975757275136
+          },
+          "_hybrid_index": {
+            "bytes": 28311552,
+            "shape": [
+              1,
+              7077888
+            ],
+            "dtype": "torch.int32",
+            "storage": 137974882762752
+          },
+          "_operator_flags": {
+            "bytes": 2,
+            "shape": [
+              2
+            ],
+            "dtype": "torch.uint8",
+            "storage": 137974989728256
+          },
+          "_operator_active": {
+            "bytes": 8549120,
+            "shape": [
+              2137280
+            ],
+            "dtype": "torch.int32",
+            "storage": 137974859694080
+          },
+          "_operator_stencil": {
+            "bytes": 936,
+            "shape": [
+              13,
+              3,
+              3
+            ],
+            "dtype": "torch.float64",
+            "storage": 137974989728768
+          },
+          "_contest_coefficient": {
+            "bytes": 85819392,
+            "shape": [
+              6,
+              3575808
+            ],
+            "dtype": "torch.float32",
+            "storage": 137976159928320
+          }
+        }
+      },
+      {
+        "name": "post3",
+        "seconds": 0.0012864409945905209,
+        "live": 856261632,
+        "peak": 858917376,
+        "reserved": 2023751680,
+        "arrays": {
+          "_hybrid_coeff": {
+            "bytes": 359063376,
+            "shape": [
+              2137282,
+              21
+            ],
+            "dtype": "torch.float64",
+            "storage": 137975757275136
+          },
+          "_hybrid_index": {
+            "bytes": 28311552,
+            "shape": [
+              1,
+              7077888
+            ],
+            "dtype": "torch.int32",
+            "storage": 137974882762752
+          },
+          "_operator_flags": {
+            "bytes": 2,
+            "shape": [
+              2
+            ],
+            "dtype": "torch.uint8",
+            "storage": 137974989728256
+          },
+          "_operator_active": {
+            "bytes": 8549120,
+            "shape": [
+              2137280
+            ],
+            "dtype": "torch.int32",
+            "storage": 137974859694080
+          },
+          "_operator_stencil": {
+            "bytes": 936,
+            "shape": [
+              13,
+              3,
+              3
+            ],
+            "dtype": "torch.float64",
+            "storage": 137974989728768
+          },
+          "_contest_coefficient": {
+            "bytes": 85819392,
+            "shape": [
+              6,
+              3575808
+            ],
+            "dtype": "torch.float32",
+            "storage": 137976159928320
+          }
+        }
+      },
+      {
+        "name": "rhs4",
+        "seconds": 0.0035573788918554783,
+        "live": 686392320,
+        "peak": 856262144,
+        "reserved": 2023751680,
+        "arrays": {
+          "_hybrid_coeff": {
+            "bytes": 359063376,
+            "shape": [
+              2137282,
+              21
+            ],
+            "dtype": "torch.float64",
+            "storage": 137975757275136
+          },
+          "_hybrid_index": {
+            "bytes": 28311552,
+            "shape": [
+              1,
+              7077888
+            ],
+            "dtype": "torch.int32",
+            "storage": 137974882762752
+          },
+          "_operator_flags": {
+            "bytes": 2,
+            "shape": [
+              2
+            ],
+            "dtype": "torch.uint8",
+            "storage": 137974989728256
+          },
+          "_operator_active": {
+            "bytes": 8549120,
+            "shape": [
+              2137280
+            ],
+            "dtype": "torch.int32",
+            "storage": 137974859694080
+          },
+          "_operator_stencil": {
+            "bytes": 936,
+            "shape": [
+              13,
+              3,
+              3
+            ],
+            "dtype": "torch.float64",
+            "storage": 137974989728768
+          },
+          "_contest_coefficient": {
+            "bytes": 85819392,
+            "shape": [
+              6,
+              3575808
+            ],
+            "dtype": "torch.float32",
+            "storage": 137976159928320
+          }
+        }
+      },
+      {
+        "name": "solve4",
+        "seconds": 0.2599428880494088,
+        "live": 856261632,
+        "peak": 1791596032,
+        "reserved": 2023751680,
+        "arrays": {
+          "_hybrid_coeff": {
+            "bytes": 359063376,
+            "shape": [
+              2137282,
+              21
+            ],
+            "dtype": "torch.float64",
+            "storage": 137975757275136
+          },
+          "_hybrid_index": {
+            "bytes": 28311552,
+            "shape": [
+              1,
+              7077888
+            ],
+            "dtype": "torch.int32",
+            "storage": 137974882762752
+          },
+          "_operator_flags": {
+            "bytes": 2,
+            "shape": [
+              2
+            ],
+            "dtype": "torch.uint8",
+            "storage": 137974989728256
+          },
+          "_operator_active": {
+            "bytes": 8549120,
+            "shape": [
+              2137280
+            ],
+            "dtype": "torch.int32",
+            "storage": 137974859694080
+          },
+          "_operator_stencil": {
+            "bytes": 936,
+            "shape": [
+              13,
+              3,
+              3
+            ],
+            "dtype": "torch.float64",
+            "storage": 137974989728768
+          },
+          "_contest_coefficient": {
+            "bytes": 85819392,
+            "shape": [
+              6,
+              3575808
+            ],
+            "dtype": "torch.float32",
+            "storage": 137976159928320
+          }
+        }
+      },
+      {
+        "name": "post4",
+        "seconds": 0.0012735400814563036,
+        "live": 856261632,
+        "peak": 858917376,
+        "reserved": 2023751680,
+        "arrays": {
+          "_hybrid_coeff": {
+            "bytes": 359063376,
+            "shape": [
+              2137282,
+              21
+            ],
+            "dtype": "torch.float64",
+            "storage": 137975757275136
+          },
+          "_hybrid_index": {
+            "bytes": 28311552,
+            "shape": [
+              1,
+              7077888
+            ],
+            "dtype": "torch.int32",
+            "storage": 137974882762752
+          },
+          "_operator_flags": {
+            "bytes": 2,
+            "shape": [
+              2
+            ],
+            "dtype": "torch.uint8",
+            "storage": 137974989728256
+          },
+          "_operator_active": {
+            "bytes": 8549120,
+            "shape": [
+              2137280
+            ],
+            "dtype": "torch.int32",
+            "storage": 137974859694080
+          },
+          "_operator_stencil": {
+            "bytes": 936,
+            "shape": [
+              13,
+              3,
+              3
+            ],
+            "dtype": "torch.float64",
+            "storage": 137974989728768
+          },
+          "_contest_coefficient": {
+            "bytes": 85819392,
+            "shape": [
+              6,
+              3575808
+            ],
+            "dtype": "torch.float32",
+            "storage": 137976159928320
+          }
+        }
+      },
+      {
+        "name": "rhs5",
+        "seconds": 0.003552389098331332,
+        "live": 686392320,
+        "peak": 856262144,
+        "reserved": 2023751680,
+        "arrays": {
+          "_hybrid_coeff": {
+            "bytes": 359063376,
+            "shape": [
+              2137282,
+              21
+            ],
+            "dtype": "torch.float64",
+            "storage": 137975757275136
+          },
+          "_hybrid_index": {
+            "bytes": 28311552,
+            "shape": [
+              1,
+              7077888
+            ],
+            "dtype": "torch.int32",
+            "storage": 137974882762752
+          },
+          "_operator_flags": {
+            "bytes": 2,
+            "shape": [
+              2
+            ],
+            "dtype": "torch.uint8",
+            "storage": 137974989728256
+          },
+          "_operator_active": {
+            "bytes": 8549120,
+            "shape": [
+              2137280
+            ],
+            "dtype": "torch.int32",
+            "storage": 137974859694080
+          },
+          "_operator_stencil": {
+            "bytes": 936,
+            "shape": [
+              13,
+              3,
+              3
+            ],
+            "dtype": "torch.float64",
+            "storage": 137974989728768
+          },
+          "_contest_coefficient": {
+            "bytes": 85819392,
+            "shape": [
+              6,
+              3575808
+            ],
+            "dtype": "torch.float32",
+            "storage": 137976159928320
+          }
+        }
+      },
+      {
+        "name": "solve5",
+        "seconds": 0.2781357259955257,
+        "live": 856261632,
+        "peak": 1791596032,
+        "reserved": 2023751680,
+        "arrays": {
+          "_hybrid_coeff": {
+            "bytes": 359063376,
+            "shape": [
+              2137282,
+              21
+            ],
+            "dtype": "torch.float64",
+            "storage": 137975757275136
+          },
+          "_hybrid_index": {
+            "bytes": 28311552,
+            "shape": [
+              1,
+              7077888
+            ],
+            "dtype": "torch.int32",
+            "storage": 137974882762752
+          },
+          "_operator_flags": {
+            "bytes": 2,
+            "shape": [
+              2
+            ],
+            "dtype": "torch.uint8",
+            "storage": 137974989728256
+          },
+          "_operator_active": {
+            "bytes": 8549120,
+            "shape": [
+              2137280
+            ],
+            "dtype": "torch.int32",
+            "storage": 137974859694080
+          },
+          "_operator_stencil": {
+            "bytes": 936,
+            "shape": [
+              13,
+              3,
+              3
+            ],
+            "dtype": "torch.float64",
+            "storage": 137974989728768
+          },
+          "_contest_coefficient": {
+            "bytes": 85819392,
+            "shape": [
+              6,
+              3575808
+            ],
+            "dtype": "torch.float32",
+            "storage": 137976159928320
+          }
+        }
+      },
+      {
+        "name": "post5",
+        "seconds": 0.0013164409901946783,
+        "live": 856261632,
+        "peak": 858917376,
+        "reserved": 2023751680,
+        "arrays": {
+          "_hybrid_coeff": {
+            "bytes": 359063376,
+            "shape": [
+              2137282,
+              21
+            ],
+            "dtype": "torch.float64",
+            "storage": 137975757275136
+          },
+          "_hybrid_index": {
+            "bytes": 28311552,
+            "shape": [
+              1,
+              7077888
+            ],
+            "dtype": "torch.int32",
+            "storage": 137974882762752
+          },
+          "_operator_flags": {
+            "bytes": 2,
+            "shape": [
+              2
+            ],
+            "dtype": "torch.uint8",
+            "storage": 137974989728256
+          },
+          "_operator_active": {
+            "bytes": 8549120,
+            "shape": [
+              2137280
+            ],
+            "dtype": "torch.int32",
+            "storage": 137974859694080
+          },
+          "_operator_stencil": {
+            "bytes": 936,
+            "shape": [
+              13,
+              3,
+              3
+            ],
+            "dtype": "torch.float64",
+            "storage": 137974989728768
+          },
+          "_contest_coefficient": {
+            "bytes": 85819392,
+            "shape": [
+              6,
+              3575808
+            ],
+            "dtype": "torch.float32",
+            "storage": 137976159928320
+          }
+        }
+      }
+    ],
+    "field_statistics": {},
+    "peak_allocated_bytes": 1791596032,
+    "peak_reserved_bytes": 2023751680
+  },
+  "workflow_seconds": 2.0880615040659904,
+  "max_true_residual": 8.558602582374179e-09,
+  "storage": {
+    "labels": [
+      0,
+      1
+    ],
+    "n_elements": 7077888,
+    "n_local_voxels": 2137280,
+    "n_shared_voxels": 4940608,
+    "pool_rows": 2137282,
+    "coefficient_bytes": 359063376,
+    "index_bytes": 28311552,
+    "dense_bytes": 1189085184,
+    "mode": "hybrid"
+  },
+  "operator": {
+    "variant": "split_delta",
+    "block": 64,
+    "base_row": 0,
+    "base_label": 0,
+    "base_isotropic": true,
+    "active_elements": 2137280,
+    "total_elements": 7077888,
+    "extra_bytes": 8550058,
+    "constitutive_pool": "inplace_delta_C_no_duplicate",
+    "grouped_background": false
+  },
+  "reference_design": {
+    "reference": [
+      [
+        4.333333333333333,
+        2.3333333333333326,
+        2.3333333333333326,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        2.3333333333333326,
+        4.333333333333333,
+        2.3333333333333326,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        2.3333333333333326,
+        2.3333333333333326,
+        4.333333333333333,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "source": "fixed normalized isotropic matrix phase"
+  },
+  "sources": {
+    "/home/yufan/code/voxel-mechanics/experiments/solver_comparison/cases.py": "1c5c2f6b2087699af055d86394dc8cd262b9c4e8d0c86fbf9323335c59d77e91",
+    "/home/yufan/code/voxel-mechanics/experiments/solver_comparison/certify.py": "e10ce651e202a14690ecc62bcbbbace2b4ebce04a4aaa33e4ad4ad7051ae0259",
+    "/home/yufan/code/voxel-mechanics/experiments/solver_comparison/chfem_study.py": "163da513bb050fbf5652af01e15be190a84d43a1b7f765a2a9c152e113f0bfa4",
+    "/home/yufan/code/voxel-mechanics/experiments/solver_comparison/fft_precision.py": "3a71d94a28063ebd129384e0d2f3f00cc57dd2ba5ae71bd9679ea976090de3a8",
+    "/home/yufan/code/voxel-mechanics/experiments/solver_comparison/legacy_inputs.py": "9b8282af64f53d6f24c691ea7b4e0acd5760cdb607a9d920e41dd7d6283f2cbe",
+    "/home/yufan/code/voxel-mechanics/experiments/solver_comparison/plan.json": "546b989d12fec63961c38fc11736f72bc88537ce7808d29f7f70a4cd0f064092",
+    "/home/yufan/code/voxel-mechanics/experiments/solver_comparison/run_jobs.py": "945602d8aefeedfde35934b4b6854611e0f6e230960684134ad0b3f6ba93f83e",
+    "/home/yufan/code/voxel-mechanics/experiments/solver_comparison/study.py": "d09349b35d3819ad4d67d109d5c23a1026988deeebabad2a4fe73a545f84acce",
+    "/home/yufan/code/voxel-mechanics/experiments/woven_fraction/geometry.py": "3f19684ded1c11bb6ca3c9aae051041f1652ed01fca56b8d94edbd1ba7a37b9f",
+    "/home/yufan/code/voxel-mechanics/experiments/woven_fraction/study.py": "a5deb6fe1e8f3dd8809d5cb4e87f9f023e5d45b245682e74a4e32a7d29e39884",
+    "/home/yufan/code/voxel-mechanics/project_paths.py": "58a8744535c3259b56b3658d51571ca091c7b1ec6c0307767930e4ce5bdc6674",
+    "/home/yufan/code/voxel-mechanics/src/assembly_pipeline/modal_functions.cuh": "189a165189592915705569096ec6576fd7f1292951260bf5d13e7ca3dbd8268d",
+    "/home/yufan/code/voxel-mechanics/src/assembly_pipeline/pipeline_adapter.py": "1dae25bcc711cc4e1371baed97fb6053b6fb7032aa105b4245d365a2112eeb67",
+    "/home/yufan/code/voxel-mechanics/src/assembly_pipeline/pipeline_kernels.cu": "940ae597b855f57bd5a4f09eeb09cb8d103774f460b0415e4a353ea568542f09",
+    "/home/yufan/code/voxel-mechanics/src/assembly_pipeline/pipeline_study.py": "2267195f23937608a2422cb26b8ef89ad5c72e185e3ae9e93f5664240eb5b7b5",
+    "/home/yufan/code/voxel-mechanics/src/hex8_modal/gpu_study.py": "0bb642952bef896ae75291c4dab30f116edfb36be53a00bc5272defb1a481542",
+    "/home/yufan/code/voxel-mechanics/src/hex8_modal/modal_adapter.py": "667aceaaf83183675e0bfb0f5870e84de8a946930143bb5285941c11b36ed7df",
+    "/home/yufan/code/voxel-mechanics/src/hex8_modal/modal_kernels.cu": "4c9a601a17ae7a9f53d988e6c8778de2d81dccd7333b50b0a818c7ad7d019fb6",
+    "/home/yufan/code/voxel-mechanics/src/hybrid_operator/background.py": "36c658c4cb2101477d25ad444bdee358ef0eb38ff8552629f09390a942ca4880",
+    "/home/yufan/code/voxel-mechanics/src/hybrid_operator/background_grouped.cuh": "5d5572ce1fff338c74e56d0d73ae36fb926736c5665eb7bb1d1ad1842c0032cc",
+    "/home/yufan/code/voxel-mechanics/src/hybrid_operator/fi_isotropic.cuh": "cdc8aafee24032f70bee8fc01271a2e72e7ef8e2e8f2fa4100c76b8c9b8065b3",
+    "/home/yufan/code/voxel-mechanics/src/hybrid_operator/fi_modal.cuh": "66d5f352157050e8ca5f72fe46266e08e4d6021eb21fdc2cdca15129733e9ffb",
+    "/home/yufan/code/voxel-mechanics/src/hybrid_operator/operator_adapter.py": "af3e8ea0ed419ad35ae1893a3b8181f094236e292987f20faa0b5de5fd00e8e5",
+    "/home/yufan/code/voxel-mechanics/src/hybrid_operator/operator_kernels.cu": "6d84b7a9701767edd383637eed93e0f76279d7430da749b1358e8e1af790af0c",
+    "/home/yufan/code/voxel-mechanics/src/materials/adapter.py": "21b72d868d163d5381ca8574bb1af99a1e142d14b9e3d8578d3029daeabbe0ee",
+    "/home/yufan/code/voxel-mechanics/src/materials/fi_modal.cuh": "66d5f352157050e8ca5f72fe46266e08e4d6021eb21fdc2cdca15129733e9ffb",
+    "/home/yufan/code/voxel-mechanics/src/materials/hybrid_adapter.py": "17093c54f64a73756b6376f1b613c026009f8a02675306167721431349d05986",
+    "/home/yufan/code/voxel-mechanics/src/materials/hybrid_kernels.cu": "9ddf4e7e64e42eba35e731bba0807db83c8c415fd011884a37695fbecd316cbb",
+    "/home/yufan/code/voxel-mechanics/src/materials/hybrid_material.py": "9540237dec4692d3f42feccf83c32c9052bb0db8e2947153cd038268641fee28",
+    "/home/yufan/code/voxel-mechanics/src/materials/material_field.py": "db1564ebf40a1e7ce19199097f9c08e9a36641056589c9b703f34c12552d3b3d",
+    "/home/yufan/code/voxel-mechanics/src/reference_medium/formula_adapter.py": "d694dc3a759873898f62a612d4afc224dc7923ce6c158eb8bd5e676e5dc1bd6d",
+    "/home/yufan/code/voxel-mechanics/src/reference_medium/formula_kernels.cu": "0ca18975dafb048d63095d231e58495654f35f47eab555292ebba76335c29862",
+    "/home/yufan/code/voxel-mechanics/src/reference_medium/formula_study.py": "dcd3b40ab02ae2e0a3994ce5aa5c6a1c02d4ab35d4a93f9f0943da9888cd5ac3",
+    "/home/yufan/code/voxel-mechanics/src/runtime/benchmark.py": "89be98be93a3b9e55b015e07b603d1004dce924a3ea79a9b4c9f24fdee78e1f9",
+    "/home/yufan/code/voxel-mechanics/src/runtime/fi/atomic_adapter.py": "479da6a71f84b79a81a27c5f5163ebbf06dc5bbd85be55d960c612746e6fa011",
+    "/home/yufan/code/voxel-mechanics/src/runtime/fi/atomic_kernels.cu": "c11b0454ff4c25474b7b52f50f2d77267a07dd9f30030054159d46356f7b9179",
+    "/home/yufan/code/voxel-mechanics/src/runtime/fi/fi_reference.py": "1d97eb6f4a0d71fb9d4e0ce46a89b102b3b6d72217944f24b4fcbff4472b0159",
+    "/home/yufan/code/voxel-mechanics/src/runtime/fi/grouped_adapter.py": "23b5f55b3419aad82b08b8cafa90bd9b84ac397f90a474a73836fc85619f4671",
+    "/home/yufan/code/voxel-mechanics/src/runtime/fi/grouped_kernels.cu": "366417bc5707eb7cb59cbd1610abf86705b49ec97af7a5b7473f56a97d6a4010",
+    "/home/yufan/code/voxel-mechanics/src/runtime/fi/memory_adapter.py": "fd9120e4b1ad93922493a326e49da55f998c358145917c52d61905434aa03eff",
+    "/home/yufan/code/voxel-mechanics/src/runtime/fi/memory_kernels.cu": "4bf1bd1365ba53b2aeb595beb85044ae8f5cb1024130465695451591b8b55959",
+    "/home/yufan/code/voxel-mechanics/src/runtime/fi/source/femlib/__init__.py": "11fd28410ec8900de96f2728598403ebdada1d5bde256f15d10a19b0cf2937c3",
+    "/home/yufan/code/voxel-mechanics/src/runtime/fi/source/femlib/batched/__init__.py": "7495fef0802a94f776e5a013fbd79db83b3c070c5f3f0ff7a4a43a40cc143c5c",
+    "/home/yufan/code/voxel-mechanics/src/runtime/fi/source/femlib/batched/c3d8r_hourglass_operator.py": "6a2d179dff211f68efd2e5cb73bb90d43de6b389ce354085850e1904d6898aff",
+    "/home/yufan/code/voxel-mechanics/src/runtime/fi/source/femlib/batched/driver.py": "75fb88a4fce27eaed1e354e40b8e966cbb6e7f8cbc5bc78295250ab8af9f919b",
+    "/home/yufan/code/voxel-mechanics/src/runtime/fi/source/femlib/batched/fft_symbol_validation.py": "0be65e51f030cc8ec8550e6566fce0de3f5b5dfd8b691e22e1f2c19aa7a446ad",
+    "/home/yufan/code/voxel-mechanics/src/runtime/fi/source/femlib/batched/ir.py": "df1d83ffda346e0fc04fb4ee8e0c3553613a7f240e9ee5c5055ee41a0efb53e4",
+    "/home/yufan/code/voxel-mechanics/src/runtime/fi/source/femlib/batched/mesh_info.py": "bae4901d2ba9b695ab53a2784bf1fce379385046ea227dd191271e1b1d252611",
+    "/home/yufan/code/voxel-mechanics/src/runtime/fi/source/femlib/batched/pcg.py": "e349dc0c3e48be41af8f2e1a1a66d4b9c5f07ea1ec7ba2a6f57581f0b5fa5461",
+    "/home/yufan/code/voxel-mechanics/src/runtime/fi/source/femlib/batched/preconditioners/__init__.py": "4d166dca6e9f00511a09f5212892213bcd599aada13116b8e17c56168b1e3793",
+    "/home/yufan/code/voxel-mechanics/src/runtime/fi/source/femlib/batched/preconditioners/c3d8r_fft.py": "cf6ffc237d1756f7c11a99c0e8c7ed5710f985ef163580a668d39987ccdb93ba",
+    "/home/yufan/code/voxel-mechanics/src/runtime/fi/source/femlib/batched/stencil_operator.py": "c2ae37f069143cf5786022c71262fc16169775e91edf07877f7623c663fef384",
+    "/home/yufan/code/voxel-mechanics/src/runtime/fi/source/femlib/c3d8r.py": "1aa42c81cdaff3e0cd663ee6d6c30cef69fe282f6dc9206d777e7c98b46b3598",
+    "/home/yufan/code/voxel-mechanics/src/runtime/fi/source/femlib/connectivity.py": "b2ce6f9ad6e06b00c34b2f2bd189845a6beff33e5e54114e0164fc886b381070",
+    "/home/yufan/code/voxel-mechanics/src/runtime/fi/source/femlib/element_types.py": "091da6799e085e0a7ad64a8ae8793d71c660c20b47b0592aa0d6216d5acb4eda",
+    "/home/yufan/code/voxel-mechanics/src/runtime/fi/source/femlib/fem_batched.py": "d06a8f861b78643373e2e9b6448961252a061d3656cccf18a43fdf356ca7d849",
+    "/home/yufan/code/voxel-mechanics/src/runtime/fi/source/femlib/geometry.py": "9616e4393da72e13fbc2326cdb655452d739b4adece6cd6e404a9f9a759a168c",
+    "/home/yufan/code/voxel-mechanics/src/runtime/fi/source/femlib/materials.py": "334c7c71c05596010cef1497cabfeb990c0a4f1c521ed6d95206c79aa68302d0",
+    "/home/yufan/code/voxel-mechanics/src/runtime/fi/source/femlib/mesh.py": "b74c7060d7bd3368116430b33a8b9538166c8362d421426f6dca8dfff71fd3d0",
+    "/home/yufan/code/voxel-mechanics/src/runtime/fi/spatial_adapter.py": "e6a93fa95f62f418cfb0f6f9d499425938de34104900299e28bf8eed0b155cce",
+    "/home/yufan/code/voxel-mechanics/src/runtime/fi_benchmark.py": "c1ec2093bd8a9add9a981156dfedd30d008441de4ce5ad7fdb5f7ea569b9cf32",
+    "/home/yufan/code/voxel-mechanics/src/runtime/orientation_kernels.cu": "a62e4601e4e157fdf4b54391180596692ad7c4a74651e560732c95e03697500b",
+    "/home/yufan/code/voxel-mechanics/src/runtime/repro/extension_20261006/failure.cu": "fb72fe7607596485fe0f0add1202a08902da69df0c48d8279c14709112e0ca5e",
+    "/home/yufan/code/voxel-mechanics/src/runtime/repro/extension_20261006/material_control.py": "a02dd3958e3da53461b1d6f294047e206aa368172dc5e117a41b6df1c3f129c3",
+    "/home/yufan/code/voxel-mechanics/src/runtime/repro/extension_20261006/mixed_preconditioner.py": "df112cb1a956e903ce7f049e2361f0911df3ea7f8495d065124b9accd7c1d79c",
+    "/home/yufan/code/voxel-mechanics/src/runtime/repro/extension_20261006/physics.py": "33e3e5d94e6f8c590cb42aebbadfc46a52a557f246ca21b81f6d3a19baeabf6e",
+    "/home/yufan/code/voxel-mechanics/src/solver_chain/chain_adapter.py": "b40cedb51c80782d0b29af5d5f91aa8b368197a5f9886cfa66cd7dc6a676e772",
+    "/home/yufan/code/voxel-mechanics/src/solver_chain/chain_study.py": "49b1376a83a8eaaac578b7af7d176f6be4f5a85dfe920b285e9013aa60b67708",
+    "/home/yufan/code/voxel-mechanics/src/solver_chain/closed_study.py": "c51a515aad8b48ccc10ce18326db99afbb2b1723419e9da81a2b8bb67de80878",
+    "/home/yufan/code/voxel-mechanics/src/solver_chain/reference_closed_form.py": "6529f7e1b2993a21353199d163273aaf596c7804447f76852b66a31171798aad",
+    "/home/yufan/code/voxel-mechanics/src/solver_chain/reference_design.py": "9bcac32603c6a3943df7ce1af8fd9e4c118b63899fe681433aa80c992416403c",
+    "/home/yufan/code/voxel-mechanics/src/solver_chain/reference_study.py": "39134289b60d1b5fede4ee5583c199ba8bdf1d69c802924d0c384e250b7d322a",
+    "/home/yufan/code/voxel-mechanics/src/spectral/contest_adapter.py": "2ba9e2195862ec59762f80f0e44a2cb64b66ae472314b3458ae9d0a13261c853",
+    "/home/yufan/code/voxel-mechanics/src/spectral/contest_kernels.cu": "9beb1d7a651b7d001ea9fa04f5a3671fe59a0096950a808eab24c137f26c871a",
+    "/home/yufan/code/voxel-mechanics/src/spectral/native_adapter.py": "58705326d57584045e4036b7e112bdfb8eacfdd96e0ff14b57be9f99402dbc81",
+    "/home/yufan/code/voxel-mechanics/src/spectral/native_fft.cu": "f414368f2a178aef549aa8095ee7a50e7b4465a6fe706f1f664eadd7d9150d71",
+    "/home/yufan/code/voxel-mechanics/src/spectral/precision_adapter.py": "e6151e80f2c09362949d31be0c85f1adb3419318f0a4b0ac8d02d45b31a42283",
+    "/home/yufan/code/voxel-mechanics/src/spectral/precision_fft.cu": "787caa228585086b9a7466f515c8b9d596f8c1752921560a317f5798cb4b5830",
+    "/home/yufan/code/voxel-mechanics/src/spectral/precision_kernels.cu": "861fc6eb6d9e37486475bf0660c6872e0560a59568e1cf59d2dbf5b5ce377fb9"
+  },
+  "environment": {
+    "gpu": "NVIDIA GeForce RTX 5090",
+    "torch": "2.12.0+cu130",
+    "cuda": "13.0",
+    "python": "3.12.13 (main, Jun 11 2026, 04:03:26) [Clang 22.1.3 ]",
+    "threads": 1
+  },
+  "protocol": "FP64 physical operator and PCG; common FP32 FFT and fused execution; fixed normalized matrix reference; six engineering unit strains; periodic zero-mean displacement; true FP64 residual <=1e-8; one complete same-grid warmup; fresh process; synchronized complete-call time includes material construction, operator and FFT setup, RHS, PCG, residual certification, stress and cleanup; geometry, JIT compilation, warmup and I/O excluded."
+}

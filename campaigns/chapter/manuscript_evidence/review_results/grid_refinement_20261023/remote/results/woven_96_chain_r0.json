@@ -1,0 +1,3210 @@
+{
+  "complete": true,
+  "case": "woven",
+  "grid": 96,
+  "variant": "chain",
+  "repeat": 0,
+  "input_hash": "ca63c5644ba7064b070d488d276336e2f46eeb1a573bdaaa9d295a4e7c821e8b",
+  "input": {
+    "geometry": {
+      "width": 0.18,
+      "thickness": 0.035,
+      "amplitude": 0.09,
+      "height": 0.4,
+      "exact_yarn_fraction": 0.19792033717615698,
+      "voxel_yarn_fraction": 0.19777199074074073
+    },
+    "material": {
+      "matrix": {
+        "E": 3500.0,
+        "Nu": 0.35
+      },
+      "yarn": {
+        "E11": 135000.0,
+        "E22": 9000.0,
+        "E33": 9000.0,
+        "Nu12": 0.3,
+        "Nu13": 0.3,
+        "Nu23": 0.35,
+        "G12": 5000.0,
+        "G13": 5000.0,
+        "G23": 3500.0
+      }
+    },
+    "active_fraction": 0.19777199074074073
+  },
+  "measurement": {
+    "seconds": 0.23604129790328443,
+    "CH": [
+      [
+        12267.139014206801,
+        4902.697179854103,
+        4238.204069334868,
+        -1.2500288869853614e-13,
+        -1.8071141291194955e-13,
+        2.3026847918151395e-15
+      ],
+      [
+        4902.6971798541035,
+        12267.139014206801,
+        4238.204069334869,
+        2.257946915859874e-13,
+        -4.926100679633102e-14,
+        2.5245237998837587e-14
+      ],
+      [
+        4238.20406938679,
+        4238.204069386791,
+        6581.7670268347665,
+        3.6908747663094094e-14,
+        -1.2967199330765417e-13,
+        -9.874817013471531e-15
+      ],
+      [
+        1.1973960917438725e-14,
+        2.6711143585055617e-14,
+        6.980424468902466e-14,
+        1753.1368533972072,
+        -1.9219194137399932e-14,
+        4.739007540298122e-15
+      ],
+      [
+        3.805351095959648e-13,
+        1.384242514851158e-13,
+        2.8290127442300285e-14,
+        3.7566657603612705e-14,
+        1753.1368533972075,
+        1.4868764655720615e-14
+      ],
+      [
+        7.516621070425134e-14,
+        7.697546304067751e-15,
+        2.917008198774393e-14,
+        -8.059396771352989e-14,
+        -4.720503823221036e-14,
+        1823.17142171507
+      ]
+    ],
+    "calls": [
+      {
+        "iterations": 53,
+        "restarts": 0,
+        "true_residuals": [
+          9.966774381285421e-09
+        ],
+        "trace": []
+      },
+      {
+        "iterations": 53,
+        "restarts": 0,
+        "true_residuals": [
+          9.96677592144011e-09
+        ],
+        "trace": []
+      },
+      {
+        "iterations": 53,
+        "restarts": 0,
+        "true_residuals": [
+          7.622111945535973e-09
+        ],
+        "trace": []
+      },
+      {
+        "iterations": 53,
+        "restarts": 0,
+        "true_residuals": [
+          7.572022239683792e-09
+        ],
+        "trace": []
+      },
+      {
+        "iterations": 53,
+        "restarts": 0,
+        "true_residuals": [
+          7.572025591716894e-09
+        ],
+        "trace": []
+      },
+      {
+        "iterations": 54,
+        "restarts": 0,
+        "true_residuals": [
+          8.129594710766092e-09
+        ],
+        "trace": []
+      }
+    ],
+    "stages": [
+      {
+        "name": "material",
+        "seconds": 0.008792083011940122,
+        "live": 182452224,
+        "peak": 213912064,
+        "reserved": 513802240
+      },
+      {
+        "name": "operator",
+        "seconds": 0.0003934039268642664,
+        "live": 182461952,
+        "peak": 182461952,
+        "reserved": 513802240,
+        "arrays": {
+          "C": {
+            "bytes": 148635648,
+            "shape": [
+              1,
+              884736,
+              21
+            ],
+            "dtype": "torch.float64",
+            "storage": 125901534658560
+          },
+          "B_mat": {
+            "bytes": 9216,
+            "shape": [
+              8,
+              6,
+              24
+            ],
+            "dtype": "torch.float64",
+            "storage": 125900517539840
+          },
+          "elem_node_ids": {
+            "bytes": 0,
+            "shape": [
+              0,
+              8
+            ],
+            "dtype": "torch.int64",
+            "storage": 0
+          },
+          "elem_dof_ids": {
+            "bytes": 0,
+            "shape": [
+              0,
+              24
+            ],
+            "dtype": "torch.int64",
+            "storage": 0
+          },
+          "elem_dof_flat": {
+            "bytes": 0,
+            "shape": [
+              0
+            ],
+            "dtype": "torch.int64",
+            "storage": 0
+          },
+          "_C_voigt_gpu": {
+            "bytes": 148635648,
+            "shape": [
+              1,
+              884736,
+              21
+            ],
+            "dtype": "torch.float64",
+            "storage": 125901534658560
+          },
+          "S_flat": {
+            "bytes": 0,
+            "shape": [
+              0
+            ],
+            "dtype": "torch.float64",
+            "storage": 0
+          },
+          "_cuda_geometry": {
+            "bytes": 32,
+            "shape": [
+              4
+            ],
+            "dtype": "torch.float64",
+            "storage": 125900517549056
+          }
+        }
+      },
+      {
+        "name": "reference",
+        "seconds": 0.011053791036829352,
+        "live": 189692928,
+        "peak": 189692928,
+        "reserved": 513802240,
+        "arrays": {
+          "C": {
+            "bytes": 148635648,
+            "shape": [
+              1,
+              884736,
+              21
+            ],
+            "dtype": "torch.float64",
+            "storage": 125901534658560
+          },
+          "B_mat": {
+            "bytes": 9216,
+            "shape": [
+              8,
+              6,
+              24
+            ],
+            "dtype": "torch.float64",
+            "storage": 125900517539840
+          },
+          "elem_node_ids": {
+            "bytes": 0,
+            "shape": [
+              0,
+              8
+            ],
+            "dtype": "torch.int64",
+            "storage": 0
+          },
+          "elem_dof_ids": {
+            "bytes": 0,
+            "shape": [
+              0,
+              24
+            ],
+            "dtype": "torch.int64",
+            "storage": 0
+          },
+          "elem_dof_flat": {
+            "bytes": 0,
+            "shape": [
+              0
+            ],
+            "dtype": "torch.int64",
+            "storage": 0
+          },
+          "_C_voigt_gpu": {
+            "bytes": 148635648,
+            "shape": [
+              1,
+              884736,
+              21
+            ],
+            "dtype": "torch.float64",
+            "storage": 125901534658560
+          },
+          "S_flat": {
+            "bytes": 0,
+            "shape": [
+              0
+            ],
+            "dtype": "torch.float64",
+            "storage": 0
+          },
+          "_fft_symbol_inv": {
+            "bytes": 7225344,
+            "shape": [
+              4,
+              451584
+            ],
+            "dtype": "torch.float32",
+            "storage": 125900479791104
+          },
+          "_cuda_geometry": {
+            "bytes": 32,
+            "shape": [
+              4
+            ],
+            "dtype": "torch.float64",
+            "storage": 125900517549056
+          }
+        }
+      },
+      {
+        "name": "representation",
+        "seconds": 3.4430064260959625e-05,
+        "live": 189694464,
+        "peak": 189696000,
+        "reserved": 513802240,
+        "arrays": {
+          "C": {
+            "bytes": 148635648,
+            "shape": [
+              1,
+              884736,
+              21
+            ],
+            "dtype": "torch.float64",
+            "storage": 125901534658560
+          },
+          "B_mat": {
+            "bytes": 9216,
+            "shape": [
+              8,
+              6,
+              24
+            ],
+            "dtype": "torch.float64",
+            "storage": 125900517539840
+          },
+          "elem_node_ids": {
+            "bytes": 0,
+            "shape": [
+              0,
+              8
+            ],
+            "dtype": "torch.int64",
+            "storage": 0
+          },
+          "elem_dof_ids": {
+            "bytes": 0,
+            "shape": [
+              0,
+              24
+            ],
+            "dtype": "torch.int64",
+            "storage": 0
+          },
+          "elem_dof_flat": {
+            "bytes": 0,
+            "shape": [
+              0
+            ],
+            "dtype": "torch.int64",
+            "storage": 0
+          },
+          "_C_voigt_gpu": {
+            "bytes": 148635648,
+            "shape": [
+              1,
+              884736,
+              21
+            ],
+            "dtype": "torch.float64",
+            "storage": 125901534658560
+          },
+          "S_flat": {
+            "bytes": 0,
+            "shape": [
+              0
+            ],
+            "dtype": "torch.float64",
+            "storage": 0
+          },
+          "_fft_symbol_inv": {
+            "bytes": 7225344,
+            "shape": [
+              4,
+              451584
+            ],
+            "dtype": "torch.float32",
+            "storage": 125900479791104
+          },
+          "_cuda_geometry": {
+            "bytes": 32,
+            "shape": [
+              4
+            ],
+            "dtype": "torch.float64",
+            "storage": 125900517549056
+          },
+          "_B_integrated": {
+            "bytes": 1152,
+            "shape": [
+              6,
+              24
+            ],
+            "dtype": "torch.float64",
+            "storage": 125900517556736
+          }
+        }
+      },
+      {
+        "name": "candidate_attachment",
+        "seconds": 2.4981098249554634e-05,
+        "live": 189694464,
+        "peak": 189694464,
+        "reserved": 513802240,
+        "arrays": {
+          "C": {
+            "bytes": 148635648,
+            "shape": [
+              1,
+              884736,
+              21
+            ],
+            "dtype": "torch.float64",
+            "storage": 125901534658560
+          },
+          "B_mat": {
+            "bytes": 9216,
+            "shape": [
+              8,
+              6,
+              24
+            ],
+            "dtype": "torch.float64",
+            "storage": 125900517539840
+          },
+          "elem_node_ids": {
+            "bytes": 0,
+            "shape": [
+              0,
+              8
+            ],
+            "dtype": "torch.int64",
+            "storage": 0
+          },
+          "elem_dof_ids": {
+            "bytes": 0,
+            "shape": [
+              0,
+              24
+            ],
+            "dtype": "torch.int64",
+            "storage": 0
+          },
+          "elem_dof_flat": {
+            "bytes": 0,
+            "shape": [
+              0
+            ],
+            "dtype": "torch.int64",
+            "storage": 0
+          },
+          "_C_voigt_gpu": {
+            "bytes": 148635648,
+            "shape": [
+              1,
+              884736,
+              21
+            ],
+            "dtype": "torch.float64",
+            "storage": 125901534658560
+          },
+          "S_flat": {
+            "bytes": 0,
+            "shape": [
+              0
+            ],
+            "dtype": "torch.float64",
+            "storage": 0
+          },
+          "_fft_symbol_inv": {
+            "bytes": 7225344,
+            "shape": [
+              4,
+              451584
+            ],
+            "dtype": "torch.float32",
+            "storage": 125900479791104
+          },
+          "_cuda_geometry": {
+            "bytes": 32,
+            "shape": [
+              4
+            ],
+            "dtype": "torch.float64",
+            "storage": 125900517549056
+          },
+          "_B_integrated": {
+            "bytes": 1152,
+            "shape": [
+              6,
+              24
+            ],
+            "dtype": "torch.float64",
+            "storage": 125900517556736
+          },
+          "_modal_scales": {
+            "bytes": 0,
+            "shape": [
+              0
+            ],
+            "dtype": "torch.float64",
+            "storage": 0
+          },
+          "_modal_forces": {
+            "bytes": 0,
+            "shape": [
+              0
+            ],
+            "dtype": "torch.float64",
+            "storage": 0
+          }
+        }
+      },
+      {
+        "name": "formula_attachment",
+        "seconds": 2.939952537417412e-06,
+        "live": 189694464,
+        "peak": 189694464,
+        "reserved": 513802240,
+        "arrays": {
+          "C": {
+            "bytes": 148635648,
+            "shape": [
+              1,
+              884736,
+              21
+            ],
+            "dtype": "torch.float64",
+            "storage": 125901534658560
+          },
+          "B_mat": {
+            "bytes": 9216,
+            "shape": [
+              8,
+              6,
+              24
+            ],
+            "dtype": "torch.float64",
+            "storage": 125900517539840
+          },
+          "elem_node_ids": {
+            "bytes": 0,
+            "shape": [
+              0,
+              8
+            ],
+            "dtype": "torch.int64",
+            "storage": 0
+          },
+          "elem_dof_ids": {
+            "bytes": 0,
+            "shape": [
+              0,
+              24
+            ],
+            "dtype": "torch.int64",
+            "storage": 0
+          },
+          "elem_dof_flat": {
+            "bytes": 0,
+            "shape": [
+              0
+            ],
+            "dtype": "torch.int64",
+            "storage": 0
+          },
+          "_C_voigt_gpu": {
+            "bytes": 148635648,
+            "shape": [
+              1,
+              884736,
+              21
+            ],
+            "dtype": "torch.float64",
+            "storage": 125901534658560
+          },
+          "S_flat": {
+            "bytes": 0,
+            "shape": [
+              0
+            ],
+            "dtype": "torch.float64",
+            "storage": 0
+          },
+          "_fft_symbol_inv": {
+            "bytes": 7225344,
+            "shape": [
+              4,
+              451584
+            ],
+            "dtype": "torch.float32",
+            "storage": 125900479791104
+          },
+          "_cuda_geometry": {
+            "bytes": 32,
+            "shape": [
+              4
+            ],
+            "dtype": "torch.float64",
+            "storage": 125900517549056
+          },
+          "_B_integrated": {
+            "bytes": 1152,
+            "shape": [
+              6,
+              24
+            ],
+            "dtype": "torch.float64",
+            "storage": 125900517556736
+          },
+          "_modal_scales": {
+            "bytes": 0,
+            "shape": [
+              0
+            ],
+            "dtype": "torch.float64",
+            "storage": 0
+          },
+          "_modal_forces": {
+            "bytes": 0,
+            "shape": [
+              0
+            ],
+            "dtype": "torch.float64",
+            "storage": 0
+          }
+        }
+      },
+      {
+        "name": "spectral_reference_design",
+        "seconds": 0.0007702668663114309,
+        "live": 189923840,
+        "peak": 197149184,
+        "reserved": 513802240,
+        "arrays": {
+          "C": {
+            "bytes": 148635648,
+            "shape": [
+              1,
+              884736,
+              21
+            ],
+            "dtype": "torch.float64",
+            "storage": 125901534658560
+          },
+          "B_mat": {
+            "bytes": 9216,
+            "shape": [
+              8,
+              6,
+              24
+            ],
+            "dtype": "torch.float64",
+            "storage": 125900517539840
+          },
+          "elem_node_ids": {
+            "bytes": 0,
+            "shape": [
+              0,
+              8
+            ],
+            "dtype": "torch.int64",
+            "storage": 0
+          },
+          "elem_dof_ids": {
+            "bytes": 0,
+            "shape": [
+              0,
+              24
+            ],
+            "dtype": "torch.int64",
+            "storage": 0
+          },
+          "elem_dof_flat": {
+            "bytes": 0,
+            "shape": [
+              0
+            ],
+            "dtype": "torch.int64",
+            "storage": 0
+          },
+          "_C_voigt_gpu": {
+            "bytes": 148635648,
+            "shape": [
+              1,
+              884736,
+              21
+            ],
+            "dtype": "torch.float64",
+            "storage": 125901534658560
+          },
+          "S_flat": {
+            "bytes": 0,
+            "shape": [
+              0
+            ],
+            "dtype": "torch.float64",
+            "storage": 0
+          },
+          "_fft_symbol_inv": {
+            "bytes": 7225344,
+            "shape": [
+              4,
+              451584
+            ],
+            "dtype": "torch.float32",
+            "storage": 125900487016448
+          },
+          "_cuda_geometry": {
+            "bytes": 32,
+            "shape": [
+              4
+            ],
+            "dtype": "torch.float64",
+            "storage": 125900517549056
+          },
+          "_B_integrated": {
+            "bytes": 1152,
+            "shape": [
+              6,
+              24
+            ],
+            "dtype": "torch.float64",
+            "storage": 125900517556736
+          },
+          "_modal_scales": {
+            "bytes": 0,
+            "shape": [
+              0
+            ],
+            "dtype": "torch.float64",
+            "storage": 0
+          },
+          "_modal_forces": {
+            "bytes": 0,
+            "shape": [
+              0
+            ],
+            "dtype": "torch.float64",
+            "storage": 0
+          }
+        }
+      },
+      {
+        "name": "chain_attachment",
+        "seconds": 0.0006917451974004507,
+        "live": 193307136,
+        "peak": 200761856,
+        "reserved": 513802240,
+        "arrays": {
+          "C": {
+            "bytes": 148635648,
+            "shape": [
+              1,
+              884736,
+              21
+            ],
+            "dtype": "torch.float64",
+            "storage": 125901534658560
+          },
+          "B_mat": {
+            "bytes": 9216,
+            "shape": [
+              8,
+              6,
+              24
+            ],
+            "dtype": "torch.float64",
+            "storage": 125900517539840
+          },
+          "elem_node_ids": {
+            "bytes": 0,
+            "shape": [
+              0,
+              8
+            ],
+            "dtype": "torch.int64",
+            "storage": 0
+          },
+          "elem_dof_ids": {
+            "bytes": 0,
+            "shape": [
+              0,
+              24
+            ],
+            "dtype": "torch.int64",
+            "storage": 0
+          },
+          "elem_dof_flat": {
+            "bytes": 0,
+            "shape": [
+              0
+            ],
+            "dtype": "torch.int64",
+            "storage": 0
+          },
+          "_C_voigt_gpu": {
+            "bytes": 148635648,
+            "shape": [
+              1,
+              884736,
+              21
+            ],
+            "dtype": "torch.float64",
+            "storage": 125901534658560
+          },
+          "S_flat": {
+            "bytes": 0,
+            "shape": [
+              0
+            ],
+            "dtype": "torch.float64",
+            "storage": 0
+          },
+          "_cuda_geometry": {
+            "bytes": 32,
+            "shape": [
+              4
+            ],
+            "dtype": "torch.float64",
+            "storage": 125900517549056
+          },
+          "_B_integrated": {
+            "bytes": 1152,
+            "shape": [
+              6,
+              24
+            ],
+            "dtype": "torch.float64",
+            "storage": 125900517556736
+          },
+          "_modal_scales": {
+            "bytes": 0,
+            "shape": [
+              0
+            ],
+            "dtype": "torch.float64",
+            "storage": 0
+          },
+          "_modal_forces": {
+            "bytes": 0,
+            "shape": [
+              0
+            ],
+            "dtype": "torch.float64",
+            "storage": 0
+          },
+          "_contest_coefficient": {
+            "bytes": 10838016,
+            "shape": [
+              6,
+              451584
+            ],
+            "dtype": "torch.float32",
+            "storage": 125900450430976
+          }
+        }
+      },
+      {
+        "name": "rhs0",
+        "seconds": 0.0007876160088926554,
+        "live": 214540800,
+        "peak": 235774976,
+        "reserved": 513802240,
+        "arrays": {
+          "C": {
+            "bytes": 148635648,
+            "shape": [
+              1,
+              884736,
+              21
+            ],
+            "dtype": "torch.float64",
+            "storage": 125901534658560
+          },
+          "B_mat": {
+            "bytes": 9216,
+            "shape": [
+              8,
+              6,
+              24
+            ],
+            "dtype": "torch.float64",
+            "storage": 125900517539840
+          },
+          "elem_node_ids": {
+            "bytes": 0,
+            "shape": [
+              0,
+              8
+            ],
+            "dtype": "torch.int64",
+            "storage": 0
+          },
+          "elem_dof_ids": {
+            "bytes": 0,
+            "shape": [
+              0,
+              24
+            ],
+            "dtype": "torch.int64",
+            "storage": 0
+          },
+          "elem_dof_flat": {
+            "bytes": 0,
+            "shape": [
+              0
+            ],
+            "dtype": "torch.int64",
+            "storage": 0
+          },
+          "_C_voigt_gpu": {
+            "bytes": 148635648,
+            "shape": [
+              1,
+              884736,
+              21
+            ],
+            "dtype": "torch.float64",
+            "storage": 125901534658560
+          },
+          "S_flat": {
+            "bytes": 0,
+            "shape": [
+              0
+            ],
+            "dtype": "torch.float64",
+            "storage": 0
+          },
+          "_cuda_geometry": {
+            "bytes": 32,
+            "shape": [
+              4
+            ],
+            "dtype": "torch.float64",
+            "storage": 125900517549056
+          },
+          "_B_integrated": {
+            "bytes": 1152,
+            "shape": [
+              6,
+              24
+            ],
+            "dtype": "torch.float64",
+            "storage": 125900517556736
+          },
+          "_modal_scales": {
+            "bytes": 0,
+            "shape": [
+              0
+            ],
+            "dtype": "torch.float64",
+            "storage": 0
+          },
+          "_modal_forces": {
+            "bytes": 0,
+            "shape": [
+              0
+            ],
+            "dtype": "torch.float64",
+            "storage": 0
+          },
+          "_contest_coefficient": {
+            "bytes": 10838016,
+            "shape": [
+              6,
+              451584
+            ],
+            "dtype": "torch.float32",
+            "storage": 125900450430976
+          }
+        }
+      },
+      {
+        "name": "solve0",
+        "seconds": 0.03406591108068824,
+        "live": 235774464,
+        "peak": 352564224,
+        "reserved": 513802240,
+        "arrays": {
+          "C": {
+            "bytes": 148635648,
+            "shape": [
+              1,
+              884736,
+              21
+            ],
+            "dtype": "torch.float64",
+            "storage": 125901534658560
+          },
+          "B_mat": {
+            "bytes": 9216,
+            "shape": [
+              8,
+              6,
+              24
+            ],
+            "dtype": "torch.float64",
+            "storage": 125900517539840
+          },
+          "elem_node_ids": {
+            "bytes": 0,
+            "shape": [
+              0,
+              8
+            ],
+            "dtype": "torch.int64",
+            "storage": 0
+          },
+          "elem_dof_ids": {
+            "bytes": 0,
+            "shape": [
+              0,
+              24
+            ],
+            "dtype": "torch.int64",
+            "storage": 0
+          },
+          "elem_dof_flat": {
+            "bytes": 0,
+            "shape": [
+              0
+            ],
+            "dtype": "torch.int64",
+            "storage": 0
+          },
+          "_C_voigt_gpu": {
+            "bytes": 148635648,
+            "shape": [
+              1,
+              884736,
+              21
+            ],
+            "dtype": "torch.float64",
+            "storage": 125901534658560
+          },
+          "S_flat": {
+            "bytes": 0,
+            "shape": [
+              0
+            ],
+            "dtype": "torch.float64",
+            "storage": 0
+          },
+          "_cuda_geometry": {
+            "bytes": 32,
+            "shape": [
+              4
+            ],
+            "dtype": "torch.float64",
+            "storage": 125900517549056
+          },
+          "_B_integrated": {
+            "bytes": 1152,
+            "shape": [
+              6,
+              24
+            ],
+            "dtype": "torch.float64",
+            "storage": 125900517556736
+          },
+          "_modal_scales": {
+            "bytes": 0,
+            "shape": [
+              0
+            ],
+            "dtype": "torch.float64",
+            "storage": 0
+          },
+          "_modal_forces": {
+            "bytes": 0,
+            "shape": [
+              0
+            ],
+            "dtype": "torch.float64",
+            "storage": 0
+          },
+          "_contest_coefficient": {
+            "bytes": 10838016,
+            "shape": [
+              6,
+              451584
+            ],
+            "dtype": "torch.float32",
+            "storage": 125900450430976
+          }
+        }
+      },
+      {
+        "name": "post0",
+        "seconds": 0.0002769031561911106,
+        "live": 235774464,
+        "peak": 236107264,
+        "reserved": 513802240,
+        "arrays": {
+          "C": {
+            "bytes": 148635648,
+            "shape": [
+              1,
+              884736,
+              21
+            ],
+            "dtype": "torch.float64",
+            "storage": 125901534658560
+          },
+          "B_mat": {
+            "bytes": 9216,
+            "shape": [
+              8,
+              6,
+              24
+            ],
+            "dtype": "torch.float64",
+            "storage": 125900517539840
+          },
+          "elem_node_ids": {
+            "bytes": 0,
+            "shape": [
+              0,
+              8
+            ],
+            "dtype": "torch.int64",
+            "storage": 0
+          },
+          "elem_dof_ids": {
+            "bytes": 0,
+            "shape": [
+              0,
+              24
+            ],
+            "dtype": "torch.int64",
+            "storage": 0
+          },
+          "elem_dof_flat": {
+            "bytes": 0,
+            "shape": [
+              0
+            ],
+            "dtype": "torch.int64",
+            "storage": 0
+          },
+          "_C_voigt_gpu": {
+            "bytes": 148635648,
+            "shape": [
+              1,
+              884736,
+              21
+            ],
+            "dtype": "torch.float64",
+            "storage": 125901534658560
+          },
+          "S_flat": {
+            "bytes": 0,
+            "shape": [
+              0
+            ],
+            "dtype": "torch.float64",
+            "storage": 0
+          },
+          "_cuda_geometry": {
+            "bytes": 32,
+            "shape": [
+              4
+            ],
+            "dtype": "torch.float64",
+            "storage": 125900517549056
+          },
+          "_B_integrated": {
+            "bytes": 1152,
+            "shape": [
+              6,
+              24
+            ],
+            "dtype": "torch.float64",
+            "storage": 125900517556736
+          },
+          "_modal_scales": {
+            "bytes": 0,
+            "shape": [
+              0
+            ],
+            "dtype": "torch.float64",
+            "storage": 0
+          },
+          "_modal_forces": {
+            "bytes": 0,
+            "shape": [
+              0
+            ],
+            "dtype": "torch.float64",
+            "storage": 0
+          },
+          "_contest_coefficient": {
+            "bytes": 10838016,
+            "shape": [
+              6,
+              451584
+            ],
+            "dtype": "torch.float32",
+            "storage": 125900450430976
+          }
+        }
+      },
+      {
+        "name": "rhs1",
+        "seconds": 0.0007648160681128502,
+        "live": 214540800,
+        "peak": 235774976,
+        "reserved": 513802240,
+        "arrays": {
+          "C": {
+            "bytes": 148635648,
+            "shape": [
+              1,
+              884736,
+              21
+            ],
+            "dtype": "torch.float64",
+            "storage": 125901534658560
+          },
+          "B_mat": {
+            "bytes": 9216,
+            "shape": [
+              8,
+              6,
+              24
+            ],
+            "dtype": "torch.float64",
+            "storage": 125900517539840
+          },
+          "elem_node_ids": {
+            "bytes": 0,
+            "shape": [
+              0,
+              8
+            ],
+            "dtype": "torch.int64",
+            "storage": 0
+          },
+          "elem_dof_ids": {
+            "bytes": 0,
+            "shape": [
+              0,
+              24
+            ],
+            "dtype": "torch.int64",
+            "storage": 0
+          },
+          "elem_dof_flat": {
+            "bytes": 0,
+            "shape": [
+              0
+            ],
+            "dtype": "torch.int64",
+            "storage": 0
+          },
+          "_C_voigt_gpu": {
+            "bytes": 148635648,
+            "shape": [
+              1,
+              884736,
+              21
+            ],
+            "dtype": "torch.float64",
+            "storage": 125901534658560
+          },
+          "S_flat": {
+            "bytes": 0,
+            "shape": [
+              0
+            ],
+            "dtype": "torch.float64",
+            "storage": 0
+          },
+          "_cuda_geometry": {
+            "bytes": 32,
+            "shape": [
+              4
+            ],
+            "dtype": "torch.float64",
+            "storage": 125900517549056
+          },
+          "_B_integrated": {
+            "bytes": 1152,
+            "shape": [
+              6,
+              24
+            ],
+            "dtype": "torch.float64",
+            "storage": 125900517556736
+          },
+          "_modal_scales": {
+            "bytes": 0,
+            "shape": [
+              0
+            ],
+            "dtype": "torch.float64",
+            "storage": 0
+          },
+          "_modal_forces": {
+            "bytes": 0,
+            "shape": [
+              0
+            ],
+            "dtype": "torch.float64",
+            "storage": 0
+          },
+          "_contest_coefficient": {
+            "bytes": 10838016,
+            "shape": [
+              6,
+              451584
+            ],
+            "dtype": "torch.float32",
+            "storage": 125900450430976
+          }
+        }
+      },
+      {
+        "name": "solve1",
+        "seconds": 0.034003230975940824,
+        "live": 235774464,
+        "peak": 352564224,
+        "reserved": 513802240,
+        "arrays": {
+          "C": {
+            "bytes": 148635648,
+            "shape": [
+              1,
+              884736,
+              21
+            ],
+            "dtype": "torch.float64",
+            "storage": 125901534658560
+          },
+          "B_mat": {
+            "bytes": 9216,
+            "shape": [
+              8,
+              6,
+              24
+            ],
+            "dtype": "torch.float64",
+            "storage": 125900517539840
+          },
+          "elem_node_ids": {
+            "bytes": 0,
+            "shape": [
+              0,
+              8
+            ],
+            "dtype": "torch.int64",
+            "storage": 0
+          },
+          "elem_dof_ids": {
+            "bytes": 0,
+            "shape": [
+              0,
+              24
+            ],
+            "dtype": "torch.int64",
+            "storage": 0
+          },
+          "elem_dof_flat": {
+            "bytes": 0,
+            "shape": [
+              0
+            ],
+            "dtype": "torch.int64",
+            "storage": 0
+          },
+          "_C_voigt_gpu": {
+            "bytes": 148635648,
+            "shape": [
+              1,
+              884736,
+              21
+            ],
+            "dtype": "torch.float64",
+            "storage": 125901534658560
+          },
+          "S_flat": {
+            "bytes": 0,
+            "shape": [
+              0
+            ],
+            "dtype": "torch.float64",
+            "storage": 0
+          },
+          "_cuda_geometry": {
+            "bytes": 32,
+            "shape": [
+              4
+            ],
+            "dtype": "torch.float64",
+            "storage": 125900517549056
+          },
+          "_B_integrated": {
+            "bytes": 1152,
+            "shape": [
+              6,
+              24
+            ],
+            "dtype": "torch.float64",
+            "storage": 125900517556736
+          },
+          "_modal_scales": {
+            "bytes": 0,
+            "shape": [
+              0
+            ],
+            "dtype": "torch.float64",
+            "storage": 0
+          },
+          "_modal_forces": {
+            "bytes": 0,
+            "shape": [
+              0
+            ],
+            "dtype": "torch.float64",
+            "storage": 0
+          },
+          "_contest_coefficient": {
+            "bytes": 10838016,
+            "shape": [
+              6,
+              451584
+            ],
+            "dtype": "torch.float32",
+            "storage": 125900450430976
+          }
+        }
+      },
+      {
+        "name": "post1",
+        "seconds": 0.0002681619953364134,
+        "live": 235774464,
+        "peak": 236107264,
+        "reserved": 513802240,
+        "arrays": {
+          "C": {
+            "bytes": 148635648,
+            "shape": [
+              1,
+              884736,
+              21
+            ],
+            "dtype": "torch.float64",
+            "storage": 125901534658560
+          },
+          "B_mat": {
+            "bytes": 9216,
+            "shape": [
+              8,
+              6,
+              24
+            ],
+            "dtype": "torch.float64",
+            "storage": 125900517539840
+          },
+          "elem_node_ids": {
+            "bytes": 0,
+            "shape": [
+              0,
+              8
+            ],
+            "dtype": "torch.int64",
+            "storage": 0
+          },
+          "elem_dof_ids": {
+            "bytes": 0,
+            "shape": [
+              0,
+              24
+            ],
+            "dtype": "torch.int64",
+            "storage": 0
+          },
+          "elem_dof_flat": {
+            "bytes": 0,
+            "shape": [
+              0
+            ],
+            "dtype": "torch.int64",
+            "storage": 0
+          },
+          "_C_voigt_gpu": {
+            "bytes": 148635648,
+            "shape": [
+              1,
+              884736,
+              21
+            ],
+            "dtype": "torch.float64",
+            "storage": 125901534658560
+          },
+          "S_flat": {
+            "bytes": 0,
+            "shape": [
+              0
+            ],
+            "dtype": "torch.float64",
+            "storage": 0
+          },
+          "_cuda_geometry": {
+            "bytes": 32,
+            "shape": [
+              4
+            ],
+            "dtype": "torch.float64",
+            "storage": 125900517549056
+          },
+          "_B_integrated": {
+            "bytes": 1152,
+            "shape": [
+              6,
+              24
+            ],
+            "dtype": "torch.float64",
+            "storage": 125900517556736
+          },
+          "_modal_scales": {
+            "bytes": 0,
+            "shape": [
+              0
+            ],
+            "dtype": "torch.float64",
+            "storage": 0
+          },
+          "_modal_forces": {
+            "bytes": 0,
+            "shape": [
+              0
+            ],
+            "dtype": "torch.float64",
+            "storage": 0
+          },
+          "_contest_coefficient": {
+            "bytes": 10838016,
+            "shape": [
+              6,
+              451584
+            ],
+            "dtype": "torch.float32",
+            "storage": 125900450430976
+          }
+        }
+      },
+      {
+        "name": "rhs2",
+        "seconds": 0.0007676770910620689,
+        "live": 214540800,
+        "peak": 235774976,
+        "reserved": 513802240,
+        "arrays": {
+          "C": {
+            "bytes": 148635648,
+            "shape": [
+              1,
+              884736,
+              21
+            ],
+            "dtype": "torch.float64",
+            "storage": 125901534658560
+          },
+          "B_mat": {
+            "bytes": 9216,
+            "shape": [
+              8,
+              6,
+              24
+            ],
+            "dtype": "torch.float64",
+            "storage": 125900517539840
+          },
+          "elem_node_ids": {
+            "bytes": 0,
+            "shape": [
+              0,
+              8
+            ],
+            "dtype": "torch.int64",
+            "storage": 0
+          },
+          "elem_dof_ids": {
+            "bytes": 0,
+            "shape": [
+              0,
+              24
+            ],
+            "dtype": "torch.int64",
+            "storage": 0
+          },
+          "elem_dof_flat": {
+            "bytes": 0,
+            "shape": [
+              0
+            ],
+            "dtype": "torch.int64",
+            "storage": 0
+          },
+          "_C_voigt_gpu": {
+            "bytes": 148635648,
+            "shape": [
+              1,
+              884736,
+              21
+            ],
+            "dtype": "torch.float64",
+            "storage": 125901534658560
+          },
+          "S_flat": {
+            "bytes": 0,
+            "shape": [
+              0
+            ],
+            "dtype": "torch.float64",
+            "storage": 0
+          },
+          "_cuda_geometry": {
+            "bytes": 32,
+            "shape": [
+              4
+            ],
+            "dtype": "torch.float64",
+            "storage": 125900517549056
+          },
+          "_B_integrated": {
+            "bytes": 1152,
+            "shape": [
+              6,
+              24
+            ],
+            "dtype": "torch.float64",
+            "storage": 125900517556736
+          },
+          "_modal_scales": {
+            "bytes": 0,
+            "shape": [
+              0
+            ],
+            "dtype": "torch.float64",
+            "storage": 0
+          },
+          "_modal_forces": {
+            "bytes": 0,
+            "shape": [
+              0
+            ],
+            "dtype": "torch.float64",
+            "storage": 0
+          },
+          "_contest_coefficient": {
+            "bytes": 10838016,
+            "shape": [
+              6,
+              451584
+            ],
+            "dtype": "torch.float32",
+            "storage": 125900450430976
+          }
+        }
+      },
+      {
+        "name": "solve2",
+        "seconds": 0.033996359910815954,
+        "live": 235774464,
+        "peak": 352564224,
+        "reserved": 513802240,
+        "arrays": {
+          "C": {
+            "bytes": 148635648,
+            "shape": [
+              1,
+              884736,
+              21
+            ],
+            "dtype": "torch.float64",
+            "storage": 125901534658560
+          },
+          "B_mat": {
+            "bytes": 9216,
+            "shape": [
+              8,
+              6,
+              24
+            ],
+            "dtype": "torch.float64",
+            "storage": 125900517539840
+          },
+          "elem_node_ids": {
+            "bytes": 0,
+            "shape": [
+              0,
+              8
+            ],
+            "dtype": "torch.int64",
+            "storage": 0
+          },
+          "elem_dof_ids": {
+            "bytes": 0,
+            "shape": [
+              0,
+              24
+            ],
+            "dtype": "torch.int64",
+            "storage": 0
+          },
+          "elem_dof_flat": {
+            "bytes": 0,
+            "shape": [
+              0
+            ],
+            "dtype": "torch.int64",
+            "storage": 0
+          },
+          "_C_voigt_gpu": {
+            "bytes": 148635648,
+            "shape": [
+              1,
+              884736,
+              21
+            ],
+            "dtype": "torch.float64",
+            "storage": 125901534658560
+          },
+          "S_flat": {
+            "bytes": 0,
+            "shape": [
+              0
+            ],
+            "dtype": "torch.float64",
+            "storage": 0
+          },
+          "_cuda_geometry": {
+            "bytes": 32,
+            "shape": [
+              4
+            ],
+            "dtype": "torch.float64",
+            "storage": 125900517549056
+          },
+          "_B_integrated": {
+            "bytes": 1152,
+            "shape": [
+              6,
+              24
+            ],
+            "dtype": "torch.float64",
+            "storage": 125900517556736
+          },
+          "_modal_scales": {
+            "bytes": 0,
+            "shape": [
+              0
+            ],
+            "dtype": "torch.float64",
+            "storage": 0
+          },
+          "_modal_forces": {
+            "bytes": 0,
+            "shape": [
+              0
+            ],
+            "dtype": "torch.float64",
+            "storage": 0
+          },
+          "_contest_coefficient": {
+            "bytes": 10838016,
+            "shape": [
+              6,
+              451584
+            ],
+            "dtype": "torch.float32",
+            "storage": 125900450430976
+          }
+        }
+      },
+      {
+        "name": "post2",
+        "seconds": 0.00027321302331984043,
+        "live": 235774464,
+        "peak": 236107264,
+        "reserved": 513802240,
+        "arrays": {
+          "C": {
+            "bytes": 148635648,
+            "shape": [
+              1,
+              884736,
+              21
+            ],
+            "dtype": "torch.float64",
+            "storage": 125901534658560
+          },
+          "B_mat": {
+            "bytes": 9216,
+            "shape": [
+              8,
+              6,
+              24
+            ],
+            "dtype": "torch.float64",
+            "storage": 125900517539840
+          },
+          "elem_node_ids": {
+            "bytes": 0,
+            "shape": [
+              0,
+              8
+            ],
+            "dtype": "torch.int64",
+            "storage": 0
+          },
+          "elem_dof_ids": {
+            "bytes": 0,
+            "shape": [
+              0,
+              24
+            ],
+            "dtype": "torch.int64",
+            "storage": 0
+          },
+          "elem_dof_flat": {
+            "bytes": 0,
+            "shape": [
+              0
+            ],
+            "dtype": "torch.int64",
+            "storage": 0
+          },
+          "_C_voigt_gpu": {
+            "bytes": 148635648,
+            "shape": [
+              1,
+              884736,
+              21
+            ],
+            "dtype": "torch.float64",
+            "storage": 125901534658560
+          },
+          "S_flat": {
+            "bytes": 0,
+            "shape": [
+              0
+            ],
+            "dtype": "torch.float64",
+            "storage": 0
+          },
+          "_cuda_geometry": {
+            "bytes": 32,
+            "shape": [
+              4
+            ],
+            "dtype": "torch.float64",
+            "storage": 125900517549056
+          },
+          "_B_integrated": {
+            "bytes": 1152,
+            "shape": [
+              6,
+              24
+            ],
+            "dtype": "torch.float64",
+            "storage": 125900517556736
+          },
+          "_modal_scales": {
+            "bytes": 0,
+            "shape": [
+              0
+            ],
+            "dtype": "torch.float64",
+            "storage": 0
+          },
+          "_modal_forces": {
+            "bytes": 0,
+            "shape": [
+              0
+            ],
+            "dtype": "torch.float64",
+            "storage": 0
+          },
+          "_contest_coefficient": {
+            "bytes": 10838016,
+            "shape": [
+              6,
+              451584
+            ],
+            "dtype": "torch.float32",
+            "storage": 125900450430976
+          }
+        }
+      },
+      {
+        "name": "rhs3",
+        "seconds": 0.0007629259489476681,
+        "live": 214540800,
+        "peak": 235774976,
+        "reserved": 513802240,
+        "arrays": {
+          "C": {
+            "bytes": 148635648,
+            "shape": [
+              1,
+              884736,
+              21
+            ],
+            "dtype": "torch.float64",
+            "storage": 125901534658560
+          },
+          "B_mat": {
+            "bytes": 9216,
+            "shape": [
+              8,
+              6,
+              24
+            ],
+            "dtype": "torch.float64",
+            "storage": 125900517539840
+          },
+          "elem_node_ids": {
+            "bytes": 0,
+            "shape": [
+              0,
+              8
+            ],
+            "dtype": "torch.int64",
+            "storage": 0
+          },
+          "elem_dof_ids": {
+            "bytes": 0,
+            "shape": [
+              0,
+              24
+            ],
+            "dtype": "torch.int64",
+            "storage": 0
+          },
+          "elem_dof_flat": {
+            "bytes": 0,
+            "shape": [
+              0
+            ],
+            "dtype": "torch.int64",
+            "storage": 0
+          },
+          "_C_voigt_gpu": {
+            "bytes": 148635648,
+            "shape": [
+              1,
+              884736,
+              21
+            ],
+            "dtype": "torch.float64",
+            "storage": 125901534658560
+          },
+          "S_flat": {
+            "bytes": 0,
+            "shape": [
+              0
+            ],
+            "dtype": "torch.float64",
+            "storage": 0
+          },
+          "_cuda_geometry": {
+            "bytes": 32,
+            "shape": [
+              4
+            ],
+            "dtype": "torch.float64",
+            "storage": 125900517549056
+          },
+          "_B_integrated": {
+            "bytes": 1152,
+            "shape": [
+              6,
+              24
+            ],
+            "dtype": "torch.float64",
+            "storage": 125900517556736
+          },
+          "_modal_scales": {
+            "bytes": 0,
+            "shape": [
+              0
+            ],
+            "dtype": "torch.float64",
+            "storage": 0
+          },
+          "_modal_forces": {
+            "bytes": 0,
+            "shape": [
+              0
+            ],
+            "dtype": "torch.float64",
+            "storage": 0
+          },
+          "_contest_coefficient": {
+            "bytes": 10838016,
+            "shape": [
+              6,
+              451584
+            ],
+            "dtype": "torch.float32",
+            "storage": 125900450430976
+          }
+        }
+      },
+      {
+        "name": "solve3",
+        "seconds": 0.03395662107504904,
+        "live": 235774464,
+        "peak": 352564224,
+        "reserved": 513802240,
+        "arrays": {
+          "C": {
+            "bytes": 148635648,
+            "shape": [
+              1,
+              884736,
+              21
+            ],
+            "dtype": "torch.float64",
+            "storage": 125901534658560
+          },
+          "B_mat": {
+            "bytes": 9216,
+            "shape": [
+              8,
+              6,
+              24
+            ],
+            "dtype": "torch.float64",
+            "storage": 125900517539840
+          },
+          "elem_node_ids": {
+            "bytes": 0,
+            "shape": [
+              0,
+              8
+            ],
+            "dtype": "torch.int64",
+            "storage": 0
+          },
+          "elem_dof_ids": {
+            "bytes": 0,
+            "shape": [
+              0,
+              24
+            ],
+            "dtype": "torch.int64",
+            "storage": 0
+          },
+          "elem_dof_flat": {
+            "bytes": 0,
+            "shape": [
+              0
+            ],
+            "dtype": "torch.int64",
+            "storage": 0
+          },
+          "_C_voigt_gpu": {
+            "bytes": 148635648,
+            "shape": [
+              1,
+              884736,
+              21
+            ],
+            "dtype": "torch.float64",
+            "storage": 125901534658560
+          },
+          "S_flat": {
+            "bytes": 0,
+            "shape": [
+              0
+            ],
+            "dtype": "torch.float64",
+            "storage": 0
+          },
+          "_cuda_geometry": {
+            "bytes": 32,
+            "shape": [
+              4
+            ],
+            "dtype": "torch.float64",
+            "storage": 125900517549056
+          },
+          "_B_integrated": {
+            "bytes": 1152,
+            "shape": [
+              6,
+              24
+            ],
+            "dtype": "torch.float64",
+            "storage": 125900517556736
+          },
+          "_modal_scales": {
+            "bytes": 0,
+            "shape": [
+              0
+            ],
+            "dtype": "torch.float64",
+            "storage": 0
+          },
+          "_modal_forces": {
+            "bytes": 0,
+            "shape": [
+              0
+            ],
+            "dtype": "torch.float64",
+            "storage": 0
+          },
+          "_contest_coefficient": {
+            "bytes": 10838016,
+            "shape": [
+              6,
+              451584
+            ],
+            "dtype": "torch.float32",
+            "storage": 125900450430976
+          }
+        }
+      },
+      {
+        "name": "post3",
+        "seconds": 0.00026296195574104786,
+        "live": 235774464,
+        "peak": 236107264,
+        "reserved": 513802240,
+        "arrays": {
+          "C": {
+            "bytes": 148635648,
+            "shape": [
+              1,
+              884736,
+              21
+            ],
+            "dtype": "torch.float64",
+            "storage": 125901534658560
+          },
+          "B_mat": {
+            "bytes": 9216,
+            "shape": [
+              8,
+              6,
+              24
+            ],
+            "dtype": "torch.float64",
+            "storage": 125900517539840
+          },
+          "elem_node_ids": {
+            "bytes": 0,
+            "shape": [
+              0,
+              8
+            ],
+            "dtype": "torch.int64",
+            "storage": 0
+          },
+          "elem_dof_ids": {
+            "bytes": 0,
+            "shape": [
+              0,
+              24
+            ],
+            "dtype": "torch.int64",
+            "storage": 0
+          },
+          "elem_dof_flat": {
+            "bytes": 0,
+            "shape": [
+              0
+            ],
+            "dtype": "torch.int64",
+            "storage": 0
+          },
+          "_C_voigt_gpu": {
+            "bytes": 148635648,
+            "shape": [
+              1,
+              884736,
+              21
+            ],
+            "dtype": "torch.float64",
+            "storage": 125901534658560
+          },
+          "S_flat": {
+            "bytes": 0,
+            "shape": [
+              0
+            ],
+            "dtype": "torch.float64",
+            "storage": 0
+          },
+          "_cuda_geometry": {
+            "bytes": 32,
+            "shape": [
+              4
+            ],
+            "dtype": "torch.float64",
+            "storage": 125900517549056
+          },
+          "_B_integrated": {
+            "bytes": 1152,
+            "shape": [
+              6,
+              24
+            ],
+            "dtype": "torch.float64",
+            "storage": 125900517556736
+          },
+          "_modal_scales": {
+            "bytes": 0,
+            "shape": [
+              0
+            ],
+            "dtype": "torch.float64",
+            "storage": 0
+          },
+          "_modal_forces": {
+            "bytes": 0,
+            "shape": [
+              0
+            ],
+            "dtype": "torch.float64",
+            "storage": 0
+          },
+          "_contest_coefficient": {
+            "bytes": 10838016,
+            "shape": [
+              6,
+              451584
+            ],
+            "dtype": "torch.float32",
+            "storage": 125900450430976
+          }
+        }
+      },
+      {
+        "name": "rhs4",
+        "seconds": 0.0007627960294485092,
+        "live": 214540800,
+        "peak": 235774976,
+        "reserved": 513802240,
+        "arrays": {
+          "C": {
+            "bytes": 148635648,
+            "shape": [
+              1,
+              884736,
+              21
+            ],
+            "dtype": "torch.float64",
+            "storage": 125901534658560
+          },
+          "B_mat": {
+            "bytes": 9216,
+            "shape": [
+              8,
+              6,
+              24
+            ],
+            "dtype": "torch.float64",
+            "storage": 125900517539840
+          },
+          "elem_node_ids": {
+            "bytes": 0,
+            "shape": [
+              0,
+              8
+            ],
+            "dtype": "torch.int64",
+            "storage": 0
+          },
+          "elem_dof_ids": {
+            "bytes": 0,
+            "shape": [
+              0,
+              24
+            ],
+            "dtype": "torch.int64",
+            "storage": 0
+          },
+          "elem_dof_flat": {
+            "bytes": 0,
+            "shape": [
+              0
+            ],
+            "dtype": "torch.int64",
+            "storage": 0
+          },
+          "_C_voigt_gpu": {
+            "bytes": 148635648,
+            "shape": [
+              1,
+              884736,
+              21
+            ],
+            "dtype": "torch.float64",
+            "storage": 125901534658560
+          },
+          "S_flat": {
+            "bytes": 0,
+            "shape": [
+              0
+            ],
+            "dtype": "torch.float64",
+            "storage": 0
+          },
+          "_cuda_geometry": {
+            "bytes": 32,
+            "shape": [
+              4
+            ],
+            "dtype": "torch.float64",
+            "storage": 125900517549056
+          },
+          "_B_integrated": {
+            "bytes": 1152,
+            "shape": [
+              6,
+              24
+            ],
+            "dtype": "torch.float64",
+            "storage": 125900517556736
+          },
+          "_modal_scales": {
+            "bytes": 0,
+            "shape": [
+              0
+            ],
+            "dtype": "torch.float64",
+            "storage": 0
+          },
+          "_modal_forces": {
+            "bytes": 0,
+            "shape": [
+              0
+            ],
+            "dtype": "torch.float64",
+            "storage": 0
+          },
+          "_contest_coefficient": {
+            "bytes": 10838016,
+            "shape": [
+              6,
+              451584
+            ],
+            "dtype": "torch.float32",
+            "storage": 125900450430976
+          }
+        }
+      },
+      {
+        "name": "solve4",
+        "seconds": 0.034003911074250937,
+        "live": 235774464,
+        "peak": 352564224,
+        "reserved": 513802240,
+        "arrays": {
+          "C": {
+            "bytes": 148635648,
+            "shape": [
+              1,
+              884736,
+              21
+            ],
+            "dtype": "torch.float64",
+            "storage": 125901534658560
+          },
+          "B_mat": {
+            "bytes": 9216,
+            "shape": [
+              8,
+              6,
+              24
+            ],
+            "dtype": "torch.float64",
+            "storage": 125900517539840
+          },
+          "elem_node_ids": {
+            "bytes": 0,
+            "shape": [
+              0,
+              8
+            ],
+            "dtype": "torch.int64",
+            "storage": 0
+          },
+          "elem_dof_ids": {
+            "bytes": 0,
+            "shape": [
+              0,
+              24
+            ],
+            "dtype": "torch.int64",
+            "storage": 0
+          },
+          "elem_dof_flat": {
+            "bytes": 0,
+            "shape": [
+              0
+            ],
+            "dtype": "torch.int64",
+            "storage": 0
+          },
+          "_C_voigt_gpu": {
+            "bytes": 148635648,
+            "shape": [
+              1,
+              884736,
+              21
+            ],
+            "dtype": "torch.float64",
+            "storage": 125901534658560
+          },
+          "S_flat": {
+            "bytes": 0,
+            "shape": [
+              0
+            ],
+            "dtype": "torch.float64",
+            "storage": 0
+          },
+          "_cuda_geometry": {
+            "bytes": 32,
+            "shape": [
+              4
+            ],
+            "dtype": "torch.float64",
+            "storage": 125900517549056
+          },
+          "_B_integrated": {
+            "bytes": 1152,
+            "shape": [
+              6,
+              24
+            ],
+            "dtype": "torch.float64",
+            "storage": 125900517556736
+          },
+          "_modal_scales": {
+            "bytes": 0,
+            "shape": [
+              0
+            ],
+            "dtype": "torch.float64",
+            "storage": 0
+          },
+          "_modal_forces": {
+            "bytes": 0,
+            "shape": [
+              0
+            ],
+            "dtype": "torch.float64",
+            "storage": 0
+          },
+          "_contest_coefficient": {
+            "bytes": 10838016,
+            "shape": [
+              6,
+              451584
+            ],
+            "dtype": "torch.float32",
+            "storage": 125900450430976
+          }
+        }
+      },
+      {
+        "name": "post4",
+        "seconds": 0.00025924202054739,
+        "live": 235774464,
+        "peak": 236107264,
+        "reserved": 513802240,
+        "arrays": {
+          "C": {
+            "bytes": 148635648,
+            "shape": [
+              1,
+              884736,
+              21
+            ],
+            "dtype": "torch.float64",
+            "storage": 125901534658560
+          },
+          "B_mat": {
+            "bytes": 9216,
+            "shape": [
+              8,
+              6,
+              24
+            ],
+            "dtype": "torch.float64",
+            "storage": 125900517539840
+          },
+          "elem_node_ids": {
+            "bytes": 0,
+            "shape": [
+              0,
+              8
+            ],
+            "dtype": "torch.int64",
+            "storage": 0
+          },
+          "elem_dof_ids": {
+            "bytes": 0,
+            "shape": [
+              0,
+              24
+            ],
+            "dtype": "torch.int64",
+            "storage": 0
+          },
+          "elem_dof_flat": {
+            "bytes": 0,
+            "shape": [
+              0
+            ],
+            "dtype": "torch.int64",
+            "storage": 0
+          },
+          "_C_voigt_gpu": {
+            "bytes": 148635648,
+            "shape": [
+              1,
+              884736,
+              21
+            ],
+            "dtype": "torch.float64",
+            "storage": 125901534658560
+          },
+          "S_flat": {
+            "bytes": 0,
+            "shape": [
+              0
+            ],
+            "dtype": "torch.float64",
+            "storage": 0
+          },
+          "_cuda_geometry": {
+            "bytes": 32,
+            "shape": [
+              4
+            ],
+            "dtype": "torch.float64",
+            "storage": 125900517549056
+          },
+          "_B_integrated": {
+            "bytes": 1152,
+            "shape": [
+              6,
+              24
+            ],
+            "dtype": "torch.float64",
+            "storage": 125900517556736
+          },
+          "_modal_scales": {
+            "bytes": 0,
+            "shape": [
+              0
+            ],
+            "dtype": "torch.float64",
+            "storage": 0
+          },
+          "_modal_forces": {
+            "bytes": 0,
+            "shape": [
+              0
+            ],
+            "dtype": "torch.float64",
+            "storage": 0
+          },
+          "_contest_coefficient": {
+            "bytes": 10838016,
+            "shape": [
+              6,
+              451584
+            ],
+            "dtype": "torch.float32",
+            "storage": 125900450430976
+          }
+        }
+      },
+      {
+        "name": "rhs5",
+        "seconds": 0.0007595058996230364,
+        "live": 214540800,
+        "peak": 235774976,
+        "reserved": 513802240,
+        "arrays": {
+          "C": {
+            "bytes": 148635648,
+            "shape": [
+              1,
+              884736,
+              21
+            ],
+            "dtype": "torch.float64",
+            "storage": 125901534658560
+          },
+          "B_mat": {
+            "bytes": 9216,
+            "shape": [
+              8,
+              6,
+              24
+            ],
+            "dtype": "torch.float64",
+            "storage": 125900517539840
+          },
+          "elem_node_ids": {
+            "bytes": 0,
+            "shape": [
+              0,
+              8
+            ],
+            "dtype": "torch.int64",
+            "storage": 0
+          },
+          "elem_dof_ids": {
+            "bytes": 0,
+            "shape": [
+              0,
+              24
+            ],
+            "dtype": "torch.int64",
+            "storage": 0
+          },
+          "elem_dof_flat": {
+            "bytes": 0,
+            "shape": [
+              0
+            ],
+            "dtype": "torch.int64",
+            "storage": 0
+          },
+          "_C_voigt_gpu": {
+            "bytes": 148635648,
+            "shape": [
+              1,
+              884736,
+              21
+            ],
+            "dtype": "torch.float64",
+            "storage": 125901534658560
+          },
+          "S_flat": {
+            "bytes": 0,
+            "shape": [
+              0
+            ],
+            "dtype": "torch.float64",
+            "storage": 0
+          },
+          "_cuda_geometry": {
+            "bytes": 32,
+            "shape": [
+              4
+            ],
+            "dtype": "torch.float64",
+            "storage": 125900517549056
+          },
+          "_B_integrated": {
+            "bytes": 1152,
+            "shape": [
+              6,
+              24
+            ],
+            "dtype": "torch.float64",
+            "storage": 125900517556736
+          },
+          "_modal_scales": {
+            "bytes": 0,
+            "shape": [
+              0
+            ],
+            "dtype": "torch.float64",
+            "storage": 0
+          },
+          "_modal_forces": {
+            "bytes": 0,
+            "shape": [
+              0
+            ],
+            "dtype": "torch.float64",
+            "storage": 0
+          },
+          "_contest_coefficient": {
+            "bytes": 10838016,
+            "shape": [
+              6,
+              451584
+            ],
+            "dtype": "torch.float32",
+            "storage": 125900450430976
+          }
+        }
+      },
+      {
+        "name": "solve5",
+        "seconds": 0.033985001035034657,
+        "live": 235774464,
+        "peak": 352564224,
+        "reserved": 513802240,
+        "arrays": {
+          "C": {
+            "bytes": 148635648,
+            "shape": [
+              1,
+              884736,
+              21
+            ],
+            "dtype": "torch.float64",
+            "storage": 125901534658560
+          },
+          "B_mat": {
+            "bytes": 9216,
+            "shape": [
+              8,
+              6,
+              24
+            ],
+            "dtype": "torch.float64",
+            "storage": 125900517539840
+          },
+          "elem_node_ids": {
+            "bytes": 0,
+            "shape": [
+              0,
+              8
+            ],
+            "dtype": "torch.int64",
+            "storage": 0
+          },
+          "elem_dof_ids": {
+            "bytes": 0,
+            "shape": [
+              0,
+              24
+            ],
+            "dtype": "torch.int64",
+            "storage": 0
+          },
+          "elem_dof_flat": {
+            "bytes": 0,
+            "shape": [
+              0
+            ],
+            "dtype": "torch.int64",
+            "storage": 0
+          },
+          "_C_voigt_gpu": {
+            "bytes": 148635648,
+            "shape": [
+              1,
+              884736,
+              21
+            ],
+            "dtype": "torch.float64",
+            "storage": 125901534658560
+          },
+          "S_flat": {
+            "bytes": 0,
+            "shape": [
+              0
+            ],
+            "dtype": "torch.float64",
+            "storage": 0
+          },
+          "_cuda_geometry": {
+            "bytes": 32,
+            "shape": [
+              4
+            ],
+            "dtype": "torch.float64",
+            "storage": 125900517549056
+          },
+          "_B_integrated": {
+            "bytes": 1152,
+            "shape": [
+              6,
+              24
+            ],
+            "dtype": "torch.float64",
+            "storage": 125900517556736
+          },
+          "_modal_scales": {
+            "bytes": 0,
+            "shape": [
+              0
+            ],
+            "dtype": "torch.float64",
+            "storage": 0
+          },
+          "_modal_forces": {
+            "bytes": 0,
+            "shape": [
+              0
+            ],
+            "dtype": "torch.float64",
+            "storage": 0
+          },
+          "_contest_coefficient": {
+            "bytes": 10838016,
+            "shape": [
+              6,
+              451584
+            ],
+            "dtype": "torch.float32",
+            "storage": 125900450430976
+          }
+        }
+      },
+      {
+        "name": "post5",
+        "seconds": 0.00026129186153411865,
+        "live": 235774464,
+        "peak": 236107264,
+        "reserved": 513802240,
+        "arrays": {
+          "C": {
+            "bytes": 148635648,
+            "shape": [
+              1,
+              884736,
+              21
+            ],
+            "dtype": "torch.float64",
+            "storage": 125901534658560
+          },
+          "B_mat": {
+            "bytes": 9216,
+            "shape": [
+              8,
+              6,
+              24
+            ],
+            "dtype": "torch.float64",
+            "storage": 125900517539840
+          },
+          "elem_node_ids": {
+            "bytes": 0,
+            "shape": [
+              0,
+              8
+            ],
+            "dtype": "torch.int64",
+            "storage": 0
+          },
+          "elem_dof_ids": {
+            "bytes": 0,
+            "shape": [
+              0,
+              24
+            ],
+            "dtype": "torch.int64",
+            "storage": 0
+          },
+          "elem_dof_flat": {
+            "bytes": 0,
+            "shape": [
+              0
+            ],
+            "dtype": "torch.int64",
+            "storage": 0
+          },
+          "_C_voigt_gpu": {
+            "bytes": 148635648,
+            "shape": [
+              1,
+              884736,
+              21
+            ],
+            "dtype": "torch.float64",
+            "storage": 125901534658560
+          },
+          "S_flat": {
+            "bytes": 0,
+            "shape": [
+              0
+            ],
+            "dtype": "torch.float64",
+            "storage": 0
+          },
+          "_cuda_geometry": {
+            "bytes": 32,
+            "shape": [
+              4
+            ],
+            "dtype": "torch.float64",
+            "storage": 125900517549056
+          },
+          "_B_integrated": {
+            "bytes": 1152,
+            "shape": [
+              6,
+              24
+            ],
+            "dtype": "torch.float64",
+            "storage": 125900517556736
+          },
+          "_modal_scales": {
+            "bytes": 0,
+            "shape": [
+              0
+            ],
+            "dtype": "torch.float64",
+            "storage": 0
+          },
+          "_modal_forces": {
+            "bytes": 0,
+            "shape": [
+              0
+            ],
+            "dtype": "torch.float64",
+            "storage": 0
+          },
+          "_contest_coefficient": {
+            "bytes": 10838016,
+            "shape": [
+              6,
+              451584
+            ],
+            "dtype": "torch.float32",
+            "storage": 125900450430976
+          }
+        }
+      }
+    ],
+    "field_statistics": {},
+    "peak_allocated_bytes": 352564224,
+    "peak_reserved_bytes": 513802240
+  },
+  "workflow_seconds": 0.5203431551344693,
+  "adaptation_seconds": 1.050066202878952e-06,
+  "max_true_residual": 9.96677592144011e-09,
+  "microbenchmark": {
+    "Ku": {
+      "samples_ms": [
+        0.4104335784912109,
+        0.41016478538513185,
+        0.410203218460083,
+        0.41000800132751464,
+        0.4109471797943115
+      ],
+      "median_ms": 0.410203218460083
+    },
+    "preconditioner": {
+      "samples_ms": [
+        0.07916640043258667,
+        0.07904000282287597,
+        0.07905759811401367,
+        0.07894880175590516,
+        0.07896639704704285
+      ],
+      "median_ms": 0.07904000282287597
+    },
+    "scope": "resident CUDA-event batches outside full-workflow time and memory window"
+  },
+  "storage": null,
+  "operator": null,
+  "reference_design": {
+    "kind": "fi",
+    "phase_count": 2,
+    "fixed_mu": 4913.571454934182,
+    "method": "ordered_isotropic_soft_phase_closed_form",
+    "baseline": {
+      "a": 0.2638195675356592,
+      "b": 10.399675100386608,
+      "condition_bound": 39.41965032211242,
+      "material_a": 0.2638195675356592,
+      "material_b": 10.399675100386608,
+      "bulk": 12093.347265761062,
+      "mu": 4913.571454934182,
+      "ratio": 2.461213269548973,
+      "log_ratio": 0.900654427365265,
+      "phase_generalized_eigenvalues": [
+        [
+          0.2638195675356592,
+          0.26381956753565927,
+          0.2638195675356593,
+          0.2638195675356593,
+          0.2638195675356593,
+          0.3215725806451611
+        ],
+        [
+          0.513618640698996,
+          0.6783931736631238,
+          0.7123128323462801,
+          1.017589760494686,
+          1.017589760494686,
+          10.399675100386608
+        ]
+      ],
+      "hg_scale_ratios": []
+    },
+    "selected": {
+      "a": 0.2638195675356593,
+      "b": 10.181448970157223,
+      "condition_bound": 38.5924708514316,
+      "material_a": 0.2638195675356593,
+      "material_b": 10.181448970157223,
+      "bulk": 14740.714364802543,
+      "mu": 4913.571454934182,
+      "ratio": 2.9999999999999996,
+      "log_ratio": 1.0986122886681096,
+      "phase_generalized_eigenvalues": [
+        [
+          0.2638195675356593,
+          0.2638195675356593,
+          0.2638195675356593,
+          0.2638195675356593,
+          0.2638195675356594,
+          0.26381956753565944
+        ],
+        [
+          0.43040663040386695,
+          0.6783931736631249,
+          0.7123128323462801,
+          1.017589760494686,
+          1.017589760494686,
+          10.181448970157223
+        ]
+      ],
+      "hg_scale_ratios": []
+    },
+    "formula": {
+      "soft_phase_index": 0,
+      "reference_scale": 3.790469408092083,
+      "a": 0.2638195675356593,
+      "b": 10.181448970157227,
+      "condition_bound": 38.592470851431614,
+      "expression": "max_e lambda_max(Ce,Cm)",
+      "candidate_relative_formula_error": 3.682286829964618e-16
+    },
+    "ordered_validation": [
+      {
+        "phase_index": 0,
+        "is_isotropic": true,
+        "relative_error": 0.0,
+        "bulk": 3888.8888888888882,
+        "mu": 1296.2962962962963,
+        "ratio": 2.9999999999999996,
+        "ordered": true,
+        "phase_generalized_eigenvalues": [
+          [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0000000000000002
+          ],
+          [
+            1.6314431655858534,
+            2.5714285714285707,
+            2.6999999999999997,
+            3.857142857142857,
+            3.857142857142857,
+            38.592470851431614
+          ]
+        ],
+        "minimum_order_eigenvalue": 1.0,
+        "maximum_order_deficit": 0.0
+      },
+      {
+        "phase_index": 1,
+        "is_isotropic": false,
+        "relative_error": 0.8087977207977207,
+        "bulk": 20297.805642633226,
+        "mu": 4500.0,
+        "ratio": 4.510623476140717,
+        "ordered": false,
+        "phase_generalized_eigenvalues": []
+      }
+    ],
+    "validation_tolerances": {
+      "isotropy_rtol": 1e-10,
+      "order_rtol": 1e-10,
+      "tie_rtol": 1e-10
+    },
+    "numeric_search_used": false,
+    "interpretation": "Global optimum of the worst material energy bound under the exact stated ordering; not a guarantee of minimum PCG iterations or runtime.",
+    "floating_point_verification": "Float64 tolerance tests, not interval-arithmetic certificates.",
+    "hg_argument": "scale(C)=trace(W*C), W=(t*t.T+7*diag(1,1,1,2,2,2))/60 positive definite; material Loewner bounds therefore also bound stabilization scale ratios.",
+    "closed_candidate": {
+      "a": 0.2638195675356593,
+      "b": 10.181448970157223,
+      "condition_bound": 38.5924708514316,
+      "material_a": 0.2638195675356593,
+      "material_b": 10.181448970157223,
+      "bulk": 14740.714364802543,
+      "mu": 4913.571454934182,
+      "ratio": 2.9999999999999996,
+      "log_ratio": 1.0986122886681096,
+      "phase_generalized_eigenvalues": [
+        [
+          0.2638195675356593,
+          0.2638195675356593,
+          0.2638195675356593,
+          0.2638195675356593,
+          0.2638195675356594,
+          0.26381956753565944
+        ],
+        [
+          0.43040663040386695,
+          0.6783931736631249,
+          0.7123128323462801,
+          1.017589760494686,
+          1.017589760494686,
+          10.181448970157223
+        ]
+      ],
+      "hg_scale_ratios": []
+    },
+    "status": "supported",
+    "selected_from": "closed_form",
+    "bound_ratio_selected_over_baseline": 0.9790160627016823
+  },
+  "environment": {
+    "gpu": "NVIDIA GeForce RTX 5090",
+    "torch": "2.12.0+cu130",
+    "cuda": "13.0",
+    "python": "3.12.13 (main, Jun 11 2026, 04:03:26) [Clang 22.1.3 ]",
+    "threads": 1
+  },
+  "sources": {
+    "/home/yufan/code/voxel-mechanics/experiments/solver_comparison/cases.py": "1c5c2f6b2087699af055d86394dc8cd262b9c4e8d0c86fbf9323335c59d77e91",
+    "/home/yufan/code/voxel-mechanics/experiments/solver_comparison/certify.py": "e10ce651e202a14690ecc62bcbbbace2b4ebce04a4aaa33e4ad4ad7051ae0259",
+    "/home/yufan/code/voxel-mechanics/experiments/solver_comparison/chfem_study.py": "163da513bb050fbf5652af01e15be190a84d43a1b7f765a2a9c152e113f0bfa4",
+    "/home/yufan/code/voxel-mechanics/experiments/solver_comparison/legacy_inputs.py": "9b8282af64f53d6f24c691ea7b4e0acd5760cdb607a9d920e41dd7d6283f2cbe",
+    "/home/yufan/code/voxel-mechanics/experiments/solver_comparison/plan.json": "546b989d12fec63961c38fc11736f72bc88537ce7808d29f7f70a4cd0f064092",
+    "/home/yufan/code/voxel-mechanics/experiments/solver_comparison/run_jobs.py": "945602d8aefeedfde35934b4b6854611e0f6e230960684134ad0b3f6ba93f83e",
+    "/home/yufan/code/voxel-mechanics/experiments/solver_comparison/study.py": "d09349b35d3819ad4d67d109d5c23a1026988deeebabad2a4fe73a545f84acce",
+    "/home/yufan/code/voxel-mechanics/experiments/stencil27_baseline/study.py": "eba76403bf912ed51687beb085d17ab60d05eccc0d2985a37e5e7a08253e67c7",
+    "/home/yufan/code/voxel-mechanics/project_paths.py": "58a8744535c3259b56b3658d51571ca091c7b1ec6c0307767930e4ce5bdc6674",
+    "/home/yufan/code/voxel-mechanics/src/assembly_pipeline/modal_functions.cuh": "189a165189592915705569096ec6576fd7f1292951260bf5d13e7ca3dbd8268d",
+    "/home/yufan/code/voxel-mechanics/src/assembly_pipeline/pipeline_adapter.py": "1dae25bcc711cc4e1371baed97fb6053b6fb7032aa105b4245d365a2112eeb67",
+    "/home/yufan/code/voxel-mechanics/src/assembly_pipeline/pipeline_kernels.cu": "940ae597b855f57bd5a4f09eeb09cb8d103774f460b0415e4a353ea568542f09",
+    "/home/yufan/code/voxel-mechanics/src/assembly_pipeline/pipeline_study.py": "2267195f23937608a2422cb26b8ef89ad5c72e185e3ae9e93f5664240eb5b7b5",
+    "/home/yufan/code/voxel-mechanics/src/hex8_modal/gpu_study.py": "0bb642952bef896ae75291c4dab30f116edfb36be53a00bc5272defb1a481542",
+    "/home/yufan/code/voxel-mechanics/src/hex8_modal/modal_adapter.py": "667aceaaf83183675e0bfb0f5870e84de8a946930143bb5285941c11b36ed7df",
+    "/home/yufan/code/voxel-mechanics/src/hex8_modal/modal_kernels.cu": "4c9a601a17ae7a9f53d988e6c8778de2d81dccd7333b50b0a818c7ad7d019fb6",
+    "/home/yufan/code/voxel-mechanics/src/reference_medium/formula_adapter.py": "d694dc3a759873898f62a612d4afc224dc7923ce6c158eb8bd5e676e5dc1bd6d",
+    "/home/yufan/code/voxel-mechanics/src/reference_medium/formula_kernels.cu": "0ca18975dafb048d63095d231e58495654f35f47eab555292ebba76335c29862",
+    "/home/yufan/code/voxel-mechanics/src/reference_medium/formula_study.py": "dcd3b40ab02ae2e0a3994ce5aa5c6a1c02d4ab35d4a93f9f0943da9888cd5ac3",
+    "/home/yufan/code/voxel-mechanics/src/runtime/benchmark.py": "89be98be93a3b9e55b015e07b603d1004dce924a3ea79a9b4c9f24fdee78e1f9",
+    "/home/yufan/code/voxel-mechanics/src/runtime/fi/atomic_adapter.py": "479da6a71f84b79a81a27c5f5163ebbf06dc5bbd85be55d960c612746e6fa011",
+    "/home/yufan/code/voxel-mechanics/src/runtime/fi/atomic_kernels.cu": "c11b0454ff4c25474b7b52f50f2d77267a07dd9f30030054159d46356f7b9179",
+    "/home/yufan/code/voxel-mechanics/src/runtime/fi/fi_reference.py": "1d97eb6f4a0d71fb9d4e0ce46a89b102b3b6d72217944f24b4fcbff4472b0159",
+    "/home/yufan/code/voxel-mechanics/src/runtime/fi/grouped_adapter.py": "23b5f55b3419aad82b08b8cafa90bd9b84ac397f90a474a73836fc85619f4671",
+    "/home/yufan/code/voxel-mechanics/src/runtime/fi/grouped_kernels.cu": "366417bc5707eb7cb59cbd1610abf86705b49ec97af7a5b7473f56a97d6a4010",
+    "/home/yufan/code/voxel-mechanics/src/runtime/fi/memory_adapter.py": "fd9120e4b1ad93922493a326e49da55f998c358145917c52d61905434aa03eff",
+    "/home/yufan/code/voxel-mechanics/src/runtime/fi/memory_kernels.cu": "4bf1bd1365ba53b2aeb595beb85044ae8f5cb1024130465695451591b8b55959",
+    "/home/yufan/code/voxel-mechanics/src/runtime/fi/source/femlib/__init__.py": "11fd28410ec8900de96f2728598403ebdada1d5bde256f15d10a19b0cf2937c3",
+    "/home/yufan/code/voxel-mechanics/src/runtime/fi/source/femlib/batched/__init__.py": "7495fef0802a94f776e5a013fbd79db83b3c070c5f3f0ff7a4a43a40cc143c5c",
+    "/home/yufan/code/voxel-mechanics/src/runtime/fi/source/femlib/batched/c3d8_cuda.py": "fa88a9bc9b0d9f17dfb327d4352256d8a4edcafbab1ea1ff6e6d1d0b1180b6c8",
+    "/home/yufan/code/voxel-mechanics/src/runtime/fi/source/femlib/batched/c3d8r_hourglass_operator.py": "6a2d179dff211f68efd2e5cb73bb90d43de6b389ce354085850e1904d6898aff",
+    "/home/yufan/code/voxel-mechanics/src/runtime/fi/source/femlib/batched/driver.py": "75fb88a4fce27eaed1e354e40b8e966cbb6e7f8cbc5bc78295250ab8af9f919b",
+    "/home/yufan/code/voxel-mechanics/src/runtime/fi/source/femlib/batched/fft_symbol_validation.py": "0be65e51f030cc8ec8550e6566fce0de3f5b5dfd8b691e22e1f2c19aa7a446ad",
+    "/home/yufan/code/voxel-mechanics/src/runtime/fi/source/femlib/batched/ir.py": "df1d83ffda346e0fc04fb4ee8e0c3553613a7f240e9ee5c5055ee41a0efb53e4",
+    "/home/yufan/code/voxel-mechanics/src/runtime/fi/source/femlib/batched/mesh_info.py": "bae4901d2ba9b695ab53a2784bf1fce379385046ea227dd191271e1b1d252611",
+    "/home/yufan/code/voxel-mechanics/src/runtime/fi/source/femlib/batched/pcg.py": "e349dc0c3e48be41af8f2e1a1a66d4b9c5f07ea1ec7ba2a6f57581f0b5fa5461",
+    "/home/yufan/code/voxel-mechanics/src/runtime/fi/source/femlib/batched/preconditioners/__init__.py": "4d166dca6e9f00511a09f5212892213bcd599aada13116b8e17c56168b1e3793",
+    "/home/yufan/code/voxel-mechanics/src/runtime/fi/source/femlib/batched/preconditioners/c3d8r_fft.py": "cf6ffc237d1756f7c11a99c0e8c7ed5710f985ef163580a668d39987ccdb93ba",
+    "/home/yufan/code/voxel-mechanics/src/runtime/fi/source/femlib/batched/stencil_operator.py": "c2ae37f069143cf5786022c71262fc16169775e91edf07877f7623c663fef384",
+    "/home/yufan/code/voxel-mechanics/src/runtime/fi/source/femlib/c3d8r.py": "1aa42c81cdaff3e0cd663ee6d6c30cef69fe282f6dc9206d777e7c98b46b3598",
+    "/home/yufan/code/voxel-mechanics/src/runtime/fi/source/femlib/connectivity.py": "b2ce6f9ad6e06b00c34b2f2bd189845a6beff33e5e54114e0164fc886b381070",
+    "/home/yufan/code/voxel-mechanics/src/runtime/fi/source/femlib/element_types.py": "091da6799e085e0a7ad64a8ae8793d71c660c20b47b0592aa0d6216d5acb4eda",
+    "/home/yufan/code/voxel-mechanics/src/runtime/fi/source/femlib/fem_batched.py": "d06a8f861b78643373e2e9b6448961252a061d3656cccf18a43fdf356ca7d849",
+    "/home/yufan/code/voxel-mechanics/src/runtime/fi/source/femlib/geometry.py": "9616e4393da72e13fbc2326cdb655452d739b4adece6cd6e404a9f9a759a168c",
+    "/home/yufan/code/voxel-mechanics/src/runtime/fi/source/femlib/materials.py": "334c7c71c05596010cef1497cabfeb990c0a4f1c521ed6d95206c79aa68302d0",
+    "/home/yufan/code/voxel-mechanics/src/runtime/fi/source/femlib/mesh.py": "b74c7060d7bd3368116430b33a8b9538166c8362d421426f6dca8dfff71fd3d0",
+    "/home/yufan/code/voxel-mechanics/src/runtime/fi/spatial_adapter.py": "e6a93fa95f62f418cfb0f6f9d499425938de34104900299e28bf8eed0b155cce",
+    "/home/yufan/code/voxel-mechanics/src/runtime/fi_benchmark.py": "c1ec2093bd8a9add9a981156dfedd30d008441de4ce5ad7fdb5f7ea569b9cf32",
+    "/home/yufan/code/voxel-mechanics/src/runtime/orientation_kernels.cu": "a62e4601e4e157fdf4b54391180596692ad7c4a74651e560732c95e03697500b",
+    "/home/yufan/code/voxel-mechanics/src/runtime/repro/extension_20261006/failure.cu": "fb72fe7607596485fe0f0add1202a08902da69df0c48d8279c14709112e0ca5e",
+    "/home/yufan/code/voxel-mechanics/src/runtime/repro/extension_20261006/material_control.py": "a02dd3958e3da53461b1d6f294047e206aa368172dc5e117a41b6df1c3f129c3",
+    "/home/yufan/code/voxel-mechanics/src/runtime/repro/extension_20261006/mixed_preconditioner.py": "df112cb1a956e903ce7f049e2361f0911df3ea7f8495d065124b9accd7c1d79c",
+    "/home/yufan/code/voxel-mechanics/src/runtime/repro/extension_20261006/physics.py": "33e3e5d94e6f8c590cb42aebbadfc46a52a557f246ca21b81f6d3a19baeabf6e",
+    "/home/yufan/code/voxel-mechanics/src/solver_chain/chain_adapter.py": "b40cedb51c80782d0b29af5d5f91aa8b368197a5f9886cfa66cd7dc6a676e772",
+    "/home/yufan/code/voxel-mechanics/src/solver_chain/chain_study.py": "49b1376a83a8eaaac578b7af7d176f6be4f5a85dfe920b285e9013aa60b67708",
+    "/home/yufan/code/voxel-mechanics/src/solver_chain/closed_study.py": "c51a515aad8b48ccc10ce18326db99afbb2b1723419e9da81a2b8bb67de80878",
+    "/home/yufan/code/voxel-mechanics/src/solver_chain/reference_closed_form.py": "6529f7e1b2993a21353199d163273aaf596c7804447f76852b66a31171798aad",
+    "/home/yufan/code/voxel-mechanics/src/solver_chain/reference_design.py": "9bcac32603c6a3943df7ce1af8fd9e4c118b63899fe681433aa80c992416403c",
+    "/home/yufan/code/voxel-mechanics/src/solver_chain/reference_study.py": "39134289b60d1b5fede4ee5583c199ba8bdf1d69c802924d0c384e250b7d322a",
+    "/home/yufan/code/voxel-mechanics/src/spectral/contest_adapter.py": "2ba9e2195862ec59762f80f0e44a2cb64b66ae472314b3458ae9d0a13261c853",
+    "/home/yufan/code/voxel-mechanics/src/spectral/contest_kernels.cu": "9beb1d7a651b7d001ea9fa04f5a3671fe59a0096950a808eab24c137f26c871a",
+    "/home/yufan/code/voxel-mechanics/src/spectral/native_adapter.py": "58705326d57584045e4036b7e112bdfb8eacfdd96e0ff14b57be9f99402dbc81",
+    "/home/yufan/code/voxel-mechanics/src/spectral/native_fft.cu": "f414368f2a178aef549aa8095ee7a50e7b4465a6fe706f1f664eadd7d9150d71"
+  },
+  "protocol": "FI eight-point integration; six unit engineering strains; FP64 physics/FP32 FFT; true residual <=1e-8; same-grid full warmup; fresh process; geometry/JIT/warmup/I/O excluded; setup, loading, solve, certification and stress recovery included."
+}

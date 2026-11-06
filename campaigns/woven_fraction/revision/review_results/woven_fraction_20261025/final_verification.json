@@ -1,0 +1,82 @@
+{
+  "complete": true,
+  "measured_runs": 189,
+  "geometry_cases": 21,
+  "small_grid_cases": 9,
+  "common_source_files": 79,
+  "source_snapshot_hashes": "passed",
+  "max_stiffness_difference": 2.3074770650135876e-16,
+  "identical_iterations": true,
+  "active_manuscripts": {
+    "en": {
+      "active_files": [
+        "elsarticle-template-num-structured.tex",
+        "sections_structured\\00_abstract.tex",
+        "sections_structured\\01_introduction.tex",
+        "sections_structured\\02_formulation.tex",
+        "sections_structured\\03_implementation.tex",
+        "sections_structured\\04_verification.tex",
+        "sections_structured\\05_performance.tex",
+        "sections_structured\\table_solver_summary.tex",
+        "sections_structured\\06_conclusions.tex",
+        "sections_structured\\declarations.tex",
+        "sections_structured\\appendix_solver_details.tex",
+        "sections_structured\\appendix_reference.tex",
+        "sections_structured\\appendix_resolution_geometry.tex",
+        "sections_structured\\appendix_ablation.tex"
+      ],
+      "undefined_refs": [],
+      "duplicate_labels": []
+    },
+    "zh": {
+      "active_files": [
+        "elsarticle-template-num-structured-zh.tex",
+        "sections_structured_zh\\00_abstract.tex",
+        "sections_structured_zh\\01_introduction.tex",
+        "sections_structured_zh\\02_formulation.tex",
+        "sections_structured_zh\\03_implementation.tex",
+        "sections_structured_zh\\04_verification.tex",
+        "sections_structured_zh\\05_performance.tex",
+        "sections_structured_zh\\table_solver_summary.tex",
+        "sections_structured_zh\\06_conclusions.tex",
+        "sections_structured_zh\\declarations.tex",
+        "sections_structured_zh\\appendix_solver_details.tex",
+        "sections_structured_zh\\appendix_reference.tex",
+        "sections_structured_zh\\appendix_resolution_geometry.tex",
+        "sections_structured_zh\\appendix_ablation.tex"
+      ],
+      "undefined_refs": [],
+      "duplicate_labels": []
+    }
+  },
+  "manuscript_edits": [
+    "sections_structured/05_performance.tex",
+    "sections_structured/appendix_resolution_geometry.tex",
+    "sections_structured/declarations.tex",
+    "sections_structured_zh/05_performance.tex",
+    "sections_structured_zh/appendix_resolution_geometry.tex",
+    "sections_structured_zh/declarations.tex"
+  ],
+  "layout": "English figure and interpretation share a page; Chinese setup and figure share a page with interpretation immediately following. No overflow or clipped text.",
+  "scope": "Analytical woven RVEs with nominal yarn volume 5–33%; geometry is not an imaged experimental specimen.",
+  "compilation": {
+    "english": {
+      "pages": 36,
+      "figure_pages": [
+        21
+      ],
+      "warnings": [],
+      "compile": "passed"
+    },
+    "chinese": {
+      "pages": 31,
+      "figure_pages": [
+        17
+      ],
+      "warnings": [
+        "Package xeCJK Warning: Redefining CJKfamily `\\CJKttdefault' (FangSong)."
+      ],
+      "compile": "passed"
+    }
+  }
+}

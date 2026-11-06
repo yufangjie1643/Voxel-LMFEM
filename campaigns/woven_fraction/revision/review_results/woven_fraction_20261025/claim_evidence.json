@@ -1,0 +1,51 @@
+{
+  "complete": true,
+  "claims": [
+    {
+      "claim": "Hybrid storage reduces NVML peak by 21.0--30.3% versus elementwise storage.",
+      "support": "summary.json:gains[*].hybrid_memory_reduction",
+      "figure": "fig:fi-woven-fraction, panel e",
+      "destination": "Section 5.2, both languages",
+      "confidence": "high for the measured configurations",
+      "scope": "21 analytical woven geometries, 192\u00b3, RTX 5090, nominal yarn volume 5\u201333%",
+      "experiment": "woven_fraction_20261025",
+      "literature_citation": null
+    },
+    {
+      "claim": "Sharing alone changes full-call time by at most 2.3%.",
+      "support": "summary.json:gains[*].hybrid_time_reduction",
+      "figure": "fig:fi-woven-fraction, panel d",
+      "destination": "Section 5.2, both languages",
+      "confidence": "high for the measured configurations",
+      "scope": "21 analytical woven geometries, 192\u00b3, RTX 5090, nominal yarn volume 5\u201333%",
+      "experiment": "woven_fraction_20261025",
+      "literature_citation": null
+    },
+    {
+      "claim": "Hybrid plus background reduces full-call time by 11.7--25.9% versus elementwise storage.",
+      "support": "summary.json:gains[*].background_time_reduction",
+      "figure": "fig:fi-woven-fraction, panel d",
+      "destination": "Section 5.2, both languages",
+      "confidence": "high for the measured configurations",
+      "scope": "21 analytical woven geometries, 192\u00b3, RTX 5090, nominal yarn volume 5\u201333%",
+      "experiment": "woven_fraction_20261025",
+      "literature_citation": null
+    },
+    {
+      "claim": "Iteration sequences match at every fraction; maximum stiffness difference is 2.30747707e-16.",
+      "support": "summary.json:checks and max_stiffness_difference",
+      "figure": "none; text describes consistency",
+      "destination": "Section 5.2, both languages",
+      "confidence": "high for the measured configurations",
+      "scope": "21 analytical woven geometries, 192\u00b3, RTX 5090, nominal yarn volume 5\u201333%",
+      "experiment": "woven_fraction_20261025",
+      "literature_citation": null
+    }
+  ],
+  "inclusion": {
+    "main": "Woven full-solver time and memory curves with three geometry views",
+    "appendix": "Existing layered active-fraction kernel sensitivity and new geometric parameters",
+    "excluded": "No new redundant total-results table or multiple memory-definition plots",
+    "pending": []
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "date": "2026-11-06",
+  "platform": "Windows",
+  "python": "3.12.10",
+  "numpy": "2.4.6",
+  "scipy": "1.17.1",
+  "cpu_torch": "2.15.0+cpu",
+  "independent_fi_cpu": {
+    "passed": true,
+    "device": "cpu",
+    "rows": [
+      {
+        "shape": [
+          2,
+          3,
+          4
+        ],
+        "relative": 2.9317650712135865e-16
+      },
+      {
+        "shape": [
+          2,
+          3,
+          4
+        ],
+        "relative": 3.9621105220835683e-16
+      },
+      {
+        "shape": [
+          5,
+          4,
+          3
+        ],
+        "relative": 3.2456326628629864e-16
+      },
+      {
+        "shape": [
+          5,
+          4,
+          3
+        ],
+        "relative": 3.8668607432802496e-16
+      }
+    ]
+  },
+  "material_state": {
+    "status": "passed",
+    "frozen_cases": 5,
+    "failed_elements_by_step": [
+      0,
+      0,
+      0,
+      0,
+      3,
+      5,
+      5,
+      5,
+      5
+    ]
+  },
+  "geometry": {
+    "complete": true,
+    "grid": 32,
+    "cases": 21
+  },
+  "stored_stencil_cpu": "Not run to completion on Windows: optional Triton dependency unavailable.",
+  "fresh_gpu_timing": "Not rerun; archived records regenerated and validated.",
+  "credential_pattern_scan": "No matches among selected publication files."
+}

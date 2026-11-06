@@ -1,0 +1,40 @@
+{
+  "case": "sphere",
+  "grid": 192,
+  "grid_shape_zyx": [
+    192,
+    192,
+    192
+  ],
+  "phase_encoding": {
+    "0": "soft phase",
+    "255": "stiff phase"
+  },
+  "phase_materials": [
+    {
+      "E": 3500.0,
+      "nu": 0.35
+    },
+    {
+      "E": 70000.0,
+      "nu": 0.2
+    }
+  ],
+  "material_units": "MPa",
+  "voxel_size_xyz": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "solid_fraction": 0.3000160499855324,
+  "array_sha256": "0f89941da239132c8cf1404316de296605101f18a747ea9c9f2ec0a68427b5b6",
+  "npy_sha256": "a60965f8e398de1a3e541faa03fe5866ca5bdc0e1d3989bf4b44a330cb7d4040",
+  "source_info": {
+    "definition": "Centered sphere; cell-center sampling in normalized unit cube",
+    "target_volume_fraction": 0.3,
+    "normalized_radius": 0.4152830592077074,
+    "coordinate_rule": "(i+0.5)/N - 0.5",
+    "surface_inclusion_rule": "distance_squared <= radius_squared",
+    "material_source": "doc/exp/experiment_report_isotropic_sphere_unified.md"
+  }
+}

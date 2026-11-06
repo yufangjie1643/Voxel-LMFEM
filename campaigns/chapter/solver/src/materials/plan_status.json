@@ -1,0 +1,161 @@
+{
+  "complete": true,
+  "jobs": [
+    {
+      "name": "full_pure_192_r0",
+      "arguments": [
+        "compare.py",
+        "--variant",
+        "pure",
+        "--repeat",
+        "0"
+      ]
+    },
+    {
+      "name": "full_hybrid_192_r0",
+      "arguments": [
+        "compare.py",
+        "--variant",
+        "hybrid",
+        "--repeat",
+        "0"
+      ]
+    },
+    {
+      "name": "full_dense_192_r0",
+      "arguments": [
+        "compare.py",
+        "--variant",
+        "dense",
+        "--repeat",
+        "0"
+      ]
+    },
+    {
+      "name": "full_dense_192_r1",
+      "arguments": [
+        "compare.py",
+        "--variant",
+        "dense",
+        "--repeat",
+        "1"
+      ]
+    },
+    {
+      "name": "full_pure_192_r1",
+      "arguments": [
+        "compare.py",
+        "--variant",
+        "pure",
+        "--repeat",
+        "1"
+      ]
+    },
+    {
+      "name": "full_hybrid_192_r1",
+      "arguments": [
+        "compare.py",
+        "--variant",
+        "hybrid",
+        "--repeat",
+        "1"
+      ]
+    },
+    {
+      "name": "full_hybrid_192_r2",
+      "arguments": [
+        "compare.py",
+        "--variant",
+        "hybrid",
+        "--repeat",
+        "2"
+      ]
+    },
+    {
+      "name": "full_dense_192_r2",
+      "arguments": [
+        "compare.py",
+        "--variant",
+        "dense",
+        "--repeat",
+        "2"
+      ]
+    },
+    {
+      "name": "full_pure_192_r2",
+      "arguments": [
+        "compare.py",
+        "--variant",
+        "pure",
+        "--repeat",
+        "2"
+      ]
+    }
+  ],
+  "completed": [
+    {
+      "name": "full_pure_192_r0",
+      "log": "/home/yufan/code/fead-hybrid-storage-20261021/logs/full_pure_192_r0.log",
+      "telemetry": "/home/yufan/code/fead-hybrid-storage-20261021/logs/full_pure_192_r0_telemetry.json",
+      "process_wall_seconds": 8.526221534004435,
+      "complete": true
+    },
+    {
+      "name": "full_hybrid_192_r0",
+      "log": "/home/yufan/code/fead-hybrid-storage-20261021/logs/full_hybrid_192_r0.log",
+      "telemetry": "/home/yufan/code/fead-hybrid-storage-20261021/logs/full_hybrid_192_r0_telemetry.json",
+      "process_wall_seconds": 8.299975909059867,
+      "complete": true
+    },
+    {
+      "name": "full_dense_192_r0",
+      "log": "/home/yufan/code/fead-hybrid-storage-20261021/logs/full_dense_192_r0.log",
+      "telemetry": "/home/yufan/code/fead-hybrid-storage-20261021/logs/full_dense_192_r0_telemetry.json",
+      "process_wall_seconds": 8.31521559599787,
+      "complete": true
+    },
+    {
+      "name": "full_dense_192_r1",
+      "log": "/home/yufan/code/fead-hybrid-storage-20261021/logs/full_dense_192_r1.log",
+      "telemetry": "/home/yufan/code/fead-hybrid-storage-20261021/logs/full_dense_192_r1_telemetry.json",
+      "process_wall_seconds": 8.324712164932862,
+      "complete": true
+    },
+    {
+      "name": "full_pure_192_r1",
+      "log": "/home/yufan/code/fead-hybrid-storage-20261021/logs/full_pure_192_r1.log",
+      "telemetry": "/home/yufan/code/fead-hybrid-storage-20261021/logs/full_pure_192_r1_telemetry.json",
+      "process_wall_seconds": 8.458500294014812,
+      "complete": true
+    },
+    {
+      "name": "full_hybrid_192_r1",
+      "log": "/home/yufan/code/fead-hybrid-storage-20261021/logs/full_hybrid_192_r1.log",
+      "telemetry": "/home/yufan/code/fead-hybrid-storage-20261021/logs/full_hybrid_192_r1_telemetry.json",
+      "process_wall_seconds": 8.358341943006963,
+      "complete": true
+    },
+    {
+      "name": "full_hybrid_192_r2",
+      "log": "/home/yufan/code/fead-hybrid-storage-20261021/logs/full_hybrid_192_r2.log",
+      "telemetry": "/home/yufan/code/fead-hybrid-storage-20261021/logs/full_hybrid_192_r2_telemetry.json",
+      "process_wall_seconds": 8.36730211705435,
+      "complete": true
+    },
+    {
+      "name": "full_dense_192_r2",
+      "log": "/home/yufan/code/fead-hybrid-storage-20261021/logs/full_dense_192_r2.log",
+      "telemetry": "/home/yufan/code/fead-hybrid-storage-20261021/logs/full_dense_192_r2_telemetry.json",
+      "process_wall_seconds": 8.342003077967092,
+      "complete": true
+    },
+    {
+      "name": "full_pure_192_r2",
+      "log": "/home/yufan/code/fead-hybrid-storage-20261021/logs/full_pure_192_r2.log",
+      "telemetry": "/home/yufan/code/fead-hybrid-storage-20261021/logs/full_pure_192_r2_telemetry.json",
+      "process_wall_seconds": 8.430484041105956,
+      "complete": true
+    }
+  ],
+  "failed": null
+}

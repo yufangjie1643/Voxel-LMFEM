@@ -1,0 +1,938 @@
+{
+  "complete": true,
+  "reference_grid": 480,
+  "rows": [
+    {
+      "grid": 64,
+      "C11_GPa": 12.202750236667912,
+      "C33_GPa": 6.583592612730198,
+      "C44_GPa": 1.7556235358746997,
+      "full_tensor": [
+        [
+          12202.750236667913,
+          4864.440164645391,
+          4221.327822766214,
+          -3.7941871866564725e-14,
+          1.6125469015637606e-13,
+          2.4893746731948635e-13
+        ],
+        [
+          4864.44016464539,
+          12202.750236667913,
+          4221.327822766213,
+          -4.451994328746878e-14,
+          1.5319099070862374e-14,
+          -1.0967587244208737e-13
+        ],
+        [
+          4221.3278227840365,
+          4221.3278227840365,
+          6583.592612730197,
+          -5.6066262743570405e-15,
+          4.9222006136794005e-14,
+          3.7345838498504397e-14
+        ],
+        [
+          -8.448797217397441e-14,
+          -9.992007221626409e-14,
+          4.7128967395337895e-14,
+          1755.6235358746997,
+          -1.1644973383468336e-13,
+          4.444026798031825e-14
+        ],
+        [
+          -4.3100286252310827e-13,
+          8.40401966767379e-14,
+          1.347823694558374e-13,
+          -2.3095095307750294e-13,
+          1755.6235358746999,
+          -5.925815393936773e-15
+        ],
+        [
+          1.7356741857568053e-14,
+          1.525492107851481e-14,
+          6.338198466505213e-15,
+          -1.153761026333796e-14,
+          -1.4779844015322396e-15,
+          1825.3642747544545
+        ]
+      ],
+      "relative_to_finest": 0.00955221986287815,
+      "repeat_difference": 1.933664280179708e-16,
+      "max_true_residual": 8.976204536101435e-09,
+      "actual_yarn_fraction": 0.197265625,
+      "records": [
+        "review_results/stencil27_baseline_20261023/formal/results/woven_64_latest_r0.json",
+        "review_results/stencil27_baseline_20261023/formal/results/woven_64_latest_r1.json",
+        "review_results/stencil27_baseline_20261023/formal/results/woven_64_latest_r2.json"
+      ]
+    },
+    {
+      "grid": 96,
+      "C11_GPa": 12.267139014206801,
+      "C33_GPa": 6.5817670268347666,
+      "C44_GPa": 1.7531368533972072,
+      "full_tensor": [
+        [
+          12267.139014206801,
+          4902.6971798541035,
+          4238.204069334868,
+          -5.0527483431829344e-14,
+          -2.3026847918151393e-13,
+          1.8223077368083472e-14
+        ],
+        [
+          4902.6971798541035,
+          12267.139014206801,
+          4238.204069334868,
+          1.2447656074612126e-13,
+          -1.495100339828544e-13,
+          -5.85488447847461e-15
+        ],
+        [
+          4238.204069386791,
+          4238.204069386791,
+          6581.7670268347665,
+          -2.631639762074445e-15,
+          -1.5427988105161434e-13,
+          -7.0208756504015395e-15
+        ],
+        [
+          -1.000023109588289e-13,
+          -1.9474134239350892e-14,
+          4.960640951510329e-14,
+          1753.1368533972072,
+          -5.916255140113612e-14,
+          -6.710681393289835e-15
+        ],
+        [
+          -2.9474365335233784e-14,
+          5.4738107051148456e-14,
+          5.684341886080802e-14,
+          3.674015824083619e-15,
+          1753.1368533972075,
+          1.413683984689366e-14
+        ],
+        [
+          3.5897211129546726e-14,
+          -1.1493583862431933e-13,
+          2.488325903351709e-14,
+          -9.480482242873188e-14,
+          -2.059258113823253e-14,
+          1823.17142171507
+        ]
+      ],
+      "relative_to_finest": 0.004484473409335996,
+      "repeat_difference": 1.1599112583433392e-17,
+      "max_true_residual": 9.966774958162884e-09,
+      "actual_yarn_fraction": 0.19777199074074073,
+      "records": [
+        "review_results/grid_refinement_20261023/remote/results/woven_96_latest_r0.json",
+        "review_results/grid_refinement_20261023/remote/results/woven_96_latest_r1.json",
+        "review_results/grid_refinement_20261023/remote/results/woven_96_latest_r2.json"
+      ]
+    },
+    {
+      "grid": 128,
+      "C11_GPa": 12.285392926607328,
+      "C33_GPa": 6.581420785473381,
+      "C44_GPa": 1.7526648520699304,
+      "full_tensor": [
+        [
+          12285.392926607328,
+          4912.843445596327,
+          4246.438427910109,
+          -6.716849298982197e-14,
+          1.0195938323435938e-13,
+          3.582696739309172e-14
+        ],
+        [
+          4912.843445596327,
+          12285.392926607328,
+          4246.438427910109,
+          3.2862601528904634e-13,
+          -1.257748279712232e-13,
+          5.174376245181076e-14
+        ],
+        [
+          4246.438427988491,
+          4246.438427988491,
+          6581.420785473381,
+          -2.9698465908722937e-15,
+          -8.869403201114531e-14,
+          -4.9270856220928055e-15
+        ],
+        [
+          9.103828801926284e-14,
+          -2.566835632933362e-13,
+          -5.639932965095795e-14,
+          1752.6648520699305,
+          -6.745827916058278e-14,
+          1.907775017606292e-14
+        ],
+        [
+          -1.169669905975502e-13,
+          1.345664395817586e-13,
+          6.627867937301717e-14,
+          -1.1384980675478864e-13,
+          1752.6648520699305,
+          -6.2727600891321345e-15
+        ],
+        [
+          1.9805560589013216e-14,
+          2.6167228538541832e-14,
+          6.958672059698145e-14,
+          -6.009153610364408e-14,
+          -1.6930901125533637e-15,
+          1825.0764580455564
+        ]
+      ],
+      "relative_to_finest": 0.00298581734452861,
+      "repeat_difference": 4.884502745059107e-17,
+      "max_true_residual": 9.841318946727763e-09,
+      "actual_yarn_fraction": 0.1979827880859375,
+      "records": [
+        "review_results/stencil27_baseline_20261023/formal/results/woven_128_latest_r0.json",
+        "review_results/stencil27_baseline_20261023/formal/results/woven_128_latest_r1.json",
+        "review_results/stencil27_baseline_20261023/formal/results/woven_128_latest_r2.json"
+      ]
+    },
+    {
+      "grid": 160,
+      "C11_GPa": 12.304241154939376,
+      "C33_GPa": 6.57992939526132,
+      "C44_GPa": 1.7517475744396924,
+      "full_tensor": [
+        [
+          12304.241154939376,
+          4923.889901647305,
+          4249.843049068892,
+          -2.8478552849264816e-14,
+          2.517595021345187e-13,
+          -9.155565194873817e-15
+        ],
+        [
+          4923.889901647305,
+          12304.241154939376,
+          4249.843049068891,
+          -7.958078640513122e-16,
+          -2.447109181957785e-14,
+          -1.4868106745780098e-14
+        ],
+        [
+          4249.843049210968,
+          4249.843049210968,
+          6579.92939526132,
+          9.364953257318121e-15,
+          2.9224622721812924e-14,
+          -3.127720304973991e-15
+        ],
+        [
+          6.457412382587791e-14,
+          -4.206412995699793e-14,
+          -4.786215868080035e-14,
+          1751.7475744396925,
+          6.342748548604504e-14,
+          -1.2452261444195757e-15
+        ],
+        [
+          -3.4447111829649656e-14,
+          -3.693401140481001e-14,
+          1.482192146795569e-14,
+          4.21915835602249e-14,
+          1751.7475744396925,
+          -4.263256414560601e-17
+        ],
+        [
+          3.523115132963994e-14,
+          -4.637579209543219e-14,
+          -1.3236856055698354e-14,
+          -2.0728307958961524e-14,
+          6.437517185986508e-15,
+          1825.6894883480304
+        ]
+      ],
+      "relative_to_finest": 0.001603826356396889,
+      "repeat_difference": 6.019827091927132e-17,
+      "max_true_residual": 9.991022126053122e-09,
+      "actual_yarn_fraction": 0.1981484375,
+      "records": [
+        "review_results/grid_refinement_20261023/remote/results/woven_160_latest_r0.json",
+        "review_results/grid_refinement_20261023/remote/results/woven_160_latest_r1.json",
+        "review_results/grid_refinement_20261023/remote/results/woven_160_latest_r2.json"
+      ]
+    },
+    {
+      "grid": 192,
+      "C11_GPa": 12.303925638574325,
+      "C33_GPa": 6.578072631784198,
+      "C44_GPa": 1.7507656770276194,
+      "full_tensor": [
+        [
+          12303.925638574325,
+          4927.495532728171,
+          4250.4256778036715,
+          -9.868649107779169e-15,
+          -3.8148085513546025e-13,
+          1.361308185518392e-15
+        ],
+        [
+          4927.49553272817,
+          12303.925638574325,
+          4250.425677803672,
+          1.3816108750890835e-15,
+          6.336495114619875e-14,
+          1.3933298959045715e-14
+        ],
+        [
+          4250.425677911805,
+          4250.425677911805,
+          6578.072631784198,
+          -2.2632101953840228e-14,
+          -1.9194933708343308e-13,
+          -1.5614438754320127e-14
+        ],
+        [
+          -3.0921767204374726e-14,
+          -1.000023109588289e-13,
+          -9.862070008373982e-14,
+          1750.7656770276194,
+          1.6987440261046953e-14,
+          1.8750433304780422e-15
+        ],
+        [
+          -2.526045216621208e-13,
+          1.3138461512156667e-13,
+          -1.3059512319294433e-14,
+          -6.984536406030707e-14,
+          1750.7656770276194,
+          3.2566542055671257e-15
+        ],
+        [
+          7.229967653372611e-14,
+          -9.027243972912788e-15,
+          -2.8407574646525675e-14,
+          -6.280572769675793e-14,
+          -3.782982157982015e-16,
+          1824.4211998789092
+        ]
+      ],
+      "relative_to_finest": 0.001415253123317483,
+      "repeat_difference": 7.258069117614949e-17,
+      "max_true_residual": 8.806874479407857e-09,
+      "actual_yarn_fraction": 0.197998046875,
+      "records": [
+        "review_results/stencil27_baseline_20261023/formal/results/woven_192_latest_r0.json",
+        "review_results/stencil27_baseline_20261023/formal/results/woven_192_latest_r1.json",
+        "review_results/stencil27_baseline_20261023/formal/results/woven_192_latest_r2.json"
+      ]
+    },
+    {
+      "grid": 224,
+      "C11_GPa": 12.300811099874586,
+      "C33_GPa": 6.576618433866478,
+      "C44_GPa": 1.7498886118125487,
+      "full_tensor": [
+        [
+          12300.811099874587,
+          4929.006484481848,
+          4251.116124934602,
+          6.415600153495715e-14,
+          -7.190775348018833e-13,
+          2.8291428157106156e-14
+        ],
+        [
+          4929.006484481849,
+          12300.811099874587,
+          4251.116124934602,
+          -1.6464704559245704e-13,
+          2.000809624880154e-13,
+          4.89857587599916e-14
+        ],
+        [
+          4251.116125006464,
+          4251.116125006464,
+          6576.618433866478,
+          2.7758812417449976e-15,
+          -1.9724293465130594e-13,
+          -1.4332558463674033e-15
+        ],
+        [
+          3.6790784218948626e-14,
+          -1.6406701070612227e-13,
+          -8.008624537750867e-14,
+          1749.8886118125488,
+          -8.850840371591875e-14,
+          2.2121598365883878e-14
+        ],
+        [
+          -4.862763900650902e-13,
+          2.177098799262616e-13,
+          2.928140399407876e-14,
+          -1.068151074554959e-13,
+          1749.8886118125488,
+          -4.536701432404138e-15
+        ],
+        [
+          6.230196145185135e-14,
+          5.841553350529909e-14,
+          4.0620568133632255e-14,
+          -9.731412307012498e-14,
+          -1.648956319723148e-14,
+          1822.2084789423652
+        ]
+      ],
+      "relative_to_finest": 0.001464190011063898,
+      "repeat_difference": 5.961359955436514e-17,
+      "max_true_residual": 9.012274437484096e-09,
+      "actual_yarn_fraction": 0.19779803662536444,
+      "records": [
+        "review_results/grid_refinement_20261023/remote/results/woven_224_latest_r0.json",
+        "review_results/grid_refinement_20261023/remote/results/woven_224_latest_r1.json",
+        "review_results/grid_refinement_20261023/remote/results/woven_224_latest_r2.json"
+      ]
+    },
+    {
+      "grid": 256,
+      "C11_GPa": 12.311487104234965,
+      "C33_GPa": 6.576700268220657,
+      "C44_GPa": 1.749903633413679,
+      "full_tensor": [
+        [
+          12311.487104234966,
+          4933.45890860899,
+          4253.309795088128,
+          -3.702593787124897e-14,
+          -1.121892373075748e-13,
+          1.841205999479395e-14
+        ],
+        [
+          4933.45890860899,
+          12311.487104234966,
+          4253.309795088127,
+          8.130822404250893e-14,
+          3.143082997442517e-14,
+          2.4433143513649018e-14
+        ],
+        [
+          4253.309795152217,
+          4253.309795152217,
+          6576.700268220657,
+          -5.3616833195491154e-14,
+          -1.5172391376211153e-13,
+          -1.1199995424298367e-14
+        ],
+        [
+          -7.417677583276827e-15,
+          1.3134632270705993e-13,
+          -2.156434752986769e-14,
+          1749.903633413679,
+          1.1157356357480825e-13,
+          4.756168561138754e-15
+        ],
+        [
+          1.7839005974142096e-13,
+          1.0803423238129966e-13,
+          5.606095587039762e-14,
+          9.297166004430989e-14,
+          1749.9036334136786,
+          -7.934842019552413e-15
+        ],
+        [
+          1.2957516686171405e-14,
+          8.285831932345624e-16,
+          -4.978766643861301e-14,
+          -6.125643891666276e-14,
+          7.456275180617311e-15,
+          1823.2138383785561
+        ]
+      ],
+      "relative_to_finest": 0.0007372143335613151,
+      "repeat_difference": 4.495863888845137e-17,
+      "max_true_residual": 9.658104261536629e-09,
+      "actual_yarn_fraction": 0.19796371459960938,
+      "records": [
+        "review_results/grid_extension_20261025/n256/results/woven_256_execution_fp32_r0.json",
+        "review_results/grid_extension_20261025/n256/results/woven_256_execution_fp32_r1.json",
+        "review_results/grid_extension_20261025/n256/results/woven_256_execution_fp32_r2.json"
+      ]
+    },
+    {
+      "grid": 320,
+      "C11_GPa": 12.316588112796554,
+      "C33_GPa": 6.575906164743748,
+      "C44_GPa": 1.749480937924589,
+      "full_tensor": [
+        [
+          12316.588112796553,
+          4937.540667009403,
+          4254.792074043664,
+          -1.7661250240053051e-13,
+          -3.218971755813982e-13,
+          3.4827862815944856e-14
+        ],
+        [
+          4937.5406670094035,
+          12316.588112796553,
+          4254.792074043663,
+          2.5642066248110496e-13,
+          -2.7700508553607508e-14,
+          5.112532619477861e-14
+        ],
+        [
+          4254.792074123598,
+          4254.792074123598,
+          6575.906164743748,
+          -1.6484591469634325e-15,
+          -3.5833758182945984e-13,
+          2.0091733832217073e-14
+        ],
+        [
+          -1.4551915228366852e-14,
+          -2.4783730623312296e-13,
+          0.0,
+          1749.480937924589,
+          -4.068869685625032e-13,
+          5.765388166878438e-15
+        ],
+        [
+          -9.566747394273989e-14,
+          2.851052727237402e-13,
+          -4.222755478622276e-14,
+          -4.688924803986084e-13,
+          1749.480937924589,
+          -4.7251091928046665e-15
+        ],
+        [
+          -9.862943795013735e-15,
+          -2.029126866531783e-14,
+          1.3856471525741655e-14,
+          -1.361426527068943e-13,
+          -1.2697398688032991e-14,
+          1823.24745914747
+        ]
+      ],
+      "relative_to_finest": 0.0003176902028345931,
+      "repeat_difference": 8.379235933698797e-17,
+      "max_true_residual": 9.91136584590228e-09,
+      "actual_yarn_fraction": 0.19798046875,
+      "records": [
+        "review_results/grid_extension_20261025/n320/results/woven_320_execution_fp32_r0.json",
+        "review_results/grid_extension_20261025/n320/results/woven_320_execution_fp32_r1.json",
+        "review_results/grid_extension_20261025/n320/results/woven_320_execution_fp32_r2.json"
+      ]
+    },
+    {
+      "grid": 384,
+      "C11_GPa": 12.318337210762277,
+      "C33_GPa": 6.575295778647864,
+      "C44_GPa": 1.7490944152621317,
+      "full_tensor": [
+        [
+          12318.337210762276,
+          4939.573642595671,
+          4255.757895319127,
+          1.3075960067807398e-15,
+          -6.074667517979109e-13,
+          4.8387894771264836e-14
+        ],
+        [
+          4939.573642595671,
+          12318.337210762276,
+          4255.757895319126,
+          -1.0342344264952569e-13,
+          1.3199266782440534e-13,
+          8.610100801056232e-14
+        ],
+        [
+          4255.7578953725415,
+          4255.7578953725415,
+          6575.295778647864,
+          1.703575552230379e-14,
+          -1.854339727037347e-13,
+          3.198709622793178e-14
+        ],
+        [
+          -2.8471052675942905e-14,
+          -7.019899065333582e-14,
+          -2.6497322854387068e-14,
+          1749.0944152621316,
+          -8.727830700959192e-14,
+          1.618329955640526e-14
+        ],
+        [
+          -8.889185683832086e-14,
+          1.7967931669276098e-13,
+          4.785883623560073e-14,
+          -1.2542237053463439e-13,
+          1749.0944152621316,
+          -1.5460883602187365e-15
+        ],
+        [
+          -1.1182445144761084e-14,
+          4.837340661778955e-15,
+          4.282562441245326e-14,
+          -9.11518802824305e-14,
+          1.8398862680315786e-14,
+          1822.501597447083
+        ]
+      ],
+      "relative_to_finest": 0.00013585388341298623,
+      "repeat_difference": 4.415924363726725e-17,
+      "max_true_residual": 9.981326637967822e-09,
+      "actual_yarn_fraction": 0.19794266312210648,
+      "records": [
+        "review_results/grid_extension_20261025/n384/results/woven_384_execution_fp32_r0.json",
+        "review_results/grid_extension_20261025/n384/results/woven_384_execution_fp32_r1.json",
+        "review_results/grid_extension_20261025/n384/results/woven_384_execution_fp32_r2.json"
+      ]
+    },
+    {
+      "grid": 448,
+      "C11_GPa": 12.32076400721702,
+      "C33_GPa": 6.57493084558778,
+      "C44_GPa": 1.7489168054105466,
+      "full_tensor": [
+        [
+          12320.76400721702,
+          4941.311515674307,
+          4256.549315944892,
+          1.1269249220218499e-14,
+          -4.622644994357046e-13,
+          3.8255032442752724e-14
+        ],
+        [
+          4941.311515674307,
+          12320.764007217018,
+          4256.549315944892,
+          -2.5562966062039754e-14,
+          1.4806847034514626e-13,
+          4.94716027133334e-14
+        ],
+        [
+          4256.549316006066,
+          4256.549316006065,
+          6574.930845587781,
+          -9.870950833518593e-15,
+          -1.961543981988819e-13,
+          1.9876957223021105e-14
+        ],
+        [
+          4.97172759715522e-14,
+          -1.9008571846456791e-13,
+          5.995074860903003e-14,
+          1748.9168054105467,
+          -5.3477792327265046e-14,
+          2.8192543861472635e-15
+        ],
+        [
+          2.450750972422701e-13,
+          4.029170906861209e-14,
+          2.3478465689274155e-14,
+          -7.481689385290655e-14,
+          1748.9168054105467,
+          -3.651112454160865e-15
+        ],
+        [
+          -9.209914981611675e-15,
+          2.8135778449535713e-14,
+          4.816355040740705e-14,
+          -5.62690483776601e-14,
+          1.65206364947137e-15,
+          1822.669927869326
+        ]
+      ],
+      "relative_to_finest": 0.0001743300995651315,
+      "repeat_difference": 1.1025479830767517e-16,
+      "max_true_residual": 8.280388571610635e-09,
+      "actual_yarn_fraction": 0.19795391649963556,
+      "records": [
+        "review_results/grid_extension_20261025/n448/results/woven_448_execution_fp32_r0.json",
+        "review_results/grid_extension_20261025/n448/results/woven_448_execution_fp32_r1.json",
+        "review_results/grid_extension_20261025/n448/results/woven_448_execution_fp32_r2.json"
+      ]
+    },
+    {
+      "grid": 480,
+      "C11_GPa": 12.318260514510039,
+      "C33_GPa": 6.574376054923569,
+      "C44_GPa": 1.7485827134008054,
+      "full_tensor": [
+        [
+          12318.260514510039,
+          4941.317603280402,
+          4256.184733881278,
+          -5.69276313331944e-15,
+          -2.470472879765482e-13,
+          -1.0130003831650188e-15
+        ],
+        [
+          4941.317603280403,
+          12318.26051451004,
+          4256.184733881279,
+          -5.093170329928398e-14,
+          1.6251270288328805e-13,
+          1.9529760524821744e-14
+        ],
+        [
+          4256.184733936649,
+          4256.184733936649,
+          6574.3760549235685,
+          4.2274661137963883e-14,
+          -7.893445567956574e-14,
+          -2.126726778223437e-15
+        ],
+        [
+          -1.8863593814549622e-14,
+          1.5953210768876252e-13,
+          -3.206810948473436e-14,
+          1748.5827134008055,
+          -9.732461750091817e-14,
+          -4.034106382277969e-15
+        ],
+        [
+          -5.702026505281941e-14,
+          4.857270141656045e-14,
+          -5.887820272484398e-14,
+          -1.026244768177599e-13,
+          1748.5827134008052,
+          1.9874143483186208e-15
+        ],
+        [
+          1.0721037226715082e-14,
+          -1.9410078482767152e-14,
+          2.2342638027760553e-14,
+          -1.2865757841811703e-14,
+          1.3591893043162094e-14,
+          1821.7150453953661
+        ]
+      ],
+      "relative_to_finest": 9.37340138595397e-17,
+      "repeat_difference": 9.37340138595397e-17,
+      "max_true_residual": 8.361871248881328e-09,
+      "actual_yarn_fraction": 0.197859375,
+      "records": [
+        "review_results/grid_extension_20261025/n480/results/woven_480_execution_fp32_r0.json",
+        "review_results/grid_extension_20261025/n480/results/woven_480_execution_fp32_r1.json",
+        "review_results/grid_extension_20261025/n480/results/woven_480_execution_fp32_r2.json"
+      ]
+    }
+  ],
+  "new_grids": [
+    256,
+    320,
+    384,
+    448,
+    480
+  ],
+  "new_costs": [
+    {
+      "grid": 256,
+      "repeats": 3,
+      "time_median_s": 4.3756021610461175,
+      "time_range_s": [
+        4.366766599006951,
+        4.37918333010748
+      ],
+      "memory_peak_GiB": 4.63671875,
+      "iterations": [
+        327,
+        327,
+        327
+      ]
+    },
+    {
+      "grid": 320,
+      "repeats": 3,
+      "time_median_s": 8.472007035976276,
+      "time_range_s": [
+        8.397405762923881,
+        8.540849172044545
+      ],
+      "memory_peak_GiB": 8.376953125,
+      "iterations": [
+        329,
+        329,
+        329
+      ]
+    },
+    {
+      "grid": 384,
+      "repeats": 3,
+      "time_median_s": 14.645081029972062,
+      "time_range_s": [
+        14.630168747156858,
+        14.921403639949858
+      ],
+      "memory_peak_GiB": 13.93359375,
+      "iterations": [
+        331,
+        331,
+        331
+      ]
+    },
+    {
+      "grid": 448,
+      "repeats": 3,
+      "time_median_s": 23.213512268848717,
+      "time_range_s": [
+        23.18923135800287,
+        23.300993236945942
+      ],
+      "memory_peak_GiB": 21.689453125,
+      "iterations": [
+        333,
+        333,
+        333
+      ]
+    },
+    {
+      "grid": 480,
+      "repeats": 3,
+      "time_median_s": 28.960234300931916,
+      "time_range_s": [
+        28.95490861404687,
+        29.08782071596943
+      ],
+      "memory_peak_GiB": 26.509765625,
+      "iterations": [
+        333,
+        333,
+        333
+      ]
+    }
+  ],
+  "bridge_relative_difference": 7.322198419103922e-17,
+  "bridge_input_hash_match": true,
+  "common_material": {
+    "matrix": {
+      "E": 3500.0,
+      "Nu": 0.35
+    },
+    "yarn": {
+      "E11": 135000.0,
+      "E22": 9000.0,
+      "E33": 9000.0,
+      "Nu12": 0.3,
+      "Nu13": 0.3,
+      "Nu23": 0.35,
+      "G12": 5000.0,
+      "G13": 5000.0,
+      "G23": 3500.0
+    }
+  },
+  "common_geometry": {
+    "width": 0.18,
+    "thickness": 0.035,
+    "amplitude": 0.09,
+    "height": 0.4,
+    "exact_yarn_fraction": 0.19792033717615698
+  },
+  "common_GPU": "NVIDIA GeForce RTX 5090",
+  "consecutive_changes": [
+    {
+      "coarse": 64,
+      "fine": 96,
+      "relative_difference": 0.005112071541581083
+    },
+    {
+      "coarse": 96,
+      "fine": 128,
+      "relative_difference": 0.0015543423716710381
+    },
+    {
+      "coarse": 128,
+      "fine": 160,
+      "relative_difference": 0.0014527569724681185
+    },
+    {
+      "coarse": 160,
+      "fine": 192,
+      "relative_difference": 0.000269292036154528
+    },
+    {
+      "coarse": 192,
+      "fine": 224,
+      "relative_difference": 0.00026886301167104086
+    },
+    {
+      "coarse": 224,
+      "fine": 256,
+      "relative_difference": 0.0007769435406623425
+    },
+    {
+      "coarse": 256,
+      "fine": 320,
+      "relative_difference": 0.0004464831876010066
+    },
+    {
+      "coarse": 320,
+      "fine": 384,
+      "relative_difference": 0.00020129190921933598
+    },
+    {
+      "coarse": 384,
+      "fine": 448,
+      "relative_difference": 0.00020743122792332087
+    },
+    {
+      "coarse": 448,
+      "fine": 480,
+      "relative_difference": 0.00017433009956502476
+    }
+  ],
+  "source_sha256": {
+    "review_results/grid_refinement_20261023/scaling_summary.json": "2d248684474b256e0484c50d2d89760647be10d2e2496f6b67038ed848aee204",
+    "review_results/grid_extension_20261025/n256/results/woven_256_execution_fp32_r0.json": "a8a5af873baba46c8de743c52ce701a7fbad1c22c9d4fb766953ab5b305dff7a",
+    "review_results/grid_extension_20261025/n256/logs/woven_256_execution_fp32_r0_telemetry.json": "c50dd524cb01d9817713bf5b14ba98813ca63fef5cf64736455b4d60177f80ce",
+    "review_results/grid_extension_20261025/n256/results/woven_256_execution_fp32_r1.json": "487f3709da0cb01cd894fbf2e4ae3247302cbd0025be66b18115e605e9f8df68",
+    "review_results/grid_extension_20261025/n256/logs/woven_256_execution_fp32_r1_telemetry.json": "f0cfd302bb9c966bc1e6a24689f68c7d14c7f6c297490c0186238192f1258f5e",
+    "review_results/grid_extension_20261025/n256/results/woven_256_execution_fp32_r2.json": "8ec1521b543a40751a08a66c16eb66da3eb6b6051d1dad1c6657f08f2e8f1977",
+    "review_results/grid_extension_20261025/n256/logs/woven_256_execution_fp32_r2_telemetry.json": "d7b67ae2b521693dd758b1c2a8a66fda79ff112a2bd5f1a42b5e01f35616e5c8",
+    "review_results/grid_extension_20261025/n320/results/woven_320_execution_fp32_r0.json": "b9b0f3c444b260d9cab03f96146f908c2cd0d12c854a1949cba4799b4c3b6ca0",
+    "review_results/grid_extension_20261025/n320/logs/woven_320_execution_fp32_r0_telemetry.json": "4d380c47d9670d1433bd78a38e173ab670ca2d019fe608bdbddf3ddc2b6be8ad",
+    "review_results/grid_extension_20261025/n320/results/woven_320_execution_fp32_r1.json": "d9c369d78f3ed4c93402eafaad58c75f8d71232d591a4926d3042b5ae3d09827",
+    "review_results/grid_extension_20261025/n320/logs/woven_320_execution_fp32_r1_telemetry.json": "daa9cf2bd8906a9afbc8e7f0b0efc2c2eedb43932b0c29733f18a36d8ed2644e",
+    "review_results/grid_extension_20261025/n320/results/woven_320_execution_fp32_r2.json": "35ede2ceef025fafdcae91c2ce29c5e310d0c9454266bf68c9e0106be3ca4ba8",
+    "review_results/grid_extension_20261025/n320/logs/woven_320_execution_fp32_r2_telemetry.json": "a7840b32c023c725a8a400e26341e3ddbca39bbc1c15b15fdb3c4bfa2a295187",
+    "review_results/grid_extension_20261025/n384/results/woven_384_execution_fp32_r0.json": "51c818de835fd5de1cf2d0618521f301a1816a280e8ec331cda049c12bc58051",
+    "review_results/grid_extension_20261025/n384/logs/woven_384_execution_fp32_r0_telemetry.json": "6b699b40cbd7ec2356db9cebb32cf74c445b887e82cd32b9c167cf807d141d4f",
+    "review_results/grid_extension_20261025/n384/results/woven_384_execution_fp32_r1.json": "bbaacd033b18330186d0cc00f454f2b056eac181cc4e3944cbf4bacb55e916ee",
+    "review_results/grid_extension_20261025/n384/logs/woven_384_execution_fp32_r1_telemetry.json": "9552644ef566d2d4c217b5e20e3dc5be695d43532223dc9125419fdc860a7d9e",
+    "review_results/grid_extension_20261025/n384/results/woven_384_execution_fp32_r2.json": "fa3c8e3f2881dca6018de6df8e947cbe244e4969f6970fffa81279c383443e38",
+    "review_results/grid_extension_20261025/n384/logs/woven_384_execution_fp32_r2_telemetry.json": "f7a330a5bb5357d8dee355ec96996df7134e0216887cffdca17dbff9dbb0ecaa",
+    "review_results/grid_extension_20261025/n448/results/woven_448_execution_fp32_r0.json": "c7ef0e1bba7dd691cf7e8399967fa61a28435d73982d27b06e934eb227f07d74",
+    "review_results/grid_extension_20261025/n448/logs/woven_448_execution_fp32_r0_telemetry.json": "49d170d33b7ecd4722bdafc5329af7e4d187ca57bb1bc3fab1d37c069895e2d9",
+    "review_results/grid_extension_20261025/n448/results/woven_448_execution_fp32_r1.json": "4c245026834cd813651893a5343c9deb43f54bb4644162296be6e4ece3ba4811",
+    "review_results/grid_extension_20261025/n448/logs/woven_448_execution_fp32_r1_telemetry.json": "6da4932e47fc6571efc62ad073329f0105e9dcbc23fd5f55102b094c1b4b5dd2",
+    "review_results/grid_extension_20261025/n448/results/woven_448_execution_fp32_r2.json": "5352e61e71ae63f6893e3512c43a4a4f5056c7577cdb22b2b1d896f6c161f6d2",
+    "review_results/grid_extension_20261025/n448/logs/woven_448_execution_fp32_r2_telemetry.json": "11decb937e6507789d542a8f5183c956fcae5424668446982482e8367be4bb86",
+    "review_results/grid_extension_20261025/n480/results/woven_480_execution_fp32_r0.json": "a703cb0b4c70a699b7fc2f902c52860e4d65f1b95edab4b2a998fc0c000e2e78",
+    "review_results/grid_extension_20261025/n480/logs/woven_480_execution_fp32_r0_telemetry.json": "5f42b19181a8c6ada27737ea94435c3b140e678314cdd9c3b0e9f70d3d6c3bd7",
+    "review_results/grid_extension_20261025/n480/results/woven_480_execution_fp32_r1.json": "7410844a2113329bada99919a8364820b6e2e8d0b213815838fc565379e5dfb5",
+    "review_results/grid_extension_20261025/n480/logs/woven_480_execution_fp32_r1_telemetry.json": "f5f8316f0125a516790d4f373fba9bb9dcbbeb6adad7d705b9e1337a62a3bcf9",
+    "review_results/grid_extension_20261025/n480/results/woven_480_execution_fp32_r2.json": "01b8e5f2d07ab52ada4e098a13c20ca9d06c87dd81001bb386ed8d2d4b49c7ed",
+    "review_results/grid_extension_20261025/n480/logs/woven_480_execution_fp32_r2_telemetry.json": "72c907884082183a91631ad3a9ce8d94cdf59bf34a79c482a6af06e351504b87",
+    "review_results/stencil27_baseline_20261023/formal/results/woven_64_latest_r0.json": "e1e9ceadc415e3115a82d28eb18d1e96316a7ea3e1997e15a337346b7ffef36a",
+    "review_results/stencil27_baseline_20261023/formal/results/woven_64_latest_r1.json": "b4607a7d2f1c6ef62241d64e9cf095b967711ad979b2b026ffcdaf494a65cd02",
+    "review_results/stencil27_baseline_20261023/formal/results/woven_64_latest_r2.json": "e4d238ad37fc8732d0e108b704dfdce65590c2e92ce54ec7a33ea0a855cd0dbe",
+    "review_results/grid_refinement_20261023/remote/results/woven_96_latest_r0.json": "f03b3909b0f97f4a64d2749c49a3140acba2e90365e88c70897559a8ac8d6de5",
+    "review_results/grid_refinement_20261023/remote/results/woven_96_latest_r1.json": "be09e2d5eee588d9bd474c6255fe630c62549f3b782444ee8ed3ffc09911477d",
+    "review_results/grid_refinement_20261023/remote/results/woven_96_latest_r2.json": "31711b93910931407949bec8dcacebe1b882b7a145cee05206b4f3b32ea8ea4f",
+    "review_results/stencil27_baseline_20261023/formal/results/woven_128_latest_r0.json": "804ff542bf32e942e3f159d62533800ce93653fb128bb615a3e7e2bfa3eb4b96",
+    "review_results/stencil27_baseline_20261023/formal/results/woven_128_latest_r1.json": "b53cc826852afdbd512ab1dd1f076581c1804123fc86a84f95e5bd5350cc7f36",
+    "review_results/stencil27_baseline_20261023/formal/results/woven_128_latest_r2.json": "51f222de688dcc85c7d6ce37fa16c19730f856448764d030affb1294d546a48c",
+    "review_results/grid_refinement_20261023/remote/results/woven_160_latest_r0.json": "35a299b1769efe2b8c76869d477e5d05562f15bbf1e4055cef8510aea508f0a4",
+    "review_results/grid_refinement_20261023/remote/results/woven_160_latest_r1.json": "76d6d3d67693edc7ff4c56201df352205621b1f659fd7484f063cbc3453e9a98",
+    "review_results/grid_refinement_20261023/remote/results/woven_160_latest_r2.json": "6661f641e5fabce76ed9e3d00d7517dc9e4bef2bed8836f5859b90e9db2cdc0e",
+    "review_results/stencil27_baseline_20261023/formal/results/woven_192_latest_r0.json": "e461deef72e80f8e4c5b81a6990164294d91a36b8c1b663de834958f2d0ee0c7",
+    "review_results/stencil27_baseline_20261023/formal/results/woven_192_latest_r1.json": "b8b9751b918fdc5a556dd9e79be8a0f3bf81e988cfc8c3e00838b1fb586a2c82",
+    "review_results/stencil27_baseline_20261023/formal/results/woven_192_latest_r2.json": "86c608a2bc1156e7fcebf5426cab1b774953b9857914a8cad856ac59aa611192",
+    "review_results/grid_refinement_20261023/remote/results/woven_224_latest_r0.json": "0b5a1d067fe6746093fa7deffafefbb5bed147d484c1df7db36d04baf460a7cc",
+    "review_results/grid_refinement_20261023/remote/results/woven_224_latest_r1.json": "99c2ddf4b9f541fd3d6ffb617c13ba21e87b647d3f9702f45d59e6a51032e5e9",
+    "review_results/grid_refinement_20261023/remote/results/woven_224_latest_r2.json": "c73fbb6d5932852f8bcddb2796fc2e64b9bc8e0acbb2161274c91840dd0c1898"
+  },
+  "protocol": "Six unit engineering strains; FP64 operator and PCG; FP32 FFT; recomputed relative residual <= 1e-8; three independent processes after full six-load warm-up.",
+  "statistics": "Plot first saved tensor at each grid. Full-tensor discrepancy is the maximum over all repeat pairs against the finest measured grid.",
+  "reference_note": "The finest grid is a measured numerical reference."
+}

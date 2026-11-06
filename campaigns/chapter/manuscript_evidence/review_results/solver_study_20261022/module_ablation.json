@@ -1,0 +1,105 @@
+{
+  "source": [
+    "summary_with_stencil27.json",
+    "summary.json"
+  ],
+  "design": "Four matched pairs by mechanism: full27 to symmetric14 (Section 3.3), symmetric14 to modal (Section 3.1), material/background (Section 3.2), and iteration data access (Section 3.3). Material and iteration pairs retain the original matched measurements. Fixed iteration counts within each pair; all four pairs are not a cumulative sequence.",
+  "pairs": [
+    {
+      "section_label": "sec:solver-workflow",
+      "name_en": "Symmetric storage",
+      "name_zh": "对称存储",
+      "before": "stencil27",
+      "after": "paper",
+      "compute_before_s": 4.594981295987964,
+      "compute_after_s": 3.1412737139035016,
+      "compute_reduction_percent": 31.636855265411945,
+      "nvml_before_GiB": 17.486328125,
+      "nvml_after_GiB": 11.31640625,
+      "iterations": 337,
+      "CH_relative_error": 6.043937651606505e-16,
+      "before_records": [
+        "../stencil27_baseline_20261023/formal/results/woven_192_stencil27_r0.json",
+        "../stencil27_baseline_20261023/formal/results/woven_192_stencil27_r1.json",
+        "../stencil27_baseline_20261023/formal/results/woven_192_stencil27_r2.json"
+      ],
+      "after_records": [
+        "../stencil27_baseline_20261023/formal/results/woven_192_paper_r0.json",
+        "../stencil27_baseline_20261023/formal/results/woven_192_paper_r1.json",
+        "../stencil27_baseline_20261023/formal/results/woven_192_paper_r2.json"
+      ]
+    },
+    {
+      "section_label": "sec:fi-modal",
+      "name_en": "Modal action",
+      "name_zh": "模态算子",
+      "before": "paper",
+      "after": "modal",
+      "compute_before_s": 3.1412737139035016,
+      "compute_after_s": 2.357979997061193,
+      "compute_reduction_percent": 24.935544883446315,
+      "nvml_before_GiB": 11.31640625,
+      "nvml_after_GiB": 4.671875,
+      "iterations": 337,
+      "CH_relative_error": 1.3634866758433018e-14,
+      "before_records": [
+        "../stencil27_baseline_20261023/formal/results/woven_192_paper_r0.json",
+        "../stencil27_baseline_20261023/formal/results/woven_192_paper_r1.json",
+        "../stencil27_baseline_20261023/formal/results/woven_192_paper_r2.json"
+      ],
+      "after_records": [
+        "../stencil27_baseline_20261023/formal/results/woven_192_modal_r0.json",
+        "../stencil27_baseline_20261023/formal/results/woven_192_modal_r1.json",
+        "../stencil27_baseline_20261023/formal/results/woven_192_modal_r2.json"
+      ]
+    },
+    {
+      "section_label": "sec:compact-material",
+      "name_en": "Material/background",
+      "name_zh": "材料存储与背景",
+      "before": "dense",
+      "after": "latest",
+      "compute_before_s": 2.0623753739055246,
+      "compute_after_s": 1.6695574729237705,
+      "compute_reduction_percent": 19.046867313871864,
+      "nvml_before_GiB": 3.255859375,
+      "nvml_after_GiB": 2.439453125,
+      "iterations": 327,
+      "CH_relative_error": 2.1063469569381604e-16,
+      "before_records": [
+        "remote\\results\\woven_192_dense_r0.json",
+        "remote\\results\\woven_192_dense_r1.json",
+        "remote\\results\\woven_192_dense_r2.json"
+      ],
+      "after_records": [
+        "remote\\results\\woven_192_latest_r0.json",
+        "remote\\results\\woven_192_latest_r1.json",
+        "remote\\results\\woven_192_latest_r2.json"
+      ]
+    },
+    {
+      "section_label": "sec:solver-workflow",
+      "name_en": "Iteration data access",
+      "name_zh": "迭代数据访问",
+      "before": "analytic",
+      "after": "fusion",
+      "compute_before_s": 2.3361199779901654,
+      "compute_after_s": 2.024291292997077,
+      "compute_reduction_percent": 13.348145126577094,
+      "nvml_before_GiB": 4.349609375,
+      "nvml_after_GiB": 4.033203125,
+      "iterations": 337,
+      "CH_relative_error": 2.133200729514021e-16,
+      "before_records": [
+        "remote\\results\\woven_192_analytic_r0.json",
+        "remote\\results\\woven_192_analytic_r1.json",
+        "remote\\results\\woven_192_analytic_r2.json"
+      ],
+      "after_records": [
+        "remote\\results\\woven_192_fusion_r0.json",
+        "remote\\results\\woven_192_fusion_r1.json",
+        "remote\\results\\woven_192_fusion_r2.json"
+      ]
+    }
+  ]
+}

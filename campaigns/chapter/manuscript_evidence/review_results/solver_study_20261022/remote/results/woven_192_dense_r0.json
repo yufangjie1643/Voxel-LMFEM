@@ -1,0 +1,1189 @@
+{
+  "complete": true,
+  "case": "woven",
+  "grid": 192,
+  "variant": "dense",
+  "repeat": 0,
+  "input_hash": "d584cb5ff7865ba1d2051f28400320d2bcc1343eb4329a61a347e0e244897947",
+  "input": {
+    "geometry": {
+      "width": 0.18,
+      "thickness": 0.035,
+      "amplitude": 0.09,
+      "height": 0.4,
+      "exact_yarn_fraction": 0.19792033717615698,
+      "voxel_yarn_fraction": 0.197998046875
+    },
+    "material": {
+      "matrix": {
+        "E": 3500.0,
+        "Nu": 0.35
+      },
+      "yarn": {
+        "E11": 135000.0,
+        "E22": 9000.0,
+        "E33": 9000.0,
+        "Nu12": 0.3,
+        "Nu13": 0.3,
+        "Nu23": 0.35,
+        "G12": 5000.0,
+        "G13": 5000.0,
+        "G23": 3500.0
+      }
+    },
+    "active_fraction": 0.197998046875
+  },
+  "measurement": {
+    "seconds": 2.0604468679521233,
+    "CH": [
+      [
+        12303.925638574323,
+        4927.4955327281705,
+        4250.4256778036715,
+        -8.62684409505029e-14,
+        -1.1100585471400269e-13,
+        1.547887332712342e-14
+      ],
+      [
+        4927.4955327281705,
+        12303.925638574323,
+        4250.4256778036715,
+        1.242133967699138e-13,
+        -1.2094646272152608e-13,
+        3.1100636469453227e-14
+      ],
+      [
+        4250.425677911804,
+        4250.425677911805,
+        6578.072631784197,
+        9.279819711015012e-14,
+        -1.6993196973026493e-13,
+        -1.005201580409168e-14
+      ],
+      [
+        -9.079157179156835e-15,
+        -1.460560067951317e-13,
+        1.855306032262484e-14,
+        1750.7656770276196,
+        1.9871450164367212e-14,
+        1.9066538471513973e-15
+      ],
+      [
+        -2.2266961936852398e-13,
+        1.900701818158268e-13,
+        1.491810790125951e-14,
+        -2.5173279099093363e-14,
+        1750.7656770276192,
+        2.977042480846716e-15
+      ],
+      [
+        -6.673262765422838e-14,
+        1.1602344599473915e-14,
+        -4.564275911954917e-14,
+        -9.510088190196525e-14,
+        -1.6776703483224588e-14,
+        1824.4211998789092
+      ]
+    ],
+    "calls": [
+      {
+        "iterations": 55,
+        "restarts": 0,
+        "true_residuals": [
+          8.22150631170383e-09
+        ],
+        "trace": []
+      },
+      {
+        "iterations": 55,
+        "restarts": 0,
+        "true_residuals": [
+          8.221525854822886e-09
+        ],
+        "trace": []
+      },
+      {
+        "iterations": 54,
+        "restarts": 0,
+        "true_residuals": [
+          8.806873108227466e-09
+        ],
+        "trace": []
+      },
+      {
+        "iterations": 54,
+        "restarts": 0,
+        "true_residuals": [
+          7.884572068532395e-09
+        ],
+        "trace": []
+      },
+      {
+        "iterations": 54,
+        "restarts": 0,
+        "true_residuals": [
+          7.884576974475665e-09
+        ],
+        "trace": []
+      },
+      {
+        "iterations": 55,
+        "restarts": 0,
+        "true_residuals": [
+          8.41643181822043e-09
+        ],
+        "trace": []
+      }
+    ],
+    "stages": [
+      {
+        "name": "material",
+        "seconds": 0.17293019918724895,
+        "live": 1222639616,
+        "peak": 1257769984,
+        "reserved": 1272971264
+      },
+      {
+        "name": "operator",
+        "seconds": 4.364992491900921e-05,
+        "live": 1222639616,
+        "peak": 1222639616,
+        "reserved": 1272971264,
+        "arrays": {
+          "_hybrid_coeff": {
+            "bytes": 1189085184,
+            "shape": [
+              7077888,
+              21
+            ],
+            "dtype": "torch.float64",
+            "storage": 134076027633664
+          },
+          "_hybrid_index": {
+            "bytes": 0,
+            "shape": [
+              0
+            ],
+            "dtype": "torch.int32",
+            "storage": 0
+          }
+        }
+      },
+      {
+        "name": "reference",
+        "seconds": 0.0024419298861175776,
+        "live": 1279863296,
+        "peak": 1279863296,
+        "reserved": 1331691520,
+        "arrays": {
+          "_hybrid_coeff": {
+            "bytes": 1189085184,
+            "shape": [
+              7077888,
+              21
+            ],
+            "dtype": "torch.float64",
+            "storage": 134076027633664
+          },
+          "_hybrid_index": {
+            "bytes": 0,
+            "shape": [
+              0
+            ],
+            "dtype": "torch.int32",
+            "storage": 0
+          },
+          "_fft_symbol_inv": {
+            "bytes": 57212928,
+            "shape": [
+              4,
+              3575808
+            ],
+            "dtype": "torch.float32",
+            "storage": 134074974863360
+          }
+        }
+      },
+      {
+        "name": "spectral_reference_design",
+        "seconds": 0.016193431103602052,
+        "live": 1279863296,
+        "peak": 1337076224,
+        "reserved": 1390411776,
+        "arrays": {
+          "_hybrid_coeff": {
+            "bytes": 1189085184,
+            "shape": [
+              7077888,
+              21
+            ],
+            "dtype": "torch.float64",
+            "storage": 134076027633664
+          },
+          "_hybrid_index": {
+            "bytes": 0,
+            "shape": [
+              0
+            ],
+            "dtype": "torch.int32",
+            "storage": 0
+          },
+          "_fft_symbol_inv": {
+            "bytes": 57212928,
+            "shape": [
+              4,
+              3575808
+            ],
+            "dtype": "torch.float32",
+            "storage": 134075033583616
+          }
+        }
+      },
+      {
+        "name": "chain_attachment",
+        "seconds": 0.000779327005147934,
+        "live": 1308633600,
+        "peak": 1365846528,
+        "reserved": 1476395008,
+        "arrays": {
+          "_hybrid_coeff": {
+            "bytes": 1189085184,
+            "shape": [
+              7077888,
+              21
+            ],
+            "dtype": "torch.float64",
+            "storage": 134076027633664
+          },
+          "_hybrid_index": {
+            "bytes": 0,
+            "shape": [
+              0
+            ],
+            "dtype": "torch.int32",
+            "storage": 0
+          },
+          "_contest_coefficient": {
+            "bytes": 85819392,
+            "shape": [
+              6,
+              3575808
+            ],
+            "dtype": "torch.float32",
+            "storage": 134077657120768
+          }
+        }
+      },
+      {
+        "name": "rhs0",
+        "seconds": 0.005236802855506539,
+        "live": 1478502912,
+        "peak": 1648372736,
+        "reserved": 1816133632,
+        "arrays": {
+          "_hybrid_coeff": {
+            "bytes": 1189085184,
+            "shape": [
+              7077888,
+              21
+            ],
+            "dtype": "torch.float64",
+            "storage": 134076027633664
+          },
+          "_hybrid_index": {
+            "bytes": 0,
+            "shape": [
+              0
+            ],
+            "dtype": "torch.int32",
+            "storage": 0
+          },
+          "_contest_coefficient": {
+            "bytes": 85819392,
+            "shape": [
+              6,
+              3575808
+            ],
+            "dtype": "torch.float32",
+            "storage": 134077657120768
+          }
+        }
+      },
+      {
+        "name": "solve0",
+        "seconds": 0.3042584890499711,
+        "live": 1648372224,
+        "peak": 2583706624,
+        "reserved": 2837446656,
+        "arrays": {
+          "_hybrid_coeff": {
+            "bytes": 1189085184,
+            "shape": [
+              7077888,
+              21
+            ],
+            "dtype": "torch.float64",
+            "storage": 134076027633664
+          },
+          "_hybrid_index": {
+            "bytes": 0,
+            "shape": [
+              0
+            ],
+            "dtype": "torch.int32",
+            "storage": 0
+          },
+          "_contest_coefficient": {
+            "bytes": 85819392,
+            "shape": [
+              6,
+              3575808
+            ],
+            "dtype": "torch.float32",
+            "storage": 134077657120768
+          }
+        }
+      },
+      {
+        "name": "post0",
+        "seconds": 0.0012908498756587505,
+        "live": 1648372224,
+        "peak": 1651027968,
+        "reserved": 2837446656,
+        "arrays": {
+          "_hybrid_coeff": {
+            "bytes": 1189085184,
+            "shape": [
+              7077888,
+              21
+            ],
+            "dtype": "torch.float64",
+            "storage": 134076027633664
+          },
+          "_hybrid_index": {
+            "bytes": 0,
+            "shape": [
+              0
+            ],
+            "dtype": "torch.int32",
+            "storage": 0
+          },
+          "_contest_coefficient": {
+            "bytes": 85819392,
+            "shape": [
+              6,
+              3575808
+            ],
+            "dtype": "torch.float32",
+            "storage": 134077657120768
+          }
+        }
+      },
+      {
+        "name": "rhs1",
+        "seconds": 0.005161042092368007,
+        "live": 1478502912,
+        "peak": 1648372736,
+        "reserved": 2837446656,
+        "arrays": {
+          "_hybrid_coeff": {
+            "bytes": 1189085184,
+            "shape": [
+              7077888,
+              21
+            ],
+            "dtype": "torch.float64",
+            "storage": 134076027633664
+          },
+          "_hybrid_index": {
+            "bytes": 0,
+            "shape": [
+              0
+            ],
+            "dtype": "torch.int32",
+            "storage": 0
+          },
+          "_contest_coefficient": {
+            "bytes": 85819392,
+            "shape": [
+              6,
+              3575808
+            ],
+            "dtype": "torch.float32",
+            "storage": 134077657120768
+          }
+        }
+      },
+      {
+        "name": "solve1",
+        "seconds": 0.3042883090674877,
+        "live": 1648372224,
+        "peak": 2583706624,
+        "reserved": 2837446656,
+        "arrays": {
+          "_hybrid_coeff": {
+            "bytes": 1189085184,
+            "shape": [
+              7077888,
+              21
+            ],
+            "dtype": "torch.float64",
+            "storage": 134076027633664
+          },
+          "_hybrid_index": {
+            "bytes": 0,
+            "shape": [
+              0
+            ],
+            "dtype": "torch.int32",
+            "storage": 0
+          },
+          "_contest_coefficient": {
+            "bytes": 85819392,
+            "shape": [
+              6,
+              3575808
+            ],
+            "dtype": "torch.float32",
+            "storage": 134077657120768
+          }
+        }
+      },
+      {
+        "name": "post1",
+        "seconds": 0.0012814609799534082,
+        "live": 1648372224,
+        "peak": 1651027968,
+        "reserved": 2837446656,
+        "arrays": {
+          "_hybrid_coeff": {
+            "bytes": 1189085184,
+            "shape": [
+              7077888,
+              21
+            ],
+            "dtype": "torch.float64",
+            "storage": 134076027633664
+          },
+          "_hybrid_index": {
+            "bytes": 0,
+            "shape": [
+              0
+            ],
+            "dtype": "torch.int32",
+            "storage": 0
+          },
+          "_contest_coefficient": {
+            "bytes": 85819392,
+            "shape": [
+              6,
+              3575808
+            ],
+            "dtype": "torch.float32",
+            "storage": 134077657120768
+          }
+        }
+      },
+      {
+        "name": "rhs2",
+        "seconds": 0.005166982067748904,
+        "live": 1478502912,
+        "peak": 1648372736,
+        "reserved": 2837446656,
+        "arrays": {
+          "_hybrid_coeff": {
+            "bytes": 1189085184,
+            "shape": [
+              7077888,
+              21
+            ],
+            "dtype": "torch.float64",
+            "storage": 134076027633664
+          },
+          "_hybrid_index": {
+            "bytes": 0,
+            "shape": [
+              0
+            ],
+            "dtype": "torch.int32",
+            "storage": 0
+          },
+          "_contest_coefficient": {
+            "bytes": 85819392,
+            "shape": [
+              6,
+              3575808
+            ],
+            "dtype": "torch.float32",
+            "storage": 134077657120768
+          }
+        }
+      },
+      {
+        "name": "solve2",
+        "seconds": 0.30423979880288243,
+        "live": 1648372224,
+        "peak": 2583706624,
+        "reserved": 2837446656,
+        "arrays": {
+          "_hybrid_coeff": {
+            "bytes": 1189085184,
+            "shape": [
+              7077888,
+              21
+            ],
+            "dtype": "torch.float64",
+            "storage": 134076027633664
+          },
+          "_hybrid_index": {
+            "bytes": 0,
+            "shape": [
+              0
+            ],
+            "dtype": "torch.int32",
+            "storage": 0
+          },
+          "_contest_coefficient": {
+            "bytes": 85819392,
+            "shape": [
+              6,
+              3575808
+            ],
+            "dtype": "torch.float32",
+            "storage": 134077657120768
+          }
+        }
+      },
+      {
+        "name": "post2",
+        "seconds": 0.0012712909374386072,
+        "live": 1648372224,
+        "peak": 1651027968,
+        "reserved": 2837446656,
+        "arrays": {
+          "_hybrid_coeff": {
+            "bytes": 1189085184,
+            "shape": [
+              7077888,
+              21
+            ],
+            "dtype": "torch.float64",
+            "storage": 134076027633664
+          },
+          "_hybrid_index": {
+            "bytes": 0,
+            "shape": [
+              0
+            ],
+            "dtype": "torch.int32",
+            "storage": 0
+          },
+          "_contest_coefficient": {
+            "bytes": 85819392,
+            "shape": [
+              6,
+              3575808
+            ],
+            "dtype": "torch.float32",
+            "storage": 134077657120768
+          }
+        }
+      },
+      {
+        "name": "rhs3",
+        "seconds": 0.0051746920216828585,
+        "live": 1478502912,
+        "peak": 1648372736,
+        "reserved": 2837446656,
+        "arrays": {
+          "_hybrid_coeff": {
+            "bytes": 1189085184,
+            "shape": [
+              7077888,
+              21
+            ],
+            "dtype": "torch.float64",
+            "storage": 134076027633664
+          },
+          "_hybrid_index": {
+            "bytes": 0,
+            "shape": [
+              0
+            ],
+            "dtype": "torch.int32",
+            "storage": 0
+          },
+          "_contest_coefficient": {
+            "bytes": 85819392,
+            "shape": [
+              6,
+              3575808
+            ],
+            "dtype": "torch.float32",
+            "storage": 134077657120768
+          }
+        }
+      },
+      {
+        "name": "solve3",
+        "seconds": 0.30421890784054995,
+        "live": 1648372224,
+        "peak": 2583706624,
+        "reserved": 2837446656,
+        "arrays": {
+          "_hybrid_coeff": {
+            "bytes": 1189085184,
+            "shape": [
+              7077888,
+              21
+            ],
+            "dtype": "torch.float64",
+            "storage": 134076027633664
+          },
+          "_hybrid_index": {
+            "bytes": 0,
+            "shape": [
+              0
+            ],
+            "dtype": "torch.int32",
+            "storage": 0
+          },
+          "_contest_coefficient": {
+            "bytes": 85819392,
+            "shape": [
+              6,
+              3575808
+            ],
+            "dtype": "torch.float32",
+            "storage": 134077657120768
+          }
+        }
+      },
+      {
+        "name": "post3",
+        "seconds": 0.0012917499989271164,
+        "live": 1648372224,
+        "peak": 1651027968,
+        "reserved": 2837446656,
+        "arrays": {
+          "_hybrid_coeff": {
+            "bytes": 1189085184,
+            "shape": [
+              7077888,
+              21
+            ],
+            "dtype": "torch.float64",
+            "storage": 134076027633664
+          },
+          "_hybrid_index": {
+            "bytes": 0,
+            "shape": [
+              0
+            ],
+            "dtype": "torch.int32",
+            "storage": 0
+          },
+          "_contest_coefficient": {
+            "bytes": 85819392,
+            "shape": [
+              6,
+              3575808
+            ],
+            "dtype": "torch.float32",
+            "storage": 134077657120768
+          }
+        }
+      },
+      {
+        "name": "rhs4",
+        "seconds": 0.005173292011022568,
+        "live": 1478502912,
+        "peak": 1648372736,
+        "reserved": 2837446656,
+        "arrays": {
+          "_hybrid_coeff": {
+            "bytes": 1189085184,
+            "shape": [
+              7077888,
+              21
+            ],
+            "dtype": "torch.float64",
+            "storage": 134076027633664
+          },
+          "_hybrid_index": {
+            "bytes": 0,
+            "shape": [
+              0
+            ],
+            "dtype": "torch.int32",
+            "storage": 0
+          },
+          "_contest_coefficient": {
+            "bytes": 85819392,
+            "shape": [
+              6,
+              3575808
+            ],
+            "dtype": "torch.float32",
+            "storage": 134077657120768
+          }
+        }
+      },
+      {
+        "name": "solve4",
+        "seconds": 0.3042509788647294,
+        "live": 1648372224,
+        "peak": 2583706624,
+        "reserved": 2837446656,
+        "arrays": {
+          "_hybrid_coeff": {
+            "bytes": 1189085184,
+            "shape": [
+              7077888,
+              21
+            ],
+            "dtype": "torch.float64",
+            "storage": 134076027633664
+          },
+          "_hybrid_index": {
+            "bytes": 0,
+            "shape": [
+              0
+            ],
+            "dtype": "torch.int32",
+            "storage": 0
+          },
+          "_contest_coefficient": {
+            "bytes": 85819392,
+            "shape": [
+              6,
+              3575808
+            ],
+            "dtype": "torch.float32",
+            "storage": 134077657120768
+          }
+        }
+      },
+      {
+        "name": "post4",
+        "seconds": 0.0012710399460047483,
+        "live": 1648372224,
+        "peak": 1651027968,
+        "reserved": 2837446656,
+        "arrays": {
+          "_hybrid_coeff": {
+            "bytes": 1189085184,
+            "shape": [
+              7077888,
+              21
+            ],
+            "dtype": "torch.float64",
+            "storage": 134076027633664
+          },
+          "_hybrid_index": {
+            "bytes": 0,
+            "shape": [
+              0
+            ],
+            "dtype": "torch.int32",
+            "storage": 0
+          },
+          "_contest_coefficient": {
+            "bytes": 85819392,
+            "shape": [
+              6,
+              3575808
+            ],
+            "dtype": "torch.float32",
+            "storage": 134077657120768
+          }
+        }
+      },
+      {
+        "name": "rhs5",
+        "seconds": 0.0051724419463425875,
+        "live": 1478502912,
+        "peak": 1648372736,
+        "reserved": 2837446656,
+        "arrays": {
+          "_hybrid_coeff": {
+            "bytes": 1189085184,
+            "shape": [
+              7077888,
+              21
+            ],
+            "dtype": "torch.float64",
+            "storage": 134076027633664
+          },
+          "_hybrid_index": {
+            "bytes": 0,
+            "shape": [
+              0
+            ],
+            "dtype": "torch.int32",
+            "storage": 0
+          },
+          "_contest_coefficient": {
+            "bytes": 85819392,
+            "shape": [
+              6,
+              3575808
+            ],
+            "dtype": "torch.float32",
+            "storage": 134077657120768
+          }
+        }
+      },
+      {
+        "name": "solve5",
+        "seconds": 0.30421856907196343,
+        "live": 1648372224,
+        "peak": 2583706624,
+        "reserved": 2837446656,
+        "arrays": {
+          "_hybrid_coeff": {
+            "bytes": 1189085184,
+            "shape": [
+              7077888,
+              21
+            ],
+            "dtype": "torch.float64",
+            "storage": 134076027633664
+          },
+          "_hybrid_index": {
+            "bytes": 0,
+            "shape": [
+              0
+            ],
+            "dtype": "torch.int32",
+            "storage": 0
+          },
+          "_contest_coefficient": {
+            "bytes": 85819392,
+            "shape": [
+              6,
+              3575808
+            ],
+            "dtype": "torch.float32",
+            "storage": 134077657120768
+          }
+        }
+      },
+      {
+        "name": "post5",
+        "seconds": 0.0012706599663943052,
+        "live": 1648372224,
+        "peak": 1651027968,
+        "reserved": 2837446656,
+        "arrays": {
+          "_hybrid_coeff": {
+            "bytes": 1189085184,
+            "shape": [
+              7077888,
+              21
+            ],
+            "dtype": "torch.float64",
+            "storage": 134076027633664
+          },
+          "_hybrid_index": {
+            "bytes": 0,
+            "shape": [
+              0
+            ],
+            "dtype": "torch.int32",
+            "storage": 0
+          },
+          "_contest_coefficient": {
+            "bytes": 85819392,
+            "shape": [
+              6,
+              3575808
+            ],
+            "dtype": "torch.float32",
+            "storage": 134077657120768
+          }
+        }
+      }
+    ],
+    "field_statistics": {},
+    "peak_allocated_bytes": 2583706624,
+    "peak_reserved_bytes": 2837446656
+  },
+  "workflow_seconds": 2.2820440740324557,
+  "adaptation_seconds": 0.001598153030499816,
+  "max_true_residual": 8.806873108227466e-09,
+  "microbenchmark": {
+    "Ku": {
+      "samples_ms": [
+        3.243703842163086,
+        3.2436431884765624,
+        3.2439231872558594,
+        3.2439327239990234,
+        3.2441265106201174
+      ],
+      "median_ms": 3.2439231872558594
+    },
+    "preconditioner": {
+      "samples_ms": [
+        0.8695311546325684,
+        0.8694095611572266,
+        0.8693231582641602,
+        0.8691136360168457,
+        0.8685055732727051
+      ],
+      "median_ms": 0.8693231582641602
+    },
+    "scope": "resident CUDA-event batches outside full-workflow time and memory window"
+  },
+  "storage": {
+    "mode": "dense",
+    "n_elements": 7077888,
+    "coefficient_bytes": 1189085184,
+    "index_bytes": 0,
+    "dense_bytes": 1189085184
+  },
+  "operator": null,
+  "reference_design": {
+    "kind": "fi",
+    "phase_count": 2,
+    "fixed_mu": 4914.706751258836,
+    "method": "ordered_isotropic_soft_phase_closed_form",
+    "baseline": {
+      "a": 0.2637586252657428,
+      "b": 10.397555830272793,
+      "condition_bound": 39.42072347320214,
+      "material_a": 0.2637586252657428,
+      "material_b": 10.397555830272793,
+      "bulk": 12093.347265761064,
+      "mu": 4914.706751258836,
+      "ratio": 2.460644729751885,
+      "log_ratio": 0.9004234008709219,
+      "phase_generalized_eigenvalues": [
+        [
+          0.2637586252657428,
+          0.26375862526574295,
+          0.26375862526574295,
+          0.26375862526574295,
+          0.26375862526574295,
+          0.32157258064516103
+        ],
+        [
+          0.5136046584491682,
+          0.6782364649690529,
+          0.7121482882175059,
+          1.0173546974535799,
+          1.0173546974535799,
+          10.397555830272793
+        ]
+      ],
+      "hg_scale_ratios": []
+    },
+    "selected": {
+      "a": 0.26375862526574284,
+      "b": 10.179097057381856,
+      "condition_bound": 38.59247085143162,
+      "material_a": 0.26375862526574284,
+      "material_b": 10.179097057381856,
+      "bulk": 14744.120253776508,
+      "mu": 4914.706751258836,
+      "ratio": 2.9999999999999996,
+      "log_ratio": 1.0986122886681096,
+      "phase_generalized_eigenvalues": [
+        [
+          0.26375862526574284,
+          0.2637586252657429,
+          0.26375862526574295,
+          0.26375862526574295,
+          0.26375862526574295,
+          0.26375862526574295
+        ],
+        [
+          0.43030720655411914,
+          0.6782364649690525,
+          0.7121482882175059,
+          1.0173546974535799,
+          1.0173546974535799,
+          10.179097057381856
+        ]
+      ],
+      "hg_scale_ratios": []
+    },
+    "formula": {
+      "soft_phase_index": 0,
+      "reference_scale": 3.7913452081139596,
+      "a": 0.26375862526574295,
+      "b": 10.179097057381858,
+      "condition_bound": 38.592470851431614,
+      "expression": "max_e lambda_max(Ce,Cm)",
+      "candidate_relative_formula_error": 1.841143414982309e-16
+    },
+    "ordered_validation": [
+      {
+        "phase_index": 0,
+        "is_isotropic": true,
+        "relative_error": 0.0,
+        "bulk": 3888.8888888888882,
+        "mu": 1296.2962962962963,
+        "ratio": 2.9999999999999996,
+        "ordered": true,
+        "phase_generalized_eigenvalues": [
+          [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0000000000000002
+          ],
+          [
+            1.6314431655858534,
+            2.5714285714285707,
+            2.6999999999999997,
+            3.857142857142857,
+            3.857142857142857,
+            38.592470851431614
+          ]
+        ],
+        "minimum_order_eigenvalue": 1.0,
+        "maximum_order_deficit": 0.0
+      },
+      {
+        "phase_index": 1,
+        "is_isotropic": false,
+        "relative_error": 0.8087977207977207,
+        "bulk": 20297.805642633226,
+        "mu": 4500.0,
+        "ratio": 4.510623476140717,
+        "ordered": false,
+        "phase_generalized_eigenvalues": []
+      }
+    ],
+    "validation_tolerances": {
+      "isotropy_rtol": 1e-10,
+      "order_rtol": 1e-10,
+      "tie_rtol": 1e-10
+    },
+    "numeric_search_used": false,
+    "interpretation": "Global optimum of the worst material energy bound under the exact stated ordering; not a guarantee of minimum PCG iterations or runtime.",
+    "floating_point_verification": "Float64 tolerance tests, not interval-arithmetic certificates.",
+    "hg_argument": "scale(C)=trace(W*C), W=(t*t.T+7*diag(1,1,1,2,2,2))/60 positive definite; material Loewner bounds therefore also bound stabilization scale ratios.",
+    "closed_candidate": {
+      "a": 0.26375862526574284,
+      "b": 10.179097057381856,
+      "condition_bound": 38.59247085143162,
+      "material_a": 0.26375862526574284,
+      "material_b": 10.179097057381856,
+      "bulk": 14744.120253776508,
+      "mu": 4914.706751258836,
+      "ratio": 2.9999999999999996,
+      "log_ratio": 1.0986122886681096,
+      "phase_generalized_eigenvalues": [
+        [
+          0.26375862526574284,
+          0.2637586252657429,
+          0.26375862526574295,
+          0.26375862526574295,
+          0.26375862526574295,
+          0.26375862526574295
+        ],
+        [
+          0.43030720655411914,
+          0.6782364649690525,
+          0.7121482882175059,
+          1.0173546974535799,
+          1.0173546974535799,
+          10.179097057381856
+        ]
+      ],
+      "hg_scale_ratios": []
+    },
+    "status": "supported",
+    "selected_from": "closed_form",
+    "bound_ratio_selected_over_baseline": 0.9789894109291638,
+    "active_phase_labels": [
+      0,
+      1
+    ]
+  },
+  "environment": {
+    "gpu": "NVIDIA GeForce RTX 5090",
+    "torch": "2.12.0+cu130",
+    "cuda": "13.0",
+    "python": "3.12.13 (main, Jun 11 2026, 04:03:26) [Clang 22.1.3 ]",
+    "threads": 1
+  },
+  "sources": {
+    "/home/yufan/code/fead-chain-20261021/chain_adapter.py": "351a9f684f52c3f4cef2b35c7bb43b7d14314621930c70156529ae4bfa41a05f",
+    "/home/yufan/code/fead-chain-20261021/chain_study.py": "49b1376a83a8eaaac578b7af7d176f6be4f5a85dfe920b285e9013aa60b67708",
+    "/home/yufan/code/fead-chain-20261021/closed_study.py": "c51a515aad8b48ccc10ce18326db99afbb2b1723419e9da81a2b8bb67de80878",
+    "/home/yufan/code/fead-chain-20261021/reference_closed_form.py": "6529f7e1b2993a21353199d163273aaf596c7804447f76852b66a31171798aad",
+    "/home/yufan/code/fead-chain-20261021/reference_design.py": "9bcac32603c6a3943df7ce1af8fd9e4c118b63899fe681433aa80c992416403c",
+    "/home/yufan/code/fead-chain-20261021/reference_study.py": "39134289b60d1b5fede4ee5583c199ba8bdf1d69c802924d0c384e250b7d322a",
+    "/home/yufan/code/fead-fft-contest-20261020/contest_adapter.py": "2ba9e2195862ec59762f80f0e44a2cb64b66ae472314b3458ae9d0a13261c853",
+    "/home/yufan/code/fead-fft-contest-20261020/contest_kernels.cu": "9beb1d7a651b7d001ea9fa04f5a3671fe59a0096950a808eab24c137f26c871a",
+    "/home/yufan/code/fead-fft-contest-20261020/native_adapter.py": "58705326d57584045e4036b7e112bdfb8eacfdd96e0ff14b57be9f99402dbc81",
+    "/home/yufan/code/fead-fft-contest-20261020/native_fft.cu": "f414368f2a178aef549aa8095ee7a50e7b4465a6fe706f1f664eadd7d9150d71",
+    "/home/yufan/code/fead-formula-20261020/formula_adapter.py": "ee143412198fef9cce20a5268bef286c02b53384914358e5fc55d7d7672c38d8",
+    "/home/yufan/code/fead-formula-20261020/formula_kernels.cu": "0ca18975dafb048d63095d231e58495654f35f47eab555292ebba76335c29862",
+    "/home/yufan/code/fead-formula-20261020/formula_study.py": "dcd3b40ab02ae2e0a3994ce5aa5c6a1c02d4ab35d4a93f9f0943da9888cd5ac3",
+    "/home/yufan/code/fead-hybrid-operator-20261021/background.py": "36c658c4cb2101477d25ad444bdee358ef0eb38ff8552629f09390a942ca4880",
+    "/home/yufan/code/fead-hybrid-operator-20261021/background_grouped.cuh": "5d5572ce1fff338c74e56d0d73ae36fb926736c5665eb7bb1d1ad1842c0032cc",
+    "/home/yufan/code/fead-hybrid-operator-20261021/fi_isotropic.cuh": "cdc8aafee24032f70bee8fc01271a2e72e7ef8e2e8f2fa4100c76b8c9b8065b3",
+    "/home/yufan/code/fead-hybrid-operator-20261021/fi_modal.cuh": "66d5f352157050e8ca5f72fe46266e08e4d6021eb21fdc2cdca15129733e9ffb",
+    "/home/yufan/code/fead-hybrid-operator-20261021/operator_adapter.py": "277bd91c2b7dd04a269a92b69d5e6e8ad08a2fcb9ae4ce93c80918c0b4af3289",
+    "/home/yufan/code/fead-hybrid-operator-20261021/operator_kernels.cu": "6d84b7a9701767edd383637eed93e0f76279d7430da749b1358e8e1af790af0c",
+    "/home/yufan/code/fead-hybrid-storage-20261021/adapter.py": "21b72d868d163d5381ca8574bb1af99a1e142d14b9e3d8578d3029daeabbe0ee",
+    "/home/yufan/code/fead-hybrid-storage-20261021/fi_modal.cuh": "66d5f352157050e8ca5f72fe46266e08e4d6021eb21fdc2cdca15129733e9ffb",
+    "/home/yufan/code/fead-hybrid-storage-20261021/hybrid_adapter.py": "17093c54f64a73756b6376f1b613c026009f8a02675306167721431349d05986",
+    "/home/yufan/code/fead-hybrid-storage-20261021/hybrid_kernels.cu": "9ddf4e7e64e42eba35e731bba0807db83c8c415fd011884a37695fbecd316cbb",
+    "/home/yufan/code/fead-hybrid-storage-20261021/hybrid_material.py": "9540237dec4692d3f42feccf83c32c9052bb0db8e2947153cd038268641fee28",
+    "/home/yufan/code/fead-hybrid-storage-20261021/material_field.py": "db1564ebf40a1e7ce19199097f9c08e9a36641056589c9b703f34c12552d3b3d",
+    "/home/yufan/code/fead-modal-hex8-20261020/gpu_study.py": "b212b479805d605b3ac944b51f33f2d64ce5035232f18da0eef4978162ca083a",
+    "/home/yufan/code/fead-modal-hex8-20261020/modal_adapter.py": "667aceaaf83183675e0bfb0f5870e84de8a946930143bb5285941c11b36ed7df",
+    "/home/yufan/code/fead-modal-hex8-20261020/modal_kernels.cu": "4c9a601a17ae7a9f53d988e6c8778de2d81dccd7333b50b0a818c7ad7d019fb6",
+    "/home/yufan/code/fead-pipeline-20261020/modal_functions.cuh": "189a165189592915705569096ec6576fd7f1292951260bf5d13e7ca3dbd8268d",
+    "/home/yufan/code/fead-pipeline-20261020/pipeline_adapter.py": "1dae25bcc711cc4e1371baed97fb6053b6fb7032aa105b4245d365a2112eeb67",
+    "/home/yufan/code/fead-pipeline-20261020/pipeline_kernels.cu": "940ae597b855f57bd5a4f09eeb09cb8d103774f460b0415e4a353ea568542f09",
+    "/home/yufan/code/fead-pipeline-20261020/pipeline_study.py": "c8522f2cd42f215028416ec698723c4071ca91c27e867b8df627849682224251",
+    "/home/yufan/code/fead-recompute-20261017-tol1e8/benchmark.py": "aeebe7cb6cbf55f021adc63a6336bff6ebeea688e82b632ff456c146ab667fe4",
+    "/home/yufan/code/fead-recompute-20261017-tol1e8/fi/atomic_adapter.py": "479da6a71f84b79a81a27c5f5163ebbf06dc5bbd85be55d960c612746e6fa011",
+    "/home/yufan/code/fead-recompute-20261017-tol1e8/fi/atomic_kernels.cu": "c11b0454ff4c25474b7b52f50f2d77267a07dd9f30030054159d46356f7b9179",
+    "/home/yufan/code/fead-recompute-20261017-tol1e8/fi/fi_reference.py": "1d97eb6f4a0d71fb9d4e0ce46a89b102b3b6d72217944f24b4fcbff4472b0159",
+    "/home/yufan/code/fead-recompute-20261017-tol1e8/fi/grouped_adapter.py": "23b5f55b3419aad82b08b8cafa90bd9b84ac397f90a474a73836fc85619f4671",
+    "/home/yufan/code/fead-recompute-20261017-tol1e8/fi/grouped_kernels.cu": "366417bc5707eb7cb59cbd1610abf86705b49ec97af7a5b7473f56a97d6a4010",
+    "/home/yufan/code/fead-recompute-20261017-tol1e8/fi/memory_adapter.py": "fd9120e4b1ad93922493a326e49da55f998c358145917c52d61905434aa03eff",
+    "/home/yufan/code/fead-recompute-20261017-tol1e8/fi/memory_kernels.cu": "4bf1bd1365ba53b2aeb595beb85044ae8f5cb1024130465695451591b8b55959",
+    "/home/yufan/code/fead-recompute-20261017-tol1e8/fi/source/femlib/__init__.py": "11fd28410ec8900de96f2728598403ebdada1d5bde256f15d10a19b0cf2937c3",
+    "/home/yufan/code/fead-recompute-20261017-tol1e8/fi/source/femlib/batched/__init__.py": "7495fef0802a94f776e5a013fbd79db83b3c070c5f3f0ff7a4a43a40cc143c5c",
+    "/home/yufan/code/fead-recompute-20261017-tol1e8/fi/source/femlib/batched/c3d8r_hourglass_operator.py": "6a2d179dff211f68efd2e5cb73bb90d43de6b389ce354085850e1904d6898aff",
+    "/home/yufan/code/fead-recompute-20261017-tol1e8/fi/source/femlib/batched/driver.py": "75fb88a4fce27eaed1e354e40b8e966cbb6e7f8cbc5bc78295250ab8af9f919b",
+    "/home/yufan/code/fead-recompute-20261017-tol1e8/fi/source/femlib/batched/fft_symbol_validation.py": "0be65e51f030cc8ec8550e6566fce0de3f5b5dfd8b691e22e1f2c19aa7a446ad",
+    "/home/yufan/code/fead-recompute-20261017-tol1e8/fi/source/femlib/batched/ir.py": "df1d83ffda346e0fc04fb4ee8e0c3553613a7f240e9ee5c5055ee41a0efb53e4",
+    "/home/yufan/code/fead-recompute-20261017-tol1e8/fi/source/femlib/batched/mesh_info.py": "bae4901d2ba9b695ab53a2784bf1fce379385046ea227dd191271e1b1d252611",
+    "/home/yufan/code/fead-recompute-20261017-tol1e8/fi/source/femlib/batched/pcg.py": "e349dc0c3e48be41af8f2e1a1a66d4b9c5f07ea1ec7ba2a6f57581f0b5fa5461",
+    "/home/yufan/code/fead-recompute-20261017-tol1e8/fi/source/femlib/batched/preconditioners/__init__.py": "4d166dca6e9f00511a09f5212892213bcd599aada13116b8e17c56168b1e3793",
+    "/home/yufan/code/fead-recompute-20261017-tol1e8/fi/source/femlib/batched/preconditioners/c3d8r_fft.py": "cf6ffc237d1756f7c11a99c0e8c7ed5710f985ef163580a668d39987ccdb93ba",
+    "/home/yufan/code/fead-recompute-20261017-tol1e8/fi/source/femlib/batched/stencil_operator.py": "c2ae37f069143cf5786022c71262fc16169775e91edf07877f7623c663fef384",
+    "/home/yufan/code/fead-recompute-20261017-tol1e8/fi/source/femlib/c3d8r.py": "1aa42c81cdaff3e0cd663ee6d6c30cef69fe282f6dc9206d777e7c98b46b3598",
+    "/home/yufan/code/fead-recompute-20261017-tol1e8/fi/source/femlib/connectivity.py": "b2ce6f9ad6e06b00c34b2f2bd189845a6beff33e5e54114e0164fc886b381070",
+    "/home/yufan/code/fead-recompute-20261017-tol1e8/fi/source/femlib/element_types.py": "091da6799e085e0a7ad64a8ae8793d71c660c20b47b0592aa0d6216d5acb4eda",
+    "/home/yufan/code/fead-recompute-20261017-tol1e8/fi/source/femlib/fem_batched.py": "d06a8f861b78643373e2e9b6448961252a061d3656cccf18a43fdf356ca7d849",
+    "/home/yufan/code/fead-recompute-20261017-tol1e8/fi/source/femlib/geometry.py": "9616e4393da72e13fbc2326cdb655452d739b4adece6cd6e404a9f9a759a168c",
+    "/home/yufan/code/fead-recompute-20261017-tol1e8/fi/source/femlib/materials.py": "334c7c71c05596010cef1497cabfeb990c0a4f1c521ed6d95206c79aa68302d0",
+    "/home/yufan/code/fead-recompute-20261017-tol1e8/fi/source/femlib/mesh.py": "b74c7060d7bd3368116430b33a8b9538166c8362d421426f6dca8dfff71fd3d0",
+    "/home/yufan/code/fead-recompute-20261017-tol1e8/fi/spatial_adapter.py": "e6a93fa95f62f418cfb0f6f9d499425938de34104900299e28bf8eed0b155cce",
+    "/home/yufan/code/fead-recompute-20261017-tol1e8/fi_benchmark.py": "c1ec2093bd8a9add9a981156dfedd30d008441de4ce5ad7fdb5f7ea569b9cf32",
+    "/home/yufan/code/fead-recompute-20261017-tol1e8/orientation_kernels.cu": "a62e4601e4e157fdf4b54391180596692ad7c4a74651e560732c95e03697500b",
+    "/home/yufan/code/fead-recompute-20261017-tol1e8/repro/extension_20261006/failure.cu": "fb72fe7607596485fe0f0add1202a08902da69df0c48d8279c14709112e0ca5e",
+    "/home/yufan/code/fead-recompute-20261017-tol1e8/repro/extension_20261006/material_control.py": "a02dd3958e3da53461b1d6f294047e206aa368172dc5e117a41b6df1c3f129c3",
+    "/home/yufan/code/fead-recompute-20261017-tol1e8/repro/extension_20261006/mixed_preconditioner.py": "df112cb1a956e903ce7f049e2361f0911df3ea7f8495d065124b9accd7c1d79c",
+    "/home/yufan/code/fead-recompute-20261017-tol1e8/repro/extension_20261006/physics.py": "33e3e5d94e6f8c590cb42aebbadfc46a52a557f246ca21b81f6d3a19baeabf6e",
+    "/home/yufan/code/fead-solver-study-20261022/cases.py": "f30311ee87b0f0e06a3562c106fa401c5b011e62eb1287c5e66d9c1c336bbd80",
+    "/home/yufan/code/fead-solver-study-20261022/chfem_study.py": "29e0e8da29ddc4d3ccb33693c08d72a3039f3fcca75e9bd8f69807241d7482d1",
+    "/home/yufan/code/fead-solver-study-20261022/legacy_inputs.py": "671bd50ccc165b9f080fbeafc7b4cd6df0a178f09a51e0a7437160efea9b838a",
+    "/home/yufan/code/fead-solver-study-20261022/plan.json": "546b989d12fec63961c38fc11736f72bc88537ce7808d29f7f70a4cd0f064092",
+    "/home/yufan/code/fead-solver-study-20261022/run_jobs.py": "124c515bba06b224f54738f0519e8eadbec4ad41fd684f8554a0a313e29de053",
+    "/home/yufan/code/fead-solver-study-20261022/study.py": "02543393f47cf38245cf995a8c62324d7bf9cea7fd948b0f9ec32123856b49fc"
+  },
+  "protocol": "FI eight-point integration; six unit engineering strains; FP64 physics/FP32 FFT; true residual <=1e-8; same-grid full warmup; fresh process; geometry/JIT/warmup/I/O excluded; setup, loading, solve, certification and stress recovery included."
+}

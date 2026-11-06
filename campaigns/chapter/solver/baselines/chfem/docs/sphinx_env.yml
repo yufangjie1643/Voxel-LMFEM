@@ -1,0 +1,14 @@
+name: sphinx_rtd
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python
+  - pip
+  - sphinx=7.4.7
+  - sphinx_rtd_theme
+  - myst-parser
+  - nbsphinx
+  - nbsphinx-link
+  - pandoc
+  - ipython  # for colors in notebook

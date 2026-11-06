@@ -1,0 +1,23 @@
+{
+  "schema_version": 1, "seed": 20261022, "samples": 2,
+  "scope": "Three-phase tow stochastic scalar progressive-damage prototype; no validated CMC fracture or mesh-objectivity claim.",
+  "geometry": {"kind": "hexagonal_tow", "n": 12, "nx": 4, "fiber_radius_um": 6,
+    "fiber_fraction": {"distribution": "uniform", "bounds": [0.35, 0.42]},
+    "interphase_thickness_um": {"distribution": "uniform", "bounds": [0.1, 0.5]}},
+  "phases": {
+    "0": {"name": "SiC matrix", "kind": "isotropic", "E": {"distribution": "uniform", "bounds": [70000, 150000]}, "nu": 0.19,
+      "damage": {"law": "linear_crack_band", "tensile_strength": {"distribution": "uniform", "bounds": [150, 200]}, "fracture_energy_J_m2": {"distribution": "uniform", "bounds": [10, 30]}, "residual_stiffness": 0.001}},
+    "1": {"name": "SiC fiber", "kind": "isotropic", "E": 373000, "nu": 0.19,
+      "damage": {"law": "rankine_brittle", "tensile_strength": {"distribution": "weibull", "scale": 3600, "shape": 10}, "residual_stiffness": 0.001}},
+    "2": {"name": "effective bulk PyC interphase", "kind": "isotropic", "E": {"distribution": "uniform", "bounds": [5000, 15000]}, "nu": 0.2,
+      "damage": {"law": "linear_crack_band", "tensile_strength": {"distribution": "uniform", "bounds": [10, 30]}, "fracture_energy_J_m2": {"distribution": "uniform", "bounds": [5, 20]}, "residual_stiffness": 0.001}}
+  },
+  "loading": {"control": "uniaxial_stress", "axis": 0, "history": [0, 0.0005, 0.001, 0.002, 0.004, 0.006, 0.003, 0, 0.002]},
+  "damage_levels": 32, "max_sweeps": 64, "max_cutbacks": 6,
+  "assumptions": [
+    "The phase-wise maximum principal virgin stress over eight Gauss points drives scalar irreversible damage, quantized into 32 declared states.",
+    "Characteristic length is the cube root of voxel volume. Linear softening integrates to specified G in homogeneous uniaxial continuum loading before damage quantization and residual stiffness.",
+    "Residual stiffness, damage quantization and isotropic bulk PyC are explicit numerical/model assumptions. This is not a cohesive debonding, fiber pull-out, or validated multiaxial CMC failure law.",
+    "The old T300/epoxy parameters and old MMF catalog are not used."
+  ]
+}

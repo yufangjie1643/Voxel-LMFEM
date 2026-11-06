@@ -1,0 +1,62 @@
+[
+  {
+    "name": "certify_woven_64",
+    "arguments": [
+      "certify.py",
+      "--case",
+      "woven",
+      "--grid",
+      "64"
+    ]
+  },
+  {
+    "name": "certify_woven_128",
+    "arguments": [
+      "certify.py",
+      "--case",
+      "woven",
+      "--grid",
+      "128"
+    ]
+  },
+  {
+    "name": "certify_woven_192",
+    "arguments": [
+      "certify.py",
+      "--case",
+      "woven",
+      "--grid",
+      "192"
+    ]
+  },
+  {
+    "name": "certify_woven_256",
+    "arguments": [
+      "certify.py",
+      "--case",
+      "woven",
+      "--grid",
+      "256"
+    ]
+  },
+  {
+    "name": "certify_sphere_192",
+    "arguments": [
+      "certify.py",
+      "--case",
+      "sphere",
+      "--grid",
+      "192"
+    ]
+  },
+  {
+    "name": "certify_grosmont_192",
+    "arguments": [
+      "certify.py",
+      "--case",
+      "grosmont",
+      "--grid",
+      "192"
+    ]
+  }
+]

@@ -1,0 +1,219 @@
+{
+  "reference": "chfem",
+  "source": "summary_with_stencil27.json",
+  "time": "Ratio of three-run median native-core chfem time to complete-call method time, excluding file I/O",
+  "memory": "Ratio of maximum sampled NVML process peaks",
+  "accuracy": "Maximum pairwise Frobenius discrepancy against three aligned chfem tensors; baseline self-discrepancy is zero by definition",
+  "rows": [
+    {
+      "case": "sphere",
+      "grid": 192,
+      "variant": "chfem",
+      "time_s": 44.68532152590342,
+      "speedup": 1.0,
+      "nvml_GiB": 1.13671875,
+      "memory_ratio": 1.0,
+      "iterations": 5558,
+      "CH_error_vs_chfem": 0.0,
+      "records": [
+        "remote\\results\\sphere_192_chfem_r0.json",
+        "remote\\results\\sphere_192_chfem_r1.json",
+        "remote\\results\\sphere_192_chfem_r2.json"
+      ],
+      "reference_records": [
+        "remote\\results\\sphere_192_chfem_r0.json",
+        "remote\\results\\sphere_192_chfem_r1.json",
+        "remote\\results\\sphere_192_chfem_r2.json"
+      ]
+    },
+    {
+      "case": "sphere",
+      "grid": 192,
+      "variant": "stencil27",
+      "time_s": 3.639700239058584,
+      "speedup": 12.277198283082063,
+      "nvml_GiB": 17.986328125,
+      "memory_ratio": 15.823024054982818,
+      "iterations": 234,
+      "CH_error_vs_chfem": 1.5319523028989118e-08,
+      "records": [
+        "../stencil27_baseline_20261023/formal/results/sphere_192_stencil27_r0.json",
+        "../stencil27_baseline_20261023/formal/results/sphere_192_stencil27_r1.json",
+        "../stencil27_baseline_20261023/formal/results/sphere_192_stencil27_r2.json"
+      ],
+      "reference_records": [
+        "remote\\results\\sphere_192_chfem_r0.json",
+        "remote\\results\\sphere_192_chfem_r1.json",
+        "remote\\results\\sphere_192_chfem_r2.json"
+      ]
+    },
+    {
+      "case": "sphere",
+      "grid": 192,
+      "variant": "paper",
+      "time_s": 2.5507426529657096,
+      "speedup": 17.518553458910674,
+      "nvml_GiB": 11.81640625,
+      "memory_ratio": 10.395189003436426,
+      "iterations": 234,
+      "CH_error_vs_chfem": 1.5319523135372754e-08,
+      "records": [
+        "../stencil27_baseline_20261023/formal/results/sphere_192_paper_r0.json",
+        "../stencil27_baseline_20261023/formal/results/sphere_192_paper_r1.json",
+        "../stencil27_baseline_20261023/formal/results/sphere_192_paper_r2.json"
+      ],
+      "reference_records": [
+        "remote\\results\\sphere_192_chfem_r0.json",
+        "remote\\results\\sphere_192_chfem_r1.json",
+        "remote\\results\\sphere_192_chfem_r2.json"
+      ]
+    },
+    {
+      "case": "sphere",
+      "grid": 192,
+      "variant": "chain",
+      "time_s": 1.7074601170606911,
+      "speedup": 26.170638528779815,
+      "nvml_GiB": 5.169921875,
+      "memory_ratio": 4.548109965635739,
+      "iterations": 234,
+      "CH_error_vs_chfem": 1.5319651874684542e-08,
+      "records": [
+        "../stencil27_baseline_20261023/formal/results/sphere_192_chain_r0.json",
+        "../stencil27_baseline_20261023/formal/results/sphere_192_chain_r1.json",
+        "../stencil27_baseline_20261023/formal/results/sphere_192_chain_r2.json"
+      ],
+      "reference_records": [
+        "remote\\results\\sphere_192_chfem_r0.json",
+        "remote\\results\\sphere_192_chfem_r1.json",
+        "remote\\results\\sphere_192_chfem_r2.json"
+      ]
+    },
+    {
+      "case": "sphere",
+      "grid": 192,
+      "variant": "latest",
+      "time_s": 1.4357145759277046,
+      "speedup": 31.124098254020616,
+      "nvml_GiB": 2.08984375,
+      "memory_ratio": 1.838487972508591,
+      "iterations": 234,
+      "CH_error_vs_chfem": 1.5319651839667905e-08,
+      "records": [
+        "../stencil27_baseline_20261023/formal/results/sphere_192_latest_r0.json",
+        "../stencil27_baseline_20261023/formal/results/sphere_192_latest_r1.json",
+        "../stencil27_baseline_20261023/formal/results/sphere_192_latest_r2.json"
+      ],
+      "reference_records": [
+        "remote\\results\\sphere_192_chfem_r0.json",
+        "remote\\results\\sphere_192_chfem_r1.json",
+        "remote\\results\\sphere_192_chfem_r2.json"
+      ]
+    },
+    {
+      "case": "grosmont",
+      "grid": 192,
+      "variant": "chfem",
+      "time_s": 52.17693883809261,
+      "speedup": 1.0,
+      "nvml_GiB": 1.13671875,
+      "memory_ratio": 1.0,
+      "iterations": 6421,
+      "CH_error_vs_chfem": 0.0,
+      "records": [
+        "remote\\results\\grosmont_192_chfem_r0.json",
+        "remote\\results\\grosmont_192_chfem_r1.json",
+        "remote\\results\\grosmont_192_chfem_r2.json"
+      ],
+      "reference_records": [
+        "remote\\results\\grosmont_192_chfem_r0.json",
+        "remote\\results\\grosmont_192_chfem_r1.json",
+        "remote\\results\\grosmont_192_chfem_r2.json"
+      ]
+    },
+    {
+      "case": "grosmont",
+      "grid": 192,
+      "variant": "stencil27",
+      "time_s": 4.040842390153557,
+      "speedup": 12.912391476894456,
+      "nvml_GiB": 22.046875,
+      "memory_ratio": 19.395189003436425,
+      "iterations": 251,
+      "CH_error_vs_chfem": 8.708440057572794e-09,
+      "records": [
+        "../stencil27_baseline_20261023/formal/results/grosmont_192_stencil27_r0.json",
+        "../stencil27_baseline_20261023/formal/results/grosmont_192_stencil27_r1.json",
+        "../stencil27_baseline_20261023/formal/results/grosmont_192_stencil27_r2.json"
+      ],
+      "reference_records": [
+        "remote\\results\\grosmont_192_chfem_r0.json",
+        "remote\\results\\grosmont_192_chfem_r1.json",
+        "remote\\results\\grosmont_192_chfem_r2.json"
+      ]
+    },
+    {
+      "case": "grosmont",
+      "grid": 192,
+      "variant": "paper",
+      "time_s": 2.891346667893231,
+      "speedup": 18.045895159334574,
+      "nvml_GiB": 15.876953125,
+      "memory_ratio": 13.967353951890034,
+      "iterations": 251,
+      "CH_error_vs_chfem": 8.708440046885445e-09,
+      "records": [
+        "../stencil27_baseline_20261023/formal/results/grosmont_192_paper_r0.json",
+        "../stencil27_baseline_20261023/formal/results/grosmont_192_paper_r1.json",
+        "../stencil27_baseline_20261023/formal/results/grosmont_192_paper_r2.json"
+      ],
+      "reference_records": [
+        "remote\\results\\grosmont_192_chfem_r0.json",
+        "remote\\results\\grosmont_192_chfem_r1.json",
+        "remote\\results\\grosmont_192_chfem_r2.json"
+      ]
+    },
+    {
+      "case": "grosmont",
+      "grid": 192,
+      "variant": "chain",
+      "time_s": 1.9819591059349477,
+      "speedup": 26.32594117701497,
+      "nvml_GiB": 9.23046875,
+      "memory_ratio": 8.120274914089347,
+      "iterations": 251,
+      "CH_error_vs_chfem": 8.708440631571318e-09,
+      "records": [
+        "../stencil27_baseline_20261023/formal/results/grosmont_192_chain_r0.json",
+        "../stencil27_baseline_20261023/formal/results/grosmont_192_chain_r1.json",
+        "../stencil27_baseline_20261023/formal/results/grosmont_192_chain_r2.json"
+      ],
+      "reference_records": [
+        "remote\\results\\grosmont_192_chfem_r0.json",
+        "remote\\results\\grosmont_192_chfem_r1.json",
+        "remote\\results\\grosmont_192_chfem_r2.json"
+      ]
+    },
+    {
+      "case": "grosmont",
+      "grid": 192,
+      "variant": "latest",
+      "time_s": 1.517755540087819,
+      "speedup": 34.3776961835854,
+      "nvml_GiB": 2.08984375,
+      "memory_ratio": 1.838487972508591,
+      "iterations": 251,
+      "CH_error_vs_chfem": 8.708440572113026e-09,
+      "records": [
+        "../stencil27_baseline_20261023/formal/results/grosmont_192_latest_r0.json",
+        "../stencil27_baseline_20261023/formal/results/grosmont_192_latest_r1.json",
+        "../stencil27_baseline_20261023/formal/results/grosmont_192_latest_r2.json"
+      ],
+      "reference_records": [
+        "remote\\results\\grosmont_192_chfem_r0.json",
+        "remote\\results\\grosmont_192_chfem_r1.json",
+        "remote\\results\\grosmont_192_chfem_r2.json"
+      ]
+    }
+  ]
+}

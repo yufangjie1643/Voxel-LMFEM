@@ -1,0 +1,1784 @@
+{
+  "complete": true,
+  "jobs": [
+    {
+      "name": "woven_192_paper_r0",
+      "arguments": [
+        "study.py",
+        "--case",
+        "woven",
+        "--grid",
+        "192",
+        "--variant",
+        "paper",
+        "--repeat",
+        "0"
+      ]
+    },
+    {
+      "name": "woven_192_modal_r0",
+      "arguments": [
+        "study.py",
+        "--case",
+        "woven",
+        "--grid",
+        "192",
+        "--variant",
+        "modal",
+        "--repeat",
+        "0"
+      ]
+    },
+    {
+      "name": "woven_192_analytic_r0",
+      "arguments": [
+        "study.py",
+        "--case",
+        "woven",
+        "--grid",
+        "192",
+        "--variant",
+        "analytic",
+        "--repeat",
+        "0"
+      ]
+    },
+    {
+      "name": "woven_192_fft_r0",
+      "arguments": [
+        "study.py",
+        "--case",
+        "woven",
+        "--grid",
+        "192",
+        "--variant",
+        "fft",
+        "--repeat",
+        "0"
+      ]
+    },
+    {
+      "name": "woven_192_fusion_r0",
+      "arguments": [
+        "study.py",
+        "--case",
+        "woven",
+        "--grid",
+        "192",
+        "--variant",
+        "fusion",
+        "--repeat",
+        "0"
+      ]
+    },
+    {
+      "name": "woven_192_chain_r0",
+      "arguments": [
+        "study.py",
+        "--case",
+        "woven",
+        "--grid",
+        "192",
+        "--variant",
+        "chain",
+        "--repeat",
+        "0"
+      ]
+    },
+    {
+      "name": "woven_192_dense_r0",
+      "arguments": [
+        "study.py",
+        "--case",
+        "woven",
+        "--grid",
+        "192",
+        "--variant",
+        "dense",
+        "--repeat",
+        "0"
+      ]
+    },
+    {
+      "name": "woven_192_hybrid_r0",
+      "arguments": [
+        "study.py",
+        "--case",
+        "woven",
+        "--grid",
+        "192",
+        "--variant",
+        "hybrid",
+        "--repeat",
+        "0"
+      ]
+    },
+    {
+      "name": "woven_192_latest_r0",
+      "arguments": [
+        "study.py",
+        "--case",
+        "woven",
+        "--grid",
+        "192",
+        "--variant",
+        "latest",
+        "--repeat",
+        "0"
+      ]
+    },
+    {
+      "name": "woven_64_paper_r0",
+      "arguments": [
+        "study.py",
+        "--case",
+        "woven",
+        "--grid",
+        "64",
+        "--variant",
+        "paper",
+        "--repeat",
+        "0"
+      ]
+    },
+    {
+      "name": "woven_64_chain_r0",
+      "arguments": [
+        "study.py",
+        "--case",
+        "woven",
+        "--grid",
+        "64",
+        "--variant",
+        "chain",
+        "--repeat",
+        "0"
+      ]
+    },
+    {
+      "name": "woven_64_latest_r0",
+      "arguments": [
+        "study.py",
+        "--case",
+        "woven",
+        "--grid",
+        "64",
+        "--variant",
+        "latest",
+        "--repeat",
+        "0"
+      ]
+    },
+    {
+      "name": "woven_128_paper_r0",
+      "arguments": [
+        "study.py",
+        "--case",
+        "woven",
+        "--grid",
+        "128",
+        "--variant",
+        "paper",
+        "--repeat",
+        "0"
+      ]
+    },
+    {
+      "name": "woven_128_chain_r0",
+      "arguments": [
+        "study.py",
+        "--case",
+        "woven",
+        "--grid",
+        "128",
+        "--variant",
+        "chain",
+        "--repeat",
+        "0"
+      ]
+    },
+    {
+      "name": "woven_128_latest_r0",
+      "arguments": [
+        "study.py",
+        "--case",
+        "woven",
+        "--grid",
+        "128",
+        "--variant",
+        "latest",
+        "--repeat",
+        "0"
+      ]
+    },
+    {
+      "name": "woven_256_latest_r0",
+      "arguments": [
+        "study.py",
+        "--case",
+        "woven",
+        "--grid",
+        "256",
+        "--variant",
+        "latest",
+        "--repeat",
+        "0"
+      ]
+    },
+    {
+      "name": "sphere_192_paper_r0",
+      "arguments": [
+        "study.py",
+        "--case",
+        "sphere",
+        "--grid",
+        "192",
+        "--variant",
+        "paper",
+        "--repeat",
+        "0"
+      ]
+    },
+    {
+      "name": "sphere_192_chain_r0",
+      "arguments": [
+        "study.py",
+        "--case",
+        "sphere",
+        "--grid",
+        "192",
+        "--variant",
+        "chain",
+        "--repeat",
+        "0"
+      ]
+    },
+    {
+      "name": "sphere_192_latest_r0",
+      "arguments": [
+        "study.py",
+        "--case",
+        "sphere",
+        "--grid",
+        "192",
+        "--variant",
+        "latest",
+        "--repeat",
+        "0"
+      ]
+    },
+    {
+      "name": "sphere_192_chfem_r0",
+      "arguments": [
+        "chfem_study.py",
+        "--phase",
+        "measure",
+        "--input",
+        "inputs/sphere_192.npy",
+        "--output",
+        "results/sphere_192_chfem_r0.json",
+        "--native-tol",
+        "2e-9",
+        "--repeat",
+        "0"
+      ]
+    },
+    {
+      "name": "grosmont_192_paper_r0",
+      "arguments": [
+        "study.py",
+        "--case",
+        "grosmont",
+        "--grid",
+        "192",
+        "--variant",
+        "paper",
+        "--repeat",
+        "0"
+      ]
+    },
+    {
+      "name": "grosmont_192_chain_r0",
+      "arguments": [
+        "study.py",
+        "--case",
+        "grosmont",
+        "--grid",
+        "192",
+        "--variant",
+        "chain",
+        "--repeat",
+        "0"
+      ]
+    },
+    {
+      "name": "grosmont_192_latest_r0",
+      "arguments": [
+        "study.py",
+        "--case",
+        "grosmont",
+        "--grid",
+        "192",
+        "--variant",
+        "latest",
+        "--repeat",
+        "0"
+      ]
+    },
+    {
+      "name": "grosmont_192_chfem_r0",
+      "arguments": [
+        "chfem_study.py",
+        "--phase",
+        "measure",
+        "--input",
+        "inputs/grosmont_192.npy",
+        "--output",
+        "results/grosmont_192_chfem_r0.json",
+        "--native-tol",
+        "2e-9",
+        "--repeat",
+        "0"
+      ]
+    },
+    {
+      "name": "fraction50_128_hybrid_r0",
+      "arguments": [
+        "study.py",
+        "--case",
+        "fraction50",
+        "--grid",
+        "128",
+        "--variant",
+        "hybrid",
+        "--repeat",
+        "0"
+      ]
+    },
+    {
+      "name": "fraction50_128_latest_r0",
+      "arguments": [
+        "study.py",
+        "--case",
+        "fraction50",
+        "--grid",
+        "128",
+        "--variant",
+        "latest",
+        "--repeat",
+        "0"
+      ]
+    },
+    {
+      "name": "fraction90_128_hybrid_r0",
+      "arguments": [
+        "study.py",
+        "--case",
+        "fraction90",
+        "--grid",
+        "128",
+        "--variant",
+        "hybrid",
+        "--repeat",
+        "0"
+      ]
+    },
+    {
+      "name": "fraction90_128_latest_r0",
+      "arguments": [
+        "study.py",
+        "--case",
+        "fraction90",
+        "--grid",
+        "128",
+        "--variant",
+        "latest",
+        "--repeat",
+        "0"
+      ]
+    },
+    {
+      "name": "woven_192_fft_r1",
+      "arguments": [
+        "study.py",
+        "--case",
+        "woven",
+        "--grid",
+        "192",
+        "--variant",
+        "fft",
+        "--repeat",
+        "1"
+      ]
+    },
+    {
+      "name": "woven_192_fusion_r1",
+      "arguments": [
+        "study.py",
+        "--case",
+        "woven",
+        "--grid",
+        "192",
+        "--variant",
+        "fusion",
+        "--repeat",
+        "1"
+      ]
+    },
+    {
+      "name": "woven_192_chain_r1",
+      "arguments": [
+        "study.py",
+        "--case",
+        "woven",
+        "--grid",
+        "192",
+        "--variant",
+        "chain",
+        "--repeat",
+        "1"
+      ]
+    },
+    {
+      "name": "woven_192_dense_r1",
+      "arguments": [
+        "study.py",
+        "--case",
+        "woven",
+        "--grid",
+        "192",
+        "--variant",
+        "dense",
+        "--repeat",
+        "1"
+      ]
+    },
+    {
+      "name": "woven_192_hybrid_r1",
+      "arguments": [
+        "study.py",
+        "--case",
+        "woven",
+        "--grid",
+        "192",
+        "--variant",
+        "hybrid",
+        "--repeat",
+        "1"
+      ]
+    },
+    {
+      "name": "woven_192_latest_r1",
+      "arguments": [
+        "study.py",
+        "--case",
+        "woven",
+        "--grid",
+        "192",
+        "--variant",
+        "latest",
+        "--repeat",
+        "1"
+      ]
+    },
+    {
+      "name": "woven_192_paper_r1",
+      "arguments": [
+        "study.py",
+        "--case",
+        "woven",
+        "--grid",
+        "192",
+        "--variant",
+        "paper",
+        "--repeat",
+        "1"
+      ]
+    },
+    {
+      "name": "woven_192_modal_r1",
+      "arguments": [
+        "study.py",
+        "--case",
+        "woven",
+        "--grid",
+        "192",
+        "--variant",
+        "modal",
+        "--repeat",
+        "1"
+      ]
+    },
+    {
+      "name": "woven_192_analytic_r1",
+      "arguments": [
+        "study.py",
+        "--case",
+        "woven",
+        "--grid",
+        "192",
+        "--variant",
+        "analytic",
+        "--repeat",
+        "1"
+      ]
+    },
+    {
+      "name": "woven_64_chain_r1",
+      "arguments": [
+        "study.py",
+        "--case",
+        "woven",
+        "--grid",
+        "64",
+        "--variant",
+        "chain",
+        "--repeat",
+        "1"
+      ]
+    },
+    {
+      "name": "woven_64_latest_r1",
+      "arguments": [
+        "study.py",
+        "--case",
+        "woven",
+        "--grid",
+        "64",
+        "--variant",
+        "latest",
+        "--repeat",
+        "1"
+      ]
+    },
+    {
+      "name": "woven_64_paper_r1",
+      "arguments": [
+        "study.py",
+        "--case",
+        "woven",
+        "--grid",
+        "64",
+        "--variant",
+        "paper",
+        "--repeat",
+        "1"
+      ]
+    },
+    {
+      "name": "woven_128_chain_r1",
+      "arguments": [
+        "study.py",
+        "--case",
+        "woven",
+        "--grid",
+        "128",
+        "--variant",
+        "chain",
+        "--repeat",
+        "1"
+      ]
+    },
+    {
+      "name": "woven_128_latest_r1",
+      "arguments": [
+        "study.py",
+        "--case",
+        "woven",
+        "--grid",
+        "128",
+        "--variant",
+        "latest",
+        "--repeat",
+        "1"
+      ]
+    },
+    {
+      "name": "woven_128_paper_r1",
+      "arguments": [
+        "study.py",
+        "--case",
+        "woven",
+        "--grid",
+        "128",
+        "--variant",
+        "paper",
+        "--repeat",
+        "1"
+      ]
+    },
+    {
+      "name": "woven_256_latest_r1",
+      "arguments": [
+        "study.py",
+        "--case",
+        "woven",
+        "--grid",
+        "256",
+        "--variant",
+        "latest",
+        "--repeat",
+        "1"
+      ]
+    },
+    {
+      "name": "sphere_192_chain_r1",
+      "arguments": [
+        "study.py",
+        "--case",
+        "sphere",
+        "--grid",
+        "192",
+        "--variant",
+        "chain",
+        "--repeat",
+        "1"
+      ]
+    },
+    {
+      "name": "sphere_192_latest_r1",
+      "arguments": [
+        "study.py",
+        "--case",
+        "sphere",
+        "--grid",
+        "192",
+        "--variant",
+        "latest",
+        "--repeat",
+        "1"
+      ]
+    },
+    {
+      "name": "sphere_192_chfem_r1",
+      "arguments": [
+        "chfem_study.py",
+        "--phase",
+        "measure",
+        "--input",
+        "inputs/sphere_192.npy",
+        "--output",
+        "results/sphere_192_chfem_r1.json",
+        "--native-tol",
+        "2e-9",
+        "--repeat",
+        "1"
+      ]
+    },
+    {
+      "name": "sphere_192_paper_r1",
+      "arguments": [
+        "study.py",
+        "--case",
+        "sphere",
+        "--grid",
+        "192",
+        "--variant",
+        "paper",
+        "--repeat",
+        "1"
+      ]
+    },
+    {
+      "name": "grosmont_192_chain_r1",
+      "arguments": [
+        "study.py",
+        "--case",
+        "grosmont",
+        "--grid",
+        "192",
+        "--variant",
+        "chain",
+        "--repeat",
+        "1"
+      ]
+    },
+    {
+      "name": "grosmont_192_latest_r1",
+      "arguments": [
+        "study.py",
+        "--case",
+        "grosmont",
+        "--grid",
+        "192",
+        "--variant",
+        "latest",
+        "--repeat",
+        "1"
+      ]
+    },
+    {
+      "name": "grosmont_192_chfem_r1",
+      "arguments": [
+        "chfem_study.py",
+        "--phase",
+        "measure",
+        "--input",
+        "inputs/grosmont_192.npy",
+        "--output",
+        "results/grosmont_192_chfem_r1.json",
+        "--native-tol",
+        "2e-9",
+        "--repeat",
+        "1"
+      ]
+    },
+    {
+      "name": "grosmont_192_paper_r1",
+      "arguments": [
+        "study.py",
+        "--case",
+        "grosmont",
+        "--grid",
+        "192",
+        "--variant",
+        "paper",
+        "--repeat",
+        "1"
+      ]
+    },
+    {
+      "name": "fraction50_128_latest_r1",
+      "arguments": [
+        "study.py",
+        "--case",
+        "fraction50",
+        "--grid",
+        "128",
+        "--variant",
+        "latest",
+        "--repeat",
+        "1"
+      ]
+    },
+    {
+      "name": "fraction50_128_hybrid_r1",
+      "arguments": [
+        "study.py",
+        "--case",
+        "fraction50",
+        "--grid",
+        "128",
+        "--variant",
+        "hybrid",
+        "--repeat",
+        "1"
+      ]
+    },
+    {
+      "name": "fraction90_128_latest_r1",
+      "arguments": [
+        "study.py",
+        "--case",
+        "fraction90",
+        "--grid",
+        "128",
+        "--variant",
+        "latest",
+        "--repeat",
+        "1"
+      ]
+    },
+    {
+      "name": "fraction90_128_hybrid_r1",
+      "arguments": [
+        "study.py",
+        "--case",
+        "fraction90",
+        "--grid",
+        "128",
+        "--variant",
+        "hybrid",
+        "--repeat",
+        "1"
+      ]
+    },
+    {
+      "name": "woven_192_dense_r2",
+      "arguments": [
+        "study.py",
+        "--case",
+        "woven",
+        "--grid",
+        "192",
+        "--variant",
+        "dense",
+        "--repeat",
+        "2"
+      ]
+    },
+    {
+      "name": "woven_192_hybrid_r2",
+      "arguments": [
+        "study.py",
+        "--case",
+        "woven",
+        "--grid",
+        "192",
+        "--variant",
+        "hybrid",
+        "--repeat",
+        "2"
+      ]
+    },
+    {
+      "name": "woven_192_latest_r2",
+      "arguments": [
+        "study.py",
+        "--case",
+        "woven",
+        "--grid",
+        "192",
+        "--variant",
+        "latest",
+        "--repeat",
+        "2"
+      ]
+    },
+    {
+      "name": "woven_192_paper_r2",
+      "arguments": [
+        "study.py",
+        "--case",
+        "woven",
+        "--grid",
+        "192",
+        "--variant",
+        "paper",
+        "--repeat",
+        "2"
+      ]
+    },
+    {
+      "name": "woven_192_modal_r2",
+      "arguments": [
+        "study.py",
+        "--case",
+        "woven",
+        "--grid",
+        "192",
+        "--variant",
+        "modal",
+        "--repeat",
+        "2"
+      ]
+    },
+    {
+      "name": "woven_192_analytic_r2",
+      "arguments": [
+        "study.py",
+        "--case",
+        "woven",
+        "--grid",
+        "192",
+        "--variant",
+        "analytic",
+        "--repeat",
+        "2"
+      ]
+    },
+    {
+      "name": "woven_192_fft_r2",
+      "arguments": [
+        "study.py",
+        "--case",
+        "woven",
+        "--grid",
+        "192",
+        "--variant",
+        "fft",
+        "--repeat",
+        "2"
+      ]
+    },
+    {
+      "name": "woven_192_fusion_r2",
+      "arguments": [
+        "study.py",
+        "--case",
+        "woven",
+        "--grid",
+        "192",
+        "--variant",
+        "fusion",
+        "--repeat",
+        "2"
+      ]
+    },
+    {
+      "name": "woven_192_chain_r2",
+      "arguments": [
+        "study.py",
+        "--case",
+        "woven",
+        "--grid",
+        "192",
+        "--variant",
+        "chain",
+        "--repeat",
+        "2"
+      ]
+    },
+    {
+      "name": "woven_64_latest_r2",
+      "arguments": [
+        "study.py",
+        "--case",
+        "woven",
+        "--grid",
+        "64",
+        "--variant",
+        "latest",
+        "--repeat",
+        "2"
+      ]
+    },
+    {
+      "name": "woven_64_paper_r2",
+      "arguments": [
+        "study.py",
+        "--case",
+        "woven",
+        "--grid",
+        "64",
+        "--variant",
+        "paper",
+        "--repeat",
+        "2"
+      ]
+    },
+    {
+      "name": "woven_64_chain_r2",
+      "arguments": [
+        "study.py",
+        "--case",
+        "woven",
+        "--grid",
+        "64",
+        "--variant",
+        "chain",
+        "--repeat",
+        "2"
+      ]
+    },
+    {
+      "name": "woven_128_latest_r2",
+      "arguments": [
+        "study.py",
+        "--case",
+        "woven",
+        "--grid",
+        "128",
+        "--variant",
+        "latest",
+        "--repeat",
+        "2"
+      ]
+    },
+    {
+      "name": "woven_128_paper_r2",
+      "arguments": [
+        "study.py",
+        "--case",
+        "woven",
+        "--grid",
+        "128",
+        "--variant",
+        "paper",
+        "--repeat",
+        "2"
+      ]
+    },
+    {
+      "name": "woven_128_chain_r2",
+      "arguments": [
+        "study.py",
+        "--case",
+        "woven",
+        "--grid",
+        "128",
+        "--variant",
+        "chain",
+        "--repeat",
+        "2"
+      ]
+    },
+    {
+      "name": "woven_256_latest_r2",
+      "arguments": [
+        "study.py",
+        "--case",
+        "woven",
+        "--grid",
+        "256",
+        "--variant",
+        "latest",
+        "--repeat",
+        "2"
+      ]
+    },
+    {
+      "name": "sphere_192_latest_r2",
+      "arguments": [
+        "study.py",
+        "--case",
+        "sphere",
+        "--grid",
+        "192",
+        "--variant",
+        "latest",
+        "--repeat",
+        "2"
+      ]
+    },
+    {
+      "name": "sphere_192_chfem_r2",
+      "arguments": [
+        "chfem_study.py",
+        "--phase",
+        "measure",
+        "--input",
+        "inputs/sphere_192.npy",
+        "--output",
+        "results/sphere_192_chfem_r2.json",
+        "--native-tol",
+        "2e-9",
+        "--repeat",
+        "2"
+      ]
+    },
+    {
+      "name": "sphere_192_paper_r2",
+      "arguments": [
+        "study.py",
+        "--case",
+        "sphere",
+        "--grid",
+        "192",
+        "--variant",
+        "paper",
+        "--repeat",
+        "2"
+      ]
+    },
+    {
+      "name": "sphere_192_chain_r2",
+      "arguments": [
+        "study.py",
+        "--case",
+        "sphere",
+        "--grid",
+        "192",
+        "--variant",
+        "chain",
+        "--repeat",
+        "2"
+      ]
+    },
+    {
+      "name": "grosmont_192_latest_r2",
+      "arguments": [
+        "study.py",
+        "--case",
+        "grosmont",
+        "--grid",
+        "192",
+        "--variant",
+        "latest",
+        "--repeat",
+        "2"
+      ]
+    },
+    {
+      "name": "grosmont_192_chfem_r2",
+      "arguments": [
+        "chfem_study.py",
+        "--phase",
+        "measure",
+        "--input",
+        "inputs/grosmont_192.npy",
+        "--output",
+        "results/grosmont_192_chfem_r2.json",
+        "--native-tol",
+        "2e-9",
+        "--repeat",
+        "2"
+      ]
+    },
+    {
+      "name": "grosmont_192_paper_r2",
+      "arguments": [
+        "study.py",
+        "--case",
+        "grosmont",
+        "--grid",
+        "192",
+        "--variant",
+        "paper",
+        "--repeat",
+        "2"
+      ]
+    },
+    {
+      "name": "grosmont_192_chain_r2",
+      "arguments": [
+        "study.py",
+        "--case",
+        "grosmont",
+        "--grid",
+        "192",
+        "--variant",
+        "chain",
+        "--repeat",
+        "2"
+      ]
+    },
+    {
+      "name": "fraction50_128_hybrid_r2",
+      "arguments": [
+        "study.py",
+        "--case",
+        "fraction50",
+        "--grid",
+        "128",
+        "--variant",
+        "hybrid",
+        "--repeat",
+        "2"
+      ]
+    },
+    {
+      "name": "fraction50_128_latest_r2",
+      "arguments": [
+        "study.py",
+        "--case",
+        "fraction50",
+        "--grid",
+        "128",
+        "--variant",
+        "latest",
+        "--repeat",
+        "2"
+      ]
+    },
+    {
+      "name": "fraction90_128_hybrid_r2",
+      "arguments": [
+        "study.py",
+        "--case",
+        "fraction90",
+        "--grid",
+        "128",
+        "--variant",
+        "hybrid",
+        "--repeat",
+        "2"
+      ]
+    },
+    {
+      "name": "fraction90_128_latest_r2",
+      "arguments": [
+        "study.py",
+        "--case",
+        "fraction90",
+        "--grid",
+        "128",
+        "--variant",
+        "latest",
+        "--repeat",
+        "2"
+      ]
+    }
+  ],
+  "completed": [
+    {
+      "name": "woven_192_paper_r0",
+      "log": "/home/yufan/code/fead-solver-study-20261022/logs/woven_192_paper_r0.log",
+      "telemetry": "/home/yufan/code/fead-solver-study-20261022/logs/woven_192_paper_r0_telemetry.json",
+      "process_wall_seconds": 11.87155518704094,
+      "complete": true
+    },
+    {
+      "name": "woven_192_modal_r0",
+      "log": "/home/yufan/code/fead-solver-study-20261022/logs/woven_192_modal_r0.log",
+      "telemetry": "/home/yufan/code/fead-solver-study-20261022/logs/woven_192_modal_r0_telemetry.json",
+      "process_wall_seconds": 9.868154713883996,
+      "complete": true
+    },
+    {
+      "name": "woven_192_analytic_r0",
+      "log": "/home/yufan/code/fead-solver-study-20261022/logs/woven_192_analytic_r0.log",
+      "telemetry": "/home/yufan/code/fead-solver-study-20261022/logs/woven_192_analytic_r0_telemetry.json",
+      "process_wall_seconds": 9.828638541977853,
+      "complete": true
+    },
+    {
+      "name": "woven_192_fft_r0",
+      "log": "/home/yufan/code/fead-solver-study-20261022/logs/woven_192_fft_r0.log",
+      "telemetry": "/home/yufan/code/fead-solver-study-20261022/logs/woven_192_fft_r0_telemetry.json",
+      "process_wall_seconds": 9.38537890999578,
+      "complete": true
+    },
+    {
+      "name": "woven_192_fusion_r0",
+      "log": "/home/yufan/code/fead-solver-study-20261022/logs/woven_192_fusion_r0.log",
+      "telemetry": "/home/yufan/code/fead-solver-study-20261022/logs/woven_192_fusion_r0_telemetry.json",
+      "process_wall_seconds": 9.153385869925842,
+      "complete": true
+    },
+    {
+      "name": "woven_192_chain_r0",
+      "log": "/home/yufan/code/fead-solver-study-20261022/logs/woven_192_chain_r0.log",
+      "telemetry": "/home/yufan/code/fead-solver-study-20261022/logs/woven_192_chain_r0_telemetry.json",
+      "process_wall_seconds": 8.983478615060449,
+      "complete": true
+    },
+    {
+      "name": "woven_192_dense_r0",
+      "log": "/home/yufan/code/fead-solver-study-20261022/logs/woven_192_dense_r0.log",
+      "telemetry": "/home/yufan/code/fead-solver-study-20261022/logs/woven_192_dense_r0_telemetry.json",
+      "process_wall_seconds": 9.266591493040323,
+      "complete": true
+    },
+    {
+      "name": "woven_192_hybrid_r0",
+      "log": "/home/yufan/code/fead-solver-study-20261022/logs/woven_192_hybrid_r0.log",
+      "telemetry": "/home/yufan/code/fead-solver-study-20261022/logs/woven_192_hybrid_r0_telemetry.json",
+      "process_wall_seconds": 9.2176057130564,
+      "complete": true
+    },
+    {
+      "name": "woven_192_latest_r0",
+      "log": "/home/yufan/code/fead-solver-study-20261022/logs/woven_192_latest_r0.log",
+      "telemetry": "/home/yufan/code/fead-solver-study-20261022/logs/woven_192_latest_r0_telemetry.json",
+      "process_wall_seconds": 8.414698130916804,
+      "complete": true
+    },
+    {
+      "name": "woven_64_paper_r0",
+      "log": "/home/yufan/code/fead-solver-study-20261022/logs/woven_64_paper_r0.log",
+      "telemetry": "/home/yufan/code/fead-solver-study-20261022/logs/woven_64_paper_r0_telemetry.json",
+      "process_wall_seconds": 4.322629289934412,
+      "complete": true
+    },
+    {
+      "name": "woven_64_chain_r0",
+      "log": "/home/yufan/code/fead-solver-study-20261022/logs/woven_64_chain_r0.log",
+      "telemetry": "/home/yufan/code/fead-solver-study-20261022/logs/woven_64_chain_r0_telemetry.json",
+      "process_wall_seconds": 5.707357842940837,
+      "complete": true
+    },
+    {
+      "name": "woven_64_latest_r0",
+      "log": "/home/yufan/code/fead-solver-study-20261022/logs/woven_64_latest_r0.log",
+      "telemetry": "/home/yufan/code/fead-solver-study-20261022/logs/woven_64_latest_r0_telemetry.json",
+      "process_wall_seconds": 4.090404396876693,
+      "complete": true
+    },
+    {
+      "name": "woven_128_paper_r0",
+      "log": "/home/yufan/code/fead-solver-study-20261022/logs/woven_128_paper_r0.log",
+      "telemetry": "/home/yufan/code/fead-solver-study-20261022/logs/woven_128_paper_r0_telemetry.json",
+      "process_wall_seconds": 6.218325816094875,
+      "complete": true
+    },
+    {
+      "name": "woven_128_chain_r0",
+      "log": "/home/yufan/code/fead-solver-study-20261022/logs/woven_128_chain_r0.log",
+      "telemetry": "/home/yufan/code/fead-solver-study-20261022/logs/woven_128_chain_r0_telemetry.json",
+      "process_wall_seconds": 5.464225400937721,
+      "complete": true
+    },
+    {
+      "name": "woven_128_latest_r0",
+      "log": "/home/yufan/code/fead-solver-study-20261022/logs/woven_128_latest_r0.log",
+      "telemetry": "/home/yufan/code/fead-solver-study-20261022/logs/woven_128_latest_r0_telemetry.json",
+      "process_wall_seconds": 5.192596958018839,
+      "complete": true
+    },
+    {
+      "name": "woven_256_latest_r0",
+      "log": "/home/yufan/code/fead-solver-study-20261022/logs/woven_256_latest_r0.log",
+      "telemetry": "/home/yufan/code/fead-solver-study-20261022/logs/woven_256_latest_r0_telemetry.json",
+      "process_wall_seconds": 16.202422353904694,
+      "complete": true
+    },
+    {
+      "name": "sphere_192_paper_r0",
+      "log": "/home/yufan/code/fead-solver-study-20261022/logs/sphere_192_paper_r0.log",
+      "telemetry": "/home/yufan/code/fead-solver-study-20261022/logs/sphere_192_paper_r0_telemetry.json",
+      "process_wall_seconds": 9.559652781113982,
+      "complete": true
+    },
+    {
+      "name": "sphere_192_chain_r0",
+      "log": "/home/yufan/code/fead-solver-study-20261022/logs/sphere_192_chain_r0.log",
+      "telemetry": "/home/yufan/code/fead-solver-study-20261022/logs/sphere_192_chain_r0_telemetry.json",
+      "process_wall_seconds": 7.389116905163974,
+      "complete": true
+    },
+    {
+      "name": "sphere_192_latest_r0",
+      "log": "/home/yufan/code/fead-solver-study-20261022/logs/sphere_192_latest_r0.log",
+      "telemetry": "/home/yufan/code/fead-solver-study-20261022/logs/sphere_192_latest_r0_telemetry.json",
+      "process_wall_seconds": 6.69063522387296,
+      "complete": true
+    },
+    {
+      "name": "sphere_192_chfem_r0",
+      "log": "/home/yufan/code/fead-solver-study-20261022/logs/sphere_192_chfem_r0.log",
+      "telemetry": "/home/yufan/code/fead-solver-study-20261022/logs/sphere_192_chfem_r0_telemetry.json",
+      "process_wall_seconds": 89.75271696900018,
+      "complete": true
+    },
+    {
+      "name": "grosmont_192_paper_r0",
+      "log": "/home/yufan/code/fead-solver-study-20261022/logs/grosmont_192_paper_r0.log",
+      "telemetry": "/home/yufan/code/fead-solver-study-20261022/logs/grosmont_192_paper_r0_telemetry.json",
+      "process_wall_seconds": 10.335613083094358,
+      "complete": true
+    },
+    {
+      "name": "grosmont_192_chain_r0",
+      "log": "/home/yufan/code/fead-solver-study-20261022/logs/grosmont_192_chain_r0.log",
+      "telemetry": "/home/yufan/code/fead-solver-study-20261022/logs/grosmont_192_chain_r0_telemetry.json",
+      "process_wall_seconds": 8.087937629083171,
+      "complete": true
+    },
+    {
+      "name": "grosmont_192_latest_r0",
+      "log": "/home/yufan/code/fead-solver-study-20261022/logs/grosmont_192_latest_r0.log",
+      "telemetry": "/home/yufan/code/fead-solver-study-20261022/logs/grosmont_192_latest_r0_telemetry.json",
+      "process_wall_seconds": 6.775712636997923,
+      "complete": true
+    },
+    {
+      "name": "grosmont_192_chfem_r0",
+      "log": "/home/yufan/code/fead-solver-study-20261022/logs/grosmont_192_chfem_r0.log",
+      "telemetry": "/home/yufan/code/fead-solver-study-20261022/logs/grosmont_192_chfem_r0_telemetry.json",
+      "process_wall_seconds": 104.76835617283359,
+      "complete": true
+    },
+    {
+      "name": "fraction50_128_hybrid_r0",
+      "log": "/home/yufan/code/fead-solver-study-20261022/logs/fraction50_128_hybrid_r0.log",
+      "telemetry": "/home/yufan/code/fead-solver-study-20261022/logs/fraction50_128_hybrid_r0_telemetry.json",
+      "process_wall_seconds": 5.165023654000834,
+      "complete": true
+    },
+    {
+      "name": "fraction50_128_latest_r0",
+      "log": "/home/yufan/code/fead-solver-study-20261022/logs/fraction50_128_latest_r0.log",
+      "telemetry": "/home/yufan/code/fead-solver-study-20261022/logs/fraction50_128_latest_r0_telemetry.json",
+      "process_wall_seconds": 5.2061191780958325,
+      "complete": true
+    },
+    {
+      "name": "fraction90_128_hybrid_r0",
+      "log": "/home/yufan/code/fead-solver-study-20261022/logs/fraction90_128_hybrid_r0.log",
+      "telemetry": "/home/yufan/code/fead-solver-study-20261022/logs/fraction90_128_hybrid_r0_telemetry.json",
+      "process_wall_seconds": 5.5589326629415154,
+      "complete": true
+    },
+    {
+      "name": "fraction90_128_latest_r0",
+      "log": "/home/yufan/code/fead-solver-study-20261022/logs/fraction90_128_latest_r0.log",
+      "telemetry": "/home/yufan/code/fead-solver-study-20261022/logs/fraction90_128_latest_r0_telemetry.json",
+      "process_wall_seconds": 5.679218853125349,
+      "complete": true
+    },
+    {
+      "name": "woven_192_fft_r1",
+      "log": "/home/yufan/code/fead-solver-study-20261022/logs/woven_192_fft_r1.log",
+      "telemetry": "/home/yufan/code/fead-solver-study-20261022/logs/woven_192_fft_r1_telemetry.json",
+      "process_wall_seconds": 9.376497166929767,
+      "complete": true
+    },
+    {
+      "name": "woven_192_fusion_r1",
+      "log": "/home/yufan/code/fead-solver-study-20261022/logs/woven_192_fusion_r1.log",
+      "telemetry": "/home/yufan/code/fead-solver-study-20261022/logs/woven_192_fusion_r1_telemetry.json",
+      "process_wall_seconds": 9.139737939927727,
+      "complete": true
+    },
+    {
+      "name": "woven_192_chain_r1",
+      "log": "/home/yufan/code/fead-solver-study-20261022/logs/woven_192_chain_r1.log",
+      "telemetry": "/home/yufan/code/fead-solver-study-20261022/logs/woven_192_chain_r1_telemetry.json",
+      "process_wall_seconds": 9.040802282979712,
+      "complete": true
+    },
+    {
+      "name": "woven_192_dense_r1",
+      "log": "/home/yufan/code/fead-solver-study-20261022/logs/woven_192_dense_r1.log",
+      "telemetry": "/home/yufan/code/fead-solver-study-20261022/logs/woven_192_dense_r1_telemetry.json",
+      "process_wall_seconds": 9.276405081851408,
+      "complete": true
+    },
+    {
+      "name": "woven_192_hybrid_r1",
+      "log": "/home/yufan/code/fead-solver-study-20261022/logs/woven_192_hybrid_r1.log",
+      "telemetry": "/home/yufan/code/fead-solver-study-20261022/logs/woven_192_hybrid_r1_telemetry.json",
+      "process_wall_seconds": 9.251882952870801,
+      "complete": true
+    },
+    {
+      "name": "woven_192_latest_r1",
+      "log": "/home/yufan/code/fead-solver-study-20261022/logs/woven_192_latest_r1.log",
+      "telemetry": "/home/yufan/code/fead-solver-study-20261022/logs/woven_192_latest_r1_telemetry.json",
+      "process_wall_seconds": 8.423574033891782,
+      "complete": true
+    },
+    {
+      "name": "woven_192_paper_r1",
+      "log": "/home/yufan/code/fead-solver-study-20261022/logs/woven_192_paper_r1.log",
+      "telemetry": "/home/yufan/code/fead-solver-study-20261022/logs/woven_192_paper_r1_telemetry.json",
+      "process_wall_seconds": 11.83569687511772,
+      "complete": true
+    },
+    {
+      "name": "woven_192_modal_r1",
+      "log": "/home/yufan/code/fead-solver-study-20261022/logs/woven_192_modal_r1.log",
+      "telemetry": "/home/yufan/code/fead-solver-study-20261022/logs/woven_192_modal_r1_telemetry.json",
+      "process_wall_seconds": 9.90881515503861,
+      "complete": true
+    },
+    {
+      "name": "woven_192_analytic_r1",
+      "log": "/home/yufan/code/fead-solver-study-20261022/logs/woven_192_analytic_r1.log",
+      "telemetry": "/home/yufan/code/fead-solver-study-20261022/logs/woven_192_analytic_r1_telemetry.json",
+      "process_wall_seconds": 9.85231172805652,
+      "complete": true
+    },
+    {
+      "name": "woven_64_chain_r1",
+      "log": "/home/yufan/code/fead-solver-study-20261022/logs/woven_64_chain_r1.log",
+      "telemetry": "/home/yufan/code/fead-solver-study-20261022/logs/woven_64_chain_r1_telemetry.json",
+      "process_wall_seconds": 4.214724937919527,
+      "complete": true
+    },
+    {
+      "name": "woven_64_latest_r1",
+      "log": "/home/yufan/code/fead-solver-study-20261022/logs/woven_64_latest_r1.log",
+      "telemetry": "/home/yufan/code/fead-solver-study-20261022/logs/woven_64_latest_r1_telemetry.json",
+      "process_wall_seconds": 4.11227353499271,
+      "complete": true
+    },
+    {
+      "name": "woven_64_paper_r1",
+      "log": "/home/yufan/code/fead-solver-study-20261022/logs/woven_64_paper_r1.log",
+      "telemetry": "/home/yufan/code/fead-solver-study-20261022/logs/woven_64_paper_r1_telemetry.json",
+      "process_wall_seconds": 4.3333792521152645,
+      "complete": true
+    },
+    {
+      "name": "woven_128_chain_r1",
+      "log": "/home/yufan/code/fead-solver-study-20261022/logs/woven_128_chain_r1.log",
+      "telemetry": "/home/yufan/code/fead-solver-study-20261022/logs/woven_128_chain_r1_telemetry.json",
+      "process_wall_seconds": 5.441693929955363,
+      "complete": true
+    },
+    {
+      "name": "woven_128_latest_r1",
+      "log": "/home/yufan/code/fead-solver-study-20261022/logs/woven_128_latest_r1.log",
+      "telemetry": "/home/yufan/code/fead-solver-study-20261022/logs/woven_128_latest_r1_telemetry.json",
+      "process_wall_seconds": 5.177192539907992,
+      "complete": true
+    },
+    {
+      "name": "woven_128_paper_r1",
+      "log": "/home/yufan/code/fead-solver-study-20261022/logs/woven_128_paper_r1.log",
+      "telemetry": "/home/yufan/code/fead-solver-study-20261022/logs/woven_128_paper_r1_telemetry.json",
+      "process_wall_seconds": 6.076497260015458,
+      "complete": true
+    },
+    {
+      "name": "woven_256_latest_r1",
+      "log": "/home/yufan/code/fead-solver-study-20261022/logs/woven_256_latest_r1.log",
+      "telemetry": "/home/yufan/code/fead-solver-study-20261022/logs/woven_256_latest_r1_telemetry.json",
+      "process_wall_seconds": 15.159727588994429,
+      "complete": true
+    },
+    {
+      "name": "sphere_192_chain_r1",
+      "log": "/home/yufan/code/fead-solver-study-20261022/logs/sphere_192_chain_r1.log",
+      "telemetry": "/home/yufan/code/fead-solver-study-20261022/logs/sphere_192_chain_r1_telemetry.json",
+      "process_wall_seconds": 7.4307275880128145,
+      "complete": true
+    },
+    {
+      "name": "sphere_192_latest_r1",
+      "log": "/home/yufan/code/fead-solver-study-20261022/logs/sphere_192_latest_r1.log",
+      "telemetry": "/home/yufan/code/fead-solver-study-20261022/logs/sphere_192_latest_r1_telemetry.json",
+      "process_wall_seconds": 6.6400428200140595,
+      "complete": true
+    },
+    {
+      "name": "sphere_192_chfem_r1",
+      "log": "/home/yufan/code/fead-solver-study-20261022/logs/sphere_192_chfem_r1.log",
+      "telemetry": "/home/yufan/code/fead-solver-study-20261022/logs/sphere_192_chfem_r1_telemetry.json",
+      "process_wall_seconds": 89.74141322495416,
+      "complete": true
+    },
+    {
+      "name": "sphere_192_paper_r1",
+      "log": "/home/yufan/code/fead-solver-study-20261022/logs/sphere_192_paper_r1.log",
+      "telemetry": "/home/yufan/code/fead-solver-study-20261022/logs/sphere_192_paper_r1_telemetry.json",
+      "process_wall_seconds": 9.580631182063371,
+      "complete": true
+    },
+    {
+      "name": "grosmont_192_chain_r1",
+      "log": "/home/yufan/code/fead-solver-study-20261022/logs/grosmont_192_chain_r1.log",
+      "telemetry": "/home/yufan/code/fead-solver-study-20261022/logs/grosmont_192_chain_r1_telemetry.json",
+      "process_wall_seconds": 8.095843232935295,
+      "complete": true
+    },
+    {
+      "name": "grosmont_192_latest_r1",
+      "log": "/home/yufan/code/fead-solver-study-20261022/logs/grosmont_192_latest_r1.log",
+      "telemetry": "/home/yufan/code/fead-solver-study-20261022/logs/grosmont_192_latest_r1_telemetry.json",
+      "process_wall_seconds": 6.739079765975475,
+      "complete": true
+    },
+    {
+      "name": "grosmont_192_chfem_r1",
+      "log": "/home/yufan/code/fead-solver-study-20261022/logs/grosmont_192_chfem_r1.log",
+      "telemetry": "/home/yufan/code/fead-solver-study-20261022/logs/grosmont_192_chfem_r1_telemetry.json",
+      "process_wall_seconds": 104.75679407082498,
+      "complete": true
+    },
+    {
+      "name": "grosmont_192_paper_r1",
+      "log": "/home/yufan/code/fead-solver-study-20261022/logs/grosmont_192_paper_r1.log",
+      "telemetry": "/home/yufan/code/fead-solver-study-20261022/logs/grosmont_192_paper_r1_telemetry.json",
+      "process_wall_seconds": 10.299605385866016,
+      "complete": true
+    },
+    {
+      "name": "fraction50_128_latest_r1",
+      "log": "/home/yufan/code/fead-solver-study-20261022/logs/fraction50_128_latest_r1.log",
+      "telemetry": "/home/yufan/code/fead-solver-study-20261022/logs/fraction50_128_latest_r1_telemetry.json",
+      "process_wall_seconds": 5.174007494933903,
+      "complete": true
+    },
+    {
+      "name": "fraction50_128_hybrid_r1",
+      "log": "/home/yufan/code/fead-solver-study-20261022/logs/fraction50_128_hybrid_r1.log",
+      "telemetry": "/home/yufan/code/fead-solver-study-20261022/logs/fraction50_128_hybrid_r1_telemetry.json",
+      "process_wall_seconds": 5.143632926978171,
+      "complete": true
+    },
+    {
+      "name": "fraction90_128_latest_r1",
+      "log": "/home/yufan/code/fead-solver-study-20261022/logs/fraction90_128_latest_r1.log",
+      "telemetry": "/home/yufan/code/fead-solver-study-20261022/logs/fraction90_128_latest_r1_telemetry.json",
+      "process_wall_seconds": 5.693646318046376,
+      "complete": true
+    },
+    {
+      "name": "fraction90_128_hybrid_r1",
+      "log": "/home/yufan/code/fead-solver-study-20261022/logs/fraction90_128_hybrid_r1.log",
+      "telemetry": "/home/yufan/code/fead-solver-study-20261022/logs/fraction90_128_hybrid_r1_telemetry.json",
+      "process_wall_seconds": 5.552877464098856,
+      "complete": true
+    },
+    {
+      "name": "woven_192_dense_r2",
+      "log": "/home/yufan/code/fead-solver-study-20261022/logs/woven_192_dense_r2.log",
+      "telemetry": "/home/yufan/code/fead-solver-study-20261022/logs/woven_192_dense_r2_telemetry.json",
+      "process_wall_seconds": 9.325139405904338,
+      "complete": true
+    },
+    {
+      "name": "woven_192_hybrid_r2",
+      "log": "/home/yufan/code/fead-solver-study-20261022/logs/woven_192_hybrid_r2.log",
+      "telemetry": "/home/yufan/code/fead-solver-study-20261022/logs/woven_192_hybrid_r2_telemetry.json",
+      "process_wall_seconds": 9.286068468121812,
+      "complete": true
+    },
+    {
+      "name": "woven_192_latest_r2",
+      "log": "/home/yufan/code/fead-solver-study-20261022/logs/woven_192_latest_r2.log",
+      "telemetry": "/home/yufan/code/fead-solver-study-20261022/logs/woven_192_latest_r2_telemetry.json",
+      "process_wall_seconds": 8.417759969830513,
+      "complete": true
+    },
+    {
+      "name": "woven_192_paper_r2",
+      "log": "/home/yufan/code/fead-solver-study-20261022/logs/woven_192_paper_r2.log",
+      "telemetry": "/home/yufan/code/fead-solver-study-20261022/logs/woven_192_paper_r2_telemetry.json",
+      "process_wall_seconds": 11.820747390156612,
+      "complete": true
+    },
+    {
+      "name": "woven_192_modal_r2",
+      "log": "/home/yufan/code/fead-solver-study-20261022/logs/woven_192_modal_r2.log",
+      "telemetry": "/home/yufan/code/fead-solver-study-20261022/logs/woven_192_modal_r2_telemetry.json",
+      "process_wall_seconds": 9.880437049083412,
+      "complete": true
+    },
+    {
+      "name": "woven_192_analytic_r2",
+      "log": "/home/yufan/code/fead-solver-study-20261022/logs/woven_192_analytic_r2.log",
+      "telemetry": "/home/yufan/code/fead-solver-study-20261022/logs/woven_192_analytic_r2_telemetry.json",
+      "process_wall_seconds": 9.887871640035883,
+      "complete": true
+    },
+    {
+      "name": "woven_192_fft_r2",
+      "log": "/home/yufan/code/fead-solver-study-20261022/logs/woven_192_fft_r2.log",
+      "telemetry": "/home/yufan/code/fead-solver-study-20261022/logs/woven_192_fft_r2_telemetry.json",
+      "process_wall_seconds": 9.424279731931165,
+      "complete": true
+    },
+    {
+      "name": "woven_192_fusion_r2",
+      "log": "/home/yufan/code/fead-solver-study-20261022/logs/woven_192_fusion_r2.log",
+      "telemetry": "/home/yufan/code/fead-solver-study-20261022/logs/woven_192_fusion_r2_telemetry.json",
+      "process_wall_seconds": 9.146411073161289,
+      "complete": true
+    },
+    {
+      "name": "woven_192_chain_r2",
+      "log": "/home/yufan/code/fead-solver-study-20261022/logs/woven_192_chain_r2.log",
+      "telemetry": "/home/yufan/code/fead-solver-study-20261022/logs/woven_192_chain_r2_telemetry.json",
+      "process_wall_seconds": 8.998553331010044,
+      "complete": true
+    },
+    {
+      "name": "woven_64_latest_r2",
+      "log": "/home/yufan/code/fead-solver-study-20261022/logs/woven_64_latest_r2.log",
+      "telemetry": "/home/yufan/code/fead-solver-study-20261022/logs/woven_64_latest_r2_telemetry.json",
+      "process_wall_seconds": 4.158732943003997,
+      "complete": true
+    },
+    {
+      "name": "woven_64_paper_r2",
+      "log": "/home/yufan/code/fead-solver-study-20261022/logs/woven_64_paper_r2.log",
+      "telemetry": "/home/yufan/code/fead-solver-study-20261022/logs/woven_64_paper_r2_telemetry.json",
+      "process_wall_seconds": 4.462665932951495,
+      "complete": true
+    },
+    {
+      "name": "woven_64_chain_r2",
+      "log": "/home/yufan/code/fead-solver-study-20261022/logs/woven_64_chain_r2.log",
+      "telemetry": "/home/yufan/code/fead-solver-study-20261022/logs/woven_64_chain_r2_telemetry.json",
+      "process_wall_seconds": 4.207831542007625,
+      "complete": true
+    },
+    {
+      "name": "woven_128_latest_r2",
+      "log": "/home/yufan/code/fead-solver-study-20261022/logs/woven_128_latest_r2.log",
+      "telemetry": "/home/yufan/code/fead-solver-study-20261022/logs/woven_128_latest_r2_telemetry.json",
+      "process_wall_seconds": 5.174172885948792,
+      "complete": true
+    },
+    {
+      "name": "woven_128_paper_r2",
+      "log": "/home/yufan/code/fead-solver-study-20261022/logs/woven_128_paper_r2.log",
+      "telemetry": "/home/yufan/code/fead-solver-study-20261022/logs/woven_128_paper_r2_telemetry.json",
+      "process_wall_seconds": 6.171772084897384,
+      "complete": true
+    },
+    {
+      "name": "woven_128_chain_r2",
+      "log": "/home/yufan/code/fead-solver-study-20261022/logs/woven_128_chain_r2.log",
+      "telemetry": "/home/yufan/code/fead-solver-study-20261022/logs/woven_128_chain_r2_telemetry.json",
+      "process_wall_seconds": 5.412381201982498,
+      "complete": true
+    },
+    {
+      "name": "woven_256_latest_r2",
+      "log": "/home/yufan/code/fead-solver-study-20261022/logs/woven_256_latest_r2.log",
+      "telemetry": "/home/yufan/code/fead-solver-study-20261022/logs/woven_256_latest_r2_telemetry.json",
+      "process_wall_seconds": 15.104195947991684,
+      "complete": true
+    },
+    {
+      "name": "sphere_192_latest_r2",
+      "log": "/home/yufan/code/fead-solver-study-20261022/logs/sphere_192_latest_r2.log",
+      "telemetry": "/home/yufan/code/fead-solver-study-20261022/logs/sphere_192_latest_r2_telemetry.json",
+      "process_wall_seconds": 6.703980080084875,
+      "complete": true
+    },
+    {
+      "name": "sphere_192_chfem_r2",
+      "log": "/home/yufan/code/fead-solver-study-20261022/logs/sphere_192_chfem_r2.log",
+      "telemetry": "/home/yufan/code/fead-solver-study-20261022/logs/sphere_192_chfem_r2_telemetry.json",
+      "process_wall_seconds": 89.7667710611131,
+      "complete": true
+    },
+    {
+      "name": "sphere_192_paper_r2",
+      "log": "/home/yufan/code/fead-solver-study-20261022/logs/sphere_192_paper_r2.log",
+      "telemetry": "/home/yufan/code/fead-solver-study-20261022/logs/sphere_192_paper_r2_telemetry.json",
+      "process_wall_seconds": 9.592249877052382,
+      "complete": true
+    },
+    {
+      "name": "sphere_192_chain_r2",
+      "log": "/home/yufan/code/fead-solver-study-20261022/logs/sphere_192_chain_r2.log",
+      "telemetry": "/home/yufan/code/fead-solver-study-20261022/logs/sphere_192_chain_r2_telemetry.json",
+      "process_wall_seconds": 7.425054842140526,
+      "complete": true
+    },
+    {
+      "name": "grosmont_192_latest_r2",
+      "log": "/home/yufan/code/fead-solver-study-20261022/logs/grosmont_192_latest_r2.log",
+      "telemetry": "/home/yufan/code/fead-solver-study-20261022/logs/grosmont_192_latest_r2_telemetry.json",
+      "process_wall_seconds": 6.746350655099377,
+      "complete": true
+    },
+    {
+      "name": "grosmont_192_chfem_r2",
+      "log": "/home/yufan/code/fead-solver-study-20261022/logs/grosmont_192_chfem_r2.log",
+      "telemetry": "/home/yufan/code/fead-solver-study-20261022/logs/grosmont_192_chfem_r2_telemetry.json",
+      "process_wall_seconds": 104.77725469786674,
+      "complete": true
+    },
+    {
+      "name": "grosmont_192_paper_r2",
+      "log": "/home/yufan/code/fead-solver-study-20261022/logs/grosmont_192_paper_r2.log",
+      "telemetry": "/home/yufan/code/fead-solver-study-20261022/logs/grosmont_192_paper_r2_telemetry.json",
+      "process_wall_seconds": 10.356490578036755,
+      "complete": true
+    },
+    {
+      "name": "grosmont_192_chain_r2",
+      "log": "/home/yufan/code/fead-solver-study-20261022/logs/grosmont_192_chain_r2.log",
+      "telemetry": "/home/yufan/code/fead-solver-study-20261022/logs/grosmont_192_chain_r2_telemetry.json",
+      "process_wall_seconds": 8.058614750858396,
+      "complete": true
+    },
+    {
+      "name": "fraction50_128_hybrid_r2",
+      "log": "/home/yufan/code/fead-solver-study-20261022/logs/fraction50_128_hybrid_r2.log",
+      "telemetry": "/home/yufan/code/fead-solver-study-20261022/logs/fraction50_128_hybrid_r2_telemetry.json",
+      "process_wall_seconds": 5.145465473178774,
+      "complete": true
+    },
+    {
+      "name": "fraction50_128_latest_r2",
+      "log": "/home/yufan/code/fead-solver-study-20261022/logs/fraction50_128_latest_r2.log",
+      "telemetry": "/home/yufan/code/fead-solver-study-20261022/logs/fraction50_128_latest_r2_telemetry.json",
+      "process_wall_seconds": 5.166658275062218,
+      "complete": true
+    },
+    {
+      "name": "fraction90_128_hybrid_r2",
+      "log": "/home/yufan/code/fead-solver-study-20261022/logs/fraction90_128_hybrid_r2.log",
+      "telemetry": "/home/yufan/code/fead-solver-study-20261022/logs/fraction90_128_hybrid_r2_telemetry.json",
+      "process_wall_seconds": 5.613688768120483,
+      "complete": true
+    },
+    {
+      "name": "fraction90_128_latest_r2",
+      "log": "/home/yufan/code/fead-solver-study-20261022/logs/fraction90_128_latest_r2.log",
+      "telemetry": "/home/yufan/code/fead-solver-study-20261022/logs/fraction90_128_latest_r2_telemetry.json",
+      "process_wall_seconds": 5.689348093001172,
+      "complete": true
+    }
+  ],
+  "failed": null
+}

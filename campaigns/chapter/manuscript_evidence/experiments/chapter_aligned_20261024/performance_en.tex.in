@@ -1,0 +1,63 @@
+\section{Computational efficiency}\label{computational-performance}
+
+The experiments use an RTX 5090, PyTorch 2.12.0+cu130, CUDA 13.0 and CuPy 14.2.0. Each calculation solves the six unit macroscopic-strain load cases with the FP64 true-residual tolerance $\tau=10^{-8}$ in Eq.~\eqref{eq:true-residual}. We first compare the baseline solvers and preconditioners in Section~\ref{stabilized-voxel-fem-formulation}, then evaluate the three optimizations in Section~\ref{matrix-free-batched-voxel-fem-method}.
+
+Times are medians of three independent process runs, each following a complete warm-up on the same grid. Time whiskers span the three measurements. Peak GPU memory is the largest NVML process-memory sample across these runs, sampled every 20 ms and including the context, libraries and retained allocations. Iteration counts sum the six load cases. Complete-call time covers material preparation, assembly or operator initialization, preconditioner setup, load construction, PCG, FP64 residual checks, stress recovery and cleanup. Geometry generation, compilation, warm-up and file I/O are excluded. Resident operator calls are timed separately with CUDA events.
+
+\subsection{Baseline solvers and FFT preconditioning}\label{sec:isotropic-performance}
+
+The two $192^3$ cells with isotropic constituents in Section~\ref{sec:chfem-verification} compare chfem, conventional assembled finite elements and the 27-point implementation. The assembled baseline stores the global FP64 stiffness matrix in CuPy compressed sparse row (CSR) format and uses the CuPy CG routine with scalar Jacobi preconditioning. Eight-point element contributions are assembled in bounded row batches, with exact zeros removed. CuPy CSR and the 27-point Jacobi implementation apply the same zero-mean projection. The independent verification of this baseline is reported in Section~\ref{sec:chfem-verification}.
+
+Table~\ref{tab:solver-summary} collects the complete results. For the spherical inclusion, the six-load times of chfem, CuPy CSR and the 27-point implementation with Jacobi preconditioning are @@sphere_chfem_time@@, @@sphere_csr_time@@ and @@sphere_jacobi_time@@ s. For Grosmont they are @@grosmont_chfem_time@@, @@grosmont_csr_time@@ and @@grosmont_jacobi_time@@ s. These three implementations store and access the same finite-element couplings differently: chfem reuses phase stiffness data, CSR stores values and column indices, and the stencil stores the nodal blocks with implicit grid connectivity. The complete-time comparison also includes each library's vector updates and reductions. The chfem measurements use its native-core interval, starting from host-resident phase labels and excluding input-file parsing.
+
+Replacing Jacobi with FFT preconditioning in the 27-point implementation reduces the iteration totals from @@sphere_jacobi_iter@@ to @@sphere_fft_iter@@ for the sphere and from @@grosmont_jacobi_iter@@ to @@grosmont_fft_iter@@ for Grosmont. The corresponding complete-call times become @@sphere_fft_time@@ and @@grosmont_fft_time@@ s. This establishes the FFT-preconditioned 27-point baseline for the subsequent operator and storage comparisons.
+
+\subsection{Contributions of the solver components}\label{sec:fi-ablation}
+
+The $192^3$ woven cell in Fig.~\ref{fig:fi-woven-geometry} tests the three optimizations with spatially varying anisotropy. Constituent properties are given in Table~\ref{tab:woven_constituent_properties}, and the geometry is defined in \ref{app:resolution-geometry}. Yarn orientations follow their curved paths, and yarns occupy approximately 19.8\% of the elements. The figure hides the matrix and compares the same local region at $64^3$ and $192^3$.
+\begin{figure}[htbp]
+\centering
+\makebox[\linewidth][c]{\includegraphics{fi_woven_geometry_en.pdf}}
+\caption{Woven benchmark and local voxel sections.}
+\label{fig:fi-woven-geometry}
+\end{figure}
+
+The controlled sequence uses the same phase-based reference tensor from \ref{app:solver-reference}, normalized to unit shear coefficient. Physical operators and PCG vectors remain in FP64; the FFT also uses FP64 until the final mixed-precision step. @@fft_iteration_statement@@ Figure~\ref{fig:fi-workflow-cost} summarizes the complete-call time and peak memory along this sequence.
+
+\paragraph{Element constitutive work}
+The first comparison follows Section~\ref{sec:fi-modal}. Direct evaluation at the eight Gauss points takes @@direct_Ku@@ ms per stiffness action, whereas the modal implementation takes @@modal_Ku@@ ms with the same element data and nodal accumulation. Relative to the stored 27-point operator, modal evaluation changes complete-call time from @@woven_fft_time@@ to @@modal_time@@ s and peak memory from @@woven_fft_memory@@ to @@modal_memory@@ GiB. The sparse strain-coefficient evaluation reduces local work, while eliminating the spatially varying stencil cache provides the storage saving.
+
+\paragraph{Material sharing and background reuse}
+Following Section~\ref{sec:compact-material}, hybrid storage reduces peak memory from @@modal_memory@@ to @@hybrid_memory@@ GiB; complete-call time changes from @@modal_time@@ to @@hybrid_time@@ s. Adding background decomposition then reduces the stiffness-action time from @@hybrid_Ku@@ to @@background_Ku@@ ms and complete-call time to @@background_time@@ s. Material sharing removes repeated tensor data, and the background pass replaces repeated element calculations in the matrix phase with a shared nodal action.
+
+The independent layered-cell comparison in Table~\ref{tab:fi-background-ablation} examines the influence of active volume using the optimized FP32 FFT--PCG configuration. The isotropic phase is the shared background, and the orthotropic phase is supplied through local orientations so that its volume fraction controls the active set. Complete-call time is nearly unchanged at 50.00\% active volume and increases by @@active90_overhead@@\% at 89.84\%. The background pass traverses the full grid, while the contrast pass becomes more expensive as the active set grows.
+\input{sections_structured/table_fi_background}
+
+\paragraph{Compact storage and GPU execution}
+Section~\ref{sec:solver-workflow} first exploits symmetry in the stored-stencil representation. In its paired comparison, compressing 27 blocks to 14 changes peak memory from @@woven_fft_memory@@ to @@symmetric_memory@@ GiB and stiffness-action time from @@stencil_Ku@@ to @@symmetric_Ku@@ ms. This pair quantifies symmetry reuse within the stencil implementation.
+
+For the background--modal solver, reference-coefficient caching, FFT-plan and workspace reuse, and fused PCG updates reduce complete-call time from @@background_time@@ to @@execution_time@@ s. A preconditioner call changes from @@background_preconditioner@@ to @@execution_preconditioner@@ ms. These changes reduce repeated reference evaluation and intermediate-array transfers. Switching only the FFT buffers, spectra and cached coefficients to FP32 gives the final @@mixed_time@@ s and @@mixed_memory@@ GiB. The FP64 and FP32 execution variants require @@precision_iterations@@ iterations; their maximum paired effective-stiffness difference is @@precision_error@@. Physical stiffness actions, PCG vectors and residual checks remain in FP64.
+
+\begin{figure}[htbp]
+\centering
+\makebox[\linewidth][c]{\includegraphics{fi_optimization_chain_en.pdf}}
+\caption{Solver costs at each optimization stage.}
+\label{fig:fi-workflow-cost}
+\end{figure}
+
+\subsection{Overall performance and grid size}\label{sec:execution-results}
+
+The woven geometry in \ref{app:resolution-geometry} was sampled on seven $N^3$ grids, with $N=64,96,\ldots,256$. Grid convergence is assessed using Eq.~\eqref{eq:relative_frobenius_difference} with the $256^3$ stiffness as the reference (Fig.~\ref{fig:fi-grid-scaling}a). The discrepancy decreases overall from 0.8854\% at $64^3$ to 0.0777\% at $224^3$ and remains below 0.09\% over $160^3$--$224^3$. At each resolution, the interfaces are resampled from the same analytical geometry alongside refinement of the displacement field.
+
+The resolution study uses FP32 FFT in all four implementations. The two stored-stencil solvers use the sampled reference medium, whereas the two modal solvers use the phase-based reference in \ref{app:solver-reference}. The proposed solver has the lowest complete-call time and peak GPU memory over their common $64^3$--$224^3$ range (Fig.~\ref{fig:fi-grid-scaling}b,c). Stored stencil blocks and element-wise material tensors grow with grid size, widening the memory gap. At $256^3$, the proposed solver completes the six load cases in 4.387 s using 4.764 GiB.
+\begin{figure}[htbp]
+\centering
+\makebox[\linewidth][c]{\includegraphics{fi_grid_scaling_en.pdf}}
+\caption{Grid convergence and computational cost.}
+\label{fig:fi-grid-scaling}
+\end{figure}
+\FloatBarrier
+
+Table~\ref{tab:solver-summary} brings the baseline and component comparisons together. On the $192^3$ woven cell, the complete-call time falls from @@woven_fft_time@@ s for the FP64 FFT-preconditioned 27-point baseline to @@mixed_time@@ s for the final solver, a reduction of @@overall_time_reduction@@\%; peak memory decreases by @@overall_memory_reduction@@\%. Relative to CuPy CSR--Jacobi, the final solver is @@csr_speedup@@ times faster and uses @@csr_memory_fraction@@\% of its peak memory. For the woven configurations in Table~\ref{tab:solver-summary}, the largest effective-stiffness discrepancy relative to the 27-point FFT solution is @@woven_error@@. For the sphere and Grosmont, the final speedups relative to chfem are @@sphere_speedup@@ and @@grosmont_speedup@@, with peaks of @@sphere_mixed_memory@@ and @@grosmont_mixed_memory@@ GiB versus 1.137 GiB for chfem. The table separates iteration reduction from the time and storage savings obtained at a fixed preconditioner.
+\input{sections_structured/table_solver_summary}
+\FloatBarrier
