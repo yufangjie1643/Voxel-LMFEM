@@ -1,6 +1,10 @@
 # Changelog
 
-## Unreleased
+## 0.1.3
+
+- Add NPY/NPZ model import with axis, material and orientation validation.
+- Consolidate user instructions and format specifications in the root README.
+- Maintain the repository on the main branch.
 
 - Add `voxel-lmfem build` with live CUDA compiler output, elapsed-time updates and saved logs.
 - Explain first-run compilation and cache reuse in the installation and reproduction guides.

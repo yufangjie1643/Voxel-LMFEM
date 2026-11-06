@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "voxel-lmfem"
-version = "0.1.2"
+version = "0.1.3"
 description = "Memory-efficient GPU voxel finite element homogenization"
 readme = "README.md"
 license = "MIT"
@@ -30,7 +30,7 @@ voxel-lmfem = "voxel_lmfem.cli:main"
 
 [project.urls]
 Repository = "https://github.com/yufangjie1643/Voxel-LMFEM"
-Documentation = "https://github.com/yufangjie1643/Voxel-LMFEM/tree/main/docs"
+Documentation = "https://github.com/yufangjie1643/Voxel-LMFEM#readme"
 Issues = "https://github.com/yufangjie1643/Voxel-LMFEM/issues"
 
 [tool.setuptools]

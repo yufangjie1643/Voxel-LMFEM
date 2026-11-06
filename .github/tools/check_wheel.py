@@ -46,6 +46,9 @@ print('PASS isolated wheel:',voxel_lmfem.__version__,voxel_lmfem.__file__)
     subprocess.run([str(python),"-c",code],cwd=work,env=environment,check=True)
     subprocess.run([str(python),"-m","voxel_lmfem","example","--out","input"],
                    cwd=work,env=environment,check=True)
-    subprocess.run([str(python),"-m","voxel_lmfem","solve","--input","input/homogeneous.npz",
-                    "--materials","input/materials.json","--backend","cpu","--output","result.json"],
+    subprocess.run([str(python),"-m","voxel_lmfem","import-model","--input","input/homogeneous.npz",
+                    "--materials","input/materials.json","--out","converted"],
+                   cwd=work,env=environment,check=True)
+    subprocess.run([str(python),"-m","voxel_lmfem","solve","--input","converted/model.npz",
+                    "--materials","converted/materials.json","--backend","cpu","--output","result.json"],
                    cwd=work,env=environment,check=True)

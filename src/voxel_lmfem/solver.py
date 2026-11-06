@@ -53,7 +53,7 @@ def homogenize(phase_id, materials, domain_size, *, orientation=None, backend="c
         try:
             import torch
         except ImportError as exc:
-            raise RuntimeError("Install a CUDA-enabled PyTorch build and the GPU dependencies; see docs/installation.md") from exc
+            raise RuntimeError("Install a CUDA-enabled PyTorch build and the GPU dependencies; see README.md#gpu-environment") from exc
         if not torch.cuda.is_available():
             raise RuntimeError("CUDA is unavailable. Use --backend cpu for a small reference cell, "
                                "or install/configure the CUDA runtime.")

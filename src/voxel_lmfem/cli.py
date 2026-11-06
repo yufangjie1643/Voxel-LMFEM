@@ -152,6 +152,17 @@ def main(argv=None):
     build = sub.add_parser("build", help="Prepare a benchmark's CUDA extensions with live compiler output")
     build.add_argument("--variant", default="execution_fp32", help="chapter-study variant (default: execution_fp32)")
     build.add_argument("--jobs", type=int, help="Number of parallel compiler jobs (default: MAX_JOBS or 2)")
+    importer = sub.add_parser("import-model", help="Import and validate an external labelled voxel volume")
+    importer.add_argument("--input", type=Path, required=True)
+    importer.add_argument("--materials", type=Path, required=True)
+    importer.add_argument("--out", type=Path, required=True, help="New output directory")
+    importer.add_argument("--axes", default="zyx", choices=("xyz", "xzy", "yxz", "yzx", "zxy", "zyx"),
+                          help="Source array dimension order (default: zyx)")
+    dimensions = importer.add_mutually_exclusive_group()
+    dimensions.add_argument("--spacing", type=float, nargs=3, metavar=("DX", "DY", "DZ"))
+    dimensions.add_argument("--domain-size", type=float, nargs=3, metavar=("LX", "LY", "LZ"))
+    importer.add_argument("--key", default="phase_id", help="Label-array key in an NPZ file")
+    importer.add_argument("--orientation", type=Path, help="NPY rotation array or NPZ orientation/axis arrays")
     solve = sub.add_parser("solve", help="Homogenize an NPZ phase field and JSON material table")
     solve.add_argument("--input", type=Path, required=True)
     solve.add_argument("--materials", type=Path, required=True)
@@ -189,6 +200,14 @@ def main(argv=None):
         if args.command == "build":
             from .build import run_build
             run_build(args.variant, args.jobs)
+        elif args.command == "import-model":
+            from .importers import import_model
+            report = import_model(args.input, args.materials, args.out, axes=args.axes,
+                                  spacing=args.spacing, domain_size=args.domain_size, key=args.key,
+                                  orientation_path=args.orientation)
+            print(json.dumps(dict(status="imported", output=str(args.out.resolve()),
+                                  shape=report["shape"], domain_size=report["domain_size"],
+                                  phases=report["phases"]), indent=2))
         elif args.command == "example":
             _example(args.out)
         elif args.command == "solve":

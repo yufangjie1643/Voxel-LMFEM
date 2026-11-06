@@ -1436,12 +1436,6 @@
       "original_path_at_capture": "campaigns/chapter/solver/experiments/chapter_aligned/csr_baseline.py"
     },
     {
-      "path": "repro/bench/chapter_aligned/README.txt",
-      "original": "repro/raw/chapter/solver/experiments/chapter_aligned/README.txt",
-      "sha256": "780a23e76bd2fd39864b9d28526ce369ae6624e76bcbdc6242a56d468c15f125",
-      "original_path_at_capture": "campaigns/chapter/solver/experiments/chapter_aligned/README.txt"
-    },
-    {
       "path": "repro/bench/chapter_aligned/study.py",
       "original": "repro/raw/chapter/solver/experiments/chapter_aligned/study.py",
       "sha256": "d149dd5d2c33ec079783ccd0f82953d128a4e9e4503d289747a49fc3353c1c0c",
@@ -2392,6 +2386,15 @@
       "sha256": "c7b02f8da97ad7796c038be9f94722b061f1a7301ca8c31e287841f1e1cf7503",
       "reason": "One-time deployment helper or historical absolute-path validation plan; preserved only in the frozen campaign.",
       "original_path_at_capture": "campaigns/chapter/solver/experiments/stencil27_baseline/deploy_entrypoints.py"
+    }
+  ],
+  "documentation_moves": [
+    {
+      "path": "repro/bench/chapter_aligned/README.txt",
+      "original": "repro/raw/chapter/solver/experiments/chapter_aligned/README.txt",
+      "sha256": "780a23e76bd2fd39864b9d28526ce369ae6624e76bcbdc6242a56d468c15f125",
+      "original_path_at_capture": "campaigns/chapter/solver/experiments/chapter_aligned/README.txt",
+      "destination": "README.md#csr-baseline"
     }
   ]
 }
