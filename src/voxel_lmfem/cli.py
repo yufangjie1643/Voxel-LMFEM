@@ -14,14 +14,14 @@ from . import __version__
 from .paths import ROOT, configure, require_checkout, source_path
 
 DRIVERS = {
-    "chapter-study": "experiments/chapter_aligned/study.py",
-    "woven-fraction": "experiments/woven_fraction/study.py",
-    "active-study": "experiments/active_fraction/study.py",
-    "active-sweep": "experiments/active_fraction/launch.py",
-    "stencil-study": "experiments/stencil27_baseline/study.py",
-    "compare-stencils": "experiments/stencil27_baseline/launch.py",
-    "fft-precision": "experiments/solver_comparison/fft_precision.py",
-    "verify-stencils-cpu": "experiments/stencil27_baseline/validate_cpu.py",
+    "chapter-study": "repro/bench/chapter_aligned/study.py",
+    "woven-fraction": "repro/bench/woven_fraction/study.py",
+    "active-study": "repro/bench/active_fraction/study.py",
+    "active-sweep": "repro/bench/active_fraction/launch.py",
+    "stencil-study": "repro/bench/stencil27_baseline/study.py",
+    "compare-stencils": "repro/bench/stencil27_baseline/launch.py",
+    "fft-precision": "repro/bench/solver_comparison/fft_precision.py",
+    "verify-stencils-cpu": "repro/bench/stencil27_baseline/validate_cpu.py",
 }
 
 
@@ -67,9 +67,9 @@ def _prepare(cases, grids, directory):
     require_checkout()
     configure()
     import shutil
-    module = _load("voxel_case_inputs", ROOT / "experiments/solver_comparison/cases.py")
-    frozen = ROOT / "archive/paper/solver/remote/inputs"
-    archive = ROOT / "archive/chapter/solver/data/grosmont"
+    module = _load("voxel_case_inputs", ROOT / "repro/bench/solver_comparison/cases.py")
+    frozen = ROOT / "repro/raw/paper/solver/remote/inputs"
+    archive = ROOT / "repro/raw/chapter/solver/data/grosmont"
     directory.mkdir(parents=True, exist_ok=True)
     results = []
     for case in cases:
@@ -113,7 +113,7 @@ def _check(kind, output):
         _save(output, module.cpu())
     else:
         require_checkout()
-        target = ROOT / "validation/material_state/verify.py"
+        target = ROOT / "tests/material_state/verify.py"
         sys.path.insert(0, str(target.parent))
         module = _load("voxel_state_validation", target)
         # The original verifier writes validation.json; use a dedicated temporary
@@ -160,7 +160,7 @@ def main(argv=None):
     prepare = sub.add_parser("prepare-inputs", help="Prepare hash-verified benchmark inputs")
     prepare.add_argument("--cases", nargs="+", choices=("sphere", "grosmont"), default=["sphere","grosmont"])
     prepare.add_argument("--grids", nargs="+", type=int, default=[192])
-    prepare.add_argument("--directory", type=Path, default=ROOT/"data/cases")
+    prepare.add_argument("--directory", type=Path, default=ROOT/"repro/inputs")
     args = parser.parse_args(argv)
     try:
         if args.command == "doctor":

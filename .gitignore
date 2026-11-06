@@ -2,11 +2,7 @@ __pycache__/
 *.pyc
 .venv/
 .cache/
-archive/*/solver/runs/
-archive/*/solver/validation/
 /runs/
-/data/cases/
-/validation/progressive_storage/
 /build/
 /dist/
 *.egg-info/
@@ -15,5 +11,7 @@ archive/*/solver/validation/
 .coverage
 htmlcov/
 
-# Local outputs from pre-migration checkouts
-/campaigns/
+/repro/inputs/*.npy
+/repro/inputs/*.json
+/repro/raw/*/solver/runs/
+/repro/raw/*/solver/validation/

@@ -1,45 +1,37 @@
 # Validation
 
-Create the uv environment following docs/installation.md, then run these commands from the repository root.
+## Numerical and interface tests
 
-## Automated regression tests
+```bash
+uv pip install -e ".[dev]"
+uv run --no-sync python -m pytest -q
+```
 
-    uv pip install -e ".[dev]"
-    uv run --no-sync python -m pytest -q
-    uv run --no-sync python -m ruff check src/voxel_lmfem tests examples run.py project_paths.py
+The tests cover homogeneous stiffness, layered materials with an analytical traction-continuity solution, rotated anisotropy, input validation and the command-line interface.
 
-Tests compare homogeneous stiffness with the constitutive tensor, layered cells with an independent traction-continuity solution, and rotated anisotropy with the expected axis permutation. Input checks reject invalid labels, non-positive materials, missing orientation and left-handed rotations. CLI tests run outside the repository and verify output preservation.
+## Finite element and material-state checks
 
-Continuous integration runs CPU tests, source checks, wheel construction and paper-data regeneration on Linux and Windows with Python 3.12. It also tests a wheel outside the checkout in a separate environment.
+```bash
+uv pip install --torch-backend=cpu --reinstall-package torch -e ".[cpu-checks]"
+uv run --no-sync voxel-lmfem check fi --output runs/checks/fi.json
+uv run --no-sync voxel-lmfem check material-state --output runs/checks/material_state.json
+uv run --no-sync voxel-lmfem woven-fraction --phase geometry --grid 32 --out runs/checks/geometry
+```
 
-## Original independent checks
+These checks exercise the independently assembled FI operator, five material-history cases and 21 yarn-fraction geometries. Use a new output path for each run.
 
-    uv run --no-sync python run.py check fi --output runs/checks/fi.json
-    uv run --no-sync python run.py check material-state --output runs/checks/material_state.json
-    uv run --no-sync python run.py woven-fraction --phase geometry --grid 32 --out runs/checks/geometry
+## GPU integration
 
-The FI check needs PyTorch, but not CUDA. The material-state example uses NumPy/SciPy. The geometry check covers 21 fraction constructions.
+After installing the GPU and development dependencies on Linux:
 
-## GPU integration test
+```bash
+VOXEL_LMFEM_TEST_GPU=1 uv run --no-sync python -m pytest tests/test_gpu.py -q
+```
 
-With a configured Linux CUDA environment:
+The integration test compares a heterogeneous, rotated-anisotropic 4³ cell with the independent CPU solution and checks the final residual. CPU CI runs the remaining tests.
 
-    VOXEL_LMFEM_TEST_GPU=1 uv run --no-sync python -m pytest tests/test_gpu.py -q
+## Model and execution scope
 
-This compares a heterogeneous, rotated anisotropic 4³ cell against the independent CPU solution and checks the true residual. Ordinary CPU CI skips it. Passing CPU tests does not certify a GPU installation.
+The solver implements periodic, small-strain linear elasticity with positive-definite stiffness tensors and fully integrated rectangular HEX8 elements. Each call solves six macroscopic engineering-strain loads. The CPU reference supports up to 4096 voxels; the CUDA backend handles larger cells. The material-state fixture is a separate CPU example.
 
-## Archived observations
-
-    uv run --no-sync python run.py reproduce
-
-This validates checksums, residuals, repetition counts, table rounding and tensor comparisons from measured records. It does not rerun GPU timings. See repro/REPRODUCING.md for measurement conventions and external-reference scope.
-
-## Scope and limits
-
-- Small-strain linear elasticity with symmetric positive-definite tensors.
-- Axis-aligned rectangular periodic HEX8 grids; elementwise constant stiffness.
-- One cell per public API call; six engineering-strain loads.
-- CPU reference limited to 4096 voxels.
-- GPU workflow requires a CUDA toolchain and native extension compilation.
-- Material-state example is a separate CPU fixture, not a nonlinear GPU solver.
-- Performance depends on the recorded hardware, software and timing protocol.
+Paper-data checks regenerate archived observations. Fresh GPU measurements use the benchmark commands and protocols in [Paper reproduction](../repro/README.md).

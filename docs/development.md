@@ -1,24 +1,32 @@
 # Development
 
-Create the uv environment as described in docs/installation.md, then install with uv pip install -e ".[dev]". New outputs belong under runs/; working benchmark inputs belong under data/cases/.
+Create the environment following [Installation](installation.md), then install the development tools:
 
-Public API changes need tests against physical or analytical invariants. GPU execution changes need the opt-in GPU comparison as well as CPU checks. Never edit frozen campaigns to make a current test pass. A changed method or protocol needs a new measured campaign and its source-to-claim map.
+```bash
+uv pip install -e ".[dev]"
+uv run --no-sync python -m pytest -q
+uv run --no-sync python -m ruff check src tests examples
+uv build
+```
 
-The maintained layer changes the original organization as follows:
+Build outputs are written to `dist/`. The wheel contains the Python API and numerical implementation; the full repository also contains the paper's experiments and data.
 
-1. Consolidate identical numerical modules in src/voxel_lmfem/_core/ without changing their bytes.
-2. Replace machine-specific source discovery with installed-package paths.
-3. Dispatch both main and yarn-fraction experiments through one root entry.
-4. Read isotropic inputs from data/cases/, populated by hash-verified preparation.
-5. Expose the existing independent assembly through a small CPU adapter, with the exact homogeneous zero-fluctuation solution.
-6. Keep public input validation and CLI errors separate from measured numerical kernels.
+## Working directories
 
-Build distributions with:
+- `src/`: solver implementation and public interfaces.
+- `tests/`: numerical and interface tests.
+- `examples/`: small examples and material configurations.
+- `repro/bench/`: benchmark protocols and measurement drivers.
+- `runs/`: local computation results.
 
-    uv build
+Use analytical solutions, mechanics invariants and independent numerical references to verify solver changes. The [validation guide](validation.md) describes the available checks.
 
-The wheel contains the public API and numerical core. The source distribution also contains maintained examples, tests, protocols and documentation. The full GitHub release ZIP additionally contains the measurement archive.
+## Names and paths
 
-v0.1.0 is the first maintained-source release. Earlier fead-2026-10-25-v1 and v2 tags identify review packages. Use forward commits and new tags; preserve published snapshots.
+Use descriptive file names and group files by purpose. Repository-relative paths are limited to 120 characters, individual names to 64 characters, and depth to 12 components. Run the project checks with:
 
-The one-time deploy_entrypoints helper and old absolute-path validation plan stay only in archive/. The maintained source snapshot helper discovers the current checkout, and the chapter guide points to the current table regeneration entry.
+```bash
+uv run --no-sync python .github/tools/check_paths.py
+```
+
+CI runs path checks, numerical tests, input preparation, table generation and package installation on Windows and Linux.

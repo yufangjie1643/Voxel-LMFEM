@@ -7,7 +7,7 @@ Run the following commands from the repository root after creating the uv enviro
     uv run --no-sync voxel-lmfem example --out runs/example
     uv run --no-sync voxel-lmfem solve --input runs/example/homogeneous.npz --materials runs/example/materials.json --backend cpu --output runs/example/result.json
 
-The example uses the matrix properties from Table 1 and an illustrative unit cube. Its exact effective stiffness equals the constituent stiffness. Existing output files are never overwritten. The equivalent Python example is examples/homogeneous.py.
+The example uses the matrix properties from Table 1 and an illustrative unit cube. Its exact effective stiffness equals the constituent stiffness. Use a new output path for each run. The equivalent Python example is examples/homogeneous.py.
 
 ## Python interface
 
@@ -41,7 +41,7 @@ Material definitions:
 
 The engineering-Voigt order is **11, 22, 33, 23, 13, 12**. Engineering shear strains are doubled; shear stresses are not. Use consistent units; output stiffness has the same units as input moduli. Archived paper values use MPa.
 
-The mesh uses periodic, axis-aligned rectangular HEX8 elements with full integration and elementwise constant stiffness. Six unit macroscopic engineering-strain loads define the columns of CH. No post-hoc tensor symmetrization is performed.
+The mesh uses periodic, axis-aligned rectangular HEX8 elements with full integration and elementwise constant stiffness. Six unit macroscopic engineering-strain loads define the columns of CH.
 
 ## GPU solve
 
@@ -53,10 +53,10 @@ Output records the backend, stiffness, residual checks and elapsed time. The GPU
 
 Prepare canonical isotropic inputs in a repository checkout:
 
-    uv run --no-sync python run.py prepare-inputs
-    uv run --no-sync python run.py chapter-study --phase launch --cases sphere,grosmont,woven --grid 192 --variants stencil27_jacobi,execution_fp32 --repeats 3 --out runs/table3
-    uv run --no-sync python run.py woven-fraction --phase launch --grid 192 --fractions all --repeats 3 --out runs/woven_fraction
+    uv run --no-sync voxel-lmfem prepare-inputs
+    uv run --no-sync voxel-lmfem chapter-study --phase launch --cases sphere,grosmont,woven --grid 192 --variants stencil27_jacobi,execution_fp32 --repeats 3 --out runs/table3
+    uv run --no-sync voxel-lmfem woven-fraction --phase launch --grid 192 --fractions all --repeats 3 --out runs/woven_fraction
 
-Launch phases create fresh worker processes through the Unix launcher; run GPU campaigns on Linux. Use uv run --no-sync python run.py COMMAND --help for driver options. Maintained drivers read data/cases/; historical identifiers are resolved through repro/path_map.json.
+Launch phases create fresh worker processes through the Unix launcher; run GPU campaigns on Linux. Use uv run --no-sync voxel-lmfem COMMAND --help for driver options. Benchmark inputs are read from repro/inputs/.
 
-Each process owns a configured numerical backend. Use separate processes for concurrent solves; the compatibility modules do not support simultaneous solver configurations in multiple threads.
+Each process owns a configured numerical backend. Use separate processes for concurrent solves; each process owns its solver configuration.

@@ -246,7 +246,7 @@ def _regenerate(out):
         convergence_grids=len(rows), finest_grid=480, cost_groups=len(cost),
         woven_fraction_records=fraction_summary["record_count"],
         active_fraction_records=len(active_summary["records"]),
-        verification_scope="Archived-result regeneration and analytical laminate calculations; no new GPU timings")
+        verification_scope="Archived-result regeneration and analytical laminate calculations")
     dump(out / "verification.json", report)
     manifest = read(ROOT / "repro/table_manifest.json")
     lines = ["# Current manuscript tables and numerical figure data", "",
@@ -256,7 +256,7 @@ def _regenerate(out):
         lines.append(f'| {item["item"]} | {item["section"]} | [{item["output"]}]({item["output"]}) |')
     lines += ["", "Source columns preserve the original campaign-relative identifiers. Prepend the historical roots",
               "campaigns/chapter/manuscript_evidence/ (or campaigns/woven_fraction/revision/review_results/woven_fraction_20261025/",
-              "for Figure 11), then resolve through ../path_map.json to the current archive/ files.", "",
+              "for Figure 11), then resolve through ../path_map.json to the current repro/raw/ files.", "",
               "Figure 8 uses 480³ as the reference. Table 3 uses stencil Jacobi–PCG for all three cases.",
               "Archived 19-row summaries and 256³-reference summaries are historical inputs, not current manuscript outputs.", ""]
     (out / "TABLES.md").write_text("\n".join(lines), encoding="utf-8")

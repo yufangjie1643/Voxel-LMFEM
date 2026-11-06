@@ -24,18 +24,22 @@ jobs:
         with:
           python-version: '3.12'
       - name: Check portable repository paths
-        run: python scripts/check_paths.py
+        run: python .github/tools/check_paths.py
       - name: Install
         run: python -m pip install -e ".[dev]"
       - name: Check maintained Python source
-        run: python -m ruff check src/voxel_lmfem tests examples run.py project_paths.py
+        run: python -m ruff check src/voxel_lmfem tests examples src/project_paths.py
       - name: Run numerical and interface tests
         run: python -m pytest -q
       - name: Prepare benchmark inputs
-        run: python run.py prepare-inputs
+        run: python -m voxel_lmfem prepare-inputs
+      - name: Check material states and geometry
+        run: |
+          python -m voxel_lmfem check material-state --output runs/ci/state.json
+          python -m voxel_lmfem woven-fraction --phase geometry --grid 32 --out runs/ci/geometry
       - name: Regenerate manuscript data
-        run: python run.py reproduce
+        run: python -m voxel_lmfem reproduce
       - name: Build distributions
         run: python -m build
       - name: Test isolated wheel
-        run: python scripts/check_wheel.py
+        run: python .github/tools/check_wheel.py

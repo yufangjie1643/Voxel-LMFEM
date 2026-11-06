@@ -1,48 +1,47 @@
 # Installation
 
-Install [uv](https://docs.astral.sh/uv/getting-started/installation/) first. Python 3.10 or newer is required; the commands below select Python 3.12, matching the release checks. Repository paths are checked for Windows compatibility; use the ordinary clone command below.
+Install [uv](https://docs.astral.sh/uv/getting-started/installation/) and create a Python 3.12 environment:
 
-    git clone https://github.com/yufangjie1643/Voxel-LMFEM.git
-    cd Voxel-LMFEM
-    uv venv --python 3.12
-    uv pip install -e .
-    uv run --no-sync voxel-lmfem doctor
+```bash
+git clone https://github.com/yufangjie1643/Voxel-LMFEM.git
+cd Voxel-LMFEM
+uv venv --python 3.12
+uv pip install -e .
+uv run --no-sync voxel-lmfem doctor
+```
 
-uv venv creates the local .venv, uv pip installs dependencies from pyproject.toml, and uv run --no-sync runs commands in that installed environment. Shell activation is optional. This workflow keeps the chosen PyTorch backend when running examples and benchmarks. See the [uv environment guide](https://docs.astral.sh/uv/pip/environments/).
+uv manages `.venv`; `uv run --no-sync` uses its installed packages. The base dependencies are NumPy and SciPy. Python 3.10 and newer are supported.
 
-The base installation uses NumPy and SciPy. Its independent CPU reference supports up to 4096 voxels. PyTorch and a GPU are not required for this reference, examples or table regeneration.
+## GPU environment
 
-For development:
+Use Linux with an NVIDIA GPU, driver, CUDA toolkit and C++ compiler:
 
-    uv pip install -e ".[dev]"
-    uv run --no-sync python -m pytest -q
+```bash
+uv pip install --torch-backend=auto --reinstall-package torch -e ".[gpu]"
+uv run --no-sync voxel-lmfem doctor --require-cuda
+```
 
-For the original independent FI validation, additionally install a CPU or CUDA build of PyTorch:
+For CUDA 13.0, select `--torch-backend=cu130`. See the [uv/PyTorch guide](https://docs.astral.sh/uv/guides/integration/pytorch/) for supported backends. CUDA extensions compile on first use. The GPU extra includes Ninja, packaging and Numba; the CSR baseline also needs [CuPy](https://docs.cupy.dev/en/stable/install.html).
 
-    uv pip install --torch-backend=cpu --reinstall-package torch -e ".[cpu-checks]"
-    uv run --no-sync python run.py check fi --output runs/checks/fi.json
+The paper's environment is recorded in `repro/environment.txt`: RTX 5090, Python 3.12, PyTorch 2.12.0+cu130 and CUDA 13.0.
 
-## GPU installation
+Compiled extensions are cached in `~/.cache/voxel-lmfem/torch_extensions`. Set `TORCH_EXTENSIONS_DIR` to choose another cache location.
 
-Use Linux with a supported NVIDIA GPU, driver, CUDA toolkit and C++ compiler. In the .venv created above, let uv choose the PyTorch backend compatible with the installed driver:
+## Development tools
 
-    uv pip install --torch-backend=auto --reinstall-package torch -e ".[gpu]"
-    uv run --no-sync voxel-lmfem doctor --require-cuda
+```bash
+uv pip install -e ".[dev]"
+uv run --no-sync python -m pytest -q
+```
 
-For an explicitly selected CUDA 13.0 backend, use uv pip install --torch-backend=cu130 --reinstall-package torch -e ".[gpu]". The reinstall flag also replaces a previously installed CPU build when switching backends. Automatic selection falls back to CPU when no supported GPU is detected; doctor --require-cuda confirms CUDA availability. See the [official uv/PyTorch guide](https://docs.astral.sh/uv/guides/integration/pytorch/#automatic-backend-selection) and [PyTorch installation selector](https://pytorch.org/get-started/locally/) for backend compatibility.
+## Wheel installation
 
-The GPU numerical modules compile CUDA extensions on first use. Ninja, packaging and Numba are included in the gpu extra. The stored-stencil baseline also uses Triton from the Linux PyTorch environment. The optional CSR baseline requires [a compatible CuPy installation](https://docs.cupy.dev/en/stable/install.html).
+Download the wheel from [Releases](https://github.com/yufangjie1643/Voxel-LMFEM/releases), then:
 
-The paper measurements used RTX 5090 / PyTorch 2.12.0+cu130 / CUDA 13.0. requirements/measurement-environment.txt preserves the recorded package versions. It is a provenance record, not a cross-platform environment lock.
+```bash
+uv venv --python 3.12
+uv pip install voxel_lmfem-0.1.2-py3-none-any.whl
+uv run --no-project python -m voxel_lmfem --help
+```
 
-Launch repository commands with uv run --no-sync python run.py COMMAND. On Linux, uv run --no-sync ./run COMMAND also passes the environment to worker processes. VOXEL_PYTHON can explicitly select the interpreter for the Unix ./run launcher. Compiled extensions default to ~/.cache/voxel-lmfem/torch_extensions; TORCH_EXTENSIONS_DIR overrides that location.
-
-## Installation from a wheel
-
-The release wheel includes the public API and numerical core. It supports solve, example, doctor, and the FI CPU check outside a checkout. Paper reproduction, benchmark campaigns and the material-state fixture also need the full repository.
-
-    uv venv --python 3.12
-    uv pip install voxel_lmfem-0.1.1-py3-none-any.whl
-    uv run --no-project python -m voxel_lmfem --help
-
-When using a wheel with a separate checkout, run checkout-specific commands from that checkout or set VOXEL_LMFEM_ROOT to its absolute path. GPU performance and native extension compatibility must be checked on the target machine.
+The wheel provides the solver API and CLI. Benchmark campaigns, material-state fixtures and paper reproduction use the full repository checkout. `VOXEL_LMFEM_ROOT` selects a separate checkout when needed.

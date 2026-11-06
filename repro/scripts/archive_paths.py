@@ -22,7 +22,7 @@ def staged_campaigns(repository):
                 raise ValueError(f"Invalid historical path: {original}")
             source = (repository/row["path"]).resolve()
             target = (stage/Path(*original.parts[1:])).resolve()
-            if not source.is_relative_to(repository/"archive") or not target.is_relative_to(stage):
+            if not source.is_relative_to(repository/"repro/raw") or not target.is_relative_to(stage):
                 raise ValueError("Archive path escaped its containing directory")
             if target in destinations:
                 raise ValueError(f"Duplicate archive destination: {target}")

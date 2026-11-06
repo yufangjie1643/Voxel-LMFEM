@@ -44,7 +44,7 @@ def configure():
 
 
 def require_checkout():
-    if not (ROOT / "experiments").is_dir() or not (ROOT / "repro/table_manifest.json").is_file():
+    if not (ROOT / "repro/bench").is_dir() or not (ROOT / "repro/table_manifest.json").is_file():
         raise ValueError("This command needs a repository checkout. Run it from Voxel-LMFEM, "
                          "or set VOXEL_LMFEM_ROOT to that checkout.")
     return ROOT
