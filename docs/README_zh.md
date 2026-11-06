@@ -29,6 +29,14 @@ uv run --no-sync voxel-lmfem doctor --require-cuda
 uv run --no-sync voxel-lmfem solve --input model.npz --materials materials.json --backend cuda --output runs/model/result.json
 ```
 
+首次 GPU 运行会编译 C++/CUDA 扩展，可能需要几分钟。可以先单独编译论文求解器，查看实时编译输出：
+
+```bash
+uv run --no-sync voxel-lmfem build
+```
+
+命令同时运行一个小型编织单胞检查，后续运行会复用编译缓存。编译选项及日志位置见[安装说明](installation.md#prepare-cuda-extensions)。
+
 ## 论文复现
 
 ```bash

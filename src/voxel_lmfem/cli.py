@@ -54,7 +54,12 @@ def _driver(command, arguments):
                 if not Path(arguments[i+1]).resolve().is_relative_to(ROOT):
                     raise ValueError("Experiment output must stay inside the repository")
         sys.argv = [str(target), *arguments]
-        runpy.run_path(str(target), run_name="__main__")
+        progress = contextlib.nullcontext()
+        if os.environ.get("VOXEL_LMFEM_BUILD_PROGRESS") == "1":
+            from .build import build_progress
+            progress = build_progress()
+        with progress:
+            runpy.run_path(str(target), run_name="__main__")
     finally:
         os.chdir(original_directory)
         sys.argv = original_arguments
@@ -144,6 +149,9 @@ def main(argv=None):
     sub = parser.add_subparsers(dest="command", required=True)
     doctor = sub.add_parser("doctor", help="Report the Python and CUDA environment")
     doctor.add_argument("--require-cuda", action="store_true")
+    build = sub.add_parser("build", help="Prepare a benchmark's CUDA extensions with live compiler output")
+    build.add_argument("--variant", default="execution_fp32", help="chapter-study variant (default: execution_fp32)")
+    build.add_argument("--jobs", type=int, help="Number of parallel compiler jobs (default: MAX_JOBS or 2)")
     solve = sub.add_parser("solve", help="Homogenize an NPZ phase field and JSON material table")
     solve.add_argument("--input", type=Path, required=True)
     solve.add_argument("--materials", type=Path, required=True)
@@ -178,7 +186,10 @@ def main(argv=None):
                 info["torch"] = "not installed (optional for CPU reference)"
             print(json.dumps(info, indent=2))
             return 1 if args.require_cuda and not info["cuda_available"] else 0
-        if args.command == "example":
+        if args.command == "build":
+            from .build import run_build
+            run_build(args.variant, args.jobs)
+        elif args.command == "example":
             _example(args.out)
         elif args.command == "solve":
             if args.output.exists():

@@ -45,6 +45,12 @@ Use Linux, an NVIDIA GPU, a matching driver/CUDA toolkit, a working C++/CUDA com
 
 Install the CUDA-enabled PyTorch build and dependencies following [Installation](../docs/installation.md). The benchmark workers inherit the uv environment.
 
+First use compiles CUDA extensions and can take several minutes. Prepare the default paper solver with live compiler output before launching a campaign:
+
+    uv run --no-sync voxel-lmfem build
+
+This compiles or loads the cached extensions and runs an 8³ woven-cell check. Logs are saved under runs/build/. Use --variant stencil27_jacobi to prepare the Table 3 baseline. The shell's elapsed time includes compilation and warm-up; the PASS line reports the measured solver workflow.
+
 The large stencil cases need substantially more GPU memory than the proposed solver. Keep the GPU exclusive during timing. Geometry generation, JIT compilation, warm-up and I/O are outside the measurement window.
 
 ## 4. Rerun chapter benchmarks

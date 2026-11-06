@@ -27,6 +27,27 @@ The paper's environment is recorded in `repro/environment.txt`: RTX 5090, Python
 
 Compiled extensions are cached in `~/.cache/voxel-lmfem/torch_extensions`. Set `TORCH_EXTENSIONS_DIR` to choose another cache location.
 
+## Prepare CUDA extensions
+
+The first GPU run compiles C++/CUDA extensions for the selected solver and can take several minutes. From a repository checkout, prepare the default paper solver before running benchmarks:
+
+```bash
+uv run --no-sync voxel-lmfem build
+```
+
+This prepares `execution_fp32` and runs an 8³ woven-cell check. Output shows the GPU and toolkit, each extension, live Ninja/compiler messages, elapsed time and a completion summary. A running extension reports its elapsed time every 15 seconds. Each invocation saves `build.log` and the check result in a new directory under `runs/build/`.
+
+Prepare another chapter-study configuration or choose the compiler's parallelism with:
+
+```bash
+uv run --no-sync voxel-lmfem build --variant stencil27_jacobi
+uv run --no-sync voxel-lmfem build --variant execution_fp32 --jobs 4
+```
+
+The default compiler parallelism is `MAX_JOBS`, or 2 when unset. More jobs use more host memory. Repeating the command reuses the extension cache. Changes to extension sources, build flags, GPU architecture or the PyTorch/CUDA environment can require rebuilding.
+
+The shell's elapsed time includes compilation, initialization, warm-up and checks. The time on a chapter-study `PASS` line is the measured solver workflow after warm-up.
+
 ## Development tools
 
 ```bash

@@ -29,6 +29,14 @@ uv run --no-sync voxel-lmfem doctor --require-cuda
 uv run --no-sync voxel-lmfem solve --input model.npz --materials materials.json --backend cuda --output runs/model/result.json
 ```
 
+The first GPU run compiles C++/CUDA extensions and can take several minutes. To prepare the paper solver with live compiler output, run:
+
+```bash
+uv run --no-sync voxel-lmfem build
+```
+
+The command also runs a small woven-cell check. Subsequent runs reuse the compiled extensions. See [CUDA preparation](docs/installation.md#prepare-cuda-extensions) for build options and logs.
+
 ## Paper reproduction
 
 ```bash

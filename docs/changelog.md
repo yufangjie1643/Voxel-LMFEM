@@ -1,5 +1,10 @@
 # Changelog
 
+## Unreleased
+
+- Add `voxel-lmfem build` with live CUDA compiler output, elapsed-time updates and saved logs.
+- Explain first-run compilation and cache reuse in the installation and reproduction guides.
+
 ## 0.1.2
 
 - Group benchmarks, reference solvers and research data under `repro/`.
