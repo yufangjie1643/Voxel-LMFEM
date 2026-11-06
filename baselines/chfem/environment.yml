@@ -1,0 +1,12 @@
+name: chfem
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python
+  - pip
+  - cmake
+  - numpy
+  - jupyter
+  - ocl-icd-system
+  # - cudatoolkit-dev

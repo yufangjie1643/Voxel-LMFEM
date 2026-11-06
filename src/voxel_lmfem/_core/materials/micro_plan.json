@@ -1,0 +1,32 @@
+[
+  {
+    "name": "micro_pure_192_r0",
+    "arguments": [
+      "compare.py",
+      "--variant",
+      "pure",
+      "--mode",
+      "micro"
+    ]
+  },
+  {
+    "name": "micro_dense_192_r0",
+    "arguments": [
+      "compare.py",
+      "--variant",
+      "dense",
+      "--mode",
+      "micro"
+    ]
+  },
+  {
+    "name": "micro_hybrid_192_r0",
+    "arguments": [
+      "compare.py",
+      "--variant",
+      "hybrid",
+      "--mode",
+      "micro"
+    ]
+  }
+]

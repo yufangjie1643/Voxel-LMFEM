@@ -1,0 +1,44 @@
+[
+  {
+    "name": "sphere8_paper",
+    "arguments": [
+      "study.py",
+      "--case",
+      "sphere",
+      "--grid",
+      "8",
+      "--variant",
+      "paper",
+      "--repeat",
+      "0"
+    ]
+  },
+  {
+    "name": "sphere8_latest",
+    "arguments": [
+      "study.py",
+      "--case",
+      "sphere",
+      "--grid",
+      "8",
+      "--variant",
+      "latest",
+      "--repeat",
+      "0"
+    ]
+  },
+  {
+    "name": "sphere8_chfem",
+    "arguments": [
+      "chfem_study.py",
+      "--phase",
+      "measure",
+      "--input",
+      "inputs/sphere_8.npy",
+      "--output",
+      "results/sphere8_chfem.json",
+      "--native-tol",
+      "2e-9"
+    ]
+  }
+]

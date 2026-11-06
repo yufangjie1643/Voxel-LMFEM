@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+set -eo pipefail
+project_dir="$(cd -- "$(dirname -- "$0")" && pwd)"
+if [ -z "$VOXEL_PYTHON" ]; then VOXEL_PYTHON=python3; fi
+exec "$VOXEL_PYTHON" -B "$project_dir/run.py" "$@"

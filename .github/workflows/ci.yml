@@ -1,0 +1,39 @@
+name: CPU verification
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  cpu:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - name: Enable Windows long paths
+        if: runner.os == 'Windows'
+        run: git config --global core.longpaths true
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install
+        run: python -m pip install -e ".[dev]"
+      - name: Check maintained Python source
+        run: python -m ruff check src/voxel_lmfem tests examples run.py project_paths.py
+      - name: Run numerical and interface tests
+        run: python -m pytest -q
+      - name: Prepare benchmark inputs
+        run: python run.py prepare-inputs
+      - name: Regenerate manuscript data
+        run: python run.py reproduce
+      - name: Build distributions
+        run: python -m build
+      - name: Test isolated wheel
+        run: python scripts/check_wheel.py

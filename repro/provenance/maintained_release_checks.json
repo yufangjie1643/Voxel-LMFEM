@@ -1,0 +1,522 @@
+{
+  "date": "2026-11-06",
+  "version": "0.1.0",
+  "canonical_numerical_core_files": 238,
+  "core_bytes_unchanged": true,
+  "infrastructure_changes": [
+    "experiments/chapter_aligned/README.txt",
+    "experiments/solver_comparison/cases.py",
+    "experiments/solver_comparison/study.py",
+    "experiments/stencil27_baseline/snapshot_sources.py",
+    "experiments/stencil27_baseline/validate_cpu.py"
+  ],
+  "pytest": {
+    "passed": 12,
+    "skipped": 1,
+    "skipped_scope": "Opt-in CUDA integration; no new GPU execution"
+  },
+  "ruff": "passed",
+  "isolated_wheel": "passed outside checkout",
+  "independent_fi_cpu": {
+    "passed": true,
+    "device": "cpu",
+    "rows": [
+      {
+        "shape": [
+          2,
+          3,
+          4
+        ],
+        "relative": 2.9317650712135865e-16
+      },
+      {
+        "shape": [
+          2,
+          3,
+          4
+        ],
+        "relative": 3.9621105220835683e-16
+      },
+      {
+        "shape": [
+          5,
+          4,
+          3
+        ],
+        "relative": 3.2456326628629864e-16
+      },
+      {
+        "shape": [
+          5,
+          4,
+          3
+        ],
+        "relative": 3.8668607432802496e-16
+      }
+    ]
+  },
+  "material_state": {
+    "status": "passed",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "numpy": "2.4.6",
+    "scope": "CPU prototype; 5 frozen 3^3 FI cases x 6 loads, and 2^3 damage path; not GPU integration",
+    "frozen_cases": [
+      {
+        "name": "discrete_1point_history",
+        "storage_bytes": {
+          "catalog": 672,
+          "phase": 108,
+          "committed": 27,
+          "trial": 27
+        },
+        "active_elements": 25,
+        "Ku_relative": 3.2841565471289083e-16,
+        "loads": [
+          {
+            "true_residual": 5.326453776835985e-12,
+            "stress_relative": 9.903220850523107e-12,
+            "displacement_relative": 6.122964232169056e-11,
+            "energy_relative": 8.540271206463484e-16
+          },
+          {
+            "true_residual": 9.160000707274588e-12,
+            "stress_relative": 2.926069995485317e-13,
+            "displacement_relative": 2.2915196499548703e-12,
+            "energy_relative": 0.0
+          },
+          {
+            "true_residual": 5.992875827182289e-12,
+            "stress_relative": 1.2379412518825072e-13,
+            "displacement_relative": 2.1762574326729156e-12,
+            "energy_relative": 1.4465392184269847e-15
+          },
+          {
+            "true_residual": 2.267673697053815e-12,
+            "stress_relative": 9.807153419200623e-14,
+            "displacement_relative": 3.2984566660255186e-13,
+            "energy_relative": 1.1491635263591857e-15
+          },
+          {
+            "true_residual": 4.246296726139178e-12,
+            "stress_relative": 2.94353096842533e-11,
+            "displacement_relative": 1.7350804426851174e-11,
+            "energy_relative": 6.63515517219383e-16
+          },
+          {
+            "true_residual": 8.367402505767645e-12,
+            "stress_relative": 7.371295324681639e-11,
+            "displacement_relative": 2.315478099824869e-11,
+            "energy_relative": 6.751205561479651e-16
+          }
+        ],
+        "rollback_lock_and_irreversibility": "passed"
+      },
+      {
+        "name": "discrete_8point_history",
+        "storage_bytes": {
+          "catalog": 672,
+          "phase": 108,
+          "committed": 216,
+          "trial": 216
+        },
+        "active_elements": 27,
+        "Ku_relative": 2.7481451878933955e-16,
+        "loads": [
+          {
+            "true_residual": 4.670796276385133e-12,
+            "stress_relative": 6.648409886819837e-13,
+            "displacement_relative": 1.3052844233262377e-11,
+            "energy_relative": 1.3514508608164373e-15
+          },
+          {
+            "true_residual": 8.633647962831613e-12,
+            "stress_relative": 3.644632949539156e-13,
+            "displacement_relative": 2.3176644962045874e-12,
+            "energy_relative": 9.357077921851169e-16
+          },
+          {
+            "true_residual": 6.233296172337677e-12,
+            "stress_relative": 1.1056409877323919e-13,
+            "displacement_relative": 4.124482617367696e-12,
+            "energy_relative": 1.4514484013148454e-15
+          },
+          {
+            "true_residual": 4.462202826329193e-12,
+            "stress_relative": 2.7489344065706483e-13,
+            "displacement_relative": 8.61433298538052e-13,
+            "energy_relative": 1.6127436812579854e-15
+          },
+          {
+            "true_residual": 5.987278765796668e-12,
+            "stress_relative": 1.237550953651673e-12,
+            "displacement_relative": 6.571837996033493e-12,
+            "energy_relative": 9.6076713839449e-16
+          },
+          {
+            "true_residual": 9.03152828877556e-12,
+            "stress_relative": 2.0706106212001465e-12,
+            "displacement_relative": 1.1042983573990096e-11,
+            "energy_relative": 1.6350990805870291e-15
+          }
+        ],
+        "rollback_lock_and_irreversibility": "passed"
+      },
+      {
+        "name": "scalar_1point_history",
+        "storage_bytes": {
+          "catalog": 336,
+          "phase": 108,
+          "committed": 216,
+          "trial": 216
+        },
+        "active_elements": 27,
+        "Ku_relative": 2.987050381481055e-16,
+        "loads": [
+          {
+            "true_residual": 6.239782066387502e-12,
+            "stress_relative": 7.627566596070225e-13,
+            "displacement_relative": 3.652617495788394e-11,
+            "energy_relative": 8.515491891478681e-16
+          },
+          {
+            "true_residual": 5.878480190000414e-12,
+            "stress_relative": 4.0457915403900544e-13,
+            "displacement_relative": 6.442837853049536e-13,
+            "energy_relative": 6.114270076384929e-16
+          },
+          {
+            "true_residual": 8.60253981541428e-12,
+            "stress_relative": 1.2599749748340902e-13,
+            "displacement_relative": 3.3938060004269134e-12,
+            "energy_relative": 1.5990431150044276e-15
+          },
+          {
+            "true_residual": 4.618306374496426e-12,
+            "stress_relative": 4.160651613059126e-13,
+            "displacement_relative": 4.4835631184447346e-13,
+            "energy_relative": 3.7163825259342833e-16
+          },
+          {
+            "true_residual": 9.579479829253497e-12,
+            "stress_relative": 1.2004297597708222e-12,
+            "displacement_relative": 2.6173812783722338e-11,
+            "energy_relative": 5.634642381138463e-16
+          },
+          {
+            "true_residual": 3.70865325960061e-12,
+            "stress_relative": 1.5778928169765927e-12,
+            "displacement_relative": 5.63867584215314e-12,
+            "energy_relative": 1.3393433418606113e-15
+          }
+        ],
+        "rollback_lock_and_irreversibility": "passed"
+      },
+      {
+        "name": "scalar_8point_history",
+        "storage_bytes": {
+          "catalog": 336,
+          "phase": 108,
+          "committed": 1728,
+          "trial": 1728
+        },
+        "active_elements": 27,
+        "Ku_relative": 2.4432270107849735e-16,
+        "loads": [
+          {
+            "true_residual": 9.326633808420744e-12,
+            "stress_relative": 1.5976518751671457e-12,
+            "displacement_relative": 3.262709752997534e-11,
+            "energy_relative": 4.295876190209987e-16
+          },
+          {
+            "true_residual": 5.007856436871371e-12,
+            "stress_relative": 1.6826048529114586e-13,
+            "displacement_relative": 9.510134355432414e-13,
+            "energy_relative": 1.4429361973596186e-16
+          },
+          {
+            "true_residual": 8.610846781778582e-12,
+            "stress_relative": 3.3507099410964204e-13,
+            "displacement_relative": 2.3037198367280108e-12,
+            "energy_relative": 1.6918484230078578e-15
+          },
+          {
+            "true_residual": 6.993695293729645e-12,
+            "stress_relative": 3.4624019825925324e-13,
+            "displacement_relative": 5.113217019869127e-13,
+            "energy_relative": 8.228324715367733e-16
+          },
+          {
+            "true_residual": 8.753667039793009e-12,
+            "stress_relative": 1.7912781791857013e-12,
+            "displacement_relative": 1.8961833757983167e-11,
+            "energy_relative": 5.808387865149793e-16
+          },
+          {
+            "true_residual": 5.759734317635152e-12,
+            "stress_relative": 2.2181504033812458e-12,
+            "displacement_relative": 5.284127853897203e-12,
+            "energy_relative": 3.6111651285906727e-16
+          }
+        ],
+        "rollback_lock_and_irreversibility": "passed"
+      },
+      {
+        "name": "damaged_background_only",
+        "storage_bytes": {
+          "catalog": 672,
+          "phase": 108,
+          "committed": 27,
+          "trial": 27
+        },
+        "active_elements": 3,
+        "Ku_relative": 2.9284947117840936e-16,
+        "loads": [
+          {
+            "true_residual": 5.924561272927131e-12,
+            "stress_relative": 3.1568262616490514e-14,
+            "displacement_relative": 8.663249134353257e-12,
+            "energy_relative": 1.9924260147642308e-16
+          },
+          {
+            "true_residual": 6.184903652748311e-12,
+            "stress_relative": 4.016319936169737e-14,
+            "displacement_relative": 6.7296309600756544e-12,
+            "energy_relative": 5.949015886013774e-16
+          },
+          {
+            "true_residual": 5.12102157422682e-12,
+            "stress_relative": 3.9285674054581764e-14,
+            "displacement_relative": 7.237054592151543e-12,
+            "energy_relative": 1.5826729868634094e-15
+          },
+          {
+            "true_residual": 2.2965662048307954e-12,
+            "stress_relative": 4.582456825369348e-14,
+            "displacement_relative": 8.106454488102556e-13,
+            "energy_relative": 0.0
+          },
+          {
+            "true_residual": 3.516297105446962e-12,
+            "stress_relative": 3.582347906312675e-14,
+            "displacement_relative": 1.5915778541812404e-12,
+            "energy_relative": 1.0642409157530657e-15
+          },
+          {
+            "true_residual": 5.184562651455504e-12,
+            "stress_relative": 1.2684888869465035e-13,
+            "displacement_relative": 4.153598087095127e-12,
+            "energy_relative": 2.1300844537222911e-16
+          }
+        ],
+        "rollback_lock_and_irreversibility": "passed"
+      }
+    ],
+    "prescribed_qp_averaging_error": 0.3181514807310501,
+    "progressive_path": [
+      {
+        "strain22": 0.0,
+        "failed": 0,
+        "corrections": 0,
+        "stress": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "energy": 0.0,
+        "stress_error": 0.0,
+        "true_residual": 0.0,
+        "hill_mandel_error": 0.0,
+        "displacement_norm": 0.0
+      },
+      {
+        "strain22": 0.002,
+        "failed": 0,
+        "corrections": 0,
+        "stress": [
+          7.434578172090697,
+          18.285347651379094,
+          7.552666649480522,
+          5.94381842042726e-17,
+          5.086903422121659e-17,
+          3.263070461609769e-16
+        ],
+        "energy": 0.018285347651379125,
+        "stress_error": 1.2216262202552337e-14,
+        "true_residual": 8.452115630490681e-16,
+        "hill_mandel_error": 1.7076526606387773e-15,
+        "displacement_norm": 0.000595071114065121
+      },
+      {
+        "strain22": 0.005,
+        "failed": 0,
+        "corrections": 0,
+        "stress": [
+          18.586445430226732,
+          45.71336912844778,
+          18.881666623701275,
+          9.507631117023132e-17,
+          1.3654925988639072e-16,
+          -6.899078632385981e-17
+        ],
+        "energy": 0.11428342282111947,
+        "stress_error": 8.048216379718054e-15,
+        "true_residual": 9.304037802663131e-16,
+        "hill_mandel_error": 1.2143307808986847e-16,
+        "displacement_norm": 0.0014876777851628015
+      },
+      {
+        "strain22": 0.01,
+        "failed": 0,
+        "corrections": 0,
+        "stress": [
+          37.172890860453464,
+          91.42673825689556,
+          37.76333324740255,
+          1.9015262234046263e-16,
+          2.7309851977278145e-16,
+          -1.3798157264771962e-16
+        ],
+        "energy": 0.4571336912844779,
+        "stress_error": 1.6096432759436107e-14,
+        "true_residual": 9.304037802663131e-16,
+        "hill_mandel_error": 1.2143307808986847e-16,
+        "displacement_norm": 0.002975355570325603
+      },
+      {
+        "strain22": 0.02,
+        "failed": 3,
+        "corrections": 1,
+        "stress": [
+          36.94871291469745,
+          117.65679806685905,
+          39.45104562529234,
+          -1.4339734479974441e-15,
+          2.581263301040752e-16,
+          -6.2315970059701114e-15
+        ],
+        "energy": 1.1765679806685914,
+        "stress_error": 3.187087224789637e-14,
+        "true_residual": 6.500111044963543e-16,
+        "hill_mandel_error": 7.548891643264111e-16,
+        "displacement_norm": 0.018699837650009824
+      },
+      {
+        "strain22": 0.05,
+        "failed": 5,
+        "corrections": 1,
+        "stress": [
+          76.05494879816779,
+          269.42717980241355,
+          81.85268807191292,
+          -7.627268168663607e-15,
+          -7.974983820698924e-16,
+          3.9488604866375356e-15
+        ],
+        "energy": 6.735679495060339,
+        "stress_error": 1.28934499575465e-13,
+        "true_residual": 1.3111304804710095e-15,
+        "hill_mandel_error": 0.0,
+        "displacement_norm": 0.03670234338126153
+      },
+      {
+        "strain22": 0.1,
+        "failed": 5,
+        "corrections": 0,
+        "stress": [
+          152.10989759633557,
+          538.8543596048271,
+          163.70537614382584,
+          -1.5254536337327215e-14,
+          -1.5949967641397847e-15,
+          7.897720973275071e-15
+        ],
+        "energy": 26.942717980241355,
+        "stress_error": 2.5786899915093e-13,
+        "true_residual": 1.3111304804710095e-15,
+        "hill_mandel_error": 0.0,
+        "displacement_norm": 0.07340468676252306
+      },
+      {
+        "strain22": 0.0,
+        "failed": 5,
+        "corrections": 0,
+        "stress": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "energy": 0.0,
+        "stress_error": 0.0,
+        "true_residual": 0.0,
+        "hill_mandel_error": 0.0,
+        "displacement_norm": 0.0
+      },
+      {
+        "strain22": 0.005,
+        "failed": 5,
+        "corrections": 0,
+        "stress": [
+          7.605494879816773,
+          26.942717980241355,
+          8.185268807191294,
+          -4.903599218017702e-16,
+          6.642120862276799e-16,
+          3.2090441605693077e-15
+        ],
+        "energy": 0.06735679495060339,
+        "stress_error": 6.559063053768457e-15,
+        "true_residual": 1.6282657565993604e-15,
+        "hill_mandel_error": 0.0,
+        "displacement_norm": 0.003670234338126151
+      }
+    ],
+    "memory_192": {
+      "N": 7077888,
+      "unit": "MiB",
+      "scope": "logical arrays, not GPU/NVML measurements",
+      "dense_C21_per_element": 1134.0,
+      "dense_C21_per_qp": 9072.0,
+      "discrete_catalog_four_C21_bytes": 672,
+      "int32_phase_map": 27.0,
+      "uint8_history_per_element": 6.75,
+      "scalar_FP64_history_per_element": 54.0,
+      "six_FP64_history_per_element": 324.0,
+      "uint8_history_eight_qp": 54.0,
+      "scalar_FP64_history_eight_qp": 432.0,
+      "six_FP64_history_eight_qp": 2592.0,
+      "discrete_phase_and_double_history": 40.500640869140625
+    },
+    "elapsed_seconds": 20.93525000003865,
+    "sources": {
+      "E:\\Code\\owner_CMAME\\fead_low_memory_gpu_revision_20261021\\exports\\voxel_lmfem_repro_20261106\\validation\\material_state\\material_state.py": "52c0979af7d96f4c35fb2016b3d385ff87a4d5dc0638bb08f648e80a81d6c5ea",
+      "E:\\Code\\owner_CMAME\\fead_low_memory_gpu_revision_20261021\\exports\\voxel_lmfem_repro_20261106\\validation\\material_state\\verify.py": "c6f9ece51bb101c2f3e4ac84da6942af2b6126f23761dd1b7c26b440f985e573",
+      "E:\\Code\\owner_CMAME\\fead_low_memory_gpu_revision_20261021\\exports\\voxel_lmfem_repro_20261106\\src\\voxel_lmfem\\_core\\multiscale\\progressive\\material.py": "e8b2afb2ff8ce0c007518dd12fae7893c4238af098742529caec587969b78873",
+      "E:\\Code\\owner_CMAME\\fead_low_memory_gpu_revision_20261021\\exports\\voxel_lmfem_repro_20261106\\src\\voxel_lmfem\\_core\\multiscale\\progressive\\material.json": "ee63ed3968ce45eff5ff81247f5273a0ad1ccca313f8884dc45780c0ad747b16"
+    }
+  },
+  "geometry": {
+    "cases": 21,
+    "grid": 32,
+    "status": "passed"
+  },
+  "archived_regeneration": {
+    "status": "passed",
+    "verified_files": 2516,
+    "table_3_rows": 6,
+    "convergence_grids": 11,
+    "finest_grid": 480,
+    "cost_groups": 25,
+    "woven_fraction_records": 189,
+    "active_fraction_records": 54,
+    "verification_scope": "Archived-result regeneration and analytical laminate calculations; no new GPU timings"
+  },
+  "published_numerical_outputs": "unchanged from v2; only verified file count changed because inventory scope excludes maintained documentation",
+  "fresh_gpu_benchmarks": "not rerun"
+}

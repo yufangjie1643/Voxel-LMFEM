@@ -1,0 +1,52 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "voxel-lmfem"
+version = "0.1.0"
+description = "Memory-efficient GPU voxel finite element homogenization"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [{name = "Fangjie Yu"}]
+dependencies = ["numpy>=1.26,<3", "scipy>=1.12,<2"]
+keywords = ["finite-elements", "homogenization", "voxel", "GPU"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Science/Research",
+  "Programming Language :: Python :: 3",
+  "Topic :: Scientific/Engineering :: Physics",
+]
+
+[project.optional-dependencies]
+gpu = ["torch>=2.12,<3", "ninja>=1.11", "packaging>=23", "numba>=0.61"]
+cpu-checks = ["torch>=2.12,<3"]
+dev = ["pytest>=8", "build>=1.2", "ruff>=0.9"]
+
+[project.scripts]
+voxel-lmfem = "voxel_lmfem.cli:main"
+
+[project.urls]
+Repository = "https://github.com/yufangjie1643/Voxel-LMFEM"
+Documentation = "https://github.com/yufangjie1643/Voxel-LMFEM/tree/main/docs"
+Issues = "https://github.com/yufangjie1643/Voxel-LMFEM/issues"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+packages = ["voxel_lmfem"]
+include-package-data = false
+
+[tool.setuptools.package-data]
+voxel_lmfem = ["_core/**/*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
+
+[tool.ruff]
+target-version = "py310"
+line-length = 110
+extend-exclude = ["src/voxel_lmfem/_core", "campaigns", "baselines", "experiments", "repro"]
+
+[tool.ruff.lint]
+select = ["E9", "F"]

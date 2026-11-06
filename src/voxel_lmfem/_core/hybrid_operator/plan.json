@@ -1,0 +1,326 @@
+[
+  {
+    "name": "full_baseline_128_strong_192_r0",
+    "arguments": [
+      "study.py",
+      "--mode",
+      "full",
+      "--variant",
+      "baseline",
+      "--block",
+      "128",
+      "--grid",
+      "192",
+      "--case",
+      "strong",
+      "--repeat",
+      "0"
+    ]
+  },
+  {
+    "name": "full_split_delta_64_strong_192_r0",
+    "arguments": [
+      "study.py",
+      "--mode",
+      "full",
+      "--variant",
+      "split_delta",
+      "--block",
+      "64",
+      "--grid",
+      "192",
+      "--case",
+      "strong",
+      "--repeat",
+      "0"
+    ]
+  },
+  {
+    "name": "full_split_64_strong_192_r0",
+    "arguments": [
+      "study.py",
+      "--mode",
+      "full",
+      "--variant",
+      "split",
+      "--block",
+      "64",
+      "--grid",
+      "192",
+      "--case",
+      "strong",
+      "--repeat",
+      "0"
+    ]
+  },
+  {
+    "name": "full_baseline_128_near_128_r0",
+    "arguments": [
+      "study.py",
+      "--mode",
+      "full",
+      "--variant",
+      "baseline",
+      "--block",
+      "128",
+      "--grid",
+      "128",
+      "--case",
+      "near",
+      "--repeat",
+      "0"
+    ]
+  },
+  {
+    "name": "full_split_delta_64_near_128_r0",
+    "arguments": [
+      "study.py",
+      "--mode",
+      "full",
+      "--variant",
+      "split_delta",
+      "--block",
+      "64",
+      "--grid",
+      "128",
+      "--case",
+      "near",
+      "--repeat",
+      "0"
+    ]
+  },
+  {
+    "name": "full_split_64_near_128_r0",
+    "arguments": [
+      "study.py",
+      "--mode",
+      "full",
+      "--variant",
+      "split",
+      "--block",
+      "64",
+      "--grid",
+      "128",
+      "--case",
+      "near",
+      "--repeat",
+      "0"
+    ]
+  },
+  {
+    "name": "full_split_64_strong_192_r1",
+    "arguments": [
+      "study.py",
+      "--mode",
+      "full",
+      "--variant",
+      "split",
+      "--block",
+      "64",
+      "--grid",
+      "192",
+      "--case",
+      "strong",
+      "--repeat",
+      "1"
+    ]
+  },
+  {
+    "name": "full_baseline_128_strong_192_r1",
+    "arguments": [
+      "study.py",
+      "--mode",
+      "full",
+      "--variant",
+      "baseline",
+      "--block",
+      "128",
+      "--grid",
+      "192",
+      "--case",
+      "strong",
+      "--repeat",
+      "1"
+    ]
+  },
+  {
+    "name": "full_split_delta_64_strong_192_r1",
+    "arguments": [
+      "study.py",
+      "--mode",
+      "full",
+      "--variant",
+      "split_delta",
+      "--block",
+      "64",
+      "--grid",
+      "192",
+      "--case",
+      "strong",
+      "--repeat",
+      "1"
+    ]
+  },
+  {
+    "name": "full_split_64_near_128_r1",
+    "arguments": [
+      "study.py",
+      "--mode",
+      "full",
+      "--variant",
+      "split",
+      "--block",
+      "64",
+      "--grid",
+      "128",
+      "--case",
+      "near",
+      "--repeat",
+      "1"
+    ]
+  },
+  {
+    "name": "full_baseline_128_near_128_r1",
+    "arguments": [
+      "study.py",
+      "--mode",
+      "full",
+      "--variant",
+      "baseline",
+      "--block",
+      "128",
+      "--grid",
+      "128",
+      "--case",
+      "near",
+      "--repeat",
+      "1"
+    ]
+  },
+  {
+    "name": "full_split_delta_64_near_128_r1",
+    "arguments": [
+      "study.py",
+      "--mode",
+      "full",
+      "--variant",
+      "split_delta",
+      "--block",
+      "64",
+      "--grid",
+      "128",
+      "--case",
+      "near",
+      "--repeat",
+      "1"
+    ]
+  },
+  {
+    "name": "full_split_delta_64_strong_192_r2",
+    "arguments": [
+      "study.py",
+      "--mode",
+      "full",
+      "--variant",
+      "split_delta",
+      "--block",
+      "64",
+      "--grid",
+      "192",
+      "--case",
+      "strong",
+      "--repeat",
+      "2"
+    ]
+  },
+  {
+    "name": "full_split_64_strong_192_r2",
+    "arguments": [
+      "study.py",
+      "--mode",
+      "full",
+      "--variant",
+      "split",
+      "--block",
+      "64",
+      "--grid",
+      "192",
+      "--case",
+      "strong",
+      "--repeat",
+      "2"
+    ]
+  },
+  {
+    "name": "full_baseline_128_strong_192_r2",
+    "arguments": [
+      "study.py",
+      "--mode",
+      "full",
+      "--variant",
+      "baseline",
+      "--block",
+      "128",
+      "--grid",
+      "192",
+      "--case",
+      "strong",
+      "--repeat",
+      "2"
+    ]
+  },
+  {
+    "name": "full_split_delta_64_near_128_r2",
+    "arguments": [
+      "study.py",
+      "--mode",
+      "full",
+      "--variant",
+      "split_delta",
+      "--block",
+      "64",
+      "--grid",
+      "128",
+      "--case",
+      "near",
+      "--repeat",
+      "2"
+    ]
+  },
+  {
+    "name": "full_split_64_near_128_r2",
+    "arguments": [
+      "study.py",
+      "--mode",
+      "full",
+      "--variant",
+      "split",
+      "--block",
+      "64",
+      "--grid",
+      "128",
+      "--case",
+      "near",
+      "--repeat",
+      "2"
+    ]
+  },
+  {
+    "name": "full_baseline_128_near_128_r2",
+    "arguments": [
+      "study.py",
+      "--mode",
+      "full",
+      "--variant",
+      "baseline",
+      "--block",
+      "128",
+      "--grid",
+      "128",
+      "--case",
+      "near",
+      "--repeat",
+      "2"
+    ]
+  }
+]

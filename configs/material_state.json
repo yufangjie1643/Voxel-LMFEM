@@ -1,0 +1,29 @@
+{
+  "name": "Zhou2022_T300_epoxy_constituents",
+  "doi": "10.3390/aerospace9100537",
+  "source_pdf": "../../../repro/extension_20261006/sources/aerospace-09-00537.pdf",
+  "scope": "Constituent-scale verification material; not Song2019 T300/QY8911-IV and not a woven coupon prediction.",
+  "stress_unit": "MPa",
+  "elastic_source": "Table 8, PDF page 16",
+  "fiber": {
+    "E11": 230000.0, "E22": 14000.0, "E33": 14000.0,
+    "Nu12": 0.26, "Nu13": 0.26, "Nu23": 0.34,
+    "G12": 94000.0, "G13": 94000.0, "G23": 5200.0
+  },
+  "matrix": {"E": 3350.0, "Nu": 0.35},
+  "strength_source": "Tables 10 and 11, PDF page 20",
+  "strength": {
+    "fiber_tension": 3526.3, "fiber_compression": 2942.9,
+    "matrix_tension": 126.6, "matrix_compression": 238.3
+  },
+  "degradation_source": "Equations (10)-(11), Table 12, PDF page 21",
+  "retained_factors": {"fiber": 0.01, "matrix": 0.05},
+  "fiber_volume_fraction": 0.78,
+  "volume_fraction_source": "Table 7, PDF page 15",
+  "evolution": "One irreversible sudden degradation event per constituent voxel; no fatigue law or fracture energy introduced.",
+  "limitations": [
+    "The hexagonal periodic geometry is reconstructed, not the original authors' mesh.",
+    "Damage is resolved locally by voxels, rather than reproducing the source's entire hierarchical stress-amplification workflow.",
+    "No mesh-objectivity claim is made for a local sudden-degradation model."
+  ]
+}

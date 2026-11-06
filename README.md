@@ -1,57 +1,83 @@
 # Voxel-LMFEM
 
-Memory-efficient GPU finite element homogenization. LM denotes low memory; FEM denotes finite element method.
+**Memory-efficient GPU finite element homogenization.**
 
-Code and measured evidence for **Memory-efficient GPU finite element homogenization of microstructures with spatially varying anisotropy**, submission snapshot **25 October 2026**.
+Voxel-LMFEM solves periodic small-strain elasticity on fully integrated rectangular HEX8 voxel grids. It supports spatially varying anisotropic materials, hybrid material storage, background/contrast evaluation and FFT-preconditioned PCG. LM denotes low memory; FEM denotes finite element method.
 
-Fixed version: **fead-2026-10-25-v2**. This public package is the reproducibility entry for the manuscript. It contains the fully integrated HEX8 solver, benchmark definitions and inputs, measured six-load tensors, timing records, NVML telemetry, and CPU aggregation scripts.
+[Installation](docs/installation.md) · [Usage](docs/usage.md) · [Architecture](docs/architecture.md) · [Validation](docs/validation.md) · [Paper tables](repro/generated/TABLES.md) · [中文](README_zh.md)
 
-## Regenerate the paper's numbers
+## Quick start: CPU example
 
-Python 3.12 was used for the release check. Clone the fixed version into a short path (for example C:/work/Voxel-LMFEM on Windows). Git for Windows needs long-path support for preserved historical source directories:
+    python -m pip install -e .
+    voxel-lmfem example --out runs/example
+    voxel-lmfem solve --input runs/example/homogeneous.npz --materials runs/example/materials.json --backend cpu --output runs/example/result.json
 
-    git -c core.longpaths=true clone --branch fead-2026-10-25-v2 https://github.com/yufangjie1643/Voxel-LMFEM.git
-    cd Voxel-LMFEM
+Run these commands from a cloned repository after activating a Python environment. The base installation needs NumPy and SciPy. The small CPU reference is limited to 4096 voxels; it verifies inputs and results without requiring a GPU.
 
-From the repository root:
+## GPU solve
 
-    python -m venv .venv
-    # Activate .venv using your operating system's usual command.
-    python -m pip install -r repro/requirements-cpu.txt
-    python repro/scripts/reproduce_paper_tables.py
+Install a CUDA-enabled PyTorch build and the GPU extra as described in the installation guide:
 
-No GPU is needed. The script verifies SHA-256 checksums, checks residuals and repeat counts, recomputes discrepancies and statistics from the saved measurements, and verifies the printed table values. It writes:
+    python -m pip install -e ".[gpu]"
+    voxel-lmfem doctor --require-cuda
+    voxel-lmfem solve --input model.npz --materials materials.json --backend cuda --warmup --output runs/model/result.json
 
-- [Current table and figure index](repro/generated/TABLES.md)
-- [Six-row Table 3](repro/generated/table_3_solver_summary.csv)
-- [480³-reference convergence](repro/generated/figure_8_grid_convergence.csv)
-- [Headline checks](repro/generated/headline_checks.json)
-- [Verification report](repro/generated/verification.json)
+The GPU implementation uses FP64 physical stiffness and PCG vectors, with FP32 FFT preconditioning. Native extensions are compiled on first use. GPU benchmarks run on Linux.
 
-The machine-readable correspondence is [repro/table_manifest.json](repro/table_manifest.json). Use this map for the submitted paper. Historical summaries inside the campaigns retain their original labels; the former 19-row comparison and 256³ convergence reference are superseded.
+## Python API
 
-## What is included
+    import numpy as np
+    from voxel_lmfem import homogenize
 
-| Location | Contents |
+    result = homogenize(
+        np.zeros((4, 4, 4), dtype=np.uint8),
+        {0: {"kind": "isotropic", "E": 3500.0, "nu": 0.35}},
+        [1.0, 1.0, 1.0], backend="cpu",
+    )
+    C_H = np.array(result["CH"])
+
+Phase arrays use (z,y,x); domain lengths use (x,y,z). The engineering-Voigt order is (11,22,33,23,13,12). See the usage guide for orthotropic/general-anisotropic materials and local orientations.
+
+## Repository
+
+| Directory | Contents |
 |---|---|
-| campaigns/chapter/solver | FI solver, stored-stencil baselines, chapter/grid/active-fraction drivers, Grosmont inputs, material-state fixture |
-| campaigns/chapter/manuscript_evidence/review_results | Main comparisons, reference outputs, convergence through 480³, cost scaling, nine active fractions |
-| campaigns/woven_fraction/solver | Source snapshot for the 21 yarn-fraction experiment |
-| campaigns/woven_fraction/revision/review_results/woven_fraction_20261025 | 189 measured runs, telemetry, geometry and small-grid checks |
-| repro/scripts | Current CPU regeneration entry |
-| repro/file_manifest.json | SHA-256 inventory of the frozen payload and reproduction scripts |
-| repro/provenance | Source-to-package mapping and release verification |
+| src/voxel_lmfem | Maintained package and one canonical numerical core |
+| experiments | Benchmark and timing protocols |
+| examples, configs | Runnable examples and material definitions |
+| tests, validation | Regression tests and independent numerical checks |
+| data | Input guide and prepared benchmark files |
+| baselines | Third-party solver source and licenses |
+| docs | Installation, use, architecture and development |
+| repro | Paper map, checksums, scripts and generated tables |
+| campaigns | Frozen source/result evidence used by the paper |
+| runs | New local outputs, ignored by Git |
 
-The two campaigns preserve their corresponding numerical sources. The chapter snapshot includes the later isotropic-input extension of its driver; the exact earlier woven driver is preserved under solver/provenance/chapter_woven_20261024/. Its differences concern isotropic input dispatch. The 480³ and active-fraction records match the included chapter numerical source.
+Historical snapshots are retained for provenance. New solves use the maintained source through the public API or root runner.
 
-The portable launchers use python3, or the VOXEL_PYTHON environment variable. Their menus contain paper-related commands only. Unrelated FE²/CMC applications and private development history are excluded. The material-law fixture under src/multiscale/progressive is included only for Appendix C's CPU state-update example.
+## Reproduce the manuscript
 
-## Numerical checks and fresh GPU experiments
+Manuscript: **Memory-efficient GPU finite element homogenization of microstructures with spatially varying anisotropy**, snapshot 25 October 2026.
 
-See [repro/REPRODUCING.md](repro/REPRODUCING.md) for tested CPU checks, GPU commands, environment details, timing definitions and external-reference scope.
+    python run.py reproduce
 
-Regeneration reads archived measurements; it does not remeasure GPU performance. Fresh GPU timings depend on hardware, drivers and the software environment. The released performance records were obtained with an RTX 5090, PyTorch 2.12.0+cu130 and CUDA 13.0.
+This CPU command verifies archived file hashes and regenerates the current three tables and numerical result-figure data, including the six-row performance table, eleven-grid convergence through 480³, 21 yarn fractions and nine active fractions. It validates saved measurements rather than rerunning GPU timings.
 
-## Attribution and terms
+See [repro/table_manifest.json](repro/table_manifest.json), [repro/generated/TABLES.md](repro/generated/TABLES.md) and [repro/REPRODUCING.md](repro/REPRODUCING.md). The direct entry python repro/scripts/reproduce_paper_tables.py remains supported. Fixed maintained release: **v0.1.0**; the original review-package tags remain available.
 
-See [NOTICE.md](NOTICE.md). Third-party license files are preserved. This release does not assign a new license to author-owned code. The measured data and source provenance identify the benchmark inputs and external references used by the paper.
+To prepare canonical benchmark inputs and launch fresh comparisons:
+
+    python run.py prepare-inputs
+    python run.py chapter-study --phase launch --cases sphere,grosmont,woven --grid 192 --variants stencil27_jacobi,execution_fp32 --repeats 3 --out runs/table3
+
+## Tests and development
+
+    python -m pip install -e ".[dev]"
+    python -m pytest -q
+    python -m build
+
+Linux/Windows CPU CI tests the API, numerical reference, input preparation, table regeneration and installed wheel. GPU tests are opt-in; see the validation guide. The original GPU measurements used RTX 5090 / PyTorch 2.12.0+cu130 / CUDA 13.0.
+
+## Citation and terms
+
+Use [CITATION.cff](CITATION.cff) for this software release and cite the accompanying manuscript when using its methods or data. [NOTICE.md](NOTICE.md) preserves attribution and third-party licenses. Author-owned code has no additional license grant; this repository does not label it under a newly chosen open-source license.

@@ -1,5 +1,7 @@
 # Reproduction guide
 
+Maintained release: v0.1.0. Use the root run.py entry and the source under src/voxel_lmfem/. The campaigns directory is a frozen evidence archive. See docs/installation.md and docs/usage.md for the installed API.
+
 ## 1. CPU regeneration of published values
 
 Run from the repository root:
@@ -13,25 +15,24 @@ Table 3 selects stencil27_jacobi and execution_fp32 for each 192³ cell. Time is
 
 Figure 8 reads three raw results per grid and computes discrepancies against 480³. Figure 10 retains the original cost study's configurations and reference media, as described in Section 5.3. Figure 11 corresponds to Section 5.4, with 21 fractions × 3 configurations × 3 repetitions. Figure D.1 uses nine active fractions × 2 configurations × 3 repetitions.
 
-The manifest checks bytes, including saved hashes and source records; it is not an independent certification of experimental truth. It excludes generated outputs, runtime caches, new runs and itself. The Git release fixes the manifest version.
+The active manifest checks frozen campaign bytes and the regeneration script; it is not an independent certification of experimental truth. It excludes maintained source/docs, generated outputs, runtime caches, new runs and itself. The original v2 inventory remains in repro/provenance/v2_file_manifest.json. The Git release fixes the manifest version.
 
 ## 2. Run independent CPU checks
 
 The material-state example needs NumPy and SciPy:
 
-    cd campaigns/chapter/solver
-    python -B run.py damage-prototype
+    python run.py check material-state --output runs/checks/material_state.json
 
-Output: validation/progressive_storage/validation.json. This checks five frozen material-history cases, independent FI assembly, equilibrium residuals and the loading/unloading path in Appendix C. It is a CPU prototype.
+Output: runs/checks/material_state.json. This checks five frozen material-history cases, independent FI assembly, equilibrium residuals and the loading/unloading path in Appendix C. It is a CPU prototype.
 
 The independent FI operator checks additionally require PyTorch (a CPU build is sufficient):
 
     python -m pip install torch
-    python -B run.py verify-fi --phase cpu --output runs/checks/fi_cpu.json
+    python run.py check fi --output runs/checks/fi_cpu.json
 
 Use a new output filename when repeating this check; the driver refuses to overwrite an existing result. Both checks passed on Windows/Python 3.12 in the release verification. The tested CPU PyTorch version is recorded in repro/provenance/release_checks.json. This CPU environment is separate from the original GPU measurement environment.
 
-For the yarn geometry, from campaigns/woven_fraction/solver:
+For the yarn geometry, from the repository root:
 
     python -B run.py woven-fraction --phase geometry --grid 32 --out runs/checks/geometry
 
@@ -39,7 +40,7 @@ This checks all 21 analytical constructions on a small grid. The saved 192³ val
 
 ## 3. GPU environment
 
-Use Linux, an NVIDIA GPU, a matching driver/CUDA toolkit, a working C++/CUDA compiler, and a CUDA-enabled PyTorch build. Runtime extensions are compiled on first use. The measured environment is recorded in each result and campaigns/chapter/solver/requirements-lock.txt:
+Use Linux, an NVIDIA GPU, a matching driver/CUDA toolkit, a working C++/CUDA compiler, and a CUDA-enabled PyTorch build. Runtime extensions are compiled on first use. The measured environment is recorded in each result and requirements/measurement-environment.txt:
 
 - GPU: NVIDIA GeForce RTX 5090.
 - Python: 3.12.
@@ -53,7 +54,7 @@ The large stencil cases need substantially more GPU memory than the proposed sol
 
 ## 4. Rerun chapter benchmarks
 
-From campaigns/chapter/solver on Linux:
+From the repository root on Linux (run python run.py prepare-inputs first):
 
     chmod +x run
     ./run chapter-study --phase launch --cases sphere,grosmont,woven --grid 192 --variants stencil27_jacobi,execution_fp32 --repeats 3 --out runs/table3
@@ -70,7 +71,7 @@ For a fresh high-resolution convergence point:
 
     ./run chapter-study --phase launch --cases woven --grid 480 --variants execution_fp32 --repeats 3 --out runs/convergence480
 
-The exact older grid-cost jobs, method choices and reference media are recorded under manuscript_evidence/review_results/grid_refinement_20261023/remote/plan.json and stencil27_baseline_20261023/formal/. Paths inside saved plans describe the original machine; use the included drivers and select a new runs/ destination. The currently regenerated CSVs always use the archived campaign, not results from a new run.
+The exact older grid-cost jobs, method choices and reference media are recorded under campaigns/chapter/manuscript_evidence/review_results/grid_refinement_20261023/remote/plan.json and campaigns/chapter/manuscript_evidence/review_results/stencil27_baseline_20261023/formal/. Paths inside saved plans describe the original machine; use the included drivers and select a new runs/ destination. The currently regenerated CSVs always use the archived campaign, not results from a new run.
 
 For Appendix D's 54-run active-fraction sweep:
 
@@ -80,12 +81,12 @@ It writes runs/active_fraction_128_20261024 and refuses to overwrite an existing
 
 ## 5. Rerun yarn-fraction benchmarks
 
-From campaigns/woven_fraction/solver:
+From the repository root:
 
     chmod +x run
     ./run woven-fraction --phase launch --grid 192 --fractions all --repeats 3 --out runs/woven_fraction
 
-The driver executes all three configurations at each fraction and rotates their order. The corresponding analyzer is revision/experiments/woven_fraction_20261025/analyze.py. Its input directory must contain raw/results and raw/logs; the saved campaign demonstrates that layout.
+The driver executes all three configurations at each fraction and rotates their order. The corresponding analyzer is campaigns/woven_fraction/revision/experiments/woven_fraction_20261025/analyze.py. Its input directory must contain raw/results and raw/logs; the saved campaign demonstrates that layout.
 
 ## 6. Measurement conventions
 
@@ -97,7 +98,7 @@ Optimization-chain configurations share a phase-based reference and 327 total it
 
 ## 7. External-reference scope
 
-The package includes chfem result JSON, sampled-memory logs, canonical isotropic input arrays, its source tree and license. The recorded reference tensors are transformed into the project's Voigt convention before comparison. Rebuilding the native chfem executable is platform dependent; follow its included build documentation. The release check regenerates comparisons from the archived external outputs and does not claim a fresh chfem build or GPU rerun.
+The frozen campaigns include chfem result JSON, sampled-memory logs and canonical isotropic input arrays. Its maintained source copy and license are in baselines/. The recorded reference tensors are transformed into the project's Voigt convention before comparison. Rebuilding the native chfem executable is platform dependent; follow its included build documentation. The release check regenerates comparisons from the archived external outputs and does not claim a fresh chfem build or GPU rerun.
 
 The Grosmont input is the paper's 400³ crop beginning at zero-based (z,y,x)=(550,0,0) and its nearest-neighbor 192³ resampling. The original full 1024³ image is not included. The manuscript cites Andrä et al.'s digital-rock dataset; original dataset attribution remains applicable.
 

@@ -1,17 +1,7 @@
 {
   "algorithm": "sha256",
-  "scope": "Frozen payload and reproduction entry points; generated outputs, runtime results and this manifest excluded. Git release fixes the manifest version.",
+  "scope": "Immutable paper campaign evidence and the numerical aggregation script. Maintained code/docs and the manifest itself are identified by the Git release. The original v2 broad inventory is retained in repro/provenance/v2_file_manifest.json.",
   "files": [
-    {
-      "path": ".gitattributes",
-      "sha256": "8b9c3028d6467ff3be7c793141927841d70f47f52d0590677438f488ca154992",
-      "bytes": 9
-    },
-    {
-      "path": ".gitignore",
-      "sha256": "f687345e50399b0d232c5c572b8e87b2ccb9f11e8b6542a9836927ba88ca4cbb",
-      "bytes": 90
-    },
     {
       "path": "campaigns/chapter/analytical_laminate.py",
       "sha256": "4ace636d453faf90d31b46017bc2a142ae8cbcde0690bda4f56ebe500c274522",
@@ -12588,49 +12578,9 @@
       "bytes": 11837
     },
     {
-      "path": "NOTICE.md",
-      "sha256": "026fa058d134f8452a95ca44e7854fed51f7f0cc84ccc310565d4c3687da468d",
-      "bytes": 1326
-    },
-    {
-      "path": "README.md",
-      "sha256": "4eea5bd0e5bb720afb4057d3daac22388b9fe46b69ca6d8eb4f96fce3d1815c2",
-      "bytes": 4263
-    },
-    {
-      "path": "README_zh.md",
-      "sha256": "fc7f667cf05f8c4917ac8970c42da7280e97d9bff7b01571072f9b049be59e19",
-      "bytes": 1261
-    },
-    {
-      "path": "repro/provenance/release_checks.json",
-      "sha256": "72d923faa878f795f9af173ffd44f6bafd4c9822a3f47b7e4d65fcb32694b22a",
-      "bytes": 1343
-    },
-    {
-      "path": "repro/provenance/source_files.json",
-      "sha256": "d2f635bee2f89e7af91988a3e7f7922190b41eee5dfeb027bdf486e44dc74d57",
-      "bytes": 983138
-    },
-    {
-      "path": "repro/REPRODUCING.md",
-      "sha256": "a1a361956262dfe94d03c383e406c323888f123ba1a0c311900bbe3e50db563b",
-      "bytes": 8242
-    },
-    {
-      "path": "repro/requirements-cpu.txt",
-      "sha256": "a549e38436e4cb3fa8066afca16c14146f79ce3b7f9241cba937e1913e3fda1d",
-      "bytes": 30
-    },
-    {
       "path": "repro/scripts/reproduce_paper_tables.py",
       "sha256": "cddeae6994237e88951f61b14c45a48677755a780b2cd9526a38a9de379f3f6a",
       "bytes": 14148
-    },
-    {
-      "path": "repro/table_manifest.json",
-      "sha256": "a81ddf07fe940a3bbd93a840a2a0086d014b5e9843fb7c6a68d6d2edf12246bb",
-      "bytes": 2127
     }
   ]
 }

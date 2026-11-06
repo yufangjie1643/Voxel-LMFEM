@@ -1,0 +1,260 @@
+"""Isolated, source-preserving RTX 5090 comparison against published chfem.
+
+Run with the existing uv Python. Numerical implementations are imported from
+the frozen FEAD package and the existing chfem build, never copied or modified.
+"""
+import argparse
+import ctypes
+import gc
+import gzip
+import hashlib
+import json
+import os
+from pathlib import Path
+import re
+import subprocess
+import sys
+import time
+import traceback
+
+import numpy as np
+
+ROOT = Path(__file__).resolve().parent
+FEAD = Path('/home/yufan/code/fead-extensions-20261006')
+CHFEM = Path('/home/yufan/code/Voxel-ACDM/results/paper_5090/chfem_build_probe_src')
+RAW = Path('/home/yufan/code/Voxel-ACDM/results/paper_5090/krzikalla_official_sparse/images')
+sys.path.insert(0, str(FEAD/'repro/extension_20261006'))
+os.environ.setdefault('OMP_NUM_THREADS', '8')
+os.environ.setdefault('MKL_NUM_THREADS', '8')
+
+
+def sha(path):
+    h = hashlib.sha256()
+    with open(path, 'rb') as f:
+        for b in iter(lambda: f.read(8*1024*1024), b''):
+            h.update(b)
+    return h.hexdigest()
+
+
+def save(path, obj):
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps(obj, indent=2)+'\n')
+
+
+def prepare(case, n):
+    """Same 400-cubed crops and NN rule as the published-paper baseline."""
+    out = ROOT/'inputs'/f'{case}_{n}.npy'
+    if out.exists():
+        return out
+    if n > 400:
+        raise ValueError('No upsampling above native 400-cubed crop')
+    starts = {'grosmont': (550, 0, 0), 'berea': (125, 150, 150)}[case]
+    raw = RAW/case/'segmented-vsg.raw.gz'
+    local = np.rint(np.linspace(0, 399, n)).astype(np.int64)
+    iz, iy, ix = [local+s for s in starts]
+    field = np.empty((n, n, n), dtype=np.uint8)
+    with gzip.open(raw, 'rb') as f:
+        dest = 0
+        for z in range(1024):
+            b = f.read(1024*1024)
+            if len(b) != 1024*1024:
+                raise IOError('Incomplete original image')
+            if dest < n and z == iz[dest]:
+                sl = np.frombuffer(b, np.uint8).reshape(1024, 1024)
+                field[dest] = np.where(sl[np.ix_(iy, ix)] != 0, 255, 0)
+                dest += 1
+        assert dest == n
+    out.parent.mkdir(parents=True, exist_ok=True)
+    np.save(out, field)
+    save(out.with_suffix('.json'), dict(case=case, grid=n, original_path=str(raw),
+        original_sha256=sha(raw), original_shape_zyx=[1024]*3,
+        crop_start_zyx=list(starts), crop_shape_zyx=[400]*3,
+        preprocessing='NN rint(linspace(0,399,N)); no tiling or upsampling',
+        phase_encoding={'0': 'soft pore surrogate', '255': 'solid grain'},
+        solid_fraction=float((field == 255).mean()), array_sha256=hashlib.sha256(field.tobytes()).hexdigest(),
+        npy_sha256=sha(out)))
+    return out
+
+
+def guard():
+    state = subprocess.check_output(['nvidia-smi', '--query-gpu=name,memory.total,memory.used,utilization.gpu',
+                                    '--format=csv,noheader'], text=True).strip()
+    if len(state.splitlines()) != 1 or 'RTX 5090' not in state:
+        raise RuntimeError('Requires a single RTX 5090: '+state)
+    apps = subprocess.check_output(['nvidia-smi', '--query-compute-apps=pid,process_name',
+                                   '--format=csv,noheader'], text=True).strip()
+    foreign = [x for x in apps.splitlines() if int(x.split(',')[0]) != os.getpid()]
+    if foreign:
+        raise RuntimeError('GPU OCCUPIED: '+str(foreign))
+    return state
+
+
+def ours(phase, precision, fi=False, progress=True, profile=False):
+    from physics import torch, make_solver, solve_checked, FEMHomogenizerBatched, PAIRS
+    from femlib.materials import isotropic_to_voigt
+    from mixed_preconditioner import enable_reference
+    torch.set_num_threads(8)
+    torch.cuda.synchronize()
+    torch.cuda.reset_peak_memory_stats()
+    start = time.perf_counter()
+    material = np.stack([isotropic_to_voigt(3500., .35), isotropic_to_voigt(70000., .20)])
+    if not fi:
+        material = np.stack([material[:, i, j] for i,j in PAIRS], -1)
+    ids = torch.as_tensor((phase != 0).ravel().astype(np.int64), device='cuda')
+    table = torch.tensor(material, dtype=torch.float64, device='cuda')
+    C = table[ids].unsqueeze(0)
+    del ids, table
+    if fi:
+        # Auxiliary matched-FI verification, not the low-storage production method.
+        n = phase.shape[0]
+        C = C.reshape(1,n,n,n,6,6).permute(0,4,5,1,2,3).contiguous()
+        solver = FEMHomogenizerBatched(C, (1.,1.,1.), phase.shape, dtype=torch.float64, element_type='C3D8')
+        solver.enable_fft_precond(ref_strategy='zeman')
+    else:
+        solver = make_solver(C, phase.shape, (1.,1.,1.), fft=False)
+        enable_reference(solver.op, 2, precision)
+    op = solver.op
+    del C
+    torch.cuda.synchronize()
+    setup = time.perf_counter()-start
+    if progress:print('SETUP',setup,flush=True)
+    if profile:
+        v=torch.randn((1,3*phase.size),dtype=torch.float64,device='cuda')
+        timings={}
+        for name,fn in [('physical_apply',lambda:op.apply(v)),('preconditioner',lambda:op.apply_precond(v)),
+                        ('zero_mean',lambda:op.project_zero_mean(v)),('norm',lambda:torch.linalg.vector_norm(v,dim=1))]:
+            w=fn();torch.cuda.synchronize();del w
+            t=time.perf_counter()
+            for _ in range(3):
+                w=fn();torch.cuda.synchronize();del w
+            timings[name]=(time.perf_counter()-t)/3
+        print('PROFILE',json.dumps(timings),flush=True)
+        del v,op,solver
+        gc.collect();torch.cuda.empty_cache()
+        return dict(setup_seconds=setup,component_seconds=timings,diagnostic_only=True)
+    CH = np.empty((6,6))
+    loads = []
+    guard_seconds = 0.
+    for j in range(6):
+        tg = time.perf_counter()
+        guard()
+        guard_seconds += time.perf_counter()-tg
+        t = time.perf_counter()
+        e = np.eye(6)[j]
+        rhs = op.project_zero_mean(op.compute_rhs(e))
+        u, report = solve_checked(op, rhs, max_iter=10000)
+        CH[:,j] = op.compute_avg_stress(u,e)[0]
+        torch.cuda.synchronize()
+        report.update(load=j, seconds=time.perf_counter()-t)
+        loads.append(report)
+        if progress:
+            print('LOAD', j, json.dumps(report), flush=True)
+        del u, rhs
+    torch.cuda.synchronize()
+    seconds = time.perf_counter()-start-guard_seconds
+    result = dict(seconds=seconds, setup_seconds=setup, CH_raw=CH.tolist(), loads=loads,
+        occupancy_check_seconds_excluded=guard_seconds,
+        peak_allocated_bytes=torch.cuda.max_memory_allocated(), peak_reserved_bytes=torch.cuda.max_memory_reserved(),
+        material_dtype=str(op.C.dtype), precision=precision, element='HEX8-FI' if fi else 'HEX8-HG',
+        residual_definition='recomputed Euclidean ||b-Ku||/||b|| <= 1e-10')
+    if not fi:
+        result.update(symbol_dtype=str(op._fft_symbol_inv.dtype), hg_coefficient=.1)
+    del op, solver
+    gc.collect()
+    torch.cuda.empty_cache()
+    return result
+
+
+def chfem(phase, capture):
+    sys.path.insert(0,str(CHFEM))
+    from chfem import compute_property
+    # Capture native progress to a regular file, avoiding pipe backpressure.
+    libc = ctypes.CDLL(None)
+    sys.stdout.flush(); libc.fflush(None)
+    original = os.dup(1)
+    capture.parent.mkdir(parents=True,exist_ok=True)
+    with capture.open('w') as f:
+        os.dup2(f.fileno(),1)
+        try:
+            start=time.perf_counter()
+            CH=compute_property('elasticity',phase,mat_props={0:(3500.,.35),255:(70000.,.20)},
+                voxel_size=1.,solver='cg',solver_tolerance=1e-10,solver_maxiter=10000,
+                precondition=True,type_of_rhs=0,direction='all')
+            seconds=time.perf_counter()-start
+        finally:
+            sys.stdout.flush(); libc.fflush(None)
+            os.dup2(original,1); os.close(original)
+    log=capture.read_text()
+    sections=re.split(r'Analysis on (?:X|Y|Z|YZ|XZ|XY)(?: \(shear\))?:',log)[1:]
+    final=[]
+    for section in sections:
+        pairs=re.findall(r'iteration:\s*(\d+),\s*residual:\s*([\d.eE+\-]+)',section)
+        if pairs:final.append(pairs[-1])
+    iters=[int(x[0]) for x in final]
+    residual=[float(x[1]) for x in final]
+    if len(iters)!=6 or len(residual)!=6 or max(residual)>1e-10:
+        raise RuntimeError('Incomplete/nonconverged chfem solve; inspect '+str(capture))
+    return dict(seconds=seconds,CH_raw=np.asarray(CH).tolist(),iterations=iters,residuals=residual,
+        element='HEX8-FI',precision='fp64',preconditioner='published default diagonal PCG',
+        residual_definition='native PCG sqrt((r^T M^-1 r)/(b^T M^-1 b)) <= 1e-10',
+        log_file=capture.name)
+
+
+def manifest():
+    files = [Path(__file__),*(FEAD/'repro/source/femlib').rglob('*.py'),
+        *(FEAD/'repro/source/femlib').rglob('*.cu'),*(FEAD/'repro/source/femlib').rglob('*.cpp'),
+        *(FEAD/'repro/extension_20261006').glob('*.py'),
+        *(CHFEM/'chfem').glob('*.py'),*(CHFEM/'chfem').glob('*.so')]
+    return {str(p):sha(p) for p in files}
+
+
+if __name__=='__main__':
+    p=argparse.ArgumentParser()
+    p.add_argument('--case', choices=['grosmont','berea'],default='grosmont')
+    p.add_argument('--grid',type=int,required=True)
+    p.add_argument('--method',choices=['ours','chfem','fi-check','prepare'],required=True)
+    p.add_argument('--precision',choices=['mixed','fp64'],default='mixed')
+    p.add_argument('--tag',default='r0')
+    p.add_argument('--full-warmup',action='store_true')
+    p.add_argument('--profile',action='store_true')
+    a=p.parse_args()
+    path=prepare(a.case,a.grid)
+    if a.method=='prepare':
+        print(path); sys.exit(0)
+    out=ROOT/'results'/f'{a.case}_{a.grid}_{a.method}_{a.precision}_{a.tag}.json'
+    if out.exists():
+        raise FileExistsError(out)
+    r=dict(case=a.case,grid=a.grid,displacement_dofs=3*a.grid**3,method=a.method,
+        input_metadata=json.loads(path.with_suffix('.json').read_text()),
+        tolerance=1e-10,max_iterations=10000,omp_threads=8,
+        allocator=os.environ.get('PYTORCH_ALLOC_CONF',os.environ.get('PYTORCH_CUDA_ALLOC_CONF','default')),
+        protocol='resident uint8 phase -> material/operator setup + all six converged loads + effective stiffness; disk/JIT excluded; eight CPU threads; no displacement export',
+        full_warmup=a.full_warmup,source_hashes=manifest())
+    try:
+        r['gpu_at_start']=guard()
+        phase=np.load(path)
+        warm=phase[np.ix_(np.linspace(0,a.grid-1,8).astype(int),np.linspace(0,a.grid-1,8).astype(int),np.linspace(0,a.grid-1,8).astype(int))].copy()
+        if a.method=='chfem':
+            chfem(warm,out.with_suffix('.warmup.log'))
+            if a.full_warmup:chfem(phase,out.with_suffix('.fullwarmup.log'))
+            guard()
+            r['measurement']=chfem(phase,out.with_suffix('.native.log'))
+        else:
+            from physics import torch
+            r['torch']=torch.__version__;r['cuda']=torch.version.cuda
+            ours(warm,a.precision,fi=a.method=='fi-check',progress=False)
+            # Dynamic reductions must be compiled using the actual problem size.
+            # Otherwise an 8^3 warmup may cache a one-block reduction schedule.
+            torch._dynamo.reset()
+            r['warmup_compilation']='small-grid extension warmup; reset Dynamo; full-grid warmup before timed repetitions'
+            if a.full_warmup:ours(phase,a.precision,fi=a.method=='fi-check')
+            gc.collect();torch.cuda.empty_cache();guard()
+            r['measurement']=ours(phase,a.precision,fi=a.method=='fi-check',profile=a.profile)
+        r['gpu_at_end']=guard();r['status']='passed'
+    except Exception as e:
+        r['status']='oom' if 'out of memory' in str(e).lower() else 'error'
+        r['error']=str(e);r['traceback']=traceback.format_exc()
+        traceback.print_exc()
+    save(out,r)
+    print('RESULT',str(out),r['status'],r.get('measurement',{}).get('seconds'),flush=True)
+    sys.exit(0 if r['status']=='passed' else 2)
