@@ -1,6 +1,6 @@
 # Reproduction guide
 
-Maintained release: v0.1.0. Use the root run.py entry and the source under src/voxel_lmfem/. The archive directory contains the frozen evidence. Original paths are recorded in repro/path_map.json; the reproduction command restores the old analyzer layout only in a temporary directory. See docs/installation.md and docs/usage.md for the installed API.
+Maintained release: v0.1.1. Use the root run.py entry and the source under src/voxel_lmfem/. The archive directory contains the frozen evidence. Original paths are recorded in repro/path_map.json; the reproduction command restores the old analyzer layout only in a temporary directory. See docs/installation.md and docs/usage.md for the installed API.
 
 ## 1. CPU regeneration of published values
 

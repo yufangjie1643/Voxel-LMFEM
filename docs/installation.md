@@ -42,7 +42,7 @@ Launch repository commands with uv run --no-sync python run.py COMMAND. On Linux
 The release wheel includes the public API and numerical core. It supports solve, example, doctor, and the FI CPU check outside a checkout. Paper reproduction, benchmark campaigns and the material-state fixture also need the full repository.
 
     uv venv --python 3.12
-    uv pip install voxel_lmfem-0.1.0-py3-none-any.whl
+    uv pip install voxel_lmfem-0.1.1-py3-none-any.whl
     uv run --no-project python -m voxel_lmfem --help
 
 When using a wheel with a separate checkout, run checkout-specific commands from that checkout or set VOXEL_LMFEM_ROOT to its absolute path. GPU performance and native extension compatibility must be checked on the target machine.

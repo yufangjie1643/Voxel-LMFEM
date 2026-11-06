@@ -1,0 +1,26 @@
+{
+  "date": "2026-11-06",
+  "release": "v0.1.1",
+  "license": "MIT",
+  "relocated_files": 2516,
+  "all_relocated_sha256_unchanged": true,
+  "canonical_numerical_files": 238,
+  "canonical_sha256_unchanged": true,
+  "max_relative_path_before": 189,
+  "max_relative_path_after": 117,
+  "max_depth_before": 15,
+  "max_depth_after": 12,
+  "max_component_length": 47,
+  "windows_reserved_names": 0,
+  "case_unicode_collisions": 0,
+  "windows_clone_with_core_longpaths_false": "passed; maximum checkout path 234 characters",
+  "pytest": {
+    "passed": 12,
+    "skipped": 1,
+    "skip": "CUDA integration requires target GPU"
+  },
+  "input_preparation": "passed for canonical sphere and Grosmont fields",
+  "paper_regeneration": "passed in original and clean checkout; 2517 manifest entries",
+  "numerical_output_bytes": "identical to pre-migration outputs",
+  "gpu_campaigns": "not rerun for this licensing and path-layout release"
+}

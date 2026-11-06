@@ -68,7 +68,7 @@ Manuscript: **Memory-efficient GPU finite element homogenization of microstructu
 
 This CPU command verifies archived file hashes and regenerates the current three tables and numerical result-figure data, including the six-row performance table, eleven-grid convergence through 480³, 21 yarn fractions and nine active fractions. It validates saved measurements rather than rerunning GPU timings.
 
-See [repro/table_manifest.json](repro/table_manifest.json), [repro/generated/TABLES.md](repro/generated/TABLES.md) and [repro/REPRODUCING.md](repro/REPRODUCING.md). The direct entry uv run --no-sync python repro/scripts/reproduce_paper_tables.py remains supported. Fixed maintained release: **v0.1.0**; the original review-package tags remain available.
+See [repro/table_manifest.json](repro/table_manifest.json), [repro/generated/TABLES.md](repro/generated/TABLES.md) and [repro/REPRODUCING.md](repro/REPRODUCING.md). The direct entry uv run --no-sync python repro/scripts/reproduce_paper_tables.py remains supported. Fixed maintained release: **v0.1.1**; the original review-package tags remain available.
 
 To prepare canonical benchmark inputs and launch fresh comparisons:
 

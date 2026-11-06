@@ -1,6 +1,6 @@
 """Voxel-LMFEM: periodic elastic homogenization on rectangular HEX8 grids."""
 
-__version__ = "0.1.0"
+__version__ = "0.1.1"
 
 
 def homogenize(phase_id, materials, domain_size, *, orientation=None, backend="cuda", warmup=False):
