@@ -1,8 +1,8 @@
-# 投稿版复现包
+# Voxel-LMFEM 投稿版复现包
 
 对应论文：Memory-efficient GPU finite element homogenization of microstructures with spatially varying anisotropy，2026 年 10 月 25 日投稿稿件。
 
-固定版本：fead-2026-10-25-v1。
+固定版本：fead-2026-10-25-v2。
 
 在仓库根目录运行：
 

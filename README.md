@@ -1,15 +1,17 @@
-# Voxel-TriFEM: manuscript reproducibility package
+# Voxel-LMFEM
+
+Memory-efficient GPU finite element homogenization. LM denotes low memory; FEM denotes finite element method.
 
 Code and measured evidence for **Memory-efficient GPU finite element homogenization of microstructures with spatially varying anisotropy**, submission snapshot **25 October 2026**.
 
-Fixed version: **fead-2026-10-25-v1**. This public package is the reproducibility entry for the manuscript. It contains the fully integrated HEX8 solver, benchmark definitions and inputs, measured six-load tensors, timing records, NVML telemetry, and CPU aggregation scripts.
+Fixed version: **fead-2026-10-25-v2**. This public package is the reproducibility entry for the manuscript. It contains the fully integrated HEX8 solver, benchmark definitions and inputs, measured six-load tensors, timing records, NVML telemetry, and CPU aggregation scripts.
 
 ## Regenerate the paper's numbers
 
-Python 3.12 was used for the release check. Clone the fixed version into a short path (for example C:/work/Voxel-TriFEM-Repro on Windows). Git for Windows needs long-path support for preserved historical source directories:
+Python 3.12 was used for the release check. Clone the fixed version into a short path (for example C:/work/Voxel-LMFEM on Windows). Git for Windows needs long-path support for preserved historical source directories:
 
-    git -c core.longpaths=true clone --branch fead-2026-10-25-v1 https://github.com/yufangjie1643/Voxel-TriFEM-Repro.git
-    cd Voxel-TriFEM-Repro
+    git -c core.longpaths=true clone --branch fead-2026-10-25-v2 https://github.com/yufangjie1643/Voxel-LMFEM.git
+    cd Voxel-LMFEM
 
 From the repository root:
 

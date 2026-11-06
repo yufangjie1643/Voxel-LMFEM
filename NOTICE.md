@@ -1,6 +1,6 @@
 # Attribution and source provenance
 
-This is the author-provided reproducibility package for the manuscript named in README.md. Numerical solver source and measured records were curated from the chapter-aligned review package of 24 October 2026 and the yarn-fraction package of 25 October 2026, with the current 480³ convergence and nine-active-fraction evidence added from the manuscript project.
+Voxel-LMFEM is the author-provided reproducibility package for the manuscript named in README.md. Numerical solver source and measured records were curated from the chapter-aligned review package of 24 October 2026 and the yarn-fraction package of 25 October 2026, with the current 480³ convergence and nine-active-fraction evidence added from the manuscript project.
 
 Third-party chfem source is distributed with its existing MIT license:
 
