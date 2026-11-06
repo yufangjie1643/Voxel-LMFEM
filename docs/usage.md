@@ -1,9 +1,11 @@
 # Using Voxel-LMFEM
 
+Run the following commands from the repository root after creating the uv environment described in docs/installation.md.
+
 ## First result without a GPU
 
-    voxel-lmfem example --out runs/example
-    voxel-lmfem solve --input runs/example/homogeneous.npz --materials runs/example/materials.json --backend cpu --output runs/example/result.json
+    uv run --no-sync voxel-lmfem example --out runs/example
+    uv run --no-sync voxel-lmfem solve --input runs/example/homogeneous.npz --materials runs/example/materials.json --backend cpu --output runs/example/result.json
 
 The example uses the matrix properties from Table 1 and an illustrative unit cube. Its exact effective stiffness equals the constituent stiffness. Existing output files are never overwritten. The equivalent Python example is examples/homogeneous.py.
 
@@ -43,7 +45,7 @@ The mesh uses periodic, axis-aligned rectangular HEX8 elements with full integra
 
 ## GPU solve
 
-    voxel-lmfem solve --input model.npz --materials materials.json --backend cuda --warmup --output runs/model/result.json
+    uv run --no-sync voxel-lmfem solve --input model.npz --materials materials.json --backend cuda --warmup --output runs/model/result.json
 
 Output records the backend, stiffness, residual checks and elapsed time. The GPU backend uses FP64 stiffness actions and PCG vectors with FP32 FFT preconditioning.
 
@@ -51,10 +53,10 @@ Output records the backend, stiffness, residual checks and elapsed time. The GPU
 
 Prepare canonical isotropic inputs in a repository checkout:
 
-    python run.py prepare-inputs
-    python run.py chapter-study --phase launch --cases sphere,grosmont,woven --grid 192 --variants stencil27_jacobi,execution_fp32 --repeats 3 --out runs/table3
-    python run.py woven-fraction --phase launch --grid 192 --fractions all --repeats 3 --out runs/woven_fraction
+    uv run --no-sync python run.py prepare-inputs
+    uv run --no-sync python run.py chapter-study --phase launch --cases sphere,grosmont,woven --grid 192 --variants stencil27_jacobi,execution_fp32 --repeats 3 --out runs/table3
+    uv run --no-sync python run.py woven-fraction --phase launch --grid 192 --fractions all --repeats 3 --out runs/woven_fraction
 
-Launch phases create fresh worker processes through the Unix launcher; run GPU campaigns on Linux. Use python run.py COMMAND --help for driver options. Maintained drivers read data/cases/; historical snapshots retain original paths.
+Launch phases create fresh worker processes through the Unix launcher; run GPU campaigns on Linux. Use uv run --no-sync python run.py COMMAND --help for driver options. Maintained drivers read data/cases/; historical snapshots retain original paths.
 
 Each process owns a configured numerical backend. Use separate processes for concurrent solves; the compatibility modules do not support simultaneous solver configurations in multiple threads.

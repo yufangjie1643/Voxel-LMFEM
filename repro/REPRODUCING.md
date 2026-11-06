@@ -4,10 +4,11 @@ Maintained release: v0.1.0. Use the root run.py entry and the source under src/v
 
 ## 1. CPU regeneration of published values
 
-Run from the repository root:
+Install uv as described in docs/installation.md. From a fresh repository checkout:
 
-    python -m pip install -r repro/requirements-cpu.txt
-    python repro/scripts/reproduce_paper_tables.py
+    uv venv --python 3.12
+    uv pip install -e .
+    uv run --no-sync python repro/scripts/reproduce_paper_tables.py
 
 An alternative output directory can be supplied with --out. Do not run Python with -O; assertions implement numerical validation. The script never changes the frozen campaigns. Original analyzers that write summaries execute in temporary copies.
 
@@ -21,20 +22,20 @@ The active manifest checks frozen campaign bytes and the regeneration script; it
 
 The material-state example needs NumPy and SciPy:
 
-    python run.py check material-state --output runs/checks/material_state.json
+    uv run --no-sync python run.py check material-state --output runs/checks/material_state.json
 
 Output: runs/checks/material_state.json. This checks five frozen material-history cases, independent FI assembly, equilibrium residuals and the loading/unloading path in Appendix C. It is a CPU prototype.
 
 The independent FI operator checks additionally require PyTorch (a CPU build is sufficient):
 
-    python -m pip install torch
-    python run.py check fi --output runs/checks/fi_cpu.json
+    uv pip install --torch-backend=cpu --reinstall-package torch -e ".[cpu-checks]"
+    uv run --no-sync python run.py check fi --output runs/checks/fi_cpu.json
 
 Use a new output filename when repeating this check; the driver refuses to overwrite an existing result. Both checks passed on Windows/Python 3.12 in the release verification. The tested CPU PyTorch version is recorded in repro/provenance/release_checks.json. This CPU environment is separate from the original GPU measurement environment.
 
 For the yarn geometry, from the repository root:
 
-    python -B run.py woven-fraction --phase geometry --grid 32 --out runs/checks/geometry
+    uv run --no-sync python -B run.py woven-fraction --phase geometry --grid 32 --out runs/checks/geometry
 
 This checks all 21 analytical constructions on a small grid. The saved 192³ validation is included with the measured data. The optional verify-stencils-cpu command also imports Triton through the stored-stencil backend; use a Linux environment with those GPU software dependencies. It was not part of the successful Windows release checks.
 
@@ -48,34 +49,34 @@ Use Linux, an NVIDIA GPU, a matching driver/CUDA toolkit, a working C++/CUDA com
 - NumPy, SciPy, Ninja, packaging and Numba: see the recorded lock file.
 - The CSR comparison also requires CuPy; chfem uses its separate native build.
 
-The lock file records the measurement environment, rather than a replacement for installation of the correct CUDA PyTorch build. Install that build and its Triton dependency according to the PyTorch distribution for your platform. Install the remaining pinned packages separately. Set VOXEL_PYTHON to the resulting Python executable, or activate the environment so python3 resolves to it.
+The lock file records the measurement environment, rather than a replacement for installation of the correct CUDA PyTorch build. Install that build and its Triton dependency according to the PyTorch distribution for your platform. Install the remaining pinned packages separately. Use the uv run --no-sync commands below so worker processes inherit the installed environment; VOXEL_PYTHON may explicitly select its Python executable.
 
 The large stencil cases need substantially more GPU memory than the proposed solver. Keep the GPU exclusive during timing. Geometry generation, JIT compilation, warm-up and I/O are outside the measurement window.
 
 ## 4. Rerun chapter benchmarks
 
-From the repository root on Linux (run python run.py prepare-inputs first):
+From the repository root on Linux (run uv run --no-sync python run.py prepare-inputs first):
 
     chmod +x run
-    ./run chapter-study --phase launch --cases sphere,grosmont,woven --grid 192 --variants stencil27_jacobi,execution_fp32 --repeats 3 --out runs/table3
+    uv run --no-sync ./run chapter-study --phase launch --cases sphere,grosmont,woven --grid 192 --variants stencil27_jacobi,execution_fp32 --repeats 3 --out runs/table3
 
 For the controlled woven optimization chain:
 
-    ./run chapter-study --phase launch --cases woven --grid 192 --variants stencil27_fft,modal_fft,hybrid_fft,background_fft,execution_fp64,execution_fp32 --repeats 3 --out runs/optimization
+    uv run --no-sync ./run chapter-study --phase launch --cases woven --grid 192 --variants stencil27_fft,modal_fft,hybrid_fft,background_fft,execution_fp64,execution_fp32 --repeats 3 --out runs/optimization
 
 For a small worker smoke test before a large campaign:
 
-    ./run chapter-study --phase worker --case woven --grid 32 --variant execution_fp32 --repeat 0 --out runs/smoke
+    uv run --no-sync ./run chapter-study --phase worker --case woven --grid 32 --variant execution_fp32 --repeat 0 --out runs/smoke
 
 For a fresh high-resolution convergence point:
 
-    ./run chapter-study --phase launch --cases woven --grid 480 --variants execution_fp32 --repeats 3 --out runs/convergence480
+    uv run --no-sync ./run chapter-study --phase launch --cases woven --grid 480 --variants execution_fp32 --repeats 3 --out runs/convergence480
 
 The exact older grid-cost jobs, method choices and reference media are recorded under campaigns/chapter/manuscript_evidence/review_results/grid_refinement_20261023/remote/plan.json and campaigns/chapter/manuscript_evidence/review_results/stencil27_baseline_20261023/formal/. Paths inside saved plans describe the original machine; use the included drivers and select a new runs/ destination. The currently regenerated CSVs always use the archived campaign, not results from a new run.
 
 For Appendix D's 54-run active-fraction sweep:
 
-    ./run active-sweep
+    uv run --no-sync ./run active-sweep
 
 It writes runs/active_fraction_128_20261024 and refuses to overwrite an existing plan.
 
@@ -84,7 +85,7 @@ It writes runs/active_fraction_128_20261024 and refuses to overwrite an existing
 From the repository root:
 
     chmod +x run
-    ./run woven-fraction --phase launch --grid 192 --fractions all --repeats 3 --out runs/woven_fraction
+    uv run --no-sync ./run woven-fraction --phase launch --grid 192 --fractions all --repeats 3 --out runs/woven_fraction
 
 The driver executes all three configurations at each fraction and rotates their order. The corresponding analyzer is campaigns/woven_fraction/revision/experiments/woven_fraction_20261025/analyze.py. Its input directory must contain raw/results and raw/logs; the saved campaign demonstrates that layout.
 

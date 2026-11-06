@@ -8,19 +8,24 @@ Voxel-LMFEM solves periodic small-strain elasticity on fully integrated rectangu
 
 ## Quick start: CPU example
 
-    python -m pip install -e .
-    voxel-lmfem example --out runs/example
-    voxel-lmfem solve --input runs/example/homogeneous.npz --materials runs/example/materials.json --backend cpu --output runs/example/result.json
+Install [uv](https://docs.astral.sh/uv/getting-started/installation/), then:
 
-Run these commands from a cloned repository after activating a Python environment. The base installation needs NumPy and SciPy. The small CPU reference is limited to 4096 voxels; it verifies inputs and results without requiring a GPU.
+    git -c core.longpaths=true clone https://github.com/yufangjie1643/Voxel-LMFEM.git
+    cd Voxel-LMFEM
+    uv venv --python 3.12
+    uv pip install -e .
+    uv run --no-sync voxel-lmfem example --out runs/example
+    uv run --no-sync voxel-lmfem solve --input runs/example/homogeneous.npz --materials runs/example/materials.json --backend cpu --output runs/example/result.json
+
+Run the commands from the repository root. uv manages the local .venv; uv run --no-sync uses the installed environment without changing the selected CPU/CUDA packages. The base installation needs NumPy and SciPy. The small CPU reference is limited to 4096 voxels; it verifies inputs and results without requiring a GPU.
 
 ## GPU solve
 
-Install a CUDA-enabled PyTorch build and the GPU extra as described in the installation guide:
+In the same uv environment on Linux, install the GPU extra with a driver-compatible PyTorch backend as described in the installation guide:
 
-    python -m pip install -e ".[gpu]"
-    voxel-lmfem doctor --require-cuda
-    voxel-lmfem solve --input model.npz --materials materials.json --backend cuda --warmup --output runs/model/result.json
+    uv pip install --torch-backend=auto --reinstall-package torch -e ".[gpu]"
+    uv run --no-sync voxel-lmfem doctor --require-cuda
+    uv run --no-sync voxel-lmfem solve --input model.npz --materials materials.json --backend cuda --warmup --output runs/model/result.json
 
 The GPU implementation uses FP64 physical stiffness and PCG vectors, with FP32 FFT preconditioning. Native extensions are compiled on first use. GPU benchmarks run on Linux.
 
@@ -59,22 +64,22 @@ Historical snapshots are retained for provenance. New solves use the maintained 
 
 Manuscript: **Memory-efficient GPU finite element homogenization of microstructures with spatially varying anisotropy**, snapshot 25 October 2026.
 
-    python run.py reproduce
+    uv run --no-sync python run.py reproduce
 
 This CPU command verifies archived file hashes and regenerates the current three tables and numerical result-figure data, including the six-row performance table, eleven-grid convergence through 480³, 21 yarn fractions and nine active fractions. It validates saved measurements rather than rerunning GPU timings.
 
-See [repro/table_manifest.json](repro/table_manifest.json), [repro/generated/TABLES.md](repro/generated/TABLES.md) and [repro/REPRODUCING.md](repro/REPRODUCING.md). The direct entry python repro/scripts/reproduce_paper_tables.py remains supported. Fixed maintained release: **v0.1.0**; the original review-package tags remain available.
+See [repro/table_manifest.json](repro/table_manifest.json), [repro/generated/TABLES.md](repro/generated/TABLES.md) and [repro/REPRODUCING.md](repro/REPRODUCING.md). The direct entry uv run --no-sync python repro/scripts/reproduce_paper_tables.py remains supported. Fixed maintained release: **v0.1.0**; the original review-package tags remain available.
 
 To prepare canonical benchmark inputs and launch fresh comparisons:
 
-    python run.py prepare-inputs
-    python run.py chapter-study --phase launch --cases sphere,grosmont,woven --grid 192 --variants stencil27_jacobi,execution_fp32 --repeats 3 --out runs/table3
+    uv run --no-sync python run.py prepare-inputs
+    uv run --no-sync python run.py chapter-study --phase launch --cases sphere,grosmont,woven --grid 192 --variants stencil27_jacobi,execution_fp32 --repeats 3 --out runs/table3
 
 ## Tests and development
 
-    python -m pip install -e ".[dev]"
-    python -m pytest -q
-    python -m build
+    uv pip install -e ".[dev]"
+    uv run --no-sync python -m pytest -q
+    uv build
 
 Linux/Windows CPU CI tests the API, numerical reference, input preparation, table regeneration and installed wheel. GPU tests are opt-in; see the validation guide. The original GPU measurements used RTX 5090 / PyTorch 2.12.0+cu130 / CUDA 13.0.
 

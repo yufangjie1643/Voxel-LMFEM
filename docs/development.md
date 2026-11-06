@@ -1,6 +1,6 @@
 # Development
 
-Install with python -m pip install -e ".[dev]". New outputs belong under runs/; working benchmark inputs belong under data/cases/.
+Create the uv environment as described in docs/installation.md, then install with uv pip install -e ".[dev]". New outputs belong under runs/; working benchmark inputs belong under data/cases/.
 
 Public API changes need tests against physical or analytical invariants. GPU execution changes need the opt-in GPU comparison as well as CPU checks. Never edit frozen campaigns to make a current test pass. A changed method or protocol needs a new measured campaign and its source-to-claim map.
 
@@ -15,7 +15,7 @@ The maintained layer changes the original organization as follows:
 
 Build distributions with:
 
-    python -m build
+    uv build
 
 The wheel contains the public API and numerical core. The source distribution also contains maintained examples, tests, protocols and documentation. The full GitHub release ZIP additionally contains the measurement archive.
 
