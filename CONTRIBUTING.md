@@ -6,4 +6,4 @@ Install the dev extra and run docs/validation.md checks. Keep edits focused and 
 
 Keep output in runs/ and preserve frozen campaigns. Document measurement-protocol changes; CPU reference tests do not establish GPU performance gains.
 
-Existing attribution and terms are described in NOTICE.md. No additional license grant has been assigned to author-owned code.
+Project code and software documentation use the MIT License in LICENSE. Contributions to those materials are submitted under the same license. Preserve third-party copyright notices and the source/data attribution described in NOTICE.md.

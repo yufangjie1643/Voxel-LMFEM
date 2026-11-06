@@ -46,4 +46,4 @@
 
 完整说明见 [安装](docs/installation.md)、[输入与使用](docs/usage.md)、[仓库结构](docs/architecture.md)、[验证](docs/validation.md) 和 [论文复现](repro/REPRODUCING.md)。Linux/Windows 自动测试覆盖 CPU 接口、安装包及论文数据再生；GPU 集成测试需要配置好的 CUDA 环境。
 
-作者代码的许可状态沿用 NOTICE.md，第三方许可证保留。
+Voxel-LMFEM 代码及配套软件文档采用 [MIT 开源协议](LICENSE)。第三方代码保留原版权与许可声明，数据来源及适用条款见 [NOTICE.md](NOTICE.md)。使用相关方法或数据时，请通过 [CITATION.cff](CITATION.cff) 引用软件及随附论文。

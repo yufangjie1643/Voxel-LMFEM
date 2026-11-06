@@ -1,5 +1,5 @@
 [build-system]
-requires = ["setuptools>=69", "wheel"]
+requires = ["setuptools>=77", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
@@ -7,6 +7,8 @@ name = "voxel-lmfem"
 version = "0.1.0"
 description = "Memory-efficient GPU voxel finite element homogenization"
 readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE", "NOTICE.md"]
 requires-python = ">=3.10"
 authors = [{name = "Fangjie Yu"}]
 dependencies = ["numpy>=1.26,<3", "scipy>=1.12,<2"]

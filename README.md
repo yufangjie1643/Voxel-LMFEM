@@ -85,4 +85,4 @@ Linux/Windows CPU CI tests the API, numerical reference, input preparation, tabl
 
 ## Citation and terms
 
-Use [CITATION.cff](CITATION.cff) for this software release and cite the accompanying manuscript when using its methods or data. [NOTICE.md](NOTICE.md) preserves attribution and third-party licenses. Author-owned code has no additional license grant; this repository does not label it under a newly chosen open-source license.
+Voxel-LMFEM code and accompanying software documentation are released under the [MIT License](LICENSE). Third-party code retains its original copyright and license notices; dataset attribution and terms are described in [NOTICE.md](NOTICE.md). Please use [CITATION.cff](CITATION.cff) to cite this software and the accompanying manuscript when using its methods or data.
